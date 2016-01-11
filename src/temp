@@ -1,0 +1,536 @@
+
+  \recommended \item
+    Is the set of rational numbers a vector space over \( \Re \) under the
+    usual addition and scalar multiplication operations?
+    \begin{answer}
+       No, it is not closed under scalar multiplication since, e.g., 
+       \( \pi\cdot (1) \) is not a rational number. 
+    \end{answer}
+  \item 
+    Show that 
+    the set of linear combinations of the variables \( x,y,z \) is
+    a vector space under the natural addition and scalar multiplication
+    operations.
+    \begin{answer}
+      The natural operations are
+      \( (v_1x+v_2y+v_3z)+(w_1x+w_2y+w_3z)=(v_1+w_1)x+(v_2+w_2)y+(v_3+w_3)z \)
+      and \( r\cdot(v_1x+v_2y+v_3z)=(rv_1)x+(rv_2)y+(rv_3)z \).
+      The check that this is a vector space is easy; use
+      \nearbyexample{ex:RealVecSpaces} as a guide.  
+    \end{answer}
+  \item 
+    Prove that 
+    this is not a vector space: the set of two-tall column vectors
+    with real entries subject to these operations.
+    \begin{equation*}
+      \colvec{x_1 \\ y_1}
+      +\colvec{x_2 \\ y_2}
+      =\colvec{x_1-x_2 \\ y_1-y_2}
+      \qquad
+      r\cdot\colvec{x \\ y}
+      =\colvec{rx \\ ry}
+    \end{equation*}
+    \begin{answer}
+      The `\( + \)' operation is not commutative (that is, condition~(2) is 
+      not met); producing two members of the
+      set witnessing this assertion is easy.
+    \end{answer}
+  \item 
+    Prove or disprove that \( \Re^3 \) is a vector space under these
+    operations.
+    \begin{exparts}
+      \partsitem \( 
+               \colvec{x_1 \\ y_1 \\ z_1}
+               +\colvec{x_2 \\ y_2 \\ z_2}
+               =\colvec{0 \\ 0 \\ 0}
+               \quad\text{and}\quad
+               r\colvec{x \\ y \\ z}
+               =\colvec{rx \\ ry \\ rz} \) 
+      \partsitem \( 
+               \colvec{x_1 \\ y_1 \\ z_1}
+               +\colvec{x_2 \\ y_2 \\ z_2}
+               =\colvec{0 \\ 0 \\ 0}   
+               \quad\text{and}\quad
+               r\colvec{x \\ y \\ z}
+               =\colvec{0 \\ 0 \\ 0} \)
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem It is not a vector space.
+          \begin{equation*}
+            (1+1)\cdot\colvec[r]{1 \\ 0 \\ 0}\neq
+            \colvec[r]{1 \\ 0 \\ 0}
+            +\colvec[r]{1 \\ 0 \\ 0}
+          \end{equation*}
+        \partsitem It is not a vector space.
+          \begin{equation*}
+            1\cdot\colvec[r]{1 \\ 0 \\ 0}\neq\colvec[r]{1 \\ 0 \\ 0}
+          \end{equation*}
+      \end{exparts}   
+    \end{answer}
+  \recommended \item
+    For each, decide if it is a vector space;
+    the intended operations are the natural ones.
+    \begin{exparts}
+      \partsitem The \definend{diagonal} \( \nbyn{2} \) matrices
+        \begin{equation*}
+          \set{\begin{mat}
+            a  &0  \\
+            0  &b
+          \end{mat}\suchthat a,b\in\Re}
+        \end{equation*}
+      \partsitem This set of \( \nbyn{2} \) matrices
+        \begin{equation*}
+          \set{\begin{mat}
+            x    &x+y  \\
+            x+y  &y
+          \end{mat}\suchthat x,y\in\Re}
+        \end{equation*}
+      \partsitem This set
+        \begin{equation*}
+          \set{\colvec{x \\ y \\ z \\ w}\in\Re^4
+               \suchthat x+y+w=1}
+        \end{equation*}
+      \partsitem The set of functions
+        \( \set{\map{f}{\Re}{\Re}\suchthat df/dx+2f=0} \)
+      \partsitem The set of functions
+        \( \set{\map{f}{\Re}{\Re}\suchthat df/dx+2f=1} \)
+    \end{exparts}
+    \begin{answer}
+      For each ``yes'' answer, you must give a check of all the 
+      conditions given in the
+      definition of a vector space.
+      For each ``no'' answer, give a specific example of the failure 
+      of one of the
+      conditions.
+      \begin{exparts}
+        \partsitem Yes.
+        \partsitem Yes.
+        \partsitem No, this set is not closed under the natural addition
+          operation.
+          The vector of all $1/4$'s is a member of this set 
+          but when added to itself the result, the 
+          vector of all $1/2$'s, is a nonmember.
+        \partsitem Yes.
+        \partsitem No, \( f(x)=e^{-2x}+(1/2) \) is in the set but 
+           \( 2\cdot f \) is not (that is, condition~(6) fails).
+      \end{exparts}  
+    \end{answer}
+  \recommended \item
+    Prove or disprove that this is a vector space: the real-valued functions
+    \( f \) of one real variable such that \( f(7)=0 \).
+    \begin{answer}
+      It is a vector space.
+      Most conditions of the definition of vector space are routine; we here
+      check only closure.
+      For addition,
+      \( (f_1+f_2)\,(7)=f_1(7)+f_2(7)=0+0=0 \).
+      For scalar multiplication,
+      \( (r\cdot f)\,(7)=rf(7)=r0=0 \).  
+    \end{answer}
+  \recommended \item
+    Show that the set \( \Re^+ \) of positive reals
+    is a vector space when we interpret `\( x+y \)' to mean
+    the product of \( x \) and \( y \) (so that \( 2+3 \) is \( 6 \)),
+    and we interpret `\( r\cdot x \)' as the \( r \)-th power of \( x \).
+    \begin{answer}
+      We check \nearbydefinition{def:VecSpace}.
+
+      First, closure under `\( + \)'
+      holds because the product of two positive reals is
+      a positive real.
+      The second condition is satisfied because real multiplication commutes.
+      Similarly, as real multiplication associates, the third checks.
+      For the fourth condition, observe that multiplying a number by
+      \( 1\in\Re^+ \) won't change the number.
+      Fifth, any positive real has a reciprocal that is a positive real.
+
+      The sixth, closure under `\( \cdot \)', 
+      holds because any power of a positive real is a
+      positive real.
+      The seventh condition is just the rule that \( v^{r+s} \) equals
+      the product of \( v^r \) and \( v^s \).
+      The eight condition says that \( (vw)^r=v^rw^r \).
+      The ninth condition asserts that \( (v^r)^s=v^{rs} \).
+      The final condition says that \( v^1=v \).  
+    \end{answer}
+  \item 
+      Is \( \set{(x,y)\suchthat x,y\in\Re} \) a vector space under
+      these operations?
+      \begin{exparts}
+        \partsitem \( (x_1,y_1)+(x_2,y_2)=(x_1+x_2,y_1+y_2) \)
+        and \( r\cdot (x,y)=(rx,y) \)
+        \partsitem \( (x_1,y_1)+(x_2,y_2)=(x_1+x_2,y_1+y_2) \)
+        and \( r\cdot (x,y)=(rx,0) \)
+      \end{exparts}
+      \begin{answer}
+        \begin{exparts}
+           \partsitem No: \( 1\cdot(0,1)+1\cdot(0,1)\neq (1+1)\cdot(0,1) \).
+           \partsitem No; the same calculation as the prior answer shows
+              a condition in the definition of a vector space that is 
+              violated. 
+              Another example of a violation of the conditions for a 
+              vector space is that \( 1\cdot (0,1)\neq (0,1) \). 
+        \end{exparts}  
+      \end{answer}
+  \item 
+    Prove or disprove that 
+    this is a vector space: the set of polynomials of
+    degree greater than or equal to two, along with the zero polynomial.
+    \begin{answer}
+      It is not a vector space since it is not closed under addition, as
+      \( (x^2)+(1+x-x^2) \) is not in the set.  
+    \end{answer}
+  \item 
+    At this point ``the same'' is only an
+    intuition, but nonetheless for each vector space identify the
+    \( k \) for which the space is ``the same'' as \( \Re^k \).
+    \begin{exparts}
+      \partsitem The \( \nbym{2}{3} \) matrices under the usual operations
+      \partsitem The \( \nbym{n}{m} \) matrices (under their usual operations)
+      \partsitem This set of \( \nbyn{2} \) matrices
+        \begin{equation*}
+          \set{\begin{mat}
+            a  &0  \\
+            b  &c
+          \end{mat} \suchthat a,b,c\in\Re}
+        \end{equation*}
+      \partsitem This set of \( \nbyn{2} \) matrices
+        \begin{equation*}
+          \set{\begin{mat}
+            a  &0  \\
+            b  &c
+          \end{mat} \suchthat a+b+c=0}
+        \end{equation*}
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem \( 6 \)
+        \partsitem \( nm \)
+        \partsitem \( 3 \)
+        \partsitem To see that the answer is \( 2 \), rewrite it as
+        \begin{equation*}
+          \set{\begin{mat}
+            a  &0  \\
+            b  &-a-b
+          \end{mat} \suchthat a,b\in\Re}
+        \end{equation*}
+        so that there are two parameters.
+      \end{exparts}  
+     \end{answer}
+  \recommended \item 
+    Using \( \vec{+} \) to represent vector addition
+    and \( \,\vec{\cdot}\, \) for scalar multiplication,
+    restate the definition of vector space.
+    \begin{answer}
+      {
+      \def\plus{\mathbin{\vec{+}}}
+      \def\tim{\mathbin{\vec{\cdot}}}
+        A \definend{vector space}\index{vector space!definition}
+        (over \( \Re \)) consists of a set \( V \) along with
+        two operations `\( \plus \)' and `\( \tim \)' subject to these 
+        conditions.
+        Where \( \vec{v},\vec{w}\in V \), 
+        (1)~their \definend{vector sum}
+          \( \vec{v}\plus\vec{w} \) is an element of \( V \).
+        If \( \vec{u},\vec{v},\vec{w}\in V \) then 
+        (2)~\( \vec{v}\plus\vec{w}=\vec{w}\plus\vec{v} \) and 
+        (3)~\( (\vec{v}\plus\vec{w})\plus\vec{u}
+                 =\vec{v}\plus(\vec{w}\plus\vec{u}) \).
+        (4)~There is a \definend{zero vector}
+          \( \zero\in V \) such that
+          \( \vec{v}\plus\zero=\vec{v}\, \) for all \( \vec{v}\in V\).
+        (5)~Each \( \vec{v}\in V \) has an
+          \definend{additive inverse}
+          \( \vec{w}\in V \) such that \( \vec{w}\plus\vec{v}=\zero \).
+        If \( r,s \) are \definend{scalars\/},
+        that is, members of \( \Re \)),
+        and \( \vec{v},\vec{w}\in V \) then 
+        (6)~each
+           \definend{scalar multiple}
+           \( r\cdot\vec{v} \) is in \( V \).
+        If \( r,s\in\Re \) and \( \vec{v},\vec{w}\in V \) then
+        (7)~\( (r+ s)\cdot\vec{v}=r\cdot\vec{v}\plus s\cdot\vec{v} \), 
+        and (8)~\( r\tim (\vec{v}+\vec{w})
+           =r\tim\vec{v}+r\tim\vec{w} \),
+        and (9)~\( (rs)\tim \vec{v} =r\tim (s\tim\vec{v}) \),
+        and (10)~\( 1\tim \vec{v}=\vec{v} \).
+     }
+    \end{answer}
+  \recommended \item 
+    Prove these.
+    \begin{exparts}
+      \partsitem For any $\vec{v}\in V$, if $\vec{w}\in V$ is an additive 
+        inverse of $\vec{v}$, then $\vec{v}$ is an additive inverse of 
+        $\vec{w}$.
+        So a vector is an additive inverse of any additive inverse of
+        itself.
+      \partsitem Vector addition left-cancels:~if 
+        \( \vec{v},\vec{s},\vec{t}\in V \)
+        then \( \vec{v}+\vec{s}=\vec{v}+\vec{t}\, \) implies
+        that \( \vec{s}=\vec{t} \).
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Let \( V \) be a vector space, 
+          let \( \vec{v}\in V \), and
+          assume that \( \vec{w}\in V \) is an additive inverse of $\vec{v}$
+          so that \( \vec{w}+\vec{v}=\zero \).
+          Because addition is commutative,
+          \( \zero=\vec{w}+\vec{v}=\vec{v}+\vec{w} \),
+          so therefore \( \vec{v} \) is also 
+          the additive inverse of \( \vec{w} \).
+        \partsitem Let \( V \) be a vector space and suppose
+          \( \vec{v},\vec{s},\vec{t}\in V \).
+          The additive inverse of \( \vec{v} \) is \( -\vec{v} \) so
+          \( \vec{v}+\vec{s}=\vec{v}+\vec{t} \) gives that
+          \( -\vec{v}+\vec{v}+\vec{s}=-\vec{v}+\vec{v}+\vec{t} \),
+          which says that \( \zero+\vec{s}=\zero+\vec{t} \) and so
+          \( \vec{s}=\vec{t} \).
+      \end{exparts}  
+     \end{answer}
+  \item 
+    The definition of vector spaces does not explicitly say that
+    \( \zero+\vec{v}=\vec{v} \) 
+    (it instead says that \( \vec{v}+\zero=\vec{v} \)).
+    Show that it must nonetheless hold in any vector space.
+    \begin{answer}
+      Addition is commutative, so in any vector space,
+      for any vector \( \vec{v} \) we have that
+      \( \vec{v}=\vec{v}+\zero=\zero+\vec{v} \).  
+    \end{answer}
+  \recommended \item
+    Prove or disprove that 
+    this is a vector space: the set of all matrices, under
+    the usual operations.
+    \begin{answer}
+      It is not a vector space since addition of two matrices of unequal
+      sizes is not defined, and thus the set fails to satisfy the closure
+      condition.
+    \end{answer}
+  \item 
+    In a vector space every element has an additive inverse.
+    Can some elements have two or more?
+    \begin{answer}
+      Each element of a vector space has one and only one additive
+      inverse.
+
+      For, let \( V \) be a vector space and suppose that \( \vec{v}\in V \).
+      If \( \vec{w}_1,\vec{w}_2\in V \) are both additive inverses of
+      \( \vec{v} \) then consider \( \vec{w}_1+\vec{v}+\vec{w}_2 \).
+      On the one hand, we have that it equals $\vec{w}_1+(\vec{v}+\vec{w}_2)=
+      \vec{w}_1+\zero=\vec{w}_1$.
+      On the other hand we have that it equals $(\vec{w}_1+\vec{v})+\vec{w}_2=
+      \zero+\vec{w}_2=\vec{w}_2$.
+      Therefore, $\vec{w}_1=\vec{w}_2$.
+    \end{answer}
+  \item 
+    \begin{exparts}
+      \partsitem Prove that every point, line, or plane thru the origin in 
+         \( \Re^3 \) is a vector space under the inherited operations.
+      \partsitem What if it doesn't contain the origin?
+    \end{exparts}
+    \begin{answer}
+     \begin{exparts}
+      \partsitem Every such set has the form
+        \( \set{r\cdot\vec{v}+s\cdot\vec{w}\suchthat r,s\in\Re} \)
+        where either or both of \( \vec{v},\vec{w} \) may be \( \zero \).
+        With the inherited operations, closure of addition
+        \( (r_1\vec{v}+s_1\vec{w})+(r_2\vec{v}+s_2\vec{w})
+           =(r_1+r_2)\vec{v}+(s_1+s_2)\vec{w} \)
+        and scalar multiplication
+        \( c(r\vec{v}+s\vec{w})=(cr)\vec{v}+(cs)\vec{w} \)
+        are easy.
+        The other conditions are also routine.
+      \partsitem No such set can be a vector space under the inherited
+        operations because it does not have a zero element.
+     \end{exparts}  
+    \end{answer}
+  \recommended \item 
+    Using the idea of a vector space we can easily reprove that
+    the solution set of a homogeneous linear system has either 
+    one element or infinitely many elements. 
+    Assume that \( \vec{v}\in V \) is not \( \zero \).
+    \begin{exparts}
+      \partsitem Prove that \( r\cdot\vec{v}=\zero \) if and only if \( r=0 \).
+      \partsitem Prove that \( r_1\cdot\vec{v}=r_2\cdot\vec{v} \) if
+      and only if \( r_1=r_2 \).
+      \partsitem Prove that any nontrivial vector space is infinite.
+      \partsitem Use the fact that a nonempty solution set of a homogeneous
+        linear system is a vector space to draw the conclusion.
+    \end{exparts}
+    \begin{answer}
+      Assume that \( \vec{v}\in V \) is not \( \zero \).
+      \begin{exparts}
+        \partsitem One direction of the if and only if is clear:~if $r=0$
+          then $r\cdot\vec{v}=\zero$.
+          For the other way, let \( r \) be a nonzero scalar.
+          If \( r\vec{v}=\zero \) then
+          \( (1/r)\cdot r\vec{v}=(1/r)\cdot \zero \) shows that
+          $\vec{v}=\zero$,  contrary to the assumption.
+        \partsitem Where \( r_1,r_2 \) are scalars, 
+          \( r_1\vec{v}=r_2\vec{v}\, \)
+          holds if and only if \( (r_1-r_2)\vec{v}=\zero \).
+          By the prior item, then \( r_1-r_2=0 \).
+        \partsitem A nontrivial space has a vector 
+          \( \vec{v}\neq\zero \).
+          Consider the set \( \set{k\cdot\vec{v}\suchthat k\in\Re} \).
+          By the prior item this set is infinite.
+        \partsitem The solution set is either trivial, or nontrivial.
+          In the second case, it is infinite.   
+     \end{exparts}  
+    \end{answer}
+  \item 
+    Is this a vector space under the natural operations: the real-valued
+    functions of one real variable that are differentiable?
+    \begin{answer}
+      Yes.
+      A theorem of first semester calculus says that a sum of differentiable
+      functions is differentiable and that
+      \( (f+g)^\prime=f^\prime+g^\prime \), and that 
+      a multiple of a differentiable
+      function is differentiable and that \( (r\cdot f)^\prime=r\,f^\prime \). 
+    \end{answer}
+  \item 
+    A \definend{vector space over the complex numbers}%
+    \index{vector space!complex scalars}%
+    \index{complex numbers!vector space over}
+    $\C$ has the same definition
+    as a vector space over the reals except that scalars are drawn from
+    \( \C \) instead of from \( \Re \).
+    Show that each of these is a vector space over the complex numbers.
+    (Recall how complex numbers add and multiply:
+    \( (a_0+a_1i)+(b_0+b_1i)=(a_0+b_0)+(a_1+b_1)i \) and
+    \( (a_0+a_1i)(b_0+b_1i)=(a_0b_0-a_1b_1)+(a_0b_1+a_1b_0)i \).)
+    \begin{exparts}
+      \partsitem The set of degree~two polynomials with complex 
+         coefficients
+      \partsitem This set
+        \begin{equation*}
+          \set{\begin{mat}
+                 0  &a  \\
+                 b  &0
+               \end{mat}\suchthat a,b\in\C\text{\ and\ }
+                               a+b=0+0i }
+        \end{equation*}
+    \end{exparts}
+    \begin{answer}
+      The check is routine.
+      Note that `\( 1 \)' is \( 1+0i \) and the zero elements are these.
+      \begin{exparts}
+        \partsitem \( (0+0i)+(0+0i)x+(0+0i)x^2 \)
+        \partsitem \( \begin{mat}
+                   0+0i  &0+0i  \\
+                   0+0i  &0+0i
+                 \end{mat} \)
+      \end{exparts}  
+    \end{answer}
+  \item 
+    Name a property shared by all of the \( \Re^n \)'s 
+    but not listed as a
+    requirement for a vector space.
+    \begin{answer}
+      Notably absent from the definition of a vector space is a distance
+      measure.  
+    \end{answer}
+  \recommended \item 
+    \begin{exparts}
+      \partsitem Prove that for any four vectors
+        \( \vec{v}_1,\ldots,\vec{v}_4\in V \) we can associate
+        their sum in any way without changing the result.
+        \begin{multline*}
+          ((\vec{v}_1+\vec{v}_2)+\vec{v}_3)+\vec{v}_4
+          =(\vec{v}_1+(\vec{v}_2+\vec{v}_3))+\vec{v}_4  
+          =(\vec{v}_1+\vec{v}_2)+(\vec{v}_3+\vec{v}_4)  \\
+          =\vec{v}_1+((\vec{v}_2+\vec{v}_3)+\vec{v}_4)  
+          =\vec{v}_1+(\vec{v}_2+(\vec{v}_3+\vec{v}_4))
+        \end{multline*}
+        This allows us to write
+        `\( \vec{v}_1+\vec{v}_2+\vec{v}_3+\vec{v}_4 \)'
+        without ambiguity.
+      \partsitem Prove that any two ways of associating a sum of any number of
+        vectors give the same sum.
+        (\textit{Hint.}  Use induction on the number of vectors.)
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem A small rearrangement does the trick.
+          \begin{align*}
+            (\vec{v}_1+(\vec{v}_2+\vec{v}_3))+\vec{v}_4
+            &=((\vec{v}_1+\vec{v}_2)+\vec{v}_3)+\vec{v}_4  \\
+            &=(\vec{v}_1+\vec{v}_2)+(\vec{v}_3+\vec{v}_4)  \\
+            &=\vec{v}_1+(\vec{v}_2+(\vec{v}_3+\vec{v}_4))  \\
+            &=\vec{v}_1+((\vec{v}_2+\vec{v}_3)+\vec{v}_4)
+          \end{align*}
+          Each equality above follows from the associativity of three vectors
+          that is given as a condition in the definition of a vector space.
+          For instance, the second `$=$' applies the rule
+          $(\vec{w}_1+\vec{w}_2)+\vec{w}_3=\vec{w}_1+(\vec{w}_2+\vec{w}_3)$
+          by taking $\vec{w}_1$ to be $\vec{v}_1+\vec{v}_2$, 
+          taking $\vec{w}_2$ to be $\vec{v}_3$, 
+          and taking $\vec{w}_3$ to be $\vec{v}_4$. 
+        \partsitem The base case for induction is the three vector case.
+          This case
+          \( \vec{v}_1+(\vec{v}_2+\vec{v}_3)
+          =(\vec{v}_1+\vec{v}_2)+\vec{v}_3 \) is one of the conditions in
+          the definition of a vector space.
+
+          For the inductive step, assume that any two sums of three vectors,
+          any two sums of four vectors,
+          \ldots, any two sums of $k$ vectors 
+          are equal no matter how we  parenthesize the sums.
+          We will show that any sum of \( k+1 \) vectors equals this one
+          \( ((\cdots((\vec{v}_1+\vec{v}_2)+\vec{v}_3)+\cdots)+\vec{v}_k)
+              +\vec{v}_{k+1} \).
+
+          Any parenthesized sum has an outermost `\( + \)'.
+          Assume that it lies between \( \vec{v}_m \) and \( \vec{v}_{m+1} \)
+          so the sum looks like this.
+          \begin{equation*}
+            (\cdots\,\vec{v}_1\cdots\vec{v}_m\,\cdots)
+           +(\cdots\,\vec{v}_{m+1}\cdots\vec{v}_{k+1}\,\cdots)
+          \end{equation*}
+          The second half involves fewer than $k+1$ additions, so
+          by the inductive hypothesis we can re-parenthesize it
+          so that it reads left to right from the inside out, and in 
+          particular, so that its outermost `$+$' occurs right before 
+          $\vec{v}_{k+1}$.
+          \begin{equation*}
+            =(\cdots\,\vec{v}_1\,\cdots\,\vec{v}_m\,\cdots)
+             +((\cdots(\vec{v}_{m+1}+\vec{v}_{m+2})+\cdots+\vec{v}_{k})
+                 +\vec{v}_{k+1})
+          \end{equation*}
+          Apply the associativity of the sum of three things
+          \begin{equation*}
+            =((\,\cdots\, \vec{v}_1\,\cdots\,\vec{v}_m\,\cdots\,)
+             +(\,\cdots\,(\vec{v}_{m+1}+\vec{v}_{m+2})+\cdots\,\vec{v}_k))
+             +\vec{v}_{k+1}
+          \end{equation*}
+          and finish by applying the inductive hypothesis inside these 
+          outermost parenthesis.
+      \end{exparts}  
+    \end{answer}
+  \item \nearbyexample{ex:ColsIntEntNotVS} gives a subset of $\Re^2$
+   that is not a vector space, under the obvious operations, because
+   while it is closed under addition, it is not closed under scalar
+   multiplication.
+   Consider the set of vectors in the plane whose components have the 
+   same sign or are~$0$.
+   Show that this set is closed under scalar multiplication but not 
+   addition.
+   \begin{answer}
+     Let $\vec{v}$ be a member of $\Re^2$ with components $v_1$ and $v_2$.
+     We can abbreviate the condition that both components have the same
+     sign or are~$0$ by $v_1v_2\geq 0$.
+
+     To show the set is closed under scalar multiplication, observe that
+     the components of $r\vec{v}$ satisfy $(rv_1)(rv_2)=r^2(v_1v_2)$
+     and $r^2\geq 0$ so $r^2v_1v_2\geq 0$.
+
+     To show the set is not closed under addition we need only produce one
+     example.  
+     The vector with components $-1$ and~$0$, when added to the vector
+     with components $0$ and~$1$ makes a vector with mixed-sign components
+     of $-1$ and~$1$.
+   \end{answer}
+ 

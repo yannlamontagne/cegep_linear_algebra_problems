@@ -1,0 +1,99 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={by Jim Hefferon \cite{JH}}]
+Show that each of these is not a vector space.
+
+\Question Under the operations inherited from \( \mathbb{R}^3 \), this set
+        \begin{equation*}
+          \left\{ (x, y, z)\in\mathbb{R}^3\;|\; x+y+z=1\right\}
+        \end{equation*}
+
+\Question Under the operations inherited from \( \Re^3 \), this set
+        \begin{equation*}
+          \set{\colvec{x \\ y \\ z}\in\Re^3\suchthat x^2+y^2+z^2=1}
+        \end{equation*}
+
+\Question Under the usual matrix operations,
+        \begin{equation*}
+          \set{\begin{mat}
+                 a  &1  \\
+                 b  &c
+               \end{mat} \suchthat a,b,c\in\Re}
+        \end{equation*}
+
+\Question Under the usual polynomial operations,
+        \begin{equation*}
+          \set{a_0+a_1x+a_2x^2\suchthat a_0,a_1,a_2\in\Re^+}
+        \end{equation*}
+        where $\Re^+$ is the set of reals greater than zero
+
+\Question Under the inherited operations,
+        \begin{equation*}
+          \set{\colvec{x \\ y}\in\Re^2\suchthat
+               \text{\( x+3y=4 \) and \( 2x-y=3 \) and \( 6x+4y=10 \)} }
+        \end{equation*}
+
+
+\end{Exercise}
+
+\begin{Answer}
+In each item the set is called \( Q \).
+      For some items, there are other correct ways to show that $Q$ is not
+      a vector space.
+      \begin{exparts}
+        \partsitem It is not closed under addition; it fails to meet
+          condition~(1).
+          \begin{equation*}
+            \colvec[r]{1 \\ 0 \\ 0},
+            \colvec[r]{0 \\ 1 \\ 0}\in Q
+            \qquad
+            \colvec[r]{1 \\ 1 \\ 0}\not\in Q
+          \end{equation*}
+        \partsitem It is not closed under addition.
+          \begin{equation*}
+            \colvec[r]{1 \\ 0 \\ 0},
+            \colvec[r]{0 \\ 1 \\ 0}\in Q
+            \qquad
+            \colvec[r]{1 \\ 1 \\ 0}\not\in Q
+          \end{equation*}
+        \partsitem It is not closed under addition.
+          \begin{equation*}
+            \begin{mat}[r]
+              0  &1  \\
+              0  &0
+            \end{mat},
+            \,
+            \begin{mat}[r]
+              1  &1  \\
+              0  &0
+            \end{mat}\in Q
+            \qquad
+            \begin{mat}[r]
+              1  &2  \\
+              0  &0
+            \end{mat}\not\in Q
+          \end{equation*}
+        \partsitem It is not closed under scalar multiplication.
+          \begin{equation*}
+            1+1x+1x^2\in Q
+            \qquad
+            -1\cdot(1+1x+1x^2)\not\in Q
+          \end{equation*}
+        \item It is empty, violating condition~(4).
+      \end{exparts}  
+    \end{answer}
+
+\end{Answer}

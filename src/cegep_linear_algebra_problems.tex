@@ -1,0 +1,116 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twocolumn, letterpaper]{book}
+\pagestyle{empty}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in} 
+\setlength{\topmargin}{-0.50in}
+\setlength{\headsep}{0.250in} 
+\setlength{\headheight}{0.00in}
+\setlength{\evensidemargin}{-0.50in}
+\setlength{\oddsidemargin}{-0.50in} 
+\setlength{\textwidth}{7.50in}
+\setlength{\textheight}{9.50in} 
+\setlength{\voffset}{0.00in}
+\setlength{\hoffset}{0.00in} 
+\setlength{\marginparwidth}{0.00in}
+\setlength{\marginparsep}{0.00in} 
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.0in}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{emptypage}
+\usepackage{makeidx}
+\makeindex
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    citecolor=blue
+}
+\urlstyle{same}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\rightmark}
+\lhead{\leftmark}
+\rfoot{\thepage}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \rfoot{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
+  \renewcommand{\footrulewidth}{1pt}% Line at the footer visible
+}
+
+\usepackage[answerdelayed, lastexercise]{exercise}
+
+\renewcommand{\ExerciseHeader}{\flushleft{
+\textbf{\ExerciseHeaderDifficulty\ExerciseName\;
+\ExerciseHeaderNB\ExerciseHeaderTitle\ExerciseHeaderOrigin}}}
+
+\renewcommand{\ExerciseListHeader}{{\ExerciseHeaderDifficulty
+\textbf{\ExerciseListName \ExerciseHeaderNB
+\ExerciseHeaderTitle}\ExerciseHeaderOrigin}}
+
+\renewcommand{\AnswerHeader}{\textbf{\AnswerName\ %
+\ExerciseHeaderNB}}
+
+\renewcommand{\QuestionNB}{\alph{Question}.\ }
+
+\renewcounter{Exercise}[section]% Reset counter every chapter
+\renewcommand{\theExercise}{\thesection.\arabic{Exercise}}
+
+\renewcommand{\AnswerName}{}
+
+\renewcommand{\bibname}{References}
+
+\input{title_page.tex}
+
+\begin{document}
+\onecolumn
+\thispagestyle{empty}
+%\pagestyle{empty} % Removes page numbers
+\titleGP
+\newpage
+\twocolumn
+
+\thispagestyle{empty}
+\tableofcontents
+
+\mainmatter
+\input{systems_of_linear_equations/index.tex}
+\input{vector_spaces/index.tex}
+
+\appendix
+\chapter{Answers to Exercises}
+\shipoutAnswer
+
+\onecolumn
+\begin{thebibliography}{9}
+
+\bibitem[JH]{JH}
+  Jim Hefferon,
+  \emph{Linear Algebra},
+  \url{http://joshua.smcvt.edu/linearalgebra/},
+  Licensed under the GNU Free Documentation License or the Creative Commons License Creative Commons Attribution-ShareAlike 2.5 License,
+  2014.
+
+\end{thebibliography}
+
+\printindex
+
+\end{document}

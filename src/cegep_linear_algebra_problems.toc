@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}Systems of Linear Equations}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Gaussian and Gauss-Jordan Elimination}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Vector Spaces}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction to Vector Spaces}{3}{section.2.1}
+\contentsline {chapter}{\numberline {A}Answers to Exercises}{5}{appendix.A}
