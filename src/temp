@@ -299,6 +299,8 @@
       for any vector \( \vec{v} \) we have that
       \( \vec{v}=\vec{v}+\zero=\zero+\vec{v} \).  
     \end{answer}
+
+
   \recommended \item
     Prove or disprove that 
     this is a vector space: the set of all matrices, under
@@ -346,18 +348,15 @@
         operations because it does not have a zero element.
      \end{exparts}  
     \end{answer}
-  \recommended \item 
-    Using the idea of a vector space we can easily reprove that
-    the solution set of a homogeneous linear system has either 
-    one element or infinitely many elements. 
+
+\item 
     Assume that \( \vec{v}\in V \) is not \( \zero \).
     \begin{exparts}
       \partsitem Prove that \( r\cdot\vec{v}=\zero \) if and only if \( r=0 \).
       \partsitem Prove that \( r_1\cdot\vec{v}=r_2\cdot\vec{v} \) if
       and only if \( r_1=r_2 \).
       \partsitem Prove that any nontrivial vector space is infinite.
-      \partsitem Use the fact that a nonempty solution set of a homogeneous
-        linear system is a vector space to draw the conclusion.
+
     \end{exparts}
     \begin{answer}
       Assume that \( \vec{v}\in V \) is not \( \zero \).
@@ -376,8 +375,6 @@
           \( \vec{v}\neq\zero \).
           Consider the set \( \set{k\cdot\vec{v}\suchthat k\in\Re} \).
           By the prior item this set is infinite.
-        \partsitem The solution set is either trivial, or nontrivial.
-          In the second case, it is infinite.   
      \end{exparts}  
     \end{answer}
   \item 
@@ -391,146 +388,4 @@
       a multiple of a differentiable
       function is differentiable and that \( (r\cdot f)^\prime=r\,f^\prime \). 
     \end{answer}
-  \item 
-    A \definend{vector space over the complex numbers}%
-    \index{vector space!complex scalars}%
-    \index{complex numbers!vector space over}
-    $\C$ has the same definition
-    as a vector space over the reals except that scalars are drawn from
-    \( \C \) instead of from \( \Re \).
-    Show that each of these is a vector space over the complex numbers.
-    (Recall how complex numbers add and multiply:
-    \( (a_0+a_1i)+(b_0+b_1i)=(a_0+b_0)+(a_1+b_1)i \) and
-    \( (a_0+a_1i)(b_0+b_1i)=(a_0b_0-a_1b_1)+(a_0b_1+a_1b_0)i \).)
-    \begin{exparts}
-      \partsitem The set of degree~two polynomials with complex 
-         coefficients
-      \partsitem This set
-        \begin{equation*}
-          \set{\begin{mat}
-                 0  &a  \\
-                 b  &0
-               \end{mat}\suchthat a,b\in\C\text{\ and\ }
-                               a+b=0+0i }
-        \end{equation*}
-    \end{exparts}
-    \begin{answer}
-      The check is routine.
-      Note that `\( 1 \)' is \( 1+0i \) and the zero elements are these.
-      \begin{exparts}
-        \partsitem \( (0+0i)+(0+0i)x+(0+0i)x^2 \)
-        \partsitem \( \begin{mat}
-                   0+0i  &0+0i  \\
-                   0+0i  &0+0i
-                 \end{mat} \)
-      \end{exparts}  
-    \end{answer}
-  \item 
-    Name a property shared by all of the \( \Re^n \)'s 
-    but not listed as a
-    requirement for a vector space.
-    \begin{answer}
-      Notably absent from the definition of a vector space is a distance
-      measure.  
-    \end{answer}
-  \recommended \item 
-    \begin{exparts}
-      \partsitem Prove that for any four vectors
-        \( \vec{v}_1,\ldots,\vec{v}_4\in V \) we can associate
-        their sum in any way without changing the result.
-        \begin{multline*}
-          ((\vec{v}_1+\vec{v}_2)+\vec{v}_3)+\vec{v}_4
-          =(\vec{v}_1+(\vec{v}_2+\vec{v}_3))+\vec{v}_4  
-          =(\vec{v}_1+\vec{v}_2)+(\vec{v}_3+\vec{v}_4)  \\
-          =\vec{v}_1+((\vec{v}_2+\vec{v}_3)+\vec{v}_4)  
-          =\vec{v}_1+(\vec{v}_2+(\vec{v}_3+\vec{v}_4))
-        \end{multline*}
-        This allows us to write
-        `\( \vec{v}_1+\vec{v}_2+\vec{v}_3+\vec{v}_4 \)'
-        without ambiguity.
-      \partsitem Prove that any two ways of associating a sum of any number of
-        vectors give the same sum.
-        (\textit{Hint.}  Use induction on the number of vectors.)
-    \end{exparts}
-    \begin{answer}
-      \begin{exparts}
-        \partsitem A small rearrangement does the trick.
-          \begin{align*}
-            (\vec{v}_1+(\vec{v}_2+\vec{v}_3))+\vec{v}_4
-            &=((\vec{v}_1+\vec{v}_2)+\vec{v}_3)+\vec{v}_4  \\
-            &=(\vec{v}_1+\vec{v}_2)+(\vec{v}_3+\vec{v}_4)  \\
-            &=\vec{v}_1+(\vec{v}_2+(\vec{v}_3+\vec{v}_4))  \\
-            &=\vec{v}_1+((\vec{v}_2+\vec{v}_3)+\vec{v}_4)
-          \end{align*}
-          Each equality above follows from the associativity of three vectors
-          that is given as a condition in the definition of a vector space.
-          For instance, the second `$=$' applies the rule
-          $(\vec{w}_1+\vec{w}_2)+\vec{w}_3=\vec{w}_1+(\vec{w}_2+\vec{w}_3)$
-          by taking $\vec{w}_1$ to be $\vec{v}_1+\vec{v}_2$, 
-          taking $\vec{w}_2$ to be $\vec{v}_3$, 
-          and taking $\vec{w}_3$ to be $\vec{v}_4$. 
-        \partsitem The base case for induction is the three vector case.
-          This case
-          \( \vec{v}_1+(\vec{v}_2+\vec{v}_3)
-          =(\vec{v}_1+\vec{v}_2)+\vec{v}_3 \) is one of the conditions in
-          the definition of a vector space.
-
-          For the inductive step, assume that any two sums of three vectors,
-          any two sums of four vectors,
-          \ldots, any two sums of $k$ vectors 
-          are equal no matter how we  parenthesize the sums.
-          We will show that any sum of \( k+1 \) vectors equals this one
-          \( ((\cdots((\vec{v}_1+\vec{v}_2)+\vec{v}_3)+\cdots)+\vec{v}_k)
-              +\vec{v}_{k+1} \).
-
-          Any parenthesized sum has an outermost `\( + \)'.
-          Assume that it lies between \( \vec{v}_m \) and \( \vec{v}_{m+1} \)
-          so the sum looks like this.
-          \begin{equation*}
-            (\cdots\,\vec{v}_1\cdots\vec{v}_m\,\cdots)
-           +(\cdots\,\vec{v}_{m+1}\cdots\vec{v}_{k+1}\,\cdots)
-          \end{equation*}
-          The second half involves fewer than $k+1$ additions, so
-          by the inductive hypothesis we can re-parenthesize it
-          so that it reads left to right from the inside out, and in 
-          particular, so that its outermost `$+$' occurs right before 
-          $\vec{v}_{k+1}$.
-          \begin{equation*}
-            =(\cdots\,\vec{v}_1\,\cdots\,\vec{v}_m\,\cdots)
-             +((\cdots(\vec{v}_{m+1}+\vec{v}_{m+2})+\cdots+\vec{v}_{k})
-                 +\vec{v}_{k+1})
-          \end{equation*}
-          Apply the associativity of the sum of three things
-          \begin{equation*}
-            =((\,\cdots\, \vec{v}_1\,\cdots\,\vec{v}_m\,\cdots\,)
-             +(\,\cdots\,(\vec{v}_{m+1}+\vec{v}_{m+2})+\cdots\,\vec{v}_k))
-             +\vec{v}_{k+1}
-          \end{equation*}
-          and finish by applying the inductive hypothesis inside these 
-          outermost parenthesis.
-      \end{exparts}  
-    \end{answer}
-  \item \nearbyexample{ex:ColsIntEntNotVS} gives a subset of $\Re^2$
-   that is not a vector space, under the obvious operations, because
-   while it is closed under addition, it is not closed under scalar
-   multiplication.
-   Consider the set of vectors in the plane whose components have the 
-   same sign or are~$0$.
-   Show that this set is closed under scalar multiplication but not 
-   addition.
-   \begin{answer}
-     Let $\vec{v}$ be a member of $\Re^2$ with components $v_1$ and $v_2$.
-     We can abbreviate the condition that both components have the same
-     sign or are~$0$ by $v_1v_2\geq 0$.
-
-     To show the set is closed under scalar multiplication, observe that
-     the components of $r\vec{v}$ satisfy $(rv_1)(rv_2)=r^2(v_1v_2)$
-     and $r^2\geq 0$ so $r^2v_1v_2\geq 0$.
-
-     To show the set is not closed under addition we need only produce one
-     example.  
-     The vector with components $-1$ and~$0$, when added to the vector
-     with components $0$ and~$1$ makes a vector with mixed-sign components
-     of $-1$ and~$1$.
-   \end{answer}
- 
+  

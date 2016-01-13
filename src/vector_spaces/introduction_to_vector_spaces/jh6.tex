@@ -50,50 +50,52 @@ Show that each of these is not a vector space.
 \end{Exercise}
 
 \begin{Answer}
+
 In each item the set is called \( Q \).
-      For some items, there are other correct ways to show that $Q$ is not
-      a vector space.
-      \begin{exparts}
-        \partsitem It is not closed under addition; it fails to meet
-          condition~(1).
-          \begin{equation*}
-            \colvec[r]{1 \\ 0 \\ 0},
-            \colvec[r]{0 \\ 1 \\ 0}\in Q
-            \qquad
-            \colvec[r]{1 \\ 1 \\ 0}\not\in Q
-          \end{equation*}
-        \partsitem It is not closed under addition.
-          \begin{equation*}
-            \colvec[r]{1 \\ 0 \\ 0},
-            \colvec[r]{0 \\ 1 \\ 0}\in Q
-            \qquad
-            \colvec[r]{1 \\ 1 \\ 0}\not\in Q
-          \end{equation*}
-        \partsitem It is not closed under addition.
-          \begin{equation*}
-            \begin{mat}[r]
-              0  &1  \\
-              0  &0
-            \end{mat},
-            \,
-            \begin{mat}[r]
-              1  &1  \\
-              0  &0
-            \end{mat}\in Q
-            \qquad
-            \begin{mat}[r]
-              1  &2  \\
-              0  &0
-            \end{mat}\not\in Q
-          \end{equation*}
-        \partsitem It is not closed under scalar multiplication.
-          \begin{equation*}
-            1+1x+1x^2\in Q
-            \qquad
-            -1\cdot(1+1x+1x^2)\not\in Q
-          \end{equation*}
-        \item It is empty, violating condition~(4).
-      \end{exparts}  
-    \end{answer}
+For some items, there are other correct ways to show that $Q$ is not
+a vector space.
+
+\Question It is not closed under addition.
+\begin{equation*}
+\colvec[r]{1 \\ 0 \\ 0},
+\colvec[r]{0 \\ 1 \\ 0}\in Q
+\qquad
+\colvec[r]{1 \\ 1 \\ 0}\not\in Q
+\end{equation*}
+
+\Question It is not closed under addition.
+\begin{equation*}
+\colvec[r]{1 \\ 0 \\ 0},
+\colvec[r]{0 \\ 1 \\ 0}\in Q
+\qquad
+\colvec[r]{1 \\ 1 \\ 0}\not\in Q
+\end{equation*}
+  
+\Question It is not closed under addition.
+\begin{equation*}
+\begin{mat}[r]
+0  &1  \\
+0  &0
+\end{mat},
+\,
+\begin{mat}[r]
+1  &1  \\
+0  &0
+\end{mat}\in Q
+\qquad
+\begin{mat}[r]
+1  &2  \\
+0  &0
+\end{mat}\not\in Q
+\end{equation*}
+
+\Question It is not closed under scalar multiplication.
+\begin{equation*}
+1+1x+1x^2\in Q
+\qquad
+-1\cdot(1+1x+1x^2)\not\in Q
+\end{equation*}
+
+\Question The set is empty, violating the existance of the zero vector.
 
 \end{Answer}

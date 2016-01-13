@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  13 JAN 2016 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  13 JAN 2016 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -751,6 +751,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh1.tex
+
+LaTeX Warning: Citation `JH' on page 1 undefined on input line 17.
+
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
 ut line 17.
 ))) (./vector_spaces/index.texpdfTeX warning (ext4): destination with the same 
@@ -771,13 +774,32 @@ l.1 \chapter
 ]
 Chapter 2.
 (./vector_spaces/introduction_to_vector_spaces/index.tex
-(./vector_spaces/introduction_to_vector_spaces/jh1.tex)
-(./vector_spaces/introduction_to_vector_spaces/jh2.tex)
-(./vector_spaces/introduction_to_vector_spaces/jh3.tex)
-(./vector_spaces/introduction_to_vector_spaces/jh4.tex)
-(./vector_spaces/introduction_to_vector_spaces/jh5.tex)
-(./vector_spaces/introduction_to_vector_spaces/jh6.tex
-Overfull \hbox (28.84137pt too wide) detected at line 47
+(./vector_spaces/introduction_to_vector_spaces/jh1.tex
+
+LaTeX Warning: Citation `JH' on page 3 undefined on input line 18.
+
+) (./vector_spaces/introduction_to_vector_spaces/jh2.tex
+
+LaTeX Warning: Citation `JH' on page 3 undefined on input line 18.
+
+) (./vector_spaces/introduction_to_vector_spaces/jh3.tex
+
+LaTeX Warning: Citation `JH' on page 3 undefined on input line 17.
+
+) (./vector_spaces/introduction_to_vector_spaces/jh4.tex
+
+LaTeX Warning: Citation `JH' on page 3 undefined on input line 17.
+
+) (./vector_spaces/introduction_to_vector_spaces/jh5.tex
+
+LaTeX Warning: Citation `JH' on page 3 undefined on input line 16.
+
+) (./vector_spaces/introduction_to_vector_spaces/jh6.tex
+
+LaTeX Warning: Citation `JH' on page 3 undefined on input line 16.
+
+
+Overfull \hbox (34.95233pt too wide) detected at line 47
 []
  []
 
@@ -854,16 +876,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 (./cegep_linear_algebra_problems.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-Package rerunfilecheck Info: File `cegep_linear_algebra_problems.out' has not c
-hanged.
-(rerunfilecheck)             Checksum: 67FB827AE4F97EDC819B00AB77B161A2;610.
+
+
+Package rerunfilecheck Warning: File `cegep_linear_algebra_problems.out' has ch
+anged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cegep_linear_algebra_problems.out':
+
+(rerunfilecheck)             Before: C9549F9F24032EE0E362DF4C93788762;145
+(rerunfilecheck)             After:  67FB827AE4F97EDC819B00AB77B161A2;610.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 15340 strings out of 493054
- 269186 string characters out of 6140585
- 348730 words of memory out of 5000000
- 18588 multiletter control sequences out of 15000+600000
+ 15335 strings out of 493054
+ 269101 string characters out of 6140585
+ 349750 words of memory out of 5000000
+ 18583 multiletter control sequences out of 15000+600000
  12807 words of font info for 51 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  45i,11n,44p,10381b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -879,10 +915,10 @@ s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (12 pages, 164637 bytes).
+Output written on cegep_linear_algebra_problems.pdf (12 pages, 158408 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
+ 193 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  62 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
