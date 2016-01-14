@@ -7,4 +7,6 @@
 \contentsline {section}{\numberline {2.4}Linear Independence}{3}{section.2.4}
 \contentsline {section}{\numberline {2.5}Basis}{3}{section.2.5}
 \contentsline {section}{\numberline {2.6}Dimension}{3}{section.2.6}
-\contentsline {chapter}{\numberline {A}Answers to Exercises}{5}{appendix.A}
+\contentsline {chapter}{Answers to Exercises}{5}{appendix*.2}
+\contentsline {chapter}{References}{6}{appendix*.2}
+\contentsline {chapter}{Index}{7}{appendix*.3}

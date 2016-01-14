@@ -20,19 +20,26 @@
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{0.0in}
 
+
 %----------------------------------------------------------------------------------------
-%	FORMATING OF MATH CONTENT
+%	PACKAGE FOR FORMATING OF MATH CONTENT
 %----------------------------------------------------------------------------------------
 
 \usepackage{format}
-%\usepackage{amsfonts}
-%\usepackage{amssymb}
-%\usepackage{amsmath}
+
+
+%----------------------------------------------------------------------------------------
+%       PACKAGE FOR INDEX 
+%----------------------------------------------------------------------------------------
 
 \usepackage{emptypage}
 \usepackage{makeidx}
 \makeindex
 
+
+%----------------------------------------------------------------------------------------
+%       PACKAGE AND SETTINGS FOR HYPERLINK
+%----------------------------------------------------------------------------------------
 
 \usepackage{hyperref}
 \hypersetup{
@@ -43,6 +50,11 @@
     citecolor=blue
 }
 \urlstyle{same}
+
+
+%----------------------------------------------------------------------------------------
+%       PACKAGE AND SETTINGS FOR TITLE PAGE
+%----------------------------------------------------------------------------------------
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -60,6 +72,11 @@
   \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
   \renewcommand{\footrulewidth}{1pt}% Line at the footer visible
 }
+
+
+%----------------------------------------------------------------------------------------
+%       PACKAGE AND SETTINGS FOR EXERCISE ENVIRONMENT
+%----------------------------------------------------------------------------------------
 
 \usepackage[answerdelayed, lastexercise]{exercise}
 
@@ -81,6 +98,12 @@
 
 \renewcommand{\AnswerName}{}
 
+
+%----------------------------------------------------------------------------------------
+%       
+%----------------------------------------------------------------------------------------
+
+\usepackage[titletoc,title]{appendix}
 \renewcommand{\bibname}{References}
 
 \input{title_page.tex}
@@ -101,10 +124,12 @@
 \input{vector_spaces/index.tex}
 
 \appendix
-\chapter{Answers to Exercises}
+\chapter*{Answers to Exercises}
+\addcontentsline{toc}{chapter}{Answers to Exercises}
 \shipoutAnswer
 
 \onecolumn
+\addcontentsline{toc}{chapter}{References}
 \begin{thebibliography}{9}
 
 \bibitem[JH]{JH}
@@ -115,7 +140,7 @@
   2014.
 
 \end{thebibliography}
-
+\addcontentsline{toc}{chapter}{Index}
 \printindex
 
 \end{document}
