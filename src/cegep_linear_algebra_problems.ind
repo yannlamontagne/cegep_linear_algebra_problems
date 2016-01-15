@@ -1,6 +1,14 @@
 \begin{theindex}
 
-  \item Additive inverse, \hyperpage{3}
+  \item additive inverse, \hyperpage{3, 4}
+
+  \indexspace
+
+  \item diagonal matrix, \hyperpage{4}
+
+  \indexspace
+
+  \item function space, \hyperpage{3, 4}
 
   \indexspace
 
@@ -8,18 +16,23 @@
 
   \indexspace
 
-  \item Matrix space, \hyperpage{3}
+  \item matrix space, \hyperpage{3, 4}
 
   \indexspace
 
-  \item Polynomial space, \hyperpage{3}
+  \item polynomial space, \hyperpage{3}
+  \item positive real numbers, \hyperpage{4}
 
   \indexspace
 
-  \item Vector space, \hyperpage{3}
+  \item rational numbers, \hyperpage{3}
 
   \indexspace
 
-  \item Zero vector, \hyperpage{3}
+  \item vector space, \hyperpage{3, 4}
+
+  \indexspace
+
+  \item zero vector, \hyperpage{3, 4}
 
 \end{theindex}

@@ -80,6 +80,11 @@
 
 \usepackage[answerdelayed, lastexercise]{exercise}
 
+
+\renewcommand{\ExerciseHeaderTitle}{\;\ExerciseTitle}
+
+\renewcommand{\ExerciseHeaderOrigin}{\ExerciseOrigin}
+
 \renewcommand{\ExerciseHeader}{\flushleft{
 \textbf{\ExerciseHeaderDifficulty\ExerciseName\;
 \ExerciseHeaderNB\ExerciseHeaderTitle\ExerciseHeaderOrigin}}}
@@ -89,7 +94,7 @@
 \ExerciseHeaderTitle}\ExerciseHeaderOrigin}}
 
 \renewcommand{\AnswerHeader}{\textbf{\AnswerName\ %
-\ExerciseHeaderNB}}
+\ExerciseHeaderNB}\;\;}
 
 \renewcommand{\QuestionNB}{\alph{Question}.\ }
 

@@ -1,0 +1,52 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+
+Prove the following:
+
+\Question For any $\vec{v}\in V$, if $\vec{w}\in V$ is an additive
+        inverse of $\vec{v}$, then $\vec{v}$ is an additive inverse of
+        $\vec{w}$.
+        So a vector is an additive inverse of any additive inverse of
+        itself.
+
+\Question Vector addition left-cancels: if
+        \( \vec{v},\vec{s},\vec{t}\in V \)
+        then \( \vec{v}+\vec{s}=\vec{v}+\vec{t}\, \) implies
+        that \( \vec{s}=\vec{t} \).
+
+\end{Exercise}
+
+\begin{Answer}
+
+\Question Let \( V \) be a vector space,
+          let \( \vec{v}\in V \), and
+          assume that \( \vec{w}\in V \) is an additive inverse of $\vec{v}$
+          so that \( \vec{w}+\vec{v}=\zero \).
+          Because addition is commutative,
+          \( \zero=\vec{w}+\vec{v}=\vec{v}+\vec{w} \),
+          so therefore \( \vec{v} \) is also
+          the additive inverse of \( \vec{w} \).
+\Question Let \( V \) be a vector space and suppose
+          \( \vec{v},\vec{s},\vec{t}\in V \).
+          The additive inverse of \( \vec{v} \) is \( -\vec{v} \) so
+          \( \vec{v}+\vec{s}=\vec{v}+\vec{t} \) gives that
+          \( -\vec{v}+\vec{v}+\vec{s}=-\vec{v}+\vec{v}+\vec{t} \),
+          which implies that \( \zero+\vec{s}=\zero+\vec{t} \) and so
+          \( \vec{s}=\vec{t} \).
+
+
+\end{Answer}

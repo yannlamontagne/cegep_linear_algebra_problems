@@ -1,0 +1,57 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove or disprove that \( \Re^3 \) is a vector space under these
+operations.
+
+\Question 
+\(
+\colvec{x_1 \\ y_1 \\ z_1}
++\colvec{x_2 \\ y_2 \\ z_2}
+=\colvec{0 \\ 0 \\ 0}
+\quad\text{and}\quad
+r\colvec{x \\ y \\ z}
+=\colvec{rx \\ ry \\ rz} 
+\)
+
+\Question
+\(
+\colvec{x_1 \\ y_1 \\ z_1}
++\colvec{x_2 \\ y_2 \\ z_2}
+=\colvec{0 \\ 0 \\ 0}
+\quad\text{and}\quad
+r\colvec{x \\ y \\ z}
+=\colvec{0 \\ 0 \\ 0}
+\)
+\end{Exercise}
+
+\begin{Answer}
+\Question 
+It is not a vector space.
+\begin{equation*}
+(1+1)\cdot\colvec[r]{1 \\ 0 \\ 0}\neq
+\colvec[r]{1 \\ 0 \\ 0}
++\colvec[r]{1 \\ 0 \\ 0}
+\end{equation*}
+
+\Question
+It is not a vector space.
+\begin{equation*}
+1\cdot\colvec[r]{1 \\ 0 \\ 0}\neq\colvec[r]{1 \\ 0 \\ 0}
+\end{equation*}
+
+
+\end{Answer}

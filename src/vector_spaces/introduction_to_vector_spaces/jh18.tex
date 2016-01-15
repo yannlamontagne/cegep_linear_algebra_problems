@@ -1,0 +1,49 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+
+Assume that \( \vec{v}\in V \) is not \( \zero \).
+
+\Question Prove that \( r\cdot\vec{v}=\zero \) if and only if \( r=0 \).
+\Question Prove that \( r_1\cdot\vec{v}=r_2\cdot\vec{v} \) if
+and only if \( r_1=r_2 \).
+\Question Prove that any nontrivial vector space is infinite.
+
+ 
+\end{Exercise}
+
+\begin{Answer}
+
+Assume that \( \vec{v}\in V \) is not \( \zero \).
+        
+\Question One direction of the if and only if is clear:~if $r=0$
+then $r\cdot\vec{v}=\zero$.
+For the other way, let \( r \) be a nonzero scalar.
+If \( r\vec{v}=\zero \) then
+\( (1/r)\cdot r\vec{v}=(1/r)\cdot \zero \) shows that
+$\vec{v}=\zero$,  contrary to the assumption.
+
+\Question Where \( r_1,r_2 \) are scalars,
+\( r_1\vec{v}=r_2\vec{v}\, \)
+holds if and only if \( (r_1-r_2)\vec{v}=\zero \).
+By the prior item, then \( r_1-r_2=0 \).
+
+\Question A nontrivial space has a vector
+\( \vec{v}\neq\zero \).
+Consider the set \( \set{k\cdot\vec{v}\suchthat k\in\Re} \).
+By the prior item this set is infinite.
+
+\end{Answer}

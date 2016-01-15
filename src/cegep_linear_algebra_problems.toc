@@ -2,11 +2,11 @@
 \contentsline {section}{\numberline {1.1}Gaussian and Gauss-Jordan Elimination}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}Vector Spaces}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction to Vector Spaces}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Subspaces}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Spanning Sets}{3}{section.2.3}
-\contentsline {section}{\numberline {2.4}Linear Independence}{3}{section.2.4}
-\contentsline {section}{\numberline {2.5}Basis}{3}{section.2.5}
-\contentsline {section}{\numberline {2.6}Dimension}{3}{section.2.6}
+\contentsline {section}{\numberline {2.2}Subspaces}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Spanning Sets}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Linear Independence}{4}{section.2.4}
+\contentsline {section}{\numberline {2.5}Basis}{4}{section.2.5}
+\contentsline {section}{\numberline {2.6}Dimension}{4}{section.2.6}
 \contentsline {chapter}{Answers to Exercises}{5}{appendix*.2}
-\contentsline {chapter}{References}{6}{appendix*.2}
+\contentsline {chapter}{References}{7}{appendix*.2}
 \contentsline {chapter}{Index}{7}{appendix*.3}

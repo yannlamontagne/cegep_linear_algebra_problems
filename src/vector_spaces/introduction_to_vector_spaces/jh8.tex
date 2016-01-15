@@ -1,0 +1,33 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove that the following is not a vector space: the set of two-tall column vectors
+with real entries subject to these operations.
+\begin{equation*}
+\colvec{x_1 \\ y_1}
++\colvec{x_2 \\ y_2}
+=\colvec{x_1-x_2 \\ y_1-y_2}
+\qquad
+r\cdot\colvec{x \\ y}
+=\colvec{rx \\ ry}
+\end{equation*}
+\end{Exercise}
+
+\begin{Answer}
+The `\( + \)' operation is not commutative; producing two members of the
+      set witnessing this assertion is easy.
+
+\end{Answer}

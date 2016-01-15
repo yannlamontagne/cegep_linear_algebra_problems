@@ -1,7 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{Vector space}
+\index{vector space}
+\index{polynomial space}
+\index{matrix space}
+\index{zero vector}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -13,17 +16,17 @@
 name={},
 title={}, 
 difficulty=0,
-origin={by Jim Hefferon \cite{JH}}]
-Show that each of these is not a vector space.
+origin={\cite{JH}}]
+Show that the following are not vector spaces.
 
-\Question Under the operations inherited from \( \mathbb{R}^3 \), this set
+\Question Under the operations inherited from \( \Re^3 \), this set
         \begin{equation*}
-          \left\{ (x, y, z)\in\mathbb{R}^3\;|\; x+y+z=1\right\}
+          \set{\rowvec{x, &y, &z}\in\Re^3\suchthat x+y+z=1}
         \end{equation*}
 
 \Question Under the operations inherited from \( \Re^3 \), this set
         \begin{equation*}
-          \set{\colvec{x \\ y \\ z}\in\Re^3\suchthat x^2+y^2+z^2=1}
+          \set{\rowvec{x, &y, &z}\in\Re^3\suchthat x^2+y^2+z^2=1}
         \end{equation*}
 
 \Question Under the usual matrix operations,
@@ -42,8 +45,8 @@ Show that each of these is not a vector space.
 
 \Question Under the inherited operations,
         \begin{equation*}
-          \set{\colvec{x \\ y}\in\Re^2\suchthat
-               \text{\( x+3y=4 \) and \( 2x-y=3 \) and \( 6x+4y=10 \)} }
+          \set{\rowvec{x, &y}\in\Re^2\suchthat
+               \text{\( x+3y=4 \), \( 2x-y=3 \) and \( 6x+4y=10 \)} }
         \end{equation*}
 
 
@@ -51,24 +54,24 @@ Show that each of these is not a vector space.
 
 \begin{Answer}
 
-In each item the set is called \( Q \).
-For some items, there are other correct ways to show that $Q$ is not
+For each part the set is called \( Q \).
+For some parts, there are more than one correct way to show that $Q$ is not
 a vector space.
 
 \Question It is not closed under addition.
 \begin{equation*}
-\colvec[r]{1 \\ 0 \\ 0},
-\colvec[r]{0 \\ 1 \\ 0}\in Q
+\rowvec{1, &0, &0},
+\rowvec{0, &1, &0}\in Q
 \qquad
-\colvec[r]{1 \\ 1 \\ 0}\not\in Q
+\rowvec{1, &1, &0}\not\in Q
 \end{equation*}
 
 \Question It is not closed under addition.
 \begin{equation*}
-\colvec[r]{1 \\ 0 \\ 0},
-\colvec[r]{0 \\ 1 \\ 0}\in Q
+\rowvec{1, &0, &0},
+\rowvec{0, &1, &0}\in Q
 \qquad
-\colvec[r]{1 \\ 1 \\ 0}\not\in Q
+\rowvec{1, &1, &0}\not\in Q
 \end{equation*}
   
 \Question It is not closed under addition.

@@ -1,0 +1,67 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+\index{function space}
+\index{matrix space}
+\index{diagonal matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+For each, decide if it is a vector space;
+the intended operations are the natural ones.
+
+\Question The set of \definend{diagonal} \( \nbyn{2} \) matrices
+        \begin{equation*}
+          \set{\begin{mat}
+            a  &0  \\
+            0  &b
+          \end{mat}\suchthat a,b\in\Re}
+        \end{equation*}
+
+\Question The set of \( \nbyn{2} \) matrices
+        \begin{equation*}
+          \set{\begin{mat}
+            x    &x+y  \\
+            x+y  &y
+          \end{mat}\suchthat x,y\in\Re}
+        \end{equation*}
+
+\Question \(\set{\rowvec{x,& y,& z,& w}\in\Re^4
+               \suchthat x+y+w=1}
+\)
+
+\Question The set of functions
+\( \set{\map{f}{\Re}{\Re}\suchthat df/dx+2f=0} \)
+
+\Question The set of functions
+\( \set{\map{f}{\Re}{\Re}\suchthat df/dx+2f=1} \)
+
+\end{Exercise}
+
+\begin{Answer}
+For each ``yes'' answer, you must give a check of all the
+conditions given in the definition of a vector space.
+For each ``no'' answer, give a specific example of the failure
+of one of the conditions.
+
+\Question Yes.
+\Question Yes.
+\Question No, this set is not closed under the natural addition
+          operation.
+          The vector of all $1/4$'s is an element of this set
+          but when added to itself the result, the
+          vector of all $1/2$'s, is not an element of the set.
+\Question Yes.
+\Question No, \( f(x)=e^{-2x}+(1/2) \) is in the set but
+           \( 2\cdot f \) is not (that is, closure under scalar multiplication fails).
+\end{Answer}

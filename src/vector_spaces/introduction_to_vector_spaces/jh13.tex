@@ -1,0 +1,39 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+
+Is \( \set{\rowvec{x,&y}\suchthat x,y\in\Re} \) a vector space under
+these operations?
+
+\Question \( \rowvec{x_1,&y_1}+\rowvec{x_2,&y_2}=\rowvec{x_1+x_2,&y_1+y_2} \)
+and \( r\cdot (x,y)=(rx,y) \)
+
+\Question \( \rowvec{x_1,&y_1}+\rowvec{x_2,&y_2}=\rowvec{x_1+x_2,&y_1+y_2} \)
+and \( r\cdot \rowvec{x,&y}=\rowvec{rx,&0} \)
+
+\end{Exercise}
+
+\begin{Answer}
+\Question No since \( 1\cdot\rowvec{0,&1}+1\cdot\rowvec{0,&1}\neq (1+1)\cdot\rowvec{0,&1} \).
+
+\Question No since the same calculation as the prior part shows
+a condition in the definition of a vector space that is
+violated.
+Another example of a violation of the conditions for a
+vector space is that \( 1\cdot \rowvec{0,&1} \neq \rowvec{0,&1} \).
+
+
+\end{Answer}
