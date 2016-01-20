@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  19 JAN 2016 09:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  19 JAN 2016 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,7 +844,7 @@ Underfull \hbox (badness 5388) in paragraph at lines 1--1
 
 (./vector_geometry/introduction_to_vectors_and_lines/ph.tex))
 (./vector_geometry/dot_product_and_projections/index.tex
-(./vector_geometry/dot_product_and_projections/ph.tex))
+(./vector_geometry/dot_product_and_projections/yl1.tex))
 (./vector_geometry/cross_product_and_planes/index.tex
 (./vector_geometry/cross_product_and_planes/ph.tex))
 (./vector_geometry/areas_volumes_and_distances/index.tex
@@ -927,11 +927,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -943,49 +940,49 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.9.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1022,22 +1019,22 @@ l.1 \onecolumn
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
 
 (./cegep_linear_algebra_problems.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
 Package rerunfilecheck Info: File `cegep_linear_algebra_problems.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: 3C93809AE7D105D754C22B9F289B59B0;2038.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 15673 strings out of 493054
- 277810 string characters out of 6140585
- 419534 words of memory out of 5000000
- 18700 multiletter control sequences out of 15000+600000
+ 15676 strings out of 493054
+ 277833 string characters out of 6140585
+ 418898 words of memory out of 5000000
+ 18702 multiletter control sequences out of 15000+600000
  12807 words of font info for 51 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  45i,11n,44p,10381b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1053,10 +1050,10 @@ s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (22 pages, 194941 bytes).
+Output written on cegep_linear_algebra_problems.pdf (22 pages, 198338 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 441 compressed objects within 5 object streams
+ 485 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
  146 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
