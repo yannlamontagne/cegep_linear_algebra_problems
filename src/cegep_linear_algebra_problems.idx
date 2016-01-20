@@ -3,14 +3,13 @@
 \indexentry{Gaussian Elimination|hyperpage}{1}
 \indexentry{ph|hyperpage}{1}
 \indexentry{place holder|hyperpage}{1}
-\indexentry{ph|hyperpage}{3}
-\indexentry{place holder|hyperpage}{3}
-\indexentry{ph|hyperpage}{3}
-\indexentry{place holder|hyperpage}{3}
-\indexentry{ph|hyperpage}{3}
-\indexentry{place holder|hyperpage}{3}
-\indexentry{ph|hyperpage}{3}
-\indexentry{place holder|hyperpage}{3}
+\indexentry{scalar multiplication|hyperpage}{3}
+\indexentry{matrix multiplication|hyperpage}{3}
+\indexentry{matrix associativity|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
+\indexentry{elementary matrix|hyperpage}{3}
+\indexentry{linear system|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
 \indexentry{ph|hyperpage}{5}
 \indexentry{place holder|hyperpage}{5}
 \indexentry{ph|hyperpage}{5}
@@ -64,8 +63,9 @@
 \indexentry{vector space|hyperpage}{10}
 \indexentry{additive inverse|hyperpage}{10}
 \indexentry{vector space|hyperpage}{10}
-\indexentry{ph|hyperpage}{10}
-\indexentry{place holder|hyperpage}{10}
+\indexentry{trivial subspace|hyperpage}{10}
+\indexentry{subspace|hyperpage}{10}
+\indexentry{line, plane|hyperpage}{10}
 \indexentry{ph|hyperpage}{10}
 \indexentry{place holder|hyperpage}{10}
 \indexentry{ph|hyperpage}{10}

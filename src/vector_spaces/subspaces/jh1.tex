@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{trivial subspace}
+\index{subspace}
+\index{line, plane}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Prove that every point, line, or plane thru the origin in 
+\( \Re^3 \) is a subspace of \( \Re^3 \) under the inherited operations.
+\Question What if it doesn't contain the origin?
+\end{Exercise}
+
+\begin{Answer}
+\Question Every such set has the form
+        \( \set{r\cdot\vec{v}+s\cdot\vec{w}\suchthat r,s\in\Re} \)
+        where either or both of \( \vec{v},\vec{w} \) may be \( \zero \).
+        With the inherited operations, closure of addition
+        \( (r_1\vec{v}+s_1\vec{w})+(r_2\vec{v}+s_2\vec{w})
+           =(r_1+r_2)\vec{v}+(s_1+s_2)\vec{w} \)
+        and scalar multiplication
+        \( c(r\vec{v}+s\vec{w})=(cr)\vec{v}+(cs)\vec{w} \) is clear.
+\Question No such set can be a vector space under the inherited
+        operations because it does not have a zero element.
+\end{Answer}

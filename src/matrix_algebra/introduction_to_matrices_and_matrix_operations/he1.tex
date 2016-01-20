@@ -1,0 +1,129 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{scalar multiplication}
+\index{matrix multiplication}
+\index{matrix associativity}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{HE}}]
+Let
+\[
+A = 
+\begin{mat} 
+1 & -2 & 3 \\ 
+1 & -1 & 0 
+\end{mat},\;\;
+B = 
+\begin{mat} 
+3 & 4  \\ 
+5 & -1 \\ 
+1 & -1 
+\end{mat},\;\;
+C = 
+\begin{mat} 
+4 & -1 & 2 \\ 
+-1 & 5 & 1 
+\end{mat},
+\]
+\[
+D = 
+\begin{mat} 
+-1 & 0 & 1 \\ 
+0 & 2 & 1 
+\end{mat},\;\; 
+E = 
+\begin{mat} 
+3 & 4  \\ 
+-2 & 3 \\ 
+0 & 1 
+\end{mat},
+\]
+\[
+F = 
+\begin{mat} 
+2 \\ 
+-3 
+\end{mat},\;\;
+G = 
+\begin{mat} 
+2 & -1 
+\end{mat}.
+\]
+
+Compute each of the following and simplify, whenever possible. If a computation is not possible, state why.
+\Question $3C - 4D$ 
+\Question $A - (D + 2C)$ 
+\Question $A - E$
+\Question $AE$
+\Question $3BC - 4BD$
+\Question $CB + D$
+\Question $GC$
+\Question $FG$
+\Question Illustrate the associativity of matrix multiplication by multiplying $(AB)C$ and $A(BC)$ where $A$, $B$, and $C$ are matrices above.
+
+\end{Exercise}
+
+\begin{Answer}
+\Question
+$
+\begin{mat}
+16 & -3 & 2\\
+-3 & 7 & -1
+\end{mat}
+$
+
+\Question 
+$
+\begin{mat}
+-2 & 0 & -2\\
+3 & -13 & -3
+\end{mat}
+$
+
+\Question Not possible, since dimension of $A$ and $E$ are not the same.
+
+\Question
+$
+\begin{mat}
+7 & 1\\
+5 & 1
+\end{mat}
+$
+
+\Question 
+$
+\begin{mat}
+36 & 19 & 2\\
+83 & -22 & 11\\
+19 & -10 & 3
+\end{mat}
+$
+
+\Question Not possible, since the dimension of $CD$ is $\nbym{2}{2}$ and 
+is not equal to the dimension of $D$.
+
+\Question
+$
+\begin{mat}
+9 & -7 & 3
+\end{mat}
+$
+
+\Question
+$
+\begin{mat}
+4 & -2\\
+-6 & 3
+\end{mat}
+$
+\end{Answer}
