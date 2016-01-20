@@ -1,14 +1,14 @@
 \begin{theindex}
 
-  \item additive inverse, \hyperpage{3, 4}
+  \item additive inverse, \hyperpage{9, 10}
 
   \indexspace
 
-  \item diagonal matrix, \hyperpage{4}
+  \item diagonal matrix, \hyperpage{10}
 
   \indexspace
 
-  \item function space, \hyperpage{3, 4}
+  \item function space, \hyperpage{9, 10}
 
   \indexspace
 
@@ -16,23 +16,27 @@
 
   \indexspace
 
-  \item matrix space, \hyperpage{3, 4}
+  \item matrix space, \hyperpage{9, 10}
 
   \indexspace
 
-  \item polynomial space, \hyperpage{3}
-  \item positive real numbers, \hyperpage{4}
+  \item ph, \hyperpage{1}, \hyperpage{3}, \hyperpage{5}, \hyperpage{7}, 
+		\hyperpage{10, 11}
+  \item place holder, \hyperpage{1}, \hyperpage{3}, \hyperpage{5}, 
+		\hyperpage{7}, \hyperpage{10, 11}
+  \item polynomial space, \hyperpage{9}
+  \item positive real numbers, \hyperpage{10}
 
   \indexspace
 
-  \item rational numbers, \hyperpage{3}
+  \item rational numbers, \hyperpage{9}
 
   \indexspace
 
-  \item vector space, \hyperpage{3, 4}
+  \item vector space, \hyperpage{9, 10}
 
   \indexspace
 
-  \item zero vector, \hyperpage{3, 4}
+  \item zero vector, \hyperpage{9, 10}
 
 \end{theindex}

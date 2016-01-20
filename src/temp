@@ -34,4 +34,706 @@ For Subspace:
       a multiple of a differentiable
       function is differentiable and that \( (r\cdot f)^\prime=r\,f^\prime \). 
     \end{answer}
-  
+
+By Yann:
+
+S06 (Fall 2015)
+
+\begin{enumerate}
+\item[a.] \textit{(6 marks)}
+Solve the following system by Gauss-Jordan elimination:
+\[
+\begin{array}{ccccccccccccccc}
+3x_1 & + & 3x_2 & + & 7x_3 & - & 3x_4 & + & x_5  &  = & 3\\
+2x_1 & + & 3x_2 & + & 3x_3 & + & x_4  & - & 2x_5 &  = & 1\\
+4x_1 &  &  & +  & 17x_3  & - & 2x_4  & - & x_5  &  = & 1\\
+\end{array}
+\]
+\item[b.] \textit{(1 mark)}
+Find two particular solution to the above system.
+\item[c.] \textit{(1 mark)}
+Find a solution to the above system where $x_3=1$.
+\end{enumerate}
+
+Consider the matrices:
+\[
+A=
+\begin{bmatrix}
+2 & 0 & 1\\
+0 & -1 & 0\\
+3 & 0 & 2
+\end{bmatrix},\;
+B=
+\begin{bmatrix}
+2 & 0 & 1\\
+-3 & -4 & 0
+\end{bmatrix}\;
+C=
+\begin{bmatrix}
+2 & 1\\
+0 & 2\\
+3 & -1
+\end{bmatrix}\;
+D=
+\begin{bmatrix}
+2 & 3\\
+1 & 2
+\end{bmatrix}\;
+F=
+\begin{bmatrix}
+5 & -1\\
+0 & -2\\
+1 & 0
+\end{bmatrix}\;
+\]
+
+\begin{enumerate}
+%changed
+\item[a.] \textit{(2 marks)} Compute the following, if possible.
+\[
+\text{tr}(BAF)
+\]
+
+%changed
+\item[b.] \textit{(2 marks)} Compute the following, if possible.
+\[
+CAB
+\]
+
+%changed
+\item[c.] \textit{(2 marks)} Compute the following, if possible.
+\[
+(FD^{-1})^T
+\]
+
+%changed
+\item[d.] \textit{(5 marks)} Find $E$, if possible.
+\[
+(I-E^T)^{-1} = (\text{tr}(D)D^2)^T
+\]
+\end{enumerate}
+
+Consider
+\[
+A=
+\begin{bmatrix}
+2 & 2 & 0\\
+4 & 3 & 0\\
+3 & 2 & \frac12
+\end{bmatrix}.
+\]
+\begin{enumerate}
+\item[a.] \textit{(5 marks)} Find $A^{-1}$.
+\item[b.] \textit{(3 marks)} Solve for $X$ where $AX=B$ and 
+\[
+B=
+\begin{bmatrix}
+1  & 0 & \frac12 & 0 & 0\\
+0  & 1 & 0 & 2 & -1\\
+-4 & 2 & \frac12 & 0 & 0
+\end{bmatrix}
+\]
+\end{enumerate}
+
+Express
+\[
+A = 
+\begin{bmatrix}
+1 & 0 & 0\\
+1 & 0 & 1\\
+0 & 2 & 1
+\end{bmatrix}
+\]
+as a product of 4 elementary matrices.
+
+The augmented matrix of a linear system is given by
+\[
+\begin{bmatrix}
+1 & 2 & 3 & 4 & \pi\\
+0 & \sqrt{2} & 4 & 5 & 6\\
+0 & 0 & 0 & a^2-1 & b^2-a^2\\
+\end{bmatrix}
+\]
+If possible for what values of $a$ and $b$ there is
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} no solution? Justify.
+\item[b.] \textit{(2 marks)} exactly one solution? Justify.
+\item[c.] \textit{(2 marks)} infinitely many solutions? Justify.
+\end{enumerate}
+
+Given
+\[
+A=
+\begin{bmatrix}
+1 & 2 & 3\\
+2 & 3 & 4\\
+3 & 5 & 6
+\end{bmatrix},\;
+B=
+\begin{bmatrix}
+2 & 1  & -4\\
+-1 & 2 & 2\\
+-3 & 4 & 6
+\end{bmatrix}
+\]
+\begin{enumerate}
+\item[a.] \textit{(4 marks)} Find the $\text{adj}(A)$.
+\item[b.] \textit{(4 marks)} Evaluate $\text{det}(B^{101}\text{adj}(A)+BA^{2015})$.
+\item[c.] \textit{(2 marks)} Justify that the components of the solution of the system $Ax=b$ where
+\[
+b=
+\begin{bmatrix}
+1\\
+2\\
+3
+\end{bmatrix}
+\]
+are integers.
+
+Given
+\[
+A=
+\begin{bmatrix}
+1 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
+0 & 2 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
+0 & 0 & 1 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
+0 & 0 & 0 & 2 & 1 & 1 & 4 & 9 & 2 & 7\\
+0 & 0 & 0 & 0 & 1 & 1 & 1 & 4 & 9 & 2\\
+0 & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 4 & 9\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 4\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2\\
+\end{bmatrix},\;\;
+B=
+\begin{bmatrix}
+1 & 1 & 2 & 6\\
+2 & 3 & 3 & -3\\
+-3 & 3 & 1 & 9\\
+0 & 1 & -1 & -12
+\end{bmatrix}
+\]
+\begin{enumerate}
+\item[a.] \textit{(4 marks)} Evaluate $\operatorname{det}(B)$.
+\item[b.] \textit{(4 marks)} If $C$ is a square matrix and $\operatorname{det}(\frac{\text{det}(B)}{2}C^TA^3)=\pi$ then find $\text{det}(C)$, if possible.
+\end{enumerate}
+
+A non-zero square matrix $A$ is said to be \emph{nilpotent of degree 2} if $A^2=0$.\\
+Prove or disprove: There exists a square $2\times 2$ matrix that is symmetric and nilpotent of degree 2.
+
+Given the following system
+\begin{eqnarray*}
+x+z=1\\
+y+z=1
+\end{eqnarray*}
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} Express a general solution of this system as a particular solution of the system plus a general solution of the associated homogeneous system.
+\item[b.] \textit{(2 marks)} Give a geometric interpretation of the result of part a.  Discuss the general solution geometrically with respect to the associated homogeneous system.
+\end{enumerate}
+
+\textbf{Question 6.}
+Let $V=\{A \;|\; A \in\mathcal{M}_{2\times 2} \text{ and } \text{det}(A)\neq 0 \}$
+with the following operations:
+\[
+A+B=AB \text{ and } kA=kA
+\]
+\textit{That is, vector addition is matrix multiplication and scalar multiplication is the regular scalar multiplication.}
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} Does $V$ satisfy closure under vector addition? Justify.
+\item[b.] \textit{(2 marks)} Does $V$ contain a zero vector? If so find it.  Justify.
+\item[c.] \textit{(2 marks)} Does $V$ contains an additive inverse for all of its vectors? Justify.
+\item[d.] \textit{(2 marks)} Does $V$ satisfy closure under scalar multiplication? Justify.
+\end{enumerate}
+
+\textbf{Question 7.} \textit{(5 marks)}
+Given the following two subspace of $\mathbb{R}^3$: $W_1=\{x\;|\; x\in\mathbb{R}^3 \text{ and } A_1x=0\}$ and $W_2=\{x\;|\; x\in\mathbb{R}^3 \text{ and } A_2x=0\}$
+where 
+\[
+A_1 = 
+\begin{bmatrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+-3 & -3 & -3
+\end{bmatrix},\;
+A_2 = 
+\begin{bmatrix}
+5 & 7 & 9\\
+-5 & -7 & -9\\
+10 & 14 & 18
+\end{bmatrix}
+\]
+Determine whether the two subspaces are equal or whether one of the subspaces is contained in the other.  \textit{(Hint: For each subspace determine a set of vectors that spans it.)}
+
+Determine whether the set $\{ 1, e^x, \arctan x\}$ is linearly independent on $\mathbb{R}^+$
+
+S07 (Fall 2015)
+
+\textbf{Question 1.}
+\begin{enumerate}
+\item[a.] \textit{(6 marks)}
+Solve the following system by Gauss-Jordan elimination:
+\[
+\begin{array}{ccccccccccccccc}
+3x_1 & + & 3x_2 & + & 7x_3 & - & 3x_4 &  = & 0\\
+2x_1 & + & 3x_2 & + & 3x_3 & + & x_4  &  = & 0\\
+4x_1 &  &  & +  & 17x_3  & - & 2x_4   &  = & 0\\
+9x_1 & + & 6x_2 & +  & 27x_3  & - & 4x_4   &  = & 0\\
+\end{array}
+\]
+\item[b.] \textit{(1 mark)}
+Find two particular nontrivial solution to the above system.
+\item[c.] \textit{(1 mark)}
+Find a solution to the above system where $x_1=1$.
+\end{enumerate}
+
+Consider the matrices:
+\[
+A=
+\begin{bmatrix}
+0 & 1 & 0\\
+-2 & 0 & 3\\
+0 & 3 & 0
+\end{bmatrix},\;
+B=
+\begin{bmatrix}
+2 & 1 & 0\\
+-3 & 4 & 0
+\end{bmatrix}\;
+C=
+\begin{bmatrix}
+2 & -1\\
+1 & 2\\
+0 & 1
+\end{bmatrix}\;
+D=
+\begin{bmatrix}
+2 & -2\\
+1 & -2
+\end{bmatrix}\;
+F=
+\begin{bmatrix}
+2 & -1\\
+3 & -2\\
+1 & 0
+\end{bmatrix}\;
+\]
+
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} Compute the following, if possible.
+\[
+BIF
+\]
+
+\item[b.] \textit{(2 marks)} Compute the following, if possible.
+\[
+ACAB
+\]
+
+\item[c.] \textit{(2 marks)} Compute the following, if possible.
+\[
+F(D^{-1})^TB
+\]
+
+%changed
+\item[d.] \textit{(5 marks)} Determine $E$, if possible.
+\[
+DED^T = \text{tr}(BIF) BF
+\]
+\end{enumerate}
+
+Prove: If $AB$ and $BA$ are both invertible then $A$ and $B$ are both invertible.
+
+A square matrix $A$ is called \emph{idempotent} if $A^2=A$.
+Prove: If $A$ is idempotent then $A+AB-ABA$ is idempotent for any square matrix $B$ with the same dimension as $A$.
+
+Let 
+\[
+A =
+\begin{bmatrix}
+1 & -1 & 3 & 2\\
+0 & 1 & 4 & 1\\
+1 & 0 & 8 & 6
+\end{bmatrix},\;
+B = 
+\begin{bmatrix}
+1 & -1 & 4 & 5\\
+-2 & 1 & -11 & -8\\
+-1 & 2 & 2 & 2
+\end{bmatrix}
+\]
+\begin{enumerate}
+\item[a.] \textit{(5 marks)} Show that $A$ and $B$ have the same reduced row echelon matrix.
+\item[b.] \textit{(3 marks)} Justify using a. that $A$ and $B$ are row equivalent. 
+\end{enumerate}
+
+The augmented matrix of a linear system is given by
+\[
+\begin{bmatrix}
+1 & 3 & 1 & -4 & b_1\\
+3 & -2 & 4 & 5 & b_2\\
+4 & 1 & 5 &  1 & b_3\\
+7 & -1 & 9 & 6 & b_4
+\end{bmatrix}
+\]
+Determine the restrictions on the $b_i$'s for the system to be consistent.
+\vspace{6in}
+
+Given
+\[
+B=
+\begin{bmatrix}
+1 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
+0 & 2 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
+0 & 0 & 3 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
+0 & 0 & 0 & 4 & 1 & 1 & 4 & 9 & 2 & 7\\
+0 & 0 & 0 & 0 & 5 & 1 & 1 & 4 & 9 & 2\\
+0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 4 & 9\\
+0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 4\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5\\
+\end{bmatrix}
+\]
+\begin{enumerate}
+\item[b.] \textit{(4 marks)} If $C$ is a $10\times 10$ invertible matrix then evaluate $\text{det}(C^{101}\text{adj}(B)(C^{-1})^{101})$.
+\item[c.] \textit{(2 marks)} Solve for the component $x_{10}$ of the solution of the system $Bx=b$ where
+\[
+b=
+\begin{bmatrix}
+1\\
+2\\
+3\\
+4\\
+5\\
+6\\
+7\\
+8\\
+9\\
+10
+\end{bmatrix}
+\].
+\end{enumerate}
+
+Given
+\[
+A=
+\begin{bmatrix}
+4 & 3 & -2 & 8 \\
+2 & 3 & 1 & -4 \\
+-1 & 2 & -1 & 4 \\
+1 & 2 & 2 & -8 \\
+\end{bmatrix},\;\;
+B=
+\begin{bmatrix}
+1 & 0 & 2 & 6\\
+2 & 3 & 0 & 1\\
+-3 & 1 & 1 & 0\\
+1 & 1 & -1 & 0
+\end{bmatrix}
+\]
+\begin{enumerate}
+\item[a.] \textit{(5 marks)} Evaluate $\operatorname{det}(A)$ and $\operatorname{det}(B)$.
+\item[b.] \textit{(2 marks)} Prove or disprove: There exists $C$ a square $4\times 4$ invertible matrix such that $ABC=I$.
+\end{enumerate}
+
+Let
+\[
+A
+=
+\begin{bmatrix}
+a & d & g\\
+b & e & h\\
+c & f & k
+\end{bmatrix}
+\]
+and
+\[
+B
+=
+\begin{bmatrix}
+3d & 3e & 3f\\
+a+2d & b+2e & c+2f\\
+4g & 4h & 4k
+\end{bmatrix}
+\]
+If $\text{det}(B)=5$ then determine $\text{det}(A)$.
+
+Let $\vec{u}=(1, \lambda, -\lambda)$, $\vec{v}=(-2\lambda, -2, 2\lambda)$ and $\vec{w}=(\lambda-2, -5\lambda-2, -2)$.
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} For what value(s) of $\lambda$ will $\{\vec{u}, \vec{v}\}$ be linearly dependent.
+\item[b.] \textit{(3 marks)} For what value(s) of $\lambda$ will $\{\vec{u}, \vec{v}, \vec{w}\}$ be linearly independent.
+\end{enumerate}
+
+$W=\{p(x)=a_0+a_1x+a_2x^2+a_3x^3\; |\; p(1)=0 \text{ and } p(-1)=0\}$ a subspace of $P_3$.
+Find a basis $B$ for $W$.
+Find the coordinate vector of $p(x)=-1-x+x^2+x^3$ relative to the basis $B$.
+
+Winter 2015
+
+Consider
+\[
+A=
+\begin{bmatrix}
+1 & 2 & 0\\
+2 & 0 & 7\\
+3 & 2 & 0
+\end{bmatrix}.
+\]
+\begin{enumerate}
+\item[a.] \textit{(5 marks)} Find $A^{-1}$.
+\item[b.] \textit{(2 marks)} Determine $\operatorname{tr}(A^{-1})$ and $\operatorname{tr}(A^{-1}A)$.
+
+Let $A$ be a square matrix.  If $B$ is a square matrix satisfying $AB=I$, then $B=A^{-1}$.
+
+Let $X=A^TA+B$ be a square matrix.  Prove: If $B^2=0$, $AB=BA^T=0$ then $X^2$ is symmetric.
+
+Show that
+\[
+A = 
+\begin{bmatrix}
+5 & 7 & 9\\
+1 & 2 & 3\\
+4 & 5 & 6
+\end{bmatrix}
+\]
+and
+\[
+B =
+\begin{bmatrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+8 & 10 & 12
+\end{bmatrix}
+\]
+are row-equivalent by finding 3 elementary matrices $E_i$ such that $E_3E_2E_1A=B$.
+
+The augmented matrix of a linear system is given by
+\[
+\begin{bmatrix}
+1 & 2 & 3 & 4 & \pi\\
+0 & \sqrt{2} & 4 & 5 & 6\\
+0 & 0 & 0 & a & b\\
+\end{bmatrix}
+\]
+If possible for what values of $a$ and $b$ there is
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} no solution? Justify.
+\item[b.] \textit{(2 marks)} exactly one solution? Justify.
+\item[c.] \textit{(2 marks)} infinitely many solutions? Justify.
+
+Given
+\[
+A=
+\begin{bmatrix}
+10 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
+0 & 9 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
+0 & 0 & 8 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
+0 & 0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7\\
+0 & 0 & 0 & 0 & 6 & 1 & 1 & 4 & 9 & 2\\
+0 & 0 & 0 & 0 & 0 & 5 & 1 & 1 & 4 & 9\\
+0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 1 & 4\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+\end{bmatrix},\;\;
+B=
+\begin{bmatrix}
+1 & 1 & 2 & 6\\
+2 & 3 & 3 & -3\\
+-3 & 3 & 1 & 9\\
+0 & 1 & -1 & -12
+\end{bmatrix},\;\;
+C=
+\begin{bmatrix}
+-1 & 3 & 2 & 3\\
+2 & 0 & 3 & 0\\
+-4 & 0 & 1 & 2\\
+1 & 5 & 0 & -3
+\end{bmatrix}
+\]
+\begin{enumerate}
+\item[a.] \textit{(4 marks)} Evaluate $\operatorname{det}(2\operatorname{adj}(A)+3A^{-1})$, if possible.
+\item[b.] \textit{(4 marks)} If $D$ is a $4\times 4$ matrix and $B^{-1}D^2=I$ then determine $\operatorname{det}(D)$, if possible.
+\item[c.] \textit{(4 marks)} Compute $\operatorname{det}(C)$.
+
+{\sc CAUCHY-SCHWARTZ INEQUALITY:} If $\vec{u}, \vec{v}\in \mathbb{R}^n$ then $|\vec{u}\cdot\vec{v}|\leq ||\vec{u}||||\vec{v}||$.
+Prove the {\sc CAUCHY-SCHWARTZ INEQUALITY} without assuming that the law of cosine holds in $\mathbb{R}^n$.  \textit{(hint: look at the squared norm of $||\vec{u}||\vec{v}-||\vec{v}||\vec{u}$ and $||\vec{u}||\vec{v}+||\vec{v}||\vec{u})$}
+
+Determine whether the following is a vector space:
+\[
+\mathcal{Y}=\left\{(1,y)\;|\;y\in\mathbb{R}\right\}
+\]
+with the following addition and scalar multiplication.
+\[
+(1, y_1)+(1, y_2) = (1, y_1^2+y_2^2)
+\]
+and
+\[
+k(1,y)=(1,ky)
+\]
+If it is not a vector space, clearly state and show which axiom fails.
+
+Let $\mathcal{W}=\{p(x)=a_0+a_2x^2+a_3x^3 |\; p(-1)=0 \}$ be a vector subspace of $P_3$.
+\begin{enumerate}
+\item[a.] \textit{(4 marks)} Find a basis $S$ for $\mathcal{W}$.
+\item[b.] \textit{(2 marks)} Determine the dimension of $\mathcal{W}$, Justify.
+\item[c.] \textit{(2 marks)} Find the coordinate vector of $p(x)=-2+2x^2$ relative to the basis $S$.
+\end{enumerate}
+
+Find all values of $z$ such that the triangle with vertices $A(-1, 2, -3)$, $B(4,-5,6)$ and $C(1, -2, z)$ has area equal to $31$.
+
+In a vector space, the span of any subset is a subspace. In addition, the span of a subset of a vector space is the smallest subspace containing all vectors of the subset.
+
+Fall 2014 S04
+
+Consider
+\[
+A=
+\begin{bmatrix}
+1 & 2 & 3\\
+0 & 1 & 2\\
+0 & 0 & 3
+\end{bmatrix}.
+\]
+\begin{enumerate}
+\item[a.] \textit{(4 marks)} Find $A^{-1}$.
+\item[b.] \textit{(2 marks)} Write $A^{-1}$ as a product of elementary matrices.
+\item[c.] \textit{(2 marks)} Using a. solve $Ax=b$ where $x=[x_1, x_2, x_3]^t$ and $b=[1, -2, 1]^t$.
+\end{enumerate}
+
+Given
+\[
+A=
+\begin{bmatrix}
+9 & 9 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
+9 & 9 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
+0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
+0 & 0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7\\
+0 & 0 & 0 & 0 & 2 & 1 & 1 & 4 & 9 & 2\\
+0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 4 & 9\\
+0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 1 & 4\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2\\
+\end{bmatrix},\;\;
+B=
+\begin{bmatrix}
+-2 & 3 & 2 & 6\\
+0 & 2 & 3 & -3\\
+0 & 0 & 1 & 9\\
+0 & 0 & 0 & -12
+\end{bmatrix},\;\;
+C=
+\begin{bmatrix}
+a & b\\
+c & d 
+\end{bmatrix},\;\;
+D=
+\begin{bmatrix}
+b & d \\
+3a-2b & 3c-2d 
+\end{bmatrix}
+\]
+
+\begin{enumerate}
+\item[a.] \textit{(4 marks)} If $F$ is a $10\times 10$ matrix show that $AF$ is not invertible.
+\item[b.] \textit{(4 marks)} If $E$ is an invertible matrix then evaluate $\operatorname{det}(E^{-1})^4\operatorname{det}(\operatorname{det}(E)\operatorname{adj}(B))$, justify fully.
+\item[c.] \textit{(4 marks)} If $\operatorname{det}(D)=2$ then determine $\operatorname{det}(C)$.
+\end{enumerate}
+\newpage
+\textbf{Question 3.} If $A$ is an $n\times n$ matrix which entries are all divisible by 2.
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} Justify that the entries of $\operatorname{adj}(A)$ are all divisible by 2.
+\item[b.] \textit{(2 marks)} Prove using a. and $\det(A)=2$ that the entries of $A^{-1}$ are all integers.
+\end{enumerate} 
+
+Solve for $\lambda$.
+\[
+\left|
+\begin{array}{cc}
+\lambda & -1 \\
+3    & 1-\lambda
+\end{array}
+\right|
+=
+\left|
+\begin{array}{ccc}
+1 & 0       & -3\\
+2 & \lambda & -6\\
+1 & 3       & \lambda - 5
+\end{array}
+\right|
+\]
+
+Let $\mathcal{H}=\{A |\; \text{$A$ is a $2\times 2$ matrix and $A^T=-A$} \}$
+with the usual addition and scalar multiplication.
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} Give an example of a non-zero matrix in $\mathcal{H}$. Justify.
+\item[b.] \textit{(2 marks)} Does $\mathcal{H}$ satisfy closure under vector addition? Justify.
+\item[c.] \textit{(2 marks)} Does $\mathcal{H}$ contain the zero vector of $\mathcal{M}_{2\times 2}$ (the vector space of $2\times2$ matrices)? Justify.
+\item[d.] \textit{(2 marks)} Does $\mathcal{H}$ satisfy closure under scalar multiplication? Justify.
+\item[e.] \textit{(2 marks)} Is $\mathcal{H}$ a vector subspace of $\mathcal{M}_{2\times 2}$ (the vector space of $2\times2$ matrices)? Justify.
+
+S05 Fall2014
+
+Given the following augmented matrix in row-echelon form, 
+solve the system using back substitution.
+\[
+\begin{bmatrix}
+1 & 5 & -3 & 2 & 4 & 0\\
+0 & 0 & 1 & -2 & 3 & -1\\
+0 & 0 & 0 &  1 & 2 & 2
+\end{bmatrix}
+\]
+
+Let $A$ and $B$ be $n\times n$ matrices, $AB=-BA$, and $n$ is odd, show that either $A$ or $B$ has no inverse.
+
+Show that $||\vec{u}+\vec{v}||^2+||\vec{u}-\vec{v}||^2 = 2(||\vec{u}||^2+||\vec{v}||^2)$. \textit{Bonus (1 mark): what does that say about parallelograms?}
+
+Prove: If $B$ and $C$ are $n\times n$ matrices, $A=B^TC+C^TB$ is invertible then $A^{-1}$ is symmetric.
+
+Write the given matrix as a product of elementary matrices
+\[
+\begin{bmatrix}
+0 & 0 & 1\\
+1 & 3 & 0\\
+2 & 4 & 0
+\end{bmatrix}
+\]
+
+Given
+\[
+A(1,2),\;B(-1,1),\;C(3,1)  
+\]
+\begin{enumerate}
+\item[a.] \textit{(3 marks)} Find the area of the parallelogram generated by $\vec{AB}$ and $\vec{AC}$.
+\item[b.] \textit{(1 mark)} Find the area of the triangle with vertices $A$, $B$ and $C$.
+\item[c.] \textit{(2 marks)} Find the length of the altitude of the triangle $ABC$ from vertex $C$ to side $AB$.
+\item[d.] \textit{(1 mark)} Find the shortest distance from $C$ to the line that contains $A$ and $B$.
+\end{enumerate}
+
+Let $\mathcal{H}=\left\{A=\begin{bmatrix}
+a & b\\
+c & d
+\end{bmatrix}
+\Bigg|\; A\begin{bmatrix}
+1\\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+0\\
+0
+\end{bmatrix} \right\}$
+with the usual addition and scalar multiplication.
+\begin{enumerate}
+\item[a.] \textit{(2 marks)} Give an example of a non-zero matrix in $\mathcal{H}$? Justify.
+\item[b.] \textit{(2 marks)} Does $\mathcal{H}$ satisfy closure under vector addition? Justify.
+\item[c.] \textit{(2 marks)} Does $\mathcal{H}$ contain the zero vector of $\mathcal{M}_{2\times 2}$ (the vector space of $2\times2$ matrices)? Justify.
+\item[d.] \textit{(2 marks)} Does $\mathcal{H}$ satisfy closure under scalar multiplication? Justify.
+\item[e.] \textit{(2 marks)} Is $\mathcal{H}$ a vector subspace of $\mathcal{M}_{2\times 2}$ (the vector space of $2\times2$ matrices)? Justify.
+\end{enumerate}
+
+Prove or disprove: For all vector vectors $\vec{u}$, $\vec{v}$ and $\vec{w}$ in 3-space, the vectors $(\vec{u}\times\vec{v})\times\vec{w}$ and $\vec{u}\times(\vec{v}\times\vec{w})$ are the same.
+
+
