@@ -1,27 +1,3 @@
-For subspace:
-
-  \item 
-    \begin{exparts}
-      \partsitem Prove that every point, line, or plane thru the origin in 
-         \( \Re^3 \) is a vector space under the inherited operations.
-      \partsitem What if it doesn't contain the origin?
-    \end{exparts}
-    \begin{answer}
-     \begin{exparts}
-      \partsitem Every such set has the form
-        \( \set{r\cdot\vec{v}+s\cdot\vec{w}\suchthat r,s\in\Re} \)
-        where either or both of \( \vec{v},\vec{w} \) may be \( \zero \).
-        With the inherited operations, closure of addition
-        \( (r_1\vec{v}+s_1\vec{w})+(r_2\vec{v}+s_2\vec{w})
-           =(r_1+r_2)\vec{v}+(s_1+s_2)\vec{w} \)
-        and scalar multiplication
-        \( c(r\vec{v}+s\vec{w})=(cr)\vec{v}+(cs)\vec{w} \)
-        are easy.
-        The other conditions are also routine.
-      \partsitem No such set can be a vector space under the inherited
-        operations because it does not have a zero element.
-     \end{exparts}  
-    \end{answer}
 
 For Subspace:
     Is this a vector space under the natural operations: the real-valued
@@ -135,16 +111,6 @@ B=
 \]
 \end{enumerate}
 
-Express
-\[
-A = 
-\begin{bmatrix}
-1 & 0 & 0\\
-1 & 0 & 1\\
-0 & 2 & 1
-\end{bmatrix}
-\]
-as a product of 4 elementary matrices.
 
 The augmented matrix of a linear system is given by
 \[
@@ -244,25 +210,6 @@ A+B=AB \text{ and } kA=kA
 \item[c.] \textit{(2 marks)} Does $V$ contains an additive inverse for all of its vectors? Justify.
 \item[d.] \textit{(2 marks)} Does $V$ satisfy closure under scalar multiplication? Justify.
 \end{enumerate}
-
-\textbf{Question 7.} \textit{(5 marks)}
-Given the following two subspace of $\mathbb{R}^3$: $W_1=\{x\;|\; x\in\mathbb{R}^3 \text{ and } A_1x=0\}$ and $W_2=\{x\;|\; x\in\mathbb{R}^3 \text{ and } A_2x=0\}$
-where 
-\[
-A_1 = 
-\begin{bmatrix}
-1 & 2 & 3\\
-4 & 5 & 6\\
--3 & -3 & -3
-\end{bmatrix},\;
-A_2 = 
-\begin{bmatrix}
-5 & 7 & 9\\
--5 & -7 & -9\\
-10 & 14 & 18
-\end{bmatrix}
-\]
-Determine whether the two subspaces are equal or whether one of the subspaces is contained in the other.  \textit{(Hint: For each subspace determine a set of vectors that spans it.)}
 
 Determine whether the set $\{ 1, e^x, \arctan x\}$ is linearly independent on $\mathbb{R}^+$
 
@@ -436,33 +383,7 @@ B=
 \item[b.] \textit{(2 marks)} Prove or disprove: There exists $C$ a square $4\times 4$ invertible matrix such that $ABC=I$.
 \end{enumerate}
 
-Let
-\[
-A
-=
-\begin{bmatrix}
-a & d & g\\
-b & e & h\\
-c & f & k
-\end{bmatrix}
-\]
-and
-\[
-B
-=
-\begin{bmatrix}
-3d & 3e & 3f\\
-a+2d & b+2e & c+2f\\
-4g & 4h & 4k
-\end{bmatrix}
-\]
-If $\text{det}(B)=5$ then determine $\text{det}(A)$.
 
-Let $\vec{u}=(1, \lambda, -\lambda)$, $\vec{v}=(-2\lambda, -2, 2\lambda)$ and $\vec{w}=(\lambda-2, -5\lambda-2, -2)$.
-\begin{enumerate}
-\item[a.] \textit{(2 marks)} For what value(s) of $\lambda$ will $\{\vec{u}, \vec{v}\}$ be linearly dependent.
-\item[b.] \textit{(3 marks)} For what value(s) of $\lambda$ will $\{\vec{u}, \vec{v}, \vec{w}\}$ be linearly independent.
-\end{enumerate}
 
 $W=\{p(x)=a_0+a_1x+a_2x^2+a_3x^3\; |\; p(1)=0 \text{ and } p(-1)=0\}$ a subspace of $P_3$.
 Find a basis $B$ for $W$.
@@ -483,7 +404,6 @@ A=
 \item[a.] \textit{(5 marks)} Find $A^{-1}$.
 \item[b.] \textit{(2 marks)} Determine $\operatorname{tr}(A^{-1})$ and $\operatorname{tr}(A^{-1}A)$.
 
-Let $A$ be a square matrix.  If $B$ is a square matrix satisfying $AB=I$, then $B=A^{-1}$.
 
 Let $X=A^TA+B$ be a square matrix.  Prove: If $B^2=0$, $AB=BA^T=0$ then $X^2$ is symmetric.
 
@@ -556,9 +476,6 @@ C=
 \item[b.] \textit{(4 marks)} If $D$ is a $4\times 4$ matrix and $B^{-1}D^2=I$ then determine $\operatorname{det}(D)$, if possible.
 \item[c.] \textit{(4 marks)} Compute $\operatorname{det}(C)$.
 
-{\sc CAUCHY-SCHWARTZ INEQUALITY:} If $\vec{u}, \vec{v}\in \mathbb{R}^n$ then $|\vec{u}\cdot\vec{v}|\leq ||\vec{u}||||\vec{v}||$.
-Prove the {\sc CAUCHY-SCHWARTZ INEQUALITY} without assuming that the law of cosine holds in $\mathbb{R}^n$.  \textit{(hint: look at the squared norm of $||\vec{u}||\vec{v}-||\vec{v}||\vec{u}$ and $||\vec{u}||\vec{v}+||\vec{v}||\vec{u})$}
-
 Determine whether the following is a vector space:
 \[
 \mathcal{Y}=\left\{(1,y)\;|\;y\in\mathbb{R}\right\}
@@ -573,33 +490,11 @@ k(1,y)=(1,ky)
 \]
 If it is not a vector space, clearly state and show which axiom fails.
 
-Let $\mathcal{W}=\{p(x)=a_0+a_2x^2+a_3x^3 |\; p(-1)=0 \}$ be a vector subspace of $P_3$.
-\begin{enumerate}
-\item[a.] \textit{(4 marks)} Find a basis $S$ for $\mathcal{W}$.
-\item[b.] \textit{(2 marks)} Determine the dimension of $\mathcal{W}$, Justify.
-\item[c.] \textit{(2 marks)} Find the coordinate vector of $p(x)=-2+2x^2$ relative to the basis $S$.
-\end{enumerate}
 
 Find all values of $z$ such that the triangle with vertices $A(-1, 2, -3)$, $B(4,-5,6)$ and $C(1, -2, z)$ has area equal to $31$.
 
 In a vector space, the span of any subset is a subspace. In addition, the span of a subset of a vector space is the smallest subspace containing all vectors of the subset.
 
-Fall 2014 S04
-
-Consider
-\[
-A=
-\begin{bmatrix}
-1 & 2 & 3\\
-0 & 1 & 2\\
-0 & 0 & 3
-\end{bmatrix}.
-\]
-\begin{enumerate}
-\item[a.] \textit{(4 marks)} Find $A^{-1}$.
-\item[b.] \textit{(2 marks)} Write $A^{-1}$ as a product of elementary matrices.
-\item[c.] \textit{(2 marks)} Using a. solve $Ax=b$ where $x=[x_1, x_2, x_3]^t$ and $b=[1, -2, 1]^t$.
-\end{enumerate}
 
 Given
 \[
@@ -725,7 +620,7 @@ c & d
 0\\
 0
 \end{bmatrix} \right\}$
-with the usual addition and scalar multiplication.
+with the usual addition and scalar multiplicatio
 \begin{enumerate}
 \item[a.] \textit{(2 marks)} Give an example of a non-zero matrix in $\mathcal{H}$? Justify.
 \item[b.] \textit{(2 marks)} Does $\mathcal{H}$ satisfy closure under vector addition? Justify.
@@ -735,5 +630,109 @@ with the usual addition and scalar multiplication.
 \end{enumerate}
 
 Prove or disprove: For all vector vectors $\vec{u}$, $\vec{v}$ and $\vec{w}$ in 3-space, the vectors $(\vec{u}\times\vec{v})\times\vec{w}$ and $\vec{u}\times(\vec{v}\times\vec{w})$ are the same.
+
+
+
+matrix algebra:
+
+\it Let $A$ be an $n \times n$ matrix. Let $m \in \N$. As you would expect, we define $A^m$ to be the product of $A$ with itself $m$ times. Notice that this makes 
+	sense as matrix multiplication is associative. 
+	\be
+	\it Compute $A^4$ for $A = \begin{bmatrix} 1 & -2 \\ 1 & -1 \end{bmatrix}$. 
+	\it Provide a counter-example to the statement: For any $2 \times 2$ matrices $A$ and $B$, $(AB)^2 = A^2 B^2$.
+	\ee
+
+\it Prove that for all $m \times n$ matrices $A$, $B$, and $C$, if $A + C = B + C$, then $A = B$.
+
+\it Let $\Theta$ be the $m \times n$ zero matrix. Prove that for any $m \times n$ matrix $A$, $-A = (-1)A$ and $0A = \Theta$.
+
+\it Let $\Theta$ be the $m \times n$ zero matrix. Prove that for any $r \in \R$ and $m \times n$ matrix $A$, if $rA = \Theta$, then $r = 0$ or $A = \Theta$.
+
+\it We have seen an example of two $2 \times 2$ matrices $A$ and $B$ for which $AB \not= BA$, showing us that matrix multiplication is not commutative.
+	However, it's more that just not commutative, it's soooooo not commutative. Doing the following problems will illustrate what we mean by this.
+	\be
+	\it Find two matrices $A$ and $B$ for which $AB$ and $BA$ are defined, but have different sizes.
+	\it Find two matrices $A$ and $B$ for which $AB$ is defined, but $BA$ is not.
+	\ee
+\it Let $\Theta$ be the $2 \times 2$ zero matrix and $I$ the $2 \times 2$ identity matrix. Provide a counter-example to each of the following statements:
+	\be
+	\it For any $2 \times 2$ matrices $A$ and $B$, if $AB = \Theta$, then $A = \Theta$ or $B = \Theta$.
+	\it For any $2 \times 2$ matrices, $A$, $B$, and $C$, if $AB = AC$, then $B = C$.
+	\it For any $2 \times 2$ matrix $A$, if $A^2 = A$, then $A = \Theta$ or $A = I$.
+	\ee
+
+\it Suppose that we have a homogeneous system of linear equations whose matrix equation is given by $A\bar{x} = \bar{\th}$ where $A$ is the $m \times n$ matrix of 
+	coefficients, $\bar{x}$ is the column matrix of the $n$ variables, and $\bar{\th}$ is the column matrix of the $m$ zeroes. Use the properties of matrix
+	arithmetic to show that for any solutions $\bar{u}$ and $\bar{v}$ to the system and $r \in \R$, $\bar{u+v}$ and $r\bar{u}$ are also solutions.
+
+\it Consider the system of linear equations:  
+\begin{align*}
+x_1 + x_2 + x_3 + x_4 &= 3 \\
+x_1 - x_2 + x_3 + x_4 &= 5 \\
+      x_2 - x_3 - x_4 &= -4 \\
+x_1 + x_2 - x_3 - x_4 &= -3.
+\end{align*}
+\be
+\it Express the system as a matrix equation.
+\it Use matrix multiplication to determine whether or not $\bar{u} = \begin{bmatrix} 1 \\ -1 \\ 1 \\ 2 \end{bmatrix}$ and $\bar{v} = \begin{bmatrix} -1 \\ 2 \\ 0 \\ 3 \end{bmatrix}$ are solutions to the system.
+\ee
+
+\it Determine whether or not each of the following matrices is invertible. If so, find its inverse. 
+\btt
+(a) $A = \begin{bmatrix} 1 & -2 & 0 & -1 \\ 2 & 3 & 3 & 8 \\ 4 & -6 & -3 & -5 \\ 7 & -5 & 0 & 2 \end{bmatrix}$ \>
+(b) $B = \begin{bmatrix} 2 & 1 & -1 \\ 2 & -1 & 2 \\ 1 & 1 & -1 \end{bmatrix}$ \\[.1in]
+(c) $C = \begin{bmatrix} 4 & 3 \\ 2 & 3 \end{bmatrix}$ \>
+(d) $D^T D$ where $D = \begin{bmatrix} -1 & 0 & 1 \\ 0 & 2 & 1 \end{bmatrix}$
+\etb
+
+\it Solve the systems of linear equations using the inverse of the coefficient matrix. \\
+\begin{minipage}[t]{2in}
+(a) \begin{align*}
+2x + y - z &= 2 \\
+2x - y + 2z &= -1 \\
+x + y - z &= 3
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{2in}
+(b) \begin{alignat*}{5}
+x_1 &&+ 2x_2 &&+ x_3 &&   &= 2 \\
+    &&  x_2 &&- x_3 &&+ x_4 &= -2 \\
+2x_1 &&+ 4x_2 &&+ 3x_3 &&    &= 0 \\
+x_1 &&+ 2x_2 &&- x_3 &&+ 2x_4 & = -4 
+\end{alignat*}
+\end{minipage}
+
+\it Provide a counter-example to the statement: For any $n \times n$ invertible matrices $A$ and $B$, $A + B$ is invertible.
+
+\it Find an example of a $2 \times 2$ nonidentity matrix whose inverse is its transpose.
+
+\it Using the matrices in Problem \#1, compute each of the following, if possible.
+	\bttt
+	(a) $3A - 2E^T$ \> (b) $A^T B$ \> (c) $D^T (F + G^T)$ \\
+	(d) $3A^T - 2E$ \> (e) $C C^T + FG$ \> (f) $(F^T + G)D$
+	\etb
+
+\it Let $A$ be an $n \times n$ invertible matrix.
+	\be
+	\it Prove that for all $m \in \N$, $A^m$ is invertible and determine a formula for its inverse in terms of $A^{-1}$. Hint: Use induction and the fact that
+		$A^{n+1} = A^n A$.
+	\it Prove that $A^T$ is invertible and determine its inverse in terms of $A^{-1}$. Hint: Use Proposition 3.
+	\ee
+
+\it Determine $(B^T)^{-1}$ for the matrix $B$ in Problem \#10.
+
+\it We say that an $n \times n$ matrix $A$ is \ul{symmetric} provided $A^T = A$; we say that $A$ is \ul{skew-symmetric} provided $A^T = -A$. 
+	\be
+	\it Give examples of symmetric and skew-symmetric $2 \times 2$, $3 \times 3$, and $4 \times 4$ matrices.
+	\it What can you say about the main diagonal of a skew-symmetric matrix?
+	\it Prove that for any $n \times n$ matrix $A$, $A + A^T$, $AA^T$, and $A^T A$ are symmetric and $A - A^T$ is skew-symmetric.
+	\it Prove that any $n \times n$ can be written as the sum of a symmetric and skew-symmetric matrices. Hint: Did you do part (c) yet?
+	\ee
+
+
+\ee
+
+
+
 
 

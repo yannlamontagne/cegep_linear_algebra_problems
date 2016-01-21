@@ -10,10 +10,11 @@
 \indexentry{elementary matrix|hyperpage}{3}
 \indexentry{linear system|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
-\indexentry{ph|hyperpage}{5}
-\indexentry{place holder|hyperpage}{5}
-\indexentry{ph|hyperpage}{5}
-\indexentry{place holder|hyperpage}{5}
+\indexentry{determinant|hyperpage}{5}
+\indexentry{Laplace expansion|hyperpage}{5}
+\indexentry{cofactor expansion|hyperpage}{5}
+\indexentry{determinant|hyperpage}{5}
+\indexentry{elementary operation|hyperpage}{5}
 \indexentry{ph|hyperpage}{5}
 \indexentry{place holder|hyperpage}{5}
 \indexentry{ph|hyperpage}{5}
@@ -66,11 +67,12 @@
 \indexentry{trivial subspace|hyperpage}{10}
 \indexentry{subspace|hyperpage}{10}
 \indexentry{line, plane|hyperpage}{10}
-\indexentry{ph|hyperpage}{10}
-\indexentry{place holder|hyperpage}{10}
-\indexentry{ph|hyperpage}{10}
-\indexentry{place holder|hyperpage}{10}
-\indexentry{ph|hyperpage}{10}
-\indexentry{place holder|hyperpage}{10}
-\indexentry{ph|hyperpage}{11}
-\indexentry{place holder|hyperpage}{11}
+\indexentry{subspace|hyperpage}{10}
+\indexentry{spaning set|hyperpage}{10}
+\indexentry{linear independence|hyperpage}{10}
+\indexentry{linear dependence|hyperpage}{10}
+\indexentry{polynomial space|hyperpage}{10}
+\indexentry{basis|hyperpage}{10}
+\indexentry{coordinate vector|hyperpage}{10}
+\indexentry{polynomial space|hyperpage}{11}
+\indexentry{dimension|hyperpage}{11}

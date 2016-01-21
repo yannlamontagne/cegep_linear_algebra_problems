@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  20 JAN 2016 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  20 JAN 2016 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,13 +812,13 @@ l.1 \chapter
 ]
 Chapter 3.
 (./determinants/the_laplace_expansion/index.tex
-(./determinants/the_laplace_expansion/ph.tex))
+(./determinants/the_laplace_expansion/yl1.tex))
 (./determinants/determinants_and_elementary_operations/index.tex
 Underfull \hbox (badness 2096) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Determinants and El-e-men-tary
  []
 
-(./determinants/determinants_and_elementary_operations/ph.tex))
+(./determinants/determinants_and_elementary_operations/yl1.tex))
 (./determinants/determinants_and_elementary_matrices/index.tex
 Underfull \hbox (badness 2096) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Determinants and El-e-men-tary
@@ -826,10 +826,7 @@ Underfull \hbox (badness 2096) in paragraph at lines 1--1
 
 (./determinants/determinants_and_elementary_matrices/ph.tex))
 (./determinants/applications_of_the_determinant/index.tex
-(./determinants/applications_of_the_determinant/ph.tex
-Underfull \vbox (badness 4429) has occurred while \output is active []
-
-)))
+(./determinants/applications_of_the_determinant/ph.tex)))
 (./vector_geometry/index.tex [5] [6
 
 ]
@@ -891,18 +888,22 @@ Overfull \hbox (22.04721pt too wide) detected at line 50
 (./vector_spaces/introduction_to_vector_spaces/jh17.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh18.tex))
 (./vector_spaces/subspaces/index.tex (./vector_spaces/subspaces/jh1.tex))
-(./vector_spaces/spanning_sets/index.tex (./vector_spaces/spanning_sets/ph.tex)
-) (./vector_spaces/linear_independence/index.tex
-(./vector_spaces/linear_independence/ph.tex)) (./vector_spaces/basis/index.tex
-(./vector_spaces/basis/ph.tex
+(./vector_spaces/spanning_sets/index.tex (./vector_spaces/spanning_sets/yl1.tex
+)) (./vector_spaces/linear_independence/index.tex
+(./vector_spaces/linear_independence/yl1.tex)) (./vector_spaces/basis/index.tex
+(./vector_spaces/basis/yl1.tex)) (./vector_spaces/dimension/index.tex
+(./vector_spaces/dimension/yl1.tex
+Overfull \hbox (22.8354pt too wide) detected at line 18
+\OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = []
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10])) (./vector_spaces/dimension/index.tex (./vector_spaces/dimension/ph.tex))
-)
+[10])))
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -1024,6 +1025,18 @@ l.1 \onecolumn
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \onecolumn
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.4.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.5.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
               ] [16
 
 
@@ -1043,10 +1056,10 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 15701 strings out of 493054
- 278038 string characters out of 6140585
- 430567 words of memory out of 5000000
- 18703 multiletter control sequences out of 15000+600000
+ 15709 strings out of 493054
+ 278121 string characters out of 6140585
+ 429927 words of memory out of 5000000
+ 18705 multiletter control sequences out of 15000+600000
  12807 words of font info for 51 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  45i,11n,44p,10381b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1062,10 +1075,10 @@ s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (22 pages, 205401 bytes).
+Output written on cegep_linear_algebra_problems.pdf (22 pages, 210222 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 478 compressed objects within 5 object streams
- 169 named destinations out of 1000 (max. 500000)
+ 534 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 175 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

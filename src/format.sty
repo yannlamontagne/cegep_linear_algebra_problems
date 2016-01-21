@@ -68,7 +68,7 @@
 
 %-------------misc matrices
 % \newenvironment{mat}{\left(\begin{array}}{\end{array}\right)}
-\newenvironment{detmat}{\left|\begin{array}}{\end{array}\right|}
+\newenvironment{detmat}{\left|\begin{array}{ccccccccc}}{\end{array}\right|}
 \newcommand{\deter}[1]{ \mathchoice{\left|#1\right|}{|#1|}{|#1|}{|#1|} }
 \newcommand{\generalmatrix}[3]{ %arg1: low-case letter, arg2: rows, arg3: cols 
                \left(
@@ -145,6 +145,7 @@
 \DeclareMathOperator{\trace}{Tr}
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\detop}{det}
 \newcommand{\isomorphicto}{\cong}
 \newcommand{\rangespace}[1]{ \mathscr{R}(#1) }
 \newcommand{\nullspace}[1]{ \mathscr{N}(#1) }
