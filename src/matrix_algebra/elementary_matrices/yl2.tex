@@ -1,0 +1,57 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{elementary matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Write the given matrix as a product of elementary matrices
+\[
+\begin{mat}
+0 & 0 & 1\\
+1 & 3 & 0\\
+2 & 4 & 0
+\end{mat}
+\]
+\end{Exercise}
+
+\begin{Answer}
+\[
+\begin{mat}
+0 & 0 & 1\\
+1 & 3 & 0\\
+2 & 4 & 0
+\end{mat}
+=
+\begin{mat}
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0
+\end{mat}
+\begin{mat}
+2 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+1 & 1 & 1\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 2 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\]
+Note: The answer is not unique.
+\end{Answer}

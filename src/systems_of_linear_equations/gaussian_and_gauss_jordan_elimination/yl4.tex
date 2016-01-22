@@ -1,0 +1,33 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{consistent system}
+\index{augmented matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{YL}},
+counter=Exercise]
+Given the augmented matrix of a linear system
+\[
+\begin{mat}
+1 & 3 & 1 & -4 & b_1\\
+3 & -2 & 4 & 5 & b_2\\
+4 & 1 & 5 &  1 & b_3\\
+7 & -1 & 9 & 6 & b_4
+\end{mat}.
+\]
+Determine the restrictions on the $b_i$'s for the system to be consistent.
+\vspace{6in}
+\end{Exercise}
+
+\begin{Answer}
+Consistent if $b_3-b_2-b_1=0$ and $b_4-2b_2-b_1=0$.
+\end{Answer}
+

@@ -8,8 +8,10 @@
 \indexentry{homogeneous system|hyperpage}{1}
 \indexentry{augmented matrix|hyperpage}{1}
 \indexentry{no solution, unique solution, infinitely many solution|hyperpage}{1}
-\indexentry{ph|hyperpage}{1}
-\indexentry{place holder|hyperpage}{1}
+\indexentry{consistent system|hyperpage}{1}
+\indexentry{augmented matrix|hyperpage}{1}
+\indexentry{ph|hyperpage}{2}
+\indexentry{place holder|hyperpage}{2}
 \indexentry{scalar multiplication|hyperpage}{3}
 \indexentry{matrix multiplication|hyperpage}{3}
 \indexentry{matrix associativity|hyperpage}{3}
@@ -24,7 +26,10 @@
 \indexentry{matrix equation|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
-\indexentry{elementary matrix|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
+\indexentry{symmetric equation|hyperpage}{3}
+\indexentry{elementary matrix|hyperpage}{4}
+\indexentry{elementary matrix|hyperpage}{4}
 \indexentry{linear system|hyperpage}{4}
 \indexentry{matrix inverse|hyperpage}{4}
 \indexentry{determinant|hyperpage}{5}
