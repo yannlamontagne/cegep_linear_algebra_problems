@@ -13,6 +13,11 @@
 \indexentry{scalar multiplication|hyperpage}{3}
 \indexentry{matrix multiplication|hyperpage}{3}
 \indexentry{matrix associativity|hyperpage}{3}
+\indexentry{symmetric matrix|hyperpage}{3}
+\indexentry{nilpotent matrix|hyperpage}{3}
+\indexentry{idempotent matrix|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
+\indexentry{matrix equation|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
 \indexentry{matrix equation|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
@@ -20,8 +25,8 @@
 \indexentry{matrix inverse|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
 \indexentry{elementary matrix|hyperpage}{3}
-\indexentry{linear system|hyperpage}{3}
-\indexentry{matrix inverse|hyperpage}{3}
+\indexentry{linear system|hyperpage}{4}
+\indexentry{matrix inverse|hyperpage}{4}
 \indexentry{determinant|hyperpage}{5}
 \indexentry{Laplace expansion|hyperpage}{5}
 \indexentry{cofactor expansion|hyperpage}{5}

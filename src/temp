@@ -1,131 +1,8 @@
 
-For Subspace:
-    Is this a vector space under the natural operations: the real-valued
-    functions of one real variable that are differentiable?
-    \begin{answer}
-      Yes.
-      A theorem of first semester calculus says that a sum of differentiable
-      functions is differentiable and that
-      \( (f+g)^\prime=f^\prime+g^\prime \), and that 
-      a multiple of a differentiable
-      function is differentiable and that \( (r\cdot f)^\prime=r\,f^\prime \). 
-    \end{answer}
-
-By Yann:
-
 S06 (Fall 2015)
 
-\begin{enumerate}
-\item[a.] \textit{(6 marks)}
-Solve the following system by Gauss-Jordan elimination:
-\[
-\begin{array}{ccccccccccccccc}
-3x_1 & + & 3x_2 & + & 7x_3 & - & 3x_4 & + & x_5  &  = & 3\\
-2x_1 & + & 3x_2 & + & 3x_3 & + & x_4  & - & 2x_5 &  = & 1\\
-4x_1 &  &  & +  & 17x_3  & - & 2x_4  & - & x_5  &  = & 1\\
-\end{array}
-\]
-\item[b.] \textit{(1 mark)}
-Find two particular solution to the above system.
-\item[c.] \textit{(1 mark)}
-Find a solution to the above system where $x_3=1$.
-\end{enumerate}
-
-Consider the matrices:
-\[
-A=
-\begin{bmatrix}
-2 & 0 & 1\\
-0 & -1 & 0\\
-3 & 0 & 2
-\end{bmatrix},\;
-B=
-\begin{bmatrix}
-2 & 0 & 1\\
--3 & -4 & 0
-\end{bmatrix}\;
-C=
-\begin{bmatrix}
-2 & 1\\
-0 & 2\\
-3 & -1
-\end{bmatrix}\;
-D=
-\begin{bmatrix}
-2 & 3\\
-1 & 2
-\end{bmatrix}\;
-F=
-\begin{bmatrix}
-5 & -1\\
-0 & -2\\
-1 & 0
-\end{bmatrix}\;
-\]
-
-\begin{enumerate}
-%changed
-\item[a.] \textit{(2 marks)} Compute the following, if possible.
-\[
-\text{tr}(BAF)
-\]
-
-%changed
-\item[b.] \textit{(2 marks)} Compute the following, if possible.
-\[
-CAB
-\]
-
-%changed
-\item[c.] \textit{(2 marks)} Compute the following, if possible.
-\[
-(FD^{-1})^T
-\]
-
-%changed
-\item[d.] \textit{(5 marks)} Find $E$, if possible.
-\[
-(I-E^T)^{-1} = (\text{tr}(D)D^2)^T
-\]
-\end{enumerate}
-
-Consider
-\[
-A=
-\begin{bmatrix}
-2 & 2 & 0\\
-4 & 3 & 0\\
-3 & 2 & \frac12
-\end{bmatrix}.
-\]
-\begin{enumerate}
-\item[a.] \textit{(5 marks)} Find $A^{-1}$.
-\item[b.] \textit{(3 marks)} Solve for $X$ where $AX=B$ and 
-\[
-B=
-\begin{bmatrix}
-1  & 0 & \frac12 & 0 & 0\\
-0  & 1 & 0 & 2 & -1\\
--4 & 2 & \frac12 & 0 & 0
-\end{bmatrix}
-\]
-\end{enumerate}
 
 
-The augmented matrix of a linear system is given by
-\[
-\begin{bmatrix}
-1 & 2 & 3 & 4 & \pi\\
-0 & \sqrt{2} & 4 & 5 & 6\\
-0 & 0 & 0 & a^2-1 & b^2-a^2\\
-\end{bmatrix}
-\]
-If possible for what values of $a$ and $b$ there is
-\begin{enumerate}
-\item[a.] \textit{(2 marks)} no solution? Justify.
-\item[b.] \textit{(2 marks)} exactly one solution? Justify.
-\item[c.] \textit{(2 marks)} infinitely many solutions? Justify.
-\end{enumerate}
 
 Given
 \[
@@ -145,16 +22,6 @@ B=
 \begin{enumerate}
 \item[a.] \textit{(4 marks)} Find the $\text{adj}(A)$.
 \item[b.] \textit{(4 marks)} Evaluate $\text{det}(B^{101}\text{adj}(A)+BA^{2015})$.
-\item[c.] \textit{(2 marks)} Justify that the components of the solution of the system $Ax=b$ where
-\[
-b=
-\begin{bmatrix}
-1\\
-2\\
-3
-\end{bmatrix}
-\]
-are integers.
 
 Given
 \[
@@ -215,80 +82,6 @@ Determine whether the set $\{ 1, e^x, \arctan x\}$ is linearly independent on $\
 
 S07 (Fall 2015)
 
-\textbf{Question 1.}
-\begin{enumerate}
-\item[a.] \textit{(6 marks)}
-Solve the following system by Gauss-Jordan elimination:
-\[
-\begin{array}{ccccccccccccccc}
-3x_1 & + & 3x_2 & + & 7x_3 & - & 3x_4 &  = & 0\\
-2x_1 & + & 3x_2 & + & 3x_3 & + & x_4  &  = & 0\\
-4x_1 &  &  & +  & 17x_3  & - & 2x_4   &  = & 0\\
-9x_1 & + & 6x_2 & +  & 27x_3  & - & 4x_4   &  = & 0\\
-\end{array}
-\]
-\item[b.] \textit{(1 mark)}
-Find two particular nontrivial solution to the above system.
-\item[c.] \textit{(1 mark)}
-Find a solution to the above system where $x_1=1$.
-\end{enumerate}
-
-Consider the matrices:
-\[
-A=
-\begin{bmatrix}
-0 & 1 & 0\\
--2 & 0 & 3\\
-0 & 3 & 0
-\end{bmatrix},\;
-B=
-\begin{bmatrix}
-2 & 1 & 0\\
--3 & 4 & 0
-\end{bmatrix}\;
-C=
-\begin{bmatrix}
-2 & -1\\
-1 & 2\\
-0 & 1
-\end{bmatrix}\;
-D=
-\begin{bmatrix}
-2 & -2\\
-1 & -2
-\end{bmatrix}\;
-F=
-\begin{bmatrix}
-2 & -1\\
-3 & -2\\
-1 & 0
-\end{bmatrix}\;
-\]
-
-\begin{enumerate}
-\item[a.] \textit{(2 marks)} Compute the following, if possible.
-\[
-BIF
-\]
-
-\item[b.] \textit{(2 marks)} Compute the following, if possible.
-\[
-ACAB
-\]
-
-\item[c.] \textit{(2 marks)} Compute the following, if possible.
-\[
-F(D^{-1})^TB
-\]
-
-%changed
-\item[d.] \textit{(5 marks)} Determine $E$, if possible.
-\[
-DED^T = \text{tr}(BIF) BF
-\]
-\end{enumerate}
-
-Prove: If $AB$ and $BA$ are both invertible then $A$ and $B$ are both invertible.
 
 A square matrix $A$ is called \emph{idempotent} if $A^2=A$.
 Prove: If $A$ is idempotent then $A+AB-ABA$ is idempotent for any square matrix $B$ with the same dimension as $A$.

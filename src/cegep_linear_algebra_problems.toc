@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2.1}Introduction to Matrices and Matrix Operations}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Matrix Inverses and Algebraic Properties}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Elementary Matrices}{3}{section.2.3}
-\contentsline {section}{\numberline {2.4}Linear Systems and Matrices}{3}{section.2.4}
+\contentsline {section}{\numberline {2.4}Linear Systems and Matrices}{4}{section.2.4}
 \contentsline {chapter}{\numberline {3}Determinants}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}The Laplace Expansion}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Determinants and Elementary Operations}{5}{section.3.2}
