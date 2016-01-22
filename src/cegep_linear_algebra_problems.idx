@@ -30,6 +30,8 @@
 \indexentry{symmetric equation|hyperpage}{3}
 \indexentry{elementary matrix|hyperpage}{4}
 \indexentry{elementary matrix|hyperpage}{4}
+\indexentry{elementary matrix|hyperpage}{4}
+\indexentry{row-equivalent|hyperpage}{4}
 \indexentry{linear system|hyperpage}{4}
 \indexentry{matrix inverse|hyperpage}{4}
 \indexentry{determinant|hyperpage}{5}
@@ -73,6 +75,8 @@
 \indexentry{matrix space|hyperpage}{10}
 \indexentry{diagonal matrix|hyperpage}{10}
 \indexentry{vector space|hyperpage}{10}
+\indexentry{matrix space|hyperpage}{10}
+\indexentry{vector space|hyperpage}{10}
 \indexentry{positive real numbers|hyperpage}{10}
 \indexentry{vector space|hyperpage}{10}
 \indexentry{vector space|hyperpage}{10}
@@ -93,8 +97,8 @@
 \indexentry{spaning set|hyperpage}{10}
 \indexentry{linear independence|hyperpage}{10}
 \indexentry{linear dependence|hyperpage}{10}
-\indexentry{polynomial space|hyperpage}{10}
-\indexentry{basis|hyperpage}{10}
-\indexentry{coordinate vector|hyperpage}{10}
+\indexentry{polynomial space|hyperpage}{11}
+\indexentry{basis|hyperpage}{11}
+\indexentry{coordinate vector|hyperpage}{11}
 \indexentry{polynomial space|hyperpage}{11}
 \indexentry{dimension|hyperpage}{11}

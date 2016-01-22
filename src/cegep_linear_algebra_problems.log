@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  22 JAN 2016 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  22 JAN 2016 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,7 +844,8 @@ ed
 l.26 
       [3
 
-]) (./matrix_algebra/elementary_matrices/yl1.tex))
+]) (./matrix_algebra/elementary_matrices/yl1.tex)
+(./matrix_algebra/elementary_matrices/yl3.tex))
 (./matrix_algebra/linear_systems_and_matrices/index.tex
 (./matrix_algebra/linear_systems_and_matrices/yl1.tex)))
 (./determinants/index.tex
@@ -930,6 +931,7 @@ Overfull \hbox (22.04721pt too wide) detected at line 50
 (./vector_spaces/introduction_to_vector_spaces/jh8.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh9.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh10.tex [9])
+(./vector_spaces/introduction_to_vector_spaces/yl1.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh11.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh12.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh13.tex)
@@ -942,21 +944,15 @@ Overfull \hbox (22.04721pt too wide) detected at line 50
 (./vector_spaces/subspaces/jh2.tex)) (./vector_spaces/spanning_sets/index.tex
 (./vector_spaces/spanning_sets/yl1.tex))
 (./vector_spaces/linear_independence/index.tex
-(./vector_spaces/linear_independence/yl1.tex)) (./vector_spaces/basis/index.tex
-(./vector_spaces/basis/yl1.tex
+(./vector_spaces/linear_independence/yl1.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]pdfTeX warning (ext4): destination with the same identifier (name{Question.
-5.5.1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.28 \Question $
-                B=\set{1+x^3,\;x^2+x^3}$)) (./vector_spaces/dimension/index.tex
-(./vector_spaces/dimension/yl1.tex
+[10])) (./vector_spaces/basis/index.tex (./vector_spaces/basis/yl1.tex))
+(./vector_spaces/dimension/index.tex (./vector_spaces/dimension/yl1.tex
 Overfull \hbox (22.8354pt too wide) detected at line 18
 \OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = []
  []
@@ -1086,7 +1082,7 @@ n.5.1.10.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.13.1}) has been already used, duplicate ignored
+n.5.1.11.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1098,19 +1094,19 @@ n.5.1.14.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.18.1}) has been already used, duplicate ignored
+n.5.1.15.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.138 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.19.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.2.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.138 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1122,7 +1118,19 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16
+[16pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.4.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.5.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              
 
 ]) (./cegep_linear_algebra_problems.ind [17
 
@@ -1143,9 +1151,9 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 15771 strings out of 493054
- 280096 string characters out of 6140585
- 458626 words of memory out of 5000000
+ 15785 strings out of 493054
+ 280381 string characters out of 6140585
+ 467663 words of memory out of 5000000
  18705 multiletter control sequences out of 15000+600000
  12807 words of font info for 51 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
@@ -1162,10 +1170,10 @@ s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (22 pages, 222124 bytes).
+Output written on cegep_linear_algebra_problems.pdf (22 pages, 223811 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 206 named destinations out of 1000 (max. 500000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 216 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

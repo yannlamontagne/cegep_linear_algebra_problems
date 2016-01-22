@@ -62,19 +62,7 @@ y+z=1
 \item[b.] \textit{(2 marks)} Give a geometric interpretation of the result of part a.  Discuss the general solution geometrically with respect to the associated homogeneous system.
 \end{enumerate}
 
-\textbf{Question 6.}
-Let $V=\{A \;|\; A \in\mathcal{M}_{2\times 2} \text{ and } \text{det}(A)\neq 0 \}$
-with the following operations:
-\[
-A+B=AB \text{ and } kA=kA
-\]
-\textit{That is, vector addition is matrix multiplication and scalar multiplication is the regular scalar multiplication.}
-\begin{enumerate}
-\item[a.] \textit{(2 marks)} Does $V$ satisfy closure under vector addition? Justify.
-\item[b.] \textit{(2 marks)} Does $V$ contain a zero vector? If so find it.  Justify.
-\item[c.] \textit{(2 marks)} Does $V$ contains an additive inverse for all of its vectors? Justify.
-\item[d.] \textit{(2 marks)} Does $V$ satisfy closure under scalar multiplication? Justify.
-\end{enumerate}
+
 
 Determine whether the set $\{ 1, e^x, \arctan x\}$ is linearly independent on $\mathbb{R}^+$
 
@@ -119,23 +107,6 @@ B=
 \]
 \begin{enumerate}
 \item[b.] \textit{(4 marks)} If $C$ is a $10\times 10$ invertible matrix then evaluate $\text{det}(C^{101}\text{adj}(B)(C^{-1})^{101})$.
-\item[c.] \textit{(2 marks)} Solve for the component $x_{10}$ of the solution of the system $Bx=b$ where
-\[
-b=
-\begin{bmatrix}
-1\\
-2\\
-3\\
-4\\
-5\\
-6\\
-7\\
-8\\
-9\\
-10
-\end{bmatrix}
-\].
-\end{enumerate}
 
 Given
 \[
@@ -179,29 +150,6 @@ A=
 \begin{enumerate}
 \item[a.] \textit{(5 marks)} Find $A^{-1}$.
 \item[b.] \textit{(2 marks)} Determine $\operatorname{tr}(A^{-1})$ and $\operatorname{tr}(A^{-1}A)$.
-
-
-Let $X=A^TA+B$ be a square matrix.  Prove: If $B^2=0$, $AB=BA^T=0$ then $X^2$ is symmetric.
-
-Show that
-\[
-A = 
-\begin{bmatrix}
-5 & 7 & 9\\
-1 & 2 & 3\\
-4 & 5 & 6
-\end{bmatrix}
-\]
-and
-\[
-B =
-\begin{bmatrix}
-1 & 2 & 3\\
-4 & 5 & 6\\
-8 & 10 & 12
-\end{bmatrix}
-\]
-are row-equivalent by finding 3 elementary matrices $E_i$ such that $E_3E_2E_1A=B$.
 
 The augmented matrix of a linear system is given by
 \[
@@ -461,8 +409,6 @@ x_1 &&+ 2x_2 &&- x_3 &&+ 2x_4 & = -4
 		$A^{n+1} = A^n A$.
 	\it Prove that $A^T$ is invertible and determine its inverse in terms of $A^{-1}$. Hint: Use Proposition 3.
 	\ee
-
-\it Determine $(B^T)^{-1}$ for the matrix $B$ in Problem \#10.
 
 \it We say that an $n \times n$ matrix $A$ is \ul{symmetric} provided $A^T = A$; we say that $A$ is \ul{skew-symmetric} provided $A^T = -A$. 
 	\be
