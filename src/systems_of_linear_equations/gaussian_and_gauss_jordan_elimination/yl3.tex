@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Gauss-Jordan Elimination}
+\index{particular solution}
+\index{homogeneous system}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{YL}},
+counter=Exercise]
+Given
+\[
+\begin{linsys}{4}
+3x_1 & + & 3x_2 & + & 7x_3 & - & 3x_4 &  = & 0\\
+2x_1 & + & 3x_2 & + & 3x_3 & + & x_4  &  = & 0\\
+4x_1 &  &  & +  & 17x_3  & - & 2x_4   &  = & 0\\
+9x_1 & + & 6x_2 & +  & 27x_3  & - & 4x_4   &  = & 0\\
+\end{linsys}
+\]
+\Question Solve the system by Gauss-Jordan elimination.
+\Question Find two particular non-trivial solution to the system.
+\Question Find a solution to the system when $x_1=1$.
+\end{Exercise}
+
+\begin{Answer}
+\Question
+$\rowvec{x_1,& x_2,& x_3,& x_4}=\rowvec{60t,& -\frac{79}{3}t,&-14t,&t}$ where $t\in\Re$.
+\Question
+If $t=1$ then $\rowvec{x_1,& x_2,& x_3,& x_4}=\rowvec{60,& -\frac{79}{3},&-14,&1}$.\\
+If $t=3$ then $\rowvec{x_1,& x_2,& x_3,& x_4}=\rowvec{180,& -79,&42,&3}$.
+\Question
+If $t=\frac{1}{60}$ then $\rowvec{x_1,& x_2,& x_3,& x_4}=\rowvec{1,& -\frac{79}{180},&-\frac{14}{60},&\frac{1}{60}}$.
+\end{Answer}
+

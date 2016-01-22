@@ -1,11 +1,23 @@
 \indexentry{ph|hyperpage}{1}
 \indexentry{place holder|hyperpage}{1}
 \indexentry{Gaussian Elimination|hyperpage}{1}
+\indexentry{Gauss-Jordan Elimination|hyperpage}{1}
+\indexentry{particular solution|hyperpage}{1}
+\indexentry{Gauss-Jordan Elimination|hyperpage}{1}
+\indexentry{particular solution|hyperpage}{1}
+\indexentry{homogeneous system|hyperpage}{1}
+\indexentry{augmented matrix|hyperpage}{1}
+\indexentry{no solution, unique solution, infinitely many solution|hyperpage}{1}
 \indexentry{ph|hyperpage}{1}
 \indexentry{place holder|hyperpage}{1}
 \indexentry{scalar multiplication|hyperpage}{3}
 \indexentry{matrix multiplication|hyperpage}{3}
 \indexentry{matrix associativity|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
+\indexentry{matrix equation|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
+\indexentry{matrix equation|hyperpage}{3}
+\indexentry{matrix inverse|hyperpage}{3}
 \indexentry{matrix inverse|hyperpage}{3}
 \indexentry{elementary matrix|hyperpage}{3}
 \indexentry{linear system|hyperpage}{3}
@@ -65,6 +77,8 @@
 \indexentry{trivial subspace|hyperpage}{10}
 \indexentry{subspace|hyperpage}{10}
 \indexentry{line, plane|hyperpage}{10}
+\indexentry{function subspace|hyperpage}{10}
+\indexentry{subspace|hyperpage}{10}
 \indexentry{subspace|hyperpage}{10}
 \indexentry{spaning set|hyperpage}{10}
 \indexentry{linear independence|hyperpage}{10}
