@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  20 JAN 2016 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  21 JAN 2016 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -819,15 +819,13 @@ Underfull \hbox (badness 2096) in paragraph at lines 1--1
  []
 
 (./determinants/determinants_and_elementary_operations/yl1.tex))
-(./determinants/determinants_and_elementary_matrices/index.tex
-Underfull \hbox (badness 2096) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/14.4 Determinants and El-e-men-tary
- []
-
-(./determinants/determinants_and_elementary_matrices/ph.tex))
+(./determinants/properties_of_determinants/index.tex
+(./determinants/properties_of_determinants/yl1.tex))
 (./determinants/applications_of_the_determinant/index.tex
-(./determinants/applications_of_the_determinant/ph.tex)))
-(./vector_geometry/index.tex [5] [6
+(./determinants/applications_of_the_determinant/yl1.tex)))
+(./vector_geometry/index.tex [5
+
+] [6
 
 ]
 Chapter 4.
@@ -990,11 +988,19 @@ n.5.1.10.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.138 
-      ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.13.1}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.138 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.14.1}) has been already used, duplicate ignored
 
-(./references.tex
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.138 
+      ] (./references.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -1002,19 +1008,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.1.13.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \onecolumn
-              pdfTeX warning (ext4): destination with the same identifier (name
-{Question.5.1.14.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \onecolumn
-              pdfTeX warning (ext4): destination with the same identifier (name
-{Question.5.1.18.1}) has been already used, duplicate ignored
+.1.18.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1037,7 +1031,9 @@ l.1 \onecolumn
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \onecolumn
-              ] [16
+              
+
+] [16
 
 
 ]) (./cegep_linear_algebra_problems.ind [17] [18
@@ -1052,13 +1048,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `cegep_linear_algebra_problems.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 3C93809AE7D105D754C22B9F289B59B0;2038.
+(rerunfilecheck)             Checksum: D0DADEAD1280783B272C33E4CD8E61DF;2028.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
  15709 strings out of 493054
- 278121 string characters out of 6140585
- 429927 words of memory out of 5000000
+ 278075 string characters out of 6140585
+ 427491 words of memory out of 5000000
  18705 multiletter control sequences out of 15000+600000
  12807 words of font info for 51 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
@@ -1075,10 +1071,10 @@ s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (22 pages, 210222 bytes).
+Output written on cegep_linear_algebra_problems.pdf (22 pages, 210880 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 491 compressed objects within 5 object streams
+ 547 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
  175 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

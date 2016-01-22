@@ -4,11 +4,25 @@
 
   \indexspace
 
-  \item Cauchy-Schwartz Inequality, \hyperpage{7}
+  \item basis, \hyperpage{10}
 
   \indexspace
 
+  \item Cauchy-Schwartz Inequality, \hyperpage{7}
+  \item cofactor expansion, \hyperpage{5}
+  \item coordinate vector, \hyperpage{10}
+  \item Cramer's Rule, \hyperpage{5}
+
+  \indexspace
+
+  \item determinant, \hyperpage{5}
   \item diagonal matrix, \hyperpage{10}
+  \item dimension, \hyperpage{11}
+
+  \indexspace
+
+  \item elementary matrix, \hyperpage{3}
+  \item elementary operation, \hyperpage{5}
 
   \indexspace
 
@@ -20,19 +34,24 @@
 
   \indexspace
 
+  \item Laplace expansion, \hyperpage{5}
   \item line, plane, \hyperpage{10}
+  \item linear dependence, \hyperpage{10}
+  \item linear independence, \hyperpage{10}
+  \item linear system, \hyperpage{3}
 
   \indexspace
 
+  \item matrix associativity, \hyperpage{3}
+  \item matrix inverse, \hyperpage{3}
+  \item matrix multiplication, \hyperpage{3}
   \item matrix space, \hyperpage{9, 10}
 
   \indexspace
 
-  \item ph, \hyperpage{1}, \hyperpage{3}, \hyperpage{5}, \hyperpage{7}, 
-		\hyperpage{10, 11}
-  \item place holder, \hyperpage{1}, \hyperpage{3}, \hyperpage{5}, 
-		\hyperpage{7}, \hyperpage{10, 11}
-  \item polynomial space, \hyperpage{9}
+  \item ph, \hyperpage{1}, \hyperpage{7}
+  \item place holder, \hyperpage{1}, \hyperpage{7}
+  \item polynomial space, \hyperpage{9--11}
   \item positive real numbers, \hyperpage{10}
 
   \indexspace
@@ -41,6 +60,8 @@
 
   \indexspace
 
+  \item scalar multiplication, \hyperpage{3}
+  \item spaning set, \hyperpage{10}
   \item subspace, \hyperpage{10}
 
   \indexspace
