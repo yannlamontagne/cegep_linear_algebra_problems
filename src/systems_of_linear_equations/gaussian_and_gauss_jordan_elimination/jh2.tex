@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{unique solution, inconsistent, infinitely many solutions}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+For which values of \( k \) are
+there no solutions, many solutions, or a unique solution
+to this system?
+\begin{equation*}
+\begin{linsys}{2}
+x  &-  &y  &=  &1  \\
+3x  &-  &3y &=  &k  
+\end{linsys}
+\end{equation*}
+
+\end{Exercise}
+
+\begin{Answer}
+After performing Gaussian elimination the system becomes
+\begin{equation*}
+\begin{linsys}{2}
+x  &-  &y  &=  &1\hfill  \\
+   &   &0  &=  &-3+k\hfill  
+\end{linsys}
+\end{equation*}
+This system has no solutions if \( k\neq 3 \) and if
+\( k=3 \) then it has infinitely many solutions.
+It never has a unique solution.  
+\end{Answer}

@@ -1,0 +1,81 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Show that if \( ad-bc\neq 0 \) then
+\begin{equation*}
+\begin{linsys}{2}
+ax  &+  &by  &=  &j  \\
+cx  &+  &dy  &=  &k  
+\end{linsys}
+\end{equation*}
+has a unique solution.
+\end{Exercise}
+
+\begin{Answer}
+     We take three cases: that $a\neq 0$, that $a=0$ and 
+      $c\neq 0$, and that both $a=0$ and $c=0$.
+
+      For the first, we assume that \( a\neq 0 \).
+      Then Gaussian elimination
+      \begin{equation*}
+        \begin{linsys}{2}
+          ax  &+  &by                  &=  &j \hfill\hbox{} \\
+              &   &(-(cb/a)+d)y  &=  &-(cj/a)+k \hfill  
+         \end{linsys}
+      \end{equation*}
+      shows that this system has a unique solution if and only if
+      \( -(cb/a)+d\neq 0   \); remember that \( a\neq 0 \) so 
+      that back substitution yields a unique \( x \)
+      (observe, by the way, that \( j \) and \( k \) play no role in the
+      conclusion that there is a unique solution, although if there is a 
+      unique solution then they contribute to its value).
+      But \( -(cb/a)+d = (ad-bc)/a \) and a fraction is not equal to \( 0 \) 
+      if and only if its numerator is not equal to \( 0 \).
+      Thus, in this first case, there is a unique solution if and only if
+      $ad-bc\neq 0$.
+
+      In the second case, if \( a=0 \) but \( c\neq 0 \), then we swap
+      \begin{equation*}
+        \begin{linsys}{2}
+          cx  &+  &dy  &=  &k  \\
+              &   &by  &=  &j  
+        \end{linsys}
+      \end{equation*}
+      to conclude that the system has a unique solution if and only if 
+      \( b\neq 0 \)
+      (we use the case assumption that \( c\neq 0 \) to get a unique
+      \( x \) in back substitution).
+      But where \( a=0 \) and \( c\neq 0 \)
+      the condition ``\( b\neq 0 \)''
+      is equivalent to the condition ``\( ad-bc\neq 0 \)''.
+      That finishes the second case.
+
+      Finally, for the third case,
+      if both \( a \) and \( c \) are \( 0 \) then the system
+      \begin{equation*}
+        \begin{linsys}{2}
+          0x  &+  &by  &=  &j  \\
+          0x  &+  &dy  &=  &k  
+        \end{linsys}
+      \end{equation*}
+      might have no solutions (if the second equation is not a multiple of the
+      first) or it might have infinitely many solutions (if the second
+      equation is a multiple of the first then for each \( y \) satisfying
+      both equations, any pair \( (x,y) \) will do), but it never has a unique
+      solution.
+      Note that \( a=0 \) and \( c=0 \) gives that \( ad-bc=0 \). 
+\end{Answer}

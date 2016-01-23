@@ -1,3 +1,197 @@
+  
+\item 
+    Prove that each operation of Gauss's Method is reversible.
+    That is, show that if two systems are related by a row operation
+    $S_1\rightarrow S_2$ then there is a row operation to go back
+    $S_2\rightarrow S_1$.
+    \begin{answer}
+      Reverse a row swap $\rho_i\leftrightarrow\rho_j$ by swapping 
+      back $\rho_j\leftrightarrow\rho_i$.
+      Reverse the $k\rho_i$ step of multiplying  \( k\neq 0  \) 
+      on both sides of a row
+      by  dividing through~$(1/k)\rho_i$.
+
+      The row combination case is the nontrivial one.
+      The operation $k\rho_i+\rho_j$
+      results in this $j$-th row.
+      \begin{equation*}
+        k\cdot a_{i,1}+a_{j,1}+\cdots+k\cdot a_{i,n}+a_{j,n}=k\cdot d_i+d_j
+      \end{equation*}
+      The $i$-th row unchanged because of the $i\neq j$ restriction.
+      Because the $i$-th row is unchanged, the operation $-k\rho_i+\rho_j$ 
+      returns the $j$-th row to its original state.
+
+      (Observe that the \( i=j \) conditino on the $k\rho_i+\rho_j$ 
+       is needed, or else this could happen
+       \begin{equation*}
+         \begin{linsys}{2}
+           3x  &+  &2y  &=  &7  
+         \end{linsys}
+         \grstep{2\rho_1+\rho_1}
+         \begin{linsys}{2}
+           9x  &+  &6y  &=  &21 
+          \end{linsys}                 
+         \grstep{-2\rho_1+\rho_1}
+         \begin{linsys}{2}
+          -9x  &-  &6y  &=  &-21 
+         \end{linsys}
+       \end{equation*}
+       and so the result wouldn't hold.)
+    \end{answer}
+  \puzzle \item 
+    \cite{ContestProb1955no38}
+    Four positive integers are given.
+    Select any three of the integers, find their arithmetic average,
+    and add this result to the fourth integer.
+    Thus the numbers 29, 23, 21, and 17 are obtained.
+    One of the original integers is:
+    \begin{exparts*}
+      \partsitem 19
+      \partsitem 21
+      \partsitem 23
+      \partsitem 29
+      \partsitem 17
+    \end{exparts*}
+    \begin{answer}
+      Solving the system 
+      \begin{equation*}
+        \begin{linsys}{2}
+        (1/3)(a+b+c)  &+  &d  &=  &29  \\
+        (1/3)(b+c+d)  &+  &a  &=  &23  \\
+        (1/3)(c+d+a)  &+  &b  &=  &21  \\
+        (1/3)(d+a+b)  &+  &c  &=  &17
+        \end{linsys}
+      \end{equation*}
+      we obtain $a=12$, $b=9$, $c=3$, $d=21$.
+      Thus the second item, 21, is the correct answer.
+     \end{answer}
+  \puzzle \recommended \item  
+      \cite{Monthly35p47}
+      Laugh at this:  \( \mbox{AHAHA}+\mbox{TEHE}=\mbox{TEHAW} \).
+      It resulted from substituting a code letter for each digit of a simple
+      example in addition, and it is required to identify the letters
+      and prove the solution unique.
+      \begin{answer}
+        \answerasgiven
+        A comparison of the units and hundreds columns of this
+        addition shows that there must be a carry from the tens column.
+        The tens column then tells us that \( A<H \), so there
+        can be no carry from the units or hundreds columns.
+        The five columns then give the following five equations.
+        \begin{align*}
+          A+E  &=  W  \\
+          2H   &=  A+10  \\
+          H    &=  W+1  \\
+          H+T  &=  E+10  \\
+          A+1  &=  T
+        \end{align*}
+        The five linear equations in five unknowns, if solved simultaneously,
+        produce the unique solution: \( A=4 \), \( T=5 \), \( H=7 \),
+        \( W=6 \) and \( E=2 \), so that the original example in addition
+        was \( 47474+5272=52746 \).  
+      \end{answer}
+  \puzzle \item 
+     \cite{Wohascum2}
+     The Wohascum County Board of Commissioners, which has 20 members, 
+     recently had to elect a President.
+     There were three candidates ($A$, $B$, and $C$); on each ballot
+     the three
+     candidates were to be listed in order of preference, with no abstentions.
+     It was found that 11 members, a majority, preferred $A$ over $B$
+     (thus the other 9 preferred $B$ over $A$).
+     Similarly, it was found that 12 members preferred $C$ over $A$.
+     Given these results, it was suggested that $B$ should withdraw, to enable
+     a runoff election between $A$ and $C$.
+     However, $B$ protested, and it was then found that 14 members preferred
+     $B$ over $C$!
+     The Board has not yet recovered from the resulting confusion.
+     Given that every possible order of $A$, $B$, $C$ appeared on at least 
+     one ballot, how many members voted for $B$ as their first choice?
+     \begin{answer}
+       \answerasgiven
+       Eight commissioners voted for $B$.
+       To see this, we will use the given information to study how many voters
+       chose each order of $A$, $B$, $C$.
+
+       The six orders of preference are $ABC$, $ACB$, $BAC$, $BCA$, $CAB$,
+       $CBA$; assume they receive $a$, $b$, $c$, $d$, $e$, $f$ votes 
+       respectively.
+       We know that
+       \begin{equation*}
+         \begin{linsys}{3}
+           a  &+  &b  &+  &e  &=  &11  \\
+           d  &+  &e  &+  &f  &=  &12  \\
+           a  &+  &c  &+  &d  &=  &14
+         \end{linsys}
+       \end{equation*}
+       from the number preferring $A$ over $B$, the number preferring
+       $C$ over $A$, and the number preferring $B$ over $C$.
+       Because 20 votes were cast, we also know that
+       \begin{equation*}
+         \begin{linsys}{3}
+           c  &+  &d  &+  &f  &=  &9  \\
+           a  &+  &b  &+  &c  &=  &8  \\
+           b  &+  &e  &+  &f  &=  &6
+         \end{linsys}
+       \end{equation*}
+       from the preferences for $B$ over $A$, for $A$ over $C$, and for
+       $C$ over $B$.
+
+       The solution is $a=6$, $b=1$, $c=1$, $d=7$, $e=4$, and $f=1$.
+       The number of commissioners voting for $B$ as their first choice 
+       is therefore $c+d=1+7=8$.
+
+       \par\noindent {\em Comments.}
+       The answer to this question would have been the same had we known only
+       that {\em at least\/} 14 commissioners preferred $B$ over $C$.
+
+       The seemingly paradoxical nature of the commissioner's preferences
+       ($A$ is preferred to $B$, and $B$ is preferred to $C$, and $C$ is 
+       preferred to $A$), an example of ``non-transitive dominance'', is not
+       uncommon when individual choices are pooled.
+     \end{answer}
+  \puzzle \item   
+     \cite{Monthly63p93}
+    ``This system
+     of \( n \) linear equations with
+     \( n \) unknowns,'' said the Great Mathematician, ``has a curious
+     property.''
+
+     ``Good heavens!'' said the Poor Nut,  ``What is it?''
+
+     ``Note,'' said the Great Mathematician, ``that the constants are in
+     arithmetic progression.''
+
+     ``It's all so clear when you explain it!'' said the Poor Nut.
+     ``Do you mean like \( 6x+9y=12 \) and \( 15x+18y=21 \)?''
+
+     ``Quite so,'' said the Great Mathematician, pulling out his bassoon.
+     ``Indeed, the system has a unique solution.
+     Can you find it?''
+
+     ``Good heavens!'' cried the Poor Nut, ``I am baffled.''
+
+     Are you?
+     \begin{answer}
+       \answerasgiven
+       \textit{We have not used ``dependent'' yet; 
+       it means here that Gauss's
+       Method shows that there is not a unique solution.}
+       If \( n\geq 3 \) the system is dependent and the solution is not
+       unique.
+       Hence \( n<3 \).
+       But the term ``system'' implies \( n>1 \).
+       Hence \( n=2 \).
+       If the equations are
+       \begin{equation*}
+         \begin{linsys}{2}
+              ax  &+ &(a+d)y  &=  &a+2d  \\
+         (a+3d)x  &+ &(a+4d)y &=  &a+5d  
+         \end{linsys}
+       \end{equation*}
+       then \( x=-1 \), \( y=2 \).  
+    \end{answer}
+
 
 S06 (Fall 2015)
 
@@ -132,9 +326,7 @@ B=
 
 
 
-$W=\{p(x)=a_0+a_1x+a_2x^2+a_3x^3\; |\; p(1)=0 \text{ and } p(-1)=0\}$ a subspace of $P_3$.
-Find a basis $B$ for $W$.
-Find the coordinate vector of $p(x)=-1-x+x^2+x^3$ relative to the basis $B$.
+
 
 Winter 2015
 

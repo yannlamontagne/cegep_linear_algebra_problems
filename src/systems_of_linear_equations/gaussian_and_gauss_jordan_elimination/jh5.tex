@@ -1,0 +1,44 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove that, where \( a,b,\ldots,e \) are real numbers
+and \( a\neq 0 \), if
+\begin{equation*}
+ax+by=c
+\end{equation*}
+has the same solution set as
+\begin{equation*}
+ax+dy=e
+\end{equation*}
+then they are the same equation.
+What if \( a=0 \)?
+\end{Exercise}
+
+\begin{Answer}
+If \( a\neq 0 \) then the solution set of the first equation is
+\( \set{(x,y)\suchthat x=(c-by)/a} \).
+Taking $y=0$ gives the solution $(c/a,0)$, and since the second
+equation is supposed to have the same solution set, substituting into
+it gives that $a(c/a)+d\cdot 0=e$, so $c=e$.
+Then taking $y=1$ in $x=(c-by)/a$ gives that $a((c-b)/a)+d\cdot 1=e$,
+which gives that $b=d$.
+Hence they are the same equation.
+
+When \( a=0 \) the equations can be different and still have the 
+same solution set:~e.g.,
+\( 0x+3y=6 \) and \( 0x+6y=12 \).   
+\end{Answer}
