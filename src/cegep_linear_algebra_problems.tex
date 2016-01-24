@@ -79,7 +79,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage[answerdelayed, lastexercise]{exercise}
-
+\usepackage{multicol}
 
 \renewcommand{\ExerciseHeaderTitle}{\;\ExerciseTitle}
 
@@ -96,7 +96,7 @@
 \renewcommand{\AnswerHeader}{\textbf{\AnswerName\ %
 \ExerciseHeaderNB}\;\;}
 
-\renewcommand{\QuestionNB}{\alph{Question}.\ }
+\renewcommand{\QuestionNB}{\textbf{\alph{Question}}.\ }
 
 \renewcounter{Exercise}[section]% Reset counter every chapter
 \renewcommand{\theExercise}{\thesection.\arabic{Exercise}}
@@ -110,6 +110,8 @@
 \usepackage[titletoc,title]{appendix}
 \renewcommand{\bibname}{References}
 
+\raggedbottom
+
 \input{title_page.tex}
 
 \begin{document}
@@ -120,6 +122,8 @@
 
 \newpage
 \twocolumn
+
+\raggedbottom
 
 \thispagestyle{empty}
 \tableofcontents
@@ -132,8 +136,8 @@
 \input{vector_spaces/index.tex}
 
 \appendix
-\chapter*{Answers to Exercises}
-\addcontentsline{toc}{chapter}{Answers to Exercises}
+\chapter{Answers to Exercises}
+%\addcontentsline{toc}{chapter}{Answers to Exercises}
 \shipoutAnswer
 
 \input{references.tex}

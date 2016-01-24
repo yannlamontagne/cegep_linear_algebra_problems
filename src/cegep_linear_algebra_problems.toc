@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {2}Matrix Algebra}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction to Matrices and Matrix Operations}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Matrix Inverses and Algebraic Properties}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Elementary Matrices}{6}{section.2.3}
+\contentsline {section}{\numberline {2.3}Elementary Matrices}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}Linear Systems and Matrices}{6}{section.2.4}
 \contentsline {chapter}{\numberline {3}Determinants}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}The Laplace Expansion}{7}{section.3.1}
@@ -25,6 +25,6 @@
 \contentsline {section}{\numberline {5.4}Linear Independence}{12}{section.5.4}
 \contentsline {section}{\numberline {5.5}Basis}{13}{section.5.5}
 \contentsline {section}{\numberline {5.6}Dimension}{13}{section.5.6}
-\contentsline {chapter}{Answers to Exercises}{15}{appendix*.2}
-\contentsline {chapter}{References}{20}{appendix*.2}
-\contentsline {chapter}{Index}{21}{appendix*.3}
+\contentsline {chapter}{\numberline {A}Answers to Exercises}{15}{appendix.A}
+\contentsline {chapter}{References}{20}{appendix.A}
+\contentsline {chapter}{Index}{21}{appendix*.2}

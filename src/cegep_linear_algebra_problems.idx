@@ -4,8 +4,8 @@
 \indexentry{augmented matrix|hyperpage}{1}
 \indexentry{system of linear equations|hyperpage}{1}
 \indexentry{elementary row operation|hyperpage}{1}
-\indexentry{elementary row operation|hyperpage}{2}
-\indexentry{geometric interpretation|hyperpage}{2}
+\indexentry{elementary row operation|hyperpage}{1}
+\indexentry{geometric interpretation|hyperpage}{1}
 \indexentry{|hyperpage}{2}
 \indexentry{Gaussian Elimination|hyperpage}{2}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{2}
@@ -18,8 +18,8 @@
 \indexentry{unique solution, inconsistent, infinitely many solutions|hyperpage}{2}
 \indexentry{augmented matrix|hyperpage}{2}
 \indexentry{no solution, unique solution, infinitely many solution|hyperpage}{2}
-\indexentry{consistent system|hyperpage}{2}
-\indexentry{augmented matrix|hyperpage}{2}
+\indexentry{consistent system|hyperpage}{3}
+\indexentry{augmented matrix|hyperpage}{3}
 \indexentry{|hyperpage}{3}
 \indexentry{|hyperpage}{3}
 \indexentry{ph|hyperpage}{3}
@@ -40,7 +40,7 @@
 \indexentry{matrix inverse|hyperpage}{5}
 \indexentry{matrix inverse|hyperpage}{5}
 \indexentry{symmetric equation|hyperpage}{5}
-\indexentry{elementary matrix|hyperpage}{6}
+\indexentry{elementary matrix|hyperpage}{5}
 \indexentry{elementary matrix|hyperpage}{6}
 \indexentry{elementary matrix|hyperpage}{6}
 \indexentry{row-equivalent|hyperpage}{6}
