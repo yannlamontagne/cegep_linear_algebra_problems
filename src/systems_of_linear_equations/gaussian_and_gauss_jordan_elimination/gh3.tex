@@ -1,0 +1,126 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{particular solution}
+\index{Gauss-Jordan elimination}
+\index{Gaussian elimination}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{GH}}]
+Find the solution to the given linear system. If the system has infinite solutions, give two particular solutions.
+\begin{multicols}{2}
+\Question 
+$
+\begin{linsys}{2}
+2x_1&+&4x_2&=&2\\
+x_1&+&2x_2&=&1\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+-x_1&+&5x_2&=&3\\
+2x_1&-&10x_2&=&-6\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+x_1&+&x_2&=&3\\
+2x_1&+&x_2&=&4\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+-3x_1&+&7x_2&=&-7\\
+2x_1&-&8x_2&=&8\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{3}
+-2x_1&+&4x_2&+&4x_3&=&6\\
+x_1&-&3x_2&+&2x_3&=&1\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{3}
+-x_1&+&2x_2&+&2x_3&=&2\\
+2x_1&+&5x_2&+&x_3&=&2\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{4}
+-x_1&-&x_2&+&x_3&+&x_4&=&0\\
+-2x_1&-&2x_2&+&x_3&&&=&-1\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{4}
+x_1&+&x_2&+&6x_3&+&9x_4&=&0\\
+x_1&&&+&x_3&+&2x_4&=&3\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{3}
+x_1&+&2x_2&+&2x_3&=&1\\
+2x_1&+&x_2&+&3x_3&=&1\\
+3x_1&+&3x_2&+&5x_3&=&2\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{3}
+2x_1&+&4x_2&+&6x_3&=&2\\
+1x_1&+&2x_2&+&3x_3&=&1\\
+3x_1&+&6x_2&+&9x_3&=&3\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+2x_1&+&3x_2&=&1\\
+-2x_1&-&3x_2&=&1\\
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{3}
+2x_1&+&x_2&+&2x_3&=&0\\
+x_1&+&x_2&+&3x_3&=&1\\
+3x_1&+&2x_2&+&5x_3&=&3\\
+\end{linsys}
+$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question $x_1=1-2t$; $x_2=t$ where $t\in\Re$. Possible solutions: $x_1=1$, $x_2=0$ and $x_1=-1$, $x_2=1$.
+\Question $x_1=-3+5t$; $x_2=t$ where $t\in\Re$. Possible solutions: $x_1 = 3$, $x_2=0$ and $x_1 = -8$, $x_2 = -1$.
+\Question $x_1=1$; $x_2=2$.
+\Question $x_1=0$; $x_2=-1$.
+\Question $x_1=-11+10t$; $x_2=-4+4t$; $x_3=t$ where $t\in\Re$. Possible solutions: $x_1=-11$, $x_2 = -4$, $x_3=0$ and $x_1 = -1$, $x_2 = 0$ and $x_3 = 1$.
+\Question $x_1=-\frac23+\frac89t$; $x_2=\frac23-\frac59t$; $x_3=t$ where $t\in\Re$. Possible solutions: $x_1 = -\frac23$, $x_2 = \frac23$, $x_3 = 0$ and $x_1 = \frac49$, $x_2 = -\frac19$, $x_3 = 1$.
+\Question $x_1=1-s-t$; $x_2=s$; $x_3=1-2t$; $x_4=t$ where $s,\;t\in\Re$. Possible solutions: $x_1 = 1$, $x_2 = 0$, $x_3 = 1$, $x_4 = 0$ and $x_1 = -2$, $x_2 = 1$, $x_3 = -3$, $x_4=2$.
+\Question $x_1=3-s-2t$; $x_2=-3-5s-7t$; $x_3=s$; $x_4=t$ where $s,\;t\in\Re$. Possible solutions: $x_1 =3$, $x_2 = -3$, $x_3=0$, $x_4=0$ and $x_1 = 0$, $x_2 = -5$, $x_3 =-1$, $x_4=1$.
+\Question $x_1=\frac13-\frac43t$; $x_2=\frac13-\frac13t$; $x_3=t$ where $t\in\Re$. Possible solutions: $x_1 = \frac13$, $x_2=\frac13$, $x_3=0$ and $x_1 = -1$, $x_2 = 0$, $x_3=1$.
+\Question $x_1=1-2s-3t$; $x_2=s$; $x_3=t$ where $s,\;t\in\Re$. Possible solutions: $x_1=1$, $x_2=0$, $x_3=0$ and $x_1=8$, $x_2=1$, $x_3 = -3$.
+\Question No solution; the system is inconsistent.
+\Question No solution; the system is inconsistent.
+\end{Answer}

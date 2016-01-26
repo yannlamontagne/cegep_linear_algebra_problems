@@ -1,0 +1,55 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{unique solution}
+\index{Gaussian elimination}
+\index{inconsistent}
+\index{infinite solutions}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{GH}}]
+State for which values of $k$ the given system will have exactly 1 solution, infinite solutions, or no solution.
+\begin{multicols}{2}
+\Question 
+$
+\begin{linsys}{2}
+x_1&+&2x_2&=&1\\2x_1&+&4x_2&=&k
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+x_1&+&2x_2&=&1\\x_1&+&kx_2&=&1
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+x_1&+&2x_2&=&1\\x_1&+&kx_2&=&2
+\end{linsys}
+$
+\Question
+$
+\begin{linsys}{2}
+x_1&+&2x_2&=&1\\x_1&+&3x_2&=&k
+\end{linsys}
+$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question Never exactly 1 solution; infinite solutions if $k=2$; no solution if $k\neq 2$.
+\Question Exactly 1 solution if $k\neq 2$; infinite solutions if $k=2$; never no solution.
+\Question Exactly 1 solution if $k\neq 2$; no solution if $k=2$; never infinite solutions.
+\Question Exactly 1 solution for all $k$.
+\end{Answer}
