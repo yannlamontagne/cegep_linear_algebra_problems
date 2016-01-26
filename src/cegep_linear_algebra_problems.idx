@@ -39,17 +39,21 @@
 \indexentry{matrix associativity|hyperpage}{5}
 \indexentry{matrix size|hyperpage}{5}
 \indexentry{matrix addition|hyperpage}{5}
+\indexentry{matrix product|hyperpage}{5}
+\indexentry{ij product|hyperpage}{5}
+\indexentry{matrix product|hyperpage}{5}
+\indexentry{matrix dimension|hyperpage}{5}
 \indexentry{scalar multiplication|hyperpage}{5}
 \indexentry{matrix multiplication|hyperpage}{5}
 \indexentry{matrix associativity|hyperpage}{5}
-\indexentry{matrix addition|hyperpage}{5}
-\indexentry{symmetric matrix|hyperpage}{5}
-\indexentry{nilpotent matrix|hyperpage}{5}
-\indexentry{idempotent matrix|hyperpage}{5}
-\indexentry{matrix equation|hyperpage}{5}
-\indexentry{matrix addition|hyperpage}{5}
-\indexentry{matrix inverse|hyperpage}{5}
-\indexentry{matrix equation|hyperpage}{5}
+\indexentry{matrix addition|hyperpage}{6}
+\indexentry{symmetric matrix|hyperpage}{6}
+\indexentry{nilpotent matrix|hyperpage}{6}
+\indexentry{idempotent matrix|hyperpage}{6}
+\indexentry{matrix equation|hyperpage}{6}
+\indexentry{matrix addition|hyperpage}{6}
+\indexentry{matrix inverse|hyperpage}{6}
+\indexentry{matrix equation|hyperpage}{6}
 \indexentry{matrix inverse|hyperpage}{6}
 \indexentry{matrix equation|hyperpage}{6}
 \indexentry{matrix inverse|hyperpage}{6}
@@ -64,71 +68,71 @@
 \indexentry{row-equivalent|hyperpage}{6}
 \indexentry{linear system|hyperpage}{6}
 \indexentry{matrix inverse|hyperpage}{6}
-\indexentry{determinant|hyperpage}{7}
-\indexentry{Laplace expansion|hyperpage}{7}
-\indexentry{cofactor expansion|hyperpage}{7}
-\indexentry{determinant|hyperpage}{7}
-\indexentry{elementary operation|hyperpage}{7}
-\indexentry{determinant|hyperpage}{7}
-\indexentry{Cramer's Rule|hyperpage}{7}
-\indexentry{ph|hyperpage}{9}
-\indexentry{place holder|hyperpage}{9}
-\indexentry{Cauchy-Schwartz Inequality|hyperpage}{9}
-\indexentry{ph|hyperpage}{9}
-\indexentry{place holder|hyperpage}{9}
-\indexentry{ph|hyperpage}{9}
-\indexentry{place holder|hyperpage}{9}
-\indexentry{ph|hyperpage}{9}
-\indexentry{place holder|hyperpage}{9}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{zero vector|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{additive inverse|hyperpage}{11}
-\indexentry{polynomial space|hyperpage}{11}
-\indexentry{matrix space|hyperpage}{11}
-\indexentry{function space|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{polynomial space|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{matrix space|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{polynomial space|hyperpage}{11}
-\indexentry{matrix space|hyperpage}{11}
-\indexentry{zero vector|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{rational numbers|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{vector space|hyperpage}{11}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{function space|hyperpage}{12}
-\indexentry{matrix space|hyperpage}{12}
-\indexentry{diagonal matrix|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{matrix space|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{positive real numbers|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{zero vector|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{matrix space|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{additive inverse|hyperpage}{12}
-\indexentry{vector space|hyperpage}{12}
-\indexentry{trivial subspace|hyperpage}{12}
-\indexentry{subspace|hyperpage}{12}
-\indexentry{line, plane|hyperpage}{12}
-\indexentry{function subspace|hyperpage}{12}
-\indexentry{subspace|hyperpage}{12}
-\indexentry{subspace|hyperpage}{12}
-\indexentry{spaning set|hyperpage}{12}
-\indexentry{linear independence|hyperpage}{12}
-\indexentry{linear dependence|hyperpage}{12}
+\indexentry{determinant|hyperpage}{9}
+\indexentry{Laplace expansion|hyperpage}{9}
+\indexentry{cofactor expansion|hyperpage}{9}
+\indexentry{determinant|hyperpage}{9}
+\indexentry{elementary operation|hyperpage}{9}
+\indexentry{determinant|hyperpage}{9}
+\indexentry{Cramer's Rule|hyperpage}{9}
+\indexentry{ph|hyperpage}{11}
+\indexentry{place holder|hyperpage}{11}
+\indexentry{Cauchy-Schwartz Inequality|hyperpage}{11}
+\indexentry{ph|hyperpage}{11}
+\indexentry{place holder|hyperpage}{11}
+\indexentry{ph|hyperpage}{11}
+\indexentry{place holder|hyperpage}{11}
+\indexentry{ph|hyperpage}{11}
+\indexentry{place holder|hyperpage}{11}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{zero vector|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{additive inverse|hyperpage}{13}
 \indexentry{polynomial space|hyperpage}{13}
-\indexentry{basis|hyperpage}{13}
-\indexentry{coordinate vector|hyperpage}{13}
+\indexentry{matrix space|hyperpage}{13}
+\indexentry{function space|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
 \indexentry{polynomial space|hyperpage}{13}
-\indexentry{dimension|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{matrix space|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{polynomial space|hyperpage}{13}
+\indexentry{matrix space|hyperpage}{13}
+\indexentry{zero vector|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{rational numbers|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{vector space|hyperpage}{13}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{function space|hyperpage}{14}
+\indexentry{matrix space|hyperpage}{14}
+\indexentry{diagonal matrix|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{matrix space|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{positive real numbers|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{zero vector|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{matrix space|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{additive inverse|hyperpage}{14}
+\indexentry{vector space|hyperpage}{14}
+\indexentry{trivial subspace|hyperpage}{14}
+\indexentry{subspace|hyperpage}{14}
+\indexentry{line, plane|hyperpage}{14}
+\indexentry{function subspace|hyperpage}{14}
+\indexentry{subspace|hyperpage}{14}
+\indexentry{subspace|hyperpage}{14}
+\indexentry{spaning set|hyperpage}{14}
+\indexentry{linear independence|hyperpage}{14}
+\indexentry{linear dependence|hyperpage}{14}
+\indexentry{polynomial space|hyperpage}{15}
+\indexentry{basis|hyperpage}{15}
+\indexentry{coordinate vector|hyperpage}{15}
+\indexentry{polynomial space|hyperpage}{15}
+\indexentry{dimension|hyperpage}{15}
