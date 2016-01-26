@@ -1,3 +1,872 @@
+  \recommended \item 
+    Do the indicated vector operation, if it is defined.
+    \begin{exparts*}
+      \partsitem \( \colvec[r]{2 \\ 1 \\ 1}
+               +\colvec[r]{3 \\ 0 \\ 4} \)
+      \partsitem \( 5\colvec[r]{4 \\ -1} \)
+      \partsitem \( \colvec[r]{1 \\ 5 \\ 1}
+               -\colvec[r]{3 \\ 1 \\ 1} \)
+      \partsitem \( 7\colvec[r]{2 \\ 1}
+               +9\colvec[r]{3 \\ 5} \)
+      \partsitem \( \colvec[r]{1 \\ 2}
+               +\colvec[r]{1 \\ 2 \\ 3} \)
+      \partsitem \( 6\colvec[r]{3 \\ 1 \\ 1}
+               -4\colvec[r]{2 \\ 0 \\ 3}
+               +2\colvec[r]{1 \\ 1 \\ 5} \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts*}
+        \partsitem \( \colvec[r]{5 \\ 1 \\ 5} \)
+        \partsitem \( \colvec[r]{20 \\ -5} \)
+        \partsitem \( \colvec[r]{-2 \\ 4 \\ 0} \)
+        \partsitem \( \colvec[r]{41 \\ 52} \)
+        \partsitem Not defined.
+        \partsitem \( \colvec[r]{12 \\ 8 \\ 4} \)
+      \end{exparts*}  
+     \end{answer}
+  \recommended \item  \label{exer:SolveInMatrixNotation}
+    Solve each system using matrix notation.
+    Express the solution using vectors.
+    \begin{exparts*}
+      \partsitem \( \begin{linsys}[t]{2}
+                  3x  &+  &6y  &=  &18  \\
+                   x  &+  &2y  &=  &6   
+                   \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{2}
+                   x  &+  &y   &=  &1  \\
+                   x  &-  &y   &=  &-1   
+                    \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{3}
+                   x_1  &   &     &+  &x_3   &=  &4  \\
+                   x_1  &-  &x_2  &+  &2x_3  &=  &5  \\
+                  4x_1  &-  &x_2  &+  &5x_3  &=  &17  
+                   \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{3}
+                   2a   &+  &b    &-  &c     &=  &2  \\
+                   2a   &   &     &+  &c     &=  &3  \\
+                    a   &-  &b    &   &      &=  &0   
+                    \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{4}
+                     x  &+  &2y   &-   &z   &    &    &=  &3  \\
+                    2x  &+  &y    &    &    &+   &w   &=  &4  \\
+                     x  &-  &y    &+   &z   &+   &w   &=  &1  
+                    \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{4}
+                     x  &   &     &+   &z   &+   &w   &=  &4  \\
+                    2x  &+  &y    &    &    &-   &w   &=  &2  \\
+                    3x  &+  &y    &+   &z   &    &    &=  &7  
+                     \end{linsys}  \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem This reduction
+          \begin{equation*}
+            \begin{amat}[r]{2}
+              3  &6  &18 \\
+              1  &2  &6
+            \end{amat}
+            \grstep{(-1/3)\rho_1+\rho_2}
+            \begin{amat}[r]{2}
+              3  &6  &18 \\
+              0  &0  &0
+            \end{amat}
+          \end{equation*}
+          leaves \( x \) leading and \( y \) free.
+          Making \( y \) the parameter, gives \( x=6-2y \) and this solution
+          set.
+          \begin{equation*}
+            \set{\colvec[r]{6 \\ 0}+\colvec[r]{-2 \\ 1}y
+              \suchthat y\in\Re}
+          \end{equation*}
+        \partsitem A reduction
+          \begin{equation*}
+            \begin{amat}[r]{2}
+              1  &1  &1  \\
+              1  &-1 &-1
+            \end{amat}
+            \grstep{-\rho_1+\rho_2}
+            \begin{amat}[r]{2}
+              1  &1  &1  \\
+              0  &-2 &-2
+            \end{amat}
+          \end{equation*}
+          gives the unique solution \( y=1 \), \( x=0 \).
+          The solution set is this.
+          \begin{equation*}
+            \set{\colvec[r]{0 \\ 1} }
+          \end{equation*}
+        \partsitem Gauss's Method
+          \begin{equation*}
+            \begin{amat}[r]{3}
+              1  &0  &1  &4  \\
+              1  &-1 &2  &5  \\
+              4  &-1 &5  &17
+            \end{amat}
+            \grstep[-4\rho_1+\rho_3]{-\rho_1+\rho_2}
+            \begin{amat}[r]{3}
+              1  &0  &1  &4  \\
+              0  &-1 &1  &1  \\
+              0  &-1 &1  &1
+            \end{amat}     
+            \grstep{-\rho_2+\rho_3}
+            \begin{amat}[r]{3}
+              1  &0  &1  &4  \\
+              0  &-1 &1  &1  \\
+              0  &0  &0  &0
+            \end{amat}
+          \end{equation*}
+          leaves \( x_1 \) and \( x_2 \) leading with \( x_3 \) free.
+          The solution set is this.
+          \begin{equation*}
+            \set{\colvec[r]{4 \\ -1 \\ 0}+\colvec[r]{-1 \\ 1 \\ 1}x_3
+              \suchthat x_3\in\Re}
+          \end{equation*}
+        \partsitem This reduction
+          \begin{align*}
+            \begin{amat}[r]{3}
+              2  &1  &-1 &2  \\
+              2  &0  &1  &3  \\
+              1  &-1 &0  &0
+            \end{amat}
+            &\grstep[-(1/2)\rho_1+\rho_3]{-\rho_1+\rho_2}
+            \begin{amat}[r]{3}
+              2  &1    &-1   &2  \\
+              0  &-1   &2    &1  \\
+              0  &-3/2 &1/2  &-1
+            \end{amat}                                          \\
+            &\grstep{(-3/2)\rho_2+\rho_3}
+            \begin{amat}[r]{3}
+              2  &1  &-1   &2  \\
+              0  &-1 &2    &1  \\
+              0  &0  &-5/2 &-5/2
+            \end{amat}
+          \end{align*}
+          shows that the solution set is a singleton set.
+          \begin{equation*}
+            \set{\colvec[r]{1 \\ 1 \\ 1}}
+          \end{equation*}
+        \partsitem This reduction is easy
+          \begin{align*}
+            \begin{amat}[r]{4}
+              1  &2  &-1 &0  &3 \\
+              2  &1  &0  &1  &4 \\
+              1  &-1 &1  &1  &1
+            \end{amat}
+            &\grstep[-\rho_1+\rho_3]{-2\rho_1+\rho_2}
+            \begin{amat}[r]{4}
+              1  &2  &-1 &0  &3  \\
+              0  &-3 &2  &1  &-2 \\
+              0  &-3 &2  &1  &-2
+            \end{amat}                                       \\
+            &\grstep{-\rho_2+\rho_3}
+            \begin{amat}[r]{4}
+              1  &2  &-1 &0  &3  \\
+              0  &-3 &2  &1  &-2 \\
+              0  &0  &0  &0  &0
+            \end{amat}
+          \end{align*}
+          and ends with \( x \) and $y$ leading while \( z \) and \( w \) are
+          free.
+          Solving for \( y \) gives \( y=(2+2z+w)/3 \) and substitution shows
+          that \( x+2(2+2z+w)/3-z=3 \) so \( x=(5/3)-(1/3)z-(2/3)w \),
+          making this the solution set.
+          \begin{equation*}
+            \set{\colvec[r]{5/3 \\ 2/3 \\ 0 \\ 0}
+                 +\colvec[r]{-1/3 \\ 2/3 \\ 1 \\ 0}z
+                 +\colvec[r]{-2/3 \\ 1/3 \\ 0 \\ 1}w
+                 \suchthat z,w\in\Re}
+          \end{equation*}
+        \partsitem The reduction
+          \begin{align*}
+            \begin{amat}[r]{4}
+              1  &0  &1  &1  &4 \\
+              2  &1  &0  &-1 &2 \\
+              3  &1  &1  &0  &7
+            \end{amat}
+            &\grstep[-3\rho_1+\rho_3]{-2\rho_1+\rho_2}
+            \begin{amat}[r]{4}
+              1  &0  &1  &1  &4 \\
+              0  &1  &-2 &-3 &-6\\
+              0  &1  &-2 &-3 &-5
+            \end{amat}                                       \\
+            &\grstep{-\rho_2+\rho_3}
+            \begin{amat}[r]{4}
+              1  &0  &1  &1  &4 \\
+              0  &1  &-2 &-3 &-6\\
+              0  &0  &0  &0  &1
+            \end{amat}
+          \end{align*}
+          shows that there is no solution\Dash the solution set is empty.
+      \end{exparts}  
+     \end{answer}
+  \recommended \item \label{exer:SlvMatNot}
+    Solve each system using matrix notation.
+    Give each solution set in vector notation.
+    \begin{exparts*}
+      \partsitem \( \begin{linsys}[t]{3}
+                  2x  &+  &y  &-  &z  &=  &1  \\
+                  4x  &-  &y  &   &   &=  &3  
+                \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{4}
+                   x  &   &   &-  &z  &   &   &=  &1  \\
+                      &   &y  &+  &2z &-  &w  &=  &3  \\
+                   x  &+  &2y &+  &3z &-  &w  &=  &7  
+               \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{4}
+                   x  &-  &y  &+  &z  &   &   &=  &0  \\
+                      &   &y  &   &   &+  &w  &=  &0  \\
+                  3x  &-  &2y &+  &3z &+  &w  &=  &0  \\
+                      &   &-y &   &   &-  &w  &=  &0  
+               \end{linsys}  \)
+      \partsitem \( \begin{linsys}[t]{5}
+                   a  &+  &2b &+  &3c &+  &d  &-  &e  &=  &1  \\
+                  3a  &-  &b  &+  &c  &+  &d  &+  &e  &=  &3  
+               \end{linsys}  \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+      \partsitem The reduction
+        \begin{equation*}
+          \begin{amat}[r]{3}
+            2  &1  &-1  &1  \\
+            4  &-1 &0   &3
+          \end{amat}
+          \grstep{-2\rho_1+\rho_2}
+          \begin{amat}[r]{3}
+            2  &1  &-1  &1  \\
+            0  &-3 &2   &1
+          \end{amat}
+        \end{equation*}
+        ends with \( x \) and \( y \) leading, and with \( z \) free.
+        Solving for \( y \) gives \( y=(1-2z)/(-3) \), and then substitution
+        \( 2x+(1-2z)/(-3)-z=1 \) shows that \( x=((4/3)+(1/3)z)/2 \).
+        Hence the solution set is this.
+        \begin{equation*}
+          \set{\colvec[r]{2/3 \\ -1/3 \\ 0}
+               +\colvec[r]{1/6 \\ 2/3 \\ 1}z
+              \suchthat z\in\Re}
+        \end{equation*}
+      \partsitem This application of Gauss's Method
+        \begin{align*}
+          \begin{amat}[r]{4}
+            1  &0  &-1  &0  &1 \\
+            0  &1  &2   &-1 &3 \\
+            1  &2  &3   &-1 &7
+          \end{amat}
+          &\grstep{-\rho_1+\rho_3}
+          \begin{amat}[r]{4}
+            1  &0  &-1  &0  &1 \\
+            0  &1  &2   &-1 &3 \\
+            0  &2  &4   &-1 &6
+          \end{amat}                                   \\
+          &\grstep{-2\rho_2+\rho_3}
+          \begin{amat}[r]{4}
+            1  &0  &-1  &0  &1 \\
+            0  &1  &2   &-1 &3 \\
+            0  &0  &0   &1  &0
+          \end{amat}
+        \end{align*}
+        leaves  \( x \), \( y \), and \( w \)  leading.
+        The solution set is here.
+        \begin{equation*}
+          \set{\colvec[r]{1 \\ 3 \\ 0 \\ 0}
+               +\colvec[r]{1 \\ -2 \\ 1 \\ 0}z
+              \suchthat z\in\Re}
+        \end{equation*}
+      \partsitem This row reduction
+        \begin{align*}
+          \begin{amat}[r]{4}
+            1  &-1 &1   &0  &0 \\
+            0  &1  &0   &1  &0 \\
+            3  &-2 &3   &1  &0 \\
+            0  &-1 &0   &-1 &0
+          \end{amat}
+          &\grstep{-3\rho_1+\rho_3}
+          \begin{amat}[r]{4}
+            1  &-1 &1   &0  &0 \\
+            0  &1  &0   &1  &0 \\
+            0  &1  &0   &1  &0 \\
+            0  &-1 &0   &-1 &0
+          \end{amat}                                       \\
+          &\grstep[\rho_2+\rho_4]{-\rho_2+\rho_3}
+          \begin{amat}[r]{4}
+            1  &-1 &1   &0  &0 \\
+            0  &1  &0   &1  &0 \\
+            0  &0  &0   &0  &0 \\
+            0  &0  &0   &0  &0
+          \end{amat}
+        \end{align*}
+        ends with \( z \) and \( w \) free.
+        We have this solution set.
+        \begin{equation*}
+          \set{\colvec[r]{0 \\ 0 \\ 0 \\ 0}
+               +\colvec[r]{-1 \\ 0 \\ 1 \\ 0}z
+               +\colvec[r]{-1 \\ -1 \\ 0 \\ 1}w
+              \suchthat z,w\in\Re}
+        \end{equation*}
+      \partsitem Gauss's Method done in this way
+        \begin{equation*}
+          \begin{amat}[r]{5}
+            1  &2  &3   &1  &-1 &1  \\
+            3  &-1 &1   &1  &1  &3
+          \end{amat}
+          \grstep{-3\rho_1+\rho_2}
+          \begin{amat}[r]{5}
+            1  &2  &3   &1  &-1 &1  \\
+            0  &-7 &-8  &-2 &4  &0
+          \end{amat}
+        \end{equation*}
+        ends with \( c \), \( d \), and \( e \) free.
+        Solving for \( b \) shows that \( b=(8c+2d-4e)/(-7) \) and then 
+        substitution
+        \( a+2(8c+2d-4e)/(-7)+3c+1d-1e=1 \) shows that 
+        \( a=1-(5/7)c-(3/7)d-(1/7)e \) and we have the solution set.
+        \begin{equation*}
+          \set{\colvec[r]{1 \\ 0 \\ 0 \\ 0 \\ 0}
+               +\colvec[r]{-5/7 \\ -8/7 \\ 1 \\ 0 \\ 0}c
+               +\colvec[r]{-3/7 \\ -2/7 \\ 0 \\ 1 \\ 0}d
+               +\colvec[r]{-1/7 \\ 4/7 \\ 0 \\ 0 \\ 1}e
+              \suchthat c,d,e\in\Re}
+        \end{equation*}
+    \end{exparts}  
+   \end{answer}
+  \recommended \item 
+    The vector is in the set.
+    What value of the parameters produces that vector?
+    \begin{exparts}
+      \partsitem $\colvec[r]{5 \\ -5}$,
+        $\set{\colvec[r]{1 \\ -1}k\suchthat k\in\Re}$
+      \partsitem $\colvec[r]{-1 \\ 2 \\ 1}$,
+        $\set{\colvec[r]{-2 \\ 1 \\ 0}i
+           +\colvec[r]{3 \\ 0 \\ 1}j\suchthat i,j\in\Re}$
+      \partsitem $\colvec[r]{0 \\ -4 \\ 2}$,
+        $\set{\colvec[r]{1 \\ 1 \\ 0}m
+               +\colvec[r]{2 \\ 0 \\ 1}n\suchthat m,n\in\Re}$
+    \end{exparts}
+    \begin{answer}
+      For each problem we get a system of linear equations by looking at the 
+      equations of components.
+      \begin{exparts}
+       \partsitem $k=5$
+       \partsitem The second components show that $i=2$, the third
+       components show that $j=1$.
+       \partsitem $m=-4$, $n=2$
+      \end{exparts} 
+    \end{answer}
+  \item 
+    Decide if the vector is in the set.
+    \begin{exparts}
+      \partsitem $\colvec[r]{3 \\ -1}$,
+        $\set{\colvec[r]{-6 \\ 2}k\suchthat k\in\Re}$
+      \partsitem $\colvec[r]{5 \\ 4}$,
+        $\set{\colvec[r]{5 \\ -4}j\suchthat j\in\Re}$
+      \partsitem $\colvec[r]{2 \\ 1 \\ -1}$,
+        $\set{\colvec[r]{0 \\ 3 \\ -7}
+             +\colvec[r]{1 \\ -1 \\ 3}r\suchthat r\in\Re}$
+      \partsitem $\colvec[r]{1 \\ 0 \\ 1}$,
+        $\set{\colvec[r]{2 \\ 0 \\ 1}j
+            +\colvec[r]{-3 \\ -1 \\ 1}k\suchthat j,k\in\Re}$
+    \end{exparts}
+    \begin{answer}
+      For each problem we get a system of linear equations by looking at the 
+      equations of components.
+      \begin{exparts}
+        \partsitem Yes; take $k=-1/2$.
+        \partsitem No; the system with equations $5=5\cdot j$ and
+            $4=-4\cdot j$ has no solution.
+        \partsitem Yes; take $r=2$.
+        \partsitem No.
+           The second components give $k=0$.
+           Then the third components give $j=1$.
+           But the first components don't check. 
+      \end{exparts}
+     \end{answer}
+  \item \cite{Cleary}
+    A farmer with 1200 acres is considering planting three different crops, 
+    corn, soybeans, and oats.   
+    The farmer wants to use all~$1200$ acres.  
+    Seed corn costs \$$20$ per acre, while soybean and oat seed cost 
+    \$$50$ and~\$$12$ per acre respectively.  
+    The farmer has \$$40\,000$ available to buy seed and intends to 
+    spend it all.
+    \begin{exparts}  
+      \item Use the information above to formulate two linear equations 
+        with three unknowns and solve it.
+     \item Solutions to the system are choices that the farmer can make.  
+        Write down two reasonable solutions.
+     \item Suppose that in the fall when the crops mature, the farmer 
+        can bring in revenue of \$$100$ per acre for corn, 
+        \$$300$ per acre for soybeans and \$$80$ per acre for oats.  
+        Which of your two solutions in the prior part would have resulted 
+        in a larger revenue? 
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \item Let $c$ be the number of acres of corn, $s$ be the number of 
+          acres of soy, and $a$ be the number of acres of oats.
+          \begin{equation*}
+            \begin{linsys}{3}
+              c   &+   &s   &+   &a   &=   &1200 \\ 
+            20c   &+   &50s &+   &12a &=   &40\,000  
+            \end{linsys}
+            \grstep{-20\rho_1+\rho_2}
+            \begin{linsys}{3}
+              c   &+   &s   &+   &a   &=   &1200 \\ 
+                  &    &30s &-   &8a  &=   &16\,000  
+            \end{linsys}
+          \end{equation*}
+          To describe the solution set we can parametrize using $a$.
+          \begin{equation*}
+            \set{\colvec{c \\ s \\ a}
+                 =\colvec{20\,000/30 \\ 16\,000/30 \\ 0}
+                  +\colvec{-38/30 \\ 8/30 \\ 1}a
+                 \suchthat a\in\Re}
+          \end{equation*}
+        \item There are many answers possible here. 
+          For instance we can take $a=0$ to get $c=20\,000/30\approx 666.66$ and
+          $s=16000/30\approx 533.33$.
+          Another example is to take $a=20\,000/38\approx 526.32$, giving
+          $c=0$ and $s=7360/38\approx 193.68$.
+        \item Plug your answers from the prior part into 
+          $100c+300s+80a$.
+      \end{exparts}
+    \end{answer}
+  \item 
+    Parametrize the solution set of this one-equation system.
+    \begin{equation*}
+      x_1+x_2+\cdots+x_n=0
+    \end{equation*}
+    \begin{answer}
+      This system has one equation.
+      The leading variable is \( x_1 \), the other variables are free.
+      \begin{equation*}
+        \set{\colvec{-1 \\ 1 \\ \vdotswithin{-1} \\ 0}x_2
+             +\cdots+
+             \colvec{-1 \\ 0 \\ \vdotswithin{-1} \\ 1}x_n
+             \suchthat x_2,\ldots,x_n\in\Re}
+      \end{equation*}  
+     \end{answer}
+  \recommended \item 
+    \begin{exparts}
+    \partsitem Apply Gauss's Method to the left-hand side to solve
+      \begin{equation*}
+        \begin{linsys}{4}
+          x  &+  &2y  &    &    &-   &w   &=   &a   \\
+         2x  &   &    &+   &z   &    &    &=   &b   \\
+          x  &+  &y   &    &    &+   &2w  &=   &c   
+        \end{linsys}
+      \end{equation*}
+      for \( x \), \( y \), \( z \), and \(  w \), in terms of the 
+      constants $a$, $b$, and $c$.
+    \partsitem Use your answer from the prior part to solve this.
+      \begin{equation*}
+        \begin{linsys}{4}
+          x  &+  &2y  &    &    &-   &w   &=   &3   \\
+         2x  &   &    &+   &z   &    &    &=   &1   \\
+          x  &+  &y   &    &    &+   &2w  &=   &-2
+        \end{linsys}
+      \end{equation*}
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Gauss's Method here gives
+          \begin{align*}
+            \begin{amat}{4}
+              1  &2  &0  &-1  &a  \\
+              2  &0  &1  &0   &b  \\
+              1  &1  &0  &2   &c
+            \end{amat}
+            &\grstep[-\rho_1+\rho_3]{-2\rho_1+\rho_2}
+            \begin{amat}{4}
+              1  &2  &0  &-1  &a  \\
+              0  &-4 &1  &2   &-2a+b  \\
+              0  &-1 &0  &3   &-a+c
+            \end{amat}                                  \\
+            &\grstep{-(1/4)\rho_2+\rho_3}
+            \begin{amat}{4}
+              1  &2  &0    &-1  &a  \\
+              0  &-4 &1    &2   &-2a+b  \\
+              0  &0  &-1/4 &5/2 &-(1/2)a-(1/4)b+c
+            \end{amat}
+          \end{align*}
+          leaving \( w \) free.
+          Solve: \(  z=2a+b-4c+10w \),
+          and \( -4y=-2a+b-(2a+b-4c+10w)-2w \) so
+          \( y=a-c+3w \), and
+          \( x=a-2(a-c+3w)+w=-a+2c-5w. \)
+          Therefore the solution set is this.
+          \begin{equation*}
+             \set{\colvec{-a+2c \\ a-c \\ 2a+b-4c \\ 0}
+                  +\colvec{-5 \\ 3 \\ 10 \\ 1}w
+                  \suchthat w\in\Re}
+          \end{equation*}
+        \partsitem Plug in with \( a=3 \), \( b=1 \), and \( c=-2 \).
+          \begin{equation*}
+             \set{\colvec[r]{-7 \\ 5 \\ 15 \\ 0}
+                  +\colvec[r]{-5 \\ 3 \\ 10 \\ 1}w
+                  \suchthat w\in\Re}
+          \end{equation*}
+      \end{exparts}  
+     \end{answer}
+  \recommended \item 
+    Why is the comma needed in the notation `\( a_{i,j} \)'
+    for matrix entries?
+    \begin{answer}
+       Leaving the comma out, say by writing \( a_{123} \),
+       is ambiguous because it could mean $a_{1,23}$ or $a_{12,3}$.  
+    \end{answer}
+  \recommended \item 
+    Give the \( \nbyn{4} \) matrix whose
+    \( i,j \)-th entry is
+    \begin{exparts*}
+      \partsitem \( i+j \);
+      \partsitem \( -1 \) to the \( i+j \) power.
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts*}
+        \partsitem \(
+           \begin{mat}[r]
+             2  &3  &4  &5  \\
+             3  &4  &5  &6  \\
+             4  &5  &6  &7  \\
+             5  &6  &7  &8
+           \end{mat} \)
+        \partsitem \(
+           \begin{mat}[r]
+             1  &-1  &1   &-1  \\
+            -1  &1   &-1  &1  \\
+             1  &-1  &1   &-1  \\
+            -1  &1   &-1  &1
+           \end{mat} \)
+      \end{exparts*}  
+    \end{answer}
+  \item  
+    For any matrix \( A \), the 
+    \definend{transpose}\index{transpose}
+    \index{matrix!transpose}
+    of \( A \), written
+    \( \trans{A} \), is the matrix whose columns are the rows of \( A \).
+    Find the transpose of each of these.
+    \begin{exparts*}
+      \partsitem \( \begin{mat}[r]
+                  1  &2  &3  \\
+                  4  &5  &6
+               \end{mat}  \)
+      \partsitem \( \begin{mat}[r]
+                  2  &-3 \\
+                  1  &1
+               \end{mat}  \)
+      \partsitem \( \begin{mat}[r]
+                  5  &10 \\
+                 10  &5
+               \end{mat}  \)
+      \partsitem \( \colvec[r]{1 \\ 1 \\ 0} \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts*}
+        \partsitem \( \begin{mat}[r]
+                   1  &4  \\
+                   2  &5  \\
+                   3  &6
+                 \end{mat}  \)
+        \partsitem \( \begin{mat}[r]
+                   2  &1  \\
+                  -3  &1
+                 \end{mat}  \)
+        \partsitem \( \begin{mat}[r]
+                   5  &10 \\
+                  10  &5
+                 \end{mat}  \)
+        \partsitem \( \rowvec{1 &1 &0}  \)
+      \end{exparts*}  
+     \end{answer}
+  \recommended \item 
+    \begin{exparts}
+      \partsitem Describe all functions \( f(x)=ax^2+bx+c \) 
+        such that \( f(1)=2 \) and \( f(-1)=6 \).
+      \partsitem Describe all functions \( f(x)=ax^2+bx+c \) 
+        such that \( f(1)=2 \).
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Plugging in \( x=1 \) and \( x=-1 \) gives
+          \begin{equation*}
+            \begin{linsys}{3}
+              a  &+  &b   &+  &c  &=  &2  \\
+              a  &-  &b   &+  &c  &=  &6  
+            \end{linsys}
+            \grstep{-\rho_1+\rho_2}
+            \begin{linsys}{3}
+              a  &+  &b   &+  &c  &=  &2  \\
+                 &   &-2b &   &   &=  &4  
+              \end{linsys}
+          \end{equation*}
+          so the set of functions is
+          \( \set{f(x)=(4-c)x^2-2x+c\suchthat c\in\Re} \).
+        \partsitem Putting in \( x=1 \) gives
+          \begin{equation*}
+            \begin{linsys}{3}
+              a  &+  &b   &+  &c  &=  &2  
+            \end{linsys}
+          \end{equation*}
+          so the set of functions is
+          \( \set{f(x)=(2-b-c)x^2+bx+c\suchthat b,c\in\Re} \).
+      \end{exparts}  
+    \end{answer}
+  \item Show that any set of five points from the plane \( \Re^2 \) lie on a
+    common conic section, that is, they all satisfy some equation of the
+    form \( ax^2+by^2+cxy+dx+ey+f=0 \) where some of \( a,\,\ldots\,,f \)
+    are nonzero.
+    \begin{answer}
+      On plugging in the five pairs $(x,y)$ we get a system with the
+      five equations and six unknowns $a$, \ldots, $f$.
+      Because there are more unknowns than equations, if no inconsistency
+      exists among the equations then there are infinitely many solutions
+      (at least one variable will end up free).
+
+      But no inconsistency can exist because $a=0$, \ldots, $f=0$ is a 
+      solution (we are only using this zero solution to show that the system
+      is consistent\Dash the prior paragraph shows that
+      there are nonzero solutions). 
+    \end{answer}
+  \item 
+    Make up a four equations/four unknowns system having
+    \begin{exparts}
+      \partsitem a one-parameter solution set;
+      \partsitem a two-parameter solution set;
+      \partsitem a three-parameter solution set.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+      \partsitem Here is one\Dash the fourth equation is redundant 
+        but still OK.
+        \begin{equation*}
+          \begin{linsys}{4}
+             x  &+  &y  &-  &z  &+  &w  &=  &0  \\
+                &   &y  &-  &z  &   &   &=  &0  \\
+                &   &   &   &2z &+  &2w &=  &0  \\
+                &   &   &   &z  &+  &w  &=  &0
+          \end{linsys}
+        \end{equation*}
+      \partsitem Here is one.
+        \begin{equation*}
+          \begin{linsys}{4}
+             x  &+  &y  &-  &z  &+  &w  &=  &0  \\
+                &   &   &   &   &   &w  &=  &0  \\
+                &   &   &   &   &   &w  &=  &0  \\
+                &   &   &   &   &   &w  &=  &0
+          \end{linsys}
+        \end{equation*}
+      \partsitem This is one.
+        \begin{equation*}
+          \begin{linsys}{4}
+             x  &+  &y  &-  &z  &+  &w  &=  &0  \\
+             x  &+  &y  &-  &z  &+  &w  &=  &0  \\
+             x  &+  &y  &-  &z  &+  &w  &=  &0  \\
+             x  &+  &y  &-  &z  &+  &w  &=  &0 
+          \end{linsys}
+        \end{equation*}
+    \end{exparts}  
+   \end{answer}
+  \puzzle \item 
+    \cite{Shepelev}
+    This  puzzle  is  from  a  Russian   web-site
+    \texttt{http://www.arbuz.uz/}  and  there are many solutions
+    to it, but mine uses  linear  algebra  and  is  very
+    naive.   There's   a   planet  inhabited  by  arbuzoids
+   (watermeloners, to  translate  from  Russian). 
+   Those creatures are found in three colors: red, green and blue.  
+   There  are  $13$~red
+   arbuzoids,  $15$~blue  ones, and $17$~green. 
+   When
+   two differently colored arbuzoids meet,  they
+   both change to the third color.
+
+   The question is, can it ever happen that all
+   of them assume the same color?
+    \begin{answer}
+       \answerasgiven
+       My solution was to define the numbers  of  arbuzoids
+       as $3$-dimensional vectors, and express all possible
+       elementary transitions as such vectors, too:
+       \begin{center}
+         \begin{tabular}{rr}
+           R: &$13$  \\
+           G: &$15$  \\
+           B: &$17$
+         \end{tabular}
+         \qquad
+         Operations:
+         $\colvec[r]{-1 \\ -1 \\ 2}$, 
+         $\colvec[r]{-1 \\ 2 \\ -1}$, 
+         and 
+         $\colvec[r]{2 \\ -1 \\ -1}$
+       \end{center}
+       Now, it is enough to check whether the  solution  to
+       one  of  the  following  systems of linear equations
+       exists:
+       \begin{equation*}
+         \colvec[r]{13 \\ 15 \\ 17}
+         +x\colvec[r]{-1 \\ -1  \\ 2}
+         +y\colvec[r]{-1 \\ 2 \\ -1}
+         +\colvec[r]{2 \\ -1 \\ -1}
+         =\colvec[r]{0 \\ 0 \\ 45}
+         \qquad
+         \text{(or $\colvec[r]{0 \\ 45 \\ 0}$ or $\colvec[r]{45 \\ 0 \\ 0}$)}
+       \end{equation*}
+       Solving
+       \begin{equation*}
+         \begin{amat}[r]{3}
+          -1  &-1 &2  &-13  \\
+          -1  &2  &-1 &-15  \\
+           2  &-1 &-1 &28
+         \end{amat}
+         \grstep[2\rho_1+\rho_3]{-\rho_1+\rho_2}
+         \repeatedgrstep{\rho_2+\rho_3}
+         \begin{amat}[r]{3}
+          -1  &-1 &2  &-13  \\
+           0  &3  &-3 &-2  \\
+           0  &0  &0  &0
+         \end{amat}
+       \end{equation*}
+       gives $y+2/3=z$ so if the number of transformations $z$ is an integer
+       then $y$ is not.
+       The other two systems give similar conclusions so there is no
+       solution.
+    \end{answer}
+  \puzzle \item 
+    \cite{USSROlympiad174}
+    \begin{exparts}
+      \partsitem Solve the system of equations.
+        \begin{equation*}
+          \begin{linsys}{2}
+            ax  &+  &y  &=  &a^2  \\
+             x  &+  &ay &=  &1
+         \end{linsys}
+        \end{equation*}
+        For what values of $a$ does the system fail to have solutions, and
+        for what values of $a$ are there infinitely many solutions?
+      \partsitem Answer the above question for the system.
+        \begin{equation*}
+          \begin{linsys}{2}
+            ax  &+  &y  &=  &a^3  \\    
+             x  &+  &ay &=  &1
+          \end{linsys}
+        \end{equation*}
+    \end{exparts}
+    \begin{answer}
+       \answerasgiven
+       \begin{exparts}
+        \partsitem Formal solution of the system yields
+          \begin{equation*}
+            x=\frac{a^3-1}{a^2-1}  
+            \qquad
+            y=\frac{-a^2+a}{a^2-1}.
+          \end{equation*}
+          If $a+1\neq 0$ and $a-1\neq 0$, then the system has the single
+          solution
+          \begin{equation*}
+            x=\frac{a^2+a+1}{a+1}
+            \qquad
+            y=\frac{-a}{a+1}.
+          \end{equation*}
+          If $a=-1$, or if $a=+1$, then the formulas are meaningless; in the
+          first instance we arrive at the system
+          \begin{equation*}
+            \left\{ 
+            \begin{linsys}{2}
+              -x &+  &y  &=  &1 \\
+               x &-  &y  &=  &1
+            \end{linsys}\right.
+          \end{equation*}
+          which is a contradictory system.
+          In the second instance we have
+          \begin{equation*}
+            \left\{
+            \begin{linsys}{2}
+               x &+  &y  &=  &1 \\
+               x &+  &y  &=  &1
+            \end{linsys}\right.
+          \end{equation*}
+          which has an infinite number of solutions (for example, for 
+          $x$ arbitrary, $y=1-x$).
+        \partsitem Solution of the system yields
+          \begin{equation*}
+            x=\frac{a^4-1}{a^2-1}
+            \qquad
+            y=\frac{-a^3+a}{a^2-1}.
+          \end{equation*}
+          Here, is $a^2-1\neq 0$, the system has the single solution
+          $x=a^2+1$, $y=-a$.
+          For $a=-1$ and $a=1$, we obtain the systems
+          \begin{equation*}
+            \left\{
+            \begin{linsys}{2}
+              -x &+  &y  &=  &-1 \\
+               x &-  &y  &=  &1
+            \end{linsys}\right.
+            \qquad
+            \left\{
+            \begin{linsys}{2}
+               x &+  &y  &=  &1 \\
+               x &+  &y  &=  &1
+            \end{linsys}\right.
+         \end{equation*}
+         both of which have an infinite number of solutions.
+      \end{exparts}
+    \end{answer}
+  \puzzle \item 
+    \cite{MathMag52p48}
+    In air a gold-sur\-faced sphere weighs \( 7588 \)
+    grams.
+    It is known that it may contain one or more of the metals aluminum,
+    copper, silver, or lead.
+    When weighed successively under standard conditions in water, benzene,
+    alcohol, and glycerin its respective weights are \( 6588 \), \( 6688 \),
+    \( 6778 \), and \( 6328 \) grams.
+    How much, if any, of the forenamed metals does it contain if the
+    specific gravities of the designated substances are taken to be as follows?
+    \begin{center}
+       \begin{tabular}{lrclr}
+         Aluminum  &\( 2.7 \)
+            &\makebox[3em]{\mbox{}\hfill\mbox{}} &Alcohol &0.81 \\
+         Copper    &\( 8.9 \)  &     &Benzene   &\( 0.90 \) \\
+         Gold      &\( 19.3 \) &     &Glycerin &\( 1.26 \) \\
+         Lead      &\( 11.3 \) &     &Water     &\( 1.00 \) \\
+         Silver    &\( 10.8 \)
+       \end{tabular}
+    \end{center}
+    \begin{answer}
+      \answerasgiven
+      Let \( u \), \( v \), \( x \), \( y \), \( z \) be the volumes in
+      \( {\rm cm}^3 \) of Al, Cu, Pb, Ag, and Au, respectively, contained in
+      the sphere, which we assume to be not hollow.
+      Since the loss of weight in water (specific gravity \( 1.00 \)) is
+      \( 1000 \) grams, the volume of the sphere is \( 1000\mbox{ cm}^3 \).
+      Then the data, some of which is superfluous, though consistent, leads to
+      only \( 2 \) independent equations, one relating volumes and the
+      other, weights.
+      \begin{equation*}
+        \begin{linsys}{5}
+           u  &+  &v    &+  &x     &+  &y     &+  &z     &=  &1000  \\
+        2.7u  &+  &8.9v &+  &11.3x &+  &10.5y &+  &19.3z &=  &7558
+        \end{linsys}
+      \end{equation*}
+      Clearly the sphere must contain some aluminum to bring its mean specific
+      gravity below the specific gravities of all the other metals.
+      There is no unique result to this part of the problem, for the amounts
+      of three metals may be chosen arbitrarily, provided that the choices
+      will not result in negative amounts of any metal.
+
+      If the ball contains only aluminum and gold, there are
+      \( 294.5\mbox{ cm}^3 \) of gold and \( 705.5\mbox{ cm}^3 \) of aluminum.
+      Another possibility is \( 124.7\mbox{ cm}^3 \) each of Cu, Au, Pb, and
+      Ag and \( 501.2\mbox{ cm}^3  \) of Al.   
+    \end{answer}
+\end{exercises}
+
+
+
   
 \item 
     Prove that each operation of Gauss's Method is reversible.
