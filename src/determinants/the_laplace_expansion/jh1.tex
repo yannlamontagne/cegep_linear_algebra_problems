@@ -1,0 +1,37 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{Laplace expansion}
+\index{cofactor expansion}
+\index{triangular matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Verify that the determinant of an upper-triangular
+    $\nbyn{3}$ matrix is the product of the main diagonal. 
+    \begin{equation*}
+       \det\left(
+       \begin{mat}
+           a    &b   &c    \\
+           0    &e   &f    \\
+           0    &0   &i
+       \end{mat}
+       \right)
+       =aei
+    \end{equation*}
+    Is it the same for lower triangular matrices?
+\end{Exercise}
+
+\begin{Answer}
+Evaluate the determinant using a cofactor expansion.  The same is true for lower triangular matrices.
+\end{Answer}

@@ -1,4 +1,653 @@
+
+\begin{exercises}
   \recommended \item 
+     Evaluate the determinant of each.
+     \begin{exparts*}
+       \partsitem \(
+            \begin{mat}[r]
+                3    &1   \\
+               -1    &1
+            \end{mat}    \)
+       \partsitem \(
+            \begin{mat}[r]
+                2    &0   &1  \\
+                3    &1   &1 \\
+               -1    &0   &1
+            \end{mat}    \)
+       \partsitem \(
+            \begin{mat}[r]
+                4    &0   &1  \\
+                0    &0   &1 \\
+                1    &3   &-1
+            \end{mat}    \)
+     \end{exparts*}
+     \begin{answer}
+       \begin{exparts*}
+         \partsitem \( 4 \)
+         \partsitem \( 3 \)
+         \partsitem \( -12 \)
+       \end{exparts*}  
+     \end{answer}
+  \item 
+     Evaluate the determinant of each.
+     \begin{exparts*}
+        \partsitem \( \begin{mat}[r]
+                    2  &0  \\
+                   -1  &3
+                 \end{mat} \)
+        \partsitem \( \begin{mat}[r]
+                    2  &1  &1  \\
+                    0  &5  &-2 \\
+                    1  &-3 &4
+                 \end{mat} \)
+        \partsitem \( \begin{mat}[r]
+                    2  &3  &4  \\
+                    5  &6  &7  \\
+                    8  &9  &1
+                 \end{mat} \)
+     \end{exparts*}
+    \begin{answer}
+      \begin{exparts*}
+        \partsitem \( 6 \)
+        \partsitem \( 21 \)
+        \partsitem \( 27 \)
+      \end{exparts*}  
+    \end{answer}
+  \recommended \item  
+    Verify that the determinant of an upper-triangular
+    $\nbyn{3}$ matrix is the product down the diagonal. 
+    \begin{equation*}
+       \det(
+       \begin{mat}
+           a    &b   &c    \\
+           0    &e   &f    \\
+           0    &0   &i
+       \end{mat}
+       )
+       =aei
+    \end{equation*}
+    Do lower-triangular matrices work the same way?
+    \begin{answer}
+      For the first, apply the formula in this section, note that any
+      term with a \( d \), \( g \), or \( h \) is zero, and simplify.
+      Lower-triangular matrices work the same way.  
+    \end{answer}
+  \recommended \item 
+     Use the determinant to decide if each is singular or
+     nonsingular.
+     \begin{exparts*}
+       \partsitem \(
+            \begin{mat}[r]
+                2    &1   \\
+                3    &1
+            \end{mat}    \)
+       \partsitem \(
+            \begin{mat}[r]
+                0    &1   \\
+                1    &-1
+            \end{mat}    \)
+       \partsitem \(
+            \begin{mat}[r]
+                4    &2   \\
+                2    &1
+            \end{mat}    \)
+     \end{exparts*}
+     \begin{answer}
+       \begin{exparts}
+         \partsitem Nonsingular, the determinant is \( -1 \).
+         \partsitem Nonsingular, the determinant is \( -1 \).
+         \partsitem Singular, the determinant is \( 0 \).
+       \end{exparts}  
+     \end{answer}
+  \item 
+     Singular or nonsingular?
+     Use the determinant to decide.
+     \begin{exparts*}
+       \partsitem \(
+            \begin{mat}[r]
+                2    &1   &1  \\
+                3    &2   &2 \\
+                0    &1   &4
+            \end{mat}    \)
+       \partsitem \(
+            \begin{mat}[r]
+                1    &0   &1  \\
+                2    &1   &1 \\
+                4    &1   &3
+            \end{mat}    \)
+       \partsitem \(
+            \begin{mat}[r]
+                2    &1   &0  \\
+                3    &-2  &0 \\
+                1    &0   &0
+            \end{mat}    \)
+     \end{exparts*}
+     \begin{answer}
+      \begin{exparts}
+         \partsitem Nonsingular, the determinant is \( 3 \).
+         \partsitem Singular, the determinant is \( 0 \).
+         \partsitem Singular, the determinant is \( 0 \).
+       \end{exparts}  
+     \end{answer}
+  \recommended \item
+    Each pair of matrices differ by one row operation.
+    Use this operation to
+    compare \( \det(A) \) with \( \det(B) \).
+     \begin{exparts}
+        \partsitem \( A=\begin{mat}[r]
+                      1  &2  \\
+                      2  &3
+                   \end{mat} \)
+               \(  B=\begin{mat}[r]
+                      1  &2  \\
+                      0  &-1
+                   \end{mat}  \)
+        \partsitem \( A=\begin{mat}[r]
+                      3  &1  &0  \\
+                      0  &0  &1  \\
+                      0  &1  &2
+                   \end{mat} \)
+              \(   B=\begin{mat}[r]
+                      3  &1  &0  \\
+                      0  &1  &2  \\
+                      0  &0  &1
+                   \end{mat}  \)
+        \partsitem \( A=\begin{mat}[r]
+                      1  &-1 &3  \\
+                      2  &2  &-6 \\
+                      1  &0  &4
+                   \end{mat} \)
+              \(   B=\begin{mat}[r]
+                      1  &-1 &3  \\
+                      1  &1  &-3 \\
+                      1  &0  &4
+                   \end{mat}  \)
+     \end{exparts}
+     \begin{answer}
+       \begin{exparts}
+         \partsitem \( \det(B)=\det(A) \) via \( -2\rho_1+\rho_2 \)
+         \partsitem \( \det(B)=-\det(A) \) via 
+             \( \rho_2\leftrightarrow\rho_3 \)
+         \partsitem \( \det(B)=(1/2)\cdot \det(A) \) via \( (1/2)\rho_2 \)
+       \end{exparts}   
+     \end{answer}
+  \item 
+     Show this.
+      \begin{equation*}
+         \det(
+         \begin{mat}
+             1    &1   &1    \\
+             a    &b   &c    \\
+             a^2  &b^2 &c^2
+         \end{mat}
+         )
+         =(b-a)(c-a)(c-b)
+      \end{equation*}
+     \begin{answer}
+       Using the formula for the determinant of a $\nbyn{3}$ matrix
+       we expand the left side
+       \begin{equation*}
+         1\cdot b\cdot c^2+1\cdot c\cdot a^2+1\cdot a\cdot b^2
+          -b^2\cdot c\cdot 1 -c^2\cdot a\cdot 1-a^2\cdot b\cdot 1
+       \end{equation*}
+       and by distributing we expand the right side.
+       \begin{equation*}
+         (bc-ba-ac+a^2)\cdot(c-b)
+         =c^2b-b^2c-bac+b^2a-ac^2+acb+a^2c-a^2b
+       \end{equation*}
+       Now we can just check that the two are equal.
+       (\textit{Remark}.
+       This is the \( \nbyn{3} \) case of
+       \definend{Vandermonde's determinant}\index{Vandermonde!determinant}%
+       \index{determinant!Vandermonde} which arises in applications).
+     \end{answer}
+   \recommended \item 
+      Which real numbers \( x \) make this matrix singular?
+      \begin{equation*}
+         \begin{mat}
+            12-x  &4  \\
+            8    &8-x
+         \end{mat}
+      \end{equation*}
+      \begin{answer}
+         This equation
+         \begin{equation*}
+           0=
+           \det(
+             \begin{mat}
+                12-x  &4  \\
+                8    &8-x
+             \end{mat}
+           )
+           =64-20x+x^2
+           =(x-16)(x-4) 
+       \end{equation*}
+       has roots \( x=16 \) and \( x=4 \).  
+     \end{answer}
+  \item \label{exer:ThreeByThreeDetForm} 
+    Do the Gaussian reduction to check
+    the formula for $\nbyn{3}$ matrices stated in the preamble to
+    this section.
+    \begin{center}
+      \( \begin{mat}
+               a  &b  &c  \\
+               d  &e  &f  \\
+               g  &h  &i
+         \end{mat} \)
+      is nonsingular iff
+      \( aei+bfg+cdh-hfa-idb-gec \neq 0 \)
+    \end{center}
+    \begin{answer}
+      We first reduce the matrix to echelon form.
+      To begin, assume that \( a\neq 0 \) and that \( ae-bd\neq 0 \).
+      \begin{multline*}
+        \grstep{(1/a)\rho_1}
+        \begin{mat}
+           1   &b/a   &c/a   \\
+           d   &e     &f     \\
+           g   &h     &i
+         \end{mat}                                           
+        \grstep[-g\rho_1+\rho_3]{-d\rho_1+\rho_2}
+        \begin{mat}
+           1   &b/a           &c/a           \\
+           0   &(ae-bd)/a     &(af-cd)/a     \\
+           0   &(ah-bg)/a     &(ai-cg)/a
+         \end{mat}                                            \\
+        \grstep{(a/(ae-bd))\rho_2}
+        \begin{mat}
+           1   &b/a           &c/a             \\
+           0   &1             &(af-cd)/(ae-bd) \\
+           0   &(ah-bg)/a     &(ai-cg)/a
+         \end{mat}
+      \end{multline*}
+      This step finishes the calculation.
+      \begin{equation*}
+        \grstep{((ah-bg)/a)\rho_2+\rho_3}
+        \begin{mat}
+           1   &b/a    &c/a             \\
+           0   &1      &(af-cd)/(ae-bd)      \\
+           0   &0      &(aei+bgf+cdh-hfa-idb-gec)/(ae-bd)
+         \end{mat}
+      \end{equation*}
+      Now assuming that $a\neq 0$ and \( ae-bd\neq 0 \), 
+      the original matrix is nonsingular
+      if and only if the \( 3,3 \) entry above is nonzero.
+      That is, under the assumptions, the original matrix is
+      nonsingular if and only if $aei+bgf+cdh-hfa-idb-gec\neq 0$,
+      as required.
+
+      We finish by running down what happens if the assumptions that were
+      taken for convenience in the prior paragraph do not hold.
+      First, if \( a\neq 0 \) but \( ae-bd=0 \) then we can swap
+      \begin{equation*}
+        \begin{mat}
+           1   &b/a           &c/a           \\
+           0   &0             &(af-cd)/a     \\
+           0   &(ah-bg)/a     &(ai-cg)/a
+         \end{mat}                                  
+        \grstep{\rho_2\leftrightarrow\rho_3}
+        \begin{mat}
+           1   &b/a           &c/a           \\
+           0   &(ah-bg)/a     &(ai-cg)/a     \\
+           0   &0             &(af-cd)/a
+         \end{mat}
+      \end{equation*}
+      and conclude that the matrix is nonsingular if and only if either
+      \( ah-bg=0 \) or \( af-cd=0 \).
+      The condition `\( ah-bg=0 \) or \( af-cd=0 \)' is equivalent to
+      the condition `\( (ah-bg)(af-cd)=0 \)'.
+      Multiplying out and using the case assumption that $ae-bd=0$
+      to substitute $ae$ for $bd$ gives this.
+      \begin{multline*}
+         0=ahaf-ahcd-bgaf+bgcd
+          =ahaf-ahcd-bgaf+aegc            \\
+          =a(haf-hcd-bgf+egc)
+      \end{multline*}
+      Since \( a\neq 0 \), we have that the matrix
+      is nonsingular if and only if \( haf-hcd-bgf+egc=0 \).
+      Therefore, in this \( a\neq 0 \) and \( ae-bd=0 \) case, 
+      the matrix is nonsingular when
+      \( haf-hcd-bgf+egc-i(ae-bd)=0 \).
+
+      The remaining cases are routine.
+      Do the \( a=0 \) but \( d\neq 0 \) case and the \( a=0 \) and \( d=0 \)
+      but \( g\neq 0 \) case by first swapping rows and then going on as
+      above.
+      The \( a=0 \), \( d=0 \), and \( g=0 \) case is easy\Dash that matrix is
+      singular since the columns form a linearly dependent set, and the
+      determinant comes out to be zero.  
+    \end{answer}
+  \item 
+     Show that the equation of a line in \( \Re^2 \) thru \( (x_1,y_1) \)
+     and \( (x_2,y_2) \) is given by this determinant.
+     \begin{equation*}
+        \det(
+        \begin{mat}
+           x   &y   &1  \\
+           x_1 &y_1 &1  \\
+           x_2 &y_2 &1
+        \end{mat})=0 \qquad x_1\neq x_2
+     \end{equation*}
+     \begin{answer}
+       Figuring the determinant and doing some algebra gives this.
+       \begin{align*}
+          0
+          &=y_1x+x_2y+x_1y_2-y_2x-x_1y-x_2y_1     \\
+          (x_2-x_1)\cdot y
+          &=(y_2-y_1)\cdot x+x_2y_1-x_1y_2              \\
+          y
+          &=\frac{y_2-y_1}{x_2-x_1}\cdot x+\frac{x_2y_1-x_1y_2}{x_2-x_1}
+       \end{align*}
+       Note that this is the equation of a line (in particular,
+       in contains the familiar expression for the slope), 
+       and note that \( (x_1,y_1) \)  and \( (x_2,y_2) \) satisfy it. 
+     \end{answer}
+  \recommended \item
+    Many people know this mnemonic for the determinant of a \( \nbyn{3} \)
+    matrix: first repeat the first two columns and then sum the products on the
+    forward diagonals and subtract the products on the backward diagonals.
+    That is, first write
+    \begin{equation*}
+        \begin{pmat}{ccc|cc}
+          h_{1,1} &h_{1,2} &h_{1,3} &h_{1,1} &h_{1,2} \\
+          h_{2,1} &h_{2,2} &h_{2,3} &h_{2,1} &h_{2,2} \\
+          h_{3,1} &h_{3,2} &h_{3,3} &h_{3,1} &h_{3,2}
+        \end{pmat}
+     \end{equation*}
+     and then calculate this.
+     \begin{equation*}
+      \begin{array}{l}
+      h_{1,1}h_{2,2}h_{3,3}+h_{1,2}h_{2,3}h_{3,1}+h_{1,3}h_{2,1}h_{3,2} \\
+      \>-h_{3,1}h_{2,2}h_{1,3}-h_{3,2}h_{2,3}h_{1,1}
+        -h_{3,3}h_{2,1}h_{1,2}
+      \end{array}
+    \end{equation*}
+    \begin{exparts}
+      \partsitem Check that this agrees with the formula given in the 
+        preamble to this section.
+      \partsitem Does it extend to other-sized determinants?
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The comparison with the formula given in the preamble to
+          this section is easy.
+        \partsitem While it holds for \( \nbyn{2} \) matrices
+          \begin{align*}
+            \begin{pmat}{cc|c}
+              h_{1,1} &h_{1,2} &h_{1,1} \\
+              h_{2,1} &h_{2,2} &h_{2,1}
+            \end{pmat}
+            &=\begin{array}[t]{@{}l@{}}
+              h_{1,1}h_{2,2}+h_{1,2}h_{2,1}  \\
+              \>-h_{2,1}h_{1,2}-h_{2,2}h_{1,1}
+            \end{array}                                     \\
+            &=h_{1,1}h_{2,2}-h_{1,2}h_{2,1}
+          \end{align*}
+          it does not hold for \( \nbyn{4} \) matrices.
+          An example is that this matrix is
+          singular because the second and third rows are equal 
+          \begin{equation*}
+            \begin{mat}[r]  
+              1  &0  &0  &1   \\
+              0  &1  &1  &0   \\
+              0  &1  &1  &0   \\
+             -1  &0  &0  &1  
+            \end{mat}
+          \end{equation*}
+          but following the scheme of the mnemonic does not give zero.
+          \begin{equation*}
+            \begin{pmat}{rrrr|rrr}
+                       1  &0  &0  &1  &1  &0  &0  \\
+                       0  &1  &1  &0  &0  &1  &1  \\
+                       0  &1  &1  &0  &0  &1  &1  \\
+                      -1  &0  &0  &1  &-1 &0  &0
+            \end{pmat}
+            =\begin{array}[t]{@{}l@{}}
+               1+0+0+0 \\
+               \>-(-1)-0-0-0
+              \end{array}
+           \end{equation*}
+      \end{exparts}  
+     \end{answer}
+  \item 
+    The 
+    \definend{cross product}\index{cross product}\index{vector!cross product} 
+    of the vectors
+    \begin{equation*}
+      \vec{x}=\colvec{x_1 \\ x_2 \\ x_3}
+      \qquad
+      \vec{y}=\colvec{y_1 \\ y_2 \\ y_3}
+    \end{equation*}
+    is the vector computed as this determinant.
+    \begin{equation*}
+      \vec{x}\times\vec{y}=
+      \det(\begin{mat}
+        \vec{e}_1  &\vec{e}_2  &\vec{e}_3  \\
+        x_1        &x_2        &x_3        \\
+        y_1        &y_2        &y_3
+      \end{mat})
+    \end{equation*}
+    Note that the first row's entries are vectors, the vectors from the
+    standard basis for $\Re^3$.
+    Show that the cross product of two vectors is perpendicular to each vector.
+    \begin{answer}
+      The determinant is 
+      $
+        (x_2y_3-x_3y_2)\vec{e}_1
+          +(x_3y_1-x_1y_3)\vec{e}_2
+          +(x_1y_2-x_2y_1)\vec{e}_3
+      $.
+      To check perpendicularity, we check that the dot product
+      with the first vector is zero
+      \begin{equation*}
+        \colvec{x_1 \\ x_2 \\ x_3}
+        \dotprod
+        \colvec{x_2y_3-x_3y_2 \\ x_3y_1-x_1y_3 \\ x_1y_2-x_2y_1}
+        =x_1x_2y_3-x_1x_3y_2+x_2x_3y_1-x_1x_2y_3+x_1x_3y_2-x_2x_3y_1=0
+      \end{equation*}
+      and the dot product with the second vector is also zero.
+      \begin{equation*}
+        \colvec{y_1 \\ y_2 \\ y_3}
+        \dotprod
+        \colvec{x_2y_3-x_3y_2 \\ x_3y_1-x_1y_3 \\ x_1y_2-x_2y_1}
+        =x_2y_1y_3-x_3y_1y_2+x_3y_1y_2-x_1y_2y_3+x_1y_2y_3-x_2y_1y_3=0
+      \end{equation*}  
+    \end{answer}
+  \item 
+    Prove that each statement holds for $\nbyn{2}$ matrices.  
+    \begin{exparts}
+      \partsitem The determinant of a
+        product is the product of the determinants
+        $\det(ST)=\det(S)\cdot\det(T)$.
+      \partsitem If \( T \) is invertible then
+        the determinant of the inverse is the inverse of the determinant
+        \( \det(T^{-1})=(\,\det(T)\,)^{-1} \).
+    \end{exparts}
+    Matrices $T$ and $T^\prime$ are 
+    \definend{similar}\index{similar} if there is a 
+    nonsingular matrix $P$ such that $T^\prime=PTP^{-1}$.
+    (We shall look at this relationship in Chapter Five.)
+    Show that similar \( \nbyn{2} \) matrices have the same
+    determinant.
+    \begin{answer}
+       \begin{exparts}
+        \partsitem Plug and chug:
+          the determinant of the product is this
+          \begin{align*}
+             \det(\begin{mat}
+                       a  &b  \\
+                       c  &d
+                    \end{mat}
+                    \begin{mat}
+                       w  &x  \\
+                       y  &z
+                    \end{mat}  )
+             &=
+             \det(\begin{mat}
+                 aw+by  &ax+bz  \\
+                 cw+dy  &cx+dz
+              \end{mat} )                 \\
+             &=
+             \begin{array}[t]{@{}l@{}} 
+                 acwx+adwz+bcxy+bdyz  \\
+                 \> -acwx-bcwz-adxy-bdyz
+              \end{array}
+          \end{align*}
+          while the product of the determinants is this.
+          \begin{equation*}
+             \det(\begin{mat}
+                a  &b  \\
+                c  &d
+             \end{mat})
+             \cdot\det(\begin{mat}
+                w  &x  \\
+                y  &z
+             \end{mat})
+             =
+             (ad-bc)\cdot (wz-xy)
+          \end{equation*}
+          Verification that they are equal is easy.
+        \partsitem Use the prior item.
+       \end{exparts}  
+       \noindent That similar matrices have the same determinant 
+       is immediate from the above two:
+       $
+          \det(PTP^{-1})=\det(P)\cdot\det(T)\cdot\det(P^{-1})
+       $.
+     \end{answer}
+  \recommended \item
+    Prove that the area of this region in the plane
+    \begin{center}
+      \includegraphics{ch4.30}
+    \end{center}
+    is equal to the value of this determinant.
+    \begin{equation*}
+       \det(
+       \begin{mat}
+          x_1  &x_2  \\
+          y_1  &y_2
+       \end{mat})
+    \end{equation*}
+    Compare with this.
+    \begin{equation*}
+       \det(
+       \begin{mat}
+          x_2  &x_1  \\
+          y_2  &y_1
+       \end{mat})
+    \end{equation*}
+    \begin{answer}
+      One way is to count these areas
+      \begin{center}
+        \includegraphics{ch4.31}
+      \end{center}
+      by taking the area of the entire rectangle and subtracting the area of
+      $A$ the upper-left rectangle, $B$ the upper-middle triangle,
+      $D$ the upper-right triangle, $C$ the lower-left triangle, 
+      $E$ the lower-middle triangle, and $F$ the lower-right rectangle       
+      \( (x_1+x_2)(y_1+y_2)-x_2y_1-(1/2)x_1y_1-(1/2)x_2y_2
+              -(1/2)x_2y_2-(1/2)x_1y_1-x_2y_1 \).
+      Simplification gives the determinant formula.
+
+      This determinant is the negative of the one above; the formula
+      distinguishes whether the second column is counterclockwise from
+      the first.  
+     \end{answer}
+  \item 
+    Prove that for \( \nbyn{2} \) matrices, the determinant of a matrix
+    equals the determinant of its transpose.
+    Does that also hold for \( \nbyn{3} \) matrices?
+    \begin{answer}
+      The computation for \( \nbyn{2} \) matrices, using the
+      formula quoted in the preamble, is easy.
+      It does also hold for \( \nbyn{3} \) matrices; the 
+      computation is routine.  
+    \end{answer}
+  \recommended \item 
+    Is the determinant function linear \Dash  is
+    \( \det(x\cdot T+y\cdot S)=x\cdot \det(T)+y\cdot \det(S) \)?
+    \begin{answer}
+      No.
+      Recall that constants come out one row at a time.
+      \begin{equation*}
+         \det(
+         \begin{mat}[r]
+            2  &4  \\
+            2  &6  \\
+         \end{mat})
+         =
+         2\cdot\det(\begin{mat}[r]
+            1  &2  \\
+            2  &6  \\
+         \end{mat})
+         =
+         2\cdot 2\cdot \det(\begin{mat}[r]
+            1  &2  \\
+            1  &3  \\
+         \end{mat})
+      \end{equation*}
+      This contradicts linearity (here we didn't need \( S \), i.e., we can 
+      take $S$ to be the matrix of zeros).  
+    \end{answer}
+  \item 
+    Show that if \( A \) is \( \nbyn{3} \) then
+    \( \det(c\cdot A)=c^3\cdot \det(A) \) for any scalar \( c \).
+    \begin{answer}
+       Bring out the \( c \)'s one row at a time.  
+    \end{answer}
+  \item 
+    Which real numbers \( \theta \) make
+    \begin{equation*}
+       \begin{mat}
+          \cos\theta  &-\sin\theta  \\
+          \sin\theta  &\cos\theta
+       \end{mat}
+    \end{equation*}
+    singular?
+    Explain geometrically.
+    \begin{answer}
+      There are no real numbers \( \theta \) that make the matrix singular 
+      because the determinant of the matrix
+      \( \cos^2\theta+\sin^2\theta \) is never $0$, it equals $1$
+      for all $\theta$.
+      Geometrically, with respect to the standard basis,
+      this matrix represents
+      a rotation of the plane through an angle of \( \theta \).
+      Each such map is one-to-one \Dash  for one thing, it is invertible.  
+    \end{answer}
+  \puzzle \item  
+    \cite{Monthly55p257}
+    If a third order determinant has elements
+    \( 1 \), \( 2 \), \ldots, \( 9 \), what is the maximum value it may
+    have?
+    \begin{answer}
+      \answerasgiven
+      Let \( P \) be the sum of the three positive terms of the determinant
+      and \( -N \) the sum of the three negative terms.
+      The maximum value of \( P \) is
+      \begin{equation*}
+        9\cdot 8\cdot 7 +6\cdot 5\cdot 4 +3\cdot 2\cdot 1=630.
+      \end{equation*}
+      The minimum value of \( N \) consistent with \( P \) is
+      \begin{equation*}
+        9\cdot 6\cdot 1 +8\cdot 5\cdot 2 +7\cdot 4\cdot 3=218.
+      \end{equation*}
+      Any change in \( P \) would result in lowering that sum by more than
+      \( 4 \).
+      Therefore \( 412 \) the maximum value for the determinant and one form
+      for the determinant is
+      \begin{equation*}
+         \begin{vmat}[r]
+            9  &4  &2  \\
+            3  &8  &6  \\
+            5  &1  &7
+         \end{vmat}.
+      \end{equation*}  
+    \end{answer}
+\end{exercises}
+  
+
+\recommended \item 
     Do the indicated vector operation, if it is defined.
     \begin{exparts*}
       \partsitem \( \colvec[r]{2 \\ 1 \\ 1}
