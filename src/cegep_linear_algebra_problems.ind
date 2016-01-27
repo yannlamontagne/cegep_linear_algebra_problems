@@ -1,79 +1,137 @@
 \begin{theindex}
 
-  \item additive inverse, \hyperpage{9, 10}
+  \item additive inverse, \hyperpage{15, 16}
+  \item augmented matrix, \hyperpage{1}, \hyperpage{3}
 
   \indexspace
 
-  \item basis, \hyperpage{10}
+  \item basis, \hyperpage{17}
 
   \indexspace
 
-  \item Cauchy-Schwartz Inequality, \hyperpage{7}
-  \item cofactor expansion, \hyperpage{5}
-  \item coordinate vector, \hyperpage{10}
-  \item Cramer's Rule, \hyperpage{5}
+  \item Cauchy-Schwartz Inequality, \hyperpage{13}
+  \item co-factor expansion, \hyperpage{9}
+  \item cofactor, \hyperpage{9}
+  \item cofactor expansion, \hyperpage{9}
+  \item consistent system, \hyperpage{3}
+  \item consistent, inconsistent, \hyperpage{3}
+  \item coordinate vector, \hyperpage{17}
+  \item Cramer's Rule, \hyperpage{11}
 
   \indexspace
 
-  \item determinant, \hyperpage{5}
-  \item diagonal matrix, \hyperpage{10}
-  \item dimension, \hyperpage{11}
+  \item determinant, \hyperpage{9, 10}
+  \item diagonal matrix, \hyperpage{5, 6}, \hyperpage{16}
+  \item dimension, \hyperpage{17}
 
   \indexspace
 
-  \item elementary matrix, \hyperpage{3}
-  \item elementary operation, \hyperpage{5}
+  \item elementary matrix, \hyperpage{8}
+  \item elementary operation, \hyperpage{10}
+  \item elementary row operation, \hyperpage{1}
 
   \indexspace
 
-  \item function space, \hyperpage{9, 10}
+  \item function space, \hyperpage{15, 16}
+  \item function subspace, \hyperpage{16}
 
   \indexspace
 
-  \item Gaussian Elimination, \hyperpage{1}
+  \item Gauss-Jordan Elimination, \hyperpage{3}
+  \item Gauss-Jordan elimination, \hyperpage{2}
+  \item Gaussian Elimination, \hyperpage{2}
+  \item Gaussian elimination, \hyperpage{2, 3}
+  \item geometric interpretation, \hyperpage{1}
 
   \indexspace
 
-  \item Laplace expansion, \hyperpage{5}
-  \item line, plane, \hyperpage{10}
-  \item linear dependence, \hyperpage{10}
-  \item linear independence, \hyperpage{10}
-  \item linear system, \hyperpage{3}
+  \item homogeneous system, \hyperpage{3}
 
   \indexspace
 
-  \item matrix associativity, \hyperpage{3}
-  \item matrix inverse, \hyperpage{3}
-  \item matrix multiplication, \hyperpage{3}
-  \item matrix space, \hyperpage{9, 10}
+  \item idempotent matrix, \hyperpage{6}
+  \item ij product, \hyperpage{5}
+  \item inconsistent, \hyperpage{3}
+  \item infinite solutions, \hyperpage{3}
 
   \indexspace
 
-  \item ph, \hyperpage{1}, \hyperpage{7}
-  \item place holder, \hyperpage{1}, \hyperpage{7}
-  \item polynomial space, \hyperpage{9--11}
-  \item positive real numbers, \hyperpage{10}
+  \item Laplace expansion, \hyperpage{9}
+  \item line, plane, \hyperpage{16}
+  \item linear dependence, \hyperpage{16}
+  \item linear equation, \hyperpage{1}
+  \item linear independence, \hyperpage{16}
+  \item linear system, \hyperpage{8}
 
   \indexspace
 
-  \item rational numbers, \hyperpage{9}
+  \item matrix addition, \hyperpage{5--7}
+  \item matrix associativity, \hyperpage{5, 6}
+  \item matrix dimension, \hyperpage{5}
+  \item matrix element, \hyperpage{5}
+  \item matrix entry, \hyperpage{5}
+  \item matrix equation, \hyperpage{7, 8}
+  \item matrix inverse, \hyperpage{7, 8}
+  \item matrix multiplication, \hyperpage{6}
+  \item matrix power, \hyperpage{5, 6}
+  \item matrix product, \hyperpage{5, 6}
+  \item matrix size, \hyperpage{5}
+  \item matrix space, \hyperpage{15, 16}
+  \item minor, \hyperpage{9}
 
   \indexspace
 
-  \item scalar multiplication, \hyperpage{3}
-  \item spaning set, \hyperpage{10}
-  \item subspace, \hyperpage{10}
+  \item nilpotent matrix, \hyperpage{6}
+  \item no solution, unique solution, infinitely many solution, 
+		\hyperpage{3}
 
   \indexspace
 
-  \item trivial subspace, \hyperpage{10}
+  \item particular solution, \hyperpage{2, 3}
+  \item ph, \hyperpage{4}, \hyperpage{13}
+  \item place holder, \hyperpage{4}, \hyperpage{13}
+  \item polynomial space, \hyperpage{15}, \hyperpage{17}
+  \item positive real numbers, \hyperpage{16}
 
   \indexspace
 
-  \item vector space, \hyperpage{9, 10}
+  \item quadratic equation, parabola, \hyperpage{3}
 
   \indexspace
 
-  \item zero vector, \hyperpage{9, 10}
+  \item rational numbers, \hyperpage{15}
+  \item reduced row echelon form, \hyperpage{2}
+  \item row-equivalent, \hyperpage{8}
+
+  \indexspace
+
+  \item scalar multiplication, \hyperpage{6}
+  \item skew-symmetric matrix, \hyperpage{6}
+  \item spaning set, \hyperpage{16}
+  \item subspace, \hyperpage{16}
+  \item symmetric equation, \hyperpage{7}
+  \item symmetric matrix, \hyperpage{6}
+  \item system of linear equation, \hyperpage{8}
+  \item system of linear equations, \hyperpage{1}
+
+  \indexspace
+
+  \item trace of a matrix, \hyperpage{6}
+  \item triangular matrix, \hyperpage{6}
+  \item trivial subspace, \hyperpage{16}
+
+  \indexspace
+
+  \item unique solution, \hyperpage{3}
+  \item unique solution, inconsistent, infinitely many solutions, 
+		\hyperpage{3}
+
+  \indexspace
+
+  \item vector space, \hyperpage{15, 16}
+
+  \indexspace
+
+  \item zero vector, \hyperpage{15, 16}
 
 \end{theindex}
