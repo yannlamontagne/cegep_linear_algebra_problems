@@ -43,10 +43,16 @@
 \indexentry{ij product|hyperpage}{5}
 \indexentry{matrix product|hyperpage}{5}
 \indexentry{matrix dimension|hyperpage}{5}
-\indexentry{scalar multiplication|hyperpage}{5}
-\indexentry{matrix multiplication|hyperpage}{5}
-\indexentry{matrix associativity|hyperpage}{5}
+\indexentry{matrix product|hyperpage}{5}
+\indexentry{diagonal matrix|hyperpage}{5}
+\indexentry{matrix product|hyperpage}{5}
+\indexentry{matrix power|hyperpage}{5}
+\indexentry{scalar multiplication|hyperpage}{6}
+\indexentry{matrix multiplication|hyperpage}{6}
+\indexentry{matrix associativity|hyperpage}{6}
 \indexentry{matrix addition|hyperpage}{6}
+\indexentry{matrix product|hyperpage}{6}
+\indexentry{matrix power|hyperpage}{6}
 \indexentry{symmetric matrix|hyperpage}{6}
 \indexentry{nilpotent matrix|hyperpage}{6}
 \indexentry{idempotent matrix|hyperpage}{6}
@@ -60,14 +66,14 @@
 \indexentry{matrix equation|hyperpage}{6}
 \indexentry{matrix inverse|hyperpage}{6}
 \indexentry{matrix inverse|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
-\indexentry{symmetric equation|hyperpage}{6}
-\indexentry{elementary matrix|hyperpage}{6}
-\indexentry{elementary matrix|hyperpage}{6}
-\indexentry{elementary matrix|hyperpage}{6}
-\indexentry{row-equivalent|hyperpage}{6}
-\indexentry{linear system|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
+\indexentry{matrix inverse|hyperpage}{7}
+\indexentry{symmetric equation|hyperpage}{7}
+\indexentry{elementary matrix|hyperpage}{7}
+\indexentry{elementary matrix|hyperpage}{7}
+\indexentry{elementary matrix|hyperpage}{7}
+\indexentry{row-equivalent|hyperpage}{7}
+\indexentry{linear system|hyperpage}{7}
+\indexentry{matrix inverse|hyperpage}{7}
 \indexentry{determinant|hyperpage}{9}
 \indexentry{Laplace expansion|hyperpage}{9}
 \indexentry{cofactor expansion|hyperpage}{9}
