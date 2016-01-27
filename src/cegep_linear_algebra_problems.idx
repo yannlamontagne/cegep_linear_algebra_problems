@@ -11,9 +11,9 @@
 \indexentry{reduced row echelon form|hyperpage}{2}
 \indexentry{Gauss-Jordan elimination|hyperpage}{2}
 \indexentry{Gaussian Elimination|hyperpage}{2}
-\indexentry{particular solution|hyperpage}{3}
-\indexentry{Gauss-Jordan elimination|hyperpage}{3}
-\indexentry{Gaussian elimination|hyperpage}{3}
+\indexentry{particular solution|hyperpage}{2}
+\indexentry{Gauss-Jordan elimination|hyperpage}{2}
+\indexentry{Gaussian elimination|hyperpage}{2}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{3}
 \indexentry{particular solution|hyperpage}{3}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{3}
@@ -50,22 +50,28 @@
 \indexentry{scalar multiplication|hyperpage}{6}
 \indexentry{matrix multiplication|hyperpage}{6}
 \indexentry{matrix associativity|hyperpage}{6}
+\indexentry{diagonal matrix|hyperpage}{6}
+\indexentry{symmetric matrix|hyperpage}{6}
+\indexentry{skew-symmetric matrix|hyperpage}{6}
+\indexentry{triangular matrix|hyperpage}{6}
+\indexentry{trace of a matrix|hyperpage}{6}
 \indexentry{matrix addition|hyperpage}{6}
 \indexentry{matrix product|hyperpage}{6}
 \indexentry{matrix power|hyperpage}{6}
+\indexentry{trace of a matrix|hyperpage}{6}
 \indexentry{symmetric matrix|hyperpage}{6}
 \indexentry{nilpotent matrix|hyperpage}{6}
 \indexentry{idempotent matrix|hyperpage}{6}
 \indexentry{matrix equation|hyperpage}{6}
 \indexentry{matrix addition|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
-\indexentry{matrix equation|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
-\indexentry{matrix equation|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
-\indexentry{matrix equation|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
-\indexentry{matrix inverse|hyperpage}{6}
+\indexentry{matrix inverse|hyperpage}{7}
+\indexentry{matrix equation|hyperpage}{7}
+\indexentry{matrix inverse|hyperpage}{7}
+\indexentry{matrix equation|hyperpage}{7}
+\indexentry{matrix inverse|hyperpage}{7}
+\indexentry{matrix equation|hyperpage}{7}
+\indexentry{matrix inverse|hyperpage}{7}
+\indexentry{matrix inverse|hyperpage}{7}
 \indexentry{matrix inverse|hyperpage}{7}
 \indexentry{symmetric equation|hyperpage}{7}
 \indexentry{elementary matrix|hyperpage}{7}

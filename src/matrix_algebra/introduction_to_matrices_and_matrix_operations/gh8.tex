@@ -1,8 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix product}
-\index{matrix power}
+\index{diagonal matrix}
+\index{symmetric matrix}
+\index{skew-symmetric matrix}
+\index{triangular matrix}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,22 +17,63 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{GH}}]
-The following statement 
-\[
-(A+B)^2=A^2+2AB+B^2
-\]
-is false.  We investigate that claim here.
-\Question Let $A=\begin{mat}5&3\\  -3&-2 \end{mat}$ and let $B=\begin{mat}-5&-5\\  -2&1 \end{mat}.$ Compute $A+B$
-\Question Find $(A+B)^2$ by using the previous part.
-\Question Compute $A^2+2AB+B^2$.
-\Question Are the results from the two previous parts equal?
-\Question Carefully expand the expression $(A+B)^2 = (A+B)(A+B)$ and show why this is not equal to $A^2+2AB+B^2$.
+In each part a matrix $A$ is given. Find $A^T$. State whether $A$ is upper/lower triangular, diagonal, symmetric and/or skew symmetric.
+\begin{multicols}{2}
+\Question $\begin{mat}-9&4&10\\  6&-3&-7\\  -8&1&-1 \end{mat}$
+%\Question $\begin{mat}4&-5&2\\  1&5&9\\  9&2&3 \end{mat}$
+%\Question $\begin{mat}2&-5&-3\\  5&5&-6\\  7&-4&-10 \end{mat}$
+\Question $\begin{mat}4&2&-9\\  5&-4&-10\\  -6&6&9 \end{mat}$
+%\Question $\begin{mat}5&-9\\  3&1\\  -10&-8 \end{mat}$
+%\Question $\begin{mat}2&10\\  1&-7\\  9&-2 \end{mat}$
+\Question $\begin{mat}4&-7&-4&-9\\  -9&6&3&-9 \end{mat}$
+%\Question $\begin{mat}3&-10&0&6\\  -10&-2&-3&1 \end{mat}$
+\Question $\begin{mat}-7&4\\  4&-6 \end{mat}$
+%\Question $\begin{mat}3&1\\  -7&8 \end{mat}$
+%\Question $\begin{mat}-7&-8&2&-3 \end{mat}$
+%\Question $\begin{mat}-9&8&2&-7 \end{mat}$
+\Question $\begin{mat}4&0&0\\  -2&-7&0\\  4&-2&5 \end{mat}$
+\Question $\begin{mat}-3&-4&-5\\  0&-3&5\\  0&0&-3 \end{mat}$
+%\Question $\begin{mat}6&-7&2&6\\  0&-8&-1&0\\  0&0&1&-7 \end{mat}$
+%\Question $\begin{mat}1&0&0\\  0&2&0\\  0&0&-1 \end{mat}$
+\Question $\begin{mat}1&0\\  0&9 \end{mat}$
+%\Question $\begin{mat}13&-3\\  -3&1 \end{mat}$
+\Question $\begin{mat}4&0&-2\\  0&2&3\\  -2&3&6 \end{mat}$
+%\Question $\begin{mat}0&3&-2\\  3&-4&1\\  -2&1&0 \end{mat}$
+%\Question $\begin{mat}6&-4&-5\\  -4&0&2\\  -5&2&-2 \end{mat}$
+%\Question $\begin{mat}0&1&-2\\  -1&0&4\\  2&-4&0 \end{mat}$
+\Question $\begin{mat}0&-6&1\\  6&0&4\\  -1&-4&0 \end{mat}$
+%\Question $\begin{mat}0&0&0\\  0&0&0\\  0&0&0 \end{mat}$
+\EndCurrentQuestion
+\end{multicols}
+
 \end{Exercise}
 
 \begin{Answer}
-\Question $\begin{mat}0&-2\\-5&-1 \end{mat}$
-\Question $\begin{mat}10&2\\  5&11 \end{mat}$
-\Question $\begin{mat}-11&-15\\  37&32\end{mat}$
-\Question No.
-\Question $(A+B)=AA+AB+BA+BB=A^2+AB+BA+B^2$
+\Question $\begin{mat} -9&6&-8\\  4&-3&1\\  10&-7&-1 \end{mat}$
+%\Question $\begin{mat}4&1&9\\  -5&5&2\\  2&9&3 \end{mat}$
+%\Question $\begin{mat}2&5&7\\  -5&5&-4\\  -3&-6&-10 \end{mat}$
+\Question $\begin{mat}4&5&-6\\  2&-4&6\\  -9&-10&9 \end{mat}$
+%\Question $\begin{mat}-5&3&-10\\  -9&1&-8 \end{mat}$
+%\Question $\begin{mat}-2&1&9\\  10&-7&-2 \end{mat}$
+\Question $\begin{mat}4&-9\\  -7&6\\  -4&3\\  -9&-9 \end{mat}$
+%\Question $\begin{mat}3&-10\\  -10&-2\\  0&-3\\  6&1 \end{mat}$
+\Question $\begin{mat}-7&4\\  4&-6 \end{mat}$, symmetric
+%\Question $\begin{mat}3&-7\\  1&8 \end{mat}$
+%\Question $\begin{mat}-7\\  -8\\  2\\  -3 \end{mat}$
+%\Question $\begin{mat}-9\\  8\\  2\\  -7 \end{mat}$
+\Question $\begin{mat}4&-2&4\\  0&-7&-2\\  0&0&5 \end{mat}$, $A$ is lower triangular and $A^T$ is upper triangular.
+\Question $\begin{mat}-3&0&0\\  -4&-3&0\\  -5&5&-3 \end{mat}$, $A$ is upper triangular and $A^T$ is lower triangular.
+%\Question $\begin{mat}6&0&0\\  -7&-8&0\\  2&-1&1\\  6&0&-7 \end{mat}$, $A$ is upper triangular and $A^T$ is lower triangular.
+%\Question $\begin{mat}1&0&0\\  0&2&0\\  0&0&-1 \end{mat}$, diagonal.
+\Question $\begin{mat}1&0\\  0&9 \end{mat}$, diagonal.
+%\Question $\begin{mat}13&-3\\  -3&1 \end{mat}$, symmetric.
+\Question $\begin{mat}4&0&-2\\  0&2&3\\  -2&3&6 \end{mat}$, symmetric.
+%\Question $\begin{mat}0&3&-2\\  3&-4&1\\  -2&1&0 \end{mat}$, symmetric.
+%\Question $\begin{mat}6&-4&-5\\  -4&0&2\\  -5&2&-2 \end{mat}$, symmetric.
+%\Question $\begin{mat}0&-1&2\\  1&0&-4\\  -2&4&0 \end{mat}$, skew-symmetric.
+\Question $\begin{mat}0&-6&1\\  6&0&4\\  -1&-4&0 \end{mat}$, skew-symmetric.
+%\Question $\begin{mat}0&0&0\\  0&0&0\\  0&0&0 \end{mat}$, upper and lower triangular; it is diagonal; it is both symmetric and skew-symmetric.
+
+
+
 \end{Answer}
