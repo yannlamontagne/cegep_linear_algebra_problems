@@ -1,0 +1,35 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Give a non-identity matrix with the property that
+    \( \trans{A}=A^{-1} \).
+\Question Prove: If \( \trans{A}=A^{-1} \) then \( \det(A)=\pm 1 \).
+\Question Does the converse to the above hold?
+\end{Exercise}
+
+\begin{Answer}
+\Question $A=\begin{mat}0&1\\ 1&0 \end{mat}$.
+\Question $1=\det(AA^{-1})=\det(A\trans{A})
+               =\det(A)\det(\trans{A})=(\det(A))^2$
+\Question The converse does not hold; here is an example.
+\begin{equation*}
+\begin{mat}[r]
+3  &1  \\
+2  &1
+\end{mat}
+\end{equation*}
+
+\end{Answer}

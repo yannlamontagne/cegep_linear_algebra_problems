@@ -1,0 +1,43 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Show that this gives the equation of a line in \( \Re^2 \) thru
+        \( (x_2,y_2) \) and \( (x_3,y_3) \).
+        \begin{equation*}
+          \begin{vmat}
+            x    &x_2 &x_3  \\
+            y    &y_2 &y_3  \\
+            1    &1   &1
+          \end{vmat}=0
+        \end{equation*}
+
+\end{Exercise}
+
+\begin{Answer}
+An algebraic check is easy.
+        \begin{equation*}
+          0
+          =xy_2+x_2y_3+x_3y-x_3y_2-xy_3-x_2y 
+          =x\cdot (y_2-y_3)+y\cdot (x_3-x_2)+x_2y_3-x_3y_2 
+        \end{equation*}
+        simplifies to the familiar form
+        \begin{equation*}
+          y=x\cdot (x_3-x_2)/(y_3-y_2)+(x_2y_3-x_3y_2)/(y_3-y_2)
+        \end{equation*}
+        (the $y_3-y_2=0$ case is easily handled).
+
+\end{Answer}

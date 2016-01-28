@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  27 JAN 2016 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  27 JAN 2016 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,8 +1178,39 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10] (./determinants/properties_of_determinants_and_matrix_inverses/index.tex
+(./determinants/properties_of_determinants_and_matrix_inverses/jh7.tex)
 (./determinants/properties_of_determinants_and_matrix_inverses/jh1.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/yl1.tex))
+(./determinants/properties_of_determinants_and_matrix_inverses/jh2.tex)
+(./determinants/properties_of_determinants_and_matrix_inverses/jh3.tex)
+(./determinants/properties_of_determinants_and_matrix_inverses/jh4.tex)
+(./determinants/properties_of_determinants_and_matrix_inverses/jh5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+[] \OT1/cmr/bx/n/10 3.3.6\OT1/cmr/m/n/10 If $\OML/cmm/m/it/10 H \OT1/cmr/m/n/10
+ = \OML/cmm/m/it/10 P[]GP$ \OT1/cmr/m/n/10 then $[](\OML/cmm/m/it/10 H\OT1/cmr/
+m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 ) [](\OML/cmm/m/it/10 G\
+OT1/cmr/m/n/10 ) [](\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 P
+[]\OT1/cmr/m/n/10 ) [](\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ) [](\OML/cmm/m/it/10 
+G\OT1/cmr/m/n/10 ) =
+ []
+
+) (./determinants/properties_of_determinants_and_matrix_inverses/jh6.tex
+Overfull \hbox (54.19653pt too wide) detected at line 36
+\OT1/cmr/m/n/10 0 = \OML/cmm/m/it/10 xy[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[
+]y[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[]y \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it
+/10 x[]y[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 xy[] \OMS/cmsy/m/n/10 ^^@ \OML
+/cmm/m/it/10 x[]y \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^A \OT
+1/cmr/m/n/10 (\OML/cmm/m/it/10 y[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 y[]\OT
+1/cmr/m/n/10 ) + \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) + \O
+ML/cmm/m/it/10 x[]y[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]y[]
+ []
+
+) (./determinants/properties_of_determinants_and_matrix_inverses/yl1.tex))
 (./determinants/applications_of_the_determinant/index.tex
 (./determinants/applications_of_the_determinant/yl1.tex)))
 (./vector_geometry/index.tex
@@ -1551,7 +1582,32 @@ n.3.2.2.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.143 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.1.1}) has been already used, duplicate ignored
+n.3.3.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.143 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.3.3.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.143 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.3.3.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.143 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.1.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1574,15 +1630,8 @@ n.5.1.4.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.143 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.1.5.1}) has been already used, duplicate ignored
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1611,18 +1660,6 @@ n.5.1.11.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.143 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.14.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.143 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.15.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.143 
       ] (./references.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1631,7 +1668,19 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.1.19.1}) has been already used, duplicate ignored
+.1.14.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.1.15.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.1.19.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1654,9 +1703,7 @@ l.1 \onecolumn
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \onecolumn
-              
-
-]
+              ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -1688,11 +1735,11 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 16391 strings out of 493054
- 291357 string characters out of 6140585
- 712022 words of memory out of 5000000
- 18815 multiletter control sequences out of 15000+600000
- 12807 words of font info for 51 fonts, out of 8000000 for 9000
+ 16431 strings out of 493054
+ 292471 string characters out of 6140585
+ 727463 words of memory out of 5000000
+ 18818 multiletter control sequences out of 15000+600000
+ 13712 words of font info for 54 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  45i,11n,44p,10381b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
@@ -1703,14 +1750,15 @@ ic/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (34 pages, 280928 bytes).
+s/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb>
+Output written on cegep_linear_algebra_problems.pdf (34 pages, 293182 bytes).
 PDF statistics:
- 1237 PDF objects out of 1440 (max. 8388607)
- 1175 compressed objects within 12 object streams
- 620 named destinations out of 1000 (max. 500000)
+ 1275 PDF objects out of 1440 (max. 8388607)
+ 1211 compressed objects within 13 object streams
+ 643 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

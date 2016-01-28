@@ -1,0 +1,30 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{similar matrix}
+\index{matrix!similar}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Two matrices $H$ and $G$ are said to be \definend{similar}
+if there is a nonsingular matrix $P$ such that $H=P^{-1}GP$
+Show that similar matrices have the same determinant.
+\end{Exercise}
+
+\begin{Answer}
+If \( H=P^{-1}GP \)
+      then \( \det(H)=\det(P^{-1})\det(G)\det(P)
+        =\det(P^{-1})\det(P)\det(G)=\det(P^{-1}P)\det(G)
+        =\det(G) \).
+\end{Answer}
