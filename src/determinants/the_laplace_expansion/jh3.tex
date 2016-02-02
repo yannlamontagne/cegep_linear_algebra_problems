@@ -1,0 +1,49 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{Laplace expansion}
+\index{cofactor expansion}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+True or false: Can we compute a determinant by expanding down the diagonal? Justify.
+\end{Exercise}
+\begin{Answer}
+False,
+     Here is a determinant whose value
+      \begin{equation*}
+        \begin{vmat}[r]
+          1  &0  &0  \\
+          0  &1  &0  \\
+          0  &0  &1
+        \end{vmat}=1
+      \end{equation*}
+      doesn't equal the result of
+      expanding down the diagonal.
+      \begin{equation*}
+        1\cdot (+1)\begin{vmat}[r]
+               1  &0  \\
+               0  &1
+             \end{vmat}
+       +1\cdot (+1)\begin{vmat}[r]
+               1  &0  \\
+               0  &1
+             \end{vmat}
+       +1\cdot (+1)\begin{vmat}[r]
+               1  &0  \\
+               0  &1
+             \end{vmat}=3
+      \end{equation*}  
+
+
+\end{Answer}

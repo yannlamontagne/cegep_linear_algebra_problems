@@ -1,0 +1,27 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{adjoint matrix}
+\index{matrix!adjoint}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove that the transpose of the adjoint is the adjoint of the transpose.
+\end{Exercise}
+
+\begin{Answer}
+     Just note that if $S=\trans{T}$ then the cofactor
+      $S_{j,i}$ equals the cofactor $T_{i,j}$ because $(-1)^{j+i}=(-1)^{i+j}$
+      and because the minors are the transposes of each other (and the
+      determinant of a transpose equals the determinant of the matrix).
+\end{Answer}

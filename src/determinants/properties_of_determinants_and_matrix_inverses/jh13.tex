@@ -1,0 +1,42 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove or disprove:     The determinant is a linear function, that is
+    \( \det(x\cdot T+y\cdot S)=x\cdot \det(T)+y\cdot \det(S) \).
+\end{Exercise}
+
+\begin{Answer}
+Disprove.       Recall that constants come out one row at a time.
+      \begin{equation*}
+         \det(
+         \begin{mat}[r]
+            2  &4  \\
+            2  &6  \\
+         \end{mat})
+         =
+         2\cdot\det(\begin{mat}[r]
+            1  &2  \\
+            2  &6  \\
+         \end{mat})
+         =
+         2\cdot 2\cdot \det(\begin{mat}[r]
+            1  &2  \\
+            1  &3  \\
+         \end{mat})
+      \end{equation*}
+      This contradicts linearity (here we didn't need \( S \), i.e., we can 
+      take $S$ to be the matrix of zeros). 
+\end{Answer}

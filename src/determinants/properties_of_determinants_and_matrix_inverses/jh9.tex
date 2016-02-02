@@ -1,0 +1,55 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{adjoint matrix}
+\index{matrix!adjoint}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Derive a formula for the adjoint of a diagonal matrix.
+
+\end{Exercise}
+
+\begin{Answer}
+      Consider this diagonal matrix.
+      \begin{equation*}
+        D=
+        \begin{mat}
+          d_1  &0   &0   &\ldots    \\
+          0    &d_2 &0   &          \\
+          0    &0   &d_3            \\
+               &    &    &\ddots    \\
+               &    &    &      &d_n   
+        \end{mat}
+      \end{equation*}
+      If $i\neq j$ then the $i,j$~minor is an $\nbyn{(n-1)}$ matrix
+      with only $n-2$ nonzero entries, because we have deleted
+      both $d_i$ and $d_j$.
+      Thus, at least one row or column of the minor is all zeroes, and
+      so the cofactor $D_{i,j}$ is zero.
+      If $i=j$ then the minor is the diagonal matrix with entries
+      $d_1$, \ldots, $d_{i-1}$, $d_{i+1}$, \ldots, $d_n$.
+      Its determinant is obviously $(-1)^{i+j}=(-1)^{2i}=1$ 
+      times the product of those.
+      \begin{equation*}
+        \adj(D)
+        =
+        \begin{mat}
+          d_2\cdots d_n    &0                 &      &0    \\
+          0                &d_1d_3\cdots d_n  &      &0    \\
+                           &                  &\ddots      \\
+                           &                  &       &d_1\cdots d_{n-1} 
+        \end{mat}
+      \end{equation*}
+
+\end{Answer}

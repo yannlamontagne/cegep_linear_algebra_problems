@@ -126,7 +126,9 @@
 \raggedbottom
 
 \thispagestyle{empty}
+\pagenumbering{gobble}
 \tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}} 
 
 \mainmatter
 \input{systems_of_linear_equations/index.tex}

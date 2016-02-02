@@ -1,0 +1,65 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix space}
+\index{subspace}
+\index{vector space!subspace}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Which of these subsets of the vector space of \( \nbyn{2} \) matrices
+    are subspaces under the inherited operations? Justify.
+\Question \( \set{\begin{mat}
+                      a  &0  \\
+                      0  &b
+                    \end{mat}  \suchthat a,b\in\Re}  \)
+\Question \( \set{\begin{mat}
+                      a  &0  \\
+                      0  &b
+                    \end{mat}  \suchthat a+b=0} \)
+\Question \( \set{\begin{mat}
+                      a  &0  \\
+                      0  &b
+                    \end{mat}  \suchthat a+b=5} \)
+\Question \( \set{\begin{mat}
+                      a  &c  \\
+                      0  &b
+                    \end{mat}  \suchthat a+b=0, c\in\Re} \)
+
+\end{Exercise}
+
+\begin{Answer}
+\Question Yes, we can easily check that it is closed under addition and scalar multiplication.
+\Question Yes, we can easily check that it is closed under addition and scalar multiplication. 
+\Question No.
+          It is not closed under addition.
+          For instance, 
+          \begin{equation*}
+            \begin{mat}[r]
+              5  &0  \\
+              0  &0
+            \end{mat}
+            +\begin{mat}[r]
+              5  &0  \\
+              0  &0
+            \end{mat}
+            =\begin{mat}[r]
+              10  &0  \\
+              0  &0
+            \end{mat}
+          \end{equation*}
+          is not in the set.
+          (This set is also not closed under scalar multiplication,
+          for instance, it does not contain the zero matrix.)
+\Question Yes, we can easily check that it is closed under addition and scalar multiplication.
+\end{Answer}

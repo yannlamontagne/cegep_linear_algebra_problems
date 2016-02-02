@@ -1,0 +1,67 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove that each statement holds for $\nbyn{2}$ matrices.  
+\Question The determinant of a
+        product is the product of the determinants
+        $\det(ST)=\det(S)\det(T)$.
+\Question If \( T \) is invertible then
+        the determinant of the inverse is the inverse of the determinant
+        \( \det(T^{-1})=(\,\det(T)\,)^{-1} \).
+
+\end{Exercise}
+
+\begin{Answer}
+\Question Plug and chug:
+          the determinant of the product is this
+          \begin{align*}
+             \det(\begin{mat}
+                       a  &b  \\
+                       c  &d
+                    \end{mat}
+                    \begin{mat}
+                       w  &x  \\
+                       y  &z
+                    \end{mat}  )
+             &=
+             \det(\begin{mat}
+                 aw+by  &ax+bz  \\
+                 cw+dy  &cx+dz
+              \end{mat} )                 \\
+             &=
+             \begin{array}[t]{@{}l@{}} 
+                 acwx+adwz+bcxy+bdyz  \\
+                 \> -acwx-bcwz-adxy-bdyz
+              \end{array}
+          \end{align*}
+          while the product of the determinants is this.
+          \begin{equation*}
+             \det(\begin{mat}
+                a  &b  \\
+                c  &d
+             \end{mat})
+             \det(\begin{mat}
+                w  &x  \\
+                y  &z
+             \end{mat})
+             =
+             (ad-bc)(wz-xy)
+          \end{equation*}
+          Verification that they are equal is easy.
+\Question Use the prior part.
+
+\end{Answer}
