@@ -1,7 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{determinant}
+\index{matrix inverse}
+\index{matrix!inverse}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -13,13 +14,10 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{JH}}]
-\Question Suppose that \( \det(A)=3 \) and that \( \det(B)=2 \).
-Find \( \det(A^2\trans{B}B^{-2}\trans{A} ) \).
-\Question If \( \det(A)=0 \) then show that \( \det(6A^3+5A^2+2A)=0 \).
-\end{Exercise}
+origin={\cite{GH}}]
+Prove or disprove: If $A$ and $B$ are $\nbyn{2}$ invertible matrices then $A+B$ is an invertible matrix.
 
+\end{Exercise}
 \begin{Answer}
-\Question If it is defined then it is \( (3^2)(2) (2^{-2}) (3) \).
-\Question Hint: \( \det{6A^3+5A^2+2A}=\det{A}\det{6A^2+5A+2I} \).
+Disprove: $A=\begin{mat}1&0\\0&1\end{mat}\;B=\begin{mat}-1&0\\0&-1\end{mat}$.
 \end{Answer}
