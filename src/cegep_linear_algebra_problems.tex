@@ -81,13 +81,12 @@
 \usepackage[answerdelayed, lastexercise]{exercise}
 \usepackage{multicol}
 
-\renewcommand{\ExerciseHeaderTitle}{\;\ExerciseTitle}
+\renewcommand{\ExerciseHeaderTitle}{\ExerciseTitle}
 
 \renewcommand{\ExerciseHeaderOrigin}{\ExerciseOrigin}
 
 \renewcommand{\ExerciseHeader}{\flushleft{
-\textbf{\ExerciseHeaderDifficulty\;
-\ExerciseHeaderNB\ExerciseHeaderTitle\ExerciseName\;\ExerciseHeaderOrigin}}}
+\textbf{\ExerciseHeaderNB\ExerciseHeaderDifficulty\ExerciseHeaderTitle\ExerciseName\;\ExerciseHeaderOrigin}}}
 
 \renewcommand{\ExerciseListHeader}{{\ExerciseHeaderDifficulty
 \textbf{\ExerciseListName \ExerciseHeaderNB
@@ -103,7 +102,7 @@
 
 \renewcommand{\AnswerName}{}
 
-
+\setlength{\QuestionIndent}{2em}
 %----------------------------------------------------------------------------------------
 %       
 %----------------------------------------------------------------------------------------

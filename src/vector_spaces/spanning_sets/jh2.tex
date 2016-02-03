@@ -1,0 +1,44 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+\index{vector space}
+\index{function space}
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Which of these are members of the span
+    \( \spanof{\set{\cos^2x,\;\sin^2x} } \)
+    in the vector space of real-valued functions of one real variable?
+\begin{multicols}{2}
+      \Question \( f(x)=1 \)
+      \Question \( f(x)=3+x^2 \)
+      \Question \( f(x)=\sin x \)
+      \Question \( f(x)=\cos (2x) \)
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question Yes. It is in that span since 
+          \( 1\cos^2x+1\sin^2x=f(x) \).
+\Question No. Since \( r_1\cos^2x+r_2\sin^2x=3+x^2 \) has no scalar
+          solutions that work for all \( x \).
+          For instance, setting $x$ to be $0$ and $\pi$ gives the two
+          equations $r_1\cdot 1+r_2\cdot 0=3$ and 
+          $r_1\cdot 1+r_2\cdot 0=3+\pi^2$, which are not consistent with each
+          other. 
+\Question No. Consider what happens on setting $x$ to be $\pi/2$ and
+          $3\pi/2$.
+\Question Yes, \( \cos (2x)=1\cdot\cos^2(x)-1\cdot\sin^2(x) \).
+
+\end{Answer}

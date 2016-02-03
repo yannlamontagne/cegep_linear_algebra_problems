@@ -1,0 +1,101 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+\index{matrix space, polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Express each subspace as a span of a set of vectors.
+      
+\Question  \( \set{\rowvec{a &b &c}\suchthat a-c=0}   \)
+      
+\Question \(
+          \set{\begin{mat}
+                 a  &b  \\
+                 c  &d
+               \end{mat}  \suchthat a+d=0}
+     \) 
+\Question \(
+          \set{\begin{mat}
+                 a  &b  \\
+                 c  &d
+               \end{mat}  \suchthat \text{\( 2a-c-d=0 \) 
+                                                 and \( a+3b=0 \)} }
+        \)
+      
+\Question \( \set{a+bx+cx^3\suchthat a-2b+c=0} \)
+      
+\Question The subset of \( \polyspace_2 \) of quadratic polynomials 
+        \( p \) such that \( p(7)=0 \)
+\end{Exercise}
+
+\begin{Answer}
+\Question \( \set{\rowvec{c &b &c}\suchthat b,c\in\Re}
+                      =\set{b\rowvec{0 &1 &0}+c\rowvec{1 &0 &1}
+                        \suchthat b,c\in\Re} \)
+           The obvious choice for the set that spans is 
+           $\set{\rowvec{0 &1 &0},\rowvec{1 &0 &1}}$.
+\Question \( \set{\begin{mat}
+                       -d &b  \\
+                       c  &d
+                      \end{mat} \suchthat b,c,d\in\Re}
+                     =\set{b\begin{mat}[r]
+                       0  &1  \\
+                       0  &0
+                      \end{mat}
+                     +c\begin{mat}[r]
+                       0  &0  \\
+                       1  &0
+                      \end{mat}
+                     +d\begin{mat}[r]
+                       -1  &0  \\
+                       0  &1
+                      \end{mat}  \suchthat b,c,d\in\Re} \)
+            One set that spans this space consists of those three matrices. 
+\Question The system
+          \begin{equation*}
+            \begin{linsys}{4}
+              a  &+  &3b  &   &   &  &  &=  &0  \\
+             2a  &   &    &   &-c &- &d &=  &0  
+            \end{linsys}
+          \end{equation*}
+          gives \( b=-(c+d)/6 \) and \( a=(c+d)/2 \).
+          So one description is this.
+          \begin{equation*}
+            \set{c\begin{mat}[r]
+                       1/2  &-1/6  \\
+                       1    &0
+                      \end{mat}
+                     +d\begin{mat}[r]
+                       1/2  &-1/6  \\
+                       0    &1
+                      \end{mat}  \suchthat c,d\in\Re}
+           \end{equation*}
+          That shows that a set spanning this subspace consists of those
+          two matrices.
+\Question The $a=2b-c$ gives that the set
+           \( \set{(2b-c)+bx+cx^3 \suchthat b,c\in\Re} \)
+           equals the set
+           \( \set{b(2+x)+c(-1+x^3) \suchthat b,c\in\Re}  \).
+           So the subspace is the span of the set $\set{2+x,\; -1+x^3}$.
+\Question The set
+          \( \set{a+bx+cx^2\suchthat a+7b+49c=0} \)
+          can be parametrized as
+          \begin{equation*}
+            \set{b(-7+x)+c(-49+x^2)\suchthat b,c\in\Re} 
+          \end{equation*}
+          and so 
+          has the spanning set $\set{-7+x,\;-49+x^2}$.
+
+\end{Answer}

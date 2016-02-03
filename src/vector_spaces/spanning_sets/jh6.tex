@@ -1,0 +1,53 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Show that for any subset \( S \) of a vector space,
+    \( \spanof{ \spanof{S} }=\spanof{S} \).
+    (\textit{Hint.} 
+    Members of $\spanof{S}$ are linear combinations of members of $S$.
+    Members of $\spanof{\spanof{S}}$ are linear combinations of 
+    linear combinations of members of $S$.)
+\end{Exercise}
+
+\begin{Answer}
+We will show mutual containment between the two sets.
+
+      The first containment \( \spanof{ \spanof{S} }\supseteq\spanof{S}  \)
+      is an instance of the more general, and obvious, fact that for any 
+      subset \( T \) of a vector space, \( \spanof{T}\supseteq T \).
+
+      For the other containment, 
+      that \( \spanof{ \spanof{S} }\subseteq\spanof{S} \),
+      take $m$ vectors from \( \spanof{S} \), namely
+      \( c_{1,1}\vec{s}_{1,1}+\cdots+c_{1,n_1}\vec{s}_{1,n_1} \), \ldots,
+      \( c_{1,m}\vec{s}_{1,m}+\cdots+c_{1,n_m}\vec{s}_{1,n_m} \),
+      and note that any linear combination of those
+      \begin{equation*}
+         r_1(c_{1,1}\vec{s}_{1,1}+\cdots+c_{1,n_1}\vec{s}_{1,n_1})+\cdots
+        +r_m(c_{1,m}\vec{s}_{1,m}+\cdots+c_{1,n_m}\vec{s}_{1,n_m})
+      \end{equation*}
+      is a linear combination of elements of \( S \)
+      \begin{equation*}
+        = (r_1c_{1,1})\vec{s}_{1,1}+\cdots+(r_1c_{1,n_1})\vec{s}_{1,n_1}+\cdots
+        +(r_mc_{1,m})\vec{s}_{1,m}+\cdots+(r_mc_{1,n_m})\vec{s}_{1,n_m}
+      \end{equation*}
+      and so is in \( \spanof{S} \).  
+      That is, simply recall that a linear combination of linear combinations
+      (of members of $S$)
+      is a linear combination (again of members of $S$).
+
+\end{Answer}

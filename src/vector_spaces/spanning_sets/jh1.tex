@@ -1,0 +1,62 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+\index{vector space}
+\index{polynomial space}
+\index{matrix space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Determine whether the vector lies in the span of the set.
+\Question \( \colvec[r]{2 \\ 0 \\ 1} \),
+        \( \set{\colvec[r]{1 \\ 0 \\ 0},
+                \colvec[r]{0 \\ 0 \\ 1}  } \)
+\Question \( x-x^3 \),
+        \( \set{x^2,2x+x^2,x+x^3} \)
+\Question \( \begin{mat}[r]
+                 0  &1  \\
+                 4  &2
+               \end{mat}  \),
+        \( \set{\begin{mat}[r]
+                  1  &0  \\
+                  1  &1
+                \end{mat},
+                \begin{mat}[r]
+                  2  &0  \\
+                  2  &3
+                \end{mat}  } \)
+
+\end{Exercise}
+
+\begin{Answer}
+\Question Yes, solving the linear system arising from
+           \begin{equation*}
+             r_1\colvec[r]{1 \\ 0 \\ 0}+r_2\colvec[r]{0 \\ 0 \\ 1}
+               =\colvec[r]{2 \\ 0 \\ 1}
+           \end{equation*}
+           gives \( r_1=2 \) and \( r_2=1 \).
+\Question Yes; the linear system arising from
+           \( r_1(x^2)+r_2(2x+x^2)+r_3(x+x^3)=x-x^3 \)
+           \begin{equation*}
+             \begin{linsys}{3}
+                   &  &2r_2 &+ &r_3 &= &1  \\
+               r_1 &+ &r_2  &  &    &= &0  \\
+                   &  &     &  &r_3 &= &-1   
+             \end{linsys}
+           \end{equation*}
+           gives that \( -1(x^2)+1(2x+x^2)-1(x+x^3)=x-x^3 \).
+\Question No; any combination of the two given matrices has a zero
+           in the upper right.
+
+\end{Answer}

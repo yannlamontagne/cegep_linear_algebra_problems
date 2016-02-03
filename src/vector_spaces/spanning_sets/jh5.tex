@@ -1,0 +1,71 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+\index{matrix space, polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find a set that spans the given subspace.
+\Question The \( xz \)-plane in \( \Re^3 \).
+\Question \( \set{\colvec{x \\ y \\ z}\suchthat 3x+2y+z=0} \)
+\Question \( \set{\colvec{x \\ y \\ z \\ w}\suchthat
+                       2x+y+w=0 \text{\ and\ } y+2z=0} \)
+\Question \( \set{a_0+a_1x+a_2x^2+a_3x^3\suchthat
+                        a_0+a_1=0 \text{\ and\ } a_2-a_3=0} \)
+\Question  The set \( \polyspace_4 \) in the space \( \polyspace_4 \)
+\Question \( \matspace_{\nbyn{2}} \) in \( \matspace_{\nbyn{2}} \)
+
+\end{Exercise}
+
+\begin{Answer}
+       \Question We can parametrize in this way 
+          \begin{equation*}
+             \set{\colvec{x \\ 0 \\ z}\suchthat x,z\in\Re}
+             =\set{x\colvec[r]{1 \\ 0 \\ 0}
+                  +z\colvec[r]{0 \\ 0 \\ 1}\suchthat x,z\in\Re}
+          \end{equation*}
+          giving this for a spanning set.
+          \begin{equation*}
+             \set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 0 \\ 1}} 
+          \end{equation*}
+        \Question Here is a parametrization, and the associated spanning set.
+          $
+             \set{y\colvec[r]{-2/3 \\ 1 \\ 0}+z\colvec[r]{-1/3 \\ 0 \\ 1}
+                 \suchthat y,z\in\Re }\\
+             \set{\colvec[r]{-2/3 \\ 1 \\ 0},\colvec[r]{-1/3 \\ 0 \\ 1} } 
+          $
+        \Question \( \set{\colvec[r]{1 \\ -2 \\ 1 \\ 0},
+                      \colvec[r]{-1/2 \\ 0 \\ 0 \\ 1} } \)
+        \Question Parametrize the description as
+          \( \set{-a_1+a_1x+a_3x^2+a_3x^3\suchthat a_1,a_3\in\Re } \)
+          to get \( \set{-1+x,x^2+x^3}. \)
+        \Question \( \set{1,x,x^2,x^3,x^4} \)
+        \Question \( \set{ \begin{mat}[r]
+                   1  &0  \\
+                   0  &0
+                 \end{mat},
+                 \begin{mat}[r]
+                   0  &1  \\
+                   0  &0
+                 \end{mat},
+                 \begin{mat}[r]
+                   0  &0  \\
+                   1  &0
+                 \end{mat},
+                 \begin{mat}[r]
+                   0  &0  \\
+                   0  &1
+                 \end{mat} } \)
+
+\end{Answer}
