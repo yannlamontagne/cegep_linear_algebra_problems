@@ -1,0 +1,44 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{function space}
+\index{subspace}
+\index{vector space!subspace}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Determine if each is a subspace of the vector space of real-valued
+functions of one real variable.
+
+\Question The 
+        \definend{even}\index{function!even}\index{even functions} functions
+        \( \set{\map{f}{\Re}{\Re} \suchthat f(-x)=f(x) \text{ for all } x} \).
+\Question The \definend{odd}\index{function!odd}\index{odd function}
+        functions
+        \( \set{\map{f}{\Re}{\Re} \suchthat f(-x)=-f(x) \text{ for all } x} \).
+\end{Exercise}
+
+\begin{Answer}
+\Question This is a subspace.
+          It is closed because if \( f_1,f_2 \) are even and
+          \( c_1,c_2 \) are scalars then we have this.
+          \begin{equation*}
+            (c_1f_1+c_2f_2)\,(-x)
+            =c_1\,f_1(-x)+c_2\,f_2(-x)
+            =c_1\,f_1(x)+c_2\,f_2(x)
+            =(c_1f_1+c_2f_2)\,(x)
+          \end{equation*}
+\Question This is also a subspace; the check is similar to
+          the prior one.
+
+\end{Answer}

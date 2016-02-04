@@ -1,0 +1,48 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove: $\vec{v}\in\spanof{\set{\vec{v}_1,\;\ldots,\;\vec{v}_n}}$ if and only if 
+$\spanof{\set{\vec{v}_1,\;\ldots,\;\vec{v}_n}}=\spanof{\set{\vec{v},\;\vec{v}_1,\;\ldots,\;\vec{v}_n}}$
+\end{Exercise}
+
+\begin{Answer}
+For `if',
+      let \( S \) be a subset of a vector space \( V \) and assume
+      \( \vec{v}\in S \) satisfies
+      \( \vec{v}=c_1\vec{s}_1+\dots+c_n\vec{s}_n \) where
+      \( c_1,\ldots,c_n \) are scalars and
+      \( \vec{s}_1,\ldots,\vec{s}_n\in S \).
+      We must show that \( \spanof{S\union\set{\vec{v}} }=\spanof{S} \).
+
+      Containment one way,
+      \( \spanof{S}\subseteq\spanof{S\union\set{\vec{v}} } \) is obvious.
+      For the other direction,
+      \( \spanof{S\union\set{\vec{v}} }\subseteq\spanof{S} \), note that if a
+      vector is in the set on the left then it has the form
+      \( d_0\vec{v}+d_1\vec{t}_1+\dots+d_m\vec{t}_m \) where the \( d \)'s are
+      scalars and the \( \vec{t}\, \)'s are in \( S \).
+      Rewrite that as
+      \( d_0(c_1\vec{s}_1+\dots+c_n\vec{s}_n)
+      +d_1\vec{t}_1+\cdots+d_m\vec{t}_m \) and note that 
+      the result is a member of the span of \( S \).
+
+      The `only if' is clearly true  adding \( \vec{v} \) 
+      enlarges the span to
+      include at least \( \vec{v} \).
+
+
+\end{Answer}

@@ -1,0 +1,77 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{vector space!subspace}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Subspaces are subsets and so we naturally consider how `is a subspace of'
+interacts with the usual set operations.
+\Question If \( A,B \) are subspaces of a vector space, are
+        their intersection
+        \( A\intersection B \) be a subspace?
+\Question Is the union \( A\union B \) a subspace?
+\Question If \( A \) is a subspace, is its complement be a subspace?
+
+\end{Exercise}
+
+\begin{Answer}
+        \Question Is is a subspace.
+
+          Assume that \( A,B \) are subspaces of \( V \).
+          Note that 
+          their intersection is not empty as both contain the zero vector.
+          If \( \vec{w},\vec{s}\in A\intersection B \) and \( r,s \) are
+          scalars then \( r\vec{v}+s\vec{w}\in A \) because
+          each vector is in \( A \) and so a linear combination is in \( A \),
+          and \(r\vec{v}+s\vec{w}\in B \) for the same reason.
+          Thus the intersection is closed.
+        \Question In general it is not a subspace.  (It is a subspace, only if \( A\subseteq B \) or
+          \( B\subseteq A \)).
+
+          Take \( V \) to be \( \Re^3 \),
+          take \( A \) to be the $x$-axis, and \( B \) to be the
+          \( y \)-axis.
+          Note that
+          \begin{equation*}
+            \colvec[r]{1 \\ 0}\in A \text{ and }\colvec[r]{0 \\ 1}\in B
+            \quad\text{but}\quad
+            \colvec[r]{1 \\ 0}+\colvec[r]{0 \\ 1}\not\in A\union B
+          \end{equation*}
+          as the sum is in neither \( A \) nor \( B \).
+
+          If \( A\subseteq B \) or
+          \( B\subseteq A \) then clearly \( A\union B \) is a subspace.
+
+          To show that \( A\union B \) is a subspace only if one
+          subspace contains the other, we assume that \( A\not\subseteq B \)
+          and \( B\not\subseteq A \) and prove that 
+          the union is not a subspace.
+          The assumption that \( A \) is not a subset of \( B \) means that 
+          there is an \( \vec{a}\in A \) with \( \vec{a}\not\in B \).
+          The other assumption gives a \( \vec{b}\in B \) with
+          \( \vec{b}\not\in A \).
+          Consider \( \vec{a}+\vec{b} \).
+          Note that sum is not an element of \( A \) or else
+          \( (\vec{a}+\vec{b})-\vec{a} \) would be in \( A \), which it is not.
+          Similarly the sum is not an element of \( B \).
+          Hence the sum is not an element of \( A\union B \), and so the union
+          is not a subspace.
+ \Question It is not a subspace.
+          As \( A \) is a subspace, it contains the zero vector, and therefore
+          the set that is $A$'s complement does not.
+          Without the zero vector, the complement cannot be a vector space.
+
+
+\end{Answer}

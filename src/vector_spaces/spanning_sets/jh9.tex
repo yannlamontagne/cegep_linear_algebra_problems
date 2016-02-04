@@ -1,0 +1,95 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{subspace}
+\index{spaning set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Because `span of' is an operation on sets we naturally consider
+    how it interacts with the usual set operations.
+      \Question If \( S\subseteq T \) are subsets of a vector space, is
+        \( \spanof{S}\subseteq\spanof{T} \)?
+      \Question If \( S,T \) are subsets of a vector space, is
+        \( \spanof{S\union T}=\spanof{S}\union\spanof{T} \)?
+      \Question If \( S,T \) are subsets of a vector space, is
+        \( \spanof{S\intersection T}=\spanof{S}\intersection\spanof{T} \)?
+      \Question Is the span of the complement equal to the complement of
+        the span?
+
+\end{Exercise}
+
+\begin{Answer}
+         \Question Always;
+           if \( S\subseteq T \) then a linear combination of elements of
+           \( S \) is also a linear combination of elements of \( T \).
+         \Question Sometimes (more precisely, if and only if 
+           \( S\subseteq T \) or \( T\subseteq S \)).
+
+           The answer is not `always' as is shown by this example from
+           \( \Re^3 \)
+           \begin{equation*}
+             S=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 1 \\ 0}},\quad
+             T=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
+           \end{equation*}
+           because of this.
+           \begin{equation*}
+             \colvec[r]{1 \\ 1 \\ 1}\in\spanof{S\union T}
+             \qquad
+             \colvec[r]{1 \\ 1 \\ 1}\not\in\spanof{S}\union \spanof{T}
+           \end{equation*}
+
+           The answer is not `never' because if either set contains the other
+           then equality is clear.
+           We can
+           characterize equality as happening only when either set contains
+           the other by assuming \( S\not\subseteq T \) (implying the
+           existence of a vector \( \vec{s}\in S \) with 
+           \( \vec{s}\not\in T \))
+           and \( T\not\subseteq S \) (giving a \( \vec{t}\in T \) with
+           \( \vec{t}\not\in S \)), noting
+           \( \vec{s}+\vec{t}\in\spanof{S\union T} \),
+           and showing that 
+           \( \vec{s}+\vec{t}\not\in\spanof{S}\union\spanof{T} \).
+         \Question Sometimes.
+
+           Clearly
+           \( \spanof{S\intersection T}
+             \subseteq\spanof{S}\intersection\spanof{T} \)
+           because any linear combination of vectors from 
+           \( S\intersection T \)
+           is a combination of vectors from \( S \) and also a combination of
+           vectors from \( T \).
+
+           Containment the other way does not always hold.
+           For instance, in \( \Re^2 \), take
+           \begin{equation*}
+             S=\set{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 1}},\quad
+             T=\set{\colvec[r]{2 \\ 0}}
+           \end{equation*}
+           so that \( \spanof{S}\intersection\spanof{T} \) is the \( x \)-axis
+           but \( \spanof{S\intersection T}  \) is the trivial subspace.
+
+           Characterizing exactly when equality holds is tough.
+           Clearly equality holds if either set contains the other, but that is
+           not `only if' by this example in \( \Re^3 \).
+           \begin{equation*}
+             S=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 1 \\ 0}},
+             \quad
+             T=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
+           \end{equation*}
+        \Question Never, as the span of the complement is a subspace, while
+          the complement of the span is not (it does not contain the zero 
+          vector).
+
+
+\end{Answer}

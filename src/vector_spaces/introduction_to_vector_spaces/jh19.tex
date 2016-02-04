@@ -1,0 +1,136 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Consider the set 
+    \begin{equation*}
+       \set{\colvec{x \\ y \\ z}\suchthat x+y+z=1}
+    \end{equation*}
+    under these operations.
+    \begin{equation*}
+       \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
+       =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
+       \qquad
+       r\colvec{x \\ y \\ z}=\colvec{rx-r+1 \\ ry \\ rz}
+    \end{equation*}
+Show that it is a vector space.
+\end{Exercise}
+
+\begin{Answer}
+We can combine the argument showing closure under
+           addition with the argument showing closure under 
+           scalar multiplication into one single argument
+           showing closure under linear combinations of two vectors.
+           If $r_1,r_2,x_1,x_2,y_1,y_2,z_1,z_2$ are in $\Re$ then      
+           \begin{multline*}
+              r_1\colvec{x_1 \\ y_1 \\ z_1}
+              +r_2\colvec{x_2 \\ y_2 \\ z_2}
+              =\colvec{r_1x_1-r_1+1 \\ r_1y_1 \\ r_1z_1}
+               +\colvec{r_2x_2-r_2+1 \\ r_2y_2 \\ r_2z_2}                 \\
+            =\colvec{r_1x_1-r_1+r_2x_2-r_2+1 \\ r_1y_1+r_2y_2 \\ r_1z_1+r_2z_2}
+           \end{multline*} 
+           (note that the definition of addition in this space is that
+           the first
+           components combine as $(r_1x_1-r_1+1)+(r_2x_2-r_2+1)-1$,
+           so the first component of the last vector does not say
+           `$\hbox{}+2$').
+           Adding the three components of the last vector gives
+           $r_1(x_1-1+y_1+z_1)+r_2(x_2-1+y_2+z_2)+1=r_1\cdot0+r_2\cdot0+1=1$.
+
+           Most of the other checks of the conditions are easy (although the
+           oddness of the operations keeps them from being routine).
+           Commutativity of addition goes like this.
+           \begin{equation*}
+             \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
+             =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
+             =\colvec{x_2+x_1-1 \\ y_2+y_1 \\ z_2+z_1}
+             =\colvec{x_2 \\ y_2 \\ z_2}+\colvec{x_1 \\ y_1 \\ z_1}
+           \end{equation*}
+           Associativity of addition has
+           \begin{equation*}
+             (\colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2})
+              +\colvec{x_3 \\ y_3 \\ z_3}
+             =\colvec{(x_1+x_2-1)+x_3-1 \\ (y_1+y_2)+y_3 \\ (z_1+z_2)+z_3}
+           \end{equation*}
+           while
+           \begin{equation*}
+             \colvec{x_1 \\ y_1 \\ z_1}
+             +(\colvec{x_2 \\ y_2 \\ z_2}+\colvec{x_3 \\ y_3 \\ z_3})
+             =\colvec{x_1+(x_2+x_3-1)-1 \\ y_1+(y_2+y_3) \\ z_1+(z_2+z_3)}
+           \end{equation*}
+           and they are equal.
+           The identity element with respect to this addition operation 
+           works this way
+           \begin{equation*}
+             \colvec{x \\ y \\ z}+\colvec[r]{1 \\ 0 \\ 0}
+             =\colvec{x+1-1 \\ y+0 \\ z+0}
+             =\colvec{x \\ y \\ z}
+           \end{equation*}
+           and the additive inverse is similar.
+           \begin{equation*}
+             \colvec{x \\ y \\ z}+\colvec{-x+2 \\ -y \\ -z}
+             =\colvec{x+(-x+2)-1 \\ y-y \\ z-z}
+             =\colvec[r]{1 \\ 0 \\ 0}
+           \end{equation*}
+
+           The conditions on scalar multiplication are also easy.
+           For the first condition,
+           \begin{equation*}
+             (r+s)\colvec{x \\ y \\ z}
+             =\colvec{(r+s)x-(r+s)+1 \\ (r+s)y \\ (r+s)z}
+           \end{equation*}
+           while
+           \begin{multline*}
+             r\colvec{x \\ y \\ z}+s\colvec{x \\ y \\ z}
+             =\colvec{rx-r+1 \\ ry \\ rz}+\colvec{sx-s+1 \\ sy \\ sz}  \\
+             =\colvec{(rx-r+1)+(sx-s+1)-1 \\ ry+sy \\ rz+sz}
+           \end{multline*}
+           and the two are equal.
+           The second condition compares
+           \begin{equation*}
+             r\cdot(\colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2})
+             =r\cdot\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
+             =\colvec{r(x_1+x_2-1)-r+1 \\ r(y_1+y_2) \\ r(z_1+z_2)}
+           \end{equation*}
+           with
+           \begin{multline*}
+             r\colvec{x_1 \\ y_1 \\ z_1}+r\colvec{x_2 \\ y_2 \\ z_2}
+             =\colvec{rx_1-r+1 \\ ry_1 \\ rz_1}
+                     +\colvec{rx_2-r+1 \\ ry_2 \\ rz_2}                  \\
+             =\colvec{(rx_1-r+1)+(rx_2-r+1)-1 \\ ry_1+ry_2 \\ rz_1+rz_2}
+           \end{multline*}
+           and they are equal.
+           For the third condition,
+           \begin{equation*}
+             (rs)\colvec{x \\ y \\ z}
+             =\colvec{rsx-rs+1 \\ rsy \\ rsz}
+           \end{equation*}
+           while
+           \begin{equation*}
+             r(s\colvec{x \\ y \\ z})
+             =r(\colvec{sx-s+1 \\ sy \\ sz})
+             =\colvec{r(sx-s+1)-r+1 \\ rsy \\ rsz}
+           \end{equation*}
+           and the two are equal.
+           For scalar multiplication by $1$ we have this.
+           \begin{equation*}
+             1\cdot\colvec{x \\ y \\ z}
+             =\colvec{1x-1+1 \\ 1y \\ 1z}
+             =\colvec{x \\ y \\ z}
+           \end{equation*}
+           Thus all the conditions on a vector space are met by these two
+           operations.
+
+\end{Answer}
