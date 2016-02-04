@@ -1,0 +1,60 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+\index{function space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove that each set \( \set{f,\;g} \) is linearly independent in the
+    vector space of all functions from \( \Re^+ \) to \( \Re \).
+\Question \( f(x)=x \) and \( g(x)=1/x \)
+\Question \( f(x)=\cos(x) \) and \( g(x)=\sin(x) \)
+\Question \( f(x)=e^x \) and \( g(x)=\ln(x) \)
+\end{Exercise}
+
+\begin{Answer}
+      Let $Z$ be the zero function $Z(x)=0$, which is the additive identity in
+      the vector space under discussion.
+        \Question This set is linearly independent.  
+          Consider \( c_1\cdot f(x)+c_2\cdot g(x)=Z(x) \).
+          Plugging in \( x=1 \) and \( x=2 \) gives a linear system 
+          \begin{equation*}
+            \begin{linsys}{2}
+              c_1\cdot 1  &+  &c_2\cdot 1     &=  &0  \\
+              c_1\cdot 2  &+  &c_2\cdot (1/2) &=  &0
+            \end{linsys}
+          \end{equation*}
+          with the unique solution \( c_1=0 \), \( c_2=0 \).
+        \Question This set is linearly independent.  
+          Consider \( c_1\cdot f(x)+c_2\cdot g(x)=Z(x) \) and 
+          plug in \( x=0 \) and \( x=\pi/2 \) to get 
+          \begin{equation*}
+            \begin{linsys}{2}
+              c_1\cdot 1  &+  &c_2\cdot 0     &=  &0  \\
+              c_1\cdot 0  &+  &c_2\cdot 1     &=  &0
+            \end{linsys}
+          \end{equation*}
+          which obviously gives that \( c_1=0 \), \( c_2=0 \).
+        \Question This set is also linearly independent.  
+          Considering \( c_1\cdot f(x)+c_2\cdot g(x)=Z(x) \) and 
+          plugging in \( x=1 \) and \( x=e \) 
+          \begin{equation*}
+            \begin{linsys}{2}
+              c_1\cdot e    &+  &c_2\cdot 0     &=  &0  \\
+              c_1\cdot e^e  &+  &c_2\cdot 1     &=  &0
+            \end{linsys}
+          \end{equation*}
+          gives that \( c_1=0 \) and \( c_2=0 \).
+
+\end{Answer}

@@ -1,574 +1,734 @@
-  \recommended \item 
-    Decide if each is a subspace of the vector space of real-valued
-    functions of one real variable.
+  \recommended \item
+    Show that the nonzero rows of an echelon form matrix form a linearly
+    independent set.
+    \begin{answer}
+      We have already showed this: the Linear Combination
+      Lemma and its corollary state that in an echelon form matrix, 
+      no nonzero row is a linear combination of the others.  
+    \end{answer}
+  \item 
+    \nearbyexample{ex:EmSetLI} shows that the empty set is 
+    linearly independent.   
     \begin{exparts}
-      \partsitem The 
-        \definend{even}\index{function!even}\index{even functions} functions
-        \( \set{\map{f}{\Re}{\Re} \suchthat f(-x)=f(x) \text{ for all } x} \).
-        For example, two members of this set are $f_1(x)=x^2$ 
-        and $f_2(x)=\cos (x)$.
-      \partsitem The \definend{odd}\index{function!odd}\index{odd function}
-        functions
-        \( \set{\map{f}{\Re}{\Re} \suchthat f(-x)=-f(x) \text{ for all } x} \).
-        Two members are $f_3(x)=x^3$ and $f_4(x)=\sin(x)$.
-    \end{exparts}
-    \begin{answer}
-      Of course, the addition and scalar multiplication operations are the
-      ones inherited from the enclosing space.
-      \begin{exparts}
-        \partsitem This is a subspace.
-          It is not empty as it contains at least the two example functions
-          given.
-          It is closed because if \( f_1,f_2 \) are even and
-          \( c_1,c_2 \) are scalars then we have this.
-          \begin{equation*}
-            (c_1f_1+c_2f_2)\,(-x)
-            =c_1\,f_1(-x)+c_2\,f_2(-x)
-            =c_1\,f_1(x)+c_2\,f_2(x)
-            =(c_1f_1+c_2f_2)\,(x)
-          \end{equation*}
-        \partsitem This is also a subspace; the check is similar to
-          the prior one.
-      \end{exparts}  
-    \end{answer}
-  \item 
-    An example following the definition of a vector space shows that the
-    solution set of a homogeneous linear system is a vector space.
-    In the terminology of this subsection, it is a subspace of $\Re^n$ where
-    the system has $n$ variables.
-    What about a non-homogeneous linear system; do its solutions form a 
-    subspace (under the inherited operations)?
-    \begin{answer}
-      No, such a set is not closed.
-      For one thing, it does not contain the zero vector.  
-    \end{answer}
-   \item 
-    \nearbyexample{ex:SubspRThree} shows that 
-    $\Re^3$ has infinitely many subspaces.
-    Does every nontrivial space have infinitely many subspaces?
-    \begin{answer}
-      No.
-      The only subspaces of \( \Re^1 \) are the space itself and its 
-      trivial subspace.
-      Any subspace $S$ of $\Re$ that contains a nonzero member $\vec{v}$ 
-      must contain the set of all of its scalar multiples 
-      $\set{r\cdot\vec{v}\suchthat r\in\Re}$. 
-      But this set is all of $\Re$.  
-    \end{answer}
-   \item 
-    Show that each vector space has only one trivial subspace.
-    \begin{answer}
-      An exercise in the prior subsection shows that every vector space
-      has only one zero vector (that is, there is only one vector that is the
-      additive identity element of the space).
-      But a trivial space has only one element and that element must be this
-      (unique) zero vector.
-    \end{answer}
-  \item 
-    All of the subspaces that we've seen in some way use zero in their 
-    description.
-    For example, the subspace in \nearbyexample{ex:SubspacesRTwo} consists of
-    all the vectors from $\Re^2$ with a second component of zero.
-    In contrast,
-    the collection of vectors from $\Re^2$ with a second component of one
-    does not form a subspace (it is not closed under scalar multiplication).
-    Another example is \nearbyexample{ex:PlaneSubspRThree}, where the condition
-    on the vectors is that the three components add to zero.
-    If the condition there 
-    were that the three components add to one then it would 
-    not be a subspace (again, it would fail to be closed).
-    However, a reliance on zero is not strictly necessary.
-    Consider the set 
-    \begin{equation*}
-       \set{\colvec{x \\ y \\ z}\suchthat x+y+z=1}
-    \end{equation*}
-    under these operations.
-    \begin{equation*}
-       \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
-       =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
-       \qquad
-       r\colvec{x \\ y \\ z}=\colvec{rx-r+1 \\ ry \\ rz}
-    \end{equation*}
-    \begin{exparts}
-      \partsitem Show that it is not a subspace of $\Re^3$.
-         (\textit{Hint.}   See \nearbyexample{ex:OperNotInherit}).
-      \partsitem Show that it is a vector space.         
-         Note that by the prior item,
-         \nearbylemma{th:SubspIffClosed} can not apply.  
-      \partsitem Show that any subspace of $\Re^3$ must pass through the origin,
-         and so any subspace of $\Re^3$ must involve zero in its description.
-         Does the converse hold?  
-          Does any subset of $\Re^3$ that contains the origin become a
-          subspace when given the inherited operations?
+      \partsitem When is a one-element set linearly independent?
+      \partsitem How about a set with two elements?
     \end{exparts}
     \begin{answer}
       \begin{exparts}
-         \partsitem It is not a subspace because these are not the inherited 
-           operations.  
-           For one thing, in this space,
-           \begin{equation*}
-             0\cdot\colvec{x \\ y \\ z}=\colvec[r]{1 \\ 0 \\ 0}
-           \end{equation*}
-           while this does not, of course, hold in $\Re^3$.
-         \partsitem We can combine the argument showing closure under
-           addition with the argument showing closure under 
-           scalar multiplication into one single argument
-           showing closure under linear combinations of two vectors.
-           If $r_1,r_2,x_1,x_2,y_1,y_2,z_1,z_2$ are in $\Re$ then      
-           \begin{multline*}
-              r_1\colvec{x_1 \\ y_1 \\ z_1}
-              +r_2\colvec{x_2 \\ y_2 \\ z_2}
-              =\colvec{r_1x_1-r_1+1 \\ r_1y_1 \\ r_1z_1}
-               +\colvec{r_2x_2-r_2+1 \\ r_2y_2 \\ r_2z_2}                 \\
-            =\colvec{r_1x_1-r_1+r_2x_2-r_2+1 \\ r_1y_1+r_2y_2 \\ r_1z_1+r_2z_2}
-           \end{multline*} 
-           (note that the definition of addition in this space is that
-           the first
-           components combine as $(r_1x_1-r_1+1)+(r_2x_2-r_2+1)-1$,
-           so the first component of the last vector does not say
-           `$\hbox{}+2$').
-           Adding the three components of the last vector gives
-           $r_1(x_1-1+y_1+z_1)+r_2(x_2-1+y_2+z_2)+1=r_1\cdot0+r_2\cdot0+1=1$.
+        \partsitem A singleton set $\set{\vec{v}}$ is linearly independent 
+          if and only if $\vec{v}\neq\zero$.
+          For the `if' direction, with $\vec{v}\neq\zero$, 
+          we can apply \nearbylemma{le:LDIffANonTrivLinRel} by considering 
+          the relationship
+          \( c\cdot\vec{v}=\zero \) and noting that the only solution
+          is the trivial one:~$c=0$.
+          For the `only~if' direction, just recall that 
+          \nearbyexample{ex:SetWithZeroVecLD}
+          shows that $\set{\zero}$ is linearly dependent, and so if the set
+          $\set{\vec{v}}$ is linearly independent then $\vec{v}\neq\zero$. 
 
-           Most of the other checks of the conditions are easy (although the
-           oddness of the operations keeps them from being routine).
-           Commutativity of addition goes like this.
-           \begin{equation*}
-             \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
-             =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
-             =\colvec{x_2+x_1-1 \\ y_2+y_1 \\ z_2+z_1}
-             =\colvec{x_2 \\ y_2 \\ z_2}+\colvec{x_1 \\ y_1 \\ z_1}
-           \end{equation*}
-           Associativity of addition has
-           \begin{equation*}
-             (\colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2})
-              +\colvec{x_3 \\ y_3 \\ z_3}
-             =\colvec{(x_1+x_2-1)+x_3-1 \\ (y_1+y_2)+y_3 \\ (z_1+z_2)+z_3}
-           \end{equation*}
-           while
-           \begin{equation*}
-             \colvec{x_1 \\ y_1 \\ z_1}
-             +(\colvec{x_2 \\ y_2 \\ z_2}+\colvec{x_3 \\ y_3 \\ z_3})
-             =\colvec{x_1+(x_2+x_3-1)-1 \\ y_1+(y_2+y_3) \\ z_1+(z_2+z_3)}
-           \end{equation*}
-           and they are equal.
-           The identity element with respect to this addition operation 
-           works this way
-           \begin{equation*}
-             \colvec{x \\ y \\ z}+\colvec[r]{1 \\ 0 \\ 0}
-             =\colvec{x+1-1 \\ y+0 \\ z+0}
-             =\colvec{x \\ y \\ z}
-           \end{equation*}
-           and the additive inverse is similar.
-           \begin{equation*}
-             \colvec{x \\ y \\ z}+\colvec{-x+2 \\ -y \\ -z}
-             =\colvec{x+(-x+2)-1 \\ y-y \\ z-z}
-             =\colvec[r]{1 \\ 0 \\ 0}
-           \end{equation*}
+          (\textit{Remark.} 
+          Another answer is to say that this is the special case of
+          \nearbylemma{lm:AddVecLiSetIsLiIffVecNotInSpan} 
+          where \( S=\emptyset \).)
+        \partsitem A set with two elements is linearly independent 
+          if and only if neither member is a  multiple of the other 
+          (note that if one is the zero vector then it is a multiple of the
+          other).
+          This is an equivalent statement:~a set is linearly dependent if and
+          only if one element is a multiple of the other.
 
-           The conditions on scalar multiplication are also easy.
-           For the first condition,
-           \begin{equation*}
-             (r+s)\colvec{x \\ y \\ z}
-             =\colvec{(r+s)x-(r+s)+1 \\ (r+s)y \\ (r+s)z}
-           \end{equation*}
-           while
-           \begin{multline*}
-             r\colvec{x \\ y \\ z}+s\colvec{x \\ y \\ z}
-             =\colvec{rx-r+1 \\ ry \\ rz}+\colvec{sx-s+1 \\ sy \\ sz}  \\
-             =\colvec{(rx-r+1)+(sx-s+1)-1 \\ ry+sy \\ rz+sz}
-           \end{multline*}
-           and the two are equal.
-           The second condition compares
-           \begin{equation*}
-             r\cdot(\colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2})
-             =r\cdot\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
-             =\colvec{r(x_1+x_2-1)-r+1 \\ r(y_1+y_2) \\ r(z_1+z_2)}
-           \end{equation*}
-           with
-           \begin{multline*}
-             r\colvec{x_1 \\ y_1 \\ z_1}+r\colvec{x_2 \\ y_2 \\ z_2}
-             =\colvec{rx_1-r+1 \\ ry_1 \\ rz_1}
-                     +\colvec{rx_2-r+1 \\ ry_2 \\ rz_2}                  \\
-             =\colvec{(rx_1-r+1)+(rx_2-r+1)-1 \\ ry_1+ry_2 \\ rz_1+rz_2}
-           \end{multline*}
-           and they are equal.
-           For the third condition,
-           \begin{equation*}
-             (rs)\colvec{x \\ y \\ z}
-             =\colvec{rsx-rs+1 \\ rsy \\ rsz}
-           \end{equation*}
-           while
-           \begin{equation*}
-             r(s\colvec{x \\ y \\ z})
-             =r(\colvec{sx-s+1 \\ sy \\ sz})
-             =\colvec{r(sx-s+1)-r+1 \\ rsy \\ rsz}
-           \end{equation*}
-           and the two are equal.
-           For scalar multiplication by $1$ we have this.
-           \begin{equation*}
-             1\cdot\colvec{x \\ y \\ z}
-             =\colvec{1x-1+1 \\ 1y \\ 1z}
-             =\colvec{x \\ y \\ z}
-           \end{equation*}
-           Thus all the conditions on a vector space are met by these two
-           operations.
-
-           \textit{Remark.}
-           A way to understand this vector space is to think of it as 
-           the plane in $\Re^3$
-           \begin{equation*}
-             P=\set{\colvec{x \\ y \\ z}\suchthat x+y+z=0}
-           \end{equation*}
-           displaced away from the origin by $1$ along the $x$-axis.
-           Then addition becomes:~to add two members of this space, 
-           \begin{equation*}
-             \colvec{x_1 \\ y_1 \\ z_1},\;\colvec{x_2 \\ y_2 \\ z_2}
-           \end{equation*}
-           (such that $x_1+y_1+z_1=1$ and $x_2+y_2+z_2=1$)
-           move them back by $1$ to place them in $P$ and
-           add as usual,
-           \begin{equation*}
-             \colvec{x_1-1 \\ y_1 \\ z_1}+\colvec{x_2-1 \\ y_2 \\ z_2}
-             =\colvec{x_1+x_2-2 \\ y_1+y_2 \\ z_1+z_2}
-             \qquad\text{(in $P$)}
-           \end{equation*}
-           and then move the result back out by $1$ along the $x$-axis.
-           \begin{equation*}
-             \colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}.
-           \end{equation*}
-           Scalar multiplication is similar.
-         \partsitem For the subspace to be closed under the inherited scalar 
-           multiplication, where $\vec{v}$ is a member of that subspace,
-           \begin{equation*}
-             0\cdot\vec{v}=\colvec[r]{0 \\ 0 \\ 0}
-           \end{equation*}
-           must also be a member.
-
-           The converse does not hold.
-           Here is a subset of $\Re^3$ that contains the origin 
-           \begin{equation*}
-             \set{\colvec[r]{0 \\ 0 \\ 0},\colvec[r]{1 \\ 0 \\ 0}}
-           \end{equation*}
-           (this subset has only two elements) but is not a subspace.
-      \end{exparts}
-    \end{answer}
-  \item 
-    We can give a justification for the convention that the sum of 
-    zero-many vectors equals the zero vector.
-    Consider this sum of three vectors $\vec{v}_1+\vec{v}_2+\vec{v}_3$.
-    \begin{exparts}
-      \partsitem What is the difference between this sum of three vectors 
-        and the sum of the first two of these three?
-      \partsitem What is the difference between the prior sum and the sum 
-        of just the first one vector?
-      \partsitem What should be the difference between the prior sum of 
-        one vector and the sum of no vectors?
-      \partsitem So what should be the definition of the sum of no vectors?
-    \end{exparts}
-    \begin{answer}
-      \begin{exparts}
-        \item $(\vec{v}_1+\vec{v}_2+\vec{v}_3)-(\vec{v}_1+\vec{v}_2)
-                 =\vec{v}_3$
-        \item $(\vec{v}_1+\vec{v}_2)-(\vec{v}_1)
-                 =\vec{v}_2$
-        \item Surely, $\vec{v}_1$.
-        \item Taking the one-long sum and subtracting gives
-          ($\vec{v}_1)-\vec{v}_1=\zero$.
-      \end{exparts}
-    \end{answer}
-  \item 
-    Is a space determined by its subspaces?
-    That is, if two vector spaces have the same subspaces, must the
-    two be equal?
-    \begin{answer}
-      Yes; any space is a subspace of itself, so each space contains the
-      other.  
-    \end{answer}
-  \item 
-     \begin{exparts}
-      \partsitem Give a set that is closed under scalar multiplication
-        but not addition.
-      \partsitem Give a set closed under addition but not scalar
-        multiplication.
-      \partsitem Give a set closed under neither.
-    \end{exparts}
-    \begin{answer}
-      \begin{exparts}
-        \partsitem The union of the \( x \)-axis and the \( y \)-axis
-          in \( \Re^2 \) is one.
-        \partsitem The set of integers, as a subset of \( \Re^1 \), is one.
-        \partsitem The subset \( \set{\vec{v}} \) of \( \Re^2 \) is one,
-          where $\vec{v}$ is any nonzero vector.
-      \end{exparts}  
+          The proof is easy.
+          A set $\set{\vec{v}_1,\vec{v}_2}$ is linearly dependent if and only
+          if there is a relationship $c_1\vec{v}_1+c_2\vec{v}_2=\zero$ 
+          with either $c_1\neq 0$ or $c_2\neq 0$ (or both).
+          That holds if and only if $\vec{v}_1=(-c_2/c_1)\vec{v}_2$
+          or $\vec{v}_2=(-c_1/c_2)\vec{v}_1$ (or both).
+       \end{exparts}   
      \end{answer}
   \item 
-    Show that the span of a set of vectors does not depend on the order in
-    which the vectors are listed in that set.
+    Show that if \( \set{\vec{x},\vec{y},\vec{z}} \) is linearly
+    independent then so are all of its proper 
+    subsets:~\( \set{\vec{x},\vec{y}} \),
+    \( \set{\vec{x},\vec{z}} \), \( \set{\vec{y},\vec{z}} \),
+    \( \set{\vec{x}} \),\( \set{\vec{y}} \), \( \set{\vec{z}} \),
+    and \( \set{} \).
+    Is that `only if' also?
     \begin{answer}
-      Because vector space addition is commutative, a reordering of
-      summands leaves a linear combination unchanged.  
-    \end{answer}
-  \item  
-    Which trivial subspace is the span of the empty set?
-    Is it
-    \begin{equation*}
-      \set{\colvec[r]{0 \\ 0 \\ 0}}\subseteq \Re^3,
-      \quad\text{or}\quad
-      \set{0+0x}\subseteq \polyspace_1,
-    \end{equation*}
-    or some other subspace?
-    \begin{answer}
-      We always consider that span in the context of an enclosing space.  
-    \end{answer}
-  \item   
-    Show that if a  vector is in the span of a set then adding that
-    vector to the set won't make the span any bigger.
-    Is that also `only if'?
-    \begin{answer}
-      It is both `if' and `only if'.
- 
-      For `if',
-      let \( S \) be a subset of a vector space \( V \) and assume
-      \( \vec{v}\in S \) satisfies
-      \( \vec{v}=c_1\vec{s}_1+\dots+c_n\vec{s}_n \) where
-      \( c_1,\ldots,c_n \) are scalars and
-      \( \vec{s}_1,\ldots,\vec{s}_n\in S \).
-      We must show that \( \spanof{S\union\set{\vec{v}} }=\spanof{S} \).
-
-      Containment one way,
-      \( \spanof{S}\subseteq\spanof{S\union\set{\vec{v}} } \) is obvious.
-      For the other direction,
-      \( \spanof{S\union\set{\vec{v}} }\subseteq\spanof{S} \), note that if a
-      vector is in the set on the left then it has the form
-      \( d_0\vec{v}+d_1\vec{t}_1+\dots+d_m\vec{t}_m \) where the \( d \)'s are
-      scalars and the \( \vec{t}\, \)'s are in \( S \).
-      Rewrite that as
-      \( d_0(c_1\vec{s}_1+\dots+c_n\vec{s}_n)
-      +d_1\vec{t}_1+\cdots+d_m\vec{t}_m \) and note that 
-      the result is a member of the span of \( S \).
-
-      The `only if' is clearly true\Dash adding \( \vec{v} \) 
-      enlarges the span to
-      include at least \( \vec{v} \).
-    \end{answer}
-  \recommended \item
-    Subspaces are subsets and so we naturally consider how `is a subspace of'
-    interacts with the usual set operations.
-    \begin{exparts}
-      \partsitem If \( A,B \) are subspaces of a vector space, must
-        their intersection
-        \( A\intersection B \) be a subspace?
-        Always?  Sometimes?  Never?
-      \partsitem Must the union \( A\union B \) be a subspace?
-      \partsitem If \( A \) is a subspace, must
-        its complement be a subspace?
-    \end{exparts}
-    (\textit{Hint.}   Try some test subspaces from 
-    \nearbyexample{ex:SubspRThree}.)
-    \begin{answer}
-      \begin{exparts}
-        \partsitem Always.
-
-          Assume that \( A,B \) are subspaces of \( V \).
-          Note that 
-          their intersection is not empty as both contain the zero vector.
-          If \( \vec{w},\vec{s}\in A\intersection B \) and \( r,s \) are
-          scalars then \( r\vec{v}+s\vec{w}\in A \) because
-          each vector is in \( A \) and so a linear combination is in \( A \),
-          and \(r\vec{v}+s\vec{w}\in B \) for the same reason.
-          Thus the intersection is closed.
-          Now \nearbylemma{th:SubspIffClosed} applies.
-        \partsitem Sometimes (more precisely, only if \( A\subseteq B \) or
-          \( B\subseteq A \)).
-
-          To see the answer is not `always', take \( V \) to be \( \Re^3 \),
-          take \( A \) to be the $x$-axis, and \( B \) to be the
-          \( y \)-axis.
-          Note that
-          \begin{equation*}
-            \colvec[r]{1 \\ 0}\in A \text{ and }\colvec[r]{0 \\ 1}\in B
-            \quad\text{but}\quad
-            \colvec[r]{1 \\ 0}+\colvec[r]{0 \\ 1}\not\in A\union B
-          \end{equation*}
-          as the sum is in neither \( A \) nor \( B \).
-
-          The answer is not `never' because if \( A\subseteq B \) or
-          \( B\subseteq A \) then clearly \( A\union B \) is a subspace.
-
-          To show that \( A\union B \) is a subspace only if one
-          subspace contains the other, we assume that \( A\not\subseteq B \)
-          and \( B\not\subseteq A \) and prove that 
-          the union is not a subspace.
-          The assumption that \( A \) is not a subset of \( B \) means that 
-          there is an \( \vec{a}\in A \) with \( \vec{a}\not\in B \).
-          The other assumption gives a \( \vec{b}\in B \) with
-          \( \vec{b}\not\in A \).
-          Consider \( \vec{a}+\vec{b} \).
-          Note that sum is not an element of \( A \) or else
-          \( (\vec{a}+\vec{b})-\vec{a} \) would be in \( A \), which it is not.
-          Similarly the sum is not an element of \( B \).
-          Hence the sum is not an element of \( A\union B \), and so the union
-          is not a subspace.
-        \partsitem Never.
-          As \( A \) is a subspace, it contains the zero vector, and therefore
-          the set that is $A$'s complement does not.
-          Without the zero vector, the complement cannot be a vector space.
-      \end{exparts}  
-    \end{answer}
-  \recommended \item 
-    Does the span of a set depend on the enclosing space?
-    That is, if \( W \) is a subspace of \( V \) and \( S \) is a subset of
-    \( W \) (and so also a subset of \( V \)), might the span of \( S \) in
-    \( W \) differ from the span of \( S \) in \( V \)?
-    \begin{answer}
-      The span of a set does not depend on the enclosing space.
-      A linear combination of vectors from \( S \) gives the same sum
-      whether we regard the operations as those of \( W \) or as those of
-      \( V \), because the operations of \( W \) are inherited from \(  V \).  
+      \nearbylemma{le:SubsetPreserveLI} gives the `if' half.
+      The converse (the `only if' statement) does not hold. 
+      An example is to consider the vector space \( \Re^2 \) and
+      these vectors.
+      \begin{equation*}
+         \vec{x}=\colvec{1 \\ 0},\quad
+         \vec{y}=\colvec{0 \\ 1},\quad
+         \vec{z}=\colvec{1 \\ 1}
+      \end{equation*} 
     \end{answer}
   \item 
-    Is the relation `is a subspace of' transitive?
-    That is, if $V$ is a subspace of $W$ and $W$ is a subspace of
-    $X$, must $V$ be a subspace of $X$? 
-    \begin{answer}
-      It is;
-      apply \nearbylemma{th:SubspIffClosed}.
-      (You must consider the following.
-      Suppose \( B \) is a subspace of a vector space \( V \) and suppose
-      \( A\subseteq B\subseteq V \) is a subspace.
-      From which space does \( A \) inherit its operations?
-      The answer is that it doesn't matter\Dash \( A \) will inherit the
-      same operations in either case.)  
-    \end{answer}
-  \recommended \item
-    Because `span of' is an operation on sets we naturally consider
-    how it interacts with the usual set operations.
     \begin{exparts}
-      \partsitem If \( S\subseteq T \) are subsets of a vector space, is
-        \( \spanof{S}\subseteq\spanof{T} \)?
-        Always?  Sometimes?  Never?
-      \partsitem If \( S,T \) are subsets of a vector space, is
-        \( \spanof{S\union T}=\spanof{S}\union\spanof{T} \)?
-      \partsitem If \( S,T \) are subsets of a vector space, is
-        \( \spanof{S\intersection T}=\spanof{S}\intersection\spanof{T} \)?
-      \partsitem Is the span of the complement equal to the complement of
-        the span?
+      \partsitem Show that this 
+        \begin{equation*}
+          S=\set{\colvec{1 \\ 1 \\ 0},\colvec{-1 \\ 2 \\ 0}}
+        \end{equation*}
+        is a linearly independent subset of \( \Re^3 \).
+      \partsitem Show that
+        \begin{equation*}
+          \colvec{3 \\ 2 \\ 0}
+        \end{equation*}
+        is in the span of $S$ by finding \( c_1 \) and \( c_2 \) 
+        giving a linear relationship.
+        \begin{equation*}
+          c_1\colvec{1 \\ 1 \\ 0}
+          +c_2\colvec{-1 \\ 2 \\ 0}
+          =\colvec{3 \\ 2 \\ 0}
+        \end{equation*}
+        Show that the pair \( c_1,c_2 \) is unique.
+      \partsitem Assume that \( S \) is a subset of a vector space and that
+        \( \vec{v} \) is in \( \spanof{S} \), so that \( \vec{v} \) is a
+        linear combination of vectors from \( S \).
+        Prove that if \( S \) is linearly independent then a linear combination
+        of vectors from \( S \) adding to \( \vec{v} \)
+        is unique (that is, unique up to reordering
+        and adding or taking away terms of the form \( 0\cdot\vec{s} \)).
+        Thus \( S \) as a spanning set is minimal in this strong sense:
+        each vector in \( \spanof{S} \) is a combination of elements
+        of $S$ a minimum number of
+        times\Dash only once.
+      \partsitem
+        Prove that it can happen when \( S \) is not linearly 
+        independent that distinct linear combinations sum to the same vector.
     \end{exparts}
     \begin{answer}
       \begin{exparts}
-         \partsitem Always;
-           if \( S\subseteq T \) then a linear combination of elements of
-           \( S \) is also a linear combination of elements of \( T \).
-         \partsitem Sometimes (more precisely, if and only if 
-           \( S\subseteq T \) or \( T\subseteq S \)).
+        \partsitem The linear system arising from
+          \begin{equation*}
+            c_1\colvec{1 \\ 1 \\ 0}
+            +c_2\colvec{-1 \\ 2 \\ 0}
+            =\colvec{0 \\ 0 \\ 0}
+          \end{equation*}
+          has the unique solution \( c_1=0 \) and \( c_2=0 \).
+        \partsitem The linear system arising from
+          \begin{equation*}
+            c_1\colvec{1 \\ 1 \\ 0}
+            +c_2\colvec{-1 \\ 2 \\ 0}
+            =\colvec{3 \\ 2 \\ 0}
+          \end{equation*}
+          has the unique solution \( c_1=8/3 \) and \( c_2=-1/3 \).
+        \partsitem Suppose that \( S \) is linearly independent.
+          Suppose that we have both $\vec{v}=c_1\vec{s}_1+\dots+c_n\vec{s}_n$
+          and $\vec{v}=d_1\vec{t}_1+\dots+d_m\vec{t}_m$
+          (where the vectors are members of $S$).
+          Now, 
+          \begin{equation*}
+            c_1\vec{s}_1+\dots+c_n\vec{s}_n
+            =\vec{v}
+            =d_1\vec{t}_1+\dots+d_m\vec{t}_m
+          \end{equation*}
+          can be rewritten in this way.
+          \begin{equation*}
+            c_1\vec{s}_1+\dots+c_n\vec{s}_n
+            -d_1\vec{t}_1-\dots-d_m\vec{t}_m
+            =\zero
+          \end{equation*}
+          Possibly some of the $\vec{s}\,$'s equal some of the $\vec{t}\,$'s;
+          we can combine the associated coefficients 
+          (i.e., if $\vec{s}_i=\vec{t}_j$ then
+          $\cdots+c_i\vec{s}_i+\dots-d_j\vec{t}_j-\cdots$ can be rewritten
+          as $\cdots+(c_i-d_j)\vec{s}_i+\cdots$).
+          That equation is a linear relationship among  
+          distinct (after the combining is done) members of the set $S$.
+          We've assumed that $S$ is linearly independent, so all of the 
+          coefficients are zero.
+          If $i$ is such that $\vec{s}_i$ does not equal any $\vec{t}_j$
+          then $c_i$ is zero.
+          If $j$ is such that $\vec{t}_j$ does not equal any $\vec{s}_i$
+          then $d_j$ is zero.
+          In the final case, we have that $c_i-d_j=0$ and so $c_i=d_j$.  
 
-           The answer is not `always' as is shown by this example from
-           \( \Re^3 \)
-           \begin{equation*}
-             S=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 1 \\ 0}},\quad
-             T=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
-           \end{equation*}
-           because of this.
-           \begin{equation*}
-             \colvec[r]{1 \\ 1 \\ 1}\in\spanof{S\union T}
-             \qquad
-             \colvec[r]{1 \\ 1 \\ 1}\not\in\spanof{S}\union \spanof{T}
-           \end{equation*}
+          Therefore, the original two sums are the same, except perhaps for
+          some $0\cdot\vec{s}_i$ or $0\cdot\vec{t}_j$ terms that we can
+          neglect.
+        \partsitem
+          This set is not linearly independent:
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0},\colvec{2 \\ 0}}\subset\Re^2
+          \end{equation*}
+          and these two linear combinations give the same result
+          \begin{equation*}
+            \colvec{0 \\ 0}=2\cdot\colvec{1 \\ 0}-1\cdot\colvec{2 \\ 0}
+                            =4\cdot\colvec{1 \\ 0}-2\cdot\colvec{2 \\ 0}
+          \end{equation*}
+          Thus, a linearly dependent set might have indistinct sums.
 
-           The answer is not `never' because if either set contains the other
-           then equality is clear.
-           We can
-           characterize equality as happening only when either set contains
-           the other by assuming \( S\not\subseteq T \) (implying the
-           existence of a vector \( \vec{s}\in S \) with 
-           \( \vec{s}\not\in T \))
-           and \( T\not\subseteq S \) (giving a \( \vec{t}\in T \) with
-           \( \vec{t}\not\in S \)), noting
-           \( \vec{s}+\vec{t}\in\spanof{S\union T} \),
-           and showing that 
-           \( \vec{s}+\vec{t}\not\in\spanof{S}\union\spanof{T} \).
-         \partsitem Sometimes.
-
-           Clearly
-           \( \spanof{S\intersection T}
-             \subseteq\spanof{S}\intersection\spanof{T} \)
-           because any linear combination of vectors from 
-           \( S\intersection T \)
-           is a combination of vectors from \( S \) and also a combination of
-           vectors from \( T \).
-
-           Containment the other way does not always hold.
-           For instance, in \( \Re^2 \), take
-           \begin{equation*}
-             S=\set{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 1}},\quad
-             T=\set{\colvec[r]{2 \\ 0}}
-           \end{equation*}
-           so that \( \spanof{S}\intersection\spanof{T} \) is the \( x \)-axis
-           but \( \spanof{S\intersection T}  \) is the trivial subspace.
-
-           Characterizing exactly when equality holds is tough.
-           Clearly equality holds if either set contains the other, but that is
-           not `only if' by this example in \( \Re^3 \).
-           \begin{equation*}
-             S=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 1 \\ 0}},
-             \quad
-             T=\set{\colvec[r]{1 \\ 0 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
-           \end{equation*}
-        \partsitem Never, as the span of the complement is a subspace, while
-          the complement of the span is not (it does not contain the zero 
-          vector).
+          In fact, this stronger statement holds:~if a set is linearly 
+          dependent then it must have the property that there are two 
+          distinct linear combinations that sum to the same vector.
+          Briefly, where \( c_1\vec{s}_1+\dots+c_n\vec{s}_n=\zero \) then
+          multiplying both sides of the relationship by two gives another 
+          relationship.
+          If the first relationship is nontrivial then the second is also.
       \end{exparts}  
+    \end{answer}
+  \item  \label{exer:PolyZeroFcnOnlyIfZeroPol}
+     Prove that a polynomial gives rise to the zero function if and only if
+     it is the zero polynomial.
+     (\textit{Comment.}
+     This question is not a Linear Algebra matter but we often use the result.
+     A polynomial gives rise to a function in the natural 
+     way:~$x\mapsto c_nx^n+\dots+c_1x+c_0$.)
+     \begin{answer}
+       In this `if and only if' statement, the `if' half is clear\Dash if 
+       the polynomial is the zero polynomial then the function that arises 
+       from the action of the polynomial must be the zero 
+       function $x\mapsto 0$. 
+       For `only if' we write $p(x)=c_nx^n+\dots+c_0$. 
+       Plugging in zero $p(0)=0$ gives that $c_0=0$.
+       Taking the derivative and plugging in zero $p^\prime(0)=0$ gives 
+       that $c_1=0$.
+       Similarly we get that each $c_i$ is zero, and $p$ is the zero 
+       polynomial.
      \end{answer}
   \item 
-    Reprove \nearbylemma{le:SpanIsASubsp} without doing the
-    empty set separately.
+    \begin{exparts}  
+      \partsitem Show that any set of four vectors in \( \Re^2 \) is 
+         linearly dependent.
+      \partsitem Is this true for any set of five?
+         Any set of three?
+      \partsitem What is the most number of elements that a 
+         linearly independent subset of $\Re^2$ can have?
+    \end{exparts}
     \begin{answer}
-      Call the subset \( S \).
-      By \nearbylemma{th:SubspIffClosed},
-      we need to check that 
-      \( \spanof{S} \) is closed under linear combinations.
-      If \( c_1\vec{s}_1+\dots+c_n\vec{s}_n,
-        c_{n+1}\vec{s}_{n+1}+\dots+c_m\vec{s}_m\in\spanof{S} \) then
-      for any \( p,r\in\Re \) we have
-      \begin{multline*}
-        p\cdot(c_1\vec{s}_1+\cdots+c_n\vec{s}_n)+
-             r\cdot(c_{n+1}\vec{s}_{n+1}+\cdots+c_m\vec{s}_m)        \\
-        =
-        pc_1\vec{s}_1+\cdots+pc_n\vec{s}_n
-          +rc_{n+1}\vec{s}_{n+1}+\cdots+rc_m\vec{s}_m
-      \end{multline*}
-      which is an element of \( \spanof{S} \).
-      % (\textit{Remark.}
-      % If the set $S$ is empty, then that
-      % `if \ldots\ then \ldots' statement is vacuously true.)  
+      \begin{exparts}
+        \partsitem For any $a_{1,1}$, \ldots, $a_{2,4}$,
+          \begin{equation*}
+            c_1\colvec{a_{1,1} \\ a_{2,1}}
+            +c_2\colvec{a_{1,2} \\ a_{2,2}}
+            +c_3\colvec{a_{1,3} \\ a_{2,3}}
+            +c_4\colvec{a_{1,4} \\ a_{2,4}}
+            =\colvec{0 \\ 0}
+          \end{equation*}
+          yields a linear system
+          \begin{equation*}
+             \begin{linsys}{4}
+              a_{1,1}c_1 &+ &a_{1,2}c_2 &+ &a_{1,3}c_3 &+ &a_{1,4}c_4 &= &0  \\
+              a_{2,1}c_1 &+ &a_{2,2}c_2 &+ &a_{2,3}c_3 &+ &a_{2,4}c_4 &= &0  
+             \end{linsys}
+          \end{equation*}
+        that has infinitely many solutions (Gauss's Method leaves at least
+        two variables free).
+        Hence there are nontrivial linear relationships among the given
+        members of $\Re^2$.
+      \partsitem Any set five vectors is a superset of a set of four vectors,
+        and so is linearly dependent.
+
+        With three vectors from $\Re^2$, the argument from the prior item 
+        still applies, with the slight change that Gauss's Method now only 
+        leaves at least one variable free (but that still gives infinitely many
+        solutions).
+      \partsitem The prior item shows that no three-element subset of $\Re^2$
+        is independent.
+        We know that there are two-element subsets of $\Re^2$ that are 
+        independent\Dash one is
+        \begin{equation*}
+          \set{\colvec{1  \\ 0},\colvec{0  \\ 1}}
+        \end{equation*} 
+        and so the answer is two.
+     \end{exparts}  
     \end{answer}
-  \item Find a structure that is closed under linear combinations, 
-    and yet is not a vector space.
-    % (\textit{Remark.} 
-    % This is a bit of a trick question.)
+  \recommended \item
+    Is there a set of four vectors in \( \Re^3 \) such that any three 
+    form a linearly independent set?
     \begin{answer}
-      For this to happen, one of the conditions giving the sensibleness of the
-      addition and scalar multiplication operations must be violated.
-      Consider \( \Re^2 \) with these operations.
+      Yes; here is one.
       \begin{equation*}
-        \colvec{x_1 \\ y_1}
-        +\colvec{x_2 \\ y_2}
-        =\colvec[r]{0 \\ 0}
-        \qquad
-        r\colvec{x \\ y}
-        =\colvec[r]{0 \\ 0}
-      \end{equation*}
-      The set $\Re^2$ is closed under these operations. 
-      But it is not a vector space.
-      \begin{equation*}
-        1\cdot\colvec[r]{1 \\ 1}
-        \neq\colvec[r]{1 \\ 1}
+         \set{\colvec{1 \\ 0 \\ 0},
+              \colvec{0 \\ 1 \\ 0},
+              \colvec{0 \\ 0 \\ 1},
+              \colvec{1 \\ 1 \\ 1} }
       \end{equation*}  
     \end{answer}
-\index{subspace|)}
-\index{vector space|)}
+  \item  
+    Must every linearly dependent set have a subset that is dependent and
+    a subset that is independent?
+    \begin{answer}
+      Yes.
+      The two improper subsets, the entire set and the empty subset, serve as
+      examples.  
+    \end{answer}
+  \item  
+    In \( \Re^4 \) what is the biggest linearly independent
+    set you can find?
+    The smallest?
+    The biggest linearly dependent set?
+    The smallest?
+    (`Biggest' and `smallest' mean that there are no supersets or subsets 
+    with the same property.)
+    \begin{answer} 
+      In \( \Re^4 \) the biggest linearly independent set has
+      four vectors.
+      There are many examples of such sets, this is one.
+      \begin{equation*}
+        \set{\colvec{1 \\ 0 \\ 0 \\ 0},
+             \colvec{0 \\ 1 \\ 0 \\ 0},
+             \colvec{0 \\ 0 \\ 1 \\ 0},
+             \colvec{0 \\ 0 \\ 0 \\ 1}  }
+      \end{equation*}
+      To see that no set with five or more vectors can be independent, set up
+      \begin{equation*}
+             c_1\colvec{a_{1,1} \\ a_{2,1} \\ a_{3,1} \\ a_{4,1}}
+            +c_2\colvec{a_{1,2} \\ a_{2,2} \\ a_{3,2} \\ a_{4,2}}
+            +c_3\colvec{a_{1,3} \\ a_{2,3} \\ a_{3,3} \\ a_{4,3}}
+            +c_4\colvec{a_{1,4} \\ a_{2,4} \\ a_{3,4} \\ a_{4,4}}
+            +c_5\colvec{a_{1,5} \\ a_{2,5} \\ a_{3,5} \\ a_{4,5}}
+             =\colvec{0 \\ 0 \\ 0 \\ 0}
+      \end{equation*}
+      and note that the resulting linear system 
+      \begin{equation*}
+        \begin{linsys}{5}
+          a_{1,1}c_1 &+ &a_{1,2}c_2 &+ &a_{1,3}c_3 
+              &+ &a_{1,4}c_4 &+ &a_{1,5}c_5 &=  &0   \\
+          a_{2,1}c_1 &+ &a_{2,2}c_2 &+ &a_{2,3}c_3 
+              &+ &a_{2,4}c_4 &+ &a_{2,5}c_5 &=  &0   \\
+          a_{3,1}c_1 &+ &a_{3,2}c_2 &+ &a_{3,3}c_3 
+              &+ &a_{3,4}c_4 &+ &a_{3,5}c_5 &=  &0   \\
+          a_{4,1}c_1 &+ &a_{4,2}c_2 &+ &a_{4,3}c_3 
+              &+ &a_{4,4}c_4 &+ &a_{4,5}c_5 &=  &0     
+        \end{linsys}
+      \end{equation*}
+      has four equations and five unknowns, 
+      so Gauss's Method must end with at least one \( c \) variable free,
+      so there are infinitely many solutions,
+      and so the above linear relationship among the four-tall vectors has
+      more solutions than just the trivial solution.
+
+      The smallest linearly independent set is the empty set.
+
+      The biggest linearly dependent set is \( \Re^4 \).
+      The smallest is \( \set{\zero} \).  
+    \end{answer}
+  \recommended \item 
+    Linear independence and linear dependence are properties of sets.
+    We can thus naturally ask how the properties of linear independence
+    and dependence act with respect to
+    the familiar elementary set relations and operations.  
+    In this body of this subsection we have covered the subset and superset
+    relations.
+    We can also consider the operations of intersection, complementation, 
+    and union.
+    \begin{exparts}
+       \partsitem How does linear independence relate to intersection:~can
+         an intersection of linearly independent sets be independent?
+         Must it be?
+       \partsitem How does linear independence relate to complementation?
+       \partsitem Show that the union of two linearly independent sets
+          can be linearly independent.
+       \partsitem Show that
+          the union of two linearly independent sets need not be
+          linearly independent.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The intersection of two linearly independent sets
+          $S\intersection T$ must be linearly
+          independent as it is a subset of the linearly independent set $S$
+          (as well as the linearly independent set $T$ also, of course).
+        \partsitem The complement of a linearly independent set is linearly
+          dependent as it contains the zero vector.
+        \partsitem A simple example in \( \Re^2 \) is these two sets.
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{0 \\ 1}}          
+          \end{equation*}
+          A somewhat subtler example, again in \( \Re^2 \), is these two.
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
+          \end{equation*}
+        \partsitem We must produce an example.
+          One, in \( \Re^2 \), is
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{2 \\ 0}}
+          \end{equation*}
+          since the linear dependence of \( S_1\union S_2 \) is easy to see.
+      \end{exparts}
+    \end{answer}
+  \item \textit{Continued from prior exercise.} 
+    What is the interaction between the property of linear independence
+    and the operation of union?
+    \begin{exparts}
+       \partsitem We might conjecture that the union $S\union T$ of 
+          linearly independent sets 
+          is linearly independent if and only if their spans have a trivial 
+          intersection $\spanof{S}\intersection \spanof{T}=\set{\zero}$.
+          What is wrong with this argument for the `if' direction
+          of that conjecture? 
+          ``If the union $S\union T$ is linearly independent then
+          the only solution to          
+          $c_1\vec{s}_1+\cdots+c_n\vec{s}_n
+            +d_1\vec{t}_1+\cdots+d_m\vec{t}_m
+            =\zero$
+          is the trivial one $c_1=0$, \ldots, $d_m=0$. 
+          So any member of the intersection of the spans
+          must be the zero vector because in 
+          $c_1\vec{s}_1+\cdots+c_n\vec{s}_n
+            =d_1\vec{t}_1+\cdots+d_m\vec{t}_m$
+          each scalar is zero.''
+       \partsitem Give an example showing that the conjecture is false.
+       \partsitem Find linearly independent sets \( S \) and \( T \)
+          so that the union of \( S-(S\cap T)\) and \( T-(S\cap T) \)
+          is linearly independent, but the union \( S\cup T \) is
+          not linearly independent.
+       \partsitem Characterize when the union of two linearly independent sets
+          is linearly independent, in terms of the intersection of spans.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem \nearbylemma{le:LDIffANonTrivLinRel} 
+          requires that the vectors 
+          $\vec{s}_1,\ldots,\vec{s}_n,\vec{t}_1,\ldots,\vec{t}_m$
+          be distinct. 
+          But we could have that the union $S\cup T$ is linearly 
+          independent with some $\vec{s}_i$ equal to some $\vec{t}_j$.
+        \partsitem One example in \( \Re^2 \) is these two.
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
+          \end{equation*}
+        \partsitem 
+          An example from \( \Re^2 \) is these sets.
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
+            \qquad
+            T=\set{\colvec{1 \\ 0}, \colvec{1 \\ 1}}
+          \end{equation*}
+        \partsitem The union of two linearly independent sets $S\union T$
+          is linearly independent if and only if their spans of \( S \) 
+          and \( T-(S\cap T)\) have a trivial intersection 
+          $\spanof{S}\intersection \spanof{T-(S\cap T)}=\set{\zero}$.
+          To prove that, assume that \( S \) and \( T \) are linearly 
+          independent subsets of some vector space.
+
+          For the `only if' direction, assume that the intersection of
+          the spans is trivial 
+          \( \spanof{S}\intersection \spanof{T-(S\cap T)}=\set{\zero} \).
+          Consider the set $S\union (T-(S\cap T))=S\union T$ and
+          consider the linear relationship 
+          $c_1\vec{s}_1+\dots+c_n\vec{s}_n
+            +d_1\vec{t}_1+\dots+d_m\vec{t}_m=\zero$.
+          Subtracting gives
+          $c_1\vec{s}_1+\dots+c_n\vec{s}_n=
+            -d_1\vec{t}_1-\dots-d_m\vec{t}_m$.
+          The left side of that equation sums to a vector in $\spanof{S}$, and
+          the right side is a vector in $\spanof{T-(S\cap T)}$.
+          Therefore, since the intersection of the spans is trivial, both
+          sides equal the zero vector.
+          Because $S$ is linearly independent, all of the $c$'s are zero.
+          Because $T$ is linearly independent so also is  
+          $T-(S\cap T)$ linearly independent, 
+          and therefore all of the $d$'s are zero.
+          Thus, the original linear relationship among members of 
+          $S\union T$ only holds if all of the coefficients are zero.
+          Hence, $S\union T$ is linearly independent.
+
+          For the `if' half we can make the same argument in reverse.
+          Suppose that the union $S\union T$ is linearly independent.
+          Consider a linear relationship among members of 
+          $S$ and $T-(S\cap T)$.        
+          $c_1\vec{s}_1+\cdots+c_n\vec{s}_n
+            +d_1\vec{t}_1+\cdots+d_m\vec{t}_m
+            =\zero$
+          Note that no $\vec{s}_i$ is equal to a $\vec{t}_j$
+          so that is a combination of distinct vectors, as required by 
+          \nearbylemma{le:LDIffANonTrivLinRel}.
+          So the only solution 
+          is the trivial one $c_1=0$, \ldots, $d_m=0$. 
+          Since any vector $\vec{v}$ 
+          in the intersection of the spans
+          $\spanof{S}\intersection \spanof{T-(S\cap T)}$ 
+          we can write 
+          $\vec{v}=c_1\vec{s}_1+\cdots+c_n\vec{s}_n
+            =-d_1\vec{t}_1-\cdots-d_m\vec{t}_m$,
+          and it must be the zero vector because each scalar is zero.
+      \end{exparts}  
+    \end{answer}
+  \item 
+     With a some calculation we can get formulas to determine whether or
+     not a set of vectors is linearly independent. 
+     \begin{exparts}
+       \partsitem Show that this subset of \( \Re^2 \)
+         \begin{equation*}
+           \set{\colvec{a \\ c},\colvec{b \\ d}}
+         \end{equation*}
+         is linearly independent if and only if \( ad-bc\neq 0 \).
+       \partsitem Show that this subset of \( \Re^3 \)
+         \begin{equation*}
+           \set{\colvec{a \\ d \\ g},
+                \colvec{b \\ e \\ h},
+                \colvec{c \\ f \\ i}  }
+         \end{equation*}
+         is linearly independent iff
+         \( aei+bfg+cdh-hfa-idb-gec \neq 0 \).
+       \partsitem When is this subset of \( \Re^3 \)
+         \begin{equation*}
+           \set{\colvec{a \\ d \\ g},
+                \colvec{b \\ e \\ h} }
+         \end{equation*}
+         linearly independent?
+       \partsitem This is an opinion question:~for
+         a set of four vectors from \( \Re^4 \),
+         must there be a formula involving the sixteen entries 
+         that determines independence of the set?
+         (You needn't produce such a formula, just decide if one exists.)
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem 
+          Assuming first that \( a\neq 0 \),
+          \begin{equation*}
+            x\colvec{a \\ c}
+            +y\colvec{b \\ d}
+            =\colvec{0 \\ 0}
+          \end{equation*}
+          gives
+          \begin{equation*}
+            \begin{linsys}{2}
+               ax  &+  &by &=  &0  \\
+               cx  &+  &dy &=  &0  
+            \end{linsys}
+            \grstep{-(c/a)\rho_1+\rho_2}
+            \begin{linsys}{2}
+               ax  &+  &by           &=  &0  \\
+                   &   &(-(c/a)b+d)y &=  &0  
+             \end{linsys}
+          \end{equation*}
+          which has a solution if and only if
+          \( 0\neq-(c/a)b+d=(-cb+ad)/d \)
+          (we've assumed in this case that \( a\neq 0 \), and so 
+          back substitution yields a unique solution).
+
+          The \( a=0 \) case is also not hard\Dash break it into the 
+          \( c\neq 0 \) and \( c=0 \) subcases and 
+          note that in these cases \( ad-bc=0\cdot d-bc \).
+
+          \textit{Comment.}
+          An earlier exercise showed that a two-vector set is linearly
+          dependent if and only if either vector is a scalar multiple of the
+          other.
+          We could also use that to make the calculation.
+        \partsitem The equation
+          \begin{equation*}
+            c_1\colvec{a \\ d \\ g}
+            +c_2\colvec{b \\ e \\ h}
+            +c_3\colvec{c \\ f \\ i}
+            =\colvec{0 \\ 0 \\ 0}
+          \end{equation*}
+         expresses a homogeneous linear system.
+         We proceed by writing it in matrix form and applying Gauss's Method.
+
+         We first reduce the matrix to upper-triangular.
+         Assume that \( a\neq 0 \).
+         With that, we can clear down the first column.
+         \begin{equation*}
+           \grstep{(1/a)\rho_1}
+           \begin{amat}{3}
+              1   &b/a   &c/a  &0 \\
+              d   &e     &f    &0 \\
+              g   &h     &i    &0
+            \end{amat}                                            
+           \grstep[-g\rho_1+\rho_3]{-d\rho_1+\rho_2}
+           \begin{amat}{3}
+              1   &b/a           &c/a        &0   \\
+              0   &(ae-bd)/a     &(af-cd)/a  &0   \\
+              0   &(ah-bg)/a     &(ai-cg)/a  &0
+            \end{amat}                                            
+         \end{equation*}
+         Then we get a $1$ in the second row, second column entry.
+         (Assuming for the moment that \( ae-bd\neq 0 \), in order
+         to do the row reduction step.)
+         \begin{equation*}
+           \grstep{(a/(ae-bd))\rho_2}
+           \begin{amat}{3}
+              1   &b/a           &c/a             &0  \\
+              0   &1             &(af-cd)/(ae-bd) &0  \\
+              0   &(ah-bg)/a     &(ai-cg)/a       &0
+            \end{amat}
+         \end{equation*}
+         Then, under the assumptions, we perform
+         the row operation $((ah-bg)/a)\rho_2+\rho_3$
+         to get this.
+         \begin{equation*}
+           % \grstep{((ah-bg)/a)\rho_2+\rho_3}
+           \begin{amat}{3}
+              1   &b/a   &c/a                              &0 \\
+              0   &1     &(af-cd)/(ae-bd)                   &0 \\
+              0   &0     &(aei+bgf+cdh-hfa-idb-gec)/(ae-bd) &0
+            \end{amat}
+         \end{equation*}
+         Therefore, the original system is nonsingular
+         if and only if the above \( 3,3 \) entry is nonzero
+         (this fraction is defined because of the \( ae-bd\neq 0 \) assumption).
+         It equals zero if and only if the numerator is zero. 
+
+         We next worry about the assumptions.
+         First, if \( a\neq 0 \) but \( ae-bd=0 \) then we swap
+         \begin{multline*}
+           \begin{amat}{3}
+              1   &b/a           &c/a        &0   \\
+              0   &0             &(af-cd)/a  &0   \\
+              0   &(ah-bg)/a     &(ai-cg)/a  &0
+            \end{amat}                                    \\
+           \grstep{\rho_2\leftrightarrow\rho_3}
+           \begin{amat}{3}
+              1   &b/a           &c/a        &0   \\
+              0   &(ah-bg)/a     &(ai-cg)/a  &0   \\
+              0   &0             &(af-cd)/a  &0
+            \end{amat}
+         \end{multline*}
+         and conclude that the system is nonsingular if and only if either
+         \( ah-bg=0 \) or \( af-cd=0 \).
+         That's the same as asking that their product be zero:
+         \begin{align*}
+            ahaf-ahcd-bgaf+bgcd
+            &=0                   \\
+            ahaf-ahcd-bgaf+aegc
+            &=0                   \\
+            a(haf-hcd-bgf+egc)
+            &=0
+         \end{align*}
+         (in going from the first line to the second we've applied the
+         case assumption that $ae-bd=0$ by substituting $ae$ for $bd$).
+         Since we are assuming that \( a\neq 0 \), 
+         we have that \( haf-hcd-bgf+egc=0 \).
+         With $ae-bd=0$ we can rewrite this to fit the form we need:~in
+         this \( a\neq 0 \) and \( ae-bd=0 \) case, the given system
+         is nonsingular when
+         \( haf-hcd-bgf+egc-i(ae-bd)=0 \), as required.
+
+         The remaining cases have the same character.
+         Do the \( a=0 \) but \( d\neq 0 \) case and the \( a=0 \) and
+         \( d=0 \) but \( g\neq 0 \) case by first swapping rows and
+         then going on as above.
+         The \( a=0 \), \( d=0 \), and \( g=0 \) case is easy\Dash a set with a
+         zero vector is linearly dependent, and the formula comes out
+         to equal zero.
+       \partsitem It is linearly dependent if and only if either vector is a
+         multiple of the other.
+         That is, it is not independent iff
+         \begin{equation*}
+           \colvec{a \\ d \\ g}=r\cdot\colvec{b \\ e \\ h}
+           \quad\text{or}\quad
+           \colvec{b \\ e \\ h}=s\cdot\colvec{a \\ d \\ g}
+         \end{equation*}
+         (or both) for some scalars $r$ and $s$.
+         Eliminating $r$ and $s$ in order to restate this condition only in
+         terms of the given letters $a$, $b$, $d$, $e$, $g$, $h$, we have that 
+         it is not independent\Dash it is dependent\Dash iff
+         \( ae-bd=ah-gb=dh-ge \).
+       \partsitem Dependence or independence is a function of the
+         indices, so there
+         is indeed a formula (although at first glance a person might think
+         the formula involves cases: ``if the first component of the first
+         vector is zero then \ldots'', this guess turns out not to be 
+         correct).
+      \end{exparts}  
+    \end{answer}
+  \recommended \item  
+    \begin{exparts}
+      \partsitem Prove that a set of two perpendicular 
+        nonzero vectors from
+        \( \Re^n \) is linearly independent when \( n>1 \).
+      \partsitem What if \( n=1 \)?
+        \( n=0 \)?
+      \partsitem Generalize to more than two vectors.
+    \end{exparts}
+    \begin{answer}
+      Recall that two vectors from \( \Re^n \) are perpendicular if and
+      only if their dot product is zero.
+      \begin{exparts}
+         \partsitem Assume that \( \vec{v} \) and \( \vec{w} \) are
+           perpendicular nonzero vectors in $\Re^n$, with \( n>1 \).
+           With the linear relationship \( c\vec{v}+d\vec{w}=\zero \), 
+           apply \( \vec{v} \) to both
+           sides to conclude that \( c\cdot\norm{\vec{v}}^2+d\cdot 0=0 \).
+           Because \( \vec{v}\neq\zero \) we have that \( c=0 \).
+           A similar application of \( \vec{w} \) shows that \( d=0 \).
+         \partsitem Two vectors in \( \Re^1 \) are perpendicular if and only if
+           at least one of them is zero.
+
+           We define \( \Re^0 \) to be a trivial space, and so both $\vec{v}$
+           and $\vec{w}$ are the zero vector.
+         \partsitem The right generalization is to look at a set
+           \( \set{\vec{v}_1,\dots,\vec{v}_n}\subseteq\Re^k \) of vectors
+           that are \definend{mutually orthogonal} 
+           (also called \definend{pairwise perpendicular}):~if
+           \( i\neq j \) then \( \vec{v}_i \) is perpendicular to
+           \( \vec{v}_j \).
+           Mimicking the proof of the first item above shows that such a set of
+           nonzero vectors is linearly independent.
+      \end{exparts}  
+    \end{answer}
+  \item 
+    Consider the set of functions from the interval 
+    $\openinterval{-1}{1}\subseteq \Re$  
+    to $\Re$.
+    \begin{exparts}
+      \partsitem Show that 
+         this set is a vector space under the usual operations.
+      \partsitem Recall the formula for the sum of an infinite geometric 
+         series: 
+         \( 1+x+x^2+\cdots=1/(1-x) \) for all \( x\in(-1..1) \).
+         Why does this not express a dependence inside of
+         the set $\set{g(x)=1/(1-x),f_0(x)=1,f_1(x)=x,f_2(x)=x^2,\ldots}$
+         (in the vector space that we are considering)?
+         (\textit{Hint.}
+         Review the definition of linear combination.)
+      \partsitem Show that the set in the prior item is linearly independent.
+    \end{exparts}
+    This shows that some vector spaces exist with linearly independent subsets
+    that are infinite.
+    \begin{answer}
+      \begin{exparts}
+        \partsitem This check is routine.
+        \partsitem The summation is infinite (has infinitely many summands).
+          The definition of linear combination involves only finite sums.
+        \partsitem No nontrivial finite sum of members of 
+           \( \set{g,f_0,f_1,\ldots} \) adds to the zero object:~assume that
+           \begin{equation*}
+              c_0\cdot (1/(1-x))+c_1\cdot 1+\dots+c_n\cdot x^n=0
+           \end{equation*}
+           (any finite sum uses a highest power, here \( n \)).
+           Multiply both sides by \( 1-x \) to conclude that each coefficient 
+           is zero, because a polynomial describes the zero function only when 
+           it is the zero polynomial.
+      \end{exparts}
+     \end{answer}
+  \item 
+    Show that, where \( S \) is a subspace of \( V \), if a subset $T$ of
+    \( S \) is linearly independent in \( S \) then $T$ is also linearly
+    independent in \( V \).
+    Is that `only if'?
+    \begin{answer}
+      It is both `if' and `only if'.
+
+      Let \( T \) be a subset of the subspace \( S \) of the vector space
+      \( V \).
+      The assertion that any linear relationship 
+      $c_1\vec{t}_1+\dots+c_n\vec{t}_n=\zero$ among members of \( T \)
+      must be the trivial relationship $c_1=0$, \ldots, $c_n=0$
+      is a statement that 
+      holds in \( S \) if and only if it holds in \( V \),
+      because the subspace \( S \) inherits its addition and 
+      scalar multiplication operations from \( V \).  
+    \end{answer}
 \end{exercises}
+
+
 
   \puzzle \item 
     Show that

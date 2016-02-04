@@ -1,0 +1,135 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Determine whether each subset of \( \Re^3 \) is linearly dependent or
+    linearly independent. 
+\Question \( \set{\colvec{1 \\ -3 \\ 5},
+                    \colvec{2 \\ 2 \\ 4},
+                    \colvec{4 \\ -4 \\ 14} }  \)
+\Question \( \set{\colvec{1 \\ 7 \\ 7},
+                    \colvec{2 \\ 7 \\ 7},
+                    \colvec{3 \\ 7 \\ 7} }  \)
+\Question \( \set{\colvec{0 \\ 0 \\ -1},
+                    \colvec{1 \\ 0 \\ 4} }  \)
+\Question \( \set{\colvec{9 \\ 9 \\ 0},
+                    \colvec{2 \\ 0 \\ 1},
+                    \colvec{3 \\ 5 \\ -4},
+                    \colvec{12 \\ 12 \\ -1} }  \)
+\end{Exercise}
+
+\begin{Answer}
+\Question It is dependent.
+          Considering
+          \begin{equation*}
+             c_1\colvec{1 \\ -3 \\ 5}
+             +c_2\colvec{2 \\ 2 \\ 4}
+             +c_3\colvec{4 \\ -4 \\ 14}
+             =\colvec{0 \\ 0 \\ 0}
+          \end{equation*}
+          gives this linear system.
+          \begin{equation*}
+            \begin{linsys}{3}
+              c_1  &+  &2c_2  &+  &4c_3  &=  &0  \\
+              -3c_1&+  &2c_2  &-  &4c_3  &=  &0  \\
+              5c_1 &+  &4c_2  &+  &14c_3 &=  &0  
+            \end{linsys}
+          \end{equation*}
+          Gauss's Method 
+          \begin{equation*}
+            \begin{amat}[r]{3}
+              1  &2  &4  &0  \\
+              -3 &2  &-4 &0  \\
+              5  &4  &14 &0
+            \end{amat}
+	\end{equation*}
+	gives
+        \begin{equation*}    
+	\begin{amat}[r]{3}
+              1  &2  &4  &0  \\
+              0  &8  &8  &0  \\
+              0  &0  &0  &0
+            \end{amat}
+          \end{equation*}
+          yields a free variable, so there are infinitely many solutions.
+          For an example of a particular dependence we can set $c_3$ to be,
+          say, $1$.  Then we get
+          \( c_2=-1 \) and \( c_1=-2 \).
+        \Question It is dependent.
+          The linear system that arises here
+          \begin{equation*}
+            \begin{amat}[r]{3}
+              1  &2  &3  &0  \\
+              7  &7  &7  &0  \\
+              7  &7  &7  &0
+            \end{amat}
+        \end{equation*}
+        and Gaussian elimination gives
+        \begin{equation*}    
+	\begin{amat}[r]{3}
+              1  &2  &3   &0  \\
+              0  &-7 &-14 &0  \\
+              0  &0  &0   &0
+            \end{amat}
+          \end{equation*}
+          has infinitely many solutions.
+          We can get a particular solution by taking $c_3$ to be, say,
+          $1$, and back-substituting to get the resulting $c_2$ and $c_1$.
+        \Question It is linearly independent.
+          The system
+          \begin{equation*}
+            \begin{amat}[r]{2}
+              0  &1  &0  \\
+              0  &0  &0  \\
+              -1 &4  &0
+            \end{amat}
+        \end{equation*}
+        and Gaussian elimination gives
+        \begin{equation*}     
+\begin{amat}{2}
+              -1 &4  &0  \\
+              0  &1  &0  \\
+              0  &0  &0  
+            \end{amat}
+          \end{equation*}
+          has only the solution $c_1=0$ and $c_2=0$.
+          (We could also have gotten the answer by inspection the second
+          vector is obviously not a multiple of the first, and vice versa.)
+        \Question It is linearly dependent.
+          The linear system
+          \begin{equation*}
+            \begin{amat}[r]{4}
+              9  &2  &3  &12  &0  \\
+              9  &0  &5  &12  &0  \\
+              0  &1  &-4 &-1  &0
+            \end{amat}
+          \end{equation*}
+          has more unknowns than equations, and so Gauss's Method
+          must end with at least one variable free (there can't be a 
+          contradictory equation because the system is homogeneous, and so
+          has at least the solution of all zeroes).
+          To exhibit a combination, we can do the reduction 
+          \begin{equation*}
+            \begin{amat}[r]{4}
+              9  &2  &3  &12  &0  \\
+              0  &-2 &2  &0   &0  \\
+              0  &0  &-3 &-1  &0
+            \end{amat}
+          \end{equation*}
+          and take, say,  $c_4=1$.
+          Then we have that $c_3=-1/3$, $c_2=-1/3$, and $c_1=-31/27$.
+
+\end{Answer}

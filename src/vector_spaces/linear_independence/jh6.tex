@@ -1,0 +1,58 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Show that if the set \( \set{\vec{u},\;\vec{v},\;\vec{w}} \)
+          is linearly independent then so is the set 
+          \( \set{\vec{u},\;\vec{u}+\vec{v},\;\vec{u}+\vec{v}+\vec{w}} \).
+\Question  What is the relationship between the linear independence
+         or dependence of \( \set{\vec{u},\;\vec{v},\;\vec{w}} \) and the
+         independence or dependence of
+         \( \set{\vec{u}-\vec{v},\;\vec{v}-\vec{w},\;\vec{w}-\vec{u}} \)?
+\end{Exercise}
+
+\begin{Answer}
+         \Question Assume that 
+           \( \set{\vec{u},\vec{v},\vec{w}} \) is linearly 
+           independent, so that any relationship
+           $d_0\vec{u}+d_1\vec{v}+d_2\vec{w}=\zero$ leads to the conclusion 
+           that $d_0=0$, $d_1=0$, and $d_2=0$.
+
+           Consider the relationship
+           \( c_1(\vec{u})+c_2(\vec{u}+\vec{v})+c_3(\vec{u}+\vec{v}+\vec{w})
+           =\zero \).
+           Rewrite it to get
+           \( (c_1+c_2+c_3)\vec{u}+(c_2+c_3)\vec{v}+(c_3)\vec{w}=\zero \).
+           Taking $d_0$ to be $c_1+c_2+c_3$, taking $d_1$ to be $c_2+c_3$, 
+           and taking $d_2$ to be $c_3$ we have this system.
+           \begin{equation*}
+             \begin{linsys}{3}
+               c_1  &+  &c_2  &+  &c_3  &=  &0  \\
+                    &   &c_2  &+  &c_3  &=  &0  \\
+                    &   &     &   &c_3  &=  &0
+             \end{linsys}
+           \end{equation*}
+           Conclusion:~the $c$'s are all zero, and so the set is linearly
+           independent.
+        \Question The second set is dependent
+           \begin{equation*}
+             1\cdot(\vec{u}-\vec{v})
+             +1\cdot(\vec{v}-\vec{w})
+             +1\cdot(\vec{w}-\vec{u})
+             =\zero
+           \end{equation*}
+           whether or not the first set is independent.
+\end{Answer}

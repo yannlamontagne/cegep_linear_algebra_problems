@@ -1,0 +1,89 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+\index{polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Which of these subsets of \( \polyspace_2 \) are
+    linearly dependent and which are independent?
+\Question \( \set{3-x+9x^2,\;5-6x+3x^2,\;1+1x-5x^2} \)
+\Question \( \set{-x^2,\;1+4x^2} \)
+\Question \( \set{2+x+7x^2,\;3-x+2x^2,\;4-3x^2} \)
+\Question \( \set{8+3x+3x^2,\;x+2x^2,\;2+2x+2x^2,\;8-2x+5x^2} \)
+\end{Exercise}
+
+\begin{Answer}
+\Question This set is independent.
+          Setting up the relation
+          \( c_1(3-x+9x^2)+c_2(5-6x+3x^2)+c_3(1+1x-5x^2)=0+0x+0x^2 \)
+          gives a linear system 
+          \begin{equation*}
+            \begin{amat}[r]{3}
+              3  &5  &1  &0  \\
+              -1 &-6 &1  &0  \\
+              9  &3  &-5 &0  
+            \end{amat}
+        \end{equation*}
+and Gaussian elimination gives
+\begin{equation*}    
+	\begin{amat}[r]{3}
+              3  &5   &1        &0  \\
+              0  &-13 &4        &0  \\
+              0  &0   &-128/13  &0  
+            \end{amat}
+          \end{equation*}
+          with only one solution: \( c_1=0 \), \( c_2=0 \), and \( c_3=0 \).
+        \Question This set is independent.
+           We can see this by inspection, straight from the definition
+           of linear independence.
+           Obviously neither is a multiple of the other.
+        \Question This set is linearly independent.
+           The linear system reduces in this way
+           \begin{equation*}
+             \begin{amat}[r]{3}
+               2  &3  &4  &0  \\
+               1  &-1 &0  &0  \\
+               7  &2  &-3 &0  
+             \end{amat}
+        \end{equation*}
+and Gaussian elimination gives
+\begin{equation*}                
+\begin{amat}[r]{3}
+               2  &3    &4      &0  \\
+               0  &-5/2 &-2     &0  \\
+               0  &0    &-51/5  &0  
+             \end{amat}
+           \end{equation*}
+           to show that there is only the solution $c_1=0$, 
+           $c_2=0$, and $c_3=0$.
+        \Question This set is linearly dependent.
+           The linear system
+           \begin{equation*}
+             \begin{amat}[r]{4}
+               8  &0  &2  &8  &0  \\ 
+               3  &1  &2  &-2 &0  \\
+               3  &2  &2  &5  &0
+             \end{amat}
+           \end{equation*}
+           must, after reduction, end with at least one variable free
+           (there are more variables than equations, and there is no
+           possibility of a contradictory equation because the system is
+           homogeneous).
+           We can take the free variables as parameters to describe the
+           solution set.
+           We can then set the parameter to a nonzero value to get a
+           nontrivial linear relation. 
+
+\end{Answer}
