@@ -1,0 +1,43 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Prove that a set of two perpendicular 
+        nonzero vectors from
+        \( \Re^n \) is linearly independent when \( n>1 \).
+\Question What if \( n=1 \)?
+\Question Generalize to more than two vectors.
+\end{Exercise}
+
+\begin{Answer}
+         \Question Assume that \( \vec{v} \) and \( \vec{w} \) are
+           perpendicular nonzero vectors in $\Re^n$, with \( n>1 \).
+           With the linear relationship \( c\vec{v}+d\vec{w}=\zero \), 
+           apply \( \vec{v} \) to both
+           sides to conclude that \( c\cdot\norm{\vec{v}}^2+d\cdot 0=0 \).
+           Because \( \vec{v}\neq\zero \) we have that \( c=0 \).
+           A similar application of \( \vec{w} \) shows that \( d=0 \).
+         \Question Two vectors in \( \Re^1 \) are perpendicular if and only if
+           at least one of them is zero.
+         \Question The right generalization is to look at a set
+           \( \set{\vec{v}_1,\dots,\vec{v}_n}\subseteq\Re^k \) of vectors
+           that are \definend{mutually orthogonal} 
+           (also called \definend{pairwise perpendicular}):~if
+           \( i\neq j \) then \( \vec{v}_i \) is perpendicular to
+           \( \vec{v}_j \).
+           Mimicking the proof of the first item above shows that such a set of
+           nonzero vectors is linearly independent.
+\end{Answer}

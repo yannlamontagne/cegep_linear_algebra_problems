@@ -1,0 +1,122 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Show that this 
+        \begin{equation*}
+          S=\set{\colvec{1 \\ 1 \\ 0},\colvec{-1 \\ 2 \\ 0}}
+        \end{equation*}
+        is a linearly independent subset of \( \Re^3 \).
+\Question Show that
+        \begin{equation*}
+          \colvec{3 \\ 2 \\ 0}
+        \end{equation*}
+        is in the span of $S$ by finding \( c_1 \) and \( c_2 \) 
+        giving a linear relationship.
+        \begin{equation*}
+          c_1\colvec{1 \\ 1 \\ 0}
+          +c_2\colvec{-1 \\ 2 \\ 0}
+          =\colvec{3 \\ 2 \\ 0}
+        \end{equation*}
+        Show that the pair \( c_1,c_2 \) is unique.
+\Question Assume that \( S \) is a subset of a vector space and that
+        \( \vec{v} \) is in \( \spanof{S} \), so that \( \vec{v} \) is a
+        linear combination of vectors from \( S \).
+        Prove that if \( S \) is linearly independent then a linear combination
+        of vectors from \( S \) adding to \( \vec{v} \)
+        is unique (that is, unique up to reordering
+        and adding or taking away terms of the form \( 0\cdot\vec{s} \)).
+        Thus \( S \) as a spanning set is minimal in this strong sense:
+        each vector in \( \spanof{S} \) is a combination of elements
+        of $S$ a minimum number of
+        times (only once).
+\Question
+        Prove that it can happen when \( S \) is not linearly 
+        independent that distinct linear combinations sum to the same vector.
+
+
+\end{Exercise}
+
+\begin{Answer}
+\Question The linear system arising from
+          \begin{equation*}
+            c_1\colvec{1 \\ 1 \\ 0}
+            +c_2\colvec{-1 \\ 2 \\ 0}
+            =\colvec{0 \\ 0 \\ 0}
+          \end{equation*}
+          has the unique solution \( c_1=0 \) and \( c_2=0 \).
+\Question The linear system arising from
+          \begin{equation*}
+            c_1\colvec{1 \\ 1 \\ 0}
+            +c_2\colvec{-1 \\ 2 \\ 0}
+            =\colvec{3 \\ 2 \\ 0}
+          \end{equation*}
+          has the unique solution \( c_1=8/3 \) and \( c_2=-1/3 \).
+\Question Suppose that \( S \) is linearly independent.
+          Suppose that we have both $\vec{v}=c_1\vec{s}_1+\dots+c_n\vec{s}_n$
+          and $\vec{v}=d_1\vec{t}_1+\dots+d_m\vec{t}_m$
+          (where the vectors are members of $S$).
+          Now, 
+          \begin{equation*}
+            c_1\vec{s}_1+\dots+c_n\vec{s}_n
+            =\vec{v}
+            =d_1\vec{t}_1+\dots+d_m\vec{t}_m
+          \end{equation*}
+          can be rewritten in this way.
+          \begin{equation*}
+            c_1\vec{s}_1+\dots+c_n\vec{s}_n
+            -d_1\vec{t}_1-\dots-d_m\vec{t}_m
+            =\zero
+          \end{equation*}
+          Possibly some of the $\vec{s}\,$'s equal some of the $\vec{t}\,$'s;
+          we can combine the associated coefficients 
+          (i.e., if $\vec{s}_i=\vec{t}_j$ then
+          $\cdots+c_i\vec{s}_i+\dots-d_j\vec{t}_j-\cdots$ can be rewritten
+          as $\cdots+(c_i-d_j)\vec{s}_i+\cdots$).
+          That equation is a linear relationship among  
+          distinct (after the combining is done) members of the set $S$.
+          We've assumed that $S$ is linearly independent, so all of the 
+          coefficients are zero.
+          If $i$ is such that $\vec{s}_i$ does not equal any $\vec{t}_j$
+          then $c_i$ is zero.
+          If $j$ is such that $\vec{t}_j$ does not equal any $\vec{s}_i$
+          then $d_j$ is zero.
+          In the final case, we have that $c_i-d_j=0$ and so $c_i=d_j$.  
+
+          Therefore, the original two sums are the same, except perhaps for
+          some $0\cdot\vec{s}_i$ or $0\cdot\vec{t}_j$ terms that we can
+          neglect.
+\Question
+          This set is not linearly independent:
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0},\colvec{2 \\ 0}}\subset\Re^2
+          \end{equation*}
+          and these two linear combinations give the same result
+          \begin{equation*}
+            \colvec{0 \\ 0}=2\cdot\colvec{1 \\ 0}-1\cdot\colvec{2 \\ 0}
+                            =4\cdot\colvec{1 \\ 0}-2\cdot\colvec{2 \\ 0}
+          \end{equation*}
+          Thus, a linearly dependent set might have indistinct sums.
+
+          In fact, this stronger statement holds:~if a set is linearly 
+          dependent then it must have the property that there are two 
+          distinct linear combinations that sum to the same vector.
+          Briefly, where \( c_1\vec{s}_1+\dots+c_n\vec{s}_n=\zero \) then
+          multiplying both sides of the relationship by two gives another 
+          relationship.
+          If the first relationship is nontrivial then the second is also.
+
+\end{Answer}

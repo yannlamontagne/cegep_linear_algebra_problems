@@ -1,0 +1,44 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question When is a one-element set linearly independent?
+\Question When is a two-element set linearly independent?
+\end{Exercise}
+
+\begin{Answer}
+\Question A singleton set $\set{\vec{v}}$ is linearly independent 
+          if and only if $\vec{v}\neq\zero$.
+          For the `if' direction, with $\vec{v}\neq\zero$, 
+          we consider the relationship
+          \( c\cdot\vec{v}=\zero \) and noting that the only solution
+          is the trivial one:~$c=0$.
+          For the `only~if' direction, it is evident from the definition. 
+\Question A set with two elements is linearly independent 
+          if and only if neither member is a  multiple of the other 
+          (note that if one is the zero vector then it is a multiple of the
+          other).
+          This is an equivalent statement:~a set is linearly dependent if and
+          only if one element is a multiple of the other.
+
+          The proof is easy.
+          A set $\set{\vec{v}_1,\vec{v}_2}$ is linearly dependent if and only
+          if there is a relationship $c_1\vec{v}_1+c_2\vec{v}_2=\zero$ 
+          with either $c_1\neq 0$ or $c_2\neq 0$ (or both).
+          That holds if and only if $\vec{v}_1=(-c_2/c_1)\vec{v}_2$
+          or $\vec{v}_2=(-c_1/c_2)\vec{v}_1$ (or both).
+
+\end{Answer}

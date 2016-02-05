@@ -1,0 +1,63 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Show that any set of four vectors in \( \Re^2 \) is 
+         linearly dependent.
+\Question Is this true for any set of five?
+         Any set of three?
+\Question What is the most number of elements that a 
+         linearly independent subset of $\Re^2$ can have?
+
+\end{Exercise}
+
+\begin{Answer}
+\Question For any $a_{1,1}$, \ldots, $a_{2,4}$,
+          \begin{equation*}
+            c_1\colvec{a_{1,1} \\ a_{2,1}}
+            +c_2\colvec{a_{1,2} \\ a_{2,2}}
+            +c_3\colvec{a_{1,3} \\ a_{2,3}}
+            +c_4\colvec{a_{1,4} \\ a_{2,4}}
+            =\colvec{0 \\ 0}
+          \end{equation*}
+          yields a linear system
+          \begin{equation*}
+             \begin{linsys}{4}
+              a_{1,1}c_1 &+ &a_{1,2}c_2 &+ &a_{1,3}c_3 &+ &a_{1,4}c_4 &= &0  \\
+              a_{2,1}c_1 &+ &a_{2,2}c_2 &+ &a_{2,3}c_3 &+ &a_{2,4}c_4 &= &0  
+             \end{linsys}
+          \end{equation*}
+        that has infinitely many solutions (Gauss's Method leaves at least
+        two variables free).
+        Hence there are nontrivial linear relationships among the given
+        members of $\Re^2$.
+\Question Any set five vectors is a superset of a set of four vectors,
+        and so is linearly dependent.
+
+        With three vectors from $\Re^2$, the argument from the prior item 
+        still applies, with the slight change that Gauss's Method now only 
+        leaves at least one variable free (but that still gives infinitely many
+        solutions).
+\Question The prior part shows that no three-element subset of $\Re^2$
+        is independent.
+        We know that there are two-element subsets of $\Re^2$ that are 
+        independent. The following one is
+        \begin{equation*}
+          \set{\colvec{1  \\ 0},\colvec{0  \\ 1}}
+        \end{equation*} 
+        and so the answer is two.
+
+\end{Answer}

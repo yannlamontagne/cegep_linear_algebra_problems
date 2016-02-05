@@ -1,0 +1,37 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Show that if \( \set{\vec{x},\;\vec{y},\;\vec{z}} \) is linearly
+    independent then so are all of its proper 
+    subsets:~\( \set{\vec{x},\;\vec{y}} \),
+    \( \set{\vec{x},\;\vec{z}} \), \( \set{\vec{y},\;\vec{z}} \),
+    \( \set{\vec{x}} \),\( \set{\vec{y}} \), \( \set{\vec{z}} \).
+    Is the converse also true?
+\end{Exercise}
+
+\begin{Answer}
+Hint: Prove by contradiction.
+The converse (the `only if' statement) does not hold. 
+      An example is to consider the vector space \( \Re^2 \) and
+      these vectors.
+      \begin{equation*}
+         \vec{x}=\colvec{1 \\ 0},\quad
+         \vec{y}=\colvec{0 \\ 1},\quad
+         \vec{z}=\colvec{1 \\ 1}
+      \end{equation*} 
+
+\end{Answer}
