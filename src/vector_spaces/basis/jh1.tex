@@ -1,0 +1,50 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{polynomial space}
+\index{basis}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Determine if each is a basis for $\polyspace_2$.
+\Question $\sequence{x^2-x+1,\; 2x+1,\; 2x-1}$
+\Question $\sequence{x+x^2,\; x-x^2}$
+\end{Exercise}
+
+\begin{Answer}
+\Question This is a basis for $\polyspace_2$.
+           To show that it spans the space we consider a generic
+           $a_2x^2+a_1x+a_0\in\polyspace_2$ and look for 
+           scalars $c_1, c_2, c_3\in\Re$ such that
+           $a_2x^2+a_1x+a_0=c_1\cdot(x^2-x+1) +c_2\cdot(2x+1) +c_3(2x-1)$.
+           Gauss's Method on the linear system
+           \begin{equation*}
+             \begin{linsys}{3}
+               c_1  &\spaceforemptycolumn  &     &  &     &=  &a_2 \\
+                    &  &2c_2 &+ &2c_3 &=  &a_1 \\
+                    &  &c_2  &- &c_3   &=  &a_0
+             \end{linsys}
+           \end{equation*}
+           shows that given the $a_i$'s we can compute the $c_j$'s as
+           $c_1=a_2$, $c_2=(1/4)a_1+(1/2)a_0$, and $c_3=(1/4)a_1-(1/2)a_0$.
+           Thus each element of $\polyspace_2$ is a combination of the 
+           given three.
+
+           To prove that the set of the given three is linearly independent
+           we can set up the equation 
+           $0x^2+0x+0=c_1\cdot(x^2-x+1) +c_2\cdot(2x+1) +c_3(2x-1)$
+           and solve, and it will give that $c_1=0$, $c_2=0$, and $c_3=0$.
+\Question This is not a basis.
+           It does not span the space since no combination of the two
+           $c_1\cdot (x+x^2) +c_2\cdot (x-x^2)$ will sum to the polynomial 
+           $3\in\polyspace_2$.  
+\end{Answer}

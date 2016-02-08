@@ -1,397 +1,742 @@
-  \recommended \item
-    Show that the nonzero rows of an echelon form matrix form a linearly
-    independent set.
-    \begin{answer}
-      We have already showed this: the Linear Combination
-      Lemma and its corollary state that in an echelon form matrix, 
-      no nonzero row is a linear combination of the others.  
+
+  \recommended \item 
+    Represent the vector with respect to the basis.
+    \begin{exparts}
+      \partsitem \( \colvec[r]{1 \\ 2} \),
+        \( B=\sequence{\colvec[r]{1 \\ 1},\colvec[r]{-1 \\ 1}}\subseteq\Re^2 \)
+      \partsitem \( x^2+x^3 \),
+        \( D=\sequence{1,1+x,1+x+x^2,1+x+x^2+x^3}\subseteq\polyspace_3 \)
+      \partsitem \( \colvec[r]{0 \\ -1 \\ 0 \\ 1} \),
+        \( \stdbasis_4\subseteq\Re^4 \)
+    \end{exparts}
+    \begin{answer}  
+      \begin{exparts}
+        \partsitem We solve
+          \begin{equation*}
+            c_1\colvec[r]{1 \\ 1}
+            +c_2\colvec[r]{-1 \\ 1}
+            =\colvec[r]{1 \\ 2}
+          \end{equation*}
+          with
+          \begin{equation*}
+             \begin{amat}[r]{2}
+               1  &-1  &1  \\
+               1  &1   &2
+             \end{amat}
+             \grstep{-\rho_1+\rho_2}
+             \begin{amat}[r]{2}
+               1  &-1  &1  \\
+               0  &2   &1
+             \end{amat}
+          \end{equation*}
+          and conclude that \( c_2=1/2 \) and so \( c_1=3/2 \).
+          Thus, the representation is this.
+          \begin{equation*}
+            \rep{\colvec[r]{1 \\ 2}}{B}=\colvec[r]{3/2 \\ 1/2}_B
+          \end{equation*}
+        \partsitem The relationship
+           $c_1\cdot(1)+c_2\cdot(1+x)+c_3\cdot(1+x+x^2)+c_4\cdot(1+x+x^2+x^3)
+             =x^2+x^3$
+           is easily solved by eye to give that $c_4=1$, $c_3=0$, $c_2=-1$, and
+           $c_1=0$.
+           \begin{equation*}
+              \rep{x^2+x^3}{D}=\colvec[r]{0 \\ -1 \\ 0 \\ 1}_D
+           \end{equation*} 
+        \partsitem \( \rep{\colvec[r]{0 \\ -1 \\ 0 \\ 1}}{\stdbasis_4}
+                     =\colvec[r]{0 \\ -1 \\ 0 \\ 1}_{\stdbasis_4} \)
+      \end{exparts}  
     \end{answer}
-n*} 
   \item  
-    In \( \Re^4 \) what is the biggest linearly independent
-    set you can find?
-    The smallest?
-    The biggest linearly dependent set?
-    The smallest?
-    (`Biggest' and `smallest' mean that there are no supersets or subsets 
-    with the same property.)
-    \begin{answer} 
-      In \( \Re^4 \) the biggest linearly independent set has
-      four vectors.
-      There are many examples of such sets, this is one.
+    Find a basis for \(  \polyspace_2 \), the space of all quadratic
+    polynomials.
+    Must any such basis contain a polynomial of each degree:~degree zero, 
+    degree one, and degree two?
+    \begin{answer}
+      A natural basis is \( \sequence{1,x,x^2} \).
+      There are bases for $\polyspace_2$ that do not contain any polynomials 
+      of degree one or degree zero.
+      One is \( \sequence{1+x+x^2,x+x^2,x^2} \).
+      (Every basis has at least one polynomial of degree two, though.)
+    \end{answer}
+  \item
+    Find a basis for the solution set of this system.
+    \begin{equation*}
+      \begin{linsys}{4}
+         x_1  &-  &4x_2  &+  &3x_3  &-  &x_4  &=  &0  \\
+        2x_1  &-  &8x_2  &+  &6x_3  &-  &2x_4 &=  &0  
+      \end{linsys}
+    \end{equation*}
+    \begin{answer}
+      The reduction
       \begin{equation*}
-        \set{\colvec{1 \\ 0 \\ 0 \\ 0},
-             \colvec{0 \\ 1 \\ 0 \\ 0},
-             \colvec{0 \\ 0 \\ 1 \\ 0},
-             \colvec{0 \\ 0 \\ 0 \\ 1}  }
+        \begin{amat}[r]{4}
+          1  &-4  &3  &-1  &0  \\
+          2  &-8  &6  &-2  &0
+        \end{amat}
+        \grstep{-2\rho_1+\rho_2}
+        \begin{amat}[r]{4}
+          1  &-4  &3  &-1  &0  \\
+          0  &0   &0  &0   &0
+        \end{amat}
       \end{equation*}
-      To see that no set with five or more vectors can be independent, set up
+      gives that the only condition is that 
+      $x_1=4x_2-3x_3+x_4$.
+      The solution set is
+      \begin{multline*}
+        \set{\colvec{4x_2-3x_3+x_4 \\ x_2 \\ x_3 \\ x_4}
+               \suchthat x_2,x_3,x_4\in\Re}                          \\
+        =\set{x_2\colvec[r]{4 \\ 1 \\ 0 \\ 0}
+             +x_3\colvec[r]{-3 \\ 0 \\ 1 \\ 0}
+             +x_4\colvec[r]{1 \\ 0 \\ 0 \\ 1} \suchthat x_2,x_3,x_4\in\Re}
+      \end{multline*}
+      and so the obvious candidate for the basis is this.
       \begin{equation*}
-             c_1\colvec{a_{1,1} \\ a_{2,1} \\ a_{3,1} \\ a_{4,1}}
-            +c_2\colvec{a_{1,2} \\ a_{2,2} \\ a_{3,2} \\ a_{4,2}}
-            +c_3\colvec{a_{1,3} \\ a_{2,3} \\ a_{3,3} \\ a_{4,3}}
-            +c_4\colvec{a_{1,4} \\ a_{2,4} \\ a_{3,4} \\ a_{4,4}}
-            +c_5\colvec{a_{1,5} \\ a_{2,5} \\ a_{3,5} \\ a_{4,5}}
-             =\colvec{0 \\ 0 \\ 0 \\ 0}
-      \end{equation*}
-      and note that the resulting linear system 
+       \sequence{\colvec[r]{4 \\ 1 \\ 0 \\ 0},
+                   \colvec[r]{-3 \\ 0 \\ 1 \\ 0},
+                   \colvec[r]{1 \\ 0 \\ 0 \\ 1}  }
+      \end{equation*}  
+      We've shown that this spans the space, and showing it is also linearly
+      independent is routine.
+    \end{answer}
+  \recommended \item
+    Find a basis for \( \matspace_{\nbyn{2}} \),
+    the space of \( \nbyn{2} \) matrices.
+    \begin{answer}
+      There are many bases.
+      This is a natural one.
       \begin{equation*}
-        \begin{linsys}{5}
-          a_{1,1}c_1 &+ &a_{1,2}c_2 &+ &a_{1,3}c_3 
-              &+ &a_{1,4}c_4 &+ &a_{1,5}c_5 &=  &0   \\
-          a_{2,1}c_1 &+ &a_{2,2}c_2 &+ &a_{2,3}c_3 
-              &+ &a_{2,4}c_4 &+ &a_{2,5}c_5 &=  &0   \\
-          a_{3,1}c_1 &+ &a_{3,2}c_2 &+ &a_{3,3}c_3 
-              &+ &a_{3,4}c_4 &+ &a_{3,5}c_5 &=  &0   \\
-          a_{4,1}c_1 &+ &a_{4,2}c_2 &+ &a_{4,3}c_3 
-              &+ &a_{4,4}c_4 &+ &a_{4,5}c_5 &=  &0     
-        \end{linsys}
-      \end{equation*}
-      has four equations and five unknowns, 
-      so Gauss's Method must end with at least one \( c \) variable free,
-      so there are infinitely many solutions,
-      and so the above linear relationship among the four-tall vectors has
-      more solutions than just the trivial solution.
-
-      The smallest linearly independent set is the empty set.
-
-      The biggest linearly dependent set is \( \Re^4 \).
-      The smallest is \( \set{\zero} \).  
+        \sequence{
+           \begin{mat}[r]
+             1  &0  \\
+             0  &0
+           \end{mat},
+           \begin{mat}[r]
+             0  &1  \\
+             0  &0
+           \end{mat},
+           \begin{mat}[r]
+             0  &0  \\
+             1  &0
+           \end{mat},
+           \begin{mat}[r]
+             0  &0  \\
+             0  &1
+           \end{mat}  }
+      \end{equation*} 
     \end{answer}
   \recommended \item 
-    Linear independence and linear dependence are properties of sets.
-    We can thus naturally ask how the properties of linear independence
-    and dependence act with respect to
-    the familiar elementary set relations and operations.  
-    In this body of this subsection we have covered the subset and superset
-    relations.
-    We can also consider the operations of intersection, complementation, 
-    and union.
-    \begin{exparts}
-       \partsitem How does linear independence relate to intersection:~can
-         an intersection of linearly independent sets be independent?
-         Must it be?
-       \partsitem How does linear independence relate to complementation?
-       \partsitem Show that the union of two linearly independent sets
-          can be linearly independent.
-       \partsitem Show that
-          the union of two linearly independent sets need not be
-          linearly independent.
-    \end{exparts}
-    \begin{answer}
+      Find a basis for each.
       \begin{exparts}
-        \partsitem The intersection of two linearly independent sets
-          $S\intersection T$ must be linearly
-          independent as it is a subset of the linearly independent set $S$
-          (as well as the linearly independent set $T$ also, of course).
-        \partsitem The complement of a linearly independent set is linearly
-          dependent as it contains the zero vector.
-        \partsitem A simple example in \( \Re^2 \) is these two sets.
+        \partsitem The subspace $\set{a_2x^2+a_1x+a_0\suchthat a_2-2a_1=a_0}$ 
+          of $\polyspace_2$
+        \partsitem The space of three-wide row vectors whose first and second
+          components add to zero
+        \partsitem This subspace of the $\nbyn{2}$ matrices
           \begin{equation*}
-            S=\set{\colvec{1 \\ 0}}
-            \qquad
-            T=\set{\colvec{0 \\ 1}}          
+            \set{\begin{mat}
+                   a  &b  \\
+                   0  &c  
+                 \end{mat} \suchthat c-2b=0}
           \end{equation*}
-          A somewhat subtler example, again in \( \Re^2 \), is these two.
-          \begin{equation*}
-            S=\set{\colvec{1 \\ 0}}
-            \qquad
-            T=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
-          \end{equation*}
-        \partsitem We must produce an example.
-          One, in \( \Re^2 \), is
-          \begin{equation*}
-            S=\set{\colvec{1 \\ 0}}
-            \qquad
-            T=\set{\colvec{2 \\ 0}}
-          \end{equation*}
-          since the linear dependence of \( S_1\union S_2 \) is easy to see.
       \end{exparts}
+      \begin{answer}
+        For each item, many answers are possible.
+        \begin{exparts}
+          \partsitem One way to proceed is to parametrize by
+            expressing the $a_2$ as a combination of the other two
+            $a_2=2a_1+a_0$.
+            Then
+            $a_2x^2+a_1x+a_0$ is $(2a_1+a_0)x^2+a_1x+a_0$ and
+            \begin{multline*} 
+              \set{(2a_1+a_0)x^2+a_1x+a_0\suchthat a_1,a_0\in\Re}          \\
+              =\set{a_1\cdot(2x^2+x)+a_0\cdot(x^2+1)\suchthat a_1,a_0\in\Re}
+            \end{multline*}
+            suggests 
+            $\sequence{2x^2+x,x^2+1}$.
+            This only shows that 
+            it spans, but checking that it is linearly independent
+            is routine.
+          \partsitem Parametrize $\set{\rowvec{a  &b  &c}\suchthat a+b=0}$ 
+            to get $\set{\rowvec{-b &b &c}\suchthat b,c\in\Re}$, which suggests
+            using the sequence $\sequence{\rowvec{-1 &1 &0},\rowvec{0 &0 &1}}$.
+            We've shown that it spans, and checking that it is linearly 
+            independent is easy.
+          \partsitem Rewriting
+            \begin{equation*}
+              \set{\begin{mat}
+                     a  &b  \\
+                     0  &2b
+                   \end{mat}\suchthat a,b\in\Re}
+              =\set{a\cdot\begin{mat}[r]
+                     1  &0  \\
+                     0  &0 
+                   \end{mat}
+                  +b\cdot\begin{mat}[r]
+                           0  &1  \\
+                           0  &2
+                          \end{mat} \suchthat a,b\in\Re}
+            \end{equation*}
+            suggests this for the basis.
+            \begin{equation*}
+              \sequence{\begin{mat}[r]
+                          1  &0  \\
+                          0  &0
+                        \end{mat},
+                        \begin{mat}[r]
+                          0  &1  \\
+                          0  &2
+                        \end{mat}}
+            \end{equation*}
+         \end{exparts}  
+      \end{answer}
+  \item \label{exer:VerifBasesCosPlusSin} 
+    Check \nearbyexample{ex:BasisForCosPlusSin}.
+    \begin{answer}
+      We will show that the second is a basis; the first is similar.
+      We will show this straight from the definition of a basis, 
+      because this example appears before 
+      \nearbytheorem{th:BasisIffUniqueRepWRT}.
+
+      To see that it is linearly independent,
+      we set up
+      \( c_1\cdot(\cos\theta-\sin\theta)+c_2\cdot(2\cos\theta+3\sin\theta)=
+        0\cos\theta+0\sin\theta \).
+      Taking \( \theta=0 \) and \( \theta=\pi/2 \) gives this system
+      \begin{equation*}
+        \begin{linsys}{2}
+          c_1\cdot 1    &+  &c_2\cdot 2   &=  &0  \\
+          c_1\cdot (-1) &+  &c_2\cdot 3   &=  &0  
+        \end{linsys}
+        \grstep{\rho_1+\rho_2}
+        \begin{linsys}{2}
+          c_1  &+  &2c_2   &=  &0  \\
+               &+  &5c_2   &=  &0 
+        \end{linsys}
+      \end{equation*}
+      which shows that $c_1=0$ and $c_2=0$.    
+
+      The calculation for span is also easy; for any $x,y\in\Re$, 
+      we have that 
+      \( c_1\cdot(\cos\theta-\sin\theta)+c_2\cdot(2\cos\theta+3\sin\theta)=
+        x\cos\theta+y\sin\theta \)
+      gives that \( c_2=x/5+y/5 \) and that \( c_1=3x/5-2y/5 \),
+      and so the span is the entire space.  
     \end{answer}
-  \item \textit{Continued from prior exercise.} 
-    What is the interaction between the property of linear independence
-    and the operation of union?
+  \recommended \item 
+    Find the span of each set and then find a basis for that span.
+    \begin{exparts*}
+       \partsitem $\set{1+x,1+2x}$ in $\polyspace_2$
+       \partsitem $\set{2-2x,3+4x^2}$ in $\polyspace_2$
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+         \partsitem Asking which $a_0+a_1x+a_2x^2$ can be expressed as
+           $c_1\cdot (1+x)+c_2\cdot (1+2x)$ 
+           gives rise to three linear equations,
+           describing the coefficients of $x^2$, $x$, and the constants.
+           \begin{equation*} 
+             \begin{linsys}{2}
+               c_1 &+ &c_2  &= &a_0 \\
+               c_1 &+ &2c_2 &= &a_1 \\
+                   &  &0    &= &a_2
+             \end{linsys}
+           \end{equation*}
+           Gauss's Method with back-substitution shows, 
+           provided that $a_2=0$, that $c_2=-a_0+a_1$
+           and $c_1=2a_0-a_1$.
+           Thus, with $a_2=0$, we can compute appropriate
+           $c_1$ and $c_2$ for any $a_0$ and $a_1$.
+           So the span is the entire set of linear polynomials
+           $\set{a_0+a_1x\suchthat a_0,a_1\in\Re}$.
+           Parametrizing that set 
+           $\set{a_0\cdot 1+a_1\cdot x\suchthat a_0,a_1\in\Re}$
+           suggests a basis $\sequence{1,x}$ 
+           (we've shown that it spans; checking linear independence is easy). 
+        \partsitem With
+          \begin{equation*}
+            a_0+a_1x+a_2x^2
+            =c_1\cdot(2-2x)+c_2\cdot(3+4x^2)
+            =(2c_1+3c_2)+(-2c_1)x+(4c_2)x^2
+          \end{equation*}
+          we get this system.
+           \begin{equation*} 
+             \begin{linsys}{2}
+               2c_1  &+ &3c_2  &= &a_0 \\
+               -2c_1 &  &      &= &a_1 \\
+                     &  &4c_2  &= &a_2
+              \end{linsys}
+             \grstep{\rho_1+\rho_2}
+             \repeatedgrstep{(-4/3)\rho_2+\rho_3}
+             \begin{linsys}{2}
+               2c_1  &+ &3c_2  &= &a_0\hfill\hbox{} \\
+                     &  &3c_2  &= &a_0+a_1\hfill\hbox{} \\
+                     &  &0     &= &(-4/3)a_0-(4/3)a_1+a_2
+              \end{linsys}
+           \end{equation*}
+           Thus, the only quadratic polynomials $a_0+a_1x+a_2x^2$ with 
+           associated $c$'s are the ones such that 
+           $0=(-4/3)a_0-(4/3)a_1+a_2$.
+           Hence the span is this.
+           \begin{equation*}
+             \set{(-a_1+(3/4)a_2)+a_1x+a_2x^2\suchthat a_1,a_2\in\Re}
+           \end{equation*}
+           Parametrizing gives
+           $\set{a_1\cdot (-1+x)+a_2\cdot ((3/4)+x^2)\suchthat a_1,a_2\in\Re}$,
+           which suggests $\sequence{-1+x,(3/4)+x^2}$
+           (checking that it is linearly independent is routine).
+      \end{exparts} 
+    \end{answer}
+  \recommended \item 
+    Find a basis for each of these subspaces of the space 
+    $\polyspace_3$ of cubic polynomials. 
     \begin{exparts}
-       \partsitem We might conjecture that the union $S\union T$ of 
-          linearly independent sets 
-          is linearly independent if and only if their spans have a trivial 
-          intersection $\spanof{S}\intersection \spanof{T}=\set{\zero}$.
-          What is wrong with this argument for the `if' direction
-          of that conjecture? 
-          ``If the union $S\union T$ is linearly independent then
-          the only solution to          
-          $c_1\vec{s}_1+\cdots+c_n\vec{s}_n
-            +d_1\vec{t}_1+\cdots+d_m\vec{t}_m
-            =\zero$
-          is the trivial one $c_1=0$, \ldots, $d_m=0$. 
-          So any member of the intersection of the spans
-          must be the zero vector because in 
-          $c_1\vec{s}_1+\cdots+c_n\vec{s}_n
-            =d_1\vec{t}_1+\cdots+d_m\vec{t}_m$
-          each scalar is zero.''
-       \partsitem Give an example showing that the conjecture is false.
-       \partsitem Find linearly independent sets \( S \) and \( T \)
-          so that the union of \( S-(S\cap T)\) and \( T-(S\cap T) \)
-          is linearly independent, but the union \( S\cup T \) is
-          not linearly independent.
-       \partsitem Characterize when the union of two linearly independent sets
-          is linearly independent, in terms of the intersection of spans.
+      \partsitem  The subspace of cubic polynomials $p(x)$ 
+        such that $p(7)=0$
+      \partsitem  The subspace of polynomials $p(x)$ such
+        that $p(7)=0$ and $p(5)=0$
+      \partsitem  The subspace of polynomials $p(x)$ such
+        that $p(7)=0$, $p(5)=0$, and~$p(3)=0$
+      \partsitem  The space of polynomials $p(x)$ such
+        that $p(7)=0$, $p(5)=0$, $p(3)=0$, and~$p(1)=0$
+    \end{exparts}
+    \begin{answer}
+       \begin{exparts}
+        \partsitem The subspace is this.
+          \begin{equation*}
+             \set{a_0+a_1x+a_2x^2+a_3x^3 \suchthat a_0+7a_1+49a_2+343a_3=0 }
+          \end{equation*}
+          Rewriting $a_0=-7a_1-49a_2-343a_3$ gives this.
+          \begin{equation*}
+             \set{(-7a_1-49a_2-343a_3)+a_1x+a_2x^2+a_3x^3 
+               \suchthat a_1,a_2,a_3\in\Re }
+          \end{equation*}
+          On breaking out the
+          parameters, this suggests \( \sequence{-7+x,-49+x^2,-343+x^3} \)  
+          for the basis (it is easily verified).
+        \partsitem The given subspace is the collection of cubics
+          $p(x)=a_0+a_1x+a_2x^2+a_3x^3$ such that $a_0+7a_1+49a_2+343a_3=0$
+          and $a_0+5a_1+25a_2+125a_3=0$.     
+          Gauss's Method 
+          \begin{equation*}
+            \begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+              a_0  &+  &5a_1  &+  &25a_2  &+  &125a_3  &=  &0    
+            \end{linsys}
+            \grstep{-\rho_1+\rho_2}
+            \begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+                   &   &-2a_1 &-  &24a_2  &-  &218a_3  &=  &0    
+            \end{linsys}
+          \end{equation*}
+          gives that $a_1=-12a_2-109a_3$ and that $a_0=35a_2+420a_3$.
+          Rewriting $(35a_2+420a_3)+(-12a_2-109a_3)x+a_2x^2+a_3x^3$
+          as $a_2\cdot(35-12x+x^2)+a_3\cdot(420-109x+x^3)$
+          suggests this for a basis  $\sequence{35-12x+x^2,420-109x+x^3}$.
+          The above shows that it spans the space.
+          Checking it is linearly independent is routine.
+          (\textit{Comment.} 
+          A worthwhile check is to verify that both polynomials in the
+          basis have both seven and five as roots.)
+        \partsitem Here there are three conditions on the cubics,
+          that $a_0+7a_1+49a_2+343a_3=0$, that $a_0+5a_1+25a_2+125a_3=0$,
+          and that $a_0+3a_1+9a_2+27a_3=0$.
+          Gauss's Method 
+          \begin{equation*}
+            \begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+              a_0  &+  &5a_1  &+  &25a_2  &+  &125a_3  &=  &0  \\    
+              a_0  &+  &3a_1  &+  &9a_2   &+  &27a_3   &=  &0    
+            \end{linsys}
+            \grstep[-\rho_1+\rho_3]{-\rho_1+\rho_2}
+            \repeatedgrstep{-2\rho_2+\rho_3}
+            \begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+                   &   &-2a_1 &-  &24a_2  &-  &218a_3  &=  &0  \\    
+                   &   &      &   &8a_2   &+  &120a_3  &=  &0    
+            \end{linsys}
+          \end{equation*}
+          yields the single free variable $a_3$, with 
+          $a_2=-15a_3$, $a_1=71a_3$, and $a_0=-105a_3$.
+          The parametrization is this.
+          \begin{multline*} 
+            \set{(-105a_3)+(71a_3)x+(-15a_3)x^2+(a_3)x^3\suchthat a_3\in\Re} \\
+            =
+            \set{a_3\cdot(-105+71x-15x^2+x^3)\suchthat a_3\in\Re}
+          \end{multline*}
+          Therefore, a natural candidate for the basis is 
+          $\sequence{-105+71x-15x^2+x^3}$.
+          It spans the space by the work above.
+          It is clearly linearly independent because it is a one-element
+          set (with that single element not the zero object of the space).
+          Thus, any cubic through the three points $(7,0)$, $(5,0)$, and
+          $(3,0)$ is a multiple of this one.
+          (\textit{Comment.}
+          As in the prior question, 
+          a worthwhile check is to verify that plugging seven, five, and
+          three into this polynomial yields zero each time.)
+        \partsitem This is the trivial subspace of $\polyspace_3$.
+          Thus, the  basis is empty $\sequence{}$.
+      \end{exparts}
+      \noindent\textit{Remark.}
+      Alternatively, we could have derived the polynomial in the third item
+      by multiplying out $(x-7)(x-5)(x-3)$.
+     \end{answer}
+  \item 
+     We've seen that the result of reordering a basis can be another basis.
+     Must it be? 
+     \begin{answer}
+       Yes.
+       Linear independence and span are unchanged by reordering.
+     \end{answer}
+  \item  
+    Can a basis contain a zero vector?
+    \begin{answer}
+      No linearly independent set contains a zero vector.  
+    \end{answer}
+  \recommended \item
+    Let \( \sequence{\vec{\beta}_1,\vec{\beta}_2,\vec{\beta}_3} \)
+    be a basis for a vector space.
+    \begin{exparts}
+      \partsitem Show that 
+        \( \sequence{c_1\vec{\beta}_1,c_2\vec{\beta}_2,c_3\vec{\beta}_3} \)
+        is a basis when \( c_1, c_2, c_3\neq 0 \).
+        What happens when at least one \( c_i \) is $0$?
+      \partsitem Prove that
+        \( \sequence{\vec{\alpha}_1,\vec{\alpha}_2,\vec{\alpha}_3} \)
+        is a basis where \( \vec{\alpha}_i=\vec{\beta}_1+\vec{\beta}_i \).
     \end{exparts}
     \begin{answer}
       \begin{exparts}
-        \partsitem \nearbylemma{le:LDIffANonTrivLinRel} 
-          requires that the vectors 
-          $\vec{s}_1,\ldots,\vec{s}_n,\vec{t}_1,\ldots,\vec{t}_m$
-          be distinct. 
-          But we could have that the union $S\cup T$ is linearly 
-          independent with some $\vec{s}_i$ equal to some $\vec{t}_j$.
-        \partsitem One example in \( \Re^2 \) is these two.
-          \begin{equation*}
-            S=\set{\colvec{1 \\ 0}}
-            \qquad
-            T=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
-          \end{equation*}
-        \partsitem 
-          An example from \( \Re^2 \) is these sets.
-          \begin{equation*}
-            S=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
-            \qquad
-            T=\set{\colvec{1 \\ 0}, \colvec{1 \\ 1}}
-          \end{equation*}
-        \partsitem The union of two linearly independent sets $S\union T$
-          is linearly independent if and only if their spans of \( S \) 
-          and \( T-(S\cap T)\) have a trivial intersection 
-          $\spanof{S}\intersection \spanof{T-(S\cap T)}=\set{\zero}$.
-          To prove that, assume that \( S \) and \( T \) are linearly 
-          independent subsets of some vector space.
+         \partsitem To show that it is linearly independent, note that if
+           \( d_1(c_1\vec{\beta}_1)+d_2(c_2\vec{\beta}_2)+d_3(c_3\vec{\beta}_3)
+               =\zero \)
+           then
+           \( (d_1c_1)\vec{\beta}_1+(d_2c_2)\vec{\beta}_2+(d_3c_3)\vec{\beta}_3
+               =\zero \), which in turn 
+           implies that each \( d_ic_i \) is zero.
+           But with \( c_i\neq 0 \) that means that each \( d_i \) is zero.
+           Showing that it spans the space is much the same; 
+           because $\sequence{\vec{\beta}_1,\vec{\beta}_2,\vec{\beta}_3}$
+           is a basis, and so spans the space, we can for any $\vec{v}$ write  
+           \( \vec{v}=d_1\vec{\beta}_1+d_2\vec{\beta}_2+d_3\vec{\beta}_3 \),
+           and then
+           \( \vec{v}=(d_1/c_1)(c_1\vec{\beta}_1)
+               +(d_2/c_2)(c_2\vec{\beta}_2)+(d_3/c_3)(c_3\vec{\beta}_3) \).
 
-          For the `only if' direction, assume that the intersection of
-          the spans is trivial 
-          \( \spanof{S}\intersection \spanof{T-(S\cap T)}=\set{\zero} \).
-          Consider the set $S\union (T-(S\cap T))=S\union T$ and
-          consider the linear relationship 
-          $c_1\vec{s}_1+\dots+c_n\vec{s}_n
-            +d_1\vec{t}_1+\dots+d_m\vec{t}_m=\zero$.
-          Subtracting gives
-          $c_1\vec{s}_1+\dots+c_n\vec{s}_n=
-            -d_1\vec{t}_1-\dots-d_m\vec{t}_m$.
-          The left side of that equation sums to a vector in $\spanof{S}$, and
-          the right side is a vector in $\spanof{T-(S\cap T)}$.
-          Therefore, since the intersection of the spans is trivial, both
-          sides equal the zero vector.
-          Because $S$ is linearly independent, all of the $c$'s are zero.
-          Because $T$ is linearly independent so also is  
-          $T-(S\cap T)$ linearly independent, 
-          and therefore all of the $d$'s are zero.
-          Thus, the original linear relationship among members of 
-          $S\union T$ only holds if all of the coefficients are zero.
-          Hence, $S\union T$ is linearly independent.
-
-          For the `if' half we can make the same argument in reverse.
-          Suppose that the union $S\union T$ is linearly independent.
-          Consider a linear relationship among members of 
-          $S$ and $T-(S\cap T)$.        
-          $c_1\vec{s}_1+\cdots+c_n\vec{s}_n
-            +d_1\vec{t}_1+\cdots+d_m\vec{t}_m
-            =\zero$
-          Note that no $\vec{s}_i$ is equal to a $\vec{t}_j$
-          so that is a combination of distinct vectors, as required by 
-          \nearbylemma{le:LDIffANonTrivLinRel}.
-          So the only solution 
-          is the trivial one $c_1=0$, \ldots, $d_m=0$. 
-          Since any vector $\vec{v}$ 
-          in the intersection of the spans
-          $\spanof{S}\intersection \spanof{T-(S\cap T)}$ 
-          we can write 
-          $\vec{v}=c_1\vec{s}_1+\cdots+c_n\vec{s}_n
-            =-d_1\vec{t}_1-\cdots-d_m\vec{t}_m$,
-          and it must be the zero vector because each scalar is zero.
-      \end{exparts}  
+           If any of the scalars are zero then the result is not a basis,
+           because it is not linearly independent.
+         \partsitem Showing that 
+           $\sequence{2\vec{\beta}_1,\vec{\beta}_1+\vec{\beta}_2,
+             \vec{\beta}_1+\vec{\beta}_3}$ is linearly independent is easy. 
+           To show that it spans the space, assume that
+           \( \vec{v}=d_1\vec{\beta}_1+d_2\vec{\beta}_2+d_3\vec{\beta}_3 \).
+           Then, we can represent the same \( \vec{v} \) with respect to
+           \( \sequence{2\vec{\beta}_1,\vec{\beta}_1+\vec{\beta}_2,
+                         \vec{\beta}_1+\vec{\beta}_3} \)
+           in this way
+           $\vec{v}=(1/2)(d_1-d_2-d_3)(2\vec{\beta}_1)
+           +d_2(\vec{\beta}_1+\vec{\beta}_2)+d_3(\vec{\beta}_1+\vec{\beta}_3)$.
+      \end{exparts}   
     \end{answer}
   \item 
-     With a some calculation we can get formulas to determine whether or
-     not a set of vectors is linearly independent. 
-     \begin{exparts}
-       \partsitem Show that this subset of \( \Re^2 \)
-         \begin{equation*}
-           \set{\colvec{a \\ c},\colvec{b \\ d}}
-         \end{equation*}
-         is linearly independent if and only if \( ad-bc\neq 0 \).
-       \partsitem Show that this subset of \( \Re^3 \)
-         \begin{equation*}
-           \set{\colvec{a \\ d \\ g},
-                \colvec{b \\ e \\ h},
-                \colvec{c \\ f \\ i}  }
-         \end{equation*}
-         is linearly independent iff
-         \( aei+bfg+cdh-hfa-idb-gec \neq 0 \).
-       \partsitem When is this subset of \( \Re^3 \)
-         \begin{equation*}
-           \set{\colvec{a \\ d \\ g},
-                \colvec{b \\ e \\ h} }
-         \end{equation*}
-         linearly independent?
-       \partsitem This is an opinion question:~for
-         a set of four vectors from \( \Re^4 \),
-         must there be a formula involving the sixteen entries 
-         that determines independence of the set?
-         (You needn't produce such a formula, just decide if one exists.)
+    Find one vector $\vec{v}$ that will make each into a basis
+    for the space.
+    \begin{exparts*}
+      \partsitem $\sequence{\colvec[r]{1 \\ 1},\vec{v}}$ in $\Re^2$
+      \partsitem $\sequence{\colvec[r]{1 \\ 1 \\ 0},
+                            \colvec[r]{0 \\ 1 \\ 0},\vec{v}}$ in $\Re^3$
+      \partsitem $\sequence{x,1+x^2,\vec{v}}$ in $\polyspace_2$
+    \end{exparts*} 
+    \begin{answer}
+      Each forms a linearly independent set if we omit $\vec{v}$.
+      To preserve linear independence, we must expand the span of each.
+      That is, we must determine the span of each (leaving $\vec{v}$ out),
+      and then pick a $\vec{v}$ lying outside of that span.
+      Then to finish, we must check that the result spans the entire given
+      space.
+      Those checks are routine.
+      \begin{exparts}
+        \partsitem Any vector that is not a multiple of the given one, 
+          that is, any vector that is not on the line $y=x$ will do here.
+          One is $\vec{v}=\vec{e}_1$.
+        \partsitem By inspection, we notice that the vector $\vec{e}_3$ is
+          not in the span of the set of the two given vectors.
+          The check that the resulting set is a basis for $\Re^3$ is 
+          routine.
+        \partsitem For any member of the span 
+          $\set{c_1\cdot(x)+c_2\cdot(1+x^2)\suchthat c_1,c_2\in\Re}$,
+          the coefficient of $x^2$ equals the constant term.
+          So we expand the span if we add a quadratic without this property,
+          say, $\vec{v}=1-x^2$.
+          The check that the result is a basis for $\polyspace_2$ is easy.  
+      \end{exparts}
+    \end{answer}
+  \recommended \item  
+    Where
+    \( \sequence{\vec{\beta}_1,\dots,\vec{\beta}_n } \)
+    is a basis, show that in this equation
+    \begin{equation*}
+       c_1\vec{\beta}_1+\dots+c_k\vec{\beta}_k
+       =
+       c_{k+1}\vec{\beta}_{k+1}+\dots+c_n\vec{\beta}_n
+    \end{equation*}
+    each of the \( c_i \)'s is zero.
+    Generalize.
+    \begin{answer}
+      To show that each scalar is zero, simply subtract
+      \( c_1\vec{\beta}_1+\dots+c_k\vec{\beta}_k
+          -c_{k+1}\vec{\beta}_{k+1}-\dots-c_n\vec{\beta}_n=\zero \).
+      The obvious generalization is that in any equation involving only the
+      \( \vec{\beta} \)'s, and in which each \( \vec{\beta} \) appears only
+      once, each scalar is zero.
+      For instance, an equation with a combination of 
+      the even-indexed basis vectors
+      (i.e., $\vec{\beta}_2$, $\vec{\beta}_4$, etc.) on the right and the
+      odd-indexed basis vectors on the left also gives the conclusion that
+      all of the coefficients are zero. 
+    \end{answer}
+  \item  
+    A basis contains some of the vectors from a vector space; can it 
+    contain them all?
+    \begin{answer}
+      No; no linearly independent set contains the zero vector.
+    \end{answer}
+  \item  
+    \nearbytheorem{th:BasisIffUniqueRepWRT} shows that, with respect to a
+    basis, every linear combination is unique.
+    If a subset is not a basis, can linear combinations be not unique?
+    If so, must they be?
+    \begin{answer}
+      Here is a subset of $\Re^2$ that is not a basis, and two different
+      linear combinations of its elements that sum to the same vector.
+      \begin{equation*}
+        \set{\colvec[r]{1 \\ 2},\colvec[r]{2 \\ 4}}
+        \qquad
+        2\cdot\colvec[r]{1 \\ 2}+0\cdot\colvec[r]{2 \\ 4}
+        =0\cdot\colvec[r]{1 \\ 2}+1\cdot\colvec[r]{2 \\ 4}
+      \end{equation*}
+      Thus, when a subset is not a basis, it can be the case that its
+      linear combinations are not unique.
+
+      But just because a subset is not a basis does not imply that its
+      combinations must be not unique.
+      For instance, this set 
+      \begin{equation*}
+        \set{\colvec[r]{1 \\ 2}}
+      \end{equation*}
+      does have the property that
+      \begin{equation*}
+        c_1\cdot\colvec[r]{1 \\ 2}
+        =
+        c_2\cdot\colvec[r]{1 \\ 2}
+      \end{equation*}
+      implies that $c_1=c_2$.
+      The idea here is that this subset fails to be a basis because it fails
+      to span the space; the proof of the theorem establishes that
+      linear combinations are unique if and only if the subset is linearly
+      independent.
+     \end{answer}
+  \recommended \item
+    A square matrix is \definend{symmetric}\index{matrix!symmetric}%
+    \index{symmetric matrix} 
+    if for all indices \( i \) and
+    \( j \), entry \( i,j \) equals entry \( j,i \).
+    \begin{exparts}
+      \partsitem Find a basis for the vector space of
+        symmetric \( \nbyn{2} \) matrices.
+      \partsitem Find a basis for the space of symmetric \( \nbyn{3} \)
+        matrices.
+      \partsitem Find a basis for the space of symmetric \( \nbyn{n} \)
+        matrices.
     \end{exparts}
     \begin{answer}
       \begin{exparts}
-        \partsitem 
-          Assuming first that \( a\neq 0 \),
+        \partsitem Describing the vector space as
           \begin{equation*}
-            x\colvec{a \\ c}
-            +y\colvec{b \\ d}
-            =\colvec{0 \\ 0}
+             \set{\begin{mat}
+                     a  &b  \\
+                     b  &c
+                  \end{mat}  \suchthat a,b,c\in\Re}
           \end{equation*}
-          gives
+          suggests this for a basis.
           \begin{equation*}
-            \begin{linsys}{2}
-               ax  &+  &by &=  &0  \\
-               cx  &+  &dy &=  &0  
-            \end{linsys}
-            \grstep{-(c/a)\rho_1+\rho_2}
-            \begin{linsys}{2}
-               ax  &+  &by           &=  &0  \\
-                   &   &(-(c/a)b+d)y &=  &0  
-             \end{linsys}
+            \sequence{
+              \begin{mat}[r]
+                1  &0  \\
+                0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  \\
+                0  &1
+              \end{mat},
+              \begin{mat}[r]
+                0  &1  \\
+                1  &0
+              \end{mat}  }
           \end{equation*}
-          which has a solution if and only if
-          \( 0\neq-(c/a)b+d=(-cb+ad)/d \)
-          (we've assumed in this case that \( a\neq 0 \), and so 
-          back substitution yields a unique solution).
-
-          The \( a=0 \) case is also not hard\Dash break it into the 
-          \( c\neq 0 \) and \( c=0 \) subcases and 
-          note that in these cases \( ad-bc=0\cdot d-bc \).
-
-          \textit{Comment.}
-          An earlier exercise showed that a two-vector set is linearly
-          dependent if and only if either vector is a scalar multiple of the
-          other.
-          We could also use that to make the calculation.
-        \partsitem The equation
+          Verification is easy.
+        \partsitem This is one possible basis.
           \begin{equation*}
-            c_1\colvec{a \\ d \\ g}
-            +c_2\colvec{b \\ e \\ h}
-            +c_3\colvec{c \\ f \\ i}
-            =\colvec{0 \\ 0 \\ 0}
+            \sequence{
+              \begin{mat}[r]
+                1  &0  &0  \\
+                0  &0  &0  \\
+                0  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &0  \\
+                0  &1  &0  \\
+                0  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &0  \\
+                0  &0  &0  \\
+                0  &0  &1
+              \end{mat},
+              \begin{mat}[r]
+                0  &1  &0  \\
+                1  &0  &0  \\
+                0  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &1  \\
+                0  &0  &0  \\
+                1  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &0  \\
+                0  &0  &1  \\
+                0  &1  &0
+              \end{mat}  }
           \end{equation*}
-         expresses a homogeneous linear system.
-         We proceed by writing it in matrix form and applying Gauss's Method.
-
-         We first reduce the matrix to upper-triangular.
-         Assume that \( a\neq 0 \).
-         With that, we can clear down the first column.
-         \begin{equation*}
-           \grstep{(1/a)\rho_1}
-           \begin{amat}{3}
-              1   &b/a   &c/a  &0 \\
-              d   &e     &f    &0 \\
-              g   &h     &i    &0
-            \end{amat}                                            
-           \grstep[-g\rho_1+\rho_3]{-d\rho_1+\rho_2}
-           \begin{amat}{3}
-              1   &b/a           &c/a        &0   \\
-              0   &(ae-bd)/a     &(af-cd)/a  &0   \\
-              0   &(ah-bg)/a     &(ai-cg)/a  &0
-            \end{amat}                                            
-         \end{equation*}
-         Then we get a $1$ in the second row, second column entry.
-         (Assuming for the moment that \( ae-bd\neq 0 \), in order
-         to do the row reduction step.)
-         \begin{equation*}
-           \grstep{(a/(ae-bd))\rho_2}
-           \begin{amat}{3}
-              1   &b/a           &c/a             &0  \\
-              0   &1             &(af-cd)/(ae-bd) &0  \\
-              0   &(ah-bg)/a     &(ai-cg)/a       &0
-            \end{amat}
-         \end{equation*}
-         Then, under the assumptions, we perform
-         the row operation $((ah-bg)/a)\rho_2+\rho_3$
-         to get this.
-         \begin{equation*}
-           % \grstep{((ah-bg)/a)\rho_2+\rho_3}
-           \begin{amat}{3}
-              1   &b/a   &c/a                              &0 \\
-              0   &1     &(af-cd)/(ae-bd)                   &0 \\
-              0   &0     &(aei+bgf+cdh-hfa-idb-gec)/(ae-bd) &0
-            \end{amat}
-         \end{equation*}
-         Therefore, the original system is nonsingular
-         if and only if the above \( 3,3 \) entry is nonzero
-         (this fraction is defined because of the \( ae-bd\neq 0 \) assumption).
-         It equals zero if and only if the numerator is zero. 
-
-         We next worry about the assumptions.
-         First, if \( a\neq 0 \) but \( ae-bd=0 \) then we swap
-         \begin{multline*}
-           \begin{amat}{3}
-              1   &b/a           &c/a        &0   \\
-              0   &0             &(af-cd)/a  &0   \\
-              0   &(ah-bg)/a     &(ai-cg)/a  &0
-            \end{amat}                                    \\
-           \grstep{\rho_2\leftrightarrow\rho_3}
-           \begin{amat}{3}
-              1   &b/a           &c/a        &0   \\
-              0   &(ah-bg)/a     &(ai-cg)/a  &0   \\
-              0   &0             &(af-cd)/a  &0
-            \end{amat}
-         \end{multline*}
-         and conclude that the system is nonsingular if and only if either
-         \( ah-bg=0 \) or \( af-cd=0 \).
-         That's the same as asking that their product be zero:
-         \begin{align*}
-            ahaf-ahcd-bgaf+bgcd
-            &=0                   \\
-            ahaf-ahcd-bgaf+aegc
-            &=0                   \\
-            a(haf-hcd-bgf+egc)
-            &=0
-         \end{align*}
-         (in going from the first line to the second we've applied the
-         case assumption that $ae-bd=0$ by substituting $ae$ for $bd$).
-         Since we are assuming that \( a\neq 0 \), 
-         we have that \( haf-hcd-bgf+egc=0 \).
-         With $ae-bd=0$ we can rewrite this to fit the form we need:~in
-         this \( a\neq 0 \) and \( ae-bd=0 \) case, the given system
-         is nonsingular when
-         \( haf-hcd-bgf+egc-i(ae-bd)=0 \), as required.
-
-         The remaining cases have the same character.
-         Do the \( a=0 \) but \( d\neq 0 \) case and the \( a=0 \) and
-         \( d=0 \) but \( g\neq 0 \) case by first swapping rows and
-         then going on as above.
-         The \( a=0 \), \( d=0 \), and \( g=0 \) case is easy\Dash a set with a
-         zero vector is linearly dependent, and the formula comes out
-         to equal zero.
-       \partsitem It is linearly dependent if and only if either vector is a
-         multiple of the other.
-         That is, it is not independent iff
-         \begin{equation*}
-           \colvec{a \\ d \\ g}=r\cdot\colvec{b \\ e \\ h}
-           \quad\text{or}\quad
-           \colvec{b \\ e \\ h}=s\cdot\colvec{a \\ d \\ g}
-         \end{equation*}
-         (or both) for some scalars $r$ and $s$.
-         Eliminating $r$ and $s$ in order to restate this condition only in
-         terms of the given letters $a$, $b$, $d$, $e$, $g$, $h$, we have that 
-         it is not independent\Dash it is dependent\Dash iff
-         \( ae-bd=ah-gb=dh-ge \).
-       \partsitem Dependence or independence is a function of the
-         indices, so there
-         is indeed a formula (although at first glance a person might think
-         the formula involves cases: ``if the first component of the first
-         vector is zero then \ldots'', this guess turns out not to be 
-         correct).
+         \partsitem As in the prior two questions, we can form a basis from two
+           kinds of  matrices.
+           First are the matrices with a single one on the diagonal and all
+           other entries zero (there are \( n \) of those matrices).
+           Second are the matrices with two opposed off-diagonal entries
+           are ones and all other entries are zeros.
+           (That is, all entries in $M$ are zero except that 
+           $m_{i,j}$ and $m_{j,i}$ are one.) 
       \end{exparts}  
     \end{answer}
-     \end{answer}
- \end{exercises}
-
+  \recommended \item  
+     We can show that every basis for $\Re^3$ contains the same
+     number of vectors.
+     \begin{exparts}
+       \partsitem Show that no linearly independent subset of $\Re^3$
+          contains more than three vectors.
+       \partsitem Show that 
+          no spanning subset of $\Re^3$ contains fewer than three vectors.
+          \textit{Hint:} 
+          recall how to calculate the span of a set and show that
+          this method 
+          cannot yield all of $\Re^3$ when we apply it to fewer than
+          three vectors.
+     \end{exparts}
+     \begin{answer}
+       \begin{exparts}
+         \partsitem Any four vectors from $\Re^3$ are linearly related because
+           the vector equation
+           \begin{equation*}
+             c_1\colvec{x_1 \\ y_1 \\ z_1}
+             +c_2\colvec{x_2 \\ y_2 \\ z_2}
+             +c_3\colvec{x_3 \\ y_3 \\ z_3}
+             +c_4\colvec{x_4 \\ y_4 \\ z_4}
+             =\colvec[r]{0 \\ 0 \\ 0}
+           \end{equation*}
+           gives rise to a linear system
+           \begin{equation*}
+             \begin{linsys}{4}
+                x_1c_1  &+  &x_2c_2  &+  &x_3c_3  &+  &x_4c_4  &=  &0 \\
+                y_1c_1  &+  &y_2c_2  &+  &y_3c_3  &+  &y_4c_4  &=  &0 \\
+                z_1c_1  &+  &z_2c_2  &+  &z_3c_3  &+  &z_4c_4  &=  &0
+             \end{linsys}
+           \end{equation*}
+           that is homogeneous (and so has a solution) and has 
+           four unknowns but only three equations,
+           and therefore has nontrivial solutions.
+           (Of course, this argument applies to any subset of $\Re^3$ 
+           with four or more vectors.) 
+         \partsitem We shall do just the two-vector case.
+           Given $x_1$, \ldots, $z_2$, 
+           \begin{equation*}
+             S=\set{\colvec{x_1 \\ y_1 \\ z_1},
+             \colvec{x_2 \\ y_2 \\ z_2}} 
+           \end{equation*}
+           to decide which vectors
+           \begin{equation*}
+             \colvec{x \\ y \\ z}
+           \end{equation*}
+           are in the span of $S$, set up 
+           \begin{equation*}
+             c_1\colvec{x_1 \\ y_1 \\ z_1}
+             +c_2\colvec{x_2 \\ y_2 \\ z_2}
+             =\colvec{x \\ y \\ z}
+           \end{equation*}
+           and row reduce the resulting system.
+           \begin{equation*}
+             \begin{linsys}{2}
+                x_1c_1  &+  &x_2c_2   &=  &x \\
+                y_1c_1  &+  &y_2c_2   &=  &y \\
+                z_1c_1  &+  &z_2c_2   &=  &z
+             \end{linsys}
+           \end{equation*}
+           There are two
+           variables $c_1$ and $c_2$ but three equations, so 
+           when Gauss's Method finishes, on the bottom
+           row there will be some relationship of the form
+           $0=m_1x+m_2y+m_3z$. 
+           Hence, vectors in the span of the two-element set $S$
+           must satisfy some restriction.
+           Hence the span is not all of $\Re^3$.
+       \end{exparts}  
+    \end{answer}
+  \item 
+    One of the exercises in the Subspaces subsection shows that the set 
+    \begin{equation*}
+      \set{\colvec{x \\ y \\ z}\suchthat x+y+z=1}
+    \end{equation*}
+    is a vector space under these operations.
+    \begin{equation*}
+      \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
+      =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
+      \qquad
+      r\colvec{x \\ y \\ z}=\colvec{rx-r+1 \\ ry \\ rz}
+    \end{equation*}
+    Find a basis.
+    \begin{answer}
+      We have (using these odball operations with care)
+      \begin{multline*}
+        \set{\colvec{1-y-z \\ y \\ z}\suchthat y,z\in\Re}
+         =\set{\colvec{-y+1 \\ y \\ 0}
+               +\colvec{-z+1 \\ 0 \\ z}
+              \suchthat y,z\in\Re}                           \\
+         =\set{y\cdot\colvec{0 \\ 1 \\ 0}
+               +z\cdot\colvec{0 \\ 0 \\ 1}
+              \suchthat y,z\in\Re}
+      \end{multline*}
+      and so a natural candidate for a basis is this.
+      \begin{equation*}
+        \sequence{\colvec[r]{0 \\ 1 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
+      \end{equation*}
+      To check linear independence we set up
+      \begin{equation*}
+         c_1\colvec[r]{0 \\ 1 \\ 0}+c_2\colvec[r]{0 \\ 0 \\ 1}
+         =\colvec[r]{1 \\ 0 \\ 0}
+      \end{equation*}
+      (the vector on the right is the zero object in this space).
+      That yields the linear system
+      \begin{equation*}
+        \begin{linsys}{3}
+          (-c_1+1)  &+  &(-c_2+1)  &-  &1  &=  &1  \\
+             c_1    &   &          &   &   &=  &0  \\
+                    &   &c_2       &   &   &=  &0
+        \end{linsys}
+      \end{equation*}
+      with only the solution $c_1=0$ and $c_2=0$.
+      Checking the span is similar. 
+   \end{answer}
+\end{exercises}
 
 
   \puzzle \item 

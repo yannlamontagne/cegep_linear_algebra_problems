@@ -1,0 +1,140 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Determine if each is a basis for \( \Re^3 \).
+\begin{multicols}{2}
+\Question \( \sequence{
+                 \colvec[r]{1 \\ 2 \\ 3},
+                 \colvec[r]{3 \\ 2 \\ 1},
+                 \colvec[r]{0 \\ 0 \\ 1}}  \)
+\Question \( \sequence{
+                 \colvec[r]{1 \\ 2 \\ 3},
+                 \colvec[r]{3 \\ 2 \\ 1}}  \)
+\Question \( \sequence{
+                 \colvec[r]{0 \\ 2 \\ -1},
+                 \colvec[r]{1 \\ 1 \\ 1},
+                 \colvec[r]{2 \\ 5 \\ 0}}  \)
+\Question \( \sequence{
+                 \colvec[r]{0 \\ 2 \\ -1},
+                 \colvec[r]{1 \\ 1 \\ 1},
+                 \colvec[r]{1 \\ 3 \\ 0}}  \)
+\EndCurrentQuestion
+\end{multicols}
+
+\end{Exercise}
+
+\begin{Answer}
+      Each set is a basis if and only
+      if we can express each vector in the space in a unique way as a linear
+      combination of the given vectors.
+        \Question Yes this is a basis.
+          The relation
+          \begin{equation*}
+            c_1\colvec[r]{1 \\ 2 \\ 3}
+            +c_2\colvec[r]{3 \\ 2 \\ 1}
+            +c_3\colvec[r]{0 \\ 0 \\ 1}
+            =\colvec{x \\ y \\ z}
+          \end{equation*}
+          gives
+          \begin{equation*}
+            \begin{amat}{3}
+              1  &3  &0  &x  \\
+              2  &2  &0  &y  \\
+              3  &1  &1  &z
+            \end{amat}
+                \end{equation*}
+        and Gaussian elimination gives 
+	\begin{equation*}    
+	\begin{amat}{3}
+              1  &3  &0  &x \hfill\hbox{}  \\
+              0  &-4 &0  &-2x+y \hfill\hbox{}  \\
+              0  &0  &1  &x-2y+z 
+            \end{amat}
+          \end{equation*}
+          which has the unique solution
+          \( c_3=x-2y+z \), \( c_2=x/2-y/4 \), and
+          \( c_1=-x/2+3y/4 \).
+        \Question This is not a basis.
+          Setting it up as in the prior part
+          \begin{equation*}
+            c_1\colvec[r]{1 \\ 2 \\ 3}
+            +c_2\colvec[r]{3 \\ 2 \\ 1}
+            =\colvec{x \\ y \\ z}
+          \end{equation*}
+          gives a linear system whose solution
+          \begin{equation*}
+            \begin{amat}{2}
+              1  &3  &x  \\ 
+              2  &2  &y  \\
+              3  &1  &z
+            \end{amat}
+        \end{equation*}
+        gives
+         \begin{equation*}    
+	\begin{amat}{2}
+              1  &3  &x\hfill\hbox{}  \\ 
+              0  &-4 &-2x+y\hfill\hbox{}  \\
+              0  &0  &x-2y+z
+            \end{amat}
+          \end{equation*}
+          is possible if and only if the three-tall vector's components
+          $x$, $y$, and $z$ satisfy $x-2y+z=0$.
+          For instance, we can find the coefficients $c_1$ and $c_2$ that
+          work when $x=1$, $y=1$, and $z=1$.
+          However, there are no $c$'s that work for
+          $x=1$, $y=1$, and $z=2$.
+          Thus this is not a basis; it does not span the space.
+        \Question Yes, this is a basis.
+         Setting up the relationship leads to this reduction
+          \begin{equation*}
+            \begin{amat}{3}
+              0  &1  &2  &x \hfill\hbox{} \\
+              2  &1  &5  &y \hfill\hbox{} \\
+             -1  &1  &0  &z 
+            \end{amat}
+        \end{equation*}
+        gives
+         \begin{equation*}            
+\begin{amat}{3}
+             -1  &1  &0   &z  \hfill\hbox{} \\
+              0  &3  &5   &y+2z \hfill\hbox{} \\
+              0  &0  &1/3 &x-y/3-2z/3
+            \end{amat}
+          \end{equation*}
+          which has a unique solution for each triple of components
+          $x$, $y$, and $z$.
+        \Question No, this is not a basis.
+          The reduction of
+          \begin{equation*}
+            \begin{amat}{3}
+              0  &1  &1  &x   \\
+              2  &1  &3  &y   \\
+             -1  &1  &0  &z  
+            \end{amat}
+        \end{equation*}
+	gives
+	 \begin{equation*}    
+	\begin{amat}{3}
+             -1  &1  &0  &z  \hfill\hbox{} \\
+              0  &3  &3  &y+2z  \hfill\hbox{} \\
+              0  &0  &0  &x-y/3-2z/3
+            \end{amat}
+          \end{equation*}
+          which does not have a solution for each triple $x$, $y$, and $z$.
+          Instead, the span of the given set 
+          includes only those vectors where \( x=y/3+2z/3 \).
+
+\end{Answer}

@@ -1,0 +1,165 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+     With a some calculation we can get formulas to determine whether or
+     not a set of vectors is linearly independent. 
+\Question Show that this subset of \( \Re^2 \)
+         \begin{equation*}
+           \set{\colvec{a \\ c},\colvec{b \\ d}}
+         \end{equation*}
+         is linearly independent if and only if \( ad-bc\neq 0 \).
+\Question Show that this subset of \( \Re^3 \)
+         \begin{equation*}
+           \set{\colvec{a \\ d \\ g},
+                \colvec{b \\ e \\ h},
+                \colvec{c \\ f \\ i}  }
+         \end{equation*}
+         is linearly independent iff
+         \( aei+bfg+cdh-hfa-idb-gec \neq 0 \).
+\Question When is this subset of \( \Re^3 \)
+         \begin{equation*}
+           \set{\colvec{a \\ d \\ g},
+                \colvec{b \\ e \\ h} }
+         \end{equation*}
+         linearly independent?
+
+\end{Exercise}
+
+\begin{Answer}
+\Question Assuming first that \( a\neq 0 \),
+          \begin{equation*}
+            x\colvec{a \\ c}
+            +y\colvec{b \\ d}
+            =\colvec{0 \\ 0}
+          \end{equation*}
+          gives
+          \begin{equation*}
+            \begin{linsys}{2}
+               ax  &+  &by &=  &0  \\
+               cx  &+  &dy &=  &0  
+            \end{linsys}
+	\end{equation*}
+	and Gaussian elimination
+        \begin{equation*}    
+	\begin{linsys}{2}
+               ax  &+  &by           &=  &0  \\
+                   &   &(-(c/a)b+d)y &=  &0  
+             \end{linsys}
+          \end{equation*}
+          which has a solution if and only if
+          \( 0\neq-(c/a)b+d=(-cb+ad)/d \)
+          (we've assumed in this case that \( a\neq 0 \), and so 
+          back substitution yields a unique solution).
+
+          The \( a=0 \) case is also not hard break it into the 
+          \( c\neq 0 \) and \( c=0 \) subcases and 
+          note that in these cases \( ad-bc=0\cdot d-bc \).
+        \Question The equation
+          \begin{equation*}
+            c_1\colvec{a \\ d \\ g}
+            +c_2\colvec{b \\ e \\ h}
+            +c_3\colvec{c \\ f \\ i}
+            =\colvec{0 \\ 0 \\ 0}
+          \end{equation*}
+         expresses a homogeneous linear system.
+         We proceed by writing it in matrix form and applying Gauss's Method.
+
+         We first reduce the matrix to upper-triangular.
+         Assume that \( a\neq 0 \).
+         With that, we can clear down the first column.
+         \begin{equation*}
+           \begin{amat}{3}
+              1   &b/a           &c/a        &0   \\
+              0   &(ae-bd)/a     &(af-cd)/a  &0   \\
+              0   &(ah-bg)/a     &(ai-cg)/a  &0
+            \end{amat}                                            
+         \end{equation*}
+         Then we get a $1$ in the second row, second column entry.
+         (Assuming for the moment that \( ae-bd\neq 0 \), in order
+         to do the row reduction step.)
+         \begin{equation*}
+           \begin{amat}{3}
+              1   &b/a           &c/a             &0  \\
+              0   &1             &(af-cd)/(ae-bd) &0  \\
+              0   &(ah-bg)/a     &(ai-cg)/a       &0
+            \end{amat}
+         \end{equation*}
+         Then, under the assumptions, we perform
+         the row operation $((ah-bg)/a)\rho_2+\rho_3$
+         to get this.
+         \begin{equation*}
+           \begin{amat}{3}
+              1   &b/a   &c/a                              &0 \\
+              0   &1     &(af-cd)/(ae-bd)                   &0 \\
+              0   &0     &(aei+bgf+cdh-hfa-idb-gec)/(ae-bd) &0
+            \end{amat}
+         \end{equation*}
+         Therefore, the original system is nonsingular
+         if and only if the above \( 3,3 \) entry is nonzero
+         (this fraction is defined because of the \( ae-bd\neq 0 \) assumption).
+         It equals zero if and only if the numerator is zero. 
+
+         We next worry about the assumptions.
+         First, if \( a\neq 0 \) but \( ae-bd=0 \) then we swap row 2 and row 3
+         \begin{multline*}
+           \begin{amat}{3}
+              1   &b/a           &c/a        &0   \\
+              0   &(ah-bg)/a     &(ai-cg)/a  &0   \\
+              0   &0             &(af-cd)/a  &0
+            \end{amat}
+         \end{multline*}
+         and conclude that the system is nonsingular if and only if either
+         \( ah-bg=0 \) or \( af-cd=0 \).
+         That's the same as asking that their product be zero:
+         \begin{align*}
+            ahaf-ahcd-bgaf+bgcd
+            &=0                   \\
+            ahaf-ahcd-bgaf+aegc
+            &=0                   \\
+            a(haf-hcd-bgf+egc)
+            &=0
+         \end{align*}
+         (in going from the first line to the second we've applied the
+         case assumption that $ae-bd=0$ by substituting $ae$ for $bd$).
+         Since we are assuming that \( a\neq 0 \), 
+         we have that \( haf-hcd-bgf+egc=0 \).
+         With $ae-bd=0$ we can rewrite this to fit the form we need:~in
+         this \( a\neq 0 \) and \( ae-bd=0 \) case, the given system
+         is nonsingular when
+         \( haf-hcd-bgf+egc-i(ae-bd)=0 \), as required.
+
+         The remaining cases have the same character.
+         Do the \( a=0 \) but \( d\neq 0 \) case and the \( a=0 \) and
+         \( d=0 \) but \( g\neq 0 \) case by first swapping rows and
+         then going on as above.
+         The \( a=0 \), \( d=0 \), and \( g=0 \) case is easy a set with a
+         zero vector is linearly dependent, and the formula comes out
+         to equal zero.
+       \Question It is linearly dependent if and only if either vector is a
+         multiple of the other.
+         That is, it is not independent iff
+         \begin{equation*}
+           \colvec{a \\ d \\ g}=r\cdot\colvec{b \\ e \\ h}
+           \quad\text{or}\quad
+           \colvec{b \\ e \\ h}=s\cdot\colvec{a \\ d \\ g}
+         \end{equation*}
+         (or both) for some scalars $r$ and $s$.
+         Eliminating $r$ and $s$ in order to restate this condition only in
+         terms of the given letters $a$, $b$, $d$, $e$, $g$, $h$, we have that 
+         it is not independent, it is dependent iff
+         \( ae-bd=ah-gb=dh-ge \)
+\end{Answer}

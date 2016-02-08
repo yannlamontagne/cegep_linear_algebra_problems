@@ -1,0 +1,57 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear independence}
+\index{linear dependence}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Is
+         the intersection of linearly independent sets independent?
+         Must it be?
+\Question How does linear independence relate to complementation?
+\Question Show that the union of two linearly independent sets
+          can be linearly independent.
+\Question Show that
+          the union of two linearly independent sets need not be
+          linearly independent.
+\end{Exercise}
+
+\begin{Answer}
+\Question The intersection of two linearly independent sets
+          $S\intersection T$ must be linearly
+          independent as it is a subset of the linearly independent set $S$
+          (as well as the linearly independent set $T$ also, of course).
+\Question The complement of a linearly independent set is linearly
+          dependent as it contains the zero vector.
+\Question A simple example in \( \Re^2 \) is these two sets.
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{0 \\ 1}}          
+          \end{equation*}
+          A somewhat subtler example, again in \( \Re^2 \), is these two.
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{1 \\ 0}, \colvec{0 \\ 1}}
+          \end{equation*}
+\Question We must produce an example.
+          One, in \( \Re^2 \), is
+          \begin{equation*}
+            S=\set{\colvec{1 \\ 0}}
+            \qquad
+            T=\set{\colvec{2 \\ 0}}
+          \end{equation*}
+          since the linear dependence of \( S_1\union S_2 \) is easy to see.
+
+\end{Answer}

@@ -24,8 +24,8 @@
 \contentsline {section}{\numberline {5.2}Subspaces}{17}{section.5.2}
 \contentsline {section}{\numberline {5.3}Spanning Sets}{18}{section.5.3}
 \contentsline {section}{\numberline {5.4}Linear Independence}{19}{section.5.4}
-\contentsline {section}{\numberline {5.5}Basis}{20}{section.5.5}
+\contentsline {section}{\numberline {5.5}Basis}{21}{section.5.5}
 \contentsline {section}{\numberline {5.6}Dimension}{21}{section.5.6}
 \contentsline {chapter}{\numberline {A}Answers to Exercises}{23}{appendix.A}
-\contentsline {chapter}{References}{40}{appendix.A}
-\contentsline {chapter}{Index}{41}{appendix*.2}
+\contentsline {chapter}{References}{42}{appendix.A}
+\contentsline {chapter}{Index}{43}{appendix*.2}
