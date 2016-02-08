@@ -1,0 +1,60 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{homogeneous system}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Find a basis for the solution set of this system.
+    \begin{equation*}
+      \begin{linsys}{4}
+         x_1  &-  &4x_2  &+  &3x_3  &-  &x_4  &=  &0  \\
+        2x_1  &-  &8x_2  &+  &6x_3  &-  &2x_4 &=  &0  
+      \end{linsys}
+  \end{equation*}
+\end{Exercise}
+
+\begin{Answer}
+      The reduction
+      \begin{equation*}
+        \begin{amat}[r]{4}
+          1  &-4  &3  &-1  &0  \\
+          2  &-8  &6  &-2  &0
+        \end{amat}
+	\end{equation*}
+	Gaussian elimination gives
+        \begin{equation*}
+	\begin{amat}[r]{4}
+          1  &-4  &3  &-1  &0  \\
+          0  &0   &0  &0   &0
+        \end{amat}
+      \end{equation*}
+      gives that the only condition is that 
+      $x_1=4x_2-3x_3+x_4$.
+      The solution set is
+      \begin{multline*}
+        \set{\colvec{4x_2-3x_3+x_4 \\ x_2 \\ x_3 \\ x_4}
+               \suchthat x_2,x_3,x_4\in\Re}                          \\
+        =\set{x_2\colvec[r]{4 \\ 1 \\ 0 \\ 0}
+             +x_3\colvec[r]{-3 \\ 0 \\ 1 \\ 0}
+             +x_4\colvec[r]{1 \\ 0 \\ 0 \\ 1} \suchthat x_2,x_3,x_4\in\Re}
+      \end{multline*}
+      and so the obvious candidate for the basis is this.
+      \begin{equation*}
+       \sequence{\colvec[r]{4 \\ 1 \\ 0 \\ 0},
+                   \colvec[r]{-3 \\ 0 \\ 1 \\ 0},
+                   \colvec[r]{1 \\ 0 \\ 0 \\ 1}  }
+      \end{equation*}  
+      We've shown that this spans the space, and showing it is also linearly
+      independent is routine.
+\end{Answer}
