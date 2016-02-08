@@ -1,0 +1,58 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Let \( \sequence{\vec{\beta}_1,\vec{\beta}_2,\vec{\beta}_3} \)
+be a basis for a vector space.
+\Question Show that 
+\( \sequence{c_1\vec{\beta}_1,c_2\vec{\beta}_2,c_3\vec{\beta}_3} \)
+is a basis when \( c_1, c_2, c_3\neq 0 \).
+What if at least one \( c_i \) is $0$?
+\Question Prove that
+\( \sequence{\vec{\alpha}_1,\vec{\alpha}_2,\vec{\alpha}_3} \)
+is a basis where \( \vec{\alpha}_i=\vec{\beta}_1+\vec{\beta}_i \).
+\end{Exercise}
+
+\begin{Answer}
+\Question To show that it is linearly independent, note that if
+\( d_1(c_1\vec{\beta}_1)+d_2(c_2\vec{\beta}_2)+d_3(c_3\vec{\beta}_3)
+               =\zero \)
+ then
+\( (d_1c_1)\vec{\beta}_1+(d_2c_2)\vec{\beta}_2+(d_3c_3)\vec{\beta}_3
+               =\zero \), which in turn 
+implies that each \( d_ic_i \) is zero.
+But with \( c_i\neq 0 \) that means that each \( d_i \) is zero.
+Showing that it spans the space is much the same; 
+because $\sequence{\vec{\beta}_1,\vec{\beta}_2,\vec{\beta}_3}$
+is a basis, and so spans the space, we can for any $\vec{v}$ write  
+\( \vec{v}=d_1\vec{\beta}_1+d_2\vec{\beta}_2+d_3\vec{\beta}_3 \),
+and then
+\( \vec{v}=(d_1/c_1)(c_1\vec{\beta}_1)
++(d_2/c_2)(c_2\vec{\beta}_2)+(d_3/c_3)(c_3\vec{\beta}_3) \).
+If any of the scalars are zero then the result is not a basis,
+because it is not linearly independent.
+\Question Showing that 
+$\sequence{2\vec{\beta}_1,\vec{\beta}_1+\vec{\beta}_2,
+\vec{\beta}_1+\vec{\beta}_3}$ is linearly independent is easy. 
+To show that it spans the space, assume that
+\( \vec{v}=d_1\vec{\beta}_1+d_2\vec{\beta}_2+d_3\vec{\beta}_3 \).
+Then, we can represent the same \( \vec{v} \) with respect to
+\( \sequence{2\vec{\beta}_1,\vec{\beta}_1+\vec{\beta}_2,
+                         \vec{\beta}_1+\vec{\beta}_3} \)
+           in this way
+           $\vec{v}=(1/2)(d_1-d_2-d_3)(2\vec{\beta}_1)
+           +d_2(\vec{\beta}_1+\vec{\beta}_2)+d_3(\vec{\beta}_1+\vec{\beta}_3)$.
+
+\end{Answer}

@@ -1,0 +1,80 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find the span of each set \textit{(that is, find restriction(s) on the coefficient of the polynomial)} and then find a basis for that span.
+\Question $\set{1+x,\;1+2x}$ in $\polyspace_2$
+\Question $\set{2-2x,\;3+4x^2}$ in $\polyspace_2$
+\end{Exercise}
+
+\begin{Answer}
+\Question Asking which $a_0+a_1x+a_2x^2$ can be expressed as
+           $c_1\cdot (1+x)+c_2\cdot (1+2x)$ 
+           gives rise to three linear equations,
+           describing the coefficients of $x^2$, $x$, and the constants.
+           \begin{equation*} 
+             \begin{linsys}{2}
+               c_1 &+ &c_2  &= &a_0 \\
+               c_1 &+ &2c_2 &= &a_1 \\
+                   &  &0    &= &a_2
+             \end{linsys}
+           \end{equation*}
+           Gauss's Method with back-substitution shows, 
+           provided that $a_2=0$, that $c_2=-a_0+a_1$
+           and $c_1=2a_0-a_1$.
+           Thus, with $a_2=0$, we can compute appropriate
+           $c_1$ and $c_2$ for any $a_0$ and $a_1$.
+           So the span is the entire set of linear polynomials
+           $\set{a_0+a_1x\suchthat a_0,a_1\in\Re}$.
+           Parametrizing that set 
+           $\set{a_0\cdot 1+a_1\cdot x\suchthat a_0,a_1\in\Re}$
+           suggests a basis $\sequence{1,x}$ 
+           (we've shown that it spans; checking linear independence is easy). 
+\Question With
+          \begin{equation*}
+            a_0+a_1x+a_2x^2
+            =c_1\cdot(2-2x)+c_2\cdot(3+4x^2)
+            =(2c_1+3c_2)+(-2c_1)x+(4c_2)x^2
+          \end{equation*}
+          we get this system.
+           \begin{equation*} 
+             \begin{linsys}{2}
+               2c_1  &+ &3c_2  &= &a_0 \\
+               -2c_1 &  &      &= &a_1 \\
+                     &  &4c_2  &= &a_2
+              \end{linsys}
+	\end{equation*}
+	and Gaussian elimination gives
+        \begin{equation*}     
+	\begin{linsys}{2}
+               2c_1  &+ &3c_2  &= &a_0\hfill\hbox{} \\
+                     &  &3c_2  &= &a_0+a_1\hfill\hbox{} \\
+                     &  &0     &= &(-4/3)a_0-(4/3)a_1+a_2
+              \end{linsys}
+           \end{equation*}
+           Thus, the only quadratic polynomials $a_0+a_1x+a_2x^2$ with 
+           associated $c$'s are the ones such that 
+           $0=(-4/3)a_0-(4/3)a_1+a_2$.
+           Hence the span is this.
+           \begin{equation*}
+             \set{(-a_1+(3/4)a_2)+a_1x+a_2x^2\suchthat a_1,a_2\in\Re}
+           \end{equation*}
+           Parametrizing gives
+           $\set{a_1\cdot (-1+x)+a_2\cdot ((3/4)+x^2)\suchthat a_1,a_2\in\Re}$,
+           which suggests $\sequence{-1+x,(3/4)+x^2}$
+           (checking that it is linearly independent is routine).
+
+\end{Answer}

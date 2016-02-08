@@ -1,0 +1,110 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find a basis for each of these subspaces of the space 
+$\polyspace_3$ of cubic polynomials. 
+\Question The subspace of cubic polynomials $p(x)$ 
+such that $p(7)=0$.
+\Question The subspace of polynomials $p(x)$ such
+that $p(7)=0$ and $p(5)=0$.
+\Question The subspace of polynomials $p(x)$ such
+that $p(7)=0$, $p(5)=0$, and~$p(3)=0$.
+\Question The space of polynomials $p(x)$ such
+that $p(7)=0$, $p(5)=0$, $p(3)=0$, and~$p(1)=0$.
+\end{Exercise}
+
+\begin{Answer}
+        \Question The subspace is this.
+          \begin{equation*}
+             \set{a_0+a_1x+a_2x^2+a_3x^3 \suchthat a_0+7a_1+49a_2+343a_3=0 }
+          \end{equation*}
+          Rewriting $a_0=-7a_1-49a_2-343a_3$ gives this.
+          \begin{equation*}
+             \set{(-7a_1-49a_2-343a_3)+a_1x+a_2x^2+a_3x^3 
+               \suchthat a_1,a_2,a_3\in\Re }
+          \end{equation*}
+          On breaking out the
+          parameters, this suggests \( \sequence{-7+x,-49+x^2,-343+x^3} \)  
+          for the basis (it is easily verified).
+        \Question The given subspace is the collection of cubics
+          $p(x)=a_0+a_1x+a_2x^2+a_3x^3$ such that $a_0+7a_1+49a_2+343a_3=0$
+          and $a_0+5a_1+25a_2+125a_3=0$.     
+          Gauss's Method 
+          \begin{equation*}
+            \begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+              a_0  &+  &5a_1  &+  &25a_2  &+  &125a_3  &=  &0    
+            \end{linsys}
+        \end{equation*}
+	gives
+	\begin{equation*}    
+	\begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+                   &   &-2a_1 &-  &24a_2  &-  &218a_3  &=  &0    
+            \end{linsys}
+          \end{equation*}
+          gives that $a_1=-12a_2-109a_3$ and that $a_0=35a_2+420a_3$.
+          Rewriting $(35a_2+420a_3)+(-12a_2-109a_3)x+a_2x^2+a_3x^3$
+          as $a_2\cdot(35-12x+x^2)+a_3\cdot(420-109x+x^3)$
+          suggests this for a basis  $\sequence{35-12x+x^2,420-109x+x^3}$.
+          The above shows that it spans the space.
+          Checking it is linearly independent is routine.
+          (\textit{Comment.} 
+          A worthwhile check is to verify that both polynomials in the
+          basis have both seven and five as roots.)
+        \Question Here there are three conditions on the cubics,
+          that $a_0+7a_1+49a_2+343a_3=0$, that $a_0+5a_1+25a_2+125a_3=0$,
+          and that $a_0+3a_1+9a_2+27a_3=0$.
+          Gauss's Method 
+          \begin{equation*}
+            \begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+              a_0  &+  &5a_1  &+  &25a_2  &+  &125a_3  &=  &0  \\    
+              a_0  &+  &3a_1  &+  &9a_2   &+  &27a_3   &=  &0    
+            \end{linsys}
+        \end{equation*}
+        gives
+        \begin{equation*}       
+	\begin{linsys}{4}
+              a_0  &+  &7a_1  &+  &49a_2  &+  &343a_3  &=  &0  \\
+                   &   &-2a_1 &-  &24a_2  &-  &218a_3  &=  &0  \\    
+                   &   &      &   &8a_2   &+  &120a_3  &=  &0    
+            \end{linsys}
+          \end{equation*}
+          yields the single free variable $a_3$, with 
+          $a_2=-15a_3$, $a_1=71a_3$, and $a_0=-105a_3$.
+          The parametrization is this.
+          \begin{multline*} 
+            \set{(-105a_3)+(71a_3)x+(-15a_3)x^2+(a_3)x^3\suchthat a_3\in\Re} \\
+            =
+            \set{a_3\cdot(-105+71x-15x^2+x^3)\suchthat a_3\in\Re}
+          \end{multline*}
+          Therefore, a natural candidate for the basis is 
+          $\sequence{-105+71x-15x^2+x^3}$.
+          It spans the space by the work above.
+          It is clearly linearly independent because it is a one-element
+          set (with that single element not the zero object of the space).
+          Thus, any cubic through the three points $(7,0)$, $(5,0)$, and
+          $(3,0)$ is a multiple of this one.
+          (\textit{Comment.}
+          As in the prior question, 
+          a worthwhile check is to verify that plugging seven, five, and
+          three into this polynomial yields zero each time.)
+\Question This is the trivial subspace of $\polyspace_3$.
+          Thus, the  basis is empty $\sequence{}$.
+
+\end{Answer}

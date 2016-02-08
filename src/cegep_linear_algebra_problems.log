@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  7 FEB 2016 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  7 FEB 2016 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1390,8 +1390,64 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20] (./vector_spaces/basis/index.tex (./vector_spaces/basis/jh2.tex)
-(./vector_spaces/basis/jh1.tex) (./vector_spaces/basis/yl1.tex))
-(./vector_spaces/dimension/index.tex (./vector_spaces/dimension/yl1.tex
+(./vector_spaces/basis/jh1.tex) (./vector_spaces/basis/jh3.tex)
+(./vector_spaces/basis/jh4.tex) (./vector_spaces/basis/jh5.tex)
+(./vector_spaces/basis/jh6.tex) (./vector_spaces/basis/jh7.tex
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+[]\OT1/cmr/m/n/10 Parametrize $[]$ to get
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+[]$\OT1/cmr/m/n/10 , which sug-gests us-ing the
+ []
+
+
+Overfull \hbox (29.63034pt too wide) detected at line 69
+[] \OT1/cmr/m/n/10 = []
+ []
+
+) (./vector_spaces/basis/jh8.tex
+Overfull \hbox (65.0471pt too wide) detected at line 51
+\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 a[]x \OT1/cmr/m/n/10 + 
+\OML/cmm/m/it/10 a[]x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c[] \OMS/cmsy/m/n/10
+ ^^A \OT1/cmr/m/n/10 (2 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 
+x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 c[] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 
+(3 + 4\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) = (2\OML/cmm/m/it/10 c[] \OT1/cmr/m
+/n/10 + 3\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 ) + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/
+m/n/10 2\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 x \OT1/cmr/m/n/10
+ + (4\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 x[]
+ []
+
+
+Overfull \hbox (53.18634pt too wide) in paragraph at lines 74--79
+\OT1/cmr/m/n/10 Parametrizing gives $[]$,
+ []
+
+) (./vector_spaces/basis/jh9.tex
+Overfull \hbox (8.05891pt too wide) detected at line 34
+[]
+ []
+
+
+Overfull \hbox (31.16432pt too wide) detected at line 39
+[]
+ []
+
+
+Overfull \hbox (4.85437pt too wide) detected at line 95
+ []$[]  []$ 
+ []
+
+) (./vector_spaces/basis/yl1.tex) (./vector_spaces/basis/jh10.tex)
+(./vector_spaces/basis/jh11.tex))
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21] (./vector_spaces/dimension/index.tex (./vector_spaces/dimension/yl1.tex
 Overfull \hbox (22.8354pt too wide) detected at line 18
 \OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = []
  []
@@ -1403,12 +1459,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21] [22
+[22
 
 ]
 Appendix A.
-[23pdfTeX warning (ext4): destination with the same identifier (name{Question.1
-.1.1.1}) has been already used, duplicate ignored
+[23
+
+pdfTeX warning (ext4): destination with the same identifier (name{Question.1.1.
+1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2018,7 +2076,7 @@ n.5.5.1.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.144 
-      ] (./references.tex
+      ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -2030,14 +2088,58 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 \onecolumn
-              pdfTeX warning (ext4): destination with the same identifier (name
-{Question.5.5.3.1}) has been already used, duplicate ignored
+l.144 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.5.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.9.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      ] (./references.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.5.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \onecolumn
-              ] [42
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.5.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              ] [44
 
 
 ]
@@ -2046,7 +2148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--12
  Al-ge-bra\OT1/cmr/m/n/10 , [][]$https : / / github . com / APEXCalculus /
  []
 
-) (./cegep_linear_algebra_problems.ind [43] [44
+) (./cegep_linear_algebra_problems.ind [45] [46
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
@@ -2061,13 +2163,13 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 16777 strings out of 493054
- 299401 string characters out of 6140585
- 1177587 words of memory out of 5000000
+ 16827 strings out of 493054
+ 300262 string characters out of 6140585
+ 1271592 words of memory out of 5000000
  18820 multiletter control sequences out of 15000+600000
  13712 words of font info for 54 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
- 45i,15n,44p,10381b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,16n,44p,10381b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
@@ -2082,10 +2184,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (47 pages, 395197 bytes).
+Output written on cegep_linear_algebra_problems.pdf (49 pages, 411676 bytes).
 PDF statistics:
- 1678 PDF objects out of 1728 (max. 8388607)
- 1596 compressed objects within 16 object streams
- 884 named destinations out of 1000 (max. 500000)
+ 1733 PDF objects out of 2073 (max. 8388607)
+ 1648 compressed objects within 17 object streams
+ 916 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

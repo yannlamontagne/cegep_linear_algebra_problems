@@ -1,0 +1,82 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{polynomial space}
+\index{matrix space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find a basis for each of the following.
+\Question The subspace $\set{a_2x^2+a_1x+a_0\suchthat a_2-2a_1=a_0}$ 
+          of $\polyspace_2$
+\Question The space of three component vectors whose first and second
+          components add to zero
+\Question This subspace of the $\nbyn{2}$ matrices
+          \begin{equation*}
+            \set{\begin{mat}
+                   a  &b  \\
+                   0  &c  
+                 \end{mat} \suchthat c-2b=0}
+          \end{equation*}
+
+\end{Exercise}
+
+\begin{Answer}
+For each, many answers are possible.
+\Question One way to proceed is to parametrize by
+            expressing the $a_2$ as a combination of the other two
+            $a_2=2a_1+a_0$.
+            Then
+            $a_2x^2+a_1x+a_0$ is $(2a_1+a_0)x^2+a_1x+a_0$ and
+            \begin{multline*} 
+              \set{(2a_1+a_0)x^2+a_1x+a_0\suchthat a_1,a_0\in\Re}          \\
+              =\set{a_1\cdot(2x^2+x)+a_0\cdot(x^2+1)\suchthat a_1,a_0\in\Re}
+            \end{multline*}
+            suggests 
+            $\sequence{2x^2+x,x^2+1}$.
+            This only shows that 
+            it spans, but checking that it is linearly independent
+            is routine.
+\Question Parametrize $\set{\rowvec{a  &b  &c}\suchthat a+b=0}$ 
+            to get $\set{\rowvec{-b &b &c}\suchthat b,c\in\Re}$, which suggests
+            using the sequence $\sequence{\rowvec{-1 &1 &0},\rowvec{0 &0 &1}}$.
+            We've shown that it spans, and checking that it is linearly 
+            independent is easy.
+\Question Rewriting
+            \begin{equation*}
+              \set{\begin{mat}
+                     a  &b  \\
+                     0  &2b
+                   \end{mat}\suchthat a,b\in\Re}
+              =\set{a\cdot\begin{mat}[r]
+                     1  &0  \\
+                     0  &0 
+                   \end{mat}
+                  +b\cdot\begin{mat}[r]
+                           0  &1  \\
+                           0  &2
+                          \end{mat} \suchthat a,b\in\Re}
+            \end{equation*}
+            suggests this for the basis.
+            \begin{equation*}
+              \sequence{\begin{mat}[r]
+                          1  &0  \\
+                          0  &0
+                        \end{mat},
+                        \begin{mat}[r]
+                          0  &1  \\
+                          0  &2
+                        \end{mat}}
+            \end{equation*}
+
+\end{Answer}

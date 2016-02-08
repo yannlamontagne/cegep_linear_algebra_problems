@@ -1,0 +1,64 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Represent the vector with respect to the given basis.
+\Question \( \colvec[r]{1 \\ 2} \),
+        \( B=\sequence{\colvec[r]{1 \\ 1},\colvec[r]{-1 \\ 1}}\subseteq\Re^2 \)
+\Question \( x^2+x^3 \),
+        \( D=\sequence{1,\;1+x,\;1+x+x^2,\;1+x+x^2+x^3}\subseteq\polyspace_3 \)
+%\Question \( \colvec[r]{0 \\ -1 \\ 0 \\ 1} \),
+%       \( \stdbasis_4\subseteq\Re^4 \)
+\end{Exercise}
+
+\begin{Answer}
+\Question We solve
+          \begin{equation*}
+            c_1\colvec[r]{1 \\ 1}
+            +c_2\colvec[r]{-1 \\ 1}
+            =\colvec[r]{1 \\ 2}
+          \end{equation*}
+          with
+          \begin{equation*}
+             \begin{amat}[r]{2}
+               1  &-1  &1  \\
+               1  &1   &2
+             \end{amat}
+        \end{equation*}
+	and Gaussian elimination gives
+	\begin{equation*}
+             \begin{amat}[r]{2}
+               1  &-1  &1  \\
+               0  &2   &1
+             \end{amat}
+          \end{equation*}
+          and conclude that \( c_2=1/2 \) and so \( c_1=3/2 \).
+          Thus, the representation is this.
+          \begin{equation*}
+            \rep{\colvec[r]{1 \\ 2}}{B}=\colvec[r]{3/2 \\ 1/2}_B
+          \end{equation*}
+\Question The relationship
+           $c_1\cdot(1)+c_2\cdot(1+x)+c_3\cdot(1+x+x^2)+c_4\cdot(1+x+x^2+x^3)
+             =x^2+x^3$
+           is easily solved by inspection to give that $c_4=1$, $c_3=0$, $c_2=-1$, and
+           $c_1=0$.
+           \begin{equation*}
+              \rep{x^2+x^3}{D}=\colvec[r]{0 \\ -1 \\ 0 \\ 1}_D
+           \end{equation*} 
+%        \Question \( \rep{\colvec[r]{0 \\ -1 \\ 0 \\ 1}}{\stdbasis_4}
+%                     =\colvec[r]{0 \\ -1 \\ 0 \\ 1}_{\stdbasis_4} \)
+
+\end{Answer}
