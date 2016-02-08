@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  7 FEB 2016 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  8 FEB 2016 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -151,17 +151,17 @@ Package: amscd 1999/11/29 v2.0
 \minCDarrowwidth=\dimen125
 )
 \boxofmathplus=\box28
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 42.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 43.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1137,7 +1137,11 @@ Underfull \hbox (badness 5388) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Introduction to Vec-tors and
  []
 
-(./vector_geometry/introduction_to_vectors_and_lines/ph.tex))
+(./vector_geometry/introduction_to_vectors_and_lines/sm1.tex)
+(./vector_geometry/introduction_to_vectors_and_lines/sm2.tex)
+(./vector_geometry/introduction_to_vectors_and_lines/sm3.tex)
+(./vector_geometry/introduction_to_vectors_and_lines/sm4.tex)
+(./vector_geometry/introduction_to_vectors_and_lines/sm5.tex))
 (./vector_geometry/dot_product_and_projections/index.tex
 (./vector_geometry/dot_product_and_projections/yl1.tex))
 (./vector_geometry/cross_product_and_planes/index.tex
@@ -1938,12 +1942,6 @@ n.5.3.3.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.144 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.3.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.144 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1952,7 +1950,13 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.3.5.1}) has been already used, duplicate ignored
+.3.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.3.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2163,10 +2167,10 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 16827 strings out of 493054
- 300262 string characters out of 6140585
- 1271592 words of memory out of 5000000
- 18820 multiletter control sequences out of 15000+600000
+ 16848 strings out of 493054
+ 300831 string characters out of 6140585
+ 1275268 words of memory out of 5000000
+ 18823 multiletter control sequences out of 15000+600000
  13712 words of font info for 54 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  45i,16n,44p,10381b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2184,10 +2188,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (49 pages, 411676 bytes).
+Output written on cegep_linear_algebra_problems.pdf (49 pages, 413130 bytes).
 PDF statistics:
- 1733 PDF objects out of 2073 (max. 8388607)
- 1648 compressed objects within 17 object streams
- 916 named destinations out of 1000 (max. 500000)
+ 1744 PDF objects out of 2073 (max. 8388607)
+ 1659 compressed objects within 17 object streams
+ 921 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
