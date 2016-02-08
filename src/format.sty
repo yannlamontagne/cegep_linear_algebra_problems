@@ -6,6 +6,7 @@
 % HISTORY
 % 2001-Jun-08 Jim Hefferon     Cleaned up.
 % 2016        Yann Lamontagne  Modified for CEGEP Linear Algebra Problems
+% 2016        Sylvain Muise    Added the environment parameqns for parametric equations
 
 
 % input all the math packages
@@ -136,6 +137,16 @@
 % Usage: \dcolvec[2]{1.23 \\ 4.56} where the optional argument is the number
 % of decimal places.
 \newcommand{\dcolvec}[2][-1]{\left(\begin{array}{@{}D{.}{.}{#1}@{}} #2 \end{array}\right)}
+
+% An environment for parametric equations of lines in R^3
+% Ex: \begin{parameqns} 
+%       x &=& 1+3t \\
+%       y &=& 5-6t \\
+%       z &=& -2+5t
+%     \end{parameqns}
+\newenvironment{parameqns}
+    {\left\{\begin{array}{@{\extracolsep{-6pt}}rcl}}
+    {\end{array}\right.}
 
 
 
@@ -374,5 +385,7 @@
   \setlength{\fboxrule}{0.2pt}%
   \framebox{#1}}}
 % \newcommand{\highlight}[1]{\makebox[\widthof{#1}]{\begin{tikzpicture}[unit=1em]#1 \draw[fill=lightgray, ultra thin, lightgray, opacity=0.6] (0,0) rectangle (1,1); \end{tikzpicture}}}
+
+
 
 \endinput
