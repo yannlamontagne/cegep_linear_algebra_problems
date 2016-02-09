@@ -1,302 +1,297 @@
-  \item 
-    Find one vector $\vec{v}$ that will make each into a basis
-    for the space.
+  \recommended \item \label{exer:DimDomToR}
+    Where \( S \) is a set, the functions
+    \( \map{f}{S}{\Re} \) form a vector space under the natural operations:
+    the sum $f+g$ is the function given by 
+    \( f+g\,(s)=f(s)+g(s) \) and the scalar product is
+    \( r\cdot f \, (s)=r\cdot f(s) \).
+    What is the dimension of the space resulting for each domain?
     \begin{exparts*}
-      \partsitem $\sequence{\colvec[r]{1 \\ 1},\vec{v}}$ in $\Re^2$
-      \partsitem $\sequence{\colvec[r]{1 \\ 1 \\ 0},
-                            \colvec[r]{0 \\ 1 \\ 0},\vec{v}}$ in $\Re^3$
-      \partsitem $\sequence{x,1+x^2,\vec{v}}$ in $\polyspace_2$
-    \end{exparts*} 
+      \partsitem \( S=\set{1} \)
+      \partsitem \( S=\set{1,2} \)
+      \partsitem \( S=\set{1,\ldots,n} \)
+    \end{exparts*}
     \begin{answer}
-      Each forms a linearly independent set if we omit $\vec{v}$.
-      To preserve linear independence, we must expand the span of each.
-      That is, we must determine the span of each (leaving $\vec{v}$ out),
-      and then pick a $\vec{v}$ lying outside of that span.
-      Then to finish, we must check that the result spans the entire given
-      space.
-      Those checks are routine.
-      \begin{exparts}
-        \partsitem Any vector that is not a multiple of the given one, 
-          that is, any vector that is not on the line $y=x$ will do here.
-          One is $\vec{v}=\vec{e}_1$.
-        \partsitem By inspection, we notice that the vector $\vec{e}_3$ is
-          not in the span of the set of the two given vectors.
-          The check that the resulting set is a basis for $\Re^3$ is 
-          routine.
-        \partsitem For any member of the span 
-          $\set{c_1\cdot(x)+c_2\cdot(1+x^2)\suchthat c_1,c_2\in\Re}$,
-          the coefficient of $x^2$ equals the constant term.
-          So we expand the span if we add a quadratic without this property,
-          say, $\vec{v}=1-x^2$.
-          The check that the result is a basis for $\polyspace_2$ is easy.  
-      \end{exparts}
-    \end{answer}
-  \recommended \item  
-    Where
-    \( \sequence{\vec{\beta}_1,\dots,\vec{\beta}_n } \)
-    is a basis, show that in this equation
-    \begin{equation*}
-       c_1\vec{\beta}_1+\dots+c_k\vec{\beta}_k
-       =
-       c_{k+1}\vec{\beta}_{k+1}+\dots+c_n\vec{\beta}_n
-    \end{equation*}
-    each of the \( c_i \)'s is zero.
-    Generalize.
-    \begin{answer}
-      To show that each scalar is zero, simply subtract
-      \( c_1\vec{\beta}_1+\dots+c_k\vec{\beta}_k
-          -c_{k+1}\vec{\beta}_{k+1}-\dots-c_n\vec{\beta}_n=\zero \).
-      The obvious generalization is that in any equation involving only the
-      \( \vec{\beta} \)'s, and in which each \( \vec{\beta} \) appears only
-      once, each scalar is zero.
-      For instance, an equation with a combination of 
-      the even-indexed basis vectors
-      (i.e., $\vec{\beta}_2$, $\vec{\beta}_4$, etc.) on the right and the
-      odd-indexed basis vectors on the left also gives the conclusion that
-      all of the coefficients are zero. 
+      \begin{exparts*}
+        \partsitem One
+        \partsitem Two
+        \partsitem \( n \)
+      \end{exparts*}  
     \end{answer}
   \item  
-    A basis contains some of the vectors from a vector space; can it 
-    contain them all?
+    Show that 
+    any set of four vectors in \( \Re^2 \) is linearly dependent.
     \begin{answer}
-      No; no linearly independent set contains the zero vector.
+      Apply \nearbycorollary{cor:NoLiSetGreatDim}.
     \end{answer}
   \item  
-    \nearbytheorem{th:BasisIffUniqueRepWRT} shows that, with respect to a
-    basis, every linear combination is unique.
-    If a subset is not a basis, can linear combinations be not unique?
-    If so, must they be?
+    Show that
+    \( \sequence{\vec{\alpha}_1,\vec{\alpha}_2,\vec{\alpha}_3}\subset\Re^3 \)
+    is a basis if and only if there is no plane through the origin containing
+    all three vectors.
     \begin{answer}
-      Here is a subset of $\Re^2$ that is not a basis, and two different
-      linear combinations of its elements that sum to the same vector.
-      \begin{equation*}
-        \set{\colvec[r]{1 \\ 2},\colvec[r]{2 \\ 4}}
-        \qquad
-        2\cdot\colvec[r]{1 \\ 2}+0\cdot\colvec[r]{2 \\ 4}
-        =0\cdot\colvec[r]{1 \\ 2}+1\cdot\colvec[r]{2 \\ 4}
-      \end{equation*}
-      Thus, when a subset is not a basis, it can be the case that its
-      linear combinations are not unique.
+      A plane has the
+      form $\set{\vec{p}+t_1\vec{v}_1+t_2\vec{v}_2\suchthat t_1,t_2\in\Re}$.
+      (The first chapter also calls this a `$2$-flat', and contains
+      a discussion of why this is equivalent to the
+      description often taken in Calculus as the set of points $(x,y,z)$
+      subject to a condition of the form $ax+by+cz=d$).
+      When the plane passes through the origin we can take the particular
+      vector $\vec{p}$ to be $\zero$.
+      Thus, in the language we have developed in this chapter, a plane through
+      the origin is the span of a set of two vectors.
 
-      But just because a subset is not a basis does not imply that its
-      combinations must be not unique.
-      For instance, this set 
-      \begin{equation*}
-        \set{\colvec[r]{1 \\ 2}}
-      \end{equation*}
-      does have the property that
-      \begin{equation*}
-        c_1\cdot\colvec[r]{1 \\ 2}
-        =
-        c_2\cdot\colvec[r]{1 \\ 2}
-      \end{equation*}
-      implies that $c_1=c_2$.
-      The idea here is that this subset fails to be a basis because it fails
-      to span the space; the proof of the theorem establishes that
-      linear combinations are unique if and only if the subset is linearly
+      Now for the statement.
+      Asserting that the three are not coplanar is the same as asserting that
+      no vector lies in the span of the other two\Dash no vector is a linear
+      combination of the other two.
+      That's simply an assertion that the three-element set is linearly
       independent.
-     \end{answer}
-  \recommended \item
-    A square matrix is \definend{symmetric}\index{matrix!symmetric}%
-    \index{symmetric matrix} 
-    if for all indices \( i \) and
-    \( j \), entry \( i,j \) equals entry \( j,i \).
+      By \nearbycorollary{cor:NVecsRNSpanIffLI}, that's equivalent to an
+      assertion that the set is a basis for $\Re^3$ (more precisely, 
+      any sequence made from the set's elements is a basis). 
+    \end{answer}
+  \item 
     \begin{exparts}
-      \partsitem Find a basis for the vector space of
-        symmetric \( \nbyn{2} \) matrices.
-      \partsitem Find a basis for the space of symmetric \( \nbyn{3} \)
-        matrices.
-      \partsitem Find a basis for the space of symmetric \( \nbyn{n} \)
-        matrices.
+      \partsitem Prove that any subspace of a finite dimensional space
+        has a basis. 
+      \partsitem Prove that any subspace of a finite dimensional space is 
+        finite dimensional.
     \end{exparts}
     \begin{answer}
+      Let the space $V$ be finite dimensional.
+      Let $S$ be a subspace of $V$.
       \begin{exparts}
-        \partsitem Describing the vector space as
-          \begin{equation*}
-             \set{\begin{mat}
-                     a  &b  \\
-                     b  &c
-                  \end{mat}  \suchthat a,b,c\in\Re}
-          \end{equation*}
-          suggests this for a basis.
-          \begin{equation*}
-            \sequence{
-              \begin{mat}[r]
-                1  &0  \\
-                0  &0
-              \end{mat},
-              \begin{mat}[r]
-                0  &0  \\
-                0  &1
-              \end{mat},
-              \begin{mat}[r]
-                0  &1  \\
-                1  &0
-              \end{mat}  }
-          \end{equation*}
-          Verification is easy.
-        \partsitem This is one possible basis.
-          \begin{equation*}
-            \sequence{
-              \begin{mat}[r]
-                1  &0  &0  \\
-                0  &0  &0  \\
-                0  &0  &0
-              \end{mat},
-              \begin{mat}[r]
-                0  &0  &0  \\
-                0  &1  &0  \\
-                0  &0  &0
-              \end{mat},
-              \begin{mat}[r]
-                0  &0  &0  \\
-                0  &0  &0  \\
-                0  &0  &1
-              \end{mat},
-              \begin{mat}[r]
-                0  &1  &0  \\
-                1  &0  &0  \\
-                0  &0  &0
-              \end{mat},
-              \begin{mat}[r]
-                0  &0  &1  \\
-                0  &0  &0  \\
-                1  &0  &0
-              \end{mat},
-              \begin{mat}[r]
-                0  &0  &0  \\
-                0  &0  &1  \\
-                0  &1  &0
-              \end{mat}  }
-          \end{equation*}
-         \partsitem As in the prior two questions, we can form a basis from two
-           kinds of  matrices.
-           First are the matrices with a single one on the diagonal and all
-           other entries zero (there are \( n \) of those matrices).
-           Second are the matrices with two opposed off-diagonal entries
-           are ones and all other entries are zeros.
-           (That is, all entries in $M$ are zero except that 
-           $m_{i,j}$ and $m_{j,i}$ are one.) 
-      \end{exparts}  
+        \partsitem The empty set is a linearly independent subset of $S$.
+          By \nearbycorollary{cor:LIExpBas}, it can be expanded to a basis
+          for the vector space $S$. 
+        \partsitem Any basis for the subspace $S$ is a linearly independent 
+          set in the superspace $V$.
+          Hence it can be expanded to a basis for the superspace, which is
+          finite dimensional.
+          Therefore it has only finitely many members.  
+      \end{exparts}
     \end{answer}
-  \recommended \item  
-     We can show that every basis for $\Re^3$ contains the same
-     number of vectors.
-     \begin{exparts}
-       \partsitem Show that no linearly independent subset of $\Re^3$
-          contains more than three vectors.
-       \partsitem Show that 
-          no spanning subset of $\Re^3$ contains fewer than three vectors.
-          \textit{Hint:} 
-          recall how to calculate the span of a set and show that
-          this method 
-          cannot yield all of $\Re^3$ when we apply it to fewer than
-          three vectors.
-     \end{exparts}
-     \begin{answer}
-       \begin{exparts}
-         \partsitem Any four vectors from $\Re^3$ are linearly related because
-           the vector equation
-           \begin{equation*}
-             c_1\colvec{x_1 \\ y_1 \\ z_1}
-             +c_2\colvec{x_2 \\ y_2 \\ z_2}
-             +c_3\colvec{x_3 \\ y_3 \\ z_3}
-             +c_4\colvec{x_4 \\ y_4 \\ z_4}
-             =\colvec[r]{0 \\ 0 \\ 0}
-           \end{equation*}
-           gives rise to a linear system
-           \begin{equation*}
-             \begin{linsys}{4}
-                x_1c_1  &+  &x_2c_2  &+  &x_3c_3  &+  &x_4c_4  &=  &0 \\
-                y_1c_1  &+  &y_2c_2  &+  &y_3c_3  &+  &y_4c_4  &=  &0 \\
-                z_1c_1  &+  &z_2c_2  &+  &z_3c_3  &+  &z_4c_4  &=  &0
-             \end{linsys}
-           \end{equation*}
-           that is homogeneous (and so has a solution) and has 
-           four unknowns but only three equations,
-           and therefore has nontrivial solutions.
-           (Of course, this argument applies to any subset of $\Re^3$ 
-           with four or more vectors.) 
-         \partsitem We shall do just the two-vector case.
-           Given $x_1$, \ldots, $z_2$, 
-           \begin{equation*}
-             S=\set{\colvec{x_1 \\ y_1 \\ z_1},
-             \colvec{x_2 \\ y_2 \\ z_2}} 
-           \end{equation*}
-           to decide which vectors
-           \begin{equation*}
-             \colvec{x \\ y \\ z}
-           \end{equation*}
-           are in the span of $S$, set up 
-           \begin{equation*}
-             c_1\colvec{x_1 \\ y_1 \\ z_1}
-             +c_2\colvec{x_2 \\ y_2 \\ z_2}
-             =\colvec{x \\ y \\ z}
-           \end{equation*}
-           and row reduce the resulting system.
-           \begin{equation*}
-             \begin{linsys}{2}
-                x_1c_1  &+  &x_2c_2   &=  &x \\
-                y_1c_1  &+  &y_2c_2   &=  &y \\
-                z_1c_1  &+  &z_2c_2   &=  &z
-             \end{linsys}
-           \end{equation*}
-           There are two
-           variables $c_1$ and $c_2$ but three equations, so 
-           when Gauss's Method finishes, on the bottom
-           row there will be some relationship of the form
-           $0=m_1x+m_2y+m_3z$. 
-           Hence, vectors in the span of the two-element set $S$
-           must satisfy some restriction.
-           Hence the span is not all of $\Re^3$.
-       \end{exparts}  
+  \item  
+    Where is the finiteness of \( B \) used in
+    \nearbytheorem{th:AllBasesSameSize}?
+    \begin{answer}
+      It ensures that we exhaust the \( \vec{\beta} \)'s.
+      That is, it justifies the first sentence of the last paragraph. 
+    \end{answer}
+  \recommended \item
+    Prove that if \( U \) and \( W \) are both three-dimensional
+    subspaces of \( \Re^5 \) then \( U\intersection W \) is non-trivial.
+    Generalize.
+    \begin{answer}
+       Let \( B_U \) be a basis for \( U \) and let \( B_W \)
+       be a basis for \( W \).
+       Consider the concatenation of the two basis sequences.
+       If there is a repeated element then the intersection
+       \( U\intersection W \) is nontrivial.
+       Otherwise, 
+       the set \( B_U\union B_W \) is linearly dependent as it is a
+       six member subset of the five-dimensional space \( \Re^5 \).
+       In either case some member of \( B_W \) is in the span of \( B_U \), and
+       thus \( U\intersection W \) is more than just the trivial space
+       \( \set{\zero\,} \).
+
+       Generalization:
+       if \( U,W \) are subspaces of a vector space of dimension \( n \) and
+       if \( \dim(U)+\dim(W)>n \) then they have a nontrivial
+       intersection.  
     \end{answer}
   \item 
-    One of the exercises in the Subspaces subsection shows that the set 
-    \begin{equation*}
-      \set{\colvec{x \\ y \\ z}\suchthat x+y+z=1}
-    \end{equation*}
-    is a vector space under these operations.
-    \begin{equation*}
-      \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
-      =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
-      \qquad
-      r\colvec{x \\ y \\ z}=\colvec{rx-r+1 \\ ry \\ rz}
-    \end{equation*}
-    Find a basis.
+    A basis for a space consists of elements of that space.
+    So we are naturally led to how the property `is a basis' 
+    interacts with operations $\subseteq$ and $\cap$ and $\cup$.
+    (Of course, a basis is actually a sequence in that it is ordered, 
+    but there is a natural extension of these operations.)
+    \begin{exparts}
+      \partsitem Consider first how bases might be related by $\subseteq$.
+        Assume that \( U,W \) are subspaces of some vector space and
+        that \( U\subseteq W \).
+        Can there exist bases \( B_U \) for \( U \) and \( B_W \) for \( W \)
+        such that \( B_U\subseteq B_W \)?
+        Must such bases exist?
+
+        For any basis \( B_U \) for \( U \), must there be a basis \( B_W \)
+        for \( W \) such that \( B_U\subseteq B_W \)?
+
+        For any basis \( B_W \) for \( W \), must there be a basis \( B_U \)
+        for \( U \) such that \( B_U\subseteq B_W \)?
+
+        For any bases \( B_U, B_W \) for \( U \) and \( W \), must  \( B_U \)
+        be a subset of \( B_W \)?
+      \partsitem Is the $\cap$ of bases a basis?
+        For what space?
+      \partsitem Is the $\cup$ of bases a basis?
+        For what space?
+      \partsitem What about the complement operation?
+     \end{exparts}
+     (\textit{Hint.} 
+     Test any conjectures against some subspaces of \( \Re^3 \).)
+     \begin{answer}
+       First, note that a set is a basis for some space if and only
+       if it is linearly independent, because in that case 
+       it is a basis for its own span.
+       \begin{exparts}
+         \partsitem The answer to the question in the second paragraph
+            is ``yes''
+           (implying ``yes'' answers for both questions in the first
+           paragraph).
+           If \( B_U \) is a basis for \( U \) then
+           \( B_U \) is a linearly independent subset of \( W \).
+           Apply \nearbycorollary{cor:LIExpBas} to expand it to a basis for 
+           \( W \).
+           That is the desired \( B_W \).
+
+           The answer to the question in the third paragraph is ``no'', which
+           implies a ``no'' answer to the question of the fourth paragraph.
+           Here is an example of a basis for a superspace with no sub-basis
+           forming a basis for a subspace: in \( W=\Re^2 \), consider the
+           standard basis \( \stdbasis_2 \).
+           No sub-basis of $\stdbasis_2$ forms a basis for the 
+           subspace \( U \) 
+           of $\Re^2$ that is the line \( y=x \).
+         \partsitem It is a basis (for its span) because the
+           intersection of linearly
+           independent sets is linearly independent (the intersection is a
+           subset of each of the linearly independent sets).
+
+           It is not, however, a basis for the intersection of the spaces.
+           For instance, these are bases for \( \Re^2 \):
+           \begin{equation*}
+             B_1=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 1}}
+             \quad\text{and}\quad
+             B_2=\sequence[r]{\colvec{2 \\ 0},\colvec[r]{0 \\ 2}}
+           \end{equation*}
+           and \( \Re^2\intersection\Re^2=\Re^2 \), but
+           \( B_1\intersection B_2 \) is empty.
+           All we can say is that the $\cap$ of the bases is a basis
+           for a subset of the intersection of the spaces.
+         \partsitem The $\cup$ of bases need not be a basis: in \( \Re^2 \)
+           \begin{equation*}
+             B_1=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{1 \\ 1}}
+             \quad\text{and}\quad
+             B_2=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 2}}
+           \end{equation*}
+           \( B_1\union B_2 \) is not linearly independent.
+           A necessary and sufficient condition for a $\cup$ of two bases
+           to be a basis 
+           \begin{equation*}
+             B_1\union B_2 \text{ is linearly independent }
+             \quad\iff\quad
+             \spanof{B_1\intersection B_2}=\spanof{B_1}\intersection
+                                            \spanof{B_2}
+           \end{equation*}
+           it is easy enough to prove (but perhaps hard to apply).
+         \partsitem The complement of a basis cannot be a basis
+           because it contains the zero vector.
+       \end{exparts}  
+     \end{answer}
+  \recommended \item 
+    Consider how `dimension' interacts with `subset'.
+    Assume \( U \) and \( W \) are both subspaces of some vector space, and
+    that \( U\subseteq W \).
+    \begin{exparts}
+      \partsitem Prove that \( \dim (U)\leq\dim (W) \).
+      \partsitem Prove that equality of dimension holds
+        if and only if \( U=W \).
+      \partsitem Show that the prior item does not hold if they are 
+        infinite-dimensional.
+    \end{exparts}
     \begin{answer}
-      We have (using these odball operations with care)
-      \begin{multline*}
-        \set{\colvec{1-y-z \\ y \\ z}\suchthat y,z\in\Re}
-         =\set{\colvec{-y+1 \\ y \\ 0}
-               +\colvec{-z+1 \\ 0 \\ z}
-              \suchthat y,z\in\Re}                           \\
-         =\set{y\cdot\colvec{0 \\ 1 \\ 0}
-               +z\cdot\colvec{0 \\ 0 \\ 1}
-              \suchthat y,z\in\Re}
-      \end{multline*}
-      and so a natural candidate for a basis is this.
+       \begin{exparts}
+          \partsitem A basis for \( U \) is a linearly independent set
+            in \( W \)
+            and so can be expanded via \nearbycorollary{cor:LIExpBas}
+            to a basis for \( W \).
+            The second basis has at least as many members as the first.
+          \partsitem One direction is clear:~if \( V=W \) then they have the 
+            same dimension.
+            For the converse, let \( B_U \) be a basis for \( U \).
+            It is a linearly independent subset of \( W \) and so can be
+            expanded to a basis for \( W \).
+            If \( \dim(U)=\dim(W) \) then this basis for \( W \) has no more
+            members than does \( B_U \) and so equals \( B_U \).
+            Since \( U \) and \( W \) have the same bases, they are equal.
+          \partsitem Let \( W \) be the space of finite-degree polynomials and
+            let \( U \) be the subspace of polynomials that have only
+            even-powered terms.
+            \begin{equation*}
+               \set{a_0+a_1x^2+a_2x^4+\dots+a_nx^{2n}\suchthat
+                a_0,\ldots,a_n\in\Re} 
+            \end{equation*}
+            Both spaces have infinite dimension, but \( U \) is a proper
+            subspace.
+       \end{exparts}  
+     \end{answer}
+
+
+  \puzzle \item 
+    \cite{Wohascum47}
+    For any vector $\vec{v}$ in $\Re^n$ and any permutation $\sigma$
+    of the numbers $1$, $2$, \ldots, $n$
+    (that is, $\sigma$ is a rearrangement of those numbers into a new order), 
+    define $\sigma(\vec{v})$ to be the vector whose components are 
+    $v_{\sigma(1)}$, $v_{\sigma(2)}$, \ldots, and $v_{\sigma(n)}$
+    (where $\sigma(1)$ is the first number in the rearrangement, etc.).
+    Now fix $\vec{v}$ and let $V$ be the span of 
+    $\set{\sigma(\vec{v})\suchthat \mbox{$\sigma$ permutes $1$, \ldots, $n$}}$.
+    What are the possibilities for the dimension of $V$?
+    \begin{answer}
+      The possibilities for the dimension of $V$ are $0$, $1$, $n-1$,
+      and $n$.
+
+      To see this, first consider the case when all the coordinates of 
+      $\vec{v}$ are equal.
       \begin{equation*}
-        \sequence{\colvec[r]{0 \\ 1 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
+         \vec{v}=\colvec{z \\ z \\ \vdots \\ z}
       \end{equation*}
-      To check linear independence we set up
+      Then $\sigma(\vec{v})=\vec{v}$ for every permutation $\sigma$, so
+      $V$ is just the span of $\vec{v}$, which has dimension $0$ or $1$
+      according to whether $\vec{v}$ is $\zero$ or not.
+
+      Now suppose not all the coordinates of $\vec{v}$ are equal; let $x$
+      and $y$ with $x\neq y$ be among the coordinates of $\vec{v}$.
+      Then we can find permutations $\sigma_1$ and $\sigma_2$ such that
       \begin{equation*}
-         c_1\colvec[r]{0 \\ 1 \\ 0}+c_2\colvec[r]{0 \\ 0 \\ 1}
-         =\colvec[r]{1 \\ 0 \\ 0}
+        \sigma_1(\vec{v})=\colvec{x \\ y \\ a_3 \\ \vdots \\ a_n}
+        \quad\text{and}\quad
+        \sigma_2(\vec{v})=\colvec{y \\ x \\ a_3 \\ \vdots \\ a_n}
       \end{equation*}
-      (the vector on the right is the zero object in this space).
-      That yields the linear system
+      for some $a_3,\ldots,a_n\in\Re$.
+      Therefore,
       \begin{equation*}
-        \begin{linsys}{3}
-          (-c_1+1)  &+  &(-c_2+1)  &-  &1  &=  &1  \\
-             c_1    &   &          &   &   &=  &0  \\
-                    &   &c_2       &   &   &=  &0
-        \end{linsys}
+        \frac{1}{y-x}\bigl(\sigma_1(\vec{v})-\sigma_2(\vec{v})\bigr)=
+        \colvec[r]{-1 \\ 1 \\ 0 \\ \vdotswithin{-1} \\ 0}
       \end{equation*}
-      with only the solution $c_1=0$ and $c_2=0$.
-      Checking the span is similar. 
-   \end{answer}
+      is in $V$.
+      That is, $\vec{e}_2-\vec{e}_1\in V$, where $\vec{e}_1$, $\vec{e}_2$,
+      \ldots, $\vec{e}_n$ is the standard basis for $\Re^n$.
+      Similarly, $\vec{e}_3-\vec{e}_2$, \ldots, $\vec{e}_n-\vec{e}_1$
+      are all in $V$.
+      It is easy to see that the vectors
+      $\vec{e}_2-\vec{e}_1$, $\vec{e}_3-\vec{e}_2$, \ldots, 
+      $\vec{e}_n-\vec{e}_1$ are linearly independent (that is, form a linearly
+      independent set), so $\dim V\geq n-1$.
+
+      Finally, we can write
+      \begin{align*}
+        \vec{v} &=x_1\vec{e}_1+x_2\vec{e}_2+\dots+x_n\vec{e}_n  \\
+                &=(x_1+x_2+\dots+x_n)\vec{e}_1+x_2(\vec{e}_2-\vec{e}_1)+\dots
+                   +x_n(\vec{e}_n-\vec{e}_1)
+      \end{align*}
+      This shows that if $x_1+x_2+\dots+x_n=0$ then $\vec{v}$ is in the span
+      of $\vec{e}_2-\vec{e}_1$, \ldots, $\vec{e_n}-\vec{e}_1$ (that is, is in
+      the span of the set of those vectors); similarly, each $\sigma(\vec{v})$
+      will be in this span, so $V$ will equal this span and $\dim V=n-1$.
+      On the other hand, if $x_1+x_2+\cdots+x_n\neq 0$ then the above equation
+      shows that $\vec{e}_1\in V$ and thus $\vec{e}_1,\dots,\vec{e}_n\in V$,
+      so $V=\Re^n$ and $\dim V=n$.
+    \end{answer}
 \end{exercises}
+\index{basis|)}
 
 
   \puzzle \item 

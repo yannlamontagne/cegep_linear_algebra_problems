@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{function space}
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+     What is the dimension of the span of the set 
+     $\set{\cos^2\theta,\;\sin^2\theta,\;\cos2\theta,\;\sin2\theta}$?
+     This span is a subspace of the space of all real-valued functions of 
+     one real variable.
+\end{Exercise}
+
+\begin{Answer}
+       First recall that $\cos2\theta=\cos^2\theta-\sin^2\theta$, and so 
+       deletion of $\cos2\theta$ from this set leaves the span unchanged.
+       What's left, the set  
+       $\set{\cos^2\theta,\sin^2\theta,\sin2\theta}$, is linearly independent
+       (consider the relationship
+       $c_1\cos^2\theta+c_2\sin^2\theta+c_3\sin2\theta=Z(\theta)$
+       where $Z$ is the zero function, and then take
+       $\theta=0$, $\theta=\pi/4$, and $\theta=\pi/2$ to conclude that
+       each $c$ is zero).
+       It is therefore a basis for its span.
+       That shows that the span is a dimension three vector space.
+\end{Answer}

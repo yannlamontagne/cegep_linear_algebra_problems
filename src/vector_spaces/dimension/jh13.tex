@@ -1,0 +1,39 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Prove that if \( U \) and \( W \) are both three-dimensional
+    subspaces of \( \Re^5 \) then \( U\intersection W \) is non-trivial.
+    State a generalization of the above.
+\end{Exercise}
+
+\begin{Answer}
+       Let \( B_U \) be a basis for \( U \) and let \( B_W \)
+       be a basis for \( W \).
+       Consider the concatenation of the two basis sequences.
+       If there is a repeated element then the intersection
+       \( U\intersection W \) is nontrivial.
+       Otherwise, 
+       the set \( B_U\union B_W \) is linearly dependent as it is a
+       six member subset of the five-dimensional space \( \Re^5 \).
+       In either case some member of \( B_W \) is in the span of \( B_U \), and
+       thus \( U\intersection W \) is more than just the trivial space
+       \( \set{\zero\,} \).
+
+       Generalization:
+       if \( U,W \) are subspaces of a vector space of dimension \( n \) and
+       if \( \dim(U)+\dim(W)>n \) then they have a nontrivial
+       intersection.  
+\end{Answer}

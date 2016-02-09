@@ -1,0 +1,97 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+      \Question Consider first how bases might be related by $\subseteq$.
+        Assume that \( U,W \) are subspaces of some vector space and
+        that \( U\subseteq W \).
+	
+	Can there exist bases \( B_U \) for \( U \) and \( B_W \) for \( W \)
+        such that \( B_U\subseteq B_W \)?
+        Must such bases exist?
+
+        For any basis \( B_U \) for \( U \), must there be a basis \( B_W \)
+        for \( W \) such that \( B_U\subseteq B_W \)?
+
+        For any basis \( B_W \) for \( W \), must there be a basis \( B_U \)
+        for \( U \) such that \( B_U\subseteq B_W \)?
+
+        For any bases \( B_U, B_W \) for \( U \) and \( W \), must  \( B_U \)
+        be a subset of \( B_W \)?
+      \Question Is the $\cap$ of bases a basis?
+        For what space?
+      \Question Is the $\cup$ of bases a basis?
+        For what space?
+      \Question What about the complement operation?
+\end{Exercise}
+
+\begin{Answer}
+       First, note that a set is a basis for some space if and only
+       if it is linearly independent, because in that case 
+       it is a basis for its own span.
+         \Question The answer to the question in the second paragraph
+            is ``yes''
+           (implying ``yes'' answers for both questions in the first
+           paragraph).
+           If \( B_U \) is a basis for \( U \) then
+           \( B_U \) is a linearly independent subset of \( W \).
+           It is possible to expand it to a basis for 
+           \( W \).
+           That is the desired \( B_W \).
+
+           The answer to the question in the third paragraph is ``no'', which
+           implies a ``no'' answer to the question of the fourth paragraph.
+           Here is an example of a basis for a superspace with no sub-basis
+           forming a basis for a subspace: in \( W=\Re^2 \), consider the
+           standard basis \( \stdbasis_2 \).
+           No sub-basis of $\stdbasis_2$ forms a basis for the 
+           subspace \( U \) 
+           of $\Re^2$ that is the line \( y=x \).
+         \Question It is a basis (for its span) because the
+           intersection of linearly
+           independent sets is linearly independent (the intersection is a
+           subset of each of the linearly independent sets).
+
+           It is not, however, a basis for the intersection of the spaces.
+           For instance, these are bases for \( \Re^2 \):
+           \begin{equation*}
+             B_1=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 1}}
+             \quad\text{and}\quad
+             B_2=\sequence[r]{\colvec{2 \\ 0},\colvec[r]{0 \\ 2}}
+           \end{equation*}
+           and \( \Re^2\intersection\Re^2=\Re^2 \), but
+           \( B_1\intersection B_2 \) is empty.
+           All we can say is that the $\cap$ of the bases is a basis
+           for a subset of the intersection of the spaces.
+         \Question The $\cup$ of bases need not be a basis: in \( \Re^2 \)
+           \begin{equation*}
+             B_1=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{1 \\ 1}}
+             \quad\text{and}\quad
+             B_2=\sequence{\colvec[r]{1 \\ 0},\colvec[r]{0 \\ 2}}
+           \end{equation*}
+           \( B_1\union B_2 \) is not linearly independent.
+           A necessary and sufficient condition for a $\cup$ of two bases
+           to be a basis 
+           \begin{equation*}
+             B_1\union B_2 \text{ is linearly independent }
+             \quad\iff\quad
+             \spanof{B_1\intersection B_2}=\spanof{B_1}\intersection
+                                            \spanof{B_2}
+           \end{equation*}
+           it is easy enough to prove (but perhaps hard to apply).
+         \Question The complement of a basis cannot be a basis
+           because it contains the zero vector.
+
+\end{Answer}
