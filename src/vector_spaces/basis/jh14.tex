@@ -1,0 +1,49 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{linear combination}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+If a subset is not a basis, can linear combinations be not unique?
+If so, must they be?
+\end{Exercise}
+
+\begin{Answer}
+      Here is a subset of $\Re^2$ that is not a basis, and two different
+      linear combinations of its elements that sum to the same vector.
+      \begin{equation*}
+        \set{\colvec[r]{1 \\ 2},\colvec[r]{2 \\ 4}}
+        \qquad
+        2\cdot\colvec[r]{1 \\ 2}+0\cdot\colvec[r]{2 \\ 4}
+        =0\cdot\colvec[r]{1 \\ 2}+1\cdot\colvec[r]{2 \\ 4}
+      \end{equation*}
+      Thus, when a subset is not a basis, it can be the case that its
+      linear combinations are not unique.
+
+      But just because a subset is not a basis does not imply that its
+      combinations must be not unique.
+      For instance, this set 
+      \begin{equation*}
+        \set{\colvec[r]{1 \\ 2}}
+      \end{equation*}
+      does have the property that
+      \begin{equation*}
+        c_1\cdot\colvec[r]{1 \\ 2}
+        =
+        c_2\cdot\colvec[r]{1 \\ 2}
+      \end{equation*}
+      implies that $c_1=c_2$.
+      The idea here is that this subset fails to be a basis because it fails
+      to span the space.
+\end{Answer}
