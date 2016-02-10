@@ -1,0 +1,47 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find one vector $\vec{v}$ that will make each into a basis
+for the space.
+\Question $\sequence{\colvec[r]{1 \\ 1},\vec{v}}$ in $\Re^2$
+\Question $\sequence{\colvec[r]{1 \\ 1 \\ 0},
+                            \colvec[r]{0 \\ 1 \\ 0},\vec{v}}$ in $\Re^3$
+\Question $\sequence{x,\;1+x^2,\;\vec{v}}$ in $\polyspace_2$
+\end{Exercise}
+
+\begin{Answer}
+      Each forms a linearly independent set if we omit $\vec{v}$.
+      To preserve linear independence, we must expand the span of each.
+      That is, we must determine the span of each (leaving $\vec{v}$ out),
+      and then pick a $\vec{v}$ lying outside of that span.
+      Then to finish, we must check that the result spans the entire given
+      space.
+      Those checks are routine.
+      \Question Any vector that is not a multiple of the given one, 
+          that is, any vector that is not on the line $y=x$ will do here.
+          One is $\vec{v}=\vec{e}_1$.
+      \Question By inspection, we notice that the vector $\vec{e}_3$ is
+          not in the span of the set of the two given vectors.
+          The check that the resulting set is a basis for $\Re^3$ is 
+          routine.
+      \Question For any member of the span 
+          $\set{c_1\cdot(x)+c_2\cdot(1+x^2)\suchthat c_1,c_2\in\Re}$,
+          the coefficient of $x^2$ equals the constant term.
+          So we expand the span if we add a quadratic without this property,
+          say, $\vec{v}=1-x^2$.
+          The check that the result is a basis for $\polyspace_2$ is easy.  
+\end{Answer}

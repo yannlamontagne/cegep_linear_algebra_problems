@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix space}
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find the dimension of each.
+\Question The space of cubic polynomials $p(x)$ such that $p(7)=0$.
+\Question The space of cubic polynomials $p(x)$ such
+        that $p(7)=0$ and~$p(5)=0$.
+\Question The space of cubic polynomials $p(x)$ such
+        that $p(7)=0$, $p(5)=0$, and~$p(3)=0$.
+\Question The space of cubic polynomials $p(x)$ such
+        that $p(7)=0$, $p(5)=0$, $p(3)=0$, and~$p(1)=0$.
+\end{Exercise}
+
+\begin{Answer}
+The bases for these spaces are developed 
+in the answer set of the prior subsection.
+\Question One basis is \( \sequence{-7+x,\,-49+x^2,\,-343+x^3} \).
+          The dimension is three.
+\Question One basis is $\sequence{35-12x+x^2,\;420-109x+x^3}$ so the
+          dimension is two.
+\Question A basis is $\set{-105+71x-15x^2+x^3}$.
+          The dimension is one.
+\Question This is the trivial subspace of $\polyspace_3$ and so the 
+          basis is empty.
+          The dimension is zero.
+
+\end{Answer}

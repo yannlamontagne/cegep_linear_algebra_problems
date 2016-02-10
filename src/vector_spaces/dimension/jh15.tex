@@ -1,0 +1,37 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Assume \( U \) and \( W \) are both subspaces of some vector space, and
+    that \( U\subseteq W \).
+    \Question Prove that \( \dim (U)\leq\dim (W) \).
+    \Question Prove that equality of dimension holds
+        if and only if \( U=W \).
+\end{Exercise}
+
+\begin{Answer}
+    \Question A basis for \( U \) is a linearly independent set
+            in \( W \)
+            and so can be expanded to a basis for \( W \).
+            The second basis has at least as many members as the first.
+    \Question One direction is clear:~if \( V=W \) then they have the 
+            same dimension.
+            For the converse, let \( B_U \) be a basis for \( U \).
+            It is a linearly independent subset of \( W \) and so can be
+            expanded to a basis for \( W \).
+            If \( \dim(U)=\dim(W) \) then this basis for \( W \) has no more
+            members than does \( B_U \) and so equals \( B_U \).
+            Since \( U \) and \( W \) have the same bases, they are equal.
+\end{Answer}

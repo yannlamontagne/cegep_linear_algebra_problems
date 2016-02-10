@@ -1,0 +1,95 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{symmetric matrix}
+\index{matrix!symmetric}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Find a basis for the vector space of
+        symmetric \( \nbyn{2} \) matrices.
+\Question Find a basis for the space of symmetric \( \nbyn{3} \)
+        matrices.
+\Question Find a basis for the space of symmetric \( \nbyn{n} \)
+        matrices.
+\end{Exercise}
+
+\begin{Answer}
+       \Question Describing the vector space as
+          \begin{equation*}
+             \set{\begin{mat}
+                     a  &b  \\
+                     b  &c
+                  \end{mat}  \suchthat a,b,c\in\Re}
+          \end{equation*}
+          suggests this for a basis.
+          \begin{equation*}
+            \sequence{
+              \begin{mat}[r]
+                1  &0  \\
+                0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  \\
+                0  &1
+              \end{mat},
+              \begin{mat}[r]
+                0  &1  \\
+                1  &0
+              \end{mat}  }
+          \end{equation*}
+          Verification is easy.
+        \Question This is one possible basis.
+          \begin{equation*}
+            \sequence{
+              \begin{mat}[r]
+                1  &0  &0  \\
+                0  &0  &0  \\
+                0  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &0  \\
+                0  &1  &0  \\
+                0  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &0  \\
+                0  &0  &0  \\
+                0  &0  &1
+              \end{mat},
+              \begin{mat}[r]
+                0  &1  &0  \\
+                1  &0  &0  \\
+                0  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &1  \\
+                0  &0  &0  \\
+                1  &0  &0
+              \end{mat},
+              \begin{mat}[r]
+                0  &0  &0  \\
+                0  &0  &1  \\
+                0  &1  &0
+              \end{mat}  }
+          \end{equation*}
+         \Question As in the prior two questions, we can form a basis from two
+           kinds of  matrices.
+           First are the matrices with a single one on the diagonal and all
+           other entries zero (there are \( n \) of those matrices).
+           Second are the matrices with two opposed off-diagonal entries
+           are ones and all other entries are zeros.
+           (That is, all entries in $M$ are zero except that 
+           $m_{i,j}$ and $m_{j,i}$ are one.) 
+
+\end{Answer}

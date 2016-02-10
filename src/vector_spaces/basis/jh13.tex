@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Where
+    \( \sequence{\vec{\beta}_1,\dots,\vec{\beta}_n } \)
+    is a basis, show that in this equation
+    \begin{equation*}
+       c_1\vec{\beta}_1+\dots+c_k\vec{\beta}_k
+       =
+       c_{k+1}\vec{\beta}_{k+1}+\dots+c_n\vec{\beta}_n
+    \end{equation*}
+    each of the \( c_i \)'s is zero.
+    Generalize.
+\end{Exercise}
+
+\begin{Answer}
+      To show that each scalar is zero, simply subtract
+      \( c_1\vec{\beta}_1+\dots+c_k\vec{\beta}_k
+          -c_{k+1}\vec{\beta}_{k+1}-\dots-c_n\vec{\beta}_n=\zero \).
+      The obvious generalization is that in any equation involving only the
+      \( \vec{\beta} \)'s, and in which each \( \vec{\beta} \) appears only
+      once, each scalar is zero.
+      For instance, an equation with a combination of 
+      the even-indexed basis vectors
+      (i.e., $\vec{\beta}_2$, $\vec{\beta}_4$, etc.) on the right and the
+      odd-indexed basis vectors on the left also gives the conclusion that
+      all of the coefficients are zero. 
+\end{Answer}

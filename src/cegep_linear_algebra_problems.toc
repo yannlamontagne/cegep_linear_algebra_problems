@@ -15,10 +15,10 @@
 \contentsline {section}{\numberline {3.4}Applications of the Determinant}{12}{section.3.4}
 \contentsline {chapter}{\numberline {4}Vector Geometry}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction to Vectors and Lines}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Dot Product and Projections}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Cross Product and Planes}{13}{section.4.3}
-\contentsline {section}{\numberline {4.4}Areas, Volumes and Distances}{13}{section.4.4}
-\contentsline {section}{\numberline {4.5}Geometry of Solutions of Linear Systems}{13}{section.4.5}
+\contentsline {section}{\numberline {4.2}Dot Product and Projections}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Cross Product and Planes}{14}{section.4.3}
+\contentsline {section}{\numberline {4.4}Areas, Volumes and Distances}{14}{section.4.4}
+\contentsline {section}{\numberline {4.5}Geometry of Solutions of Linear Systems}{14}{section.4.5}
 \contentsline {chapter}{\numberline {5}Vector Spaces}{15}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction to Vector Spaces}{15}{section.5.1}
 \contentsline {section}{\numberline {5.2}Subspaces}{17}{section.5.2}
@@ -26,6 +26,6 @@
 \contentsline {section}{\numberline {5.4}Linear Independence}{19}{section.5.4}
 \contentsline {section}{\numberline {5.5}Basis}{21}{section.5.5}
 \contentsline {section}{\numberline {5.6}Dimension}{22}{section.5.6}
-\contentsline {chapter}{\numberline {A}Answers to Exercises}{23}{appendix.A}
-\contentsline {chapter}{References}{44}{appendix.A}
-\contentsline {chapter}{Index}{45}{appendix*.2}
+\contentsline {chapter}{\numberline {A}Answers to Exercises}{25}{appendix.A}
+\contentsline {chapter}{References}{50}{appendix.A}
+\contentsline {chapter}{Index}{51}{appendix*.2}

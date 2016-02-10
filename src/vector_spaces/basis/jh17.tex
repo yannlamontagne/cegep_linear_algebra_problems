@@ -1,0 +1,61 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Find a basis for the following vector space:
+    \begin{equation*}
+      \set{\colvec{x \\ y \\ z}\suchthat x+y+z=1}
+    \end{equation*}
+    is a vector space under these operations.
+    \begin{equation*}
+      \colvec{x_1 \\ y_1 \\ z_1}+\colvec{x_2 \\ y_2 \\ z_2}
+      =\colvec{x_1+x_2-1 \\ y_1+y_2 \\ z_1+z_2}
+      \qquad
+      r\colvec{x \\ y \\ z}=\colvec{rx-r+1 \\ ry \\ rz}
+    \end{equation*}
+\end{Exercise}
+
+\begin{Answer}
+      We have (using these odball operations with care)
+      \begin{multline*}
+        \set{\colvec{1-y-z \\ y \\ z}\suchthat y,z\in\Re}
+         =\set{\colvec{-y+1 \\ y \\ 0}
+               +\colvec{-z+1 \\ 0 \\ z}
+              \suchthat y,z\in\Re}                           \\
+         =\set{y\cdot\colvec{0 \\ 1 \\ 0}
+               +z\cdot\colvec{0 \\ 0 \\ 1}
+              \suchthat y,z\in\Re}
+      \end{multline*}
+      and so a natural candidate for a basis is this.
+      \begin{equation*}
+        \sequence{\colvec[r]{0 \\ 1 \\ 0},\colvec[r]{0 \\ 0 \\ 1}}
+      \end{equation*}
+      To check linear independence we set up
+      \begin{equation*}
+         c_1\colvec[r]{0 \\ 1 \\ 0}+c_2\colvec[r]{0 \\ 0 \\ 1}
+         =\colvec[r]{1 \\ 0 \\ 0}
+      \end{equation*}
+      (the vector on the right is the zero object in this space).
+      That yields the linear system
+      \begin{equation*}
+        \begin{linsys}{3}
+          (-c_1+1)  &+  &(-c_2+1)  &-  &1  &=  &1  \\
+             c_1    &   &          &   &   &=  &0  \\
+                    &   &c_2       &   &   &=  &0
+        \end{linsys}
+      \end{equation*}
+      with only the solution $c_1=0$ and $c_2=0$.
+      Checking the span is similar. 
+\end{Answer}

@@ -1,0 +1,42 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{homogeneous system}
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find a basis for, and the dimension of, the solution set of
+this system.
+    \begin{equation*}
+      \begin{linsys}{4}
+         x_1  &-  &4x_2  &+  &3x_3  &-  &x_4  &=  &0  \\
+        2x_1  &-  &8x_2  &+  &6x_3  &-  &2x_4 &=  &0  
+      \end{linsys}
+    \end{equation*}
+\end{Exercise}
+
+\begin{Answer}
+     The solution set is
+      \begin{equation*}
+        \set{\colvec{4x_2-3x_3+x_4 \\ x_2 \\ x_3 \\ x_4}
+               \suchthat x_2,x_3,x_4\in\Re}
+      \end{equation*}
+      so a natural basis is this
+      \begin{equation*}
+       \sequence{\colvec[r]{4 \\ 1 \\ 0 \\ 0},
+                   \colvec[r]{-3 \\ 0 \\ 1 \\ 0},
+                   \colvec[r]{1 \\ 0 \\ 0 \\ 1}  }
+      \end{equation*}  
+      (checking linear independence is easy).
+      Thus the dimension is three.
+\end{Answer}

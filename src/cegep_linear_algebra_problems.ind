@@ -6,35 +6,40 @@
 
   \indexspace
 
-  \item basis, \hyperpage{17}
+  \item basis, \hyperpage{21}
 
   \indexspace
 
-  \item Cauchy-Schwartz Inequality, \hyperpage{13}
+  \item Cauchy-Schwartz Inequality, \hyperpage{14}
   \item co-factor expansion, \hyperpage{9}
   \item cofactor, \hyperpage{9}
   \item cofactor expansion, \hyperpage{9}
+  \item collinear, \hyperpage{13}
   \item consistent system, \hyperpage{3}
   \item consistent, inconsistent, \hyperpage{3}
-  \item coordinate vector, \hyperpage{17}
-  \item Cramer's Rule, \hyperpage{11}
+  \item coordinate vector, \hyperpage{21}
+  \item Cramer's Rule, \hyperpage{12}
 
   \indexspace
 
   \item determinant, \hyperpage{9--11}
   \item diagonal matrix, \hyperpage{5, 6}, \hyperpage{16}
-  \item dimension, \hyperpage{17}
+  \item dimension, \hyperpage{22, 23}
 
   \indexspace
 
   \item elementary matrix, \hyperpage{8}
   \item elementary operation, \hyperpage{10}
   \item elementary row operation, \hyperpage{1}
+  \item even functions, \hyperpage{17}
 
   \indexspace
 
-  \item function space, \hyperpage{15, 16}
-  \item function subspace, \hyperpage{16}
+  \item function
+    \subitem even, \hyperpage{17}
+    \subitem odd, \hyperpage{17}
+  \item function space, \hyperpage{15--19}, \hyperpage{22}
+  \item function subspace, \hyperpage{17}
 
   \indexspace
 
@@ -43,10 +48,11 @@
   \item Gaussian Elimination, \hyperpage{2}
   \item Gaussian elimination, \hyperpage{2, 3}
   \item geometric interpretation, \hyperpage{1}
+  \item geometry, \hyperpage{14}
 
   \indexspace
 
-  \item homogeneous system, \hyperpage{3}
+  \item homogeneous system, \hyperpage{3}, \hyperpage{21, 22}
 
   \indexspace
 
@@ -58,18 +64,22 @@
   \indexspace
 
   \item Laplace expansion, \hyperpage{9}
-  \item line, plane, \hyperpage{16}
-  \item linear dependence, \hyperpage{16}
+  \item line, \hyperpage{13, 14}
+  \item line intersection, \hyperpage{13}
+  \item line, plane, \hyperpage{17}
+  \item linear combination, \hyperpage{13}, \hyperpage{21}
+  \item linear dependence, \hyperpage{19, 20}
   \item linear equation, \hyperpage{1}
-  \item linear independence, \hyperpage{16}
+  \item linear independence, \hyperpage{19, 20}
   \item linear system, \hyperpage{8}
 
   \indexspace
 
   \item matrix
     \subitem adjoint, \hyperpage{11}
-    \subitem inverse, \hyperpage{7}
+    \subitem inverse, \hyperpage{7}, \hyperpage{11}
     \subitem similar, \hyperpage{11}
+    \subitem symmetric, \hyperpage{21}
   \item matrix addition, \hyperpage{5--7}
   \item matrix associativity, \hyperpage{5, 6}
   \item matrix dimension, \hyperpage{5}
@@ -81,7 +91,9 @@
   \item matrix power, \hyperpage{5, 6}
   \item matrix product, \hyperpage{5, 6}
   \item matrix size, \hyperpage{5}
-  \item matrix space, \hyperpage{15, 16}
+  \item matrix space, \hyperpage{15--18}, \hyperpage{21, 22}
+  \item matrix space, polynomial space, \hyperpage{18}
+  \item midpoint, \hyperpage{13}
   \item minor, \hyperpage{9}
 
   \indexspace
@@ -92,10 +104,15 @@
 
   \indexspace
 
+  \item odd function, \hyperpage{17}
+
+  \indexspace
+
   \item particular solution, \hyperpage{2, 3}
-  \item ph, \hyperpage{4}, \hyperpage{13}
-  \item place holder, \hyperpage{4}, \hyperpage{13}
-  \item polynomial space, \hyperpage{15}, \hyperpage{17}
+  \item ph, \hyperpage{4}, \hyperpage{14}
+  \item place holder, \hyperpage{4}, \hyperpage{14}
+  \item polynomial space, \hyperpage{15}, \hyperpage{17--19}, 
+		\hyperpage{21, 22}
   \item positive real numbers, \hyperpage{16}
 
   \indexspace
@@ -114,18 +131,18 @@
   \item similar matrix, \hyperpage{11}
   \item singular matrix, \hyperpage{11}
   \item skew-symmetric matrix, \hyperpage{6}
-  \item spaning set, \hyperpage{16}
-  \item subspace, \hyperpage{16}
+  \item spaning set, \hyperpage{18}
+  \item subspace, \hyperpage{17, 18}
   \item symmetric equation, \hyperpage{7}
-  \item symmetric matrix, \hyperpage{6}
+  \item symmetric matrix, \hyperpage{6}, \hyperpage{21}
   \item system of linear equation, \hyperpage{8}
-  \item system of linear equations, \hyperpage{1}
+  \item system of linear equations, \hyperpage{1}, \hyperpage{13}
 
   \indexspace
 
   \item trace of a matrix, \hyperpage{6}
   \item triangular matrix, \hyperpage{6}, \hyperpage{9}
-  \item trivial subspace, \hyperpage{16}
+  \item trivial subspace, \hyperpage{17}
 
   \indexspace
 
@@ -136,7 +153,9 @@
   \indexspace
 
   \item Vandermonde determinant, \hyperpage{10}
-  \item vector space, \hyperpage{15, 16}
+  \item vector arithmetic, \hyperpage{13, 14}
+  \item vector space, \hyperpage{15, 16}, \hyperpage{18}
+    \subitem subspace, \hyperpage{17}
 
   \indexspace
 

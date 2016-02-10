@@ -1,0 +1,120 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix space}
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find the dimension of the vector space of matrices
+\begin{equation*}
+\begin{mat}
+a  &b  \\
+c  &d
+\end{mat}
+\end{equation*}
+subject to each condition.
+\Question $a, b, c, d\in\Re$ 
+\Question $a-b+2c=0$ and~$d\in\Re$
+\Question $a+b+c=0$, $a+b-c=0$, and~$d\in\Re$
+\end{Exercise}
+
+\begin{Answer}
+\Question As in the prior exercise, the space $\matspace_{\nbyn{2}}$ 
+        of matrices without restriction has this basis
+        \begin{equation*}
+         \sequence{
+           \begin{mat}[r]
+             1  &0  \\
+             0  &0
+           \end{mat},
+           \begin{mat}[r]
+             0  &1  \\
+             0  &0
+           \end{mat},
+           \begin{mat}[r]
+             0  &0  \\
+             1  &0
+           \end{mat},
+           \begin{mat}[r]
+             0  &0  \\
+             0  &1
+           \end{mat}  }
+        \end{equation*}
+        and so the dimension is four.
+\Question For this space
+        \begin{multline*}
+         \set{\begin{mat}
+               a  &b  \\
+               c  &d
+             \end{mat} \suchthat \text{$a=b-2c$ and $d\in\Re$}}     \\
+         =\set{b\cdot\begin{mat}[r]
+             1  &1  \\
+             0  &0
+           \end{mat}
+           +c\cdot\begin{mat}[r]
+             -2  &0  \\
+              1  &0
+           \end{mat}
+           +d\cdot\begin{mat}[r]
+             0  &0  \\
+             0  &1
+           \end{mat} \suchthat b,c,d\in\Re}
+        \end{multline*}
+        this is a natural basis.
+        \begin{equation*}
+          \sequence{
+            \begin{mat}[r]
+              1  &1  \\
+              0  &0
+            \end{mat},
+            \begin{mat}[r]
+              -2  &0  \\
+               1  &0
+            \end{mat},
+            \begin{mat}[r]
+              0  &0  \\
+              0  &1
+            \end{mat}  }
+        \end{equation*}
+        The dimension is three. 
+\Question Gauss's Method applied to the two-equation linear system gives
+        that $c=0$ and that $a=-b$.
+        Thus, we have this description
+        \begin{equation*}
+         \set{\begin{mat}
+               -b  &b  \\
+                0  &d
+             \end{mat} \suchthat b,d\in\Re}
+         =\set{b\cdot\begin{mat}[r]
+             -1  &1  \\
+             0  &0
+           \end{mat}
+           +d\cdot\begin{mat}[r]
+             0  &0  \\
+             0  &1
+           \end{mat} \suchthat b,d\in\Re}
+        \end{equation*}
+        and so this is a natural basis.
+        \begin{equation*}
+          \sequence{
+            \begin{mat}[r]
+              -1  &1  \\
+               0  &0
+            \end{mat},
+            \begin{mat}[r]
+              0  &0  \\
+              0  &1
+            \end{mat}  }
+        \end{equation*}
+        The dimension is two. 
+\end{Answer}

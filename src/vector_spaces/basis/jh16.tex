@@ -1,0 +1,85 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+We can show that every basis for $\Re^3$ contains the same
+number of vectors.
+\Question Show that no linearly independent subset of $\Re^3$
+          contains more than three vectors.
+\Question Show that 
+          no spanning subset of $\Re^3$ contains fewer than three vectors.
+          \textit{Hint:} 
+          recall how to calculate the span of a set and show that
+          this method 
+          cannot yield all of $\Re^3$ when we apply it to fewer than
+          three vectors.
+\end{Exercise}
+
+\begin{Answer}
+\Question Any four vectors from $\Re^3$ are linearly related because
+           the vector equation
+           \begin{equation*}
+             c_1\colvec{x_1 \\ y_1 \\ z_1}
+             +c_2\colvec{x_2 \\ y_2 \\ z_2}
+             +c_3\colvec{x_3 \\ y_3 \\ z_3}
+             +c_4\colvec{x_4 \\ y_4 \\ z_4}
+             =\colvec[r]{0 \\ 0 \\ 0}
+           \end{equation*}
+           gives rise to a linear system
+           \begin{equation*}
+             \begin{linsys}{4}
+                x_1c_1  &+  &x_2c_2  &+  &x_3c_3  &+  &x_4c_4  &=  &0 \\
+                y_1c_1  &+  &y_2c_2  &+  &y_3c_3  &+  &y_4c_4  &=  &0 \\
+                z_1c_1  &+  &z_2c_2  &+  &z_3c_3  &+  &z_4c_4  &=  &0
+             \end{linsys}
+           \end{equation*}
+           that is homogeneous (and so has a solution) and has 
+           four unknowns but only three equations,
+           and therefore has nontrivial solutions.
+           (Of course, this argument applies to any subset of $\Re^3$ 
+           with four or more vectors.) 
+\Question We shall do just the two-vector case.
+           Given $x_1$, \ldots, $z_2$, 
+           \begin{equation*}
+             S=\set{\colvec{x_1 \\ y_1 \\ z_1},
+             \colvec{x_2 \\ y_2 \\ z_2}} 
+           \end{equation*}
+           to decide which vectors
+           \begin{equation*}
+             \colvec{x \\ y \\ z}
+           \end{equation*}
+           are in the span of $S$, set up 
+           \begin{equation*}
+             c_1\colvec{x_1 \\ y_1 \\ z_1}
+             +c_2\colvec{x_2 \\ y_2 \\ z_2}
+             =\colvec{x \\ y \\ z}
+           \end{equation*}
+           and row reduce the resulting system.
+           \begin{equation*}
+             \begin{linsys}{2}
+                x_1c_1  &+  &x_2c_2   &=  &x \\
+                y_1c_1  &+  &y_2c_2   &=  &y \\
+                z_1c_1  &+  &z_2c_2   &=  &z
+             \end{linsys}
+           \end{equation*}
+           There are two
+           variables $c_1$ and $c_2$ but three equations, so 
+           when Gauss's Method finishes, on the bottom
+           row there will be some relationship of the form
+           $0=m_1x+m_2y+m_3z$. 
+           Hence, vectors in the span of the two-element set $S$
+           must satisfy some restriction.
+           Hence the span is not all of $\Re^3$.
+\end{Answer}

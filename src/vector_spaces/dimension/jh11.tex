@@ -1,0 +1,38 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dimension}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+   Show that
+    \( \sequence{\vec{\alpha}_1,\vec{\alpha}_2,\vec{\alpha}_3}\subset\Re^3 \)
+    is a basis if and only if there is no plane through the origin containing
+    all three vectors.
+\end{Exercise}
+
+\begin{Answer}
+     A plane has the
+      form $\set{\vec{p}+t_1\vec{v}_1+t_2\vec{v}_2\suchthat t_1,t_2\in\Re}$.
+      When the plane passes through the origin we can take the particular
+      vector $\vec{p}$ to be $\zero$.
+      Thus, in the language we have developed in this chapter, a plane through
+      the origin is the span of a set of two vectors.
+
+      Now for the statement.
+      Asserting that the three are not coplanar is the same as asserting that
+      no vector lies in the span of the other two no vector is a linear
+      combination of the other two.
+      That's simply an assertion that the three-element set is linearly
+      independent.
+      Since $\dim(\Re^3)=3$ then the set spans $\Re^3$. The set is a basis for $\Re^3$ 
+\end{Answer}
