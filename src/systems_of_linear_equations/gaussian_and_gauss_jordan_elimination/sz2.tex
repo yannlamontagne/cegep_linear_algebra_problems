@@ -1,0 +1,75 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{reduced row echelon form}
+\index{solution set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{SZ}}]
+The following matrices are in reduced row echelon form.  Determine the solution of the corresponding system of linear equations or state that the system is inconsistent.  
+
+
+\begin{multicols}{2}
+\Question $
+\begin{amat}{2}
+1 & 0 & -2 \\ 
+0 & 1 & 7  \\ 
+\end{amat}
+$
+\Question $
+\begin{amat}{3}
+1 & 0 & 0 & -3 \\ 
+0 & 1 & 0 & 20 \\ 
+0 & 0 & 1 & 19  
+\end{amat}
+$
+\Question $
+\begin{amat}{4}
+1 & 0 & 0 & 3 & 4 \\ 
+0 & 1 & 0 & 6 & -6 \\ 
+0 & 0 & 1 & 0 & 2 
+\end{amat}
+$
+\Question $
+\begin{amat}{4}
+1 & 0 & 0 & 3 & 0 \\ 
+0 & 1 & 2 & 6 & 0 \\ 
+0 & 0 & 0 & 0 & 1 
+\end{amat}
+$
+\Question $
+\begin{amat}{4}
+1 & \hphantom{-}0 & -8 & 1 & 7 \\ 
+0 & 1 & 4 & -3 & 2 \\ 
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 
+\end{amat}
+$
+\Question $
+\begin{amat}{3}
+1 & \hphantom{-}0 & 9 & -3 \\ 
+0 & 1 & -4 & 20 \\ 
+0 & 0 & 0 & 0  
+\end{amat}
+$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question $(-2, 7)$
+\Question $(-3, 20, 19)$
+\Question $(-3t + 4, -6t - 6, 2, t)$ for all real numbers $t$
+\Question Inconsistent
+\Question $(8s - t + 7, -4s + 3t + 2, s, t)$ \\ for all real numbers $s$ and $t$
+\Question $(-9t - 3, 4t + 20, t)$ \\ for all real numbers $t$
+\end{Answer}
