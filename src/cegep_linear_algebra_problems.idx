@@ -63,13 +63,17 @@
 \indexentry{symmetric matrix|hyperpage}{6}
 \indexentry{skew-symmetric matrix|hyperpage}{6}
 \indexentry{triangular matrix|hyperpage}{6}
+\indexentry{matrix!arithmetic|hyperpage}{6}
+\indexentry{matrix!transpose|hyperpage}{6}
+\indexentry{matrix!skew-symmetric|hyperpage}{6}
 \indexentry{trace of a matrix|hyperpage}{6}
 \indexentry{matrix addition|hyperpage}{6}
 \indexentry{matrix product|hyperpage}{6}
 \indexentry{matrix power|hyperpage}{6}
-\indexentry{trace of a matrix|hyperpage}{6}
-\indexentry{symmetric matrix|hyperpage}{6}
-\indexentry{nilpotent matrix|hyperpage}{6}
+\indexentry{matrix!arithmetic|hyperpage}{7}
+\indexentry{trace of a matrix|hyperpage}{7}
+\indexentry{symmetric matrix|hyperpage}{7}
+\indexentry{nilpotent matrix|hyperpage}{7}
 \indexentry{idempotent matrix|hyperpage}{7}
 \indexentry{matrix equation|hyperpage}{7}
 \indexentry{matrix addition|hyperpage}{7}
@@ -77,6 +81,7 @@
 \indexentry{matrix inverse|hyperpage}{7}
 \indexentry{matrix!inverse|hyperpage}{7}
 \indexentry{matrix inverse|hyperpage}{7}
+\indexentry{matrix!inverse|hyperpage}{8}
 \indexentry{matrix inverse|hyperpage}{8}
 \indexentry{matrix!inverse|hyperpage}{8}
 \indexentry{matrix inverse|hyperpage}{8}

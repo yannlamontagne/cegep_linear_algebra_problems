@@ -1,76 +1,2123 @@
-
-  \recommended \item 
-    Consider how `dimension' interacts with `subset'.
-    Assume \( U \) and \( W \) are both subspaces of some vector space, and
-    that \( U\subseteq W \).
+  \recommended \item
+    Prove each, assuming that the operations are defined, 
+    where \( G \), \( H \), and 
+    \( J \) are matrices, where
+    \( Z \) is the zero matrix, and where \( r \) and \( s \) are scalars.
     \begin{exparts}
-
-
-
-  \puzzle \item 
-    \cite{Wohascum47}
-    For any vector $\vec{v}$ in $\Re^n$ and any permutation $\sigma$
-    of the numbers $1$, $2$, \ldots, $n$
-    (that is, $\sigma$ is a rearrangement of those numbers into a new order), 
-    define $\sigma(\vec{v})$ to be the vector whose components are 
-    $v_{\sigma(1)}$, $v_{\sigma(2)}$, \ldots, and $v_{\sigma(n)}$
-    (where $\sigma(1)$ is the first number in the rearrangement, etc.).
-    Now fix $\vec{v}$ and let $V$ be the span of 
-    $\set{\sigma(\vec{v})\suchthat \mbox{$\sigma$ permutes $1$, \ldots, $n$}}$.
-    What are the possibilities for the dimension of $V$?
+      \partsitem Matrix addition is commutative \( G+H=H+G \).
+      \partsitem Matrix addition is associative \( G+(H+J)=(G+H)+J \).
+      \partsitem The zero matrix is an additive identity \( G+Z=G \).
+      \partsitem \( 0\cdot G=Z \)
+      \partsitem \( (r+s)G=rG+sG \)
+      \partsitem Matrices have an additive inverse \( G+(-1)\cdot G=Z \).
+      \partsitem \( r(G+H)=rG+rH \)
+      \partsitem \( (rs)G=r(sG) \)
+    \end{exparts}
     \begin{answer}
-      The possibilities for the dimension of $V$ are $0$, $1$, $n-1$,
-      and $n$.
-
-      To see this, first consider the case when all the coordinates of 
-      $\vec{v}$ are equal.
+      First, each of these properties
+      is easy to check in an entry-by-entry way.
+      For example, writing
       \begin{equation*}
-         \vec{v}=\colvec{z \\ z \\ \vdots \\ z}
+        G=
+        \begin{mat}
+          g_{1,1}  &\ldots  &g_{1,n}  \\
+          \vdots   &        &\vdots   \\
+          g_{m,1}  &\ldots  &g_{m,n}       
+        \end{mat}
+        \qquad
+        H=
+        \begin{mat}
+          h_{1,1}  &\ldots  &h_{1,n}  \\
+          \vdots   &        &\vdots   \\
+          h_{m,1}  &\ldots  &h_{m,n}       
+        \end{mat}
       \end{equation*}
-      Then $\sigma(\vec{v})=\vec{v}$ for every permutation $\sigma$, so
-      $V$ is just the span of $\vec{v}$, which has dimension $0$ or $1$
-      according to whether $\vec{v}$ is $\zero$ or not.
-
-      Now suppose not all the coordinates of $\vec{v}$ are equal; let $x$
-      and $y$ with $x\neq y$ be among the coordinates of $\vec{v}$.
-      Then we can find permutations $\sigma_1$ and $\sigma_2$ such that
+      then, by definition we have
       \begin{equation*}
-        \sigma_1(\vec{v})=\colvec{x \\ y \\ a_3 \\ \vdots \\ a_n}
-        \quad\text{and}\quad
-        \sigma_2(\vec{v})=\colvec{y \\ x \\ a_3 \\ \vdots \\ a_n}
+        G+H=
+        \begin{mat}
+          g_{1,1}+h_{1,1}  &\ldots  &g_{1,n}+h_{1,n}  \\
+          \vdots           &        &\vdots           \\
+          g_{m,1}+h_{m,1}  &\ldots  &g_{m,n}+h_{m,n}       
+        \end{mat}
       \end{equation*}
-      for some $a_3,\ldots,a_n\in\Re$.
-      Therefore,
+      and
       \begin{equation*}
-        \frac{1}{y-x}\bigl(\sigma_1(\vec{v})-\sigma_2(\vec{v})\bigr)=
-        \colvec[r]{-1 \\ 1 \\ 0 \\ \vdotswithin{-1} \\ 0}
+        H+G=
+        \begin{mat}
+          h_{1,1}+g_{1,1}  &\ldots  &h_{1,n}+g_{1,n}  \\
+          \vdots           &        &\vdots           \\
+          h_{m,1}+g_{m,1}  &\ldots  &h_{m,n}+g_{m,n}       
+        \end{mat}
       \end{equation*}
-      is in $V$.
-      That is, $\vec{e}_2-\vec{e}_1\in V$, where $\vec{e}_1$, $\vec{e}_2$,
-      \ldots, $\vec{e}_n$ is the standard basis for $\Re^n$.
-      Similarly, $\vec{e}_3-\vec{e}_2$, \ldots, $\vec{e}_n-\vec{e}_1$
-      are all in $V$.
-      It is easy to see that the vectors
-      $\vec{e}_2-\vec{e}_1$, $\vec{e}_3-\vec{e}_2$, \ldots, 
-      $\vec{e}_n-\vec{e}_1$ are linearly independent (that is, form a linearly
-      independent set), so $\dim V\geq n-1$.
+      and the two are equal since their entries are equal 
+      $g_{i,j}+h_{i,j}=h_{i,j}+g_{i,j}$.
+      That is, each of these is easy to check by using 
+      \nearbydefinition{def:SumScalarProdMats} alone.
 
-      Finally, we can write
+      However, each property
+      is also easy to understand in terms of the represented
+      maps, by applying \nearbytheorem{th:MatOpsRepMapOps} as well as
+      the definition.
+      \begin{exparts}
+        \partsitem The two maps $g+h$ and $h+g$ are equal because
+          $g(\vec{v})+h(\vec{v})=h(\vec{v})+g(\vec{v})$, as addition is 
+          commutative in any vector space.
+          Because the maps are the same, they must have the same
+          representative. 
+        \partsitem As with the prior answer, except that here we apply that
+          vector space addition is associative.
+        \partsitem As before, except that here we note that
+          $g(\vec{v})+z(\vec{v})=g(\vec{v})+\zero=g(\vec{v})$.
+        \partsitem Apply that
+          $0\cdot g(\vec{v})=\zero=z(\vec{v})$.
+        \partsitem Apply that
+          $(r+s)\cdot g(\vec{v})=r\cdot g(\vec{v})+s\cdot g(\vec{v})$.
+        \partsitem Apply the prior two items with $r=1$ and $s=-1$.
+        \partsitem Apply that
+          $r\cdot (g(\vec{v})+h(\vec{v}))=r\cdot g(\vec{v})+r\cdot h(\vec{v})$.
+        \partsitem Apply that
+          $(rs)\cdot g(\vec{v})=r\cdot(s\cdot g(\vec{v}))$.
+      \end{exparts}
+    \end{answer}
+   \item 
+    The \definend{trace}\index{trace}\index{matrix!trace} 
+    of a square matrix is the sum of the entries on the main diagonal (the
+    \( 1,1 \) entry
+    plus the \( 2,2 \) entry, etc.;
+    we will see the significance of the trace in Chapter Five).
+    Show that \( \mbox{trace}(H+G)=\mbox{trace}(H)+\mbox{trace}(G)  \).
+    Is there a similar result for scalar multiplication?
+    \begin{answer}
+      That the trace of a sum is the sum of the traces holds
+      because both \( \text{trace}(H+G) \) and
+      \( \text{trace}(H)+\text{trace}(G) \) are the sum of
+      \( h_{1,1}+g_{1,1} \) with \( h_{2,2}+g_{2,2} \), etc.
+      For scalar multiplication we have
+      \( \mbox{trace}(r\cdot H)=r\cdot\mbox{trace}(H) \); the proof is easy.
+      Thus the trace map is a homomorphism from $\matspace_{\nbyn{n}}$ to
+      $\Re$.  
+    \end{answer}
+  \item 
+    Recall that the \definend{transpose}\index{matrix!transpose}%
+    \index{transpose!interaction with sum and scalar multiplication}
+    of a matrix $M$ is another matrix, whose $i,j$ entry is the 
+    $j,i$ entry of $M$.
+    Verify these identities.
+    \begin{exparts}
+      \partsitem \( \trans{(G+H)}=\trans{G}+\trans{H} \)
+      \partsitem \( \trans{(r\cdot H)}=r\cdot\trans{H} \)
+    \end{exparts}
+    \begin{answer} 
+      \begin{exparts}
+        \partsitem The \( i,j \) entry of \( \trans{(G+H)} \) is
+          \( g_{j,i}+h_{j,i} \).
+          That is also the \( i,j \) entry of \( \trans{G}+\trans{H} \).
+        \partsitem The \( i,j \) entry of \( \trans{(r\cdot H)} \) is
+          \( rh_{j,i} \),
+          which is also the \( i,j \) entry of \( r\cdot\trans{H} \).
+      \end{exparts}  
+   \end{answer}
+  \recommended \item 
+    A square matrix is \definend{symmetric}\index{matrix!symmetric}%
+    \index{symmetric matrix} if each \( i,j \) entry equals
+    the \( j,i \) entry, that is, if the matrix equals its transpose.
+    \begin{exparts}
+      \partsitem Prove that for any square~$H$,
+        the matrix \( H+\trans{H} \) is symmetric.
+        Does every symmetric matrix have this form?
+      \partsitem Prove that the set of \( \nbyn{n} \) symmetric matrices is
+        a subspace of \( \matspace_{\nbyn{n}} \).
+    \end{exparts}
+    \begin{answer}  
+      \begin{exparts}
+        \partsitem For \( H+\trans{H} \), the \( i,j \) entry 
+          is \( h_{i,j}+h_{j,i} \) and
+          the \( j,i \) entry of  is \( h_{j,i}+h_{i,j} \).
+          The two are equal and thus \( H+\trans{H} \) is symmetric.
+
+          Every symmetric matrix does have that form, since we can write
+          \( H=(1/2)\cdot(H+\trans{H}) \).
+        \partsitem The set of symmetric matrices is nonempty as it
+          contains the zero matrix.
+          Clearly a scalar multiple of a symmetric matrix is symmetric.
+          A sum \( H+G \) of two symmetric matrices is
+          symmetric because \( h_{i,j}+g_{i,j}=h_{j,i}+g_{j,i} \) (since
+          \( h_{i,j}=h_{j,i} \) and \( g_{i,j}=g_{j,i} \)).
+          Thus the subset is nonempty and closed under the inherited
+          operations, and so it is a subspace.
+      \end{exparts} 
+    \end{answer}
+
+
+
+  \item  
+    Which products are defined?
+    \begin{exparts*}
+      \partsitem \( \nbym{3}{2} \)~times~\( \nbym{2}{3} \)
+      \partsitem \( \nbym{2}{3} \)~times~\( \nbym{3}{2} \)
+      \partsitem \( \nbym{2}{2} \)~times~\( \nbym{3}{3} \)
+      \partsitem \( \nbym{3}{3} \)~times~\( \nbym{2}{2} \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts*}
+        \partsitem Yes.
+        \partsitem Yes.
+        \partsitem No.
+        \partsitem No.
+      \end{exparts*}
+    \end{answer}
+  \recommended \item 
+    Give the size of the product or state ``not defined''.
+    \begin{exparts}
+      \partsitem a \( \nbym{2}{3} \) matrix times a \( \nbym{3}{1} \) matrix
+      \partsitem a \( \nbym{1}{12} \) matrix times a \( \nbym{12}{1} \) matrix
+      \partsitem a \( \nbym{2}{3} \) matrix times a \( \nbym{2}{1} \) matrix
+      \partsitem a \( \nbym{2}{2} \) matrix times a \( \nbym{2}{2} \) matrix
+    \end{exparts}
+    \begin{answer}  
+      \begin{exparts*}
+        \partsitem \( \nbym{2}{1} \)
+        \partsitem \( \nbym{1}{1} \)
+        \partsitem Not defined.
+        \partsitem \( \nbym{2}{2} \)
+      \end{exparts*}  
+     \end{answer}
+  \recommended \item \label{exer:NicePropsMatMult} 
+    \begin{exparts}
+      \partsitem Prove that $H^pH^q=H^{p+q}$ and $(H^p)^q=H^{pq}$ 
+        for positive integers \( p,q \).
+      \partsitem Prove that $(rH)^p=r^p\cdot H^p$ 
+        for any positive integer \( p \) and scalar \( r\in\Re \).
+    \end{exparts}
+    \begin{answer}
+      Each follows easily from the associated map fact.
+      For instance, $p$ applications of the transformation $h$, following $q$
+      applications, is simply $p+q$ applications.
+    \end{answer}
+  \recommended \item \label{exer:MoreNicePropsMatMult} 
+    \begin{exparts}
+      \partsitem How does matrix multiplication interact with 
+        scalar multiplication:~is \( r(GH)=(rG)H \)?
+        Is \( G(rH)=r(GH) \)?
+      \partsitem  How does matrix multiplication interact with 
+        linear combinations:~is \( F(rG+sH)=r(FG)+s(FH) \)?
+        Is $(rF+sG)H=rFH+sGH$?
+    \end{exparts}
+    \begin{answer}  
+      Although we can do these by going through the indices, they
+      are best understood in terms of the represented maps.
+      That is, fix spaces and bases so that the matrices 
+      represent linear maps $f,g,h$.
+       \begin{exparts}
+        \partsitem Yes;  we have both 
+          $r\cdot (\composed{g}{h})\,(\vec{v})
+           =r\cdot g(\,h(\vec{v})\,)
+           =\composed{(r\cdot g)}{h}\,(\vec{v})$
+          and 
+          $\composed{g}{(r\cdot h)}\,(\vec{v})=g(\,r\cdot h(\vec{v})\,)
+            =r\cdot g(h(\vec{v}))
+            =r\cdot (\composed{g}{h})\,(\vec{v})$
+          (the second equality holds because of the linearity of $g$).
+        \partsitem Both answers are yes.
+          First, $\composed{f}{(rg+sh)}$ and
+          $r\cdot(\composed{f}{g})+s\cdot(\composed{f}{h})$ both send 
+          $\vec{v}$ to $r\cdot f(g(\vec{v}))+s\cdot f(h(\vec{v}))$; the
+          calculation is as in the prior item
+          (using the linearity of $f$ for the first one). 
+          For the other, 
+          $\composed{(rf+sg)}{h}$ and 
+          $r\cdot(\composed{f}{h})+s\cdot(\composed{g}{h})$ both send
+          $\vec{v}$ to $r\cdot f(h(\vec{v}))+s\cdot g(h(\vec{v}))$.
+      \end{exparts}  
+    \end{answer}
+  \item \label{exer:TranspAndMult} 
+    We can ask how the matrix product 
+    operation interacts with the transpose operation. 
+    \begin{exparts}  
+      \partsitem Show that \( \trans{(GH)}=\trans{H}\trans{G} \).
+      \partsitem A square matrix is 
+        \definend{symmetric}\index{symmetric matrix}%
+        \index{matrix!symmetric} if each 
+        \( i,j \) entry equals the
+        \( j,i \) entry, that is, if the matrix equals its own transpose.
+        Show that
+        the matrices \( H\trans{H} \) and \( \trans{H}H \) are symmetric.
+      %\partsitem Is every symmetric matrix of that form?
+    \end{exparts}
+    \begin{answer}
+      We have not seen a map interpretation of the transpose operation, so
+      we will verify these by considering the entries.
+      \begin{exparts}
+        \partsitem  The \( i,j \) entry of \( \trans{GH} \) is the $j,i$ entry
+          of $GH$, which is the dot product of the
+          \( j \)-th row of \( G \) and the \( i \)-th column of \( H \).
+          The \( i,j \) entry of \( \trans{H}\trans{G} \) is the dot product of
+          the \( i \)-th row of \( \trans{H} \) and the \( j \)-th column of
+          \( \trans{G} \), which is the
+          dot product of the \( i \)-th column of \( H \) and the
+          \( j \)-th row of \( G \).
+          Dot product is commutative and so these two are equal.
+        \partsitem By the prior item each equals its transpose, e.g.,
+          $\trans{(H\trans{H})}=\trans{\trans{H}}\trans{H}=H\trans{H}$.
+      \end{exparts}  
+    \end{answer}
+
+
+
+\begin{exercises}
+  \recommended \item
+    Predict the result of each multiplication by an elementary
+    reduction matrix, and then check by multiplying it out.
+    \begin{exparts*}
+      \partsitem \( \begin{mat}[r]
+                 3  &0  \\
+                 0  &1
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 1  &0  \\
+                 0  &2
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 1  &0  \\
+                -2  &1
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat}
+               \begin{mat}[r]
+                 1  &-1 \\
+                 0  &1
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat}
+               \begin{mat}[r]
+                 0  &1  \\
+                 1  &0
+               \end{mat} \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The second matrix has its first row multiplied 
+          by \( 3 \).
+          \begin{equation*}
+            \begin{mat}[r]
+              3  &6  \\
+              3  &4
+            \end{mat}
+          \end{equation*}
+        \partsitem The second matrix has its second row multiplied by \( 2 \).
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &2  \\
+              6  &8
+            \end{mat}
+          \end{equation*}
+        \partsitem The second matrix undergoes the combination operation
+          of replacing the second row with \( -2 \) times the first row added
+          to the second.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &2  \\
+              1  &0
+            \end{mat}
+          \end{equation*}
+        \partsitem The first matrix undergoes the column operation of:~replace
+          the
+          second column by $-1$ times the first column plus the
+          second.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &1  \\
+              3  &1
+            \end{mat}
+          \end{equation*}
+        \partsitem The first matrix has its columns swapped.
+          \begin{equation*}
+            \begin{mat}[r]
+              2  &1  \\
+              4  &3
+            \end{mat}
+          \end{equation*}
+      \end{exparts}   
+    \end{answer}
+  \item
+    Predict the result of each multiplication by a
+    diagonal matrix, and then check by multiplying it out.
+    \begin{exparts*}
+      \partsitem \( \begin{mat}[r]
+                 3  &0  \\
+                 0  &0
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 4  &0  \\
+                 0  &2
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The second matrix has its first row multiplied 
+          by \( 3 \) and
+          its second row multiplied by \( 0 \).
+          \begin{equation*}
+            \begin{mat}[r]
+              3  &6  \\
+              0  &0
+            \end{mat}
+          \end{equation*}
+        \partsitem The second matrix has its first row multiplied 
+          by \( 4 \) and
+          its second row multiplied by \( 2 \).
+          \begin{equation*}
+            \begin{mat}[r]
+              4  &8  \\
+              6  &8
+            \end{mat}
+          \end{equation*}
+      \end{exparts}   
+    \end{answer}
+  \item Produce each.
+    \begin{exparts}
+      \partsitem a $\nbyn{3}$ matrix that, acting from the left,
+         swaps rows one and two
+      \partsitem a $\nbyn{2}$ matrix that, acting from the right,
+         swaps column one and two
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem This matrix swaps row one and row three.
+          \begin{equation*}
+            \begin{mat}
+              0  &1 &0 \\
+              1  &0 &0 \\
+              0  &0 &1
+            \end{mat}
+            \begin{mat}
+              a &b &c \\
+              d &e &f \\
+              g &h &i
+            \end{mat}
+            =
+            \begin{mat}
+              d &e &f \\
+              a &b &c \\
+              g &h &i
+            \end{mat}         
+          \end{equation*}
+        \partsitem This matrix swaps column one and two.
+          \begin{equation*}
+            \begin{mat}
+              a  &b  \\
+              c  &d
+            \end{mat}
+            \begin{mat}
+              0  &1  \\
+              1  &0   
+            \end{mat}
+            =
+            \begin{mat}
+              b  &a  \\
+              d  &c
+            \end{mat}
+          \end{equation*}
+      \end{exparts}
+    \end{answer}
+  \recommended \item
+    This table gives the number of hours of each 
+    type done by each worker, and the associated pay rates.
+    Use matrices to compute the wages due.
+    \begin{center}
+      \begin{tabular}[t]{l|cc}
+        \multicolumn{1}{c}{\ }  
+         &\multicolumn{1}{c}{\textit{regular}} 
+         &\multicolumn{1}{c}{\textit{overtime}}  \\
+        \cline{2-3}
+        Alan      &40        &12        \\
+        Betty     &35        &6         \\  
+        Catherine &40        &18         \\  
+        Donald    &28        &0         %\\  \cline{2-3}
+      \end{tabular}
+      \qquad
+      \begin{tabular}[t]{l|c}
+        \multicolumn{1}{c}{\ }   &\multicolumn{1}{c}{\textit{wage}}   \\
+        \cline{2-2}
+        regular   &$\$ 25.00$  \\
+        overtime  &$\$ 45.00$  %\\  \cline{2-2}
+      \end{tabular}
+    \end{center}
+    \textit{Remark.}
+    This illustrates that in practice
+    we often want to compute linear combinations of rows and
+    columns in a context where we really aren't interested in any
+    associated linear maps.
+    \begin{answer}
+      The pay due each person appears in the matrix product of the two
+      arrays. 
+    \end{answer}
+  \item 
+    Find the product of this matrix with its transpose.
+    \begin{equation*}
+      \begin{mat}
+        \cos\theta  &-\sin\theta  \\
+        \sin\theta  &\cos\theta
+      \end{mat}
+    \end{equation*}
+    \begin{answer}
+      The product is the identity matrix (recall that
+      $\cos^2\theta+\sin^2\theta =1$).
+      An explanation is that the given matrix represents, with respect to
+      the standard bases, a rotation in \( \Re^2 \) of \( \theta \)
+      radians while the transpose represents a rotation of \( -\theta \)
+      radians.
+      The two cancel.  
+     \end{answer}
+  \recommended \item 
+    The need to take linear combinations of rows and columns in tables of 
+    numbers arises often in practice.
+    For instance, this is a map of part of Vermont and New York.
+    %\typeout{Ignore the overfull box here; it is bogus.}
+    \begin{center}
+      \parbox{2in}{In part because of Lake Champlain, there are
+                      no roads directly connecting some pairs of towns.
+                      For instance, there is no way to go from
+                      Winooski to Grand Isle without going through
+                      Colchester.
+                      (To simplify the graph many other roads and towns
+                      have been omitted.
+                      From top to bottom of this map is
+                      about forty miles.)}
+      \quad
+      \parbox{2in}{\includegraphics{ch3.99}}
+    \end{center}
+    \begin{exparts}
+      \partsitem The \definend{adjacency matrix}\index{adjacency matrix}%
+        \index{matrix!adjacency} 
+        of a map is the square matrix
+        whose \( i,j \) entry is the number of roads from city \( i \)
+        to city \( j \).
+        Produce the incidence matrix of this map (take the cities in
+        alphabetical order).
+      \partsitem A matrix is 
+        \definend{symmetric}\index{matrix!symmetric} 
+        if it equals its transpose.
+        Show that an adjacency matrix is symmetric.
+        (These are all two-way streets.
+        Vermont doesn't have many one-way streets.)
+      \partsitem What is the significance of the square of the 
+        incidence matrix?
+        The cube?
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The adjacency matrix is this
+          (e.g, the first row shows that there is only one connection
+          including Burlington, the road to Winooski).
+          \begin{equation*}
+            \begin{mat}[r]
+              0  &0  &0  &0  &1  \\
+              0  &0  &1  &1  &1  \\
+              0  &1  &0  &1  &0  \\
+              0  &1  &1  &0  &0  \\
+              1  &1  &0  &0  &0
+            \end{mat}
+          \end{equation*}
+        \partsitem Because these are two-way roads, 
+          any road connecting city~\( i \)
+          to city~\( j \) gives a connection between city~\( j \) and 
+          city~\( i \).
+        \partsitem The square of the adjacency matrix tells how cities
+          are connected
+          by trips involving two roads.
+      \end{exparts}  
+   \end{answer}
+  \recommended \item 
+    Prove that the diagonal matrices form a subspace of
+    \( \matspace_{\nbyn{n}} \).
+    What is its dimension?
+    \begin{answer}
+      The set of diagonal matrices is nonempty as the zero matrix is
+      diagonal.
+      Clearly it is closed under scalar multiples and sums.
+      Therefore it is a subspace.
+      The dimension is \( n \); here is a basis.
+      \begin{equation*}
+        \set{\begin{mat}
+               1  &0  &\ldots    \\
+               0  &0             \\
+                  &   &\ddots    \\
+               0  &0  &      &0
+             \end{mat},\ldots,
+             \begin{mat}
+               0  &0  &\ldots    \\
+               0  &0             \\
+                  &   &\ddots    \\
+               0  &0  &      &1
+             \end{mat}  }
+      \end{equation*} 
+    \end{answer}
+  \item 
+    Does the identity matrix represent the identity map if the bases are
+    unequal?
+    \begin{answer}
+      No.
+      In \( \polyspace_1 \), with respect to the unequal bases
+      \( B=\sequence{1,x} \) and \( D=\sequence{1+x,1-x} \),
+      the identity transformation is represented by this matrix.
+      \begin{equation*}
+         \rep{\text{id}}{B,D}=
+         \begin{mat}[r]
+           1/2  &1/2  \\
+           1/2  &-1/2
+         \end{mat}_{B,D}
+      \end{equation*}   
+    \end{answer}
+  \item 
+    Show that every multiple of the identity commutes with every
+    square matrix.
+    Are there other matrices that commute with all square matrices?
+    \begin{answer}
+      For any scalar \( r \) and square matrix \( H \) we have
+      \( (rI)H=r(IH)=rH=r(HI)=(Hr)I=H(rI) \).
+
+      There are no other such matrices; here is an argument for $\nbyn{2}$ 
+      matrices that is easily extended to $\nbyn{n}$.
+      If a matrix commutes with all others then it commutes with this
+      unit matrix.
+      \begin{equation*}
+        \begin{mat}
+          0  &a  \\
+          0  &c 
+        \end{mat}
+        =\begin{mat}
+          a  &b  \\
+          c  &d   
+        \end{mat}
+        \begin{mat}[r]
+          0  &1  \\
+          0  &0
+        \end{mat}
+        =\begin{mat}[r]
+          0  &1  \\
+          0  &0
+        \end{mat}
+        \begin{mat}
+          a  &b  \\
+          c  &d   
+        \end{mat}
+        =\begin{mat}
+          c  &d  \\
+          0  &0 
+        \end{mat}
+      \end{equation*}
+      From this we first conclude that the upper left entry~$a$ 
+      must equal its lower right entry~$d$.
+      We also conclude that the lower left entry~$c$ is zero.
+      The argument for the upper right entry~$b$ is similar.
+    \end{answer}
+  \item 
+    Prove or disprove: nonsingular matrices commute.
+    \begin{answer}
+      It is false; these two don't commute.
+      \begin{equation*}
+         \begin{mat}[r]
+           1  &2  \\
+           3  &4
+         \end{mat}
+         \qquad
+         \begin{mat}[r]
+           5  &6  \\
+           7  &8
+         \end{mat}
+      \end{equation*}  
+    \end{answer}
+  \recommended \item \label{exer:PermTimesTransEqId}
+    Show that the product of a permutation matrix and its transpose
+    is an identity matrix.
+    \begin{answer}
+      A permutation matrix has a single one in each row and column, and
+      all its other entries are zeroes.
+      Fix such a matrix.
+      Suppose that the \( i \)-th row has its one in its \( j \)-th column.
+      Then no other row has its one in the \( j \)-th column; every other
+      row has a zero in the \( j \)-th column.
+      Thus the dot product of the \( i \)-th row and any other row is zero.
+
+      The \( i \)-th row of the product is made up of the dot products of the
+      \( i \)-th row of the matrix and the columns of the transpose.
+      By the last paragraph, all such dot products are zero except for the
+      \( i \)-th one, which is one.  
+    \end{answer}
+  \item 
+    Show that if the first and second rows of \( G \) are equal then so
+    are the first and second rows of \( GH \).
+    Generalize.
+    \begin{answer}
+      The generalization is to go from the first and second rows to the
+      $i_1$-th and $i_2$-th rows.
+      Row~$i$ of \( GH \) is made up of the dot products of
+      row~$i$ of \( G \) and the columns of \( H \).
+      Thus if rows \( i_1 \) and \( i_2 \) of \( G \) are equal then so are
+      rows \( i_1 \) and \( i_2 \) of \( GH \).  
+    \end{answer}
+  \item 
+    Describe the product of two diagonal matrices.
+    \begin{answer}
+      If the product of two diagonal matrices is defined\Dash if 
+      both are $\nbyn{n}$\Dash then 
+      the product of the diagonals is the diagonal
+      of the products:~where \( G,H \) are equal-sized diagonal matrices,
+      \( GH \) is all zeros except each that \( i,i \) entry is
+      \( g_{i,i}h_{i,i} \).
+    \end{answer}
+  \item 
+    Write
+    \begin{equation*}
+      \begin{mat}[r]
+        1   &0  \\
+        -3  &3
+      \end{mat}
+    \end{equation*}
+    as the product of two elementary reduction matrices.
+    \begin{answer}
+      One way to produce this matrix from the identity is to use 
+      the column operations
+      of first multiplying the second column by three, and then adding the 
+      negative of the resulting second column to the first.
+      \begin{equation*}
+        \begin{mat}[r]
+          1  &0  \\
+          0  &1
+        \end{mat}
+        \grstep{}
+        \begin{mat}[r]
+          1  &0  \\
+          0  &3
+        \end{mat}
+        \grstep{}
+        \begin{mat}[r]
+          1  &0  \\
+          -3  &3
+        \end{mat}
+      \end{equation*}
+      In contrast with row operations, column operations are written from
+      left to right, so this matrix product expresses
+      doing the above two operations.
+      \begin{equation*}
+        \begin{mat}[r]
+          1  &0  \\
+          0  &3
+        \end{mat}
+        \begin{mat}[r]
+          1  &0  \\
+         -1  &1
+        \end{mat}
+      \end{equation*}
+      \textit{Remark.}
+      Alternatively, we could get the required matrix with row operations.
+      Starting with the identity, first adding the negative of the first 
+      row to the  second, and then multiplying the second row by three
+      will work.
+      Because we write successive row operations as matrix products from
+      right to left, doing these two row operations is expressed with:~the 
+      same matrix product.    
+    \end{answer}
+  \recommended \item 
+    Show that if \( G \) has a row of zeros then \( GH \)
+    (if defined) has a row of zeros.
+    Does that work for columns?
+    \begin{answer}
+      The \( i \)-th row of \( GH \) is made up of the dot products of
+      the \( i \)-th row of \( G \) with the columns of \( H \).
+      The dot product of a zero row with a column is zero.
+
+      It works for columns if stated correctly:~if \( H \) has a column of
+      zeros then \( GH \) (if defined) has a column of zeros.
+      The proof is easy.  
+    \end{answer}
+  \item 
+    Show that the set of unit matrices forms a basis for 
+    \( \matspace_{\nbym{n}{m}} \).
+    \begin{answer}
+      Perhaps the easiest way is to show that each \( \nbym{n}{m} \) matrix
+      is a linear combination of unit matrices in one and only one way:
+      \begin{equation*}
+        c_1\begin{mat}
+             1  &0  &\ldots  \\
+             0  &0           \\
+             \vdots
+           \end{mat}
+        +\dots+
+        c_{n,m}\begin{mat}
+             0  &0      &\ldots  \\
+             \vdots              \\
+             0  &\ldots &       &1
+           \end{mat}
+        =\begin{mat}
+           a_{1,1} &a_{1,2} &\ldots          \\
+           \vdots                            \\
+           a_{n,1} &\ldots  &      &a_{n,m} 
+         \end{mat}
+      \end{equation*}
+      has the unique solution \( c_1=a_{1,1} \), \( c_2=a_{1,2} \),
+      etc.  
+    \end{answer}
+  \item  
+    Find the formula for the $n$-th power of this matrix.
+    \begin{equation*}
+      \begin{mat}[r]
+        1  &1  \\
+        1  &0
+      \end{mat}
+    \end{equation*}
+    \begin{answer}
+      Call that matrix \( F \).
+      We have
+      \begin{equation*}
+        F^2=\begin{mat}[r]
+          2  &1  \\
+          1  &1
+        \end{mat}
+        \quad
+        F^3=\begin{mat}[r]
+          3  &2  \\
+          2  &1
+        \end{mat}
+        \quad
+        F^4=\begin{mat}[r]
+          5  &3  \\
+          3  &2
+        \end{mat}
+      \end{equation*}
+      In general, 
+      \begin{equation*}
+        F^n=\begin{mat}
+          f_{n+1} &f_n  \\
+          f_n     &f_{n-1}
+        \end{mat}
+      \end{equation*}
+      where \( f_i \) is the \( i \)-th Fibonacci number
+      \( f_i=f_{i-1}+f_{i-2} \) and \( f_0=0 \), \( f_1=1 \), 
+      which we verify by induction, based on this equation.
+      \begin{equation*}
+        \begin{mat}
+          f_{i-1}  &f_{i-2} \\
+          f_{i-2}  &f_{i-3}
+        \end{mat}
+        \begin{mat}[r]
+          1  &1  \\
+          1  &0
+        \end{mat}
+        =\begin{mat}
+           f_i     &f_{i-1}  \\
+           f_{i-1} &f_{i-2}
+        \end{mat}
+      \end{equation*}
+    \end{answer}
+  \recommended \item
+   The \definend{trace}\index{trace}\index{matrix!trace} 
+   of a square matrix is the sum of the
+   entries on its diagonal (its significance appears in
+   Chapter Five).
+   Show that \( \trace (GH)=\trace (HG)  \).
+   \begin{answer}
+     \textit{Chapter Five gives a less computational reason\Dash the
+     trace of a matrix is the second coefficient in its characteristic
+     polynomial\Dash but for now we can use indices.}
+     We have
+     \begin{align*}
+       \trace (GH)
+       &=(g_{1,1}h_{1,1}+g_{1,2}h_{2,1}+\dots+g_{1,n}h_{n,1})  \\
+       &\text{}\quad+(g_{2,1}h_{1,2}+g_{2,2}h_{2,2}+\dots+g_{2,n}h_{n,2}) \\
+       &\text{}\quad
+        +\cdots+(g_{n,1}h_{1,n}+g_{n,2}h_{2,n}+\dots+g_{n,n}h_{n,n})
+     \end{align*}
+     while
+     \begin{align*}
+       \trace (HG)
+       &=(h_{1,1}g_{1,1}+h_{1,2}g_{2,1}+\dots+h_{1,n}g_{n,1})  \\
+       &\text{}\quad+(h_{2,1}g_{1,2}+h_{2,2}g_{2,2}+\dots+h_{2,n}g_{n,2}) \\
+       &\text{}\quad
+         +\cdots+(h_{n,1}g_{1,n}+h_{n,2}g_{2,n}+\dots+h_{n,n}g_{n,n})
+     \end{align*}
+     and the two are equal.  
+    \end{answer}
+  \recommended \item
+    A square matrix is 
+    \definend{upper triangular}\index{triangular matrix}%
+    \index{matrix!triangular} 
+    if its only nonzero
+    entries lie above, or on, the diagonal.
+    Show that the product of two upper triangular matrices is upper triangular.
+    Does this hold for lower triangular also?
+    \begin{answer}
+      A matrix is upper triangular if and only if its $i,j$ entry is zero 
+      whenever \( i>j \).
+      Thus, if \( G,H \) are upper triangular then \( h_{i,j} \) and
+      \( g_{i,j} \) are zero when \( i>j \).
+      An entry in the product
+      \( p_{i,j}=g_{i,1}h_{1,j}+\dots+g_{i,n}h_{n,j} \)
+      is zero unless at least some of the terms are nonzero, that is, unless
+      for at least some of the summands
+      \( g_{i,r}h_{r,j} \) both \( i\leq r \) and \( r\leq j \).
+      Of course, if \( i>j \) this cannot happen and so the product of two
+      upper triangular matrices is upper triangular.
+      (A similar argument works for lower triangular matrices.) 
+   \end{answer}
+ \item 
+   A square matrix is a \definend{Markov matrix}\index{matrix!Markov} 
+   if each entry is between zero
+   and one and the sum along each row is one.
+   Prove that a product of Markov matrices is Markov.
+   \begin{answer}
+     The sum along the \( i \)-th row of the product is this.
+     \begin{align*}
+       p_{i,1}+\cdots+p_{i,n}
+       &=(h_{i,1}g_{1,1}+h_{i,2}g_{2,1}+\dots+h_{i,n}g_{n,1})  \\
+       &\text{}\quad+(h_{i,1}g_{1,2}+h_{i,2}g_{2,2}+\dots+h_{i,n}g_{n,2}) \\
+       &\text{}\quad
+        +\dots+(h_{i,1}g_{1,n}+h_{i,2}g_{2,n}+\dots+h_{i,n}g_{n,n})  \\
+       &=h_{i,1}(g_{1,1}+g_{1,2}+\dots+g_{1,n})  \\
+       &\text{}\quad+h_{i,2}(g_{2,1}+g_{2,2}+\dots+g_{2,n}) \\
+       &\text{}\quad
+        +\dots+h_{i,n}(g_{n,1}+g_{n,2}+\dots+g_{n,n})  \\
+       &=h_{i,1}\cdot 1+\dots+h_{i,n}\cdot 1  \\
+       &=1
+     \end{align*}  
+    \end{answer}
+  \recommended \item
+    Give an example of two matrices of the same rank and size
+    with squares of differing rank.
+    \begin{answer}
+      Matrices representing (say, with respect to
+      \( \stdbasis_2,\stdbasis_2\subset\Re^2 \)) the maps that send
+      \begin{equation*}
+        \vec{\beta}_1 \mapsunder{h} \vec{\beta}_1
+        \quad
+        \vec{\beta}_2 \mapsunder{h} \zero
+      \end{equation*}
+      and
+      \begin{equation*}
+        \vec{\beta}_1 \mapsunder{g} \vec{\beta}_2
+        \quad
+        \vec{\beta}_2 \mapsunder{g} \zero
+      \end{equation*}
+      will do.  
+    \end{answer}
+  \item 
+    Combine the two generalizations of the identity matrix,
+    the one allowing entries to be other than ones, and the one allowing the
+    single one in each row and column to be off the diagonal.
+    What is the action of this type of matrix?
+    \begin{answer}
+      The combination is to have all entries of the matrix be zero
+      except for one (possibly) nonzero entry in each row and column.
+      We can write such a matrix as the product of a permutation matrix and
+      a diagonal matrix, e.g.,
+      \begin{equation*}
+        \begin{mat}[r]
+          0  &4  &0  \\
+          2  &0  &0  \\
+          0  &0  &-5
+        \end{mat}
+        =\begin{mat}[r]
+          0  &1  &0  \\
+          1  &0  &0  \\
+          0  &0  &1
+        \end{mat}
+        \begin{mat}[r]
+          4  &0  &0  \\
+          0  &2  &0  \\
+          0  &0  &-5
+        \end{mat}
+      \end{equation*}
+      and its action is thus to rescale the rows and permute them.
+    \end{answer}
+  \item 
+    On a computer multiplications have traditionally been 
+    more costly than additions, so
+    people have tried to in reduce the number of multiplications used to
+    compute a matrix product.
+    \begin{exparts}
+      \partsitem How many real number multiplications do we need in the formula 
+        we gave for the product of a
+        \( \nbym{m}{r} \) matrix and a \( \nbym{r}{n} \) matrix?
+      \partsitem 
+        Matrix multiplication is associative, so all associations yield
+        the same result.
+        The cost in number of multiplications, however, varies.
+        Find the association requiring the fewest real number multiplications
+        to compute the matrix product of
+        a \( \nbym{5}{10} \) matrix,
+        a \( \nbym{10}{20} \) matrix,
+        a \( \nbym{20}{5} \) matrix, and
+        a \( \nbym{5}{1} \) matrix.
+      \partsitem \textit{(Very hard.)}
+        Find a way to multiply two \( \nbyn{2} \) matrices using only seven
+        multiplications instead of the eight suggested by the naive approach.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem Each entry \(p_{i,j}=g_{i,1}h_{1,j}+\dots+g_{1,r}h_{r,1}  \)
+          takes \( r \) multiplications and there are \( m\cdot n \) entries.
+          Thus there are \( m\cdot n\cdot r \) multiplications.
+        \partsitem Let \( H_1 \) be \( \nbym{5}{10} \),
+           let \( H_2 \) be \( \nbym{10}{20} \),
+           let \( H_3 \) be \( \nbym{20}{5} \),
+           let \( H_4 \) be \( \nbym{5}{1} \).
+           Then, using the formula from the prior part, 
+           \begin{center}
+             \begin{tabular}{l|l}
+               \multicolumn{1}{c}{\textit{this association}}  
+                &\multicolumn{1}{c}{\textit{uses this many multiplications}}\\ 
+               \hline
+               \( ((H_1H_2)H_3)H_4 \)     &\( 1000+500+25=1525 \)  \\
+               \( (H_1(H_2H_3))H_4 \)     &\( 1000+250+25=1275 \)  \\
+               \( (H_1H_2)(H_3H_4) \)     &\( 1000+100+100=1200 \)  \\
+               \( H_1(H_2(H_3H_4)) \)     &\( 100+200+50=350    \)  \\
+               \( H_1((H_2H_3)H_4) \)     &\( 1000+50+50=1100    \)
+             \end{tabular}
+           \end{center}
+           shows which is cheapest.
+         \partsitem This is an improvement by S.~Winograd of a formula due to
+           V.~Strassen:
+           let \( w=aA-(a-c-d)(A-C+D) \) and then
+           \begin{equation*}
+               \begin{mat}
+                 a  &b  \\
+                 c  &d
+               \end{mat}
+               \begin{mat}
+                 A  &B  \\
+                 C  &D
+                 \end{mat}    \\
+               =
+               \begin{mat}
+                 \alpha  &\beta  \\
+                 \gamma  &\delta
+               \end{mat}
+               \end{equation*}
+             where $\alpha=aA+bB$,
+             and $\beta=w+(c+d)(C-A)+(a+b-c-d)D$,
+             and $\gamma=w+(a-c)(D-C)-d(A-B-C+D)$,
+             and $\delta=w+(a-c)(D-C)+(c+d)(C-A)$.
+               % \begin{mat}
+               %    aA+bB
+               %    &w+(c+d)(C-A)+(a+b-c-d)D \\
+               %    w+(a-c)(D-C)-d(A-B-C+D)
+               %    &w+(a-c)(D-C)+(c+d)(C-A)
+               % \end{mat}
+           This takes seven multiplications and fifteen additions (save the
+           intermediate results).
+      \end{exparts}  
+    \end{answer}
+  \puzzle \item  
+    \cite{Putnam90A5}
+    If \( A \) and \( B \) are square matrices of the
+    same size such that \( ABAB=0 \), does it follow that \( BABA=0 \)?
+    \begin{answer}
+      \answerasgiven 
+      No, it does not.
+      Let \( A \) and \( B \) represent, with respect to the standard bases,
+      these transformations of \( \Re^3 \).
+      \begin{equation*}
+        \colvec{x \\ y \\ z}\mapsunder{a}\colvec{x \\ y \\ 0}
+        \qquad
+        \colvec{x \\ y \\ z}\mapsunder{a}\colvec{0 \\ x \\ y}
+      \end{equation*}
+      Observe that
+      \begin{equation*}
+        \colvec{x \\ y \\ z}\mapsunder{abab}\colvec[r]{0 \\ 0 \\ 0}
+        \quad\text{but}\quad
+        \colvec{x \\ y \\ z}\mapsunder{baba}\colvec{0 \\ 0 \\ x}.
+      \end{equation*} 
+    \end{answer}
+  \item  
+    \cite{Monthly66p1114}
+    Demonstrate these four assertions to get an
+    alternate proof that column rank equals row rank.
+    \begin{exparts}
+      \partsitem \( \vec{y}\cdot\vec{y}=0 \) iff \( \vec{y}=\zero \).
+      \partsitem \( A\vec{x}=\zero \) iff \( \trans{A}A\vec{x}=\zero \).
+      \partsitem \( \dim(\rangespace{A})=\dim(\rangespace{\trans{A}A}) \).
+      \partsitem \( \text{col rank}(A)=\text{col rank}(\trans{A})
+        =\text{row rank}(A) \).
+    \end{exparts}
+    \begin{answer}
+      \answerasgiven
+      \begin{exparts}
+        \partsitem Obvious.
+        \partsitem If \( \trans{A}A\vec{x}=\zero \) then 
+          \( \vec{y}\cdot\vec{y}=0 \)
+          where \( \vec{y}=A\vec{x} \).
+          Hence \( \vec{y}=\zero \) by (a).
+
+          The converse is obvious.
+        \partsitem By (b), \( A\vec{x}_1 \),\ldots,\( A\vec{x}_n \) 
+          are linearly
+          independent iff \( \trans{A}A\vec{x}_1 \),\ldots,
+          \( \trans{A}A\vec{v}_n \) are linearly independent.
+        \partsitem We have 
+          \begin{multline*}
+            \text{col rank}(A)=\text{col rank}(\trans{A}A)
+            =\dim\set{\trans{A}(A\vec{x})\suchthat \text{all \(\vec{x}\)} }  \\
+            \leq \dim\set{\trans{A}\vec{y}\suchthat \text{all \(\vec{y}\)} }
+            =\text{col rank}(\trans{A}).
+          \end{multline*}
+          Thus also \( \text{col rank}(\trans{A})
+                       \leq\text{col rank}(\trans{\trans{A}}) \)
+          and so \( \text{col rank}(A)=\text{col rank}(\trans{A})
+                    =\text{row rank}(A) \).
+      \end{exparts} 
+    \end{answer}
+  \item  
+    \cite{Monthly55p721}
+    Prove
+    (where \( A \) is an \( \nbyn{n} \) matrix and so defines
+    a transformation of any \( n \)-dimensional space \( V \)
+    with respect to \( B,B \) where \( B \) is a basis) that
+    \( \dim(\rangespace{A}\intersection\nullspace{A})
+           =\dim(\rangespace{A})-\dim(\rangespace{A^2}) \).
+    Conclude
+    \begin{exparts}
+      \partsitem \( \nullspace{A}\subset\rangespace{A} \)
+            iff
+            \( \dim(\nullspace{A})=\dim(\rangespace{A})
+                                   -\dim(\rangespace{A^2}) \);
+      \partsitem \( \rangespace{A}\subseteq\nullspace{A} \)
+            iff
+            \( A^2=0 \);
+      \partsitem \( \rangespace{A}=\nullspace{A} \)
+            iff
+            \( A^2=0 \)
+            and \( \dim(\nullspace{A})=\dim(\rangespace{A}) \) ;
+      \partsitem \( \dim(\rangespace{A}\intersection\nullspace{A})=0 \)
+            iff
+            \( \dim(\rangespace{A})=\dim(\rangespace{A^2}) \) ;
+      \partsitem \textit{(Requires the Direct Sum subsection, 
+            which is optional.)}
+            \( V=\rangespace{A}\directsum\nullspace{A} \)
+            iff
+            \( \dim(\rangespace{A})=\dim(\rangespace{A^2}) \).
+    \end{exparts}
+    \begin{answer}
+      \answerasgiven
+      Let \( \sequence{\vec{z}_1,\dots,\vec{z}_k} \) be a basis for
+      \( \rangespace{A}\intersection\nullspace{A} \)
+      (\( k \) might be \( 0 \)).
+      Let \( \vec{x}_1,\dots,\vec{x}_k\in V \) be such that
+      \( A\vec{x}_i=\vec{z}_i \).
+      Note \( \set{A\vec{x}_1,\dots,A\vec{x}_k} \) is linearly independent,
+      and extend to a basis for \( \rangespace{A} \):
+      \( A\vec{x}_1,\ldots,A\vec{x}_k,A\vec{x}_{k+1},\dots,A\vec{x}_{r_1} \)
+      where \( r_1=\dim(\rangespace{A}) \).
+
+      Now take \( \vec{x}\in V \).
+      Write
+      \begin{equation*}
+        A\vec{x}=a_1(A\vec{x}_1)+\dots+a_{r_1}(A\vec{x}_{r_1})
+      \end{equation*}
+      and so
+      \begin{equation*}
+        A^2\vec{x}=a_1(A^2\vec{x}_1)+\dots+a_{r_1}(A^2\vec{x}_{r_1}).
+      \end{equation*}
+      But \( A\vec{x}_1,\dots,A\vec{x}_k\in\nullspace{A} \), so
+      \( A^2\vec{x}_1=\zero,\dots,A^2\vec{x}_k=\zero \) and we now know
+      \begin{equation*}
+        A^2\vec{x}_{k+1},\dots,A^2\vec{x}_{r_1}
+      \end{equation*}
+      spans \( \rangespace{A^2} \).
+
+      To see \( \set{A^2\vec{x}_{k+1},\dots,A^2\vec{x}_{r_1}} \)
+      is linearly independent, write
       \begin{align*}
-        \vec{v} &=x_1\vec{e}_1+x_2\vec{e}_2+\dots+x_n\vec{e}_n  \\
-                &=(x_1+x_2+\dots+x_n)\vec{e}_1+x_2(\vec{e}_2-\vec{e}_1)+\dots
-                   +x_n(\vec{e}_n-\vec{e}_1)
+        b_{k+1}A^2\vec{x}_{k+1}+\dots+b_{r_1}A^2\vec{x}_{r_1}
+        &=\zero                                                 \\
+        A[b_{k+1}A\vec{x}_{k+1}+\dots+b_{r_1}A\vec{x}_{r_1}]
+        &=\zero
       \end{align*}
-      This shows that if $x_1+x_2+\dots+x_n=0$ then $\vec{v}$ is in the span
-      of $\vec{e}_2-\vec{e}_1$, \ldots, $\vec{e_n}-\vec{e}_1$ (that is, is in
-      the span of the set of those vectors); similarly, each $\sigma(\vec{v})$
-      will be in this span, so $V$ will equal this span and $\dim V=n-1$.
-      On the other hand, if $x_1+x_2+\cdots+x_n\neq 0$ then the above equation
-      shows that $\vec{e}_1\in V$ and thus $\vec{e}_1,\dots,\vec{e}_n\in V$,
-      so $V=\Re^n$ and $\dim V=n$.
+      and, since
+      \( b_{k+1}A\vec{x}_{k+1}+\dots+b_{r_1}A\vec{x}_{r_1}\in\nullspace{A} \)
+      we get a contradiction unless it is \( \zero \) (clearly it is in
+      \( \rangespace{A} \), but \( A\vec{x}_1,\ldots,A\vec{x}_k \) is a basis
+      for \( \rangespace{A}\intersection\nullspace{A} \)).
+
+      Hence \( \dim(\rangespace{A^2})=r_1-k=\dim(\rangespace{A})-
+                \dim(\rangespace{A}\intersection\nullspace{A}) \).  
     \end{answer}
 \end{exercises}
-\index{basis|)}
+
+
+
+
+
+\begin{exercises}
+  \item 
+    Supply the intermediate steps in 
+    \nearbyexample{exam:ThreeByThreeMatInv}.
+    \begin{answer}
+      Here is one way to proceed.
+      Follow
+      \begin{equation*}
+       \grstep{\rho_1\leftrightarrow\rho_2}
+       \begin{pmat}{rrr|rrr}
+              1  &0  &1   &0  &1  &0  \\
+              0  &3  &-1  &1  &0  &0  \\
+              1  &-1 &0   &0  &0  &1
+           \end{pmat}                          
+       \grstep{-\rho_1+\rho_3}
+       \begin{pmat}{rrr|rrr}
+              1  &0  &1   &0  &1  &0  \\
+              0  &3  &-1  &1  &0  &0  \\
+              0  &-1 &-1  &0  &-1 &1
+           \end{pmat}                        
+       \end{equation*}
+       with    
+       \begin{align*}
+         &\grstep{(1/3)\rho_2+\rho_3}
+         \begin{pmat}{rrr|rrr}
+                1  &0  &1     &0   &1  &0  \\
+                0  &3  &-1    &1   &0  &0  \\
+                0  &0  &-4/3  &1/3 &-1 &1
+             \end{pmat}                                           \\ 
+         &\grstep[-(3/4)\rho_3]{(1/3)\rho_2}
+         \begin{pmat}{rrr|rrr}
+                1  &0  &1     &0    &1   &0    \\
+                0  &1  &-1/3  &1/3  &0   &0    \\
+                0  &0  &1     &-1/4 &3/4 &-3/4
+             \end{pmat}                                  \\
+         &\grstep[-\rho_3+\rho_1]{(1/3)\rho_3+\rho_2}
+         \begin{pmat}{rrr|rrr}
+                1  &0  &0     &1/4  &1/4 &3/4  \\
+                0  &1  &0     &1/4  &1/4 &-1/4 \\
+                0  &0  &1     &-1/4 &3/4 &-3/4
+             \end{pmat}                         
+    \end{align*} 
+    and read the answer off of the right side.
+   \end{answer}
+ \recommended \item 
+    Use \nearbycorollary{cor:TwoByTwoInv} to decide if each matrix 
+    has an inverse.
+    \begin{exparts*}
+      \partsitem
+        $\begin{mat}[r]
+           2  &1  \\
+          -1  &1          
+        \end{mat}$
+      \partsitem
+        $\begin{mat}[r]
+          0  &4  \\
+          1  &-3
+        \end{mat}$
+      \partsitem
+        $\begin{mat}[r]
+          2  &-3  \\
+         -4  &6
+        \end{mat}$
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts*}
+        \partsitem Yes, it has an inverse: $ad-bc=2\cdot 1-1\cdot(-1)\neq 0$.
+        \partsitem Yes.
+        \partsitem No.
+      \end{exparts*}
+    \end{answer}
+  \recommended \item  
+     For each invertible matrix in the prior problem, use
+     \nearbycorollary{cor:TwoByTwoInv} to find its inverse.
+     \begin{answer}
+       \begin{exparts}
+         \partsitem 
+           $\displaystyle \frac{1}{2\cdot 1-1\cdot (-1)}
+            \cdot\begin{mat}[r]
+             1  &-1  \\
+             1  &2
+           \end{mat}
+          =\frac{\displaystyle 1}{\displaystyle 3}\cdot\begin{mat}[r]
+             1  &-1  \\
+             1  &2
+           \end{mat}
+          =\begin{mat}[r]
+             1/3  &-1/3  \\
+             1/3  &2/3
+           \end{mat}$
+         \partsitem 
+           $\displaystyle \frac{1}{0\cdot (-3)-4\cdot 1}
+           \cdot\begin{mat}[r]
+             -3  &-4  \\
+             -1  &0
+           \end{mat}
+           =\begin{mat}[r]
+             3/4  &1  \\
+             1/4  &0
+           \end{mat}$
+         \partsitem The prior question shows that no inverse exists.
+       \end{exparts}
+     \end{answer}
+  \recommended \item
+    Find the inverse, if it exists, by using the Gauss-Jordan Method.
+    Check the answers for the $\nbyn{2}$ matrices 
+    with \nearbycorollary{cor:TwoByTwoInv}.
+    \begin{exparts*}
+      \partsitem $\begin{mat}[r]
+                   3  &1  \\
+                   0  &2
+                 \end{mat}$
+      \partsitem \( \begin{mat}[r]
+                 2   &1/2  \\
+                 3   &1
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 2   &-4   \\
+                -1   &2
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 1   &1  &3  \\
+                 0   &2  &4  \\
+                 -1  &1  &0
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 0   &1  &5  \\
+                 0   &-2 &4  \\
+                 2   &3  &-2
+               \end{mat} \)
+      \partsitem \( \begin{mat}[r]
+                 2   &2  &3  \\
+                 1   &-2 &-3 \\
+                 4   &-2 &-3
+               \end{mat} \)
+    \end{exparts*}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The reduction is routine. 
+          \begin{align*}
+            \begin{pmat}{rr|rr}
+              3  &1  &1  &0 \\
+              0  &2  &0  &1
+            \end{pmat}
+            &\grstep[(1/2)\rho_2]{(1/3)\rho_1}
+            \begin{pmat}{rr|rr}
+              1  &1/3  &1/3  &0   \\
+              0  &1    &0    &1/2
+            \end{pmat}                                 \\
+            &\grstep{-(1/3)\rho_2+\rho_1}
+            \begin{pmat}{rr|rr}
+              1  &0    &1/3  &-1/6 \\
+              0  &1    &0    &1/2
+            \end{pmat}
+          \end{align*}
+          This answer agrees with the answer from the check.
+          \begin{equation*}
+            \begin{mat}[r]
+              3  &1  \\
+              0  &2
+            \end{mat}^{-1}
+            =\frac{1}{3\cdot 2-0\cdot 1}\cdot
+            \begin{mat}[r]
+              2  &-1  \\
+              0  &3
+            \end{mat}
+            =\frac{1}{6}\cdot
+            \begin{mat}[r]
+              2  &-1  \\
+              0  &3
+            \end{mat}
+          \end{equation*}
+        \partsitem This reduction is easy.
+          \begin{multline*}
+            \begin{pmat}{rr|rr}
+              2  &1/2  &1  &0  \\
+              3  &1    &0  &1
+            \end{pmat}
+            \grstep{-(3/2)\rho_1+\rho_2}
+            \begin{pmat}{rr|rr}
+              2  &1/2  &1     &0  \\
+              0  &1/4  &-3/2  &1
+            \end{pmat}                       \\
+            \grstep[4\rho_2]{(1/2)\rho_1}
+            \begin{pmat}{rr|rr}
+              1  &1/4   &1/2   &0  \\
+              0  &1     &-6    &4
+            \end{pmat}                         
+            \grstep{-(1/4)\rho_2+\rho_1}
+            \begin{pmat}{rr|rr}
+              1  &0     &2     &-1 \\
+              0  &1     &-6    &4
+            \end{pmat}
+          \end{multline*}
+          The check agrees.
+          \begin{equation*}
+            \frac{1}{2\cdot 1-3\cdot (1/2)}\cdot
+            \begin{mat}[r]
+              1  &-1/2  \\
+              -3 &2
+            \end{mat}
+            =2\cdot
+            \begin{mat}[r]
+              1  &-1/2  \\
+              -3 &2
+            \end{mat}
+          \end{equation*}
+        \partsitem Trying the Gauss-Jordan reduction
+          \begin{equation*}
+            \begin{pmat}{rr|rr}
+              2  &-4  &1  &0  \\
+             -1  &2   &0  &1 
+            \end{pmat}
+            \grstep{(1/2)\rho_1+\rho_2}
+            \begin{pmat}{rr|rr}
+              2  &-4  &1   &0  \\
+              0  &0   &1/2 &1 
+            \end{pmat}
+          \end{equation*}
+          shows that the left side won't reduce to the identity, so no inverse
+          exists.
+          The check $ad-bc=2\cdot 2-(-4)\cdot (-1)=0$ agrees.
+        \partsitem This produces an inverse.
+          \begin{multline*}
+            \begin{pmat}{rrr|rrr}
+              1  &1  &3  &1  &0  &0  \\ 
+              0  &2  &4  &0  &1  &0  \\
+             -1  &1  &0  &0  &0  &1 
+            \end{pmat}  
+            \grstep{\rho_1+\rho_3}
+            \begin{pmat}{rrr|rrr}
+              1  &1  &3  &1  &0  &0  \\ 
+              0  &2  &4  &0  &1  &0  \\
+              0  &2  &3  &1  &0  &1 
+            \end{pmat}                                             \\
+           \begin{aligned}
+            &\grstep{-\rho_2+\rho_3}
+            \begin{pmat}{rrr|rrr}
+              1  &1  &3  &1  &0  &0  \\ 
+              0  &2  &4  &0  &1  &0  \\
+              0  &0  &-1 &1  &-1 &1 
+            \end{pmat}             
+           \grstep[-\rho_3]{(1/2)\rho_2}
+            \begin{pmat}{rrr|rrr}
+              1  &1  &3  &1  &0   &0  \\ 
+              0  &1  &2  &0  &1/2 &0  \\
+              0  &0  &1  &-1 &1   &-1
+            \end{pmat}                                        \\
+            &\grstep[-3\rho_3+\rho_1]{-2\rho_3+\rho_2}
+            \begin{pmat}{rrr|rrr}
+              1  &1  &0  &4  &-3   &3  \\ 
+              0  &1  &0  &2  &-3/2 &2  \\
+              0  &0  &1  &-1 &1    &-1
+            \end{pmat}                                         \\
+            &\grstep{-\rho_2+\rho_1}
+            \begin{pmat}{rrr|rrr}
+              1  &0  &0  &2  &-3/2 &1  \\ 
+              0  &1  &0  &2  &-3/2 &2  \\
+              0  &0  &1  &-1 &1    &-1
+            \end{pmat}
+           \end{aligned} 
+          \end{multline*}
+       \partsitem This is one way to do the reduction.
+          \begin{multline*}
+            \begin{pmat}{rrr|rrr}
+              0  &1  &5  &1  &0  &0  \\
+              0  &-2 &4  &0  &1  &0  \\ 
+              2  &3  &-2 &0  &0  &1
+            \end{pmat}
+            \grstep{\rho_3\leftrightarrow\rho_1}\;
+            \begin{pmat}{rrr|rrr}
+              2  &3  &-2 &0  &0  &1  \\
+              0  &-2 &4  &0  &1  &0  \\ 
+              0  &1  &5  &1  &0  &0  
+            \end{pmat}                                            \\
+            \begin{aligned}
+              &\grstep{(1/2)\rho_2+\rho_3}
+              \begin{pmat}{rrr|rrr}
+                2  &3  &-2 &0  &0   &1  \\
+                0  &-2 &4  &0  &1   &0  \\ 
+                0  &0  &7  &1  &1/2 &0  
+              \end{pmat}                                             \\
+              &\grstep[-(1/2)\rho_2 \\ (1/7)\rho_3]{(1/2)\rho_1}
+              \begin{pmat}{rrr|rrr}
+                1  &3/2  &-1 &0    &0     &1/2  \\
+                0  &1    &-2 &0    &-1/2  &0    \\ 
+                0  &0    &1  &1/7  &1/14  &0  
+              \end{pmat}                                   \\
+              &\grstep[\rho_3+\rho_1]{2\rho_3+\rho_2}
+              \begin{pmat}{rrr|rrr}
+                1  &3/2  &0  &1/7  &1/14  &1/2  \\
+                0  &1    &0  &2/7  &-5/14 &0    \\ 
+                0  &0    &1  &1/7  &1/14  &0  
+              \end{pmat}                                   \\
+              &\grstep{-(3/2)\rho_2+\rho_1}
+              \begin{pmat}{rrr|rrr}
+                1  &0    &0  &-2/7 &17/28 &1/2  \\
+                0  &1    &0  &2/7  &-5/14 &0    \\ 
+                0  &0    &1  &1/7  &1/14  &0  
+              \end{pmat}
+            \end{aligned}
+          \end{multline*}
+        \partsitem There is no inverse.
+          \begin{align*}
+            \begin{pmat}{rrr|rrr}
+              2  &2  &3  &1  &0  &0  \\
+              1  &-2 &-3 &0  &1  &0  \\
+              4  &-2 &-3 &0  &0  &1
+            \end{pmat}
+            &\grstep[-2\rho_1+\rho_3]{-(1/2)\rho_1+\rho_2}
+            \begin{pmat}{rrr|rrr}
+              2  &2  &3    &1     &0  &0  \\
+              0  &-3 &-9/2 &-1/2  &1  &0  \\
+              0  &-6 &-9   &-2    &0  &1
+            \end{pmat}                                          \\
+            &\grstep{-2\rho_2+\rho_3}
+            \begin{pmat}{rrr|rrr}
+              2  &2  &3    &1     &0   &0  \\
+              0  &-3 &-9/2 &-1/2  &1   &0  \\
+              0  &0  &0    &-1    &-2  &1
+            \end{pmat}
+          \end{align*}
+          As a check, 
+          note that the third column of the starting matrix is $3/2$ times 
+          the second, and so it is indeed singular and therefore has no
+          inverse.
+      \end{exparts}
+    \end{answer}
+  \recommended \item 
+    What matrix has this one for its inverse?
+    \begin{equation*}
+      \begin{mat}[r]
+        1  &3  \\
+        2  &5
+       \end{mat}
+     \end{equation*}
+     \begin{answer}
+       We can use \nearbycorollary{cor:TwoByTwoInv}. 
+       \begin{equation*}
+         \frac{1}{1\cdot 5-2\cdot 3}\cdot
+         \begin{mat}[r]
+           5  &-3  \\
+          -2  &1
+         \end{mat}
+         =\begin{mat}[r]
+           -5  &3  \\
+            2  &-1
+         \end{mat}
+       \end{equation*}  
+      \end{answer}
+  \item 
+   How does the inverse operation interact with scalar multiplication 
+   and addition of matrices? 
+   \begin{exparts}
+      \partsitem What is the inverse of \( rH \)?
+      \partsitem Is \( (H+G)^{-1}=H^{-1}+G^{-1} \)?
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem The proof that the inverse is 
+          \( r^{-1}H^{-1}=(1/r)\cdot H^{-1} \) 
+          (provided, of course, that the matrix is invertible) is easy.
+        \partsitem No.
+          For one thing, the fact that $H+G$ has an inverse doesn't imply that
+          $H$ has an inverse or that $G$ has an inverse.
+          Neither of these matrices is invertible but their sum is.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &0  \\
+              0  &0
+            \end{mat}
+            \qquad
+            \begin{mat}[r]
+              0  &0  \\
+              0  &1
+            \end{mat}
+          \end{equation*}
+          Another point is that just because $H$ and $G$ each has an inverse
+          doesn't mean $H+G$ has an inverse; here is an example.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &0  \\
+              0  &1
+            \end{mat}
+            \qquad
+            \begin{mat}[r]
+              -1  &0  \\
+               0  &-1
+            \end{mat}
+          \end{equation*}
+          Still a third point is that, even if the two matrices have inverses,
+          and the sum has an inverse, doesn't imply that the equation holds:
+          \begin{equation*}
+            \begin{mat}[r]
+              2  &0  \\
+              0  &2
+            \end{mat}^{-1}
+            =\begin{mat}[r]
+              1/2  &0  \\
+              0    &1/2
+            \end{mat}^{-1}
+            \qquad
+            \begin{mat}[r]
+              3  &0  \\
+              0  &3
+            \end{mat}^{-1}
+            =\begin{mat}[r]
+              1/3  &0  \\
+              0    &1/3
+            \end{mat}^{-1}
+          \end{equation*}
+          but
+          \begin{equation*}
+            \begin{mat}[r]
+              5  &0  \\
+              0  &5
+            \end{mat}^{-1}
+            =\begin{mat}[r]
+              1/5  &0  \\
+              0    &1/5
+            \end{mat}^{-1}
+          \end{equation*}
+          and $(1/2)_+(1/3)$ does not equal $1/5$.
+      \end{exparts}  
+    \end{answer}
+  \recommended \item 
+    Is \( (T^k)^{-1}=(T^{-1})^k \)?
+    \begin{answer}
+      Yes:
+      \( T^k(T^{-1})^k=(TT\cdots T)\cdot (T^{-1}T^{-1}\cdots T^{-1})
+         =T^{k-1}(TT^{-1})(T^{-1})^{k-1}=\dots=I \). 
+    \end{answer}
+  \item 
+    Is \( H^{-1} \) invertible?
+    \begin{answer}
+       Yes, the inverse of \( H^{-1} \) is \( H \).  
+    \end{answer}
+  \item 
+    For each real number \( \theta \) let
+    \( \map{t_\theta}{\Re^2}{\Re^2} \) be represented with respect to the
+    standard bases by this matrix.
+    \begin{equation*}
+      \begin{mat}
+         \cos\theta  &-\sin\theta  \\
+         \sin\theta  &\cos\theta
+      \end{mat}
+    \end{equation*}
+    Show that \( t_{\theta_1+\theta_2}=t_{\theta_1}\cdot t_{\theta_2} \).
+    Show also that \( {t_{\theta}}^{-1}=t_{-\theta} \).
+    \begin{answer}
+      One way to check that the first is true is with
+      the angle sum formulas from trigonometry.
+      \begin{multline*}
+        \begin{mat}
+          \cos(\theta_1+\theta_2) &-\sin(\theta_1+\theta_2)  \\
+          \sin(\theta_1+\theta_2) &\cos(\theta_1+\theta_2)
+        \end{mat}                                                 \\
+        \begin{aligned}
+        &=\begin{mat}
+          \cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2
+            &-\sin\theta_1\cos\theta_2-\cos\theta_1\sin\theta_2  \\
+          \sin\theta_1\cos\theta_2+\cos\theta_1\sin\theta_2
+            &\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2
+        \end{mat}                                                    \\
+        &=\begin{mat}
+          \cos\theta_1 &-\sin\theta_1  \\
+          \sin\theta_1 &\cos\theta_1
+        \end{mat}
+        \begin{mat}
+          \cos\theta_2 &-\sin\theta_2  \\
+          \sin\theta_2 &\cos\theta_2
+        \end{mat}
+        \end{aligned}
+      \end{multline*}
+      Checking the second equation in this way is similar.
+
+      Of course, the equations can be not just checked but also understood
+      by recalling that $t_\theta$ is the map that rotates 
+      vectors about the origin through an angle of \( \theta \)~radians.  
+    \end{answer}
+  \item \label{exer:TwoByTwoInv}
+    Do the calculations for the proof of \nearbycorollary{cor:TwoByTwoInv}.
+    \begin{answer}
+      There are two cases.
+      For the first case we assume that \( a \) is nonzero.
+      Then
+      \begin{equation*}
+        \grstep{-(c/a)\rho_1+\rho_2}
+        \begin{pmat}{cc|cc}
+           a   &b           &1     &0   \\
+           0   &-(bc/a)+d   &-c/a  &1
+         \end{pmat}
+        =\begin{pmat}{cc|cc}
+           a   &b           &1     &0   \\
+           0   &(ad-bc)/a   &-c/a  &1
+         \end{pmat}
+      \end{equation*}
+      shows that the matrix is invertible (in this \( a\neq 0 \) case) 
+      if and only if  \( ad-bc\neq 0 \).
+      To find the inverse, we finish with the Jordan half of the reduction.
+      \begin{align*}
+        &\grstep[(a/ad-bc)\rho_2]{(1/a)\rho_1}
+        \begin{pmat}{cc|cc}
+           1   &b/a     &1/a         &0   \\
+           0   &1       &-c/(ad-bc)  &a/(ad-bc)
+         \end{pmat}                                       \\   
+        &\grstep{-(b/a)\rho_2+\rho_1}
+        \begin{pmat}{cc|cc}
+           1   &0       &d/(ad-bc)   &-b/(ad-bc)   \\
+           0   &1       &-c/(ad-bc)  &a/(ad-bc)
+         \end{pmat}                                
+      \end{align*}
+
+      The other case is the \( a=0 \) case.
+      We swap to get $c$ into the $1,1$ position.
+      \begin{equation*}
+        \grstep{\rho_1\leftrightarrow\rho_2}
+        \begin{pmat}{cc|cc}
+          c  &d  &0  &1  \\
+          0  &b  &1  &0
+        \end{pmat}
+      \end{equation*}
+      This matrix is nonsingular if and only if
+      both \( b \) and \( c \) are nonzero
+      (which, under the case assumption that \( a=0 \), 
+      holds if and only if \( ad-bc\neq 0 \)).
+      To find the inverse
+      we do the Jordan half.
+      \begin{equation*}
+        \grstep[(1/b)\rho_2]{(1/c)\rho_1}
+        \begin{pmat}{cc|cc}
+          1  &d/c  &0       &1/c  \\
+          0  &1    &1/b     &0
+        \end{pmat}                        
+        \grstep{-(d/c)\rho_2+\rho_1}
+        \begin{pmat}{cc|cc}
+          1  &0  &-d/bc  &1/c  \\
+          0  &1  &1/b    &0
+        \end{pmat}
+      \end{equation*}
+      (Note that this is what is required, since \( a=0 \) gives that
+      \( ad-bc=-bc \)).
+    \end{answer}
+  \item 
+    Show that this matrix 
+    \begin{equation*}
+      H=\begin{mat}[r]
+          1  &0   &1  \\
+          0  &1   &0
+        \end{mat}
+    \end{equation*}
+    has infinitely many right inverses.
+    Show also that it has no left inverse.
+    \begin{answer}
+      With $H$ a $\nbym{2}{3}$ matrix,
+      in looking for a matrix $G$ such that the combination $HG$
+      acts as the $\nbyn{2}$ identity we
+      need $G$ to be $\nbym{3}{2}$. 
+      Setting up the equation
+      \begin{equation*}
+          \begin{mat}[r]
+             1  &0   &1  \\
+             0  &1   &0
+           \end{mat}
+          \begin{mat}
+             m  &n  \\
+             p  &q  \\
+             r  &s
+          \end{mat}
+        =
+          \begin{mat}[r]
+             1  &0  \\
+             0  &1
+          \end{mat}
+      \end{equation*}
+      and solving the resulting linear system
+      \begin{equation*}
+        \begin{linsys}{6}
+           m  &   &   &   &+r &   &=    &1  \\
+              &n  &   &   &   &+s &=    &0  \\
+              &   &p  &   &   &   &=    &0  \\
+              &   &   &q  &   &   &=    &1
+         \end{linsys}
+      \end{equation*}
+      gives infinitely many solutions.
+      \begin{equation*}
+        \set{\colvec{m \\ n \\ p \\ q \\ r \\ s}
+              =\colvec[r]{1 \\ 0 \\ 0 \\ 1 \\ 0 \\ 0}
+              +r\cdot \colvec[r]{-1 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0}
+              +s\cdot \colvec[r]{0 \\ -1 \\ 0 \\ 0 \\ 0 \\ 1}
+             \suchthat r,s\in\Re}
+      \end{equation*}
+      Thus $H$ has infinitely many right inverses.
+
+      As for left inverses, the equation
+      \begin{equation*}
+         \begin{mat}
+            a  &b  \\
+            c  &d
+         \end{mat}
+         \begin{mat}[r]
+             1  &0   &1  \\
+             0  &1   &0
+          \end{mat}
+          =\begin{mat}[r]
+             1  &0  &0  \\
+             0  &1  &0  \\
+             0  &0  &1
+           \end{mat}
+      \end{equation*}
+      gives rise to a linear system with nine equations and four unknowns.
+      \begin{equation*}
+        \begin{linsys}{6}
+          a & & & & & & & & & & &= &1 \\
+            & &b& & & & & & & & &= &0 \\
+          a & & & & & & & & & & &= &0 \\
+            & & & &c& & & & & & &= &0 \\
+            & & & & & &d& & & & &= &1 \\
+            & & & &c& & & & & & &= &0 \\
+            & & & & & & & &e& & &= &0 \\
+            & & & & & & & & & &f&= &0 \\
+            & & & & & & & &e& & &= &1 
+        \end{linsys}
+      \end{equation*}
+      This system is inconsistent (the first equation conflicts
+      with the third, as do the seventh and ninth) 
+      and so there is no left inverse.
+    \end{answer}
+  \item 
+    In the review of inverses example, % \nearbyexample{ex:ProjLeftInvOfEmbed},
+    starting this subsection, how many left inverses has \( \iota \)?
+    \begin{answer}
+      With respect to the standard bases we have
+      \begin{equation*}
+        \rep{\iota}{\stdbasis_2,\stdbasis_3}
+        =\begin{mat}[r]
+          1  &0  \\
+          0  &1  \\
+          0  &0 
+        \end{mat}
+      \end{equation*}
+      and setting up the equation to find the matrix inverse
+      \begin{equation*}
+        \begin{mat}
+          a &b &c \\
+          d &e &f
+        \end{mat}
+        \begin{mat}[r]
+          1 &0  \\
+          0 &1  \\
+          0 &0
+        \end{mat}
+        =\begin{mat}[r]
+          1 &0  \\
+          0 &1 
+        \end{mat}
+        =\rep{\identity}{\stdbasis_2,\stdbasis_2}
+      \end{equation*}
+      gives rise to a linear system.
+      \begin{equation*}
+        \begin{linsys}{6}
+          a & & & & & & & & & & &= &1 \\
+            & &b& & & & & & & & &= &0 \\
+            & & & & & &d& & & & &= &0 \\
+            & & & & & & & &e& & &= &1 
+        \end{linsys}
+      \end{equation*}
+      There are infinitely many solutions in $a,\ldots,f$ 
+      to this system because two of these variables are entirely unrestricted
+      \begin{equation*}
+        \set{\colvec{a \\ b \\ c \\ d \\ e \\ f}
+             =\colvec[r]{1 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0}
+              +c\cdot \colvec[r]{0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0}
+              +f\cdot \colvec[r]{0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 1}
+             \suchthat c,f\in\Re}
+      \end{equation*}
+      and so there are infinitely many solutions to the matrix equation.
+      \begin{equation*}
+        \set{\begin{mat}
+               1  &0  &c  \\
+               0  &1  &f
+             \end{mat}
+             \suchthat c,f\in\Re}
+      \end{equation*}
+      With the bases still fixed at $\stdbasis_2,\stdbasis_2$, 
+      for instance taking $c=2$ and 
+      $f=3$ gives a matrix representing this map.
+      \begin{equation*}
+        \colvec{x \\ y \\ z}
+        \;\mapsunder{f_{2,3}}\;
+        \colvec{x+2z \\ y+3z}
+      \end{equation*}
+      The check that $\composed{f_{2,3}}{\iota}$ is the identity map on
+      $\Re^2$ is easy.
+    \end{answer}
+  \item  
+    If a matrix has infinitely many right-inverses, can it have infinitely
+    many left-inverses?
+    Must it have?
+    \begin{answer}
+      By \nearbylemma{le:LeftAndRightInvEqual} it cannot have infinitely many 
+      left inverses, because
+      a matrix with both left and right inverses has only one of each (and
+      that one of each is one of both\Dash the left and right inverse matrices
+      are equal).  
+    \end{answer}
+  \item Assume that $\map{g}{V}{W}$ is linear.
+    One of these is true, the other is false.
+    Which is which?
+    \begin{exparts}
+      \partsitem If $\map{f}{W}{V}$ is a left inverse of $g$ then $f$
+        must be linear.
+      \partsitem If $\map{f}{W}{V}$ is a right inverse of $g$ then $f$
+        must be linear.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem True,
+          It must be linear, 
+          as the proof from Theorem~II.\ref{th:OOHomoEquivalence} shows.
+        \partsitem False.
+          It may be linear, but it need not be.
+          Consider the projection map $\map{\pi}{\Re^3}{\Re^2}$ described
+          at the start of this subsection.
+          Define $\map{\eta}{\Re^2}{\Re^3}$ in this way.
+          \begin{equation*}
+            \colvec{x  \\  y}\mapsto\colvec{x  \\ y \\ 1}
+          \end{equation*}
+          It is a right inverse of $\pi$ because $\composed{\pi}{\eta}$
+          does this.  
+          \begin{equation*}
+            \colvec{x  \\  y}\mapsto\colvec{x  \\ y \\ 1}\mapsto\colvec{x \\ y}
+          \end{equation*}
+          It is not linear because it does not map the zero vector to the zero 
+          vector.
+      \end{exparts}
+    \end{answer}
+  \recommended \item
+    Assume that \( H \) is invertible and that \( HG \) is the zero matrix.
+    Show that \( G \) is a zero matrix.
+    \begin{answer}
+      The associativity of matrix multiplication gives
+      \( H^{-1}(HG)=H^{-1}Z=Z \) and also
+      \( H^{-1}(HG)=(H^{-1}H)G=IG=G \).
+    \end{answer}
+  \item 
+    Prove that if \( H \) is invertible then
+    the inverse commutes with a matrix \( GH^{-1}=H^{-1}G \) 
+    if and only if $H$ itself commutes with that matrix \( GH=HG \).
+    \begin{answer}
+       Multiply both sides of the first equation by $H$.
+    \end{answer}
+  \recommended \item
+    Show that if \( T \) is square and if \( T^4 \) is the zero matrix
+    then \( (I-T)^{-1}=I+T+T^2+T^3 \).
+    Generalize.
+    \begin{answer}
+      Checking that when $I-T$ is multiplied on both sides by that expression
+      (assuming that $T^4$ is the zero matrix) then the result is the 
+      identity matrix is easy.
+      The obvious generalization is that if \( T^n \) is the zero matrix
+      then \( (I-T)^{-1}=I+T+T^2+\cdots+T^{n-1} \); the check again is
+      easy.  
+    \end{answer}
+  \recommended \item 
+    Let \( D \) be diagonal.
+    Describe \( D^2 \), \( D^3 \), \ldots\thinspace, etc.
+    Describe \( D^{-1} \), \( D^{-2} \), \ldots\thinspace, etc.
+    Define \( D^0 \) appropriately.
+    \begin{answer}
+      The powers of the matrix are formed by taking the powers of the
+      diagonal entries.
+      That is,  \( D^2 \) is all zeros except for diagonal entries of
+      \( {d_{1,1}}^2 \), \( {d_{2,2}}^2 \), etc.
+      This suggests defining \( D^0 \) to be the identity matrix.  
+    \end{answer}
+  \item
+    Prove that any matrix row-equivalent to an invertible matrix is also
+    invertible.
+    \begin{answer}
+      Assume that $B$ is row equivalent to $A$ and that $A$ is invertible.
+      Because they are row-equivalent, there is a sequence of row steps 
+      to reduce one to the other.
+      We can do that reduction with matrices, for instance, $A$ can 
+      change by row operations to $B$ as $B=R_n\cdots R_1A$.
+      This equation gives $B$ as a product of invertible matrices and
+      by \nearbylemma{lem:ProdInvIsInv} then, $B$ is also invertible.  
+    \end{answer}
+  \item 
+    \textit{The first question below appeared as
+    \nearbyexercise{exer:RankProdLeqRankFacts}.}
+    \begin{exparts}
+      \partsitem Show that the rank of the product of two matrices is less than
+        or equal to the minimum of the rank of each.
+      \partsitem Show that if \( T \)  and \( S \) are square then \( TS=I \)
+         if and only if \( ST=I \).
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem See the answer to
+          \nearbyexercise{exer:RankProdLeqRankFacts}.
+        \partsitem We will show that both conditions are equivalent to
+          the condition that the two matrices be nonsingular. 
+
+          As \( T \) and \( S \) are square and their product is defined,
+          they are equal-sized, say \( \nbyn{n} \).
+          Consider the \( TS=I \) half.
+          By the prior item the rank of \( I \) is less than or equal to
+          the minimum of the rank of \( T \) and the rank of \( S \).
+          But the rank of \( I \) is \( n \), so the rank of \( T \) and
+          the rank of \( S \) must each be \( n \).
+          Hence each is nonsingular.
+
+          The same argument shows that \( ST=I \) implies that 
+          each is nonsingular.
+      \end{exparts}  
+    \end{answer}
+  \item 
+    Show that the inverse of a permutation matrix is its transpose.
+    \begin{answer}
+      Inverses are unique, so we need only show that it works.
+      The check appears above as
+      \nearbyexercise{exer:PermTimesTransEqId}.  
+    \end{answer}
+  \item 
+    \textit{The first two parts of this question appeared as
+    \nearbyexercise{exer:TranspAndMult}.}
+    \begin{exparts}
+      \partsitem Show that \( \trans{(GH)}=\trans{H}\trans{G} \).
+      \partsitem A square matrix is {\em symmetric\/} if each 
+        \( i,j \) entry equals the
+        \( j,i \) entry (that is, if the matrix equals its transpose).
+        Show that 
+        the matrices \( H\trans{H} \) and \( \trans{H}H \) are symmetric.
+      \partsitem Show that the inverse of the transpose is the transpose 
+        of the inverse.
+      \partsitem Show that the inverse of a symmetric matrix is symmetric.
+    \end{exparts}
+    \begin{answer}
+      \begin{exparts}
+        \partsitem See the answer for \nearbyexercise{exer:TranspAndMult}.
+        \partsitem See the answer for \nearbyexercise{exer:TranspAndMult}.
+        \partsitem Apply the first part to  
+          \( I=AA^{-1} \) to get
+          $I=\trans{I}=\trans{(AA^{-1})}=\trans{(A^{-1})}\trans{A}$.
+        \partsitem Apply the prior item with \( \trans{A}=A \),
+          as \( A \) is symmetric.
+      \end{exparts}  
+    \end{answer}
+  \recommended \item
+    \textit{The items starting this question appeared as
+    \nearbyexercise{exer:ZeroDivisor}.}
+    \begin{exparts}
+      \partsitem Prove that the composition of the projections
+        \( \map{\pi_x,\pi_y}{\Re^3}{\Re^3} \) is the zero map despite that
+        neither is the zero map.
+      \partsitem Prove that the composition of the derivatives
+        \( \map{d^2/dx^2,\,d^3/dx^3}{\polyspace_4}{\polyspace_4} \)
+        is the zero map despite that neither map is the zero map.
+      \partsitem Give matrix equations representing each of the prior two
+        items.
+    \end{exparts}
+    When two things multiply to give zero despite that neither is zero, each is
+    said to be a \definend{zero divisor}.\index{zero division}
+    Prove that no zero divisor is invertible.
+    \begin{answer}
+      For the answer to the items making up the first half, see 
+      \nearbyexercise{exer:ZeroDivisor}.
+      For the proof in the second half, assume that $A$ is a zero divisor so
+      there is a nonzero matrix $B$ with $AB=Z$ 
+      (or else $BA=Z$; this case is similar), 
+      If $A$ is invertible
+      then $A^{-1}(AB)=(A^{-1}A)B=IB=B$ but also
+      $A^{-1}(AB)=A^{-1}Z=Z$, contradicting that $B$ is nonzero.
+    \end{answer}
+  \item 
+    In real number algebra, there are exactly two numbers, $1$ and $-1$, 
+    that are their own multiplicative inverse.
+    Does \( H^2=I \) have exactly two solutions for \( \nbyn{2} \)
+    matrices?
+    \begin{answer}
+      Here are four solutions to \( H^2=I \).
+      \begin{equation*}
+        \begin{mat}[r]
+          \pm 1  &0  \\
+          0      &\pm 1
+        \end{mat}
+      \end{equation*}   
+    \end{answer}
+  \item 
+   Is the relation `is a two-sided inverse of' transitive?
+   Reflexive?
+   Symmetric?
+   \begin{answer}
+     It is not reflexive since, for instance, 
+     \begin{equation*}
+       H=\begin{mat}[r]
+         1  &0  \\
+         0  &2
+       \end{mat}
+     \end{equation*}
+     is not a two-sided inverse of itself.
+     The same example shows that it is not transitive.
+     That matrix has this two-sided inverse
+     \begin{equation*}
+       G=\begin{mat}[r]
+         1  &0  \\
+         0  &1/2
+       \end{mat}
+     \end{equation*}
+     and while \( H \) is a two-sided inverse of \( G \) and \( G \)
+     is a two-sided inverse of \( H \), we know that \( H \) is not a two-sided
+     inverse of \( H \).
+     However, the relation is symmetric:~if \( G \) is a two-sided inverse of 
+     \( H \) then
+     \( GH=I=HG \) and therefore \( H \) is also a two-sided
+     inverse of \( G \).  
+   \end{answer}
+  \item  
+    \cite{Monthly51p614}
+    Prove: if the sum of the elements of each row of a square
+    matrix is \( k \), then the sum of the elements in each row of the
+    inverse matrix is \( 1/k \).
+    \begin{answer}
+      \answerasgiven %
+      Let \( A \) be \( \nbyn{m} \), non-singular, with the stated property.
+      Let \( B \) be its inverse.
+      Then for \( n\leq m \),
+      \begin{equation*}
+        1
+        =\sum_{r=1}^{m}\delta_{nr}
+        =\sum_{r=1}^{m}\sum_{s=1}^{m}b_{ns}a_{sr}
+        =\sum_{s=1}^{m}\sum_{r=1}^{m}b_{ns}a_{sr}
+        =k\sum_{s=1}^{m}b_{ns}
+      \end{equation*}
+      (\( A \) is singular if \( k=0 \)).  
+   \end{answer}
+\end{exercises}
+\index{matrix!inverse|)}
+
+
+
+
+
+
 
 
   \puzzle \item 
@@ -327,37 +2374,6 @@
 
 
 
-  \puzzle \item  
-    \cite{Monthly55p257}
-    If a third order determinant has elements
-    \( 1 \), \( 2 \), \ldots, \( 9 \), what is the maximum value it may
-    have?
-    \begin{answer}
-      \answerasgiven
-      Let \( P \) be the sum of the three positive terms of the determinant
-      and \( -N \) the sum of the three negative terms.
-      The maximum value of \( P \) is
-      \begin{equation*}
-        9\cdot 8\cdot 7 +6\cdot 5\cdot 4 +3\cdot 2\cdot 1=630.
-      \end{equation*}
-      The minimum value of \( N \) consistent with \( P \) is
-      \begin{equation*}
-        9\cdot 6\cdot 1 +8\cdot 5\cdot 2 +7\cdot 4\cdot 3=218.
-      \end{equation*}
-      Any change in \( P \) would result in lowering that sum by more than
-      \( 4 \).
-      Therefore \( 412 \) the maximum value for the determinant and one form
-      for the determinant is
-      \begin{equation*}
-         \begin{vmat}[r]
-            9  &4  &2  \\
-            3  &8  &6  \\
-            5  &1  &7
-         \end{vmat}.
-      \end{equation*}  
-    \end{answer}
-\end{exercises}
-  
 
 \recommended \item 
     Do the indicated vector operation, if it is defined.
@@ -1268,160 +3284,7 @@
        \end{equation*}
        and so the result wouldn't hold.)
     \end{answer}
-  \puzzle \item 
-    \cite{ContestProb1955no38}
-    Four positive integers are given.
-    Select any three of the integers, find their arithmetic average,
-    and add this result to the fourth integer.
-    Thus the numbers 29, 23, 21, and 17 are obtained.
-    One of the original integers is:
-    \begin{exparts*}
-      \partsitem 19
-      \partsitem 21
-      \partsitem 23
-      \partsitem 29
-      \partsitem 17
-    \end{exparts*}
-    \begin{answer}
-      Solving the system 
-      \begin{equation*}
-        \begin{linsys}{2}
-        (1/3)(a+b+c)  &+  &d  &=  &29  \\
-        (1/3)(b+c+d)  &+  &a  &=  &23  \\
-        (1/3)(c+d+a)  &+  &b  &=  &21  \\
-        (1/3)(d+a+b)  &+  &c  &=  &17
-        \end{linsys}
-      \end{equation*}
-      we obtain $a=12$, $b=9$, $c=3$, $d=21$.
-      Thus the second item, 21, is the correct answer.
-     \end{answer}
-  \puzzle \recommended \item  
-      \cite{Monthly35p47}
-      Laugh at this:  \( \mbox{AHAHA}+\mbox{TEHE}=\mbox{TEHAW} \).
-      It resulted from substituting a code letter for each digit of a simple
-      example in addition, and it is required to identify the letters
-      and prove the solution unique.
-      \begin{answer}
-        \answerasgiven
-        A comparison of the units and hundreds columns of this
-        addition shows that there must be a carry from the tens column.
-        The tens column then tells us that \( A<H \), so there
-        can be no carry from the units or hundreds columns.
-        The five columns then give the following five equations.
-        \begin{align*}
-          A+E  &=  W  \\
-          2H   &=  A+10  \\
-          H    &=  W+1  \\
-          H+T  &=  E+10  \\
-          A+1  &=  T
-        \end{align*}
-        The five linear equations in five unknowns, if solved simultaneously,
-        produce the unique solution: \( A=4 \), \( T=5 \), \( H=7 \),
-        \( W=6 \) and \( E=2 \), so that the original example in addition
-        was \( 47474+5272=52746 \).  
-      \end{answer}
-  \puzzle \item 
-     \cite{Wohascum2}
-     The Wohascum County Board of Commissioners, which has 20 members, 
-     recently had to elect a President.
-     There were three candidates ($A$, $B$, and $C$); on each ballot
-     the three
-     candidates were to be listed in order of preference, with no abstentions.
-     It was found that 11 members, a majority, preferred $A$ over $B$
-     (thus the other 9 preferred $B$ over $A$).
-     Similarly, it was found that 12 members preferred $C$ over $A$.
-     Given these results, it was suggested that $B$ should withdraw, to enable
-     a runoff election between $A$ and $C$.
-     However, $B$ protested, and it was then found that 14 members preferred
-     $B$ over $C$!
-     The Board has not yet recovered from the resulting confusion.
-     Given that every possible order of $A$, $B$, $C$ appeared on at least 
-     one ballot, how many members voted for $B$ as their first choice?
-     \begin{answer}
-       \answerasgiven
-       Eight commissioners voted for $B$.
-       To see this, we will use the given information to study how many voters
-       chose each order of $A$, $B$, $C$.
-
-       The six orders of preference are $ABC$, $ACB$, $BAC$, $BCA$, $CAB$,
-       $CBA$; assume they receive $a$, $b$, $c$, $d$, $e$, $f$ votes 
-       respectively.
-       We know that
-       \begin{equation*}
-         \begin{linsys}{3}
-           a  &+  &b  &+  &e  &=  &11  \\
-           d  &+  &e  &+  &f  &=  &12  \\
-           a  &+  &c  &+  &d  &=  &14
-         \end{linsys}
-       \end{equation*}
-       from the number preferring $A$ over $B$, the number preferring
-       $C$ over $A$, and the number preferring $B$ over $C$.
-       Because 20 votes were cast, we also know that
-       \begin{equation*}
-         \begin{linsys}{3}
-           c  &+  &d  &+  &f  &=  &9  \\
-           a  &+  &b  &+  &c  &=  &8  \\
-           b  &+  &e  &+  &f  &=  &6
-         \end{linsys}
-       \end{equation*}
-       from the preferences for $B$ over $A$, for $A$ over $C$, and for
-       $C$ over $B$.
-
-       The solution is $a=6$, $b=1$, $c=1$, $d=7$, $e=4$, and $f=1$.
-       The number of commissioners voting for $B$ as their first choice 
-       is therefore $c+d=1+7=8$.
-
-       \par\noindent {\em Comments.}
-       The answer to this question would have been the same had we known only
-       that {\em at least\/} 14 commissioners preferred $B$ over $C$.
-
-       The seemingly paradoxical nature of the commissioner's preferences
-       ($A$ is preferred to $B$, and $B$ is preferred to $C$, and $C$ is 
-       preferred to $A$), an example of ``non-transitive dominance'', is not
-       uncommon when individual choices are pooled.
-     \end{answer}
-  \puzzle \item   
-     \cite{Monthly63p93}
-    ``This system
-     of \( n \) linear equations with
-     \( n \) unknowns,'' said the Great Mathematician, ``has a curious
-     property.''
-
-     ``Good heavens!'' said the Poor Nut,  ``What is it?''
-
-     ``Note,'' said the Great Mathematician, ``that the constants are in
-     arithmetic progression.''
-
-     ``It's all so clear when you explain it!'' said the Poor Nut.
-     ``Do you mean like \( 6x+9y=12 \) and \( 15x+18y=21 \)?''
-
-     ``Quite so,'' said the Great Mathematician, pulling out his bassoon.
-     ``Indeed, the system has a unique solution.
-     Can you find it?''
-
-     ``Good heavens!'' cried the Poor Nut, ``I am baffled.''
-
-     Are you?
-     \begin{answer}
-       \answerasgiven
-       \textit{We have not used ``dependent'' yet; 
-       it means here that Gauss's
-       Method shows that there is not a unique solution.}
-       If \( n\geq 3 \) the system is dependent and the solution is not
-       unique.
-       Hence \( n<3 \).
-       But the term ``system'' implies \( n>1 \).
-       Hence \( n=2 \).
-       If the equations are
-       \begin{equation*}
-         \begin{linsys}{2}
-              ax  &+ &(a+d)y  &=  &a+2d  \\
-         (a+3d)x  &+ &(a+4d)y &=  &a+5d  
-         \end{linsys}
-       \end{equation*}
-       then \( x=-1 \), \( y=2 \).  
-    \end{answer}
-
+ 
 
 S06 (Fall 2015)
 
@@ -1790,30 +3653,6 @@ x_1 + x_2 - x_3 - x_4 &= -3.
 \it Use matrix multiplication to determine whether or not $\bar{u} = \begin{bmatrix} 1 \\ -1 \\ 1 \\ 2 \end{bmatrix}$ and $\bar{v} = \begin{bmatrix} -1 \\ 2 \\ 0 \\ 3 \end{bmatrix}$ are solutions to the system.
 \ee
 
-\it Determine whether or not each of the following matrices is invertible. If so, find its inverse. 
-\btt
-(a) $A = \begin{bmatrix} 1 & -2 & 0 & -1 \\ 2 & 3 & 3 & 8 \\ 4 & -6 & -3 & -5 \\ 7 & -5 & 0 & 2 \end{bmatrix}$ \>
-(b) $B = \begin{bmatrix} 2 & 1 & -1 \\ 2 & -1 & 2 \\ 1 & 1 & -1 \end{bmatrix}$ \\[.1in]
-(c) $C = \begin{bmatrix} 4 & 3 \\ 2 & 3 \end{bmatrix}$ \>
-(d) $D^T D$ where $D = \begin{bmatrix} -1 & 0 & 1 \\ 0 & 2 & 1 \end{bmatrix}$
-\etb
-
-\it Solve the systems of linear equations using the inverse of the coefficient matrix. \\
-\begin{minipage}[t]{2in}
-(a) \begin{align*}
-2x + y - z &= 2 \\
-2x - y + 2z &= -1 \\
-x + y - z &= 3
-\end{align*}
-\end{minipage}
-\begin{minipage}[t]{2in}
-(b) \begin{alignat*}{5}
-x_1 &&+ 2x_2 &&+ x_3 &&   &= 2 \\
-    &&  x_2 &&- x_3 &&+ x_4 &= -2 \\
-2x_1 &&+ 4x_2 &&+ 3x_3 &&    &= 0 \\
-x_1 &&+ 2x_2 &&- x_3 &&+ 2x_4 & = -4 
-\end{alignat*}
-\end{minipage}
 
 \it Provide a counter-example to the statement: For any $n \times n$ invertible matrices $A$ and $B$, $A + B$ is invertible.
 
