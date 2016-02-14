@@ -221,6 +221,12 @@
 \indexentry{geometry|hyperpage}{16}
 \indexentry{geometry|hyperpage}{16}
 \indexentry{geometry|hyperpage}{16}
+\indexentry{line!vector equation|hyperpage}{16}
+\indexentry{line!parametric equations|hyperpage}{16}
+\indexentry{line!vector equation|hyperpage}{16}
+\indexentry{line!parallel|hyperpage}{16}
+\indexentry{line!parametric equations|hyperpage}{16}
+\indexentry{line!parallel|hyperpage}{16}
 \indexentry{Cauchy-Schwartz Inequality|hyperpage}{16}
 \indexentry{norm|hyperpage}{16}
 \indexentry{norm|hyperpage}{16}
@@ -244,12 +250,12 @@
 \indexentry{angle|hyperpage}{16}
 \indexentry{unit vector|hyperpage}{16}
 \indexentry{norm|hyperpage}{16}
-\indexentry{norm|hyperpage}{16}
-\indexentry{distance!between two points|hyperpage}{16}
-\indexentry{triangle inequality|hyperpage}{16}
-\indexentry{Cauchy-Schwartz Inequality|hyperpage}{16}
-\indexentry{dot product|hyperpage}{16}
-\indexentry{angle between vectors|hyperpage}{16}
+\indexentry{norm|hyperpage}{17}
+\indexentry{distance!between two points|hyperpage}{17}
+\indexentry{triangle inequality|hyperpage}{17}
+\indexentry{Cauchy-Schwartz Inequality|hyperpage}{17}
+\indexentry{dot product|hyperpage}{17}
+\indexentry{angle between vectors|hyperpage}{17}
 \indexentry{dot product|hyperpage}{17}
 \indexentry{orthogonal|hyperpage}{17}
 \indexentry{dot product|hyperpage}{17}
@@ -269,7 +275,11 @@
 \indexentry{plane!normal vector|hyperpage}{17}
 \indexentry{plane!parallel to another plane|hyperpage}{17}
 \indexentry{intersection!between line and plane|hyperpage}{17}
-\indexentry{angle!between a line and a plane|hyperpage}{17}
+\indexentry{angle!between a line and a plane|hyperpage}{18}
+\indexentry{cross product|hyperpage}{18}
+\indexentry{cross product|hyperpage}{18}
+\indexentry{plane!point-normal equation|hyperpage}{18}
+\indexentry{plane!point-normal equation|hyperpage}{18}
 \indexentry{projection|hyperpage}{18}
 \indexentry{distance:from a point to a line|hyperpage}{18}
 \indexentry{nearest point:to a point in a line|hyperpage}{18}
@@ -277,8 +287,13 @@
 \indexentry{distance:from a point to a plane|hyperpage}{18}
 \indexentry{projection|hyperpage}{18}
 \indexentry{nearest point:to a point in a hyperplane|hyperpage}{18}
-\indexentry{ph|hyperpage}{18}
-\indexentry{place holder|hyperpage}{18}
+\indexentry{area!parallelogram|hyperpage}{18}
+\indexentry{cross product|hyperpage}{18}
+\indexentry{intersection!two lines|hyperpage}{18}
+\indexentry{plane!point-normal equation|hyperpage}{18}
+\indexentry{distance!two lines|hyperpage}{18}
+\indexentry{volume:parallelepiped|hyperpage}{18}
+\indexentry{intersection:line and plane|hyperpage}{18}
 \indexentry{vector space|hyperpage}{19}
 \indexentry{zero vector|hyperpage}{19}
 \indexentry{vector space|hyperpage}{19}

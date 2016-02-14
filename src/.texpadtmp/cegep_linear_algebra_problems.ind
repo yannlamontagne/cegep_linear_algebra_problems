@@ -3,8 +3,10 @@
   \item additive inverse, \hyperpage{19, 20}
   \item adjoint matrix, \hyperpage{13}
   \item angle, \hyperpage{16}
-    \subitem between a line and a plane, \hyperpage{17}
-  \item angle between vectors, \hyperpage{16}
+    \subitem between a line and a plane, \hyperpage{18}
+  \item angle between vectors, \hyperpage{17}
+  \item area
+    \subitem parallelogram, \hyperpage{18}
   \item augmented matrix, \hyperpage{1}, \hyperpage{4}
 
   \indexspace
@@ -13,7 +15,7 @@
 
   \indexspace
 
-  \item Cauchy-Schwartz Inequality, \hyperpage{16}
+  \item Cauchy-Schwartz Inequality, \hyperpage{16, 17}
   \item co-factor expansion, \hyperpage{11}
   \item cofactor, \hyperpage{11}
   \item cofactor expansion, \hyperpage{11}
@@ -22,6 +24,7 @@
   \item consistent, inconsistent, \hyperpage{3}
   \item coordinate vector, \hyperpage{25}
   \item Cramer's Rule, \hyperpage{14}
+  \item cross product, \hyperpage{18}
 
   \indexspace
 
@@ -29,7 +32,8 @@
   \item diagonal matrix, \hyperpage{5, 6}, \hyperpage{20}
   \item dimension, \hyperpage{26, 27}
   \item distance
-    \subitem between two points, \hyperpage{16}
+    \subitem between two points, \hyperpage{16, 17}
+    \subitem two lines, \hyperpage{18}
   \item distance:from a point to a line, \hyperpage{18}
   \item distance:from a point to a plane, \hyperpage{18}
   \item dot product, \hyperpage{16, 17}
@@ -70,12 +74,16 @@
   \item infinite solutions, \hyperpage{4}
   \item intersection
     \subitem between line and plane, \hyperpage{17}
-    \subitem two lines, \hyperpage{15}
+    \subitem two lines, \hyperpage{15}, \hyperpage{18}
+  \item intersection:line and plane, \hyperpage{18}
 
   \indexspace
 
   \item Laplace expansion, \hyperpage{11}
   \item line, \hyperpage{15, 16}
+    \subitem parallel, \hyperpage{16}
+    \subitem parametric equations, \hyperpage{16}
+    \subitem vector equation, \hyperpage{16}
   \item line, plane, \hyperpage{21}
   \item linear combination, \hyperpage{15, 16}, \hyperpage{25}
   \item linear dependence, \hyperpage{23, 24}
@@ -134,12 +142,12 @@
 
   \item parallelogram law, \hyperpage{17}
   \item particular solution, \hyperpage{3}
-  \item ph, \hyperpage{4}, \hyperpage{18}
-  \item place holder, \hyperpage{4}, \hyperpage{18}
+  \item ph, \hyperpage{4}
+  \item place holder, \hyperpage{4}
   \item plane
     \subitem normal vector, \hyperpage{17}
     \subitem parallel to another plane, \hyperpage{17}
-    \subitem point-normal equation, \hyperpage{17}
+    \subitem point-normal equation, \hyperpage{17, 18}
   \item polynomial space, \hyperpage{19}, \hyperpage{21--23}, 
 		\hyperpage{25, 26}
   \item positive real numbers, \hyperpage{20}
@@ -174,7 +182,7 @@
   \indexspace
 
   \item trace of a matrix, \hyperpage{6, 7}
-  \item triangle inequality, \hyperpage{16}
+  \item triangle inequality, \hyperpage{16, 17}
   \item triangular matrix, \hyperpage{6}, \hyperpage{11}
   \item trivial subspace, \hyperpage{21}
 
@@ -191,6 +199,7 @@
   \item vector arithmetic, \hyperpage{15, 16}
   \item vector space, \hyperpage{19, 20}, \hyperpage{22}
     \subitem subspace, \hyperpage{21}
+  \item volume:parallelepiped, \hyperpage{18}
 
   \indexspace
 
