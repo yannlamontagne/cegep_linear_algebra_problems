@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{elementary matrix}
-\index{row-equivalent}
+\index{matrix!inverse}
+\index{matrix!trace of}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,45 +15,9 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Show that
-\[
-A = 
-\begin{mat}
-5 & 7 & 9\\
-1 & 2 & 3\\
-4 & 5 & 6
-\end{mat}
-\text{ and }
-B =
-\begin{mat}
-1 & 2 & 3\\
-4 & 5 & 6\\
-8 & 10 & 12
-\end{mat}
-\]
-are row-equivalent by finding 3 elementary matrices $E_i$ such that $E_3E_2E_1A=B$.
+Find a formula for $\trace(A^{-1})$ where $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$ if $A$ is invertible.
 \end{Exercise}
 
 \begin{Answer}
-$
-E_1=
-\begin{mat}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
-\end{mat}
-E_2=
-\begin{mat}
-1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 2
-\end{mat}
-E_3=
-\begin{mat}
-1 & 0 & 0\\
--1 & 1 & 0\\
-0 & 0 & 1
-\end{mat}
-$
-Note: The answer is not unique.
+$\trace{A^{-1}}=\frac{a+d}{ad-bc}$
 \end{Answer}
