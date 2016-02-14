@@ -1,0 +1,25 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dot product}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{SM}}]
+Consider the following statement: ``If $\vec{a}\dotprod\vec{b}=\vec{a}\dotprod\vec{c}$ then $\vec{b}=\vec{c}$.''
+\Question If the statement is true, prove it. If the statement is false, provide a counterexample.
+\Question If we specify $\vec{a}\neq\vec{0}$, does that change the result?
+\end{Exercise}
+
+\begin{Answer}
+\Question The statement is false: Let $\vec{a}$ be any non-zero vector, let $\vec{b}$ be any non-zero vector that is orthogonal to $\vec{a}$, and let $\vec{c} = -\vec{b}$. Then the antecedent of the statement is true, since both sides are equal to 0, while the consequent is false.
+\Question No.
+\end{Answer}

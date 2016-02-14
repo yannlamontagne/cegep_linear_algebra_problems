@@ -3,12 +3,12 @@ Scanning input file /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/
 !! Input index error (file = /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.idx, line = 9):
    -- Illegal null field.
 
-!! Input index error (file = /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.idx, line = 33):
+!! Input index error (file = /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.idx, line = 39):
    -- Illegal null field.
-!! Input index error (file = /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.idx, line = 34):
+!! Input index error (file = /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.idx, line = 40):
    -- Illegal null field.
-done (311 entries accepted, 3 rejected).
-Sorting entries......done (3030 comparisons).
-Generating output file /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.ind....done (158 lines written, 0 warnings).
+done (473 entries accepted, 3 rejected).
+Sorting entries.......done (4803 comparisons).
+Generating output file /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.ind....done (199 lines written, 0 warnings).
 Output written in /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.ind.
 Transcript written in /Users/sylvain/Dropbox/Dawson/cegep_linear_algebra_problems/src/.texpadtmp/cegep_linear_algebra_problems.ilg.
