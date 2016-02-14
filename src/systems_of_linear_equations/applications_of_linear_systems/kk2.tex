@@ -1,0 +1,97 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{system of linear equations}
+\index{Kirchhoff's law}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Consider the following diagram of three circuits.
+
+\begin{picture}(1,155)
+\put(100,10){
+%\put(0,0){\Line(0,0)(0,30)}\put(0,30){\thicklines \qbezier(-3,0)(0,0)(3,0)}
+%\put(0,33){\qbezier(-8,0)(0,0)(8,0)}
+%\Line(0,33)(0,60)(20,60)
+\Line(0,60)(20,60)
+\put(20,60){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(44,60)(60,60)(60,40)
+\put(60,16){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+%\Line(0,0)(20,0)\put(20,0){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+%\Line(44,0)(60,0)(60,16)
+\Line(60,0)(60,16)
+\put(0,60){\Line(0,0)(0,30)\put(0,33){\thicklines \qbezier(-3,0)(0,0)(3,0)}\put(0,30){\qbezier(-8,0)(0,0)(8,0)}\Line(0,33)(0,60)(20,60)}
+\put(20,120){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(44,120)(60,120)(60,100)
+\put(60,76){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(60,76)(60,60)
+\Line(60,120)(80,120)\put(80,120){\thicklines \qbezier(0,-3)(0,0)(0,3)}
+\put(83,120){\qbezier(0,-8)(0,0)(0,8)}
+\Line(83,120)(96,120)
+\put(96,120){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(60,60)(80,60)
+\put(80,60){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(104,60)(120,60)(120,80)
+\put(120,80){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(120,104)(120,120)
+\Line(60,0)(80,0)
+\put(80,0){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(104,0)(120,0)(120,20)
+\put(120,20){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(120,44)(120,60)
+%\put(-40,30){$10\  volts$}
+\put(-40,90){$10\  volts$}
+\put(60,130){$12\  volts$}
+\put(25,130){$3\  \Omega$}
+\put(25,70){$2\  \Omega$}
+%\put(25,10){$4\  \Omega$}
+\put(100,130){$7\ \Omega$}
+\put(80,70){$1\  \Omega$}
+\put(80,10){$4\  \Omega$}
+\put(40,90){$5\  \Omega$}
+\put(130,90){$3\  \Omega$}
+\put(130,30){$4\  \Omega$}
+\put(40,30){$2\  \Omega$}
+%\put(20,40){$I_1$}
+\put(20,100){$I_1$}
+\put(100,100){$I_2$}
+\put(100,40){$I_3$}
+    }
+\end{picture}
+
+The current in
+amps in the four circuits is denoted by $I_{1},\;I_{2},\;I_{3}$ and it is
+understood that the motion is in the counter clockwise direction.  Solve for $I_{1},\;I_{2},\;I_{3}$.
+\end{Exercise}
+
+\begin{Answer}
+The equations obtained are
+\begin{eqnarray*}
+2I_{1}+5I_{1}+3I_{1}-5I_{2} &=&-10 \\
+I_{2}+3I_{2}+7I_{2}+5I_{2}-5I_{1} &=&-12 \\
+2I_{3}+4I_{3}+4I_{3}+I_{3}-I_{2} &=&0
+\end{eqnarray*}
+Simplifying this yields
+\begin{eqnarray*}
+\begin{linsys}{2}
+10I_{1}-5I_{2} &=&-10 \\
+16I_{2}-5I_{1} &=&-12 \\
+11I_{3}-I_{2} &=&0
+\end{linsys}
+\end{eqnarray*}
+Solving the system gives
+\[
+I_{1}=-
+\frac{44}{27},I_{2}=-\frac{34}{27},I_{3}=-\frac{34}{297}
+\]
+Thus all currents flow in the clockwise direction.
+\end{Answer}

@@ -1,0 +1,64 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!augmented}
+\index{solution set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Consider the following augmented matrix in which $\ast $ denotes an
+arbitrary number and $\blacksquare $ denotes a nonzero number. Determine
+whether the given augmented matrix is consistent. If consistent, is the
+solution unique? 
+
+\begin{multicols}{2}
+\Question $
+\begin{amat}{5}
+\blacksquare & \ast & \ast & \ast & \ast & \ast \\
+0 & \blacksquare & \ast & \ast & 0 & \ast \\
+0 & 0 & \blacksquare & \ast & \ast & \ast \\
+0 & 0 & 0 & 0 & \blacksquare & \ast
+\end{amat}
+$
+\Question $
+\begin{amat}{3}
+\blacksquare & \ast & \ast & \ast \\
+0 & \blacksquare & \ast & \ast \\
+0 & 0 & \blacksquare & \ast
+\end{amat}
+$
+\Question $
+\begin{amat}{5}
+\blacksquare & \ast & \ast & \ast & \ast & \ast \\
+0 & \blacksquare & 0 & \ast & 0 & \ast \\
+0 & 0 & 0 & \blacksquare & \ast & \ast \\
+0 & 0 & 0 & 0 & \blacksquare & \ast
+\end{amat}
+$
+\Question $
+\begin{amat}{5}
+\blacksquare & \ast & \ast & \ast & \ast & \ast \\
+0 & \blacksquare & \ast & \ast & 0 & \ast \\
+0 & 0 & 0 & 0 & \blacksquare & 0 \\
+0 & 0 & 0 & 0 & \ast & \blacksquare
+\end{amat}
+$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question The solution exists but is not unique.
+\Question A solution exists and is unique.
+\Question The solution exists but is not unique.
+\Question There might be a solution. If so, there are infinitely many.
+\end{Answer}

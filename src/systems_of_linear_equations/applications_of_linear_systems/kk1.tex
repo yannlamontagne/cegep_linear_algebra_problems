@@ -1,0 +1,116 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{system of linear equations}
+\index{Kirchhoff's law}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Consider the following diagram of four circuits.
+
+\begin{picture}(1,155)
+%\setlength{\unitlength}{0.2pt}
+\put(100,10){\put(0,0){\Line(0,0)(0,30)}\put(0,30){\thicklines \qbezier(-3,0)(0,0)(3,0)}\put(0,33){\qbezier(-8,0)(0,0)(8,0)}\Line(0,33)(0,60)(20,60)
+\put(20,60){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(44,60)(60,60)(60,40)
+\put(60,16){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(0,0)(20,0)\put(20,0){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(44,0)(60,0)(60,16)
+\put(0,60){\Line(0,0)(0,30)\put(0,33){\thicklines \qbezier(-3,0)(0,0)(3,0)}\put(0,30){\qbezier(-8,0)(0,0)(8,0)}\Line(0,33)(0,60)(20,60)}
+\put(20,120){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(44,120)(60,120)(60,100)
+\put(60,76){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(60,76)(60,60)
+\Line(60,120)(80,120)\put(80,120){\thicklines \qbezier(0,-3)(0,0)(0,3)}
+\put(83,120){\qbezier(0,-8)(0,0)(0,8)}
+\Line(83,120)(96,120)
+\put(96,120){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(60,60)(80,60)
+\put(80,60){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(104,60)(120,60)(120,80)
+\put(120,80){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(120,104)(120,120)
+\Line(60,0)(80,0)
+\put(80,0){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(3,7)(9,-7)(15,7)(21,-7)(27,7)(33,-7)(39,7)(45,-7)(48,0)}
+\Line(104,0)(120,0)(120,20)
+\put(120,20){\thicklines \setlength{\unitlength}{.5pt} \Line(0,0)(7,3)(-7,9)(7,15)(-7,21)(7,27)(-7,33)(7,39)(-7,45)(0,48)}
+\Line(120,44)(120,60)
+\put(-40,30){$10\  \text{volts}$}
+\put(-40,90){$5\  \text{volts}$}
+\put(60,130){$20\  \text{volts}$}
+\put(25,130){$3\  \Omega$}
+\put(25,70){$2\  \Omega$}
+\put(25,10){$4\  \Omega$}
+\put(100,130){$1\ \Omega$}
+\put(80,70){$6\  \Omega$}
+\put(80,10){$2\  \Omega$}
+\put(40,90){$5\  \Omega$}
+\put(130,90){$1\  \Omega$}
+\put(130,30){$3\  \Omega$}
+\put(40,30){$1\  \Omega$}
+\put(20,40){$I_1$}
+\put(20,100){$I_2$}
+\put(100,100){$I_3$}
+\put(100,40){$I_4$}
+    }
+\end{picture}
+
+The jagged lines denote resistors and the numbers next to them give their
+resistance in ohms, written as $\Omega $. The breaks in the lines having one
+short line and one long line denote a voltage source which causes the
+current to flow in the direction which goes from the longer of the two lines
+toward the shorter along the unbroken part of the circuit. The current in
+amps in the four circuits is denoted by $I_{1},I_{2},I_{3},I_{4}$ and it is
+understood that the motion is in the counter clockwise direction. If $I_{k}$
+ends up being negative, then it just means the current flows in the
+clockwise direction. Then Kirchhoff's law states:
+
+
+\textit{The sum of the resistance times the amps in the counter clockwise direction
+around a loop equals the sum of the voltage sources in the same direction
+around the loop.}
+
+In the above diagram, the top left circuit gives the equation
+\begin{equation*}
+2I_{2}-2I_{1}+5I_{2}-5I_{3}+3I_{2}=5
+\end{equation*}
+For the circuit on the lower left,
+\begin{equation*}
+4I_{1}+I_{1}-I_{4}+2I_{1}-2I_{2}=-10
+\end{equation*}
+Write equations for each of the other two circuits and then give a solution
+to the resulting system of equations. 
+\end{Exercise}
+
+\begin{Answer}
+The two other equations are
+\[
+\begin{linsys}{6}
+6I_{3}&-&6I_{4}&+&I_{3}&+&I_{3}&+&5I_{3}&-&5I_{2} &=&-20 \\
+2I_{4}&+&3I_{4}&+&6I_{4}&-&6I_{3}&+&I_{4}&-&I_{1} &=&0
+\end{linsys}
+\]
+Then the system is 
+\[
+\begin{linsys}{6}
+2I_{2}&-&2I_{1}&+&5I_{2}&-&5I_{3}&+&3I_{2}&=&5 \\
+4I_{1}&+&I_{1}&-&I_{4}&+&2I_{1}&-&2I_{2}&=&-10 \\
+6I_{3}&-&6I_{4}&+&I_{3}&+&I_{3}&+&5I_{3}&-&5I_{2}&=&-20 \\
+2I_{4}&+&3I_{4}&+&6I_{4}&-&6I_{3}&+&I_{4}&-&I_{1}&=&0
+\end{linsys}
+\]
+The solution is:
+\[
+ I_{1}=-2.\,\allowbreak 010\,7,I_{2}=-1.\,\allowbreak
+269\,9,I_{3}=-2.\,\allowbreak 735\,5,I_{4}=-1.\,\allowbreak 535\,3
+\]
+\end{Answer}
