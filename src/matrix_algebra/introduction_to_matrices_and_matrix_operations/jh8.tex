@@ -1,0 +1,35 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!triangular}
+\index{matrix!upper triangular}
+\index{matrix!lower triangular}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Show that the product of two upper triangular matrices is upper triangular.
+Does this also hold for lower triangular matrices?
+\end{Exercise}
+\begin{Answer}
+      A matrix is upper triangular if and only if its $i,j$ entry is zero 
+      whenever \( i>j \).
+      Thus, if \( G,H \) are upper triangular then \( h_{i,j} \) and
+      \( g_{i,j} \) are zero when \( i>j \).
+      An entry in the product
+      \( p_{i,j}=g_{i,1}h_{1,j}+\dots+g_{i,n}h_{n,j} \)
+      is zero unless at least some of the terms are nonzero, that is, unless
+      for at least some of the summands
+      \( g_{i,r}h_{r,j} \) both \( i\leq r \) and \( r\leq j \).
+      Of course, if \( i>j \) this cannot happen and so the product of two
+      upper triangular matrices is upper triangular.
+      (A similar argument works for lower triangular matrices.) 
+\end{Answer}

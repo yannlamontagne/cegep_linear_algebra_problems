@@ -1,0 +1,71 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!power}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find the formula for the $n$-th power of this matrix.
+\begin{equation*}
+\begin{mat}[r]
+1  &1  \\
+1  &0
+\end{mat}
+\end{equation*}
+\end{Exercise}
+\begin{Answer}
+Let \( F = \begin{mat}[r]
+1  &1  \\
+1  &0
+\end{mat}\).
+      We have
+      \begin{equation*}
+        F^2=\begin{mat}[r]
+          2  &1  \\
+          1  &1
+        \end{mat}
+        \quad
+        F^3=\begin{mat}[r]
+          3  &2  \\
+          2  &1
+        \end{mat}
+        \quad
+        F^4=\begin{mat}[r]
+          5  &3  \\
+          3  &2
+        \end{mat}
+      \end{equation*}
+      In general, 
+      \begin{equation*}
+        F^n=\begin{mat}
+          f_{n+1} &f_n  \\
+          f_n     &f_{n-1}
+        \end{mat}
+      \end{equation*}
+      where \( f_i \) is the \( i \)-th Fibonacci number
+      \( f_i=f_{i-1}+f_{i-2} \) and \( f_0=0 \), \( f_1=1 \), 
+      which we verify by induction, based on this equation.
+      \begin{equation*}
+        \begin{mat}
+          f_{i-1}  &f_{i-2} \\
+          f_{i-2}  &f_{i-3}
+        \end{mat}
+        \begin{mat}[r]
+          1  &1  \\
+          1  &0
+        \end{mat}
+        =\begin{mat}
+           f_i     &f_{i-1}  \\
+           f_{i-1} &f_{i-2}
+        \end{mat}
+      \end{equation*}
+\end{Answer}

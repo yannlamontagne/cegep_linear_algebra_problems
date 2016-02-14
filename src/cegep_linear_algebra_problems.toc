@@ -16,16 +16,16 @@
 \contentsline {chapter}{\numberline {4}Vector Geometry}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction to Vectors and Lines}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Dot Product and Projections}{16}{section.4.2}
-\contentsline {section}{\numberline {4.3}Cross Product and Planes}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Areas, Volumes and Distances}{16}{section.4.4}
-\contentsline {section}{\numberline {4.5}Geometry of Solutions of Linear Systems}{16}{section.4.5}
-\contentsline {chapter}{\numberline {5}Vector Spaces}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction to Vector Spaces}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Subspaces}{21}{section.5.2}
-\contentsline {section}{\numberline {5.3}Spanning Sets}{22}{section.5.3}
-\contentsline {section}{\numberline {5.4}Linear Independence}{23}{section.5.4}
-\contentsline {section}{\numberline {5.5}Basis}{25}{section.5.5}
-\contentsline {section}{\numberline {5.6}Dimension}{26}{section.5.6}
-\contentsline {chapter}{\numberline {A}Answers to Exercises}{29}{appendix.A}
-\contentsline {chapter}{References}{56}{appendix.A}
-\contentsline {chapter}{Index}{57}{appendix*.2}
+\contentsline {section}{\numberline {4.3}Cross Product and Planes}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}Areas, Volumes and Distances}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Geometry of Solutions of Linear Systems}{19}{section.4.5}
+\contentsline {chapter}{\numberline {5}Vector Spaces}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction to Vector Spaces}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Subspaces}{23}{section.5.2}
+\contentsline {section}{\numberline {5.3}Spanning Sets}{24}{section.5.3}
+\contentsline {section}{\numberline {5.4}Linear Independence}{25}{section.5.4}
+\contentsline {section}{\numberline {5.5}Basis}{27}{section.5.5}
+\contentsline {section}{\numberline {5.6}Dimension}{28}{section.5.6}
+\contentsline {chapter}{\numberline {A}Answers to Exercises}{31}{appendix.A}
+\contentsline {chapter}{References}{60}{appendix.A}
+\contentsline {chapter}{Index}{61}{appendix*.2}
