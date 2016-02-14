@@ -9,29 +9,35 @@
 \indexentry{|hyperpage}{2}
 \indexentry{reduced row echelon form|hyperpage}{2}
 \indexentry{reduced row echelon form|hyperpage}{2}
+\indexentry{row echelon form|hyperpage}{2}
+\indexentry{reduced row echelon form|hyperpage}{2}
 \indexentry{Gauss-Jordan elimination|hyperpage}{2}
-\indexentry{Gaussian Elimination|hyperpage}{2}
-\indexentry{particular solution|hyperpage}{2}
-\indexentry{Gauss-Jordan elimination|hyperpage}{2}
-\indexentry{Gaussian elimination|hyperpage}{2}
+\indexentry{reduced row echelon form|hyperpage}{2}
+\indexentry{solution set|hyperpage}{2}
+\indexentry{Gaussian Elimination|hyperpage}{3}
+\indexentry{system of linear equations|hyperpage}{3}
+\indexentry{particular solution|hyperpage}{3}
+\indexentry{Gauss-Jordan elimination|hyperpage}{3}
+\indexentry{Gaussian elimination|hyperpage}{3}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{3}
 \indexentry{particular solution|hyperpage}{3}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{3}
 \indexentry{particular solution|hyperpage}{3}
 \indexentry{homogeneous system|hyperpage}{3}
+\indexentry{row echelon form|hyperpage}{3}
 \indexentry{quadratic equation, parabola|hyperpage}{3}
 \indexentry{consistent, inconsistent|hyperpage}{3}
 \indexentry{unique solution, inconsistent, infinitely many solutions|hyperpage}{3}
-\indexentry{unique solution|hyperpage}{3}
-\indexentry{Gaussian elimination|hyperpage}{3}
-\indexentry{inconsistent|hyperpage}{3}
-\indexentry{infinite solutions|hyperpage}{3}
-\indexentry{augmented matrix|hyperpage}{3}
-\indexentry{no solution, unique solution, infinitely many solution|hyperpage}{3}
-\indexentry{consistent system|hyperpage}{3}
-\indexentry{augmented matrix|hyperpage}{3}
-\indexentry{|hyperpage}{3}
-\indexentry{|hyperpage}{3}
+\indexentry{unique solution|hyperpage}{4}
+\indexentry{Gaussian elimination|hyperpage}{4}
+\indexentry{inconsistent|hyperpage}{4}
+\indexentry{infinite solutions|hyperpage}{4}
+\indexentry{augmented matrix|hyperpage}{4}
+\indexentry{no solution, unique solution, infinitely many solution|hyperpage}{4}
+\indexentry{consistent system|hyperpage}{4}
+\indexentry{augmented matrix|hyperpage}{4}
+\indexentry{|hyperpage}{4}
+\indexentry{|hyperpage}{4}
 \indexentry{ph|hyperpage}{4}
 \indexentry{place holder|hyperpage}{4}
 \indexentry{matrix entry|hyperpage}{5}
@@ -41,6 +47,7 @@
 \indexentry{matrix addition|hyperpage}{5}
 \indexentry{matrix product|hyperpage}{5}
 \indexentry{ij product|hyperpage}{5}
+\indexentry{matrix!multiplication|hyperpage}{5}
 \indexentry{matrix product|hyperpage}{5}
 \indexentry{matrix dimension|hyperpage}{5}
 \indexentry{matrix product|hyperpage}{5}
@@ -50,265 +57,420 @@
 \indexentry{scalar multiplication|hyperpage}{6}
 \indexentry{matrix multiplication|hyperpage}{6}
 \indexentry{matrix associativity|hyperpage}{6}
+\indexentry{scalar multiplication|hyperpage}{6}
+\indexentry{matrix multiplication|hyperpage}{6}
+\indexentry{matrix associativity|hyperpage}{6}
 \indexentry{diagonal matrix|hyperpage}{6}
 \indexentry{symmetric matrix|hyperpage}{6}
 \indexentry{skew-symmetric matrix|hyperpage}{6}
 \indexentry{triangular matrix|hyperpage}{6}
+\indexentry{matrix!arithmetic|hyperpage}{6}
+\indexentry{matrix!transpose|hyperpage}{6}
+\indexentry{matrix!multiplication|hyperpage}{6}
+\indexentry{matrix!skew-symmetric|hyperpage}{6}
 \indexentry{trace of a matrix|hyperpage}{6}
-\indexentry{matrix addition|hyperpage}{6}
-\indexentry{matrix product|hyperpage}{6}
-\indexentry{matrix power|hyperpage}{6}
-\indexentry{trace of a matrix|hyperpage}{6}
-\indexentry{symmetric matrix|hyperpage}{6}
-\indexentry{nilpotent matrix|hyperpage}{6}
-\indexentry{idempotent matrix|hyperpage}{6}
-\indexentry{matrix equation|hyperpage}{7}
+\indexentry{matrix!multiplication|hyperpage}{6}
+\indexentry{matrix!transpose|hyperpage}{6}
+\indexentry{matrix!trace of|hyperpage}{6}
+\indexentry{matrix!subtraction|hyperpage}{6}
 \indexentry{matrix addition|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix!inverse|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix!inverse|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
+\indexentry{system of linear equations|hyperpage}{7}
 \indexentry{matrix equation|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix equation|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix equation|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{matrix inverse|hyperpage}{7}
-\indexentry{symmetric equation|hyperpage}{7}
-\indexentry{elementary matrix|hyperpage}{8}
-\indexentry{elementary matrix|hyperpage}{8}
-\indexentry{elementary matrix|hyperpage}{8}
-\indexentry{row-equivalent|hyperpage}{8}
-\indexentry{linear system|hyperpage}{8}
+\indexentry{matrix product|hyperpage}{7}
+\indexentry{matrix power|hyperpage}{7}
+\indexentry{matrix!arithmetic|hyperpage}{7}
+\indexentry{trace of a matrix|hyperpage}{7}
+\indexentry{symmetric matrix|hyperpage}{7}
+\indexentry{nilpotent matrix|hyperpage}{7}
+\indexentry{idempotent matrix|hyperpage}{7}
+\indexentry{matrix equation|hyperpage}{8}
+\indexentry{matrix addition|hyperpage}{8}
+\indexentry{matrix!algebraic properties|hyperpage}{8}
+\indexentry{matrix inverse|hyperpage}{8}
+\indexentry{matrix inverse|hyperpage}{8}
+\indexentry{matrix!inverse|hyperpage}{8}
+\indexentry{matrix inverse|hyperpage}{8}
+\indexentry{matrix!inverse|hyperpage}{8}
+\indexentry{matrix inverse|hyperpage}{8}
+\indexentry{matrix!inverse|hyperpage}{8}
+\indexentry{matrix!singular|hyperpage}{8}
 \indexentry{matrix inverse|hyperpage}{8}
 \indexentry{matrix equation|hyperpage}{8}
-\indexentry{system of linear equation|hyperpage}{8}
 \indexentry{matrix inverse|hyperpage}{8}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{co-factor expansion|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{minor|hyperpage}{9}
-\indexentry{cofactor|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{cofactor expansion|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{co-factor expansion|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{cofactor expansion|hyperpage}{9}
-\indexentry{triangular matrix|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{cofactor expansion|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{cofactor expansion|hyperpage}{9}
-\indexentry{determinant|hyperpage}{9}
-\indexentry{Laplace expansion|hyperpage}{9}
-\indexentry{cofactor expansion|hyperpage}{9}
-\indexentry{elementary operation|hyperpage}{10}
-\indexentry{determinant|hyperpage}{10}
-\indexentry{elementary operation|hyperpage}{10}
-\indexentry{determinant|hyperpage}{10}
-\indexentry{determinant|hyperpage}{10}
-\indexentry{elementary operation|hyperpage}{10}
-\indexentry{determinant|hyperpage}{10}
-\indexentry{elementary operation|hyperpage}{10}
-\indexentry{Vandermonde determinant|hyperpage}{10}
+\indexentry{matrix equation|hyperpage}{8}
+\indexentry{matrix inverse|hyperpage}{9}
+\indexentry{matrix equation|hyperpage}{9}
+\indexentry{matrix!power|hyperpage}{9}
+\indexentry{matrix!transpose|hyperpage}{9}
+\indexentry{matrix!symmetric|hyperpage}{9}
+\indexentry{matrix!inverse|hyperpage}{9}
+\indexentry{matrix!trace of|hyperpage}{9}
+\indexentry{matrix!inverse|hyperpage}{9}
+\indexentry{matrix inverse|hyperpage}{9}
+\indexentry{matrix inverse|hyperpage}{9}
+\indexentry{matrix inverse|hyperpage}{9}
+\indexentry{symmetric equation|hyperpage}{9}
+\indexentry{elementary matrix|hyperpage}{9}
+\indexentry{elementary matrix|hyperpage}{9}
+\indexentry{elementary matrix|hyperpage}{9}
+\indexentry{elementary matrix|hyperpage}{9}
+\indexentry{row-equivalent|hyperpage}{9}
+\indexentry{matrix!elementary|hyperpage}{9}
+\indexentry{matrix!transpose|hyperpage}{9}
+\indexentry{matrix equation|hyperpage}{9}
+\indexentry{matrix!elementary|hyperpage}{9}
+\indexentry{linear system|hyperpage}{10}
+\indexentry{matrix inverse|hyperpage}{10}
+\indexentry{matrix equation|hyperpage}{10}
+\indexentry{system of linear equation|hyperpage}{10}
+\indexentry{matrix inverse|hyperpage}{10}
+\indexentry{Laplace expansion|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{adjoint matrix|hyperpage}{11}
-\indexentry{matrix!adjoint|hyperpage}{11}
+\indexentry{co-factor expansion|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
+\indexentry{minor|hyperpage}{11}
+\indexentry{cofactor|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{adjoint matrix|hyperpage}{11}
-\indexentry{matrix!adjoint|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
+\indexentry{cofactor expansion|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{adjoint matrix|hyperpage}{11}
-\indexentry{matrix!adjoint|hyperpage}{11}
+\indexentry{co-factor expansion|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{adjoint matrix|hyperpage}{11}
-\indexentry{matrix!adjoint|hyperpage}{11}
+\indexentry{co-factor expansion|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{adjoint matrix|hyperpage}{11}
-\indexentry{matrix!adjoint|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
+\indexentry{cofactor expansion|hyperpage}{11}
+\indexentry{triangular matrix|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{singular matrix|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
+\indexentry{cofactor expansion|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
+\indexentry{Laplace expansion|hyperpage}{11}
+\indexentry{cofactor expansion|hyperpage}{11}
 \indexentry{determinant|hyperpage}{11}
-\indexentry{matrix!inverse|hyperpage}{11}
-\indexentry{determinant|hyperpage}{11}
-\indexentry{determinant|hyperpage}{11}
-\indexentry{determinant|hyperpage}{11}
-\indexentry{similar matrix|hyperpage}{11}
-\indexentry{matrix!similar|hyperpage}{11}
-\indexentry{determinant|hyperpage}{11}
-\indexentry{determinant|hyperpage}{11}
-\indexentry{determinant|hyperpage}{11}
-\indexentry{Cramer's Rule|hyperpage}{12}
-\indexentry{Cramer's Rule|hyperpage}{12}
-\indexentry{line|hyperpage}{13}
-\indexentry{vector arithmetic|hyperpage}{13}
-\indexentry{vector arithmetic|hyperpage}{13}
-\indexentry{line|hyperpage}{13}
-\indexentry{line|hyperpage}{13}
-\indexentry{line|hyperpage}{13}
-\indexentry{Cauchy-Schwartz Inequality|hyperpage}{13}
-\indexentry{ph|hyperpage}{13}
-\indexentry{place holder|hyperpage}{13}
-\indexentry{ph|hyperpage}{13}
-\indexentry{place holder|hyperpage}{13}
-\indexentry{ph|hyperpage}{13}
-\indexentry{place holder|hyperpage}{13}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{zero vector|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{additive inverse|hyperpage}{15}
-\indexentry{polynomial space|hyperpage}{15}
-\indexentry{matrix space|hyperpage}{15}
-\indexentry{function space|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{polynomial space|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{matrix space|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{polynomial space|hyperpage}{15}
-\indexentry{matrix space|hyperpage}{15}
-\indexentry{zero vector|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{rational numbers|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{vector space|hyperpage}{15}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{function space|hyperpage}{16}
-\indexentry{matrix space|hyperpage}{16}
-\indexentry{diagonal matrix|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{matrix space|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{positive real numbers|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{zero vector|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{matrix space|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{additive inverse|hyperpage}{16}
-\indexentry{vector space|hyperpage}{16}
-\indexentry{matrix space|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{polynomial space|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{trivial subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{line, plane|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{function subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{function space|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{function!even|hyperpage}{17}
-\indexentry{even functions|hyperpage}{17}
-\indexentry{function!odd|hyperpage}{17}
-\indexentry{odd function|hyperpage}{17}
-\indexentry{polynomial space|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{17}
-\indexentry{vector space!subspace|hyperpage}{17}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{vector space|hyperpage}{18}
-\indexentry{polynomial space|hyperpage}{18}
-\indexentry{matrix space|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{vector space|hyperpage}{18}
-\indexentry{function space|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{matrix space, polynomial space|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{matrix space, polynomial space|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{subspace|hyperpage}{18}
-\indexentry{spaning set|hyperpage}{18}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
+\indexentry{Laplace expansion|hyperpage}{11}
+\indexentry{cofactor expansion|hyperpage}{11}
+\indexentry{elementary operation|hyperpage}{12}
+\indexentry{determinant|hyperpage}{12}
+\indexentry{elementary operation|hyperpage}{12}
+\indexentry{determinant|hyperpage}{12}
+\indexentry{determinant|hyperpage}{12}
+\indexentry{elementary operation|hyperpage}{12}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{elementary operation|hyperpage}{13}
+\indexentry{Vandermonde determinant|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{adjoint matrix|hyperpage}{13}
+\indexentry{matrix!adjoint|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{adjoint matrix|hyperpage}{13}
+\indexentry{matrix!adjoint|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{adjoint matrix|hyperpage}{13}
+\indexentry{matrix!adjoint|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{adjoint matrix|hyperpage}{13}
+\indexentry{matrix!adjoint|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{adjoint matrix|hyperpage}{13}
+\indexentry{matrix!adjoint|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{singular matrix|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{similar matrix|hyperpage}{13}
+\indexentry{matrix!similar|hyperpage}{13}
+\indexentry{determinant|hyperpage}{13}
+\indexentry{determinant|hyperpage}{14}
+\indexentry{determinant|hyperpage}{14}
+\indexentry{Cramer's Rule|hyperpage}{14}
+\indexentry{Cramer's Rule|hyperpage}{14}
+\indexentry{Cramer's Rule|hyperpage}{14}
+\indexentry{line|hyperpage}{15}
+\indexentry{vector arithmetic|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{intersection!two lines|hyperpage}{15}
+\indexentry{vector arithmetic|hyperpage}{15}
+\indexentry{vector arithmetic|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{midpoint|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{intersection!two lines|hyperpage}{15}
+\indexentry{line|hyperpage}{15}
+\indexentry{collinear|hyperpage}{15}
+\indexentry{system of linear equations|hyperpage}{15}
+\indexentry{linear combination|hyperpage}{15}
+\indexentry{system of linear equations|hyperpage}{15}
+\indexentry{linear combination|hyperpage}{15}
+\indexentry{vector arithmetic|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{line|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{Cauchy-Schwartz Inequality|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{distance!between two points|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{unit vector|hyperpage}{16}
+\indexentry{dot product|hyperpage}{16}
+\indexentry{angle|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{triangle inequality|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{orthogonal|hyperpage}{16}
+\indexentry{linear combination|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{orthogonal|hyperpage}{16}
+\indexentry{dot product|hyperpage}{16}
+\indexentry{geometry|hyperpage}{16}
+\indexentry{dot product|hyperpage}{16}
+\indexentry{orthogonal|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{angle|hyperpage}{16}
+\indexentry{unit vector|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{norm|hyperpage}{16}
+\indexentry{distance!between two points|hyperpage}{16}
+\indexentry{triangle inequality|hyperpage}{16}
+\indexentry{Cauchy-Schwartz Inequality|hyperpage}{16}
+\indexentry{dot product|hyperpage}{16}
+\indexentry{angle between vectors|hyperpage}{16}
+\indexentry{dot product|hyperpage}{17}
+\indexentry{orthogonal|hyperpage}{17}
+\indexentry{dot product|hyperpage}{17}
+\indexentry{orthogonal|hyperpage}{17}
+\indexentry{dot product|hyperpage}{17}
+\indexentry{norm|hyperpage}{17}
+\indexentry{parallelogram law|hyperpage}{17}
+\indexentry{projection|hyperpage}{17}
+\indexentry{unit vector|hyperpage}{17}
+\indexentry{projection|hyperpage}{17}
+\indexentry{unit vector|hyperpage}{17}
+\indexentry{projection|hyperpage}{17}
+\indexentry{plane!point-normal equation|hyperpage}{17}
+\indexentry{plane!parallel to another plane|hyperpage}{17}
+\indexentry{plane!point-normal equation|hyperpage}{17}
+\indexentry{plane!point-normal equation|hyperpage}{17}
+\indexentry{plane!normal vector|hyperpage}{17}
+\indexentry{plane!parallel to another plane|hyperpage}{17}
+\indexentry{intersection!between line and plane|hyperpage}{17}
+\indexentry{angle!between a line and a plane|hyperpage}{17}
+\indexentry{projection|hyperpage}{18}
+\indexentry{distance:from a point to a line|hyperpage}{18}
+\indexentry{nearest point:to a point in a line|hyperpage}{18}
+\indexentry{projection|hyperpage}{18}
+\indexentry{distance:from a point to a plane|hyperpage}{18}
+\indexentry{projection|hyperpage}{18}
+\indexentry{nearest point:to a point in a hyperplane|hyperpage}{18}
+\indexentry{ph|hyperpage}{18}
+\indexentry{place holder|hyperpage}{18}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{zero vector|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{additive inverse|hyperpage}{19}
 \indexentry{polynomial space|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
+\indexentry{matrix space|hyperpage}{19}
 \indexentry{function space|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{function space|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{19}
-\indexentry{linear dependence|hyperpage}{19}
-\indexentry{linear independence|hyperpage}{20}
-\indexentry{linear dependence|hyperpage}{20}
-\indexentry{linear independence|hyperpage}{20}
-\indexentry{linear dependence|hyperpage}{20}
-\indexentry{linear independence|hyperpage}{20}
-\indexentry{linear dependence|hyperpage}{20}
-\indexentry{linear independence|hyperpage}{20}
-\indexentry{linear dependence|hyperpage}{20}
-\indexentry{linear independence|hyperpage}{20}
-\indexentry{linear dependence|hyperpage}{20}
-\indexentry{linear independence|hyperpage}{20}
-\indexentry{linear dependence|hyperpage}{20}
-\indexentry{basis|hyperpage}{21}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{polynomial space|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{matrix space|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{polynomial space|hyperpage}{19}
+\indexentry{matrix space|hyperpage}{19}
+\indexentry{zero vector|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{rational numbers|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{vector space|hyperpage}{19}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{function space|hyperpage}{20}
+\indexentry{matrix space|hyperpage}{20}
+\indexentry{diagonal matrix|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{matrix space|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{positive real numbers|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{zero vector|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{matrix space|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{additive inverse|hyperpage}{20}
+\indexentry{vector space|hyperpage}{20}
+\indexentry{matrix space|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
 \indexentry{polynomial space|hyperpage}{21}
-\indexentry{basis|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{trivial subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{line, plane|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{function subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{function space|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{function!even|hyperpage}{21}
+\indexentry{even functions|hyperpage}{21}
+\indexentry{function!odd|hyperpage}{21}
+\indexentry{odd function|hyperpage}{21}
 \indexentry{polynomial space|hyperpage}{21}
-\indexentry{basis|hyperpage}{21}
-\indexentry{coordinate vector|hyperpage}{21}
-\indexentry{polynomial space|hyperpage}{21}
-\indexentry{dimension|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{21}
+\indexentry{vector space!subspace|hyperpage}{21}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{vector space|hyperpage}{22}
+\indexentry{polynomial space|hyperpage}{22}
+\indexentry{matrix space|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{vector space|hyperpage}{22}
+\indexentry{function space|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{matrix space, polynomial space|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{matrix space, polynomial space|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{subspace|hyperpage}{22}
+\indexentry{spaning set|hyperpage}{22}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{polynomial space|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{function space|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{function space|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{23}
+\indexentry{linear dependence|hyperpage}{23}
+\indexentry{linear independence|hyperpage}{24}
+\indexentry{linear dependence|hyperpage}{24}
+\indexentry{linear independence|hyperpage}{24}
+\indexentry{linear dependence|hyperpage}{24}
+\indexentry{linear independence|hyperpage}{24}
+\indexentry{linear dependence|hyperpage}{24}
+\indexentry{linear independence|hyperpage}{24}
+\indexentry{linear dependence|hyperpage}{24}
+\indexentry{linear independence|hyperpage}{24}
+\indexentry{linear dependence|hyperpage}{24}
+\indexentry{linear independence|hyperpage}{24}
+\indexentry{linear dependence|hyperpage}{24}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{homogeneous system|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{matrix space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{coordinate vector|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{linear combination|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{symmetric matrix|hyperpage}{25}
+\indexentry{matrix!symmetric|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{basis|hyperpage}{25}
+\indexentry{polynomial space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{matrix space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{homogeneous system|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{matrix space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{polynomial space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{matrix space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{function space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{matrix space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{dimension|hyperpage}{26}
+\indexentry{function space|hyperpage}{26}
+\indexentry{dimension|hyperpage}{27}
+\indexentry{dimension|hyperpage}{27}
+\indexentry{dimension|hyperpage}{27}
+\indexentry{dimension|hyperpage}{27}
+\indexentry{dimension|hyperpage}{27}
+\indexentry{dimension|hyperpage}{27}

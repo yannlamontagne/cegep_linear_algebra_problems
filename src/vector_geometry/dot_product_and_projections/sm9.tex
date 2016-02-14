@@ -1,0 +1,28 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{norm}
+\index{angle}
+\index{unit vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{SM}}]
+Let $\vec{v}$ be any non-zero vector in $\Re^2$, and $\hat{v}$ be the unit vector in its direction.
+\Question Show that $\hat{v}$ can be written as $\hat{v}=(\cos\phi,\sin\phi)$, where $\phi$ is the angle from the positive $x$-axis to $\vec{v}$. Also show that $\vec{v}=\norm{\vec{v}}(\cos\phi,\sin\phi)$.
+\Question Prove the formula $\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta$ by considering the dot product of the two unit vectors $\vec{e_a}=(\cos\alpha,\sin\alpha)$ and $\vec{e_b}=(\cos\beta,\sin\beta)$.
+
+\end{Exercise}
+
+\begin{Answer}
+\Question If $\vec{v} = (v_1,v_2)$, show that $v_1 = \norm{\vec{v}}\cos\phi$ and that $v_2 = \norm{\vec{v}}\sin\phi$. This shows that $\vec{v}=\norm{\vec{v}}(\cos\phi,\sin\phi)$, and since $\hat{v} = \frac{\vec{v}}{\norm{\vec{v}}}$, the required formula follows.
+\Question The angle between the vectors $\vec{e_a}$ and $\vec{e_b}$ is exactly $\alpha-\beta$, so by the definition of the dot product we get $\cos(\alpha-\beta) = \dfrac{\vec{e_a}\dotprod\vec{e_b}}{\norm{\vec{e_a}}\norm{\vec{e_b}}}$. The denominator here is one since they are both unit vectors, and working out the top gives the required result.
+\end{Answer}
