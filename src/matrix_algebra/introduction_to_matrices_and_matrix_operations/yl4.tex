@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{elementary matrix}
-\index{row-equivalent}
+\index{system of linear equations}
+\index{matrix equation}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,45 +15,22 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Show that
+Solve for all $a,\;b,\;c,\;d$ such that
 \[
-A = 
 \begin{mat}
-5 & 7 & 9\\
-1 & 2 & 3\\
-4 & 5 & 6
+3a  +  3b  +  7c - 3d &
+2a  +  3b  +  3c + d \\
+4a  +  17c -  2d  &
+9a  +  6b  +  27c - 4d 
 \end{mat}
-\text{ and }
-B =
+=
 \begin{mat}
-1 & 2 & 3\\
-4 & 5 & 6\\
-8 & 10 & 12
+1 & 2\\
+3 & 6
 \end{mat}
 \]
-are row-equivalent by finding 3 elementary matrices $E_i$ such that $E_3E_2E_1A=B$.
 \end{Exercise}
 
 \begin{Answer}
-$
-E_1=
-\begin{mat}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
-\end{mat}
-E_2=
-\begin{mat}
-1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 2
-\end{mat}
-E_3=
-\begin{mat}
-1 & 0 & 0\\
--1 & 1 & 0\\
-0 & 0 & 1
-\end{mat}
-$
-Note: The answer is not unique.
+$(a,\;b,\;c,\;d)=(-29+60t,\; 13-\frac{79}{3}t,\; 7-14t,\;t)$ where $t\in\Re$.
 \end{Answer}

@@ -1,86 +1,4 @@
-  \recommended \item
-    Prove each, assuming that the operations are defined, 
-    where \( G \), \( H \), and 
-    \( J \) are matrices, where
-    \( Z \) is the zero matrix, and where \( r \) and \( s \) are scalars.
-    \begin{exparts}
-      \partsitem Matrix addition is commutative \( G+H=H+G \).
-      \partsitem Matrix addition is associative \( G+(H+J)=(G+H)+J \).
-      \partsitem The zero matrix is an additive identity \( G+Z=G \).
-      \partsitem \( 0\cdot G=Z \)
-      \partsitem \( (r+s)G=rG+sG \)
-      \partsitem Matrices have an additive inverse \( G+(-1)\cdot G=Z \).
-      \partsitem \( r(G+H)=rG+rH \)
-      \partsitem \( (rs)G=r(sG) \)
-    \end{exparts}
-    \begin{answer}
-      First, each of these properties
-      is easy to check in an entry-by-entry way.
-      For example, writing
-      \begin{equation*}
-        G=
-        \begin{mat}
-          g_{1,1}  &\ldots  &g_{1,n}  \\
-          \vdots   &        &\vdots   \\
-          g_{m,1}  &\ldots  &g_{m,n}       
-        \end{mat}
-        \qquad
-        H=
-        \begin{mat}
-          h_{1,1}  &\ldots  &h_{1,n}  \\
-          \vdots   &        &\vdots   \\
-          h_{m,1}  &\ldots  &h_{m,n}       
-        \end{mat}
-      \end{equation*}
-      then, by definition we have
-      \begin{equation*}
-        G+H=
-        \begin{mat}
-          g_{1,1}+h_{1,1}  &\ldots  &g_{1,n}+h_{1,n}  \\
-          \vdots           &        &\vdots           \\
-          g_{m,1}+h_{m,1}  &\ldots  &g_{m,n}+h_{m,n}       
-        \end{mat}
-      \end{equation*}
-      and
-      \begin{equation*}
-        H+G=
-        \begin{mat}
-          h_{1,1}+g_{1,1}  &\ldots  &h_{1,n}+g_{1,n}  \\
-          \vdots           &        &\vdots           \\
-          h_{m,1}+g_{m,1}  &\ldots  &h_{m,n}+g_{m,n}       
-        \end{mat}
-      \end{equation*}
-      and the two are equal since their entries are equal 
-      $g_{i,j}+h_{i,j}=h_{i,j}+g_{i,j}$.
-      That is, each of these is easy to check by using 
-      \nearbydefinition{def:SumScalarProdMats} alone.
-
-      However, each property
-      is also easy to understand in terms of the represented
-      maps, by applying \nearbytheorem{th:MatOpsRepMapOps} as well as
-      the definition.
-      \begin{exparts}
-        \partsitem The two maps $g+h$ and $h+g$ are equal because
-          $g(\vec{v})+h(\vec{v})=h(\vec{v})+g(\vec{v})$, as addition is 
-          commutative in any vector space.
-          Because the maps are the same, they must have the same
-          representative. 
-        \partsitem As with the prior answer, except that here we apply that
-          vector space addition is associative.
-        \partsitem As before, except that here we note that
-          $g(\vec{v})+z(\vec{v})=g(\vec{v})+\zero=g(\vec{v})$.
-        \partsitem Apply that
-          $0\cdot g(\vec{v})=\zero=z(\vec{v})$.
-        \partsitem Apply that
-          $(r+s)\cdot g(\vec{v})=r\cdot g(\vec{v})+s\cdot g(\vec{v})$.
-        \partsitem Apply the prior two items with $r=1$ and $s=-1$.
-        \partsitem Apply that
-          $r\cdot (g(\vec{v})+h(\vec{v}))=r\cdot g(\vec{v})+r\cdot h(\vec{v})$.
-        \partsitem Apply that
-          $(rs)\cdot g(\vec{v})=r\cdot(s\cdot g(\vec{v}))$.
-      \end{exparts}
-    \end{answer}
-   \item 
+    \item 
     The \definend{trace}\index{trace}\index{matrix!trace} 
     of a square matrix is the sum of the entries on the main diagonal (the
     \( 1,1 \) entry
@@ -98,91 +16,8 @@
       Thus the trace map is a homomorphism from $\matspace_{\nbyn{n}}$ to
       $\Re$.  
     \end{answer}
-  \item 
-    Recall that the \definend{transpose}\index{matrix!transpose}%
-    \index{transpose!interaction with sum and scalar multiplication}
-    of a matrix $M$ is another matrix, whose $i,j$ entry is the 
-    $j,i$ entry of $M$.
-    Verify these identities.
-    \begin{exparts}
-      \partsitem \( \trans{(G+H)}=\trans{G}+\trans{H} \)
-      \partsitem \( \trans{(r\cdot H)}=r\cdot\trans{H} \)
-    \end{exparts}
-    \begin{answer} 
-      \begin{exparts}
-        \partsitem The \( i,j \) entry of \( \trans{(G+H)} \) is
-          \( g_{j,i}+h_{j,i} \).
-          That is also the \( i,j \) entry of \( \trans{G}+\trans{H} \).
-        \partsitem The \( i,j \) entry of \( \trans{(r\cdot H)} \) is
-          \( rh_{j,i} \),
-          which is also the \( i,j \) entry of \( r\cdot\trans{H} \).
-      \end{exparts}  
-   \end{answer}
-  \recommended \item 
-    A square matrix is \definend{symmetric}\index{matrix!symmetric}%
-    \index{symmetric matrix} if each \( i,j \) entry equals
-    the \( j,i \) entry, that is, if the matrix equals its transpose.
-    \begin{exparts}
-      \partsitem Prove that for any square~$H$,
-        the matrix \( H+\trans{H} \) is symmetric.
-        Does every symmetric matrix have this form?
-      \partsitem Prove that the set of \( \nbyn{n} \) symmetric matrices is
-        a subspace of \( \matspace_{\nbyn{n}} \).
-    \end{exparts}
-    \begin{answer}  
-      \begin{exparts}
-        \partsitem For \( H+\trans{H} \), the \( i,j \) entry 
-          is \( h_{i,j}+h_{j,i} \) and
-          the \( j,i \) entry of  is \( h_{j,i}+h_{i,j} \).
-          The two are equal and thus \( H+\trans{H} \) is symmetric.
-
-          Every symmetric matrix does have that form, since we can write
-          \( H=(1/2)\cdot(H+\trans{H}) \).
-        \partsitem The set of symmetric matrices is nonempty as it
-          contains the zero matrix.
-          Clearly a scalar multiple of a symmetric matrix is symmetric.
-          A sum \( H+G \) of two symmetric matrices is
-          symmetric because \( h_{i,j}+g_{i,j}=h_{j,i}+g_{j,i} \) (since
-          \( h_{i,j}=h_{j,i} \) and \( g_{i,j}=g_{j,i} \)).
-          Thus the subset is nonempty and closed under the inherited
-          operations, and so it is a subspace.
-      \end{exparts} 
-    \end{answer}
 
 
-
-  \item  
-    Which products are defined?
-    \begin{exparts*}
-      \partsitem \( \nbym{3}{2} \)~times~\( \nbym{2}{3} \)
-      \partsitem \( \nbym{2}{3} \)~times~\( \nbym{3}{2} \)
-      \partsitem \( \nbym{2}{2} \)~times~\( \nbym{3}{3} \)
-      \partsitem \( \nbym{3}{3} \)~times~\( \nbym{2}{2} \)
-    \end{exparts*}
-    \begin{answer}
-      \begin{exparts*}
-        \partsitem Yes.
-        \partsitem Yes.
-        \partsitem No.
-        \partsitem No.
-      \end{exparts*}
-    \end{answer}
-  \recommended \item 
-    Give the size of the product or state ``not defined''.
-    \begin{exparts}
-      \partsitem a \( \nbym{2}{3} \) matrix times a \( \nbym{3}{1} \) matrix
-      \partsitem a \( \nbym{1}{12} \) matrix times a \( \nbym{12}{1} \) matrix
-      \partsitem a \( \nbym{2}{3} \) matrix times a \( \nbym{2}{1} \) matrix
-      \partsitem a \( \nbym{2}{2} \) matrix times a \( \nbym{2}{2} \) matrix
-    \end{exparts}
-    \begin{answer}  
-      \begin{exparts*}
-        \partsitem \( \nbym{2}{1} \)
-        \partsitem \( \nbym{1}{1} \)
-        \partsitem Not defined.
-        \partsitem \( \nbym{2}{2} \)
-      \end{exparts*}  
-     \end{answer}
   \recommended \item \label{exer:NicePropsMatMult} 
     \begin{exparts}
       \partsitem Prove that $H^pH^q=H^{p+q}$ and $(H^p)^q=H^{pq}$ 
@@ -231,37 +66,7 @@
           $\vec{v}$ to $r\cdot f(h(\vec{v}))+s\cdot g(h(\vec{v}))$.
       \end{exparts}  
     \end{answer}
-  \item \label{exer:TranspAndMult} 
-    We can ask how the matrix product 
-    operation interacts with the transpose operation. 
-    \begin{exparts}  
-      \partsitem Show that \( \trans{(GH)}=\trans{H}\trans{G} \).
-      \partsitem A square matrix is 
-        \definend{symmetric}\index{symmetric matrix}%
-        \index{matrix!symmetric} if each 
-        \( i,j \) entry equals the
-        \( j,i \) entry, that is, if the matrix equals its own transpose.
-        Show that
-        the matrices \( H\trans{H} \) and \( \trans{H}H \) are symmetric.
-      %\partsitem Is every symmetric matrix of that form?
-    \end{exparts}
-    \begin{answer}
-      We have not seen a map interpretation of the transpose operation, so
-      we will verify these by considering the entries.
-      \begin{exparts}
-        \partsitem  The \( i,j \) entry of \( \trans{GH} \) is the $j,i$ entry
-          of $GH$, which is the dot product of the
-          \( j \)-th row of \( G \) and the \( i \)-th column of \( H \).
-          The \( i,j \) entry of \( \trans{H}\trans{G} \) is the dot product of
-          the \( i \)-th row of \( \trans{H} \) and the \( j \)-th column of
-          \( \trans{G} \), which is the
-          dot product of the \( i \)-th column of \( H \) and the
-          \( j \)-th row of \( G \).
-          Dot product is commutative and so these two are equal.
-        \partsitem By the prior item each equals its transpose, e.g.,
-          $\trans{(H\trans{H})}=\trans{\trans{H}}\trans{H}=H\trans{H}$.
-      \end{exparts}  
-    \end{answer}
+
 
 
 
@@ -445,39 +250,7 @@
           \end{equation*}
       \end{exparts}
     \end{answer}
-  \recommended \item
-    This table gives the number of hours of each 
-    type done by each worker, and the associated pay rates.
-    Use matrices to compute the wages due.
-    \begin{center}
-      \begin{tabular}[t]{l|cc}
-        \multicolumn{1}{c}{\ }  
-         &\multicolumn{1}{c}{\textit{regular}} 
-         &\multicolumn{1}{c}{\textit{overtime}}  \\
-        \cline{2-3}
-        Alan      &40        &12        \\
-        Betty     &35        &6         \\  
-        Catherine &40        &18         \\  
-        Donald    &28        &0         %\\  \cline{2-3}
-      \end{tabular}
-      \qquad
-      \begin{tabular}[t]{l|c}
-        \multicolumn{1}{c}{\ }   &\multicolumn{1}{c}{\textit{wage}}   \\
-        \cline{2-2}
-        regular   &$\$ 25.00$  \\
-        overtime  &$\$ 45.00$  %\\  \cline{2-2}
-      \end{tabular}
-    \end{center}
-    \textit{Remark.}
-    This illustrates that in practice
-    we often want to compute linear combinations of rows and
-    columns in a context where we really aren't interested in any
-    associated linear maps.
-    \begin{answer}
-      The pay due each person appears in the matrix product of the two
-      arrays. 
-    \end{answer}
-  \item 
+   \item 
     Find the product of this matrix with its transpose.
     \begin{equation*}
       \begin{mat}
@@ -494,107 +267,7 @@
       radians.
       The two cancel.  
      \end{answer}
-  \recommended \item 
-    The need to take linear combinations of rows and columns in tables of 
-    numbers arises often in practice.
-    For instance, this is a map of part of Vermont and New York.
-    %\typeout{Ignore the overfull box here; it is bogus.}
-    \begin{center}
-      \parbox{2in}{In part because of Lake Champlain, there are
-                      no roads directly connecting some pairs of towns.
-                      For instance, there is no way to go from
-                      Winooski to Grand Isle without going through
-                      Colchester.
-                      (To simplify the graph many other roads and towns
-                      have been omitted.
-                      From top to bottom of this map is
-                      about forty miles.)}
-      \quad
-      \parbox{2in}{\includegraphics{ch3.99}}
-    \end{center}
-    \begin{exparts}
-      \partsitem The \definend{adjacency matrix}\index{adjacency matrix}%
-        \index{matrix!adjacency} 
-        of a map is the square matrix
-        whose \( i,j \) entry is the number of roads from city \( i \)
-        to city \( j \).
-        Produce the incidence matrix of this map (take the cities in
-        alphabetical order).
-      \partsitem A matrix is 
-        \definend{symmetric}\index{matrix!symmetric} 
-        if it equals its transpose.
-        Show that an adjacency matrix is symmetric.
-        (These are all two-way streets.
-        Vermont doesn't have many one-way streets.)
-      \partsitem What is the significance of the square of the 
-        incidence matrix?
-        The cube?
-    \end{exparts}
-    \begin{answer}
-      \begin{exparts}
-        \partsitem The adjacency matrix is this
-          (e.g, the first row shows that there is only one connection
-          including Burlington, the road to Winooski).
-          \begin{equation*}
-            \begin{mat}[r]
-              0  &0  &0  &0  &1  \\
-              0  &0  &1  &1  &1  \\
-              0  &1  &0  &1  &0  \\
-              0  &1  &1  &0  &0  \\
-              1  &1  &0  &0  &0
-            \end{mat}
-          \end{equation*}
-        \partsitem Because these are two-way roads, 
-          any road connecting city~\( i \)
-          to city~\( j \) gives a connection between city~\( j \) and 
-          city~\( i \).
-        \partsitem The square of the adjacency matrix tells how cities
-          are connected
-          by trips involving two roads.
-      \end{exparts}  
-   \end{answer}
-  \recommended \item 
-    Prove that the diagonal matrices form a subspace of
-    \( \matspace_{\nbyn{n}} \).
-    What is its dimension?
-    \begin{answer}
-      The set of diagonal matrices is nonempty as the zero matrix is
-      diagonal.
-      Clearly it is closed under scalar multiples and sums.
-      Therefore it is a subspace.
-      The dimension is \( n \); here is a basis.
-      \begin{equation*}
-        \set{\begin{mat}
-               1  &0  &\ldots    \\
-               0  &0             \\
-                  &   &\ddots    \\
-               0  &0  &      &0
-             \end{mat},\ldots,
-             \begin{mat}
-               0  &0  &\ldots    \\
-               0  &0             \\
-                  &   &\ddots    \\
-               0  &0  &      &1
-             \end{mat}  }
-      \end{equation*} 
-    \end{answer}
-  \item 
-    Does the identity matrix represent the identity map if the bases are
-    unequal?
-    \begin{answer}
-      No.
-      In \( \polyspace_1 \), with respect to the unequal bases
-      \( B=\sequence{1,x} \) and \( D=\sequence{1+x,1-x} \),
-      the identity transformation is represented by this matrix.
-      \begin{equation*}
-         \rep{\text{id}}{B,D}=
-         \begin{mat}[r]
-           1/2  &1/2  \\
-           1/2  &-1/2
-         \end{mat}_{B,D}
-      \end{equation*}   
-    \end{answer}
-  \item 
+   \item 
     Show that every multiple of the identity commutes with every
     square matrix.
     Are there other matrices that commute with all square matrices?
@@ -638,39 +311,8 @@
       The argument for the upper right entry~$b$ is similar.
     \end{answer}
   \item 
-    Prove or disprove: nonsingular matrices commute.
-    \begin{answer}
-      It is false; these two don't commute.
-      \begin{equation*}
-         \begin{mat}[r]
-           1  &2  \\
-           3  &4
-         \end{mat}
-         \qquad
-         \begin{mat}[r]
-           5  &6  \\
-           7  &8
-         \end{mat}
-      \end{equation*}  
-    \end{answer}
-  \recommended \item \label{exer:PermTimesTransEqId}
-    Show that the product of a permutation matrix and its transpose
-    is an identity matrix.
-    \begin{answer}
-      A permutation matrix has a single one in each row and column, and
-      all its other entries are zeroes.
-      Fix such a matrix.
-      Suppose that the \( i \)-th row has its one in its \( j \)-th column.
-      Then no other row has its one in the \( j \)-th column; every other
-      row has a zero in the \( j \)-th column.
-      Thus the dot product of the \( i \)-th row and any other row is zero.
 
-      The \( i \)-th row of the product is made up of the dot products of the
-      \( i \)-th row of the matrix and the columns of the transpose.
-      By the last paragraph, all such dot products are zero except for the
-      \( i \)-th one, which is one.  
-    \end{answer}
-  \item 
+    \item 
     Show that if the first and second rows of \( G \) are equal then so
     are the first and second rows of \( GH \).
     Generalize.
@@ -744,47 +386,7 @@
       right to left, doing these two row operations is expressed with:~the 
       same matrix product.    
     \end{answer}
-  \recommended \item 
-    Show that if \( G \) has a row of zeros then \( GH \)
-    (if defined) has a row of zeros.
-    Does that work for columns?
-    \begin{answer}
-      The \( i \)-th row of \( GH \) is made up of the dot products of
-      the \( i \)-th row of \( G \) with the columns of \( H \).
-      The dot product of a zero row with a column is zero.
-
-      It works for columns if stated correctly:~if \( H \) has a column of
-      zeros then \( GH \) (if defined) has a column of zeros.
-      The proof is easy.  
-    \end{answer}
-  \item 
-    Show that the set of unit matrices forms a basis for 
-    \( \matspace_{\nbym{n}{m}} \).
-    \begin{answer}
-      Perhaps the easiest way is to show that each \( \nbym{n}{m} \) matrix
-      is a linear combination of unit matrices in one and only one way:
-      \begin{equation*}
-        c_1\begin{mat}
-             1  &0  &\ldots  \\
-             0  &0           \\
-             \vdots
-           \end{mat}
-        +\dots+
-        c_{n,m}\begin{mat}
-             0  &0      &\ldots  \\
-             \vdots              \\
-             0  &\ldots &       &1
-           \end{mat}
-        =\begin{mat}
-           a_{1,1} &a_{1,2} &\ldots          \\
-           \vdots                            \\
-           a_{n,1} &\ldots  &      &a_{n,m} 
-         \end{mat}
-      \end{equation*}
-      has the unique solution \( c_1=a_{1,1} \), \( c_2=a_{1,2} \),
-      etc.  
-    \end{answer}
-  \item  
+   \item  
     Find the formula for the $n$-th power of this matrix.
     \begin{equation*}
       \begin{mat}[r]

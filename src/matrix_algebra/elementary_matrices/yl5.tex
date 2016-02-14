@@ -1,8 +1,9 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{elementary matrix}
-\index{row-equivalent}
+\index{matrix!elementary}
+\index{matrix!transpose}
+\index{matrix equation}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,45 +16,42 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Show that
+Given
 \[
-A = 
+A=
 \begin{mat}
-5 & 7 & 9\\
-1 & 2 & 3\\
-4 & 5 & 6
-\end{mat}
-\text{ and }
-B =
+1 & 1 & 1 & 1\\
+2 & 2 & 2 & 2\\
+3 & 3 & 3 & 3\\
+\end{mat},
+\]
+\[
+E_1 = 
 \begin{mat}
-1 & 2 & 3\\
-4 & 5 & 6\\
-8 & 10 & 12
+1 & 0 & 0\\
+0 & 1 & 0\\
+2 & 0 & 1
+\end{mat},\quad
+E_2 = 
+\begin{mat}
+1 & 0 & 0\\
+0 & -3 & 0\\
+0 & 0 & 1\\
+\end{mat},\quad
+E_3 = 
+\begin{mat}
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0
 \end{mat}
 \]
-are row-equivalent by finding 3 elementary matrices $E_i$ such that $E_3E_2E_1A=B$.
+and
+\[
+\trans{(\trans{X}E_1E_2E_3)}=A
+\]
+solve for $X$, if possible.
 \end{Exercise}
 
 \begin{Answer}
-$
-E_1=
-\begin{mat}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
-\end{mat}
-E_2=
-\begin{mat}
-1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 2
-\end{mat}
-E_3=
-\begin{mat}
-1 & 0 & 0\\
--1 & 1 & 0\\
-0 & 0 & 1
-\end{mat}
-$
-Note: The answer is not unique.
+$X=\begin{mat} 1 & 1 & 1 & 1\\ -\frac23 & -\frac23 & -\frac23 & -\frac23\\ 1 & 1 & 1 & 1\end{mat}$
 \end{Answer}
