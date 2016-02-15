@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{matrix!inverse}
+\index{matrix!trace of}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,27 +15,9 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Solve of $A$ given that it satisfies
-\[
-(I-A^T)^{-1} = (\trace(B)B^2)^T
-\]
-where
-\[
-B=
-\begin{bmatrix}
-2 & 3\\
-1 & 2
-\end{bmatrix}\;
-\]
-
+Find a formula for $\trace(A^{-1})$ if $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$ is invertible.
 \end{Exercise}
 
 \begin{Answer}
-$
-A=
-\begin{mat}
--\frac34 & 3\\
-1 & -\frac34
-\end{mat}
-$
+$\trace{A^{-1}}=\frac{a+d}{ad-bc}$
 \end{Answer}

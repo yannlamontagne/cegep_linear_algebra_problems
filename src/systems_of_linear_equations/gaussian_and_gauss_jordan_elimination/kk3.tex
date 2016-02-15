@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{solution set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Choose $h$ and $k$ such that the augmented matrix shown has each of the following: 
+one solution, no solution and infinitely many solutions.
+\begin{multicols}{2}
+\Question $
+\begin{amat}{2}
+1 & h & 2 \\
+2 & 4 & k
+\end{amat}$
+\Question $
+\begin{amat}{2}
+1 & 2 & 2 \\
+2 & h & k
+\end{amat}$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question If $h\neq 2$ there will be a unique solution for any $k$. If $h=2$ and $%
+k\neq 4,$ there are no solutions. If $h=2$ and $k=4,$ then there are
+infinitely many solutions.
+\Question If $h\neq 4,$ then there is exactly one solution. If $h=4$ and $k\neq 4,$
+then there are no solutions. If $h=4$ and $k=4,$ then there are infinitely
+many solutions.
+\end{Answer}
