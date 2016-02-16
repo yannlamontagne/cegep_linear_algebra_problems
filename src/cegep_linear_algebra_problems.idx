@@ -14,8 +14,8 @@
 \indexentry{row echelon form|hyperpage}{2}
 \indexentry{matrix!augmented|hyperpage}{2}
 \indexentry{solution set|hyperpage}{2}
-\indexentry{reduced row echelon form|hyperpage}{3}
-\indexentry{solution set|hyperpage}{3}
+\indexentry{reduced row echelon form|hyperpage}{2}
+\indexentry{solution set|hyperpage}{2}
 \indexentry{reduced row echelon form|hyperpage}{3}
 \indexentry{Gauss-Jordan elimination|hyperpage}{3}
 \indexentry{Gaussian Elimination|hyperpage}{3}
@@ -92,56 +92,73 @@
 \indexentry{matrix!subtraction|hyperpage}{9}
 \indexentry{matrix!transpose|hyperpage}{9}
 \indexentry{matrix!inverse|hyperpage}{9}
+\indexentry{matrix!idempotent|hyperpage}{9}
 \indexentry{matrix addition|hyperpage}{9}
+\indexentry{matrix!multiplication|hyperpage}{9}
 \indexentry{system of linear equations|hyperpage}{9}
 \indexentry{matrix equation|hyperpage}{9}
+\indexentry{matrix equation|hyperpage}{9}
+\indexentry{matrix addition|hyperpage}{9}
 \indexentry{matrix product|hyperpage}{9}
 \indexentry{matrix power|hyperpage}{9}
 \indexentry{matrix!arithmetic|hyperpage}{9}
-\indexentry{trace of a matrix|hyperpage}{9}
-\indexentry{symmetric matrix|hyperpage}{9}
-\indexentry{nilpotent matrix|hyperpage}{9}
-\indexentry{idempotent matrix|hyperpage}{9}
-\indexentry{matrix!power|hyperpage}{9}
-\indexentry{matrix equation|hyperpage}{10}
-\indexentry{matrix addition|hyperpage}{10}
-\indexentry{matrix!algebraic properties|hyperpage}{10}
+\indexentry{matrix!algebraic properties|hyperpage}{9}
+\indexentry{matrix!cancellation law|hyperpage}{9}
+\indexentry{matrix!commutativity|hyperpage}{9}
+\indexentry{matrix!zero factor property|hyperpage}{9}
+\indexentry{matrix!commutitavity|hyperpage}{10}
+\indexentry{matrix!power|hyperpage}{10}
+\indexentry{matrix!transpose|hyperpage}{10}
+\indexentry{matrix!symmetric|hyperpage}{10}
+\indexentry{matrix!skew-symmetric|hyperpage}{10}
+\indexentry{matrix!symmetric|hyperpage}{10}
+\indexentry{trace of a matrix|hyperpage}{10}
+\indexentry{symmetric matrix|hyperpage}{10}
+\indexentry{nilpotent matrix|hyperpage}{10}
+\indexentry{idempotent matrix|hyperpage}{10}
+\indexentry{matrix!power|hyperpage}{10}
 \indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix!inverse|hyperpage}{10}
-\indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix!inverse|hyperpage}{10}
-\indexentry{matrix inverse|hyperpage}{10}
-\indexentry{matrix!inverse|hyperpage}{10}
-\indexentry{matrix!singular|hyperpage}{10}
 \indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
+\indexentry{matrix!inverse|hyperpage}{10}
+\indexentry{matrix!trace of|hyperpage}{10}
+\indexentry{matrix inverse|hyperpage}{10}
+\indexentry{matrix!inverse|hyperpage}{10}
+\indexentry{elementary matrix|hyperpage}{10}
+\indexentry{elementary matrix|hyperpage}{10}
+\indexentry{elementary matrix|hyperpage}{11}
+\indexentry{elementary matrix|hyperpage}{11}
+\indexentry{matrix inverse|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
 \indexentry{matrix equation|hyperpage}{11}
-\indexentry{matrix!power|hyperpage}{11}
-\indexentry{matrix!transpose|hyperpage}{11}
-\indexentry{matrix!symmetric|hyperpage}{11}
+\indexentry{elementary matrix|hyperpage}{11}
+\indexentry{elementary matrix|hyperpage}{11}
+\indexentry{matrix!elementary|hyperpage}{11}
 \indexentry{matrix!inverse|hyperpage}{11}
-\indexentry{matrix!trace of|hyperpage}{11}
-\indexentry{matrix!inverse|hyperpage}{11}
-\indexentry{matrix inverse|hyperpage}{11}
-\indexentry{matrix inverse|hyperpage}{11}
-\indexentry{matrix inverse|hyperpage}{11}
-\indexentry{symmetric equation|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
 \indexentry{elementary matrix|hyperpage}{11}
 \indexentry{row-equivalent|hyperpage}{11}
-\indexentry{matrix!elementary|hyperpage}{11}
-\indexentry{matrix!transpose|hyperpage}{11}
-\indexentry{matrix equation|hyperpage}{11}
 \indexentry{matrix!elementary|hyperpage}{12}
+\indexentry{matrix!transpose|hyperpage}{12}
+\indexentry{matrix equation|hyperpage}{12}
+\indexentry{matrix!elementary|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!transpose|hyperpage}{12}
+\indexentry{matrix inverse|hyperpage}{12}
+\indexentry{symmetric equation|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix inverse|hyperpage}{12}
+\indexentry{matrix!singular|hyperpage}{12}
+\indexentry{matrix inverse|hyperpage}{12}
 \indexentry{linear system|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix equation|hyperpage}{12}

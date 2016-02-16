@@ -1874,15 +1874,6 @@ x_1 + x_2 - x_3 - x_4 &= -3.
 		$A^{n+1} = A^n A$.
 	\it Prove that $A^T$ is invertible and determine its inverse in terms of $A^{-1}$. Hint: Use Proposition 3.
 	\ee
-
-\it We say that an $n \times n$ matrix $A$ is \ul{symmetric} provided $A^T = A$; we say that $A$ is \ul{skew-symmetric} provided $A^T = -A$. 
-	\be
-	\it Give examples of symmetric and skew-symmetric $2 \times 2$, $3 \times 3$, and $4 \times 4$ matrices.
-	\it What can you say about the main diagonal of a skew-symmetric matrix?
-	\it Prove that for any $n \times n$ matrix $A$, $A + A^T$, $AA^T$, and $A^T A$ are symmetric and $A - A^T$ is skew-symmetric.
-	\it Prove that any $n \times n$ can be written as the sum of a symmetric and skew-symmetric matrices. Hint: Did you do part (c) yet?
-	\ee
-
 Application JH
 
 
