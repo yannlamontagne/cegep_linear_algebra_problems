@@ -1,0 +1,27 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{elementary operation}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Let $A$ be an $\nbyn{r}$ matrix and suppose there are $r-1$ rows
+(columns) such that all rows (columns) are linear combinations of these $r-1$
+rows (columns). Show $\detop\left( A\right) =0.$ 
+\end{Exercise}
+
+\begin{Answer}
+If the determinant is nonzero, then it will remain nonzero with row operations applied to the matrix.
+However, by assumption, you can obtain a row of zeros by doing row
+operations. Thus the determinant must have been zero.
+\end{Answer}
