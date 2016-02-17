@@ -1,0 +1,23 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove: If $T$ is an invertible matrix and $k$ is a natural number then 
+\( (T^k)^{-1}=(T^{-1})^k \). 
+\end{Exercise}
+\begin{Answer}
+     \( T^k(T^{-1})^k=(TT\cdots T)\cdot (T^{-1}T^{-1}\cdots T^{-1})
+         =T^{k-1}(TT^{-1})(T^{-1})^{k-1}=\dots=I \). 
+\end{Answer}
