@@ -12,20 +12,20 @@
 \contentsline {section}{\numberline {3.1}The Laplace Expansion}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Determinants and Elementary Operations}{14}{section.3.2}
 \contentsline {section}{\numberline {3.3}Properties of Determinants and Matrix Inverses}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Applications of the Determinant}{16}{section.3.4}
-\contentsline {chapter}{\numberline {4}Vector Geometry}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction to Vectors and Lines}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Dot Product and Projections}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}Cross Product and Planes}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Areas, Volumes and Distances}{21}{section.4.4}
-\contentsline {section}{\numberline {4.5}Geometry of Solutions of Linear Systems}{21}{section.4.5}
-\contentsline {chapter}{\numberline {5}Vector Spaces}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction to Vector Spaces}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Subspaces}{25}{section.5.2}
-\contentsline {section}{\numberline {5.3}Spanning Sets}{26}{section.5.3}
-\contentsline {section}{\numberline {5.4}Linear Independence}{27}{section.5.4}
-\contentsline {section}{\numberline {5.5}Basis}{29}{section.5.5}
-\contentsline {section}{\numberline {5.6}Dimension}{30}{section.5.6}
-\contentsline {chapter}{\numberline {A}Answers to Exercises}{33}{appendix.A}
-\contentsline {chapter}{References}{64}{appendix.A}
-\contentsline {chapter}{Index}{65}{appendix*.2}
+\contentsline {section}{\numberline {3.4}Applications of the Determinant}{17}{section.3.4}
+\contentsline {chapter}{\numberline {4}Vector Geometry}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction to Vectors and Lines}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Dot Product and Projections}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Cross Product and Planes}{22}{section.4.3}
+\contentsline {section}{\numberline {4.4}Areas, Volumes and Distances}{23}{section.4.4}
+\contentsline {section}{\numberline {4.5}Geometry of Solutions of Linear Systems}{23}{section.4.5}
+\contentsline {chapter}{\numberline {5}Vector Spaces}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction to Vector Spaces}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Subspaces}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Spanning Sets}{28}{section.5.3}
+\contentsline {section}{\numberline {5.4}Linear Independence}{29}{section.5.4}
+\contentsline {section}{\numberline {5.5}Basis}{31}{section.5.5}
+\contentsline {section}{\numberline {5.6}Dimension}{32}{section.5.6}
+\contentsline {chapter}{\numberline {A}Answers to Exercises}{35}{appendix.A}
+\contentsline {chapter}{References}{66}{appendix.A}
+\contentsline {chapter}{Index}{67}{appendix*.2}
