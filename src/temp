@@ -1134,53 +1134,6 @@ S06 (Fall 2015)
 
 
 
-Given
-\[
-A=
-\begin{bmatrix}
-1 & 2 & 3\\
-2 & 3 & 4\\
-3 & 5 & 6
-\end{bmatrix},\;
-B=
-\begin{bmatrix}
-2 & 1  & -4\\
--1 & 2 & 2\\
--3 & 4 & 6
-\end{bmatrix}
-\]
-\begin{enumerate}
-\item[a.] \textit{(4 marks)} Find the $\text{adj}(A)$.
-\item[b.] \textit{(4 marks)} Evaluate $\text{det}(B^{101}\text{adj}(A)+BA^{2015})$.
-
-Given
-\[
-A=
-\begin{bmatrix}
-1 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
-0 & 2 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
-0 & 0 & 1 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
-0 & 0 & 0 & 2 & 1 & 1 & 4 & 9 & 2 & 7\\
-0 & 0 & 0 & 0 & 1 & 1 & 1 & 4 & 9 & 2\\
-0 & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 4 & 9\\
-0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 4\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2\\
-\end{bmatrix},\;\;
-B=
-\begin{bmatrix}
-1 & 1 & 2 & 6\\
-2 & 3 & 3 & -3\\
--3 & 3 & 1 & 9\\
-0 & 1 & -1 & -12
-\end{bmatrix}
-\]
-\begin{enumerate}
-\item[a.] \textit{(4 marks)} Evaluate $\operatorname{det}(B)$.
-\item[b.] \textit{(4 marks)} If $C$ is a square matrix and $\operatorname{det}(\frac{\text{det}(B)}{2}C^TA^3)=\pi$ then find $\text{det}(C)$, if possible.
-\end{enumerate}
-
 
 Given the following system
 \begin{eqnarray*}
@@ -1199,134 +1152,11 @@ Determine whether the set $\{ 1, e^x, \arctan x\}$ is linearly independent on $\
 S07 (Fall 2015)
 
 
-Let 
-\[
-A =
-\begin{bmatrix}
-1 & -1 & 3 & 2\\
-0 & 1 & 4 & 1\\
-1 & 0 & 8 & 6
-\end{bmatrix},\;
-B = 
-\begin{bmatrix}
-1 & -1 & 4 & 5\\
--2 & 1 & -11 & -8\\
--1 & 2 & 2 & 2
-\end{bmatrix}
-\]
-\begin{enumerate}
-\item[a.] \textit{(5 marks)} Show that $A$ and $B$ have the same reduced row echelon matrix.
-\item[b.] \textit{(3 marks)} Justify using a. that $A$ and $B$ are row equivalent. 
-\end{enumerate}
-
-Given
-\[
-B=
-\begin{bmatrix}
-1 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
-0 & 2 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
-0 & 0 & 3 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
-0 & 0 & 0 & 4 & 1 & 1 & 4 & 9 & 2 & 7\\
-0 & 0 & 0 & 0 & 5 & 1 & 1 & 4 & 9 & 2\\
-0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 4 & 9\\
-0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 4\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5\\
-\end{bmatrix}
-\]
-\begin{enumerate}
-\item[b.] \textit{(4 marks)} If $C$ is a $10\times 10$ invertible matrix then evaluate $\text{det}(C^{101}\text{adj}(B)(C^{-1})^{101})$.
-
-Given
-\[
-A=
-\begin{bmatrix}
-4 & 3 & -2 & 8 \\
-2 & 3 & 1 & -4 \\
--1 & 2 & -1 & 4 \\
-1 & 2 & 2 & -8 \\
-\end{bmatrix},\;\;
-B=
-\begin{bmatrix}
-1 & 0 & 2 & 6\\
-2 & 3 & 0 & 1\\
--3 & 1 & 1 & 0\\
-1 & 1 & -1 & 0
-\end{bmatrix}
-\]
-\begin{enumerate}
-\item[a.] \textit{(5 marks)} Evaluate $\operatorname{det}(A)$ and $\operatorname{det}(B)$.
-\item[b.] \textit{(2 marks)} Prove or disprove: There exists $C$ a square $4\times 4$ invertible matrix such that $ABC=I$.
-\end{enumerate}
-
 
 
 
 
 Winter 2015
-
-Consider
-\[
-A=
-\begin{bmatrix}
-1 & 2 & 0\\
-2 & 0 & 7\\
-3 & 2 & 0
-\end{bmatrix}.
-\]
-\begin{enumerate}
-\item[a.] \textit{(5 marks)} Find $A^{-1}$.
-\item[b.] \textit{(2 marks)} Determine $\operatorname{tr}(A^{-1})$ and $\operatorname{tr}(A^{-1}A)$.
-
-The augmented matrix of a linear system is given by
-\[
-\begin{bmatrix}
-1 & 2 & 3 & 4 & \pi\\
-0 & \sqrt{2} & 4 & 5 & 6\\
-0 & 0 & 0 & a & b\\
-\end{bmatrix}
-\]
-If possible for what values of $a$ and $b$ there is
-\begin{enumerate}
-\item[a.] \textit{(2 marks)} no solution? Justify.
-\item[b.] \textit{(2 marks)} exactly one solution? Justify.
-\item[c.] \textit{(2 marks)} infinitely many solutions? Justify.
-
-Given
-\[
-A=
-\begin{bmatrix}
-10 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
-0 & 9 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
-0 & 0 & 8 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
-0 & 0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7\\
-0 & 0 & 0 & 0 & 6 & 1 & 1 & 4 & 9 & 2\\
-0 & 0 & 0 & 0 & 0 & 5 & 1 & 1 & 4 & 9\\
-0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 1 & 4\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
-\end{bmatrix},\;\;
-B=
-\begin{bmatrix}
-1 & 1 & 2 & 6\\
-2 & 3 & 3 & -3\\
--3 & 3 & 1 & 9\\
-0 & 1 & -1 & -12
-\end{bmatrix},\;\;
-C=
-\begin{bmatrix}
--1 & 3 & 2 & 3\\
-2 & 0 & 3 & 0\\
--4 & 0 & 1 & 2\\
-1 & 5 & 0 & -3
-\end{bmatrix}
-\]
-\begin{enumerate}
-\item[a.] \textit{(4 marks)} Evaluate $\operatorname{det}(2\operatorname{adj}(A)+3A^{-1})$, if possible.
-\item[b.] \textit{(4 marks)} If $D$ is a $4\times 4$ matrix and $B^{-1}D^2=I$ then determine $\operatorname{det}(D)$, if possible.
-\item[c.] \textit{(4 marks)} Compute $\operatorname{det}(C)$.
 
 Determine whether the following is a vector space:
 \[
@@ -1346,53 +1176,6 @@ If it is not a vector space, clearly state and show which axiom fails.
 Find all values of $z$ such that the triangle with vertices $A(-1, 2, -3)$, $B(4,-5,6)$ and $C(1, -2, z)$ has area equal to $31$.
 
 In a vector space, the span of any subset is a subspace. In addition, the span of a subset of a vector space is the smallest subspace containing all vectors of the subset.
-
-
-Given
-\[
-A=
-\begin{bmatrix}
-9 & 9 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
-9 & 9 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
-0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
-0 & 0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7\\
-0 & 0 & 0 & 0 & 2 & 1 & 1 & 4 & 9 & 2\\
-0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 4 & 9\\
-0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 1 & 4\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1\\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2\\
-\end{bmatrix},\;\;
-B=
-\begin{bmatrix}
--2 & 3 & 2 & 6\\
-0 & 2 & 3 & -3\\
-0 & 0 & 1 & 9\\
-0 & 0 & 0 & -12
-\end{bmatrix},\;\;
-C=
-\begin{bmatrix}
-a & b\\
-c & d 
-\end{bmatrix},\;\;
-D=
-\begin{bmatrix}
-b & d \\
-3a-2b & 3c-2d 
-\end{bmatrix}
-\]
-
-\begin{enumerate}
-\item[a.] \textit{(4 marks)} If $F$ is a $10\times 10$ matrix show that $AF$ is not invertible.
-\item[b.] \textit{(4 marks)} If $E$ is an invertible matrix then evaluate $\operatorname{det}(E^{-1})^4\operatorname{det}(\operatorname{det}(E)\operatorname{adj}(B))$, justify fully.
-\item[c.] \textit{(4 marks)} If $\operatorname{det}(D)=2$ then determine $\operatorname{det}(C)$.
-\end{enumerate}
-\newpage
-\textbf{Question 3.} If $A$ is an $n\times n$ matrix which entries are all divisible by 2.
-\begin{enumerate}
-\item[a.] \textit{(2 marks)} Justify that the entries of $\operatorname{adj}(A)$ are all divisible by 2.
-\item[b.] \textit{(2 marks)} Prove using a. and $\det(A)=2$ that the entries of $A^{-1}$ are all integers.
-\end{enumerate} 
 
 
 Let $\mathcal{H}=\{A |\; \text{$A$ is a $2\times 2$ matrix and $A^T=-A$} \}$
@@ -1454,12 +1237,6 @@ Prove or disprove: For all vector vectors $\vec{u}$, $\vec{v}$ and $\vec{w}$ in 
 
 matrix algebra:
 
-\it Let $A$ be an $n \times n$ matrix. Let $m \in \N$. As you would expect, we define $A^m$ to be the product of $A$ with itself $m$ times. Notice that this makes 
-	sense as matrix multiplication is associative. 
-	\be
-	\it Compute $A^4$ for $A = \begin{bmatrix} 1 & -2 \\ 1 & -1 \end{bmatrix}$. 
-	\it Provide a counter-example to the statement: For any $2 \times 2$ matrices $A$ and $B$, $(AB)^2 = A^2 B^2$.
-	\ee
 
 \it Prove that for all $m \times n$ matrices $A$, $B$, and $C$, if $A + C = B + C$, then $A = B$.
 
@@ -1483,29 +1260,6 @@ matrix algebra:
 \it Suppose that we have a homogeneous system of linear equations whose matrix equation is given by $A\bar{x} = \bar{\th}$ where $A$ is the $m \times n$ matrix of 
 	coefficients, $\bar{x}$ is the column matrix of the $n$ variables, and $\bar{\th}$ is the column matrix of the $m$ zeroes. Use the properties of matrix
 	arithmetic to show that for any solutions $\bar{u}$ and $\bar{v}$ to the system and $r \in \R$, $\bar{u+v}$ and $r\bar{u}$ are also solutions.
-
-\it Consider the system of linear equations:  
-\begin{align*}
-x_1 + x_2 + x_3 + x_4 &= 3 \\
-x_1 - x_2 + x_3 + x_4 &= 5 \\
-      x_2 - x_3 - x_4 &= -4 \\
-x_1 + x_2 - x_3 - x_4 &= -3.
-\end{align*}
-\be
-\it Express the system as a matrix equation.
-\it Use matrix multiplication to determine whether or not $\bar{u} = \begin{bmatrix} 1 \\ -1 \\ 1 \\ 2 \end{bmatrix}$ and $\bar{v} = \begin{bmatrix} -1 \\ 2 \\ 0 \\ 3 \end{bmatrix}$ are solutions to the system.
-\ee
-
-
-\it Provide a counter-example to the statement: For any $n \times n$ invertible matrices $A$ and $B$, $A + B$ is invertible.
-
-\it Find an example of a $2 \times 2$ nonidentity matrix whose inverse is its transpose.
-
-\it Using the matrices in Problem \#1, compute each of the following, if possible.
-	\bttt
-	(a) $3A - 2E^T$ \> (b) $A^T B$ \> (c) $D^T (F + G^T)$ \\
-	(d) $3A^T - 2E$ \> (e) $C C^T + FG$ \> (f) $(F^T + G)D$
-	\etb
 
 \it Let $A$ be an $n \times n$ invertible matrix.
 	\be
