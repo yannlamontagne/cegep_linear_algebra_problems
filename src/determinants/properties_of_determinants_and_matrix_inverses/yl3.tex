@@ -1,0 +1,66 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given
+\[
+A=
+\begin{mat}
+10 & 1 & 1 & 1 & 9 & 3 & 4 & 1 & 0 & 9\\
+0 & 9 & 1 & 1 & 4 & 9 & 2 & 7 & 7 & 9\\
+0 & 0 & 8 & 1 & 1 & 4 & 9 & 2 & 7 & 7\\
+0 & 0 & 0 & 7 & 1 & 1 & 4 & 9 & 2 & 7\\
+0 & 0 & 0 & 0 & 6 & 1 & 1 & 4 & 9 & 2\\
+0 & 0 & 0 & 0 & 0 & 5 & 1 & 1 & 4 & 9\\
+0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 1 & 4\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+\end{mat}\]
+\[
+B=
+\begin{mat}
+4 & 3 & -2 & 8 \\
+2 & 3 & 1 & -4 \\
+-1 & 2 & -1 & 4 \\
+1 & 2 & 2 & -8 \\
+\end{mat},\;\;
+C=
+\begin{mat}
+4 & 3 & -2 & 8 \\
+0 & 3 & 1 & -4 \\
+0 & 0 & -1 & 4 \\
+0 & 0 & 0 & 8 \\
+\end{mat}.
+\]
+
+\Question If $G$ is a $\nbyn{4}$ matrix show that $BG$ is not invertible.
+\Question If $F$ is a $\nbyn{10}$ invertible matrix then evaluate $\det\left(F^{101}\adj(A)(F^{-1})^{101}\right)$.
+\Question Evaluate $\det\left(2\adj(A)+3A^{-1}\right)$, if possible.
+\Question If $D$ is a $\nbyn{10}$ matrix such that $A^{-1}D^2=I$ then determine $\det(D)$, if possible.
+\Question Evaluate $\det\left(B^{101}\adj(C)+BC^{2015}\right)$, if possible.
+\Question If $E$ is a square matrix and $\det\left(\frac{\det(C)}{2}\trans{E}A^3\right)=\pi$ then find $\det(E)$, if possible.
+\Question Evaluate $\det(\adj(A)+I)$, if possible.
+\end{Exercise}
+
+\begin{Answer}
+\Question Hint: take the determinant of $BG$.
+\Question $(10!)^9$
+\Question $\frac{(2(10!)+3)^{10}}{10!}$
+\Question $\pm\sqrt{10!}$
+\Question $0$
+\Question $\frac{2^{10}\pi}{(96)^{10}(10!)^3}$
+\Question $\frac{(10+10!)(9+10!)(8+10!)(7+10!)(6+10!)(5+10!)(4+10!)(3+10!)(2+10!)(1+10!)}{(10!)^{10}}$
+\end{Answer}

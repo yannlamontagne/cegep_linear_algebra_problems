@@ -1,0 +1,79 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{elementary operation}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+An operation is done to get from the first matrix to the second.
+Identify the operation and how the determinant will change. 
+\begin{multicols}{2}
+\Question $\begin{mat}
+a & b \\
+c & d
+\end{mat}
+\text{ to }
+\begin{mat}
+a & c \\
+b & d
+\end{mat}$
+\Question $\begin{mat}
+a & b \\
+c & d
+\end{mat}
+\text{ to }
+\begin{mat}
+c & d \\
+a & b
+\end{mat}$
+\Question  $\begin{mat}
+a & b \\
+c & d
+\end{mat}
+\text{ to }
+\begin{mat}
+a & b \\
+a+c & b+d
+\end{mat}$
+\Question  $\begin{mat}
+a & b \\
+c & d
+\end{mat}
+\text{ to }
+\begin{mat}
+a & b \\
+2c & 2d
+\end{mat}$
+\Question  $\begin{mat}
+a & b \\
+c & d
+\end{mat}
+\text{ to }
+\begin{mat}
+b & a \\
+d & c
+\end{mat}$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question The transpose was applied and it does not change the determinant. 
+\Question Two rows were switched and so the resulting determinant is $-1$
+times the first.
+\Question The determinant is unchanged since the operation is adding first row to the second.
+\Question The second row was multiplied by 2 so the determinant of the result is 2
+times the original determinant.
+\Question Two columns were switched so the determinant of the second
+is $-1$ times the determinant of the first.
+\end{Answer}

@@ -1,0 +1,32 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Suppose $A,B$ are $\nbyn{n}$ matrices and that $AB=I$ then show that
+$BA=I.$ \textit{Hint:} First explain why
+$\det \left( A\right) ,\det \left( B\right) $ are both nonzero. Then $\left(
+AB\right) A=A$ and then show $BA\left( BA-I\right) =0.$ From this use what
+is given to conclude $A\left( BA-I\right) =0.$ 
+\end{Exercise}
+
+\begin{Answer}
+$1=\det \left( A\right) \det \left( B\right) $.
+Hence both $A$ and $B$ have inverses. Given any $X$,
+\[
+A\left( BA-I\right) X=\left( AB\right) AX-AX=AX-AX = 0
+\]
+and so it follows that $\left( BA-I\right)X=0.$ Since $X$ is arbitrary, it follows that $BA=I.$
+\end{Answer}

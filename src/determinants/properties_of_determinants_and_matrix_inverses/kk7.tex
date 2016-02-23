@@ -1,0 +1,65 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{matrix!of cofators}
+\index{matrix!adjoint}
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Use the formula for the inverse in terms of the cofactor matrix to
+find the inverse of the matrix.
+\Question $\begin{mat}
+e^{t} & 0 & 0 \\
+0 & e^{t}\cos t & e^{t}\sin t \\
+0 & e^{t}\cos t-e^{t}\sin t & e^{t}\cos t+e^{t}\sin t
+\end{mat}$
+\Question $\begin{mat}
+e^{t} & \cos t & \sin t \\
+e^{t} & -\sin t & \cos t \\
+e^{t} & -\cos t & -\sin t
+\end{mat}$
+\end{Exercise}
+
+\begin{Answer}
+\Question $
+\begin{detmat}
+e^{t} & 0 & 0 \\
+0 & e^{t}\cos t & e^{t}\sin t \\
+0 & e^{t}\cos t-e^{t}\sin t & e^{t}\cos t+e^{t}\sin t
+\end{detmat}= e^{3t}$.
+Hence the inverse is
+\begin{eqnarray*}
+&&e^{-3t}\trans{
+\begin{mat}
+e^{2t} & 0 & 0 \\
+0 & e^{2t}\cos t+e^{2t}\sin t & -\left( e^{2t}\cos t-e^{2t}\sin \right) t \\
+0 & -e^{2t}\sin t & e^{2t}\cos \left( t\right)
+\end{mat}} \\
+&=& 
+\begin{mat}
+e^{-t} & 0 & 0 \\
+0 & e^{-t}\left( \cos t+\sin t\right)  & -\left( \sin t\right) e^{-t} \\
+0 & -e^{-t}\left( \cos t-\sin t\right)  & \left( \cos t\right) e^{-t}
+\end{mat}
+\end{eqnarray*}
+
+\Question $
+\begin{mat}
+\frac{1}{2}e^{-t} & 0 & \frac{1}{2}e^{-t} \\
+\frac{1}{2}\cos t+\frac{1}{2}\sin t & -\sin t & \frac{1}{2}\sin t-\frac{1}{2}
+\cos t \\
+\frac{1}{2}\sin t-\frac{1}{2}\cos t & \cos t & -\frac{1}{2}\cos t-\frac{1}{2}
+\sin t
+\end{mat}$
+\end{Answer}

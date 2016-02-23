@@ -1,0 +1,163 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{matrix!of cofators}
+\index{matrix!adjoint}
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Determine whether the matrix $A$ has an inverse by finding whether the
+determinant is non zero. If the determinant is nonzero, find the inverse
+using the formula for the inverse which involves the cofactor matrix.
+\begin{multicols}{2}
+\Question $\begin{mat}
+1 & 2 & 3 \\
+0 & 2 & 1 \\
+3 & 1 & 0
+\end{mat}$
+\Question $\begin{mat}
+1 & 2 & 0 \\
+0 & 2 & 1 \\
+3 & 1 & 1
+\end{mat}$
+\Question $\begin{mat}
+1 & 3 & 3 \\
+2 & 4 & 1 \\
+0 & 1 & 1
+\end{mat}$
+\Question $\begin{mat}
+1 & 0 & 3 \\
+1 & 0 & 1 \\
+3 & 1 & 0
+\end{mat}$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question $
+\begin{detmat}
+1 & 2 & 3 \\
+0 & 2 & 1 \\
+3 & 1 & 0
+\end{detmat} = -13$ and so it has an inverse given by
+\begin{eqnarray*}
+\frac{1}{-13}\trans{
+\begin{mat}
+\begin{detmat}
+2 & 1 \\
+1 & 0
+\end{detmat}
+& - 
+\begin{detmat}
+0 & 1 \\
+3 & 0
+\end{detmat}
+&
+\begin{detmat}
+0 & 2 \\
+3 & 1
+\end{detmat}\\
+-
+\begin{detmat}
+2 & 3 \\
+1 & 0
+\end{detmat}
+& 
+\begin{detmat}
+1 & 3 \\
+3 & 0
+\end{detmat}
+& -
+\begin{detmat}
+1 & 2 \\
+3 & 1
+\end{detmat}\\
+\begin{detmat}
+2 & 3 \\
+2 & 1
+\end{detmat}
+& -
+\begin{detmat}
+1 & 3 \\
+0 & 1
+\end{detmat}
+& 
+\begin{detmat}
+1 & 2 \\
+0 & 2
+\end{detmat}
+\end{mat}}\\ =\frac{1}{-13}
+\trans{
+\begin{mat}
+-1 & 3 & -6 \\
+3 & -9 & 5 \\
+-4 & -1 & 2
+\end{mat}} \\
+=
+\begin{mat}
+\vspace{0.05in}\frac{1}{13} & -\vspace{0.05in}\frac{3}{13} & \vspace{0.05in}\frac{4}{13} \\
+-\vspace{0.05in}\frac{3}{13} & \vspace{0.05in}\frac{9}{13} & \vspace{0.05in}\frac{1}{13} \\
+\vspace{0.05in}\frac{6}{13} & -\vspace{0.05in}\frac{5}{13} & -\vspace{0.05in}\frac{2}{13}
+\end{mat}
+\end{eqnarray*}
+
+\Question $
+\begin{detmat}
+1 & 2 & 0 \\
+0 & 2 & 1 \\
+3 & 1 & 1
+\end{detmat} = 7$ so it has an inverse. This inverse is $\frac{1}{7}
+\trans{
+\begin{mat}
+1 & 3 & -6 \\
+-2 & 1 & 5 \\
+2 & -1 & 2
+\end{mat}} = 
+\begin{mat}
+\vspace{0.05in}\frac{1}{7} & -\vspace{0.05in}\frac{2}{7} & \vspace{0.05in}\frac{2}{7} \\
+\vspace{0.05in}\frac{3}{7} & \vspace{0.05in}\frac{1}{7} & -\vspace{0.05in}\frac{1}{7} \\
+-\vspace{0.05in}\frac{6}{7} & \vspace{0.05in}\frac{5}{7} & \vspace{0.05in}\frac{2}{7}
+\end{mat}$
+
+\Question $
+\begin{detmat}
+1 & 3 & 3 \\
+2 & 4 & 1 \\
+0 & 1 & 1
+\end{detmat} = 3$
+so it has an inverse which is
+$
+\begin{mat}
+1 & 0 & -3 \\
+-\vspace{0.05in}\frac{2}{3} & \vspace{0.05in}\frac{1}{3} & \vspace{0.05in}\frac{5}{3} \\
+\vspace{0.05in}\frac{2}{3} & -\vspace{0.05in}\frac{1}{3} & -\vspace{0.05in}\frac{2}{3}
+\end{mat}
+$
+
+\Question $
+\begin{detmat}
+1 & 0 & 3 \\
+1 & 0 & 1 \\
+3 & 1 & 0
+\end{detmat}= 2$
+and so it has an inverse. The inverse is 
+$
+\begin{mat}
+-\vspace{0.05in}\frac{1}{2} & \vspace{0.05in}\frac{3}{2} & 0 \\
+\vspace{0.05in}\frac{3}{2} & -\vspace{0.05in}\frac{9}{2} & 1 \\
+\vspace{0.05in}\frac{1}{2} & -\vspace{0.05in}\frac{1}{2} & 0
+\end{mat}$
+
+\end{Answer}
