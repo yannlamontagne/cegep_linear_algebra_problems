@@ -1,0 +1,71 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!algebraic properties}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Prove each, assuming that the operations are defined, 
+where \( G \), \( H \), and 
+\( J \) are matrices, where
+\( Z \) is the zero matrix, and where \( r \) and \( s \) are scalars.
+\Question Matrix addition is commutative \( G+H=H+G \).
+\Question Matrix addition is associative \( G+(H+J)=(G+H)+J \).\nolinebreak
+\Question The zero matrix is an additive identity \( G+Z=G \).
+\Question \( 0\cdot G=Z \)
+\Question \( (r+s)G=rG+sG \)
+\Question Matrices have an additive inverse \( G+(-1)\cdot G=Z \).
+\Question \( r(G+H)=rG+rH \)
+\Question \( (rs)G=r(sG) \)
+\end{Exercise}
+
+\begin{Answer}
+     First, each of these properties
+      is easy to check in an entry-by-entry way.
+      For example, writing
+      \begin{equation*}
+        G=
+        \begin{mat}
+          g_{1,1}  &\ldots  &g_{1,n}  \\
+          \vdots   &        &\vdots   \\
+          g_{m,1}  &\ldots  &g_{m,n}       
+        \end{mat}
+        \qquad
+        H=
+        \begin{mat}
+          h_{1,1}  &\ldots  &h_{1,n}  \\
+          \vdots   &        &\vdots   \\
+          h_{m,1}  &\ldots  &h_{m,n}       
+        \end{mat}
+      \end{equation*}
+      then, by definition we have
+      \begin{equation*}
+        G+H=
+        \begin{mat}
+          g_{1,1}+h_{1,1}  &\ldots  &g_{1,n}+h_{1,n}  \\
+          \vdots           &        &\vdots           \\
+          g_{m,1}+h_{m,1}  &\ldots  &g_{m,n}+h_{m,n}       
+        \end{mat}
+      \end{equation*}
+      and
+      \begin{equation*}
+        H+G=
+        \begin{mat}
+          h_{1,1}+g_{1,1}  &\ldots  &h_{1,n}+g_{1,n}  \\
+          \vdots           &        &\vdots           \\
+          h_{m,1}+g_{m,1}  &\ldots  &h_{m,n}+g_{m,n}       
+        \end{mat}
+      \end{equation*}
+      and the two are equal since their entries are equal 
+      $g_{i,j}+h_{i,j}=h_{i,j}+g_{i,j}$.
+
+\end{Answer}

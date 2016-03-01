@@ -1,0 +1,28 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Prove that any matrix row-equivalent to an invertible matrix is also
+    invertible.
+\end{Exercise}
+\begin{Answer}
+      Assume that $B$ is row equivalent to $A$ and that $A$ is invertible.
+      Because they are row-equivalent, there is a sequence of elementary row 
+operations  
+      to reduce one to the other.
+      We can do that reduction with elementary matrices, for instance, $A$ can 
+      change by row operations to $B$ as $B=E_n\cdots E_1A$.
+      This equation gives $B$ as a product of elementary which are invertible matrices then, $B$ is also invertible.  
+\end{Answer}

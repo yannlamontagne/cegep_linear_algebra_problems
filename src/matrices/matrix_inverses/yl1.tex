@@ -1,0 +1,57 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{linear system}
+\index{matrix inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Consider
+\[
+A=
+\begin{mat}
+1 & 2 & 3\\
+0 & 1 & 2\\
+0 & 0 & 3
+\end{mat}.
+\]
+
+\Question Find $A^{-1}$.
+\Question Using $A^{-1}$ solve $Ax=b$ where
+\[
+x=\begin{mat}x_1\\ x_2\\ x_3\end{mat}\text{ and }b=\begin{mat}1\\ -2\\ 1\end{mat}.
+\]
+
+
+\end{Exercise}
+
+\begin{Answer}
+\Question
+$
+A^{-1} = 
+\begin{mat}
+1 & -2 & \frac13\\
+0 & 1 & -\frac23\\
+0 & 0 & \frac13
+\end{mat}
+$
+
+\Question
+$
+x = 
+\begin{mat}
+\frac{16}{3}\\
+-\frac{8}{3}\\
+\frac13
+\end{mat}
+$
+\end{Answer}

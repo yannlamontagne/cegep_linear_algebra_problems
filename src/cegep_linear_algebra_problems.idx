@@ -130,49 +130,49 @@
 \indexentry{matrix!inverse|hyperpage}{10}
 \indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix!inverse|hyperpage}{10}
-\indexentry{matrix!inverse|hyperpage}{10}
-\indexentry{elementary matrix|hyperpage}{10}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{matrix inverse|hyperpage}{11}
+\indexentry{matrix inverse|hyperpage}{10}
 \indexentry{matrix!inverse|hyperpage}{11}
-\indexentry{|hyperpage}{11}
+\indexentry{matrix equation|hyperpage}{11}
+\indexentry{system of linear equation|hyperpage}{11}
+\indexentry{matrix inverse|hyperpage}{11}
+\indexentry{linear system|hyperpage}{11}
+\indexentry{matrix inverse|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
 \indexentry{matrix equation|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{matrix!elementary|hyperpage}{11}
+\indexentry{|hyperpage}{11}
 \indexentry{matrix!inverse|hyperpage}{11}
-\indexentry{elementary matrix|hyperpage}{11}
-\indexentry{row-equivalent|hyperpage}{11}
-\indexentry{matrix!elementary|hyperpage}{12}
-\indexentry{matrix!transpose|hyperpage}{12}
-\indexentry{matrix equation|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!elementary|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!commutativity|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!transpose|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!nilpotent|hyperpage}{12}
-\indexentry{matrix inverse|hyperpage}{12}
-\indexentry{symmetric equation|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!commutativity|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!transpose|hyperpage}{11}
+\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix!nilpotent|hyperpage}{11}
+\indexentry{matrix inverse|hyperpage}{11}
+\indexentry{symmetric equation|hyperpage}{11}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix!singular|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
-\indexentry{linear system|hyperpage}{13}
-\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{elementary matrix|hyperpage}{12}
+\indexentry{elementary matrix|hyperpage}{12}
+\indexentry{elementary matrix|hyperpage}{12}
+\indexentry{elementary matrix|hyperpage}{12}
+\indexentry{elementary matrix|hyperpage}{12}
+\indexentry{elementary matrix|hyperpage}{12}
+\indexentry{matrix!elementary|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{elementary matrix|hyperpage}{13}
+\indexentry{row-equivalent|hyperpage}{13}
+\indexentry{matrix!elementary|hyperpage}{13}
+\indexentry{matrix!transpose|hyperpage}{13}
 \indexentry{matrix equation|hyperpage}{13}
-\indexentry{system of linear equation|hyperpage}{13}
-\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix!elementary|hyperpage}{13}
 \indexentry{Laplace expansion|hyperpage}{15}
 \indexentry{determinant|hyperpage}{15}
 \indexentry{co-factor expansion|hyperpage}{15}
@@ -221,25 +221,6 @@
 \indexentry{determinant|hyperpage}{17}
 \indexentry{elementary operation|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
-\indexentry{adjoint matrix|hyperpage}{17}
-\indexentry{matrix!adjoint|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
-\indexentry{adjoint matrix|hyperpage}{17}
-\indexentry{matrix!adjoint|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
-\indexentry{adjoint matrix|hyperpage}{17}
-\indexentry{matrix!adjoint|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
-\indexentry{adjoint matrix|hyperpage}{17}
-\indexentry{matrix!adjoint|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
-\indexentry{adjoint matrix|hyperpage}{17}
-\indexentry{matrix!adjoint|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
-\indexentry{matrix!of cofators|hyperpage}{17}
-\indexentry{matrix!adjoint|hyperpage}{17}
-\indexentry{matrix!inverse|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
 \indexentry{singular matrix|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{matrix!inverse|hyperpage}{17}
@@ -249,22 +230,15 @@
 \indexentry{matrix!inverse|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{matrix!inverse|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{matrix!inverse|hyperpage}{17}
 \indexentry{matrix!triangular|hyperpage}{17}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!inverse|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!of cofators|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{matrix!inverse|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!inverse|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{matrix!inverse|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{similar matrix|hyperpage}{18}
@@ -274,6 +248,31 @@
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{adjoint matrix|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{adjoint matrix|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{adjoint matrix|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{adjoint matrix|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{adjoint matrix|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{matrix!of cofators|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{matrix!inverse|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{matrix!of cofators|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
+\indexentry{matrix!inverse|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{matrix!adjoint|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{Cramer's Rule|hyperpage}{19}
 \indexentry{Cramer's Rule|hyperpage}{19}

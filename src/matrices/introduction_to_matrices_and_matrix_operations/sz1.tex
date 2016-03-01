@@ -1,0 +1,58 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{scalar multiplication}
+\index{matrix multiplication}
+\index{matrix associativity}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{SZ}}]
+Use the matrices 
+\[A = \begin{mat} 1 & 2 \\ 3 & 4 \end{mat} \;\;\; B =  \begin{mat} 0 & -3 \\ -5 & 2 \end{mat}  \;\;\; C =  \begin{mat} 10 & -\frac{11}{2} & 0 \\ \frac{3}{5} & 5 & 9 \end{mat} \] \[ D =  \begin{mat} 7 & -13 \\ -\frac{4}{3} & 0 \\ 6 & 8 \end{mat}  \;\;\; E = \begin{mat} 1 & \hphantom{-}2 & 3 \\ 0 & 4 & -9 \\ 0 & 0 & -5 \end{mat} \] to compute the following or state that the indicated operation is undefined.
+
+\begin{multicols}{2}
+\Question $7B - 4A$
+\Question $AB$
+\Question $BA$
+\Question $E + D$
+\Question $ED$
+\Question $CD + 2I_{2}A$
+\Question $A - 4I_{2}$
+\Question $A^2 - B^2$
+\Question $(A+B)(A-B)$
+\Question $A^2-5A-2I_{2}$
+\Question $E^2 + 5E-36I_{3}$
+\Question $EDC$
+\Question $CDE$
+\Question $ABCEDI_{2}$ 
+\EndCurrentQuestion
+\end{multicols}
+
+\end{Exercise}
+
+\begin{Answer}
+\Question $7B - 4A = \begin{mat} -4 & -29 \\ -47 & -2 \end{mat}$
+\Question $AB = \begin{mat} -10 & 1 \\ -20 & -1 \end{mat}$
+\Question $BA = \begin{mat} -9 & -12 \\ 1 & -2 \end{mat}$
+\Question $E + D \vphantom{\begin{mat} -9 & -12 \\ 1 & -2 \end{mat}}$ is undefined
+\Question $ED = \begin{mat} \frac{67}{3}& 11 \\[3pt] -\frac{178}{3} & -72 \\ -30 & -40 \end{mat}$
+\item $CD + 2I_{2}A =  \begin{mat} \frac{238}{3} & -126 \\[3pt] \frac{863}{15} & \frac{361}{5} \end{mat} \vphantom{ \begin{mat} \frac{67}{3}& 11 \\[3pt] -\frac{178}{3} & -72 \\ -30 & -40 \end{mat}}$
+\Question  $A - 4I_{2} = \begin{mat} -3 & 2 \\ 3 & 0 \end{mat}$
+\Question  $A^2 - B^2 = \begin{mat} -8 & 16 \\ 25 & 3 \end{mat}$
+\Question  $(A+B)(A-B) = \begin{mat} -7 & 3 \\ 46 & 2 \end{mat}$
+\Question  $A^2-5A-2I_{2} = \begin{mat} 0 & 0 \\ 0 & 0 \end{mat}$
+\Question  $E^2 + 5E-36I_{3} = \begin{mat} -30 & 20 & -15 \\ 0 & 0 & -36 \\ 0 & 0 & -36 \end{mat} \vphantom{\begin{mat} \frac{3449}{15} & -\frac{407}{6} & 99 \\[3pt] -\frac{9548}{15} & -\frac{101}{3} & -648 \\ -324 & -35 & -360 \end{mat}}$
+\Question $EDC = \begin{mat} \frac{3449}{15} & -\frac{407}{6} & 99 \\[3pt] -\frac{9548}{15} & -\frac{101}{3} & -648 \\ -324 & -35 & -360 \end{mat}$
+\Question $CDE \vphantom{\begin{mat} -\frac{90749}{15} & -\frac{28867}{5} \\[3pt] -\frac{156601}{15} & -\frac{47033}{5} \end{mat}}$ is undefined
+\Question $ABCEDI_{2} = \begin{mat} -\frac{90749}{15} & -\frac{28867}{5} \\[3pt] -\frac{156601}{15} & -\frac{47033}{5} \end{mat}$
+
+\end{Answer}

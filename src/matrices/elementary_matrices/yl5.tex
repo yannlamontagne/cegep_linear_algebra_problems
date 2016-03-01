@@ -1,0 +1,57 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!transpose}
+\index{matrix equation}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given
+\[
+A=
+\begin{mat}
+1 & 1 & 1 & 1\\
+2 & 2 & 2 & 2\\
+3 & 3 & 3 & 3\\
+\end{mat},
+\]
+\[
+E_1 = 
+\begin{mat}
+1 & 0 & 0\\
+0 & 1 & 0\\
+2 & 0 & 1
+\end{mat},\quad
+E_2 = 
+\begin{mat}
+1 & 0 & 0\\
+0 & -3 & 0\\
+0 & 0 & 1\\
+\end{mat},\quad
+E_3 = 
+\begin{mat}
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0
+\end{mat}
+\]
+and
+\[
+\trans{(\trans{X}E_1E_2E_3)}=A
+\]
+solve for $X$, if possible.
+\end{Exercise}
+
+\begin{Answer}
+$X=\begin{mat} 1 & 1 & 1 & 1\\ -\frac23 & -\frac23 & -\frac23 & -\frac23\\ 1 & 1 & 1 & 1\end{mat}$
+\end{Answer}

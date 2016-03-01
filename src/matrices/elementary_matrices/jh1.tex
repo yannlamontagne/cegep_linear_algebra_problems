@@ -1,0 +1,73 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{elementary matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Predict the result of each multiplication by an elementary
+matrix, and then verify by performing the multiplication.
+\begin{multicols}{3}
+\Question \( \begin{mat}[r]
+                 3  &0  \\
+                 0  &1
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+\Question \( \begin{mat}[r]
+                 1  &0  \\
+                 0  &2
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+\Question \( \begin{mat}[r]
+                 1  &0  \\
+                -2  &1
+               \end{mat}
+               \begin{mat}[r]
+                 1  &2  \\
+                 3  &4
+               \end{mat} \)
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question The second matrix has its first row multiplied 
+          by \( 3 \).
+          \begin{equation*}
+            \begin{mat}[r]
+              3  &6  \\
+              3  &4
+            \end{mat}
+          \end{equation*}
+\Question The second matrix has its second row multiplied by \( 2 \).
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &2  \\
+              6  &8
+            \end{mat}
+          \end{equation*}
+\Question The second matrix undergoes the combination operation
+          of replacing the second row with \( -2 \) times the first row added
+          to the second.
+          \begin{equation*}
+            \begin{mat}[r]
+              1  &2  \\
+              1  &0
+            \end{mat}
+          \end{equation*}
+\end{Answer}

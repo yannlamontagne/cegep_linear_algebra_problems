@@ -1,0 +1,28 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!inverse}
+\index{matrix!transpose}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{KK}}]
+Show that if $A$ is an invertible $n\times n$ matrix, then so is 
+$\trans{A}$ and $\left(\trans{A}\right) ^{-1}=\trans{\left( A^{-1}\right)}.$ 
+\end{Exercise}
+
+\begin{Answer}
+\begin{eqnarray*}
+\trans{A}\trans{\left( A^{-1}\right)} &=&\trans{\left( A^{-1}A\right)}=\trans{I}=I \\
+\trans{\left( A^{-1}\right)}\trans{A} &=&\trans{\left( AA^{-1}\right)}=\trans{I}=I
+\end{eqnarray*}
+
+\end{Answer}

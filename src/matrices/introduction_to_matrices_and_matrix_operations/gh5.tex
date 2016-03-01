@@ -1,0 +1,38 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix product}
+\index{diagonal matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{GH}}]
+Given a diagonal matrix $D$ and a matrix $A$, compute the product $DA$ and $AD$, if possible.
+\begin{multicols}{2}
+%\Question $D=\begin{mat}  -1&0&0\\  0&2&0\\  0&0&3\end{mat}, \\ A=\begin{mat}1&2&3\\  4&5&6\\  7&8&9  \end{mat}$
+\Question $D=\begin{mat} 1&1&1\\  2&2&2\\  -3&-3&-3 \end{mat}, \\ A=\begin{mat} &0&0\\  0&-3&0\\  0&0&5 \end{mat}$
+%\Question $D=\begin{mat} 3&0\\  0&-1 \end{mat}, \\ A=\begin{mat}2&4\\  6&8  \end{mat}$
+\Question $D=\begin{mat} 4&0\\  0&-3 \end{mat}, \\ A=\begin{mat}1&2\\  1&2  \end{mat}$
+\Question $D=\begin{mat} d_1&0\\  0&d_2 \end{mat}, \\ A=\begin{mat}a&b\\  c&d  \end{mat}$
+\Question $D=\begin{mat} d_1&0&0\\  0&d_2&0\\  0&0&d_3 \end{mat}, \\ A=\begin{mat} a&b&c\\  d&e&f\\  g&h&i \end{mat}$
+\EndCurrentQuestion
+\end{multicols}
+
+\end{Exercise}
+
+\begin{Answer}
+%\Question $DA = \begin{mat} -1&4&9\\  -4&10&18\\  -7&16&27\end{mat}$, $AD = \begin{mat} -1&-2&-3\\  8&10&12\\  21&24&27\end{mat}$
+\Question $DA = \begin{mat} 2&2&2\\  -6&-6&-6\\  -15&-15&-15\end{mat}$, $AD = \begin{mat} 2&-3&5\\  4&-6&10\\  -6&9&-15\end{mat}$
+%\Question $DA = \begin{mat} 6&-4\\  18&-8\end{mat}$, $AD = \begin{mat}6&12\\  -6&-8 \end{mat}$
+\Question $DA = \begin{mat}4&-6\\  4&-6 \end{mat}$, $AD = \begin{mat}4&8\\  -3&-6 \end{mat}$
+\Question $DA = \begin{mat} d_1a&d_1b\\  d_2c&d_2d \end{mat}$, $AD = \begin{mat}d_1a&d_2b\\  d_1c&d_2d \end{mat}$
+\Question $DA = \begin{mat}d_1a&d_1b&d_1c\\  d_2d&d_2e&d_2f\\  d_3g&d_3h&d_3i \end{mat}$, $AD = \begin{mat}d_1a&d_2b&d_3c\\  d_1d&d_2e&d_3f\\  d_1g&d_2h&d_3i \end{mat}$
+\end{Answer}

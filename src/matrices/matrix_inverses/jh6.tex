@@ -1,7 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{determinant}
+\index{matrix!inverse}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -13,10 +13,11 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Let $A$ and $B$ be $\nbyn{n}$ matrices such that $AB=-BA$ and $n$ is odd, show that either $A$ or $B$ has no inverse.
+origin={\cite{JH}}]
+Prove: If $T$ is an invertible matrix and $k$ is a natural number then 
+\( (T^k)^{-1}=(T^{-1})^k \). 
 \end{Exercise}
-
 \begin{Answer}
-Hint: Apply the determinant to both sides $AB=-BA$.
+     \( T^k(T^{-1})^k=(TT\cdots T)\cdot (T^{-1}T^{-1}\cdots T^{-1})
+         =T^{k-1}(TT^{-1})(T^{-1})^{k-1}=\dots=I \). 
 \end{Answer}

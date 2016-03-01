@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix product}
+\index{matrix power}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{GH}}]
+Given a matrix $A$ compute $A^2$ and $A^3$.
+\begin{multicols}{2}
+\Question $A=\begin{mat}0&1\\1&0 \end{mat}$
+\Question $A=\begin{mat}2&0\\0&3 \end{mat}$
+\Question $A=\begin{mat}-1&0&0\\0&3&0\\0&0&5 \end{mat}$
+\Question $A=\begin{mat}0&1&0\\0&0&1\\1&0&0 \end{mat}$
+\Question $A=\begin{mat}0&0&1\\0&0&0\\0&1&0 \end{mat}$
+\EndCurrentQuestion
+\end{multicols}
+
+\end{Exercise}
+
+\begin{Answer}
+\Question $A^2=\begin{mat}1&0\\0&1 \end{mat}$, $A^3=\begin{mat}0&1\\1&0 \end{mat}$
+\Question $A^2=\begin{mat}4&0\\0&9 \end{mat}$, $A^3=\begin{mat}8&0\\0&27 \end{mat}$
+\Question $A^2=\begin{mat}1&0&0\\0&9&0\\0&0&25 \end{mat}$, $A^3=\begin{mat}-1&0&0\\0&27&0\\0&0&125 \end{mat}$
+\Question $A^2=\begin{mat}0&0&1\\1&0&0\\0&1&0 \end{mat}$, $A^3=\begin{mat}1&0&0\\0&1&0\\0&0&1 \end{mat}$
+\Question $A^2=\begin{mat}0&1&0\\0&0&0\\0&0&0 \end{mat}$, $A^3=\begin{mat}0&0&0\\0&0&0\\0&0&0 \end{mat}$
+\end{Answer}
