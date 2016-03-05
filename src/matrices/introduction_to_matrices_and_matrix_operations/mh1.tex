@@ -1,0 +1,50 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!multiplication}
+\index{matrix!transpose}
+\index{matrix!trace of}
+\index{matrix!subtraction}
+\index{matrix!addition}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{MH}}]
+Consider the matrices \[A=\begin{mat}
+3& 0& 1\\
+-2&3 &1
+\end{mat}
+\text{ and }
+B=\begin{mat}
+1& 2\\
+0& 1\\
+1 &0
+\end{mat}.\]
+Find the following when possible. If not, justify briefly.
+\begin{multicols}{4}
+\Question $BA$
+\Question $A^2$
+\Question $(A-B)^T$
+\Question $A+B^T$
+\Question $\trace(A)B$
+\Question $\trace(BA)$
+\EndCurrentQuestion
+\end{multicols}
+\end{Exercise}
+
+\begin{Answer}
+\Question $\begin{mat}-1 & 6 & 3\\ -2 & 3& 1\\ 3& 0 &1\end{mat}$
+\Question Not defined since $A$ is not a square matrix.
+\Question Not defined since $A$ and $B$ do not have the same dimension.
+\Question $\begin{mat}4 & 0 & 2\\ 0 & 4 & 1\end{mat}$
+\Question Not defined since the trace of a matrix is only defined for square matrices.
+\Question $3$
+\end{Answer}
