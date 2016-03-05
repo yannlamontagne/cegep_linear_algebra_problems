@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{norm}
+\index{unit vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Show that if \( r\geq 0 \) then
+     \( r\vec{v} \) is \( r \) times as long
+     as \( \vec{v} \).
+     What if \( r< 0 \)?
+\end{Exercise}
+
+\begin{Answer}
+      For the first question, assume that \( \vec{v}\in\Re^n \) and
+      \( r\geq 0 \), take the root, and factor.
+      \begin{equation*}
+        \norm{r\vec{v}\,}
+        =\sqrt{(rv_1)^2+\cdots+(rv_n)^2}     
+        =\sqrt{r^2({v_1}^2+\cdots+{v_n}^2}     
+        =r\norm{\vec{v}\,}
+      \end{equation*}
+      For the second question, the result is \( r \) times as long, but it
+      points in the opposite direction in that
+      \( r\vec{v}+(-r)\vec{v}=\zero \). 
+\end{Answer}

@@ -1,0 +1,46 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Describe the plane that contains this point and line.
+    \begin{equation*}
+      \colvec[r]{2 \\ 0 \\ 3}
+      \qquad
+      \set{\colvec[r]{-1 \\ 0 \\ -4}
+           +\colvec[r]{1 \\ 1 \\ 2}t
+           \suchthat t\in\Re}
+    \end{equation*}
+
+\end{Exercise}
+\begin{Answer}
+      The vector
+      \begin{equation*}
+        \colvec[r]{2 \\ 0 \\ 3}
+      \end{equation*}
+      is not on the line.
+      Because
+      \begin{equation*}
+        \colvec[r]{2 \\ 0 \\ 3}
+        -\colvec[r]{-1 \\ 0 \\ -4}
+        =\colvec[r]{3 \\ 0 \\ 7}
+      \end{equation*}
+      we can describe that plane in this way.
+      \begin{equation*}
+        \set{\colvec[r]{-1 \\ 0 \\ -4}
+             +m\colvec[r]{1 \\ 1 \\ 2}
+             +n\colvec[r]{3 \\ 0 \\ 7}
+            \suchthat m,n\in\Re}
+      \end{equation*}  
+\end{Answer}

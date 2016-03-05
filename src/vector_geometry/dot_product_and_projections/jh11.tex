@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Pythagorean theorem}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+   Generalize to \( \Re^n \) the converse of the Pythagorean
+    Theorem, that
+    if \( \vec{u} \) and \( \vec{v} \) are
+    perpendicular then
+    \( \norm{\vec{u}+\vec{v}\,}^2=\norm{\vec{u}\,}^2+\norm{\vec{v}\,}^2 \).
+\end{Exercise}
+
+\begin{Answer}
+      Suppose that \( \vec{u},\vec{v}\in\Re^n \).
+      If \( \vec{u} \) and \( \vec{v} \) are perpendicular then
+      \begin{equation*}
+        \norm{\vec{u}+\vec{v}\,}^2
+        =(\vec{u}+\vec{v})\dotprod(\vec{u}+\vec{v})    
+        =\vec{u}\dotprod\vec{u}+2\,\vec{u}\dotprod\vec{v}
+               +\vec{v}\dotprod\vec{v}  
+        =\vec{u}\dotprod\vec{u}+\vec{v}\dotprod\vec{v}  
+        =\norm{\vec{u}\,}^2+\norm{\vec{v}\,}^2
+      \end{equation*}  
+      (the third equality holds because \( \vec{u}\dotprod\vec{v}=0 \)).
+\end{Answer}

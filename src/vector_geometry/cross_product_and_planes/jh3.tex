@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+\index{line}
+\index{intersection}
+\index{intersection!line and plane}
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+Find the intersection of the line and plane, if possible.\\
+\( \set{\colvec[r]{2 \\ 0 \\ 1}+t\colvec[r]{1 \\ 1 \\ -1}
+                     \suchthat t\in\Re} \),
+            \( \set{s\colvec[r]{0 \\ 1 \\ 2}
+                     +w\colvec[r]{0 \\ 4 \\ 1}
+                     \suchthat s,w\in\Re} \)
+
+\end{Exercise}
+\begin{Answer}
+This system
+          \begin{equation*}
+            \begin{linsys}{1}
+            2+t   &=  &0 \hfill        \\
+            t     &=  &s+4w\hfill        \\
+            1-t   &=  &2s+w\hfill
+            \end{linsys}
+          \end{equation*}
+          gives \( t=-2 \), \( w=-1 \), and \( s=2 \) so their intersection
+          is this point.
+          \begin{equation*}
+            \colvec[r]{0 \\ -2 \\ 3}
+          \end{equation*}
+\end{Answer}

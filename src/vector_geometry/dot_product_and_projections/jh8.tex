@@ -1,0 +1,40 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{norm}
+\index{unit vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    A vector \( \vec{v}\in\Re^n \) of length one is a
+    \definend{unit}\index{vector!unit} vector.
+    Show that the dot product of two unit vectors has absolute value
+    less than or equal to one.
+    Can `less than' happen?
+    Can `equal to'?
+\end{Exercise}
+
+\begin{Answer}
+      Assume that \( \vec{u},\vec{v}\in\Re^n \) both have length \( 1 \).
+      Apply Cauchy-Schwarz:
+      $\absval{\vec{u}\dotprod\vec{v}}
+             \leq\absval{\vec{u}\,}\,\absval{\vec{v}\,}=1$.
+
+      To see that `less than' can happen, in \( \Re^2 \) take
+      \begin{equation*}
+        \vec{u}=\colvec[r]{1 \\ 0}
+        \qquad
+        \vec{v}=\colvec[r]{0 \\ 1}
+      \end{equation*}
+      and note that \( \vec{u}\dotprod\vec{v}=0 \).
+      For `equal to', note that \( \vec{u}\dotprod\vec{u}=1 \).  
+\end{Answer}

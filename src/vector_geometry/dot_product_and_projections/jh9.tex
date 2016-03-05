@@ -1,0 +1,33 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{orthogonal vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Show that if \( \vec{x}\dotprod\vec{y}=0 \) for every \( \vec{y} \)
+    then \( \vec{x}=\zero \).
+\end{Exercise}
+
+\begin{Answer}
+      We will prove this demonstrating that the contrapositive
+      statement holds:~if \( \vec{x}\neq\zero \) then there
+      is a \( \vec{y} \) with \( \vec{x}\dotprod\vec{y}\neq 0 \).
+
+      Assume that \( \vec{x}\in\Re^n \).
+      If \( \vec{x}\neq\zero \) then it has a nonzero component, say the
+      \( i \)-th one \( x_i \).
+      But the vector \( \vec{y}\in\Re^n \) that is all zeroes except for
+      a one in component~$i$ gives
+      \( \vec{x}\dotprod\vec{y}=x_i \).  
+      (A slicker proof just considers $\vec{x}\dotprod\vec{x}$.)
+\end{Answer}

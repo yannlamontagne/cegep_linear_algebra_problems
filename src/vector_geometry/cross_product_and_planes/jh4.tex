@@ -1,0 +1,35 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+\index{orthogonal}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Show that if a vector is perpendicular to each of two others then
+    it is perpendicular to each vector in the plane they generate.
+    (\textit{Remark.} 
+    They could generate a 
+    degenerate plane (a line or a point) but
+    the statement remains true.)
+
+\end{Exercise}
+\begin{Answer}
+      Suppose \( \vec{u}\in\Re^n \) is perpendicular to both
+      \( \vec{v}\in\Re^n \) and \( \vec{w}\in\Re^n \).
+      Then, for any \( k,m\in\Re \) we have this.
+      \begin{equation*}
+        \vec{u}\dotprod(k\vec{v}+m\vec{w})
+        =k(\vec{u}\dotprod\vec{v})+m(\vec{u}\dotprod\vec{w})
+        =k(0)+m(0)=0
+      \end{equation*}  
+\end{Answer}

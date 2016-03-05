@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{norm}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Does any vector have
+    length zero except a zero vector?
+    (If ``yes'', produce an example.
+    If ``no'', prove it.)
+\end{Exercise}
+
+\begin{Answer}
+      We prove that a vector has length zero if and only if all its
+      components are zero.
+
+      Let \( \vec{u}\in\Re^n \) have components \( u_1,\ldots,u_n \).
+      Recall that the square of any real number is greater than or equal to
+      zero, with equality only when that real is zero.
+      Thus
+      \( \absval{\vec{u}\,}^2={u_1}^2+\cdots+{u_n}^2 \) is a sum of numbers
+      greater than or equal to zero, and so is itself greater than or equal
+      to zero, with equality if and only if each \( u_i \) is zero.
+      Hence \( \absval{\vec{u}\,}=0 \) if and only if all the components of
+      \( \vec{u} \) are zero.    
+\end{Answer}

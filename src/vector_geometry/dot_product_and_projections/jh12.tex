@@ -1,0 +1,32 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{orthogonal vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Show that \( \norm{\vec{u}\,}=\norm{\vec{v}\,} \)
+    if and only if \( \vec{u}+\vec{v} \) and
+    \( \vec{u}-\vec{v} \) are perpendicular.
+    Give an example in \( \Re^2 \).
+\end{Exercise}
+
+\begin{Answer}
+      Where \( \vec{u},\vec{v}\in\Re^n \), the vectors
+      \( \vec{u}+\vec{v} \) and \( \vec{u}-\vec{v} \) are perpendicular if and
+      only if
+      $0=(\vec{u}+\vec{v})\dotprod(\vec{u}-\vec{v})
+         =\vec{u}\dotprod\vec{u}-\vec{v}\dotprod\vec{v}$,
+      which shows that those two are perpendicular if and only if
+      \( \vec{u}\dotprod\vec{u}=\vec{v}\dotprod\vec{v} \).
+      That holds if and only if \( \norm{\vec{u}\,}=\norm{\vec{v}\,} \).
+\end{Answer}

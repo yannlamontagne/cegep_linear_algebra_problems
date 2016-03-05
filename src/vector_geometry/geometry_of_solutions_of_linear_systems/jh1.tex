@@ -1,0 +1,65 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{intersection:of two planes}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Find the intersection of these planes.
+    \begin{align*}
+      \set{\colvec[r]{1 \\ 1 \\ 1}t+
+           \colvec[r]{0 \\ 1 \\ 3}s
+           \suchthat t,s\in\Re}\\
+      \set{\colvec[r]{1 \\ 1 \\ 0}
+           +\colvec[r]{0 \\ 3 \\ 0}k+
+           \colvec[r]{2 \\ 0 \\ 4}m
+           \suchthat k,m\in\Re}
+    \end{align*}
+\end{Exercise}
+
+\begin{Answer}
+     The points of coincidence are solutions of this system.
+      \begin{equation*}
+        \begin{linsys}{2}
+         t  &  &   &= &1+2m\hfill      \\
+         t  &+ &s  &= &1+3k\hfill      \\
+         t  &+ &3s &= &4m\hfill
+        \end{linsys}
+      \end{equation*}
+      Using Gaussian elimination on
+      \begin{equation*}
+        \begin{amat}{4}
+          1  &0  &0  &-2  &1  \\
+          1  &1  &-3 &0   &1  \\
+          1  &3  &0  &-4  &0
+        \end{amat}
+	\end{equation*}
+ we get
+	\begin{equation*}
+        \begin{amat}{4}
+          1  &0  &0  &-2  &1  \\
+          0  &1  &-3 &2   &0  \\
+          0  &0  &9  &-8  &-1
+        \end{amat}
+      \end{equation*}
+      which gives \( k=-(1/9)+(8/9)m \), so \( s=-(1/3)+(2/3)m \) and \( t=1+2m \).
+      The intersection is
+      \begin{equation*}
+        \set{\colvec[r]{1 \\ 1 \\ 0}+
+             \colvec[r]{0 \\ 3 \\ 0}(-\frac{1}{9}+\frac{8}{9}m)+
+             \colvec[r]{2 \\ 0 \\ 4}m
+             \suchthat m\in\Re}
+        =\set{\colvec[r]{1 \\ 2/3 \\ 0}
+             +\colvec[r]{2 \\ 8/3 \\ 4}m
+             \suchthat m\in\Re}
+      \end{equation*}    
+\end{Answer}
