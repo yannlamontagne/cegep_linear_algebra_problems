@@ -12,8 +12,8 @@ Scanning input file cegep_linear_algebra_problems.idx....
 
 !! Input index error (file = cegep_linear_algebra_problems.idx, line = 154):
    -- Illegal null field.
-done (679 entries accepted, 5 rejected).
-Sorting entries........done (7317 comparisons).
-Generating output file cegep_linear_algebra_problems.ind....done (253 lines written, 0 warnings).
+done (666 entries accepted, 5 rejected).
+Sorting entries........done (7089 comparisons).
+Generating output file cegep_linear_algebra_problems.ind....done (251 lines written, 0 warnings).
 Output written in cegep_linear_algebra_problems.ind.
 Transcript written in cegep_linear_algebra_problems.ilg.
