@@ -1,7 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{elementary matrix}
+\index{matrix polynomial}
+\index{matrix inverse}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -13,26 +14,21 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{JH}}]
-    Write
-    \begin{equation*}
-      \begin{mat}[r]
-        1   &0  \\
-        -3  &3
-      \end{mat}
-    \end{equation*}
-    as the product of two elementary matrices.
+origin={\cite{OV}}]
+Consider $p(X)=X^3-2X^2+4X-3I$
+\Question If $p(A)=\begin{mat}2 & 1\\ -1 & 2\end{mat}$, compute $p(\trans{A})$
+\Question If $p(B)=0$ where $B$ is an $\nbyn{n}$ matrix, find $B^{-1}$ in terms of $B$. 
 \end{Exercise}
 
 \begin{Answer}
-      \begin{equation*}
-        \begin{mat}[r]
-          1  &0  \\
-          0  &3
-        \end{mat}
-        \begin{mat}[r]
-          1  &0  \\
-         -1  &1
-        \end{mat}
-      \end{equation*}
+\Question
+$
+p(\trans{A})=
+\begin{mat}
+2 & -1\\
+1 & 2
+\end{mat}
+$
+\Question $B^{-1}=\frac13(B^2-2B+4I)$
+
 \end{Answer}

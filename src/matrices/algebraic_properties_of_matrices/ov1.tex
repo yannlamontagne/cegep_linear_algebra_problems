@@ -1,7 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{elementary matrix}
+\index{matrix equation}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -13,26 +13,13 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{JH}}]
-    Write
-    \begin{equation*}
-      \begin{mat}[r]
-        1   &0  \\
-        -3  &3
-      \end{mat}
-    \end{equation*}
-    as the product of two elementary matrices.
+origin={\cite{OV}}]
+Find matrix $A$, if
+\[
+\trans{\left(2\trans{A}-3\begin{mat}1 & -1\\ 0 & 4\end{mat}\right)}=\begin{mat}1 & 2\\ 3 & 3\end{mat}
+\]
 \end{Exercise}
 
 \begin{Answer}
-      \begin{equation*}
-        \begin{mat}[r]
-          1  &0  \\
-          0  &3
-        \end{mat}
-        \begin{mat}[r]
-          1  &0  \\
-         -1  &1
-        \end{mat}
-      \end{equation*}
+$A=\begin{mat}2 & 1\\ 0 & 8\end{mat}$
 \end{Answer}

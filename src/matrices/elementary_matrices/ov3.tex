@@ -1,0 +1,28 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{row equivalent}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{OV}},
+counter=Exercise]
+If matrices $A$ and $B$ are row equivalent then it can be denoted as $A\cong B$. Show that
+\Question $A\cong A$
+\Question If $A\cong B$, then $B\cong A$.
+\Question If $A\cong B$ and $B\cong C$, then $A\cong C$.
+\end{Exercise}
+
+\begin{Answer}
+\Question $A$ is obtained from $A$ by performing no elementary row operation on $A$.
+\Question If $B$ is obtained from $A$ by performing $k$ elementary row operations then $A$ is 
+obtained from $B$ by performing the $k$ inverse elementary row operations.
+\Question If $B$ is obtained from $A$ by performing $k$ elementary row operations and $C$ is obtained from $B$ by performing $l$ elementary row operations then $C$ is obtained from $A$ by performing the $k+l$ elementary row operations.
+\end{Answer}
+

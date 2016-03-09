@@ -1,7 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{elementary matrix}
+\index{matrix!elementary}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -13,26 +13,26 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{JH}}]
-    Write
-    \begin{equation*}
-      \begin{mat}[r]
-        1   &0  \\
-        -3  &3
-      \end{mat}
-    \end{equation*}
-    as the product of two elementary matrices.
+origin={\cite{OV}}]
+True or false? Justify your answer either proving the assertion or giving an example showing that it is false.\\
+The product of two elementary matrices of the same size must  be an elementary matrix.
 \end{Exercise}
 
 \begin{Answer}
-      \begin{equation*}
-        \begin{mat}[r]
-          1  &0  \\
-          0  &3
-        \end{mat}
-        \begin{mat}[r]
-          1  &0  \\
-         -1  &1
-        \end{mat}
-      \end{equation*}
+False, 
+$
+\begin{mat}
+1 & 0\\
+2 & 1
+\end{mat}
+\begin{mat}
+1 & 1\\
+0 & 1
+\end{mat}
+=
+\begin{mat}
+1 & 1\\
+2 & 3
+\end{mat}
+$
 \end{Answer}
