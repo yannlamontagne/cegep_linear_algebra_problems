@@ -1,0 +1,85 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{bisector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Prove that, where \( \vec{u},\vec{v}\in\Re^n \) are nonzero vectors,
+    the vector
+    \begin{equation*}
+       \frac{\vec{u}}{\norm{\vec{u}\,} }+\frac{\vec{v}}{\norm{\vec{v}\,} }
+    \end{equation*}
+    bisects the angle between them.
+    Illustrate in \( \Re^2 \).
+\end{Exercise}
+
+\begin{Answer}
+      We will show something more general:~if
+      \( \norm{\vec{z}_1}=\norm{\vec{z}_2} \) for
+      \( \vec{z}_1,\vec{z}_2\in\Re^n \), then \( \vec{z}_1+\vec{z}_2 \)
+      bisects the angle between \( \vec{z}_1 \) and \( \vec{z}_2 \)
+      \begin{center}
+        \setlength{\unitlength}{4pt}      % sum of equal length vectors.
+        \begin{picture}(37,12)(0,0)
+          \put(0,0){\begin{picture}(12,12)(0,0)
+                      \thicklines
+                      \put(0,0){\vector(2,1){8} }
+                      \put(0,0){\vector(1,2){4} }
+                      \put(0,0){\vector(1,1){12} }
+                      \thinlines
+                      \put(8,4){\line(1,2){4} }
+                      \put(4,8){\line(2,1){8} }
+                    \end{picture} }
+          \put(18.5,7){\makebox(0,0){\small gives} }
+          \put(25,0){\begin{picture}(12,12)(0,0)
+                      \thinlines
+                      \put(0,0){\line(2,1){8} }
+                      \put(0,0){\line(1,2){4} }
+                      \put(0,0){\line(1,1){12} }
+                      \put(8,4){\line(1,2){4} }
+                      \put(4,8){\line(2,1){8} }
+
+                      \put(2,3.8){\( \prime \)}
+                      \put(4.2,1.5){\( \prime \)}
+                      \multiput(5.7,5.2)(0.5,0.5){2}{\( \prime \)}
+                      \multiput(9.0,5.8)(0.5,1.0){3}{\( \prime \)}
+                      \multiput(6.6,8.7)(0.6,0.3){3}{\( \prime \)}
+                    \end{picture} }
+        \end{picture}
+      \end{center}
+      (we ignore the case where \( \vec{z}_1 \) and \( \vec{z}_2 \) are
+      the zero vector).
+
+      The \( \vec{z}_1+\vec{z}_2=\zero \) case is easy.
+      For the rest, by the definition of angle, 
+      we will be finished if we show this.
+      \begin{equation*}
+        \frac{\vec{z}_1\dotprod(\vec{z}_1+\vec{z}_2)}{
+              \norm{\vec{z}_1}\,\norm{\vec{z}_1+\vec{z}_2} }
+        =
+        \frac{\vec{z}_2\dotprod(\vec{z}_1+\vec{z}_2)}{
+              \norm{\vec{z}_2}\,\norm{\vec{z}_1+\vec{z}_2} }
+      \end{equation*}
+      But distributing inside each expression gives
+      \begin{equation*}
+        \frac{\vec{z}_1\dotprod\vec{z}_1+\vec{z}_1\dotprod\vec{z}_2}{
+              \norm{\vec{z}_1}\,\norm{\vec{z}_1+\vec{z}_2} }
+        \qquad
+        \frac{\vec{z}_2\dotprod\vec{z}_1+\vec{z}_2\dotprod\vec{z}_2}{
+              \norm{\vec{z}_2}\,\norm{\vec{z}_1+\vec{z}_2} }
+      \end{equation*}
+      and \( \vec{z}_1\dotprod\vec{z}_1=\norm{\vec{z}_1}^2
+              =\norm{\vec{z}_2}^2=\vec{z}_2\dotprod\vec{z}_2 \), so the
+      two are equal.  
+
+\end{Answer}

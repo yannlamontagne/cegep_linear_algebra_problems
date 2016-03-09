@@ -1,0 +1,52 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+\Question Describe the plane through \( (1,1,5,-1) \),
+           \( (2,2,2,0) \), and \( (3,1,0,4) \).
+\Question Is the origin in that plane?
+
+\end{Exercise}
+
+\begin{Answer}
+\Question Note that
+          \begin{equation*}
+            \colvec[r]{2 \\ 2 \\ 2 \\ 0}
+            -\colvec[r]{1 \\ 1 \\ 5 \\ -1}
+            =\colvec[r]{1 \\ 1 \\ -3 \\ 1}
+            \qquad
+            \colvec[r]{3 \\ 1 \\ 0 \\ 4}
+            -\colvec[r]{1 \\ 1 \\ 5 \\ -1}
+            =\colvec[r]{2 \\ 0 \\ -5 \\ 5}
+          \end{equation*}
+          and so the plane is this set.
+          \begin{equation*}
+            \set{\colvec[r]{1 \\ 1 \\ 5 \\ -1}
+                 +\colvec[r]{1 \\ 1 \\ -3 \\ 1}t
+                 +\colvec[r]{2 \\ 0 \\ -5 \\ 5}s
+                \suchthat t,s\in\Re}
+          \end{equation*}
+\Question No; this system
+          \begin{equation*}
+            \begin{linsys}{3}
+              1  &+  &1t  &+  &2s  &=  &0  \\
+              1  &+  &1t  &   &    &=  &0  \\
+              5  &-  &3t  &-  &5s  &=  &0  \\
+             -1  &+  &1t  &+  &5s  &=  &0  
+            \end{linsys}
+          \end{equation*}
+          has no solution.
+
+\end{Answer}

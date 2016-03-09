@@ -1,0 +1,46 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{orthogonal vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+   Show that the inner product operation is \definend{linear}:~for
+    \( \vec{u},\vec{v},\vec{w}\in\Re^n \) and \( k,m\in\Re \),
+    $\vec{u}\dotprod(k\vec{v}+m\vec{w})=
+       k(\vec{u}\dotprod\vec{v})+m(\vec{u}\dotprod\vec{w})$.
+\end{Exercise}
+
+\begin{Answer}
+     Let
+      \begin{equation*}
+        \vec{u}=\colvec{u_1 \\ \vdotswithin{u_1} \\ u_n},
+        \quad
+        \vec{v}=\colvec{v_1 \\ \vdotswithin{v_1} \\ v_n}
+        \quad
+        \vec{w}=\colvec{w_1 \\ \vdotswithin{w_1} \\ w_n}
+      \end{equation*}
+      and then
+      \begin{align*}
+        \vec{u}\dotprod\bigl(k\vec{v}+m\vec{w}\bigr)
+        &=\colvec{u_1 \\ \vdotswithin{u_1} \\ u_n}\dotprod
+         \bigl( \colvec{kv_1 \\ \vdotswithin{kv_1} \\ kv_n}
+               +\colvec{mw_1 \\ \vdotswithin{mw_1} \\ mw_n} \bigr)   \\
+        &=\colvec{u_1 \\ \vdotswithin{u_1} \\ u_n}\dotprod
+         \colvec{kv_1+mw_1 \\ \vdotswithin{kv_1+mw_1} \\ kv_n+mw_n}    \\
+        &=u_1(kv_1+mw_1)+\cdots+u_n(kv_n+mw_n)    \\
+        &=ku_1v_1+mu_1w_1+\cdots+ku_nv_n+mu_nw_n    \\
+        &=(ku_1v_1+\cdots+ku_nv_n)+(mu_1w_1+\cdots+mu_nw_n)    \\
+        &=k(\vec{u}\dotprod\vec{v})+m(\vec{u}\dotprod\vec{w})
+      \end{align*}  
+      as required.
+\end{Answer}

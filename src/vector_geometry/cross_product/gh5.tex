@@ -1,0 +1,29 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{cross product}
+\index{orthogonal vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{GHC}}]
+Show, using the definition of the cross product, that $\vec u\cdot(\vec u\times\vec v)=0$; that is, that $\vec u$ is orthogonal to the cross product of $\vec u$ and $\vec v$.
+\end{Exercise}
+
+\begin{Answer}
+With $\vec u = (u_1,u_2,u_3)$ and $\vec v = (v_1,v_2,v_3)$, we have
+\begin{align*}
+\vec u\cdot(\vec u\times\vec v) &= (u_1,u_2,u_3)\cdot (u_2v_3-u_3v_2,-(u_1v_3-u_3v_1),u_1v_2-u_2v_1) \\
+		&= u_1(u_2v_3-u_3v_2) - u2(u_1v_3-u_3v_1)+u3(u_1v_2-u_2v_1)\\
+		&=0.
+\end{align*}
+
+\end{Answer}

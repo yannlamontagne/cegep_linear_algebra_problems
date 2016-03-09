@@ -1,0 +1,38 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{norm}
+\index{unit vector}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Show that if \( \vec{v}\neq\zero \) then
+    \( \vec{v}/\norm{\vec{v}\,} \) has length one.
+    What if \( \vec{v}=\zero \)?
+\end{Exercise}
+
+\begin{Answer}
+     Assume that \( \vec{v}\in\Re^n \) has components \( v_1,\ldots,v_n \).
+      If \( \vec{v}\neq \zero \) then we have this.
+      \begin{multline*}
+        \sqrt{\left(\frac{v_1}{\sqrt{{v_1}^2+\cdots+{v_n}^2}}\right)^2+
+              \dots+\left(\frac{v_n}{\sqrt{{v_1}^2+\cdots+{v_n}^2}}\right)^2}
+        \\
+        \begin{aligned}
+          &=\sqrt{\left(\frac{{v_1}^2}{{v_1}^2+\cdots+{v_n}^2}\right)+
+              \dots+\left(\frac{{v_n}^2}{{v_1}^2+\cdots+{v_n}^2}\right)}   \\
+          &=1
+        \end{aligned}
+      \end{multline*}
+      If \( \vec{v}=\zero \) then \( \vec{v}/\norm{\vec{v}\,} \) is not
+      defined.
+\end{Answer}

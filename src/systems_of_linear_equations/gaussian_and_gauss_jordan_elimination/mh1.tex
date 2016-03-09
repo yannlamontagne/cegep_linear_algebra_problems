@@ -1,0 +1,51 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Gauss-Jordan Elimination}
+\index{particular solution}
+\index{homogeneous system}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{MH}},
+counter=Exercise]
+Given
+\[
+ A=\begin{mat}
+ 0&2&-5&-18\\
+ -3&-6&0&3\\
+ 3&7&0&-2\\
+ 5&10&3&7
+\end{mat}
+\]
+
+\Question Find the reduced row echelon form of the matrix $A$.
+\Question Suppose that $A$ is the augmented matrix of a linear system. Write the corresponding system of linear equations. Use the first part to find the solution of the system.
+\Question Suppose that $A$ is the coefficient matrix of a homogeneous linear system. Write the corresponding system of linear equations. Use the first part to find the solution of the system.
+\end{Exercise}
+
+\begin{Answer}
+\Question $\begin{mat} 1 & 0 & 0 & -3\\ 0 & 1 & 0 & 1\\ 0 & 0 & 1 & 4\\ 0 & 0 & 0 &0\end{mat}$
+\Question $\begin{linsys}{3}
+ &  & 2x_2 & - & 5x_3 &  = & -18\\
+-3x_1 & - & 6x_2 &  &  &  = & 3\\
+3x_1 & + & 7x_2 &   &   &  = & -2\\
+5x_1 & + & 10x_2 & +  & 3x_3  &  = & 7
+\end{linsys}$,\\ $(x_1,\;x_2,\;x_3)=(-3,\;2,\;4)$
+\Question $\begin{linsys}{4}
+ &  & 2x_2 & - & 5x_3 & - & 18x_4 & = & 0\\
+-3x_1 & - & 6x_2 &  &  & + & 3x_4 & = & 0\\
+3x_1 & + & 7x_2 &   &  &  - & 2x_4 & = & 0\\
+5x_1 & + & 10x_2 & +  & 3x_3  & + & 7x_4 & = & 0
+\end{linsys}$,\\ $(x_1,\;x_2,\;x_3,\;x_4)=(3t,\;-t,\;-4t,\;t)$ where $t\in\Re$
+
+
+\end{Answer}
+

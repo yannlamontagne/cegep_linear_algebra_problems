@@ -1,0 +1,78 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dot product}
+\index{algebraic properties}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{JH}}]
+    Describe the algebraic properties of dot product.
+\Question Is it right-distributive over addition:
+        \(
+           (\vec{u}+\vec{v})\dotprod\vec{w}
+           =
+           \vec{u}\dotprod\vec{w}+\vec{v}\dotprod\vec{w} \)?
+\Question Is it left-distributive (over addition)?
+\Question Does it commute?
+\Question Associate?
+\Question How does it interact with scalar multiplication?
+\end{Exercise}
+
+\begin{Answer}
+      In each item below, assume that the vectors 
+      \( \vec{u},\vec{v},\vec{w}\in\Re^n \) 
+      have components
+      \( u_1,\ldots,u_n,v_1,\ldots,w_n \).
+\Question Dot product is right-distributive.
+           \begin{align*}
+              (\vec{u}+\vec{v})\dotprod\vec{w}
+              &=[\colvec{u_1 \\ \vdotswithin{u_1} \\ u_n}
+                +\colvec{v_1 \\ \vdotswithin{v_1} \\ v_n}]\dotprod
+                \colvec{w_1 \\ \vdotswithin{w_1} \\ w_n}               \\
+              &=
+              \colvec{u_1+v_1 \\ \vdotswithin{u_1+v_1} \\ u_n+v_n}\dotprod
+                \colvec{w_1 \\ \vdotswithin{w_1} \\ w_n}               \\
+              &=
+              (u_1+v_1)w_1+\cdots+(u_n+v_n)w_n              \\
+              &=
+              (u_1w_1+\cdots+u_nw_n)+(v_1w_1+\cdots+v_nw_n)  \\
+              &=
+              \vec{u}\dotprod\vec{w}+\vec{v}\dotprod\vec{w}
+           \end{align*}
+\Question Dot product is also left distributive:
+          $\vec{w}\dotprod(\vec{u}+\vec{v})=
+              \vec{w}\dotprod\vec{u}+\vec{w}\dotprod\vec{v}$.
+          The proof is just like the prior one.
+\Question Dot product commutes.
+          \begin{equation*}
+            \colvec{u_1 \\ \vdotswithin{u_1} \\ u_n}\dotprod
+              \colvec{v_1 \\ \vdotswithin{v_1} \\ v_n}
+            =u_1v_1+\cdots+u_nv_n   
+            =v_1u_1+\cdots+v_nu_n   
+            =\colvec{v_1 \\ \vdotswithin{v_1} \\ v_n}\dotprod
+              \colvec{u_1 \\ \vdotswithin{u_1} \\ u_n}
+          \end{equation*}
+\Question Because \( \vec{u}\dotprod\vec{v} \) 
+          is a scalar, not a vector,
+          the expression \( (\vec{u}\dotprod\vec{v})\dotprod\vec{w} \) makes no
+          sense; the dot product of a scalar and a vector is not defined.
+\Question This is a vague question so it has many answers.
+          Some are 
+          (1)~\( k(\vec{u}\dotprod\vec{v})=(k\vec{u})\dotprod\vec{v} \)
+          and \( k(\vec{u}\dotprod\vec{v})=\vec{u}\dotprod(k\vec{v}) \),
+          (2)~\( k(\vec{u}\dotprod\vec{v})\neq (k\vec{u})\dotprod(k\vec{v}) \)
+          (in general; an example is easy to produce), and
+          (3)~\( \absval{k\vec{v}\,}=\lvert k\rvert\absval{\vec{v}\,} \) 
+          (the connection between
+          length and dot product is that the square of the length is the
+          dot product of a vector with itself).
+\end{Answer}

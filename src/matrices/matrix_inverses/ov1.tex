@@ -1,0 +1,34 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix polynomial}
+\index{matrix inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{OV}}]
+Consider $p(X)=X^3-2X^2+4X-3I$
+\Question If $p(A)=\begin{mat}2 & 1\\ -1 & 2\end{mat}$, compute $p(\trans{A})$
+\Question If $p(B)=0$ where $B$ is an $\nbyn{n}$ matrix, find $B^{-1}$ in terms of $B$. 
+\end{Exercise}
+
+\begin{Answer}
+\Question
+$
+p(\trans{A})=
+\begin{mat}
+2 & -1\\
+1 & 2
+\end{mat}
+$
+\Question $B^{-1}=\frac13(B^2-2B+4I)$
+
+\end{Answer}

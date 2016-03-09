@@ -1,0 +1,38 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{OV}}]
+True or false? Justify your answer either proving the assertion or giving an example showing that it is false.\\
+The product of two elementary matrices of the same size must  be an elementary matrix.
+\end{Exercise}
+
+\begin{Answer}
+False, 
+$
+\begin{mat}
+1 & 0\\
+2 & 1
+\end{mat}
+\begin{mat}
+1 & 1\\
+0 & 1
+\end{mat}
+=
+\begin{mat}
+1 & 1\\
+2 & 3
+\end{mat}
+$
+\end{Answer}

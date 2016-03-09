@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  17 FEB 2016 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  8 MAR 2016 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,8 +1048,8 @@ LaTeX Info: Redefining \nameref on input line 122.
 ABD: EveryShipout initializing macros [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./cegep_linear_algebra_pr
-oblems.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./cegep_linear_algebr
+a_problems.toc)
 \tf@toc=\write6
 \openout6 = `cegep_linear_algebra_problems.toc'.
 
@@ -1061,7 +1061,7 @@ oblems.toc)
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \mainmatter
+l.140 \mainmatter
                   [2
 
 
@@ -1134,7 +1134,12 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2])
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 
+      [2])
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/gh2.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh1.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/sz3.tex)
@@ -1168,6 +1173,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3])
+(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/mh1.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/sz4.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh4.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh3.tex)
@@ -1176,63 +1182,63 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh2.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/gh4.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/kk3.tex)
+(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/ov1.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/yl2.tex)
+(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/ov2.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/yl4.tex)
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh5.tex)
-(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh6.tex))
+(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/jh6.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./systems_of_linear_equations/applications_of_linear_systems/index.tex
+[4])) (./systems_of_linear_equations/applications_of_linear_systems/index.tex
 (./systems_of_linear_equations/applications_of_linear_systems/kk1.tex)
 (./systems_of_linear_equations/applications_of_linear_systems/kk2.tex)))
-(./matrix_algebra/index.tex
+(./matrices/index.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5
-
-] [6
+[5] [6
 
 ]
 Chapter 2.
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/index.tex
+(./matrices/introduction_to_matrices_and_matrix_operations/index.tex
 Underfull \hbox (badness 1960) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Introduction to Ma-tri-ces and
  []
 
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh1.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh2.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh1.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh3.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh4.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh4.tex
+(./matrices/introduction_to_matrices_and_matrix_operations/jh1.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh2.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh1.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh3.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh4.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh4.tex
 Overfull \hbox (5.08069pt too wide) in paragraph at lines 29--31
 \OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = []$
  []
 
-) (./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh5.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh6.tex
-[7]) (./matrix_algebra/introduction_to_matrices_and_matrix_operations/he1.tex
+) (./matrices/introduction_to_matrices_and_matrix_operations/gh5.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh6.tex [7])
+(./matrices/introduction_to_matrices_and_matrix_operations/he1.tex
 Underfull \hbox (badness 7273) in paragraph at lines 73--74
 []\OT1/cmr/m/n/10 Illustrate the as-so-cia-
  []
 
-) (./matrix_algebra/introduction_to_matrices_and_matrix_operations/sz1.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh8.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/kk2.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh3.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh6.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh7.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh8.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/kk3.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh9.tex
+) (./matrices/introduction_to_matrices_and_matrix_operations/sz1.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh8.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/kk2.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh3.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh6.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh7.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh8.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/kk3.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh9.tex
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 []\OT1/cmr/m/n/10 Any skew-symmetric
  []
@@ -1243,52 +1249,88 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]) (./matrix_algebra/introduction_to_matrices_and_matrix_operations/yl5.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/jh5.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/kk4.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/gh2.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/kk1.tex)
-(./matrix_algebra/introduction_to_matrices_and_matrix_operations/yl4.tex))
-(./matrix_algebra/algebraic_properties_of_matrices/index.tex
-(./matrix_algebra/algebraic_properties_of_matrices/gh1.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/gh7.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/kk1.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/jh1.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/yl4.tex
+[8]) (./matrices/introduction_to_matrices_and_matrix_operations/mh1.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/yl5.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/jh5.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/kk4.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/gh2.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/kk1.tex)
+(./matrices/introduction_to_matrices_and_matrix_operations/yl4.tex))
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]) (./matrix_algebra/algebraic_properties_of_matrices/kk2.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/jh5.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/jh2.tex
+[9] (./matrices/algebraic_properties_of_matrices/index.tex
+(./matrices/algebraic_properties_of_matrices/gh1.tex)
+(./matrices/algebraic_properties_of_matrices/ov1.tex)
+(./matrices/algebraic_properties_of_matrices/gh7.tex)
+(./matrices/algebraic_properties_of_matrices/kk1.tex)
+(./matrices/algebraic_properties_of_matrices/jh1.tex)
+(./matrices/algebraic_properties_of_matrices/yl4.tex)
+(./matrices/algebraic_properties_of_matrices/kk2.tex)
+(./matrices/algebraic_properties_of_matrices/jh5.tex)
+(./matrices/algebraic_properties_of_matrices/jh2.tex
 Underfull \hbox (badness 1603) in paragraph at lines 39--41
 []\OT1/cmr/m/n/10 By the prior part each equals its trans-pose, e.g.,
  []
 
-) (./matrix_algebra/algebraic_properties_of_matrices/jh4.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/gh2.tex
+) (./matrices/algebraic_properties_of_matrices/jh4.tex)
+(./matrices/algebraic_properties_of_matrices/gh2.tex
 Underfull \hbox (badness 1009) in paragraph at lines 23--24
 []\OT1/cmr/m/n/10 Verify us-ing the def-i-ni-tion of sym-met-ric and skew-
  []
 
-) (./matrix_algebra/algebraic_properties_of_matrices/yl3.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/yl1.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/yl2.tex)
-(./matrix_algebra/algebraic_properties_of_matrices/jh9.tex))
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/index.tex
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/gh2.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/gh4.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/kk4.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl9.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl10.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl8.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh11.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/gh5.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh5.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh1.tex
+) (./matrices/algebraic_properties_of_matrices/yl3.tex)
+(./matrices/algebraic_properties_of_matrices/yl1.tex)
+(./matrices/algebraic_properties_of_matrices/yl2.tex)
+(./matrices/algebraic_properties_of_matrices/mh1.tex)
+(./matrices/algebraic_properties_of_matrices/jh9.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10])) (./matrices/matrix_inverses/index.tex
+(./matrices/matrix_inverses/gh2.tex) (./matrices/matrix_inverses/gh4.tex)
+(./matrices/matrix_inverses/kk4.tex) (./matrices/matrix_inverses/yl9.tex)
+(./matrices/matrix_inverses/yl10.tex) (./matrices/matrix_inverses/yl8.tex)
+(./matrices/matrix_inverses/ov1.tex) (./matrices/matrix_inverses/jh11.tex)
+(./matrices/matrix_inverses/gh5.tex) (./matrices/matrix_inverses/gh3.tex)
+(./matrices/matrix_inverses/sz2.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]) (./matrices/matrix_inverses/gh1.tex) (./matrices/matrix_inverses/yl1.tex)
+(./matrices/matrix_inverses/yl11.tex) (./matrices/matrix_inverses/mh1.tex)
+(./matrices/matrix_inverses/ov2.tex) (./matrices/matrix_inverses/kk2.tex)
+(./matrices/matrix_inverses/jh5.tex) (./matrices/matrix_inverses/kk1.tex)
+(./matrices/matrix_inverses/jh7.tex) (./matrices/matrix_inverses/jh8.tex)
+(./matrices/matrix_inverses/yl14.tex) (./matrices/matrix_inverses/jh6.tex
+Underfull \hbox (badness 1708) in paragraph at lines 21--23
+[] \OT1/cmr/bx/n/10 2.3.23$\OML/cmm/m/it/10 T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 T[]\OT1/cmr/m/n/10 )[] = (\OML/cmm/m/it/10 TT [] T\OT1/cmr/m/n/10 ) \OMS/cmsy
+/m/n/10 ^^A \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T[]T[] [] T[]\OT1/cmr/m/n/10 ) =
+ []
+
+) (./matrices/matrix_inverses/kk5.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]) (./matrices/matrix_inverses/kk6.tex) (./matrices/matrix_inverses/jh9.tex)
+(./matrices/matrix_inverses/yl6.tex) (./matrices/matrix_inverses/yl7.tex)
+(./matrices/matrix_inverses/yl12.tex) (./matrices/matrix_inverses/jh4.tex)
+(./matrices/matrix_inverses/yl13.tex) (./matrices/matrix_inverses/mh2.tex))
+(./matrices/elementary_matrices/index.tex
+(./matrices/elementary_matrices/jh1.tex
 Overfull \hbox (0.77376pt too wide) in paragraph at lines 20--28
 []$[] []$
  []
@@ -1303,76 +1345,42 @@ Overfull \hbox (8.55156pt too wide) in paragraph at lines 36--44
 []$[] []$ 
  []
 
-) (./matrix_algebra/matrix_inverses_and_elementary_matrices/jh2.tex
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]) (./matrix_algebra/matrix_inverses_and_elementary_matrices/sz1.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh3.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/gh3.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/sz2.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/kk2.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl11.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl2.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl1.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/kk3.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl3.tex
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
-Underfull \hbox (badness 4072) in paragraph at lines 38--59
-[] \OT1/cmr/bx/n/10 2.3.21$\OML/cmm/m/it/10 E[] \OT1/cmr/m/n/10 = [] \OML/cmm/m
-/it/10 E[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 E[] \OT1/cmr/m/n/10 =
+) (./matrices/elementary_matrices/jh2.tex)
+(./matrices/elementary_matrices/sz1.tex)
+(./matrices/elementary_matrices/jh3.tex)
+(./matrices/elementary_matrices/ov1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
+[] \OT1/cmr/bx/n/10 2.4.5$\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = [] =
  []
 
-) (./matrix_algebra/matrix_inverses_and_elementary_matrices/yl5.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh10.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl4.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/kk1.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh7.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh8.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl14.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh6.tex
-Underfull \hbox (badness 1708) in paragraph at lines 21--23
-[] \OT1/cmr/bx/n/10 2.3.29$\OML/cmm/m/it/10 T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
-0 T[]\OT1/cmr/m/n/10 )[] = (\OML/cmm/m/it/10 TT [] T\OT1/cmr/m/n/10 ) \OMS/cmsy
-/m/n/10 ^^A \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T[]T[] [] T[]\OT1/cmr/m/n/10 ) =
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--62
+[] [] [] []$ \OT1/cmr/m/n/10 Note:
  []
 
-) (./matrix_algebra/matrix_inverses_and_elementary_matrices/kk5.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/kk6.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh9.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl6.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl7.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl12.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/jh4.tex)
-(./matrix_algebra/matrix_inverses_and_elementary_matrices/yl13.tex))
+) (./matrices/elementary_matrices/yl2.tex)
+(./matrices/elementary_matrices/yl1.tex)
+(./matrices/elementary_matrices/kk3.tex)
+(./matrices/elementary_matrices/yl3.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] (./matrix_algebra/linear_systems_and_matrices/index.tex
-(./matrix_algebra/linear_systems_and_matrices/yl1.tex)
-(./matrix_algebra/linear_systems_and_matrices/gh1.tex)))
-(./determinants/index.tex
+[13]) (./matrices/elementary_matrices/yl5.tex)
+(./matrices/elementary_matrices/jh10.tex)
+(./matrices/elementary_matrices/yl4.tex)
+(./matrices/elementary_matrices/mh1.tex)
+(./matrices/elementary_matrices/ov2.tex)
+(./matrices/elementary_matrices/ov3.tex))) (./determinants/index.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13
-
-] [14
+[14
 
 ]
 Chapter 3.
@@ -1385,7 +1393,9 @@ Chapter 3.
 (./determinants/the_laplace_expansion/sz1.tex)
 (./determinants/the_laplace_expansion/jh1.tex)
 (./determinants/the_laplace_expansion/kk2.tex)
-(./determinants/the_laplace_expansion/yl1.tex [15])
+(./determinants/the_laplace_expansion/yl1.tex [15
+
+])
 (./determinants/the_laplace_expansion/jh3.tex)
 (./determinants/the_laplace_expansion/jh4.tex))
 (./determinants/determinants_and_elementary_operations/index.tex
@@ -1409,26 +1419,12 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 [16]) (./determinants/determinants_and_elementary_operations/jh1.tex)
 (./determinants/determinants_and_elementary_operations/kk2.tex))
-(./determinants/properties_of_determinants_and_matrix_inverses/index.tex
-(./determinants/properties_of_determinants_and_matrix_inverses/jh7.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh8.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh9.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh10.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh11.tex
-Overfull \hbox (76.519pt too wide) detected at line 42
-\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = []  [](\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )
- = []  []([](\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )) = []
- []
-
-) (./determinants/properties_of_determinants_and_matrix_inverses/kk6.tex
-Underfull \hbox (badness 2469) in paragraph at lines 134--148
-[]$[] \OT1/cmr/m/n/10 = 3$ so it has an in-verse which is
- []
-
-) (./determinants/properties_of_determinants_and_matrix_inverses/jh1.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk10.tex
+(./determinants/properties_of_determinants/index.tex
+(./determinants/properties_of_determinants/jh1.tex)
+(./determinants/properties_of_determinants/kk5.tex)
+(./determinants/properties_of_determinants/kk10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
-[] \OT1/cmr/bx/n/10 3.3.8\OT1/cmr/m/n/10 This fol-lows be-cause $[] [] =
+[] \OT1/cmr/bx/n/10 3.3.3\OT1/cmr/m/n/10 This fol-lows be-cause $[] [] =
  []
 
 
@@ -1436,46 +1432,30 @@ Underfull \hbox (badness 3758) in paragraph at lines 23--27
 [] [] [] [] [] []$ \OT1/cmr/m/n/10 and if this prod-uct is nonzero,
  []
 
-) (./determinants/properties_of_determinants_and_matrix_inverses/kk8.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk9.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk11.tex
+) (./determinants/properties_of_determinants/kk8.tex)
+(./determinants/properties_of_determinants/kk9.tex)
+(./determinants/properties_of_determinants/kk11.tex)
+(./determinants/properties_of_determinants/jh2.tex)
+(./determinants/properties_of_determinants/kk1.tex)
+(./determinants/properties_of_determinants/jh12.tex)
+(./determinants/properties_of_determinants/kk2.tex)
+(./determinants/properties_of_determinants/jh3.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]) (./determinants/properties_of_determinants_and_matrix_inverses/kk5.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk7.tex
-Overfull \hbox (22.07439pt too wide) in alignment at lines 42--55
- [][][] []
- []
-
-) (./determinants/properties_of_determinants_and_matrix_inverses/jh2.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk1.tex
-Underfull \hbox (badness 2503) in paragraph at lines 22--26
-[] \OT1/cmr/bx/n/10 3.3.15$[] [] \OT1/cmr/m/n/10 = [] [] = [] [] [] [] =
- []
-
-) (./determinants/properties_of_determinants_and_matrix_inverses/jh12.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk2.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh3.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/yl2.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/yl3.tex
-Underfull \hbox (badness 1565) in paragraph at lines 50--51
-[]\OT1/cmr/m/n/10 If $\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/10 is a $10  \OMS/cmsy/m
-/n/10 ^^B  \OT1/cmr/m/n/10 10$ in-vert-ible ma-trix then eval-u-ate
- []
-
-
-Overfull \hbox (26.48602pt too wide) in paragraph at lines 65--66
-[]$[]$ 
- []
-
-) (./determinants/properties_of_determinants_and_matrix_inverses/jh4.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh5.tex
+[17]pdfTeX warning (ext4): destination with the same identifier (name{Question.
+3.3.11.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \Question I
+                f it is defined then it is \( (3^2)(2) (2^{-2}) (3) \).)
+(./determinants/properties_of_determinants/jh4.tex)
+(./determinants/properties_of_determinants/jh5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 26--30
-[] \OT1/cmr/bx/n/10 3.3.22\OT1/cmr/m/n/10 If $\OML/cmm/m/it/10 H \OT1/cmr/m/n/1
+[] \OT1/cmr/bx/n/10 3.3.13\OT1/cmr/m/n/10 If $\OML/cmm/m/it/10 H \OT1/cmr/m/n/1
 0 = \OML/cmm/m/it/10 P[]GP$ \OT1/cmr/m/n/10 then $[](\OML/cmm/m/it/10 H\OT1/cmr
 /m/n/10 ) =
  []
@@ -1488,8 +1468,8 @@ OT1/cmr/m/n/10 ) [](\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 P
 G\OT1/cmr/m/n/10 ) =
  []
 
-) (./determinants/properties_of_determinants_and_matrix_inverses/kk3.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh6.tex
+) (./determinants/properties_of_determinants/kk3.tex)
+(./determinants/properties_of_determinants/jh6.tex
 Overfull \hbox (54.19653pt too wide) detected at line 36
 \OT1/cmr/m/n/10 0 = \OML/cmm/m/it/10 xy[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[
 ]y[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[]y \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it
@@ -1501,18 +1481,53 @@ cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) + \O
 ML/cmm/m/it/10 x[]y[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]y[]
  []
 
-) (./determinants/properties_of_determinants_and_matrix_inverses/yl1.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/jh13.tex)
-(./determinants/properties_of_determinants_and_matrix_inverses/kk4.tex
+) (./determinants/properties_of_determinants/jh13.tex)
+(./determinants/properties_of_determinants/kk4.tex))
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/index.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/14.4 Adjoint of a Ma-trix and
+ []
+
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/jh7.tex)
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/jh8.tex)
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/jh9.tex)
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/jh10.tex)
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/jh11.tex
+Overfull \hbox (76.519pt too wide) detected at line 42
+\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = []  [](\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )
+ = []  []([](\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )) = []
+ []
+
+) (./determinants/adjoint_of_a_matrix_and_cramers_rule/kk6.tex
+Underfull \hbox (badness 2469) in paragraph at lines 134--148
+[]$[] \OT1/cmr/m/n/10 = 3$ so it has an in-verse which is
+ []
+
+) (./determinants/adjoint_of_a_matrix_and_cramers_rule/kk7.tex
+Overfull \hbox (22.07439pt too wide) in alignment at lines 42--55
+ [][][] []
+ []
+
+) (./determinants/adjoint_of_a_matrix_and_cramers_rule/yl2.tex)
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/yl3.tex
+Underfull \hbox (badness 1565) in paragraph at lines 50--51
+[]\OT1/cmr/m/n/10 If $\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/10 is a $10  \OMS/cmsy/m
+/n/10 ^^B  \OT1/cmr/m/n/10 10$ in-vert-ible ma-trix then eval-u-ate
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18])) (./determinants/applications_of_the_determinant/index.tex
-(./determinants/applications_of_the_determinant/yl1.tex)
-(./determinants/applications_of_the_determinant/gh1.tex
+[18]
+Overfull \hbox (26.48602pt too wide) in paragraph at lines 65--66
+[]$[]$ 
+ []
+
+) (./determinants/adjoint_of_a_matrix_and_cramers_rule/yl1.tex)
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/gh1.tex
 Underfull \hbox (badness 1946) in paragraph at lines 37--41
 []$[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^
 @\OT1/cmr/m/n/10 123\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]
@@ -1520,7 +1535,7 @@ Underfull \hbox (badness 1946) in paragraph at lines 37--41
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 ) =
  []
 
-) (./determinants/applications_of_the_determinant/sz1.tex
+) (./determinants/adjoint_of_a_matrix_and_cramers_rule/sz1.tex
 Overfull \hbox (0.84804pt too wide) in paragraph at lines 19--23
 []$[]$
  []
@@ -1541,83 +1556,209 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 ]
 Chapter 4.
-(./vector_geometry/introduction_to_vectors_and_lines/index.tex
-Underfull \hbox (badness 5388) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/14.4 Introduction to Vec-tors and
+(./vector_geometry/introduction_to_vectors/index.tex
+(./vector_geometry/introduction_to_vectors/gh2.tex
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11.pdf, id=1047, 1
+40.11346pt x 117.52908pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11.pdf Graphi
+c file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_11.pdf used on input line 23.
+(pdftex.def)             Requested size: 108.00621pt x 90.59808pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13.pdf, id=1048, 1
+40.11346pt x 117.52908pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13.pdf Graphi
+c file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_13.pdf used on input line 28.
+(pdftex.def)             Requested size: 108.00621pt x 90.59808pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14.pdf, id=1049, 1
+29.72466pt x 105.87555pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14.pdf Graphi
+c file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_14.pdf used on input line 33.
+(pdftex.def)             Requested size: 108.00621pt x 88.15292pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15.pdf, id=1050, 1
+29.72466pt x 105.87555pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15.pdf Graphi
+c file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_15.pdf used on input line 38.
+(pdftex.def)             Requested size: 108.00621pt x 88.15292pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf, id=1051
+, 140.11346pt x 117.52908pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf Gra
+phic file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_11ans.pdf used on input line 47.
+(pdftex.def)             Requested size: 123.00623pt x 103.18199pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf, id=1052
+, 140.11346pt x 117.52908pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf Gra
+phic file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_13ans.pdf used on input line 52.
+(pdftex.def)             Requested size: 123.00623pt x 103.18199pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf, id=1053
+, 129.72466pt x 105.87555pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf Gra
+phic file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_14ans.pdf used on input line 57.
+(pdftex.def)             Requested size: 123.00623pt x 100.3954pt.
+
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf, id=1054
+, 129.72466pt x 105.87555pt>
+File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf Gra
+phic file (type pdf)
+
+<use vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf>
+Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
+02_ex_15ans.pdf used on input line 62.
+(pdftex.def)             Requested size: 123.00623pt x 100.3954pt.
+)
+(./vector_geometry/introduction_to_vectors/gh1.tex)
+(./vector_geometry/introduction_to_vectors/mc1.tex)
+(./vector_geometry/introduction_to_vectors/gh5.tex)
+(./vector_geometry/introduction_to_vectors/gh6.tex)
+(./vector_geometry/introduction_to_vectors/gh7.tex)
+(./vector_geometry/introduction_to_vectors/jh1.tex)
+(./vector_geometry/introduction_to_vectors/sm12.tex)
+(./vector_geometry/introduction_to_vectors/gh3.tex)
+(./vector_geometry/introduction_to_vectors/gh4.tex)
+(./vector_geometry/introduction_to_vectors/sm5.tex [21 <./vector_geometry/intro
+duction_to_vectors/figures/fig10_02_ex_11.pdf> <./vector_geometry/introduction_
+to_vectors/figures/fig10_02_ex_13.pdf> <./vector_geometry/introduction_to_vecto
+rs/figures/fig10_02_ex_14.pdf> <./vector_geometry/introduction_to_vectors/figur
+es/fig10_02_ex_15.pdf>]) (./vector_geometry/introduction_to_vectors/sm1.tex)
+(./vector_geometry/introduction_to_vectors/sm6.tex)
+(./vector_geometry/introduction_to_vectors/sm9.tex)
+(./vector_geometry/introduction_to_vectors/sm10.tex)
+(./vector_geometry/introduction_to_vectors/sm11.tex)
+(./vector_geometry/introduction_to_vectors/sm13.tex)
+(./vector_geometry/introduction_to_vectors/sm14.tex)
+(./vector_geometry/introduction_to_vectors/sm15.tex)
+(./vector_geometry/introduction_to_vectors/sm16.tex)
+(./vector_geometry/introduction_to_vectors/sm17.tex)
+(./vector_geometry/introduction_to_vectors/sm18.tex)
+(./vector_geometry/introduction_to_vectors/sm19.tex)
+(./vector_geometry/introduction_to_vectors/sm20.tex)
+(./vector_geometry/introduction_to_vectors/jh2.tex)
+(./vector_geometry/introduction_to_vectors/jh3.tex)
+(./vector_geometry/introduction_to_vectors/jh4.tex
+Overfull \hbox (5.02412pt too wide) detected at line 32
+[]\OML/cmm/m/it/10 r[] [] \OT1/cmr/m/n/10 = [] = [] = \OML/cmm/m/it/10 r[][] []
+
  []
 
-(./vector_geometry/introduction_to_vectors_and_lines/sm1.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm2.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm3.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm4.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm5.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm6.tex
-Underfull \hbox (badness 1024) in paragraph at lines 21--22
-[] \OT1/cmr/bx/n/10 4.1.6$[] \OT1/cmr/m/n/10 = (1\OML/cmm/m/it/10 ; \OMS/cmsy/m
-/n/10 ^^@\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/1
-0 3)$, $[] = (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/
-m/n/10 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)$, $[] =
- []
-
-) (./vector_geometry/introduction_to_vectors_and_lines/sm7.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm8.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm9.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm10.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm11.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm12.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm13.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm14.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm15.tex [21])
-(./vector_geometry/introduction_to_vectors_and_lines/sm16.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm17.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm18.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm19.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm20.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm21.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm22.tex)
-(./vector_geometry/introduction_to_vectors_and_lines/sm23.tex))
-(./vector_geometry/dot_product_and_projections/index.tex
-(./vector_geometry/dot_product_and_projections/yl1.tex)
-(./vector_geometry/dot_product_and_projections/sm1.tex)
-(./vector_geometry/dot_product_and_projections/sm2.tex
-Underfull \hbox (badness 1158) in paragraph at lines 17--19
-[]\OT1/cmr/bx/n/10 4.2.3 [[]][]  \OT1/cmr/m/n/10 Find the dis-tance be-tween $(
-\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/c
-mm/m/it/10 ; \OT1/cmr/m/n/10 4)$ and
- []
-
-) (./vector_geometry/dot_product_and_projections/sm3.tex)
-(./vector_geometry/dot_product_and_projections/sm4.tex)
-(./vector_geometry/dot_product_and_projections/sm5.tex)
-(./vector_geometry/dot_product_and_projections/sm6.tex)
-(./vector_geometry/dot_product_and_projections/sm7.tex)
-(./vector_geometry/dot_product_and_projections/sm8.tex)
-(./vector_geometry/dot_product_and_projections/sm9.tex
+) (./vector_geometry/introduction_to_vectors/sm7.tex))
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]pdfTeX warning (ext4): destination with the same identifier (name{Question.
-4.2.10.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.26 \Question I
-                f $\vec{v} = (v_1,v_2)$, show that $v_1 = \norm{\vec{v}}\cos...
-) (./vector_geometry/dot_product_and_projections/sm10.tex)
-(./vector_geometry/dot_product_and_projections/sm11.tex)
-(./vector_geometry/dot_product_and_projections/sm12.tex)
-(./vector_geometry/dot_product_and_projections/sm13.tex)
+[22] (./vector_geometry/dot_product_and_projections/index.tex
+(./vector_geometry/dot_product_and_projections/gh4.tex)
 (./vector_geometry/dot_product_and_projections/sm14.tex)
+(./vector_geometry/dot_product_and_projections/gh6.tex)
 (./vector_geometry/dot_product_and_projections/sm15.tex)
-(./vector_geometry/dot_product_and_projections/sm16.tex)
-(./vector_geometry/dot_product_and_projections/sm17.tex)
+(./vector_geometry/dot_product_and_projections/gh5.tex)
+(./vector_geometry/dot_product_and_projections/sm13.tex)
+(./vector_geometry/dot_product_and_projections/sm4.tex)
+(./vector_geometry/dot_product_and_projections/sm20.tex)
 (./vector_geometry/dot_product_and_projections/sm18.tex)
 (./vector_geometry/dot_product_and_projections/sm19.tex)
-(./vector_geometry/dot_product_and_projections/sm20.tex
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-[]$[][]\OT1/cmr/m/n/10 ([])$ and
+(./vector_geometry/dot_product_and_projections/sm9.tex)
+(./vector_geometry/dot_product_and_projections/sm6.tex)
+(./vector_geometry/dot_product_and_projections/sm12.tex)
+(./vector_geometry/dot_product_and_projections/yl1.tex)
+(./vector_geometry/dot_product_and_projections/sm16.tex)
+(./vector_geometry/dot_product_and_projections/sm17.tex)
+(./vector_geometry/dot_product_and_projections/jh1.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+[]\OT1/cmr/m/n/10 Using the for-mula from the prior item,
+ []
+
+) (./vector_geometry/dot_product_and_projections/jh2.tex)
+(./vector_geometry/dot_product_and_projections/jh3.tex
+Overfull \hbox (48.90932pt too wide) detected at line 63
+[] [] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 u[]v[] \OT1/cmr/m/n/10 + [] + \OML/
+cmm/m/it/10 u[]v[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 v[]u[] \OT1/cmr/m/n/10 + 
+[] + \OML/cmm/m/it/10 v[]u[] \OT1/cmr/m/n/10 = [] [] []
+ []
+
+) (./vector_geometry/dot_product_and_projections/jh4.tex)
+(./vector_geometry/dot_product_and_projections/jh9.tex)
+(./vector_geometry/dot_product_and_projections/jh10.tex)
+(./vector_geometry/dot_product_and_projections/jh11.tex
+Underfull \hbox (badness 2608) in paragraph at lines 16--22
+[]\OT1/cmr/bx/n/10 4.2.23 [[]][]  \OT1/cmr/m/n/10 Gen-er-al-ize to $\U/msb/m/n/
+10 R[]$ \OT1/cmr/m/n/10 the con-verse of the
+ []
+
+
+Overfull \hbox (27.48761pt too wide) detected at line 34
+[][] \OT1/cmr/m/n/10 + [] [][] = ([] + []) [] ([] + []) = [] [] [] + 2 [] [] []
+ + [] [] [] = [] [] [] + [] [] [] = [][] [][] + [][] [][]
+ []
+
+) (./vector_geometry/dot_product_and_projections/jh12.tex)
+(./vector_geometry/dot_product_and_projections/jh13.tex)
+(./vector_geometry/dot_product_and_projections/jh14.tex
+Overfull \hbox (23.82193pt too wide) in paragraph at lines 44--44
+[] 
+ []
+
+) (./vector_geometry/dot_product_and_projections/sm7.tex)
+(./vector_geometry/dot_product_and_projections/sm8.tex))
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24] (./vector_geometry/cross_product/index.tex
+(./vector_geometry/cross_product/gh1.tex)
+(./vector_geometry/cross_product/sm9.tex)
+(./vector_geometry/cross_product/gh2.tex)
+(./vector_geometry/cross_product/gh3.tex)
+(./vector_geometry/cross_product/sm10.tex)
+(./vector_geometry/cross_product/gh6.tex)
+(./vector_geometry/cross_product/sm4.tex)
+(./vector_geometry/cross_product/sm6.tex)
+(./vector_geometry/cross_product/gh4.tex)
+(./vector_geometry/cross_product/gh5.tex
+Overfull \hbox (31.87187pt too wide) in paragraph at lines 27--27
+[] 
  []
 
 ))
@@ -1627,42 +1768,68 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23] (./vector_geometry/cross_product_and_planes/index.tex
-(./vector_geometry/cross_product_and_planes/sm1.tex)
-(./vector_geometry/cross_product_and_planes/sm2.tex)
-(./vector_geometry/cross_product_and_planes/sm3.tex)
-(./vector_geometry/cross_product_and_planes/sm4.tex)
-(./vector_geometry/cross_product_and_planes/sm5.tex)
-(./vector_geometry/cross_product_and_planes/sm6.tex)
-(./vector_geometry/cross_product_and_planes/sm7.tex)
-(./vector_geometry/cross_product_and_planes/sm8.tex)
-(./vector_geometry/cross_product_and_planes/sm9.tex)
-(./vector_geometry/cross_product_and_planes/sm10.tex)
-(./vector_geometry/cross_product_and_planes/sm11.tex)
-(./vector_geometry/cross_product_and_planes/sm12.tex))
+[25] (./vector_geometry/lines/index.tex (./vector_geometry/lines/sm7.tex)
+(./vector_geometry/lines/sm8.tex) (./vector_geometry/lines/gh5.tex)
+(./vector_geometry/lines/sm21.tex) (./vector_geometry/lines/sm22.tex
+Underfull \hbox (badness 1371) in paragraph at lines 17--19
+[]\OT1/cmr/bx/n/10 4.4.5 [[]][]  \OT1/cmr/m/n/10 Find the equa-tions of the lin
+es through
+ []
+
+) (./vector_geometry/lines/sm23.tex) (./vector_geometry/lines/jh2.tex)
+(./vector_geometry/lines/sm4.tex) (./vector_geometry/lines/sm12.tex)
+(./vector_geometry/lines/gh6.tex) (./vector_geometry/lines/jh3.tex)
+(./vector_geometry/lines/sm1.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] (./vector_geometry/areas_volumes_and_distances/index.tex
-(./vector_geometry/areas_volumes_and_distances/sm1.tex)
-(./vector_geometry/areas_volumes_and_distances/sm2.tex)
-(./vector_geometry/areas_volumes_and_distances/sm3.tex)
-(./vector_geometry/areas_volumes_and_distances/sm4.tex)
-(./vector_geometry/areas_volumes_and_distances/sm5.tex)
-(./vector_geometry/areas_volumes_and_distances/sm6.tex))
-(./vector_geometry/geometry_of_solutions_of_linear_systems/index.tex
-(./vector_geometry/geometry_of_solutions_of_linear_systems/sm1.tex)))
-(./vector_spaces/index.tex
+[26]) (./vector_geometry/lines/gh2.tex) (./vector_geometry/lines/gh3.tex))
+(./vector_geometry/planes/index.tex (./vector_geometry/planes/sm3.tex)
+(./vector_geometry/planes/sm2.tex) (./vector_geometry/planes/sm6.tex)
+(./vector_geometry/planes/gh8.tex) (./vector_geometry/planes/gh9.tex)
+(./vector_geometry/planes/sm11.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] [26
+[27]) (./vector_geometry/planes/sm12.tex) (./vector_geometry/planes/jh1.tex)
+(./vector_geometry/planes/jh2.tex) (./vector_geometry/planes/sm5.tex)
+(./vector_geometry/planes/sm4.tex) (./vector_geometry/planes/sm7.tex)
+(./vector_geometry/planes/gh7.tex) (./vector_geometry/planes/jh3.tex
+Overfull \hbox (9.66287pt too wide) in paragraph at lines 18--25
+[]$\OT1/cmr/m/n/10 , $[]$ 
+ []
+
+) (./vector_geometry/planes/sm8.tex) (./vector_geometry/planes/gh4.tex)
+(./vector_geometry/planes/sm9.tex) (./vector_geometry/planes/sm10.tex)
+(./vector_geometry/planes/gh2.tex) (./vector_geometry/planes/jh5.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+Overfull \hbox (113.27083pt too wide) detected at line 64
+[] \OT1/cmr/m/n/10 = []
+ []
+
+) (./vector_geometry/planes/sm13.tex) (./vector_geometry/planes/sm14.tex)
+(./vector_geometry/planes/jh4.tex))) (./vector_spaces/index.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29
+
+] [30
 
 ]
 Chapter 5.
@@ -1700,7 +1867,7 @@ Overfull \hbox (12.0472pt too wide) detected at line 50
 ) (./vector_spaces/introduction_to_vector_spaces/jh7.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh8.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh9.tex)
-(./vector_spaces/introduction_to_vector_spaces/jh10.tex [27])
+(./vector_spaces/introduction_to_vector_spaces/jh10.tex [31])
 (./vector_spaces/introduction_to_vector_spaces/yl1.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh11.tex)
 (./vector_spaces/introduction_to_vector_spaces/jh12.tex)
@@ -1732,7 +1899,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28] (./vector_spaces/subspaces/index.tex (./vector_spaces/subspaces/jh3.tex)
+[32] (./vector_spaces/subspaces/index.tex (./vector_spaces/subspaces/jh3.tex)
 (./vector_spaces/subspaces/jh4.tex) (./vector_spaces/subspaces/jh7.tex)
 (./vector_spaces/subspaces/jh1.tex) (./vector_spaces/subspaces/jh8.tex)
 (./vector_spaces/subspaces/jh2.tex) (./vector_spaces/subspaces/jh6.tex
@@ -1768,7 +1935,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29] (./vector_spaces/spanning_sets/index.tex
+[33] (./vector_spaces/spanning_sets/index.tex
 (./vector_spaces/spanning_sets/jh1.tex) (./vector_spaces/spanning_sets/jh2.tex)
 (./vector_spaces/spanning_sets/jh3.tex
 Underfull \hbox (badness 10000) detected at line 116
@@ -1845,7 +2012,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] (./vector_spaces/linear_independence/index.tex
+[34] (./vector_spaces/linear_independence/index.tex
 (./vector_spaces/linear_independence/jh1.tex)
 (./vector_spaces/linear_independence/jh2.tex)
 (./vector_spaces/linear_independence/jh3.tex)
@@ -1869,7 +2036,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]pdfTeX warning (ext4): destination with the same identifier (name{Question.
+[35]pdfTeX warning (ext4): destination with the same identifier (name{Question.
 5.4.13.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1903,7 +2070,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] (./vector_spaces/basis/index.tex (./vector_spaces/basis/jh2.tex)
+[36] (./vector_spaces/basis/index.tex (./vector_spaces/basis/jh2.tex)
 (./vector_spaces/basis/jh1.tex) (./vector_spaces/basis/jh3.tex)
 (./vector_spaces/basis/jh4.tex) (./vector_spaces/basis/jh5.tex)
 (./vector_spaces/basis/jh6.tex) (./vector_spaces/basis/jh7.tex
@@ -1982,7 +2149,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[37]
 Overfull \hbox (59.11642pt too wide) detected at line 40
  []$[]  [] \OT1/cmr/m/n/10 = []$ 
  []
@@ -2017,7 +2184,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]pdfTeX warning (ext4): destination with the same identifier (name{Question.
+[38]pdfTeX warning (ext4): destination with the same identifier (name{Question.
 5.6.10.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2037,48 +2204,48 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35
+[39
 
-] [36
+] [40
 
 ]
 Appendix A.
-[37pdfTeX warning (ext4): destination with the same identifier (name{Question.1
+[41pdfTeX warning (ext4): destination with the same identifier (name{Question.1
 .1.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.1.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.1.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.1.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.1.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.1.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2086,42 +2253,42 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38pdfTeX warning (ext4): destination with the same identifier (name{Question.1
+[42pdfTeX warning (ext4): destination with the same identifier (name{Question.1
 .1.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2129,42 +2296,42 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39pdfTeX warning (ext4): destination with the same identifier (name{Question.1
+[43pdfTeX warning (ext4): destination with the same identifier (name{Question.1
 .2.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.11.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.1.2.18.1}) has been already used, duplicate ignored
+n.1.2.12.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2172,202 +2339,30 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40pdfTeX warning (ext4): destination with the same identifier (name{Question.1
+[44pdfTeX warning (ext4): destination with the same identifier (name{Question.1
 .2.19.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.1.2.20.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.1.1}) has been already used, duplicate ignored
+n.1.2.21.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.2.1}) has been already used, duplicate ignored
+n.1.2.22.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.3.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[41pdfTeX warning (ext4): destination with the same identifier (name{Question.2
-.1.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.6.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.7.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.8.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.9.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[42pdfTeX warning (ext4): destination with the same identifier (name{Question.2
-.1.11.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.12.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.18.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.1.19.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[43pdfTeX warning (ext4): destination with the same identifier (name{Question.2
-.1.22.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.2.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.2.2.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.2.3.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.2.6.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.2.8.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44pdfTeX warning (ext4): destination with the same identifier (name{Question.2
-.2.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.2.11.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.2.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.11.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2376,29 +2371,65 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45pdfTeX warning (ext4): destination with the same identifier (name{Question.2
-.3.14.1}) has been already used, duplicate ignored
+.1.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.15.1}) has been already used, duplicate ignored
+n.2.1.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.17.1}) has been already used, duplicate ignored
+n.2.1.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.2.3.20.1}) has been already used, duplicate ignored
+n.2.1.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.6.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.9.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2407,90 +2438,269 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46pdfTeX warning (ext4): destination with the same identifier (name{Question.2
+.1.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47pdfTeX warning (ext4): destination with the same identifier (name{Question.2
+.1.18.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.19.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.20.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.1.23.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48pdfTeX warning (ext4): destination with the same identifier (name{Question.2
+.2.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.9.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.2.15.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49pdfTeX warning (ext4): destination with the same identifier (name{Question.2
+.3.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.13.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.3.14.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50pdfTeX warning (ext4): destination with the same identifier (name{Question.2
 .4.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.2.4.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51pdfTeX warning (ext4): destination with the same identifier (name{Question.2
+.4.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.2.4.15.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.1.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.1.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47pdfTeX warning (ext4): destination with the same identifier (name{Question.3
-.1.3.1}) has been already used, duplicate ignored
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.3.1.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.1.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.1.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.1.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.1.8.1}) has been already used, duplicate ignored
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52pdfTeX warning (ext4): destination with the same identifier (name{Question.3
+.1.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.2.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.2.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.2.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.1.1}) has been already used, duplicate ignored
+n.3.3.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2498,134 +2708,198 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48pdfTeX warning (ext4): destination with the same identifier (name{Question.3
-.3.2.1}) has been already used, duplicate ignored
+[53pdfTeX warning (ext4): destination with the same identifier (name{Question.3
+.3.9.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.6.1}) has been already used, duplicate ignored
+n.3.3.12.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[49pdfTeX warning (ext4): destination with the same identifier (name{Question.3
-.3.12.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.13.1}) has been already used, duplicate ignored
+n.3.3.17.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.16.1}) has been already used, duplicate ignored
+n.3.4.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.18.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.20.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.3.21.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[50pdfTeX warning (ext4): destination with the same identifier (name{Question.3
-.3.27.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.3.4.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.3.4.3.1}) has been already used, duplicate ignored
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54pdfTeX warning (ext4): destination with the same identifier (name{Question.3
+.4.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.1.5.1}) has been already used, duplicate ignored
+n.3.4.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.3.4.9.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.3.4.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55pdfTeX warning (ext4): destination with the same identifier (name{Question.3
+.4.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.6.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.1.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.1.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.1.9.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.1.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.1.11.1}) has been already used, duplicate ignored
+l.152 
+       <./vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf
+> <./vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf> <./
+vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf> <./vecto
+r_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.1.11.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.1.12.1}) has been already used, duplicate ignored
+n.4.1.14.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.1.13.1}) has been already used, duplicate ignored
+n.4.1.15.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.16.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.1.17.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2633,66 +2907,72 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51pdfTeX warning (ext4): destination with the same identifier (name{Question.4
-.1.21.1}) has been already used, duplicate ignored
+[57pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.2.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.1.23.1}) has been already used, duplicate ignored
+n.4.2.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.2.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.2.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.9.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.2.11.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.2.12.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.2.14.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.2.15.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.2.16.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.2.17.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.2.19.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2700,108 +2980,85 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52pdfTeX warning (ext4): destination with the same identifier (name{Question.4
-.2.19.1}) has been already used, duplicate ignored
+[58pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.3.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.2.20.1}) has been already used, duplicate ignored
+n.4.3.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.2.21.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.3.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.3.4.1}) has been already used, duplicate ignored
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.3.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.3.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.3.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.3.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.3.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.3.9.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.3.11.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.3.12.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.4.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.4.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.4.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.4.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.4.4.5.1}) has been already used, duplicate ignored
+n.4.4.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2809,297 +3066,188 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53pdfTeX warning (ext4): destination with the same identifier (name{Question.4
-.4.6.1}) has been already used, duplicate ignored
+[60pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.4.9.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.4.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.4.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.4.13.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.4.14.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.4.5.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.5.6.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.13.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.15.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.16.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.17.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62pdfTeX warning (ext4): destination with the same identifier (name{Question.4
+.5.18.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.19.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.21.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.4.5.22.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
 n.5.1.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.9.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.11.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[54pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.1.14.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.1.15.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[55pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.1.20.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.2.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.2.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.2.7.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.2.9.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.2.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[56pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.3.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.3.2.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.3.3.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.3.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[57pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.3.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.3.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[58pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.4.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.2.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[59pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.4.3.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.6.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.7.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[60pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.4.8.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.10.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.11.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[61pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.4.17.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.4.18.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ]
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[62pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.4.19.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -3108,17 +3256,35 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [63pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.5.2.1}) has been already used, duplicate ignored
+.1.9.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.3.1}) has been already used, duplicate ignored
+n.5.1.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.14.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.1.15.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -3127,23 +3293,29 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [64pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.5.7.1}) has been already used, duplicate ignored
+.1.20.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.8.1}) has been already used, duplicate ignored
+n.5.2.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.9.1}) has been already used, duplicate ignored
+n.5.2.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.2.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -3152,23 +3324,35 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [65pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.5.10.1}) has been already used, duplicate ignored
+.2.9.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.12.1}) has been already used, duplicate ignored
+n.5.2.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.13.1}) has been already used, duplicate ignored
+n.5.3.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.3.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.3.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -3177,17 +3361,17 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [66pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.5.16.1}) has been already used, duplicate ignored
+.3.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.5.17.1}) has been already used, duplicate ignored
+n.5.3.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -3196,24 +3380,18 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [67pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.6.4.1}) has been already used, duplicate ignored
+.3.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
+l.152 
       pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.6.6.1}) has been already used, duplicate ignored
+n.5.4.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 
-      pdfTeX warning (ext4): destination with the same identifier (name{Questio
-n.5.6.13.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-      ] (./references.tex
+l.152 
+      ]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -3221,7 +3399,220 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [68pdfTeX warning (ext4): destination with the same identifier (name{Question.5
-.6.15.1}) has been already used, duplicate ignored
+.4.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.4.6.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.4.11.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.17.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.4.18.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.4.19.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.5.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.5.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.8.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.5.9.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.10.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.12.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.13.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.5.16.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.5.17.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.6.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      pdfTeX warning (ext4): destination with the same identifier (name{Questio
+n.5.6.6.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 
+      ] (./references.tex
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77pdfTeX warning (ext4): destination with the same identifier (name{Question.5
+.6.13.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \onecolumn
+              pdfTeX warning (ext4): destination with the same identifier (name
+{Question.5.6.15.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3232,16 +3623,16 @@ l.1 \onecolumn
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \onecolumn
-              ]
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
+              ] [78
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
 []\OT1/cmr/m/n/10 Gregory Hart-man, \OT1/cmr/m/it/10 Fun-da-men-tals of Ma-trix
  Al-ge-bra\OT1/cmr/m/n/10 , [][]$https : / / github . com / APEXCalculus /
  []
 
-) (./cegep_linear_algebra_problems.ind [69
-
-
-] [70
+) (./cegep_linear_algebra_problems.ind [79] [80
 
 ]
 
@@ -3250,25 +3641,25 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[71])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
+[81])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (./cegep_linear_algebra_problems.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `cegep_linear_algebra_problems.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 7AC7D028CC78F70D181AF4FE02D99613;2058.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
+(rerunfilecheck)             Checksum: 2F723596D716D6BA54D6A9067CEF078E;1929.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 27822 strings out of 493054
- 536084 string characters out of 6140585
- 1942984 words of memory out of 5000000
- 28555 multiletter control sequences out of 15000+600000
+ 28297 strings out of 493054
+ 541106 string characters out of 6140585
+ 2204360 words of memory out of 5000000
+ 28592 multiletter control sequences out of 15000+600000
  13712 words of font info for 54 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
- 55i,20n,54p,10381b,588s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,21n,54p,10381b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
@@ -3278,16 +3669,17 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (74 pages, 567231 bytes).
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc1
+0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on cegep_linear_algebra_problems.pdf (85 pages, 841539 bytes).
 PDF statistics:
- 2937 PDF objects out of 2984 (max. 8388607)
- 2814 compressed objects within 29 object streams
- 1606 named destinations out of 1728 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3652 PDF objects out of 4296 (max. 8388607)
+ 3447 compressed objects within 35 object streams
+ 1922 named destinations out of 2073 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

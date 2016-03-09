@@ -1,0 +1,62 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{OV}}]
+Given
+$
+A = 
+\begin{mat}
+1 & 0 & 1\\
+3 & 2 & -4\\
+0 & 0 & 1
+\end{mat}
+$
+\Question Find the inverse of $A$.
+\Question Write $A^{-1}$ as a product of elementary matrices.
+\end{Exercise}
+
+\begin{Answer}
+$
+A^{-1}=
+\begin{mat}
+1 & 0 & -1\\
+-\frac32 & \frac12 & \frac72\\
+0 & 0 & 1
+\end{mat}
+=
+\begin{mat}
+1 & 0 & -1\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+0 & 1 & \frac72\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+0 & \frac12 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+-3 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+$
+Note: The answer is not unique.
+\end{Answer}

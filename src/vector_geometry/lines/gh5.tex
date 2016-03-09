@@ -1,0 +1,74 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector}
+\index{equation of line}
+\index{vector equation of line}
+\index{parametric equation of line}
+\index{symmetric equation of line}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{GHC}}]
+Write the vector, parametric and symmetric equations of the lines described.
+\Question Passes through $P=(2,-4,1)$, parallel to $\vec d=(9,2,5)$.
+\Question Passes through $P=(6,1,7)$, parallel to $\vec d=(-3,2,5)$.
+\Question Passes through $P=(2,1,5)$ and $Q = (7,-2,4)$.
+\Question Passes through $P=(1,-2,3)$ and $Q = (5,5,5)$.
+\Question Passes through $P=(0,1,2)$ and orthogonal to both $\vec d_1=(2,-1,7)$ and $\vec d_2=(7,1,3)$.
+\Question Passes through $P=(5,1,9)$ and orthogonal to both $\vec d_1=(1,0,1)$ and $\vec d_2=(2,0,3)$.
+\Question Passes through the point of intersection and orthogonal of both lines, where
+$\vec x = (2,1,1) + t(5,1,-2)$ and \\$\vec x = (-2,-1,2)+t(3,1,-1)$.
+\Question Passes through the point of intersection and orthogonal to both lines, where\\
+$\vec x = \left\{\begin{aligned} x&=t\\y&=-2+2t\\z&=1+t\end{aligned}\right.$ \quad and \quad 
+$\vec x = \left\{\begin{aligned} x&=2+t\\y&=2-t\\z&=3+2t\end{aligned}\right.$.
+\Question Passes through $P=(1,1)$, parallel to $\vec d = (2,3)$.
+\Question Passes through $P=(-2,5)$, parallel to $\vec d = (0,1)$.
+\end{Exercise}
+\begin{Answer}
+\Question vector: $\vec x = (2,-4,1) + t(9,2,5)$\\
+parametric: $x= 2+9t$, $y=-4+2t$, $z = 1+5t$\\
+symmetric: $(x-2)/9 =(y+4)/2 = (z-1)/5$
+\Question vector: $\vec x = (6,1,7) + t(-3,2,5)$\\
+parametric: $x= 6-3t$, $y=1+2t$, $z = 7+5t$\\
+symmetric: $-(x-6)/3 =(y-1)/2 = (z-7)/5$
+\Question Answers can vary:
+vector: $\vec x = (2,1,5) + t(5,-3,-1)$\\
+parametric: $x= 2+5t$, $y=1-3t$, $z = 5-t$\\
+symmetric: $(x-2)/5 =-(y-1)/3 = -(z-5)$
+\Question Answers can vary:
+vector: $\vec x = (1,-2,3) + t(4,7,2)$\\
+parametric: $x= 1+4t$, $y=-2+7t$, $z = 3+2t$\\
+symmetric: $(x-1)/4 =(y+2)/7 = (z-3)/2$
+\Question Answers can vary; here the direction is given by $\vec d_1\times \vec d_2$:
+vector: $\vec x = (0,1,2) + t(-10,43,9)$\\
+parametric: $x= -10t$, $y=1+43t$, $z = 2+9t$\\
+symmetric: $-x/10 =(y-1)/43 = (z-2)/9$
+\Question Answers can vary; here the direction is given by $\vec d_1\times \vec d_2$:
+vector: $\vec x = (5,1,9) + t(0,-1,0)$\\
+parametric: $x= 5$, $y=1-t$, $z = 9$\\
+symmetric: not defined, as some components of the direction are 0.
+\Question Answers can vary; here the direction is given by $\vec d_1\times \vec d_2$:
+vector: $\vec x = (7,2,-1) + t(1,-1,2)$\\
+parametric: $x= 7+t$, $y=2-t$, $z = -1+2t$\\
+symmetric: $x-7=2-y=(z+1)/2$
+\Question Answers can vary; here the direction is given by $\vec d_1\times \vec d_2$:
+vector: $\vec x = (2,2,3) + t(5,-1,-3)$\\
+parametric: $x= 2+5t$, $y=2-t$, $z = 3-3t$\\
+symmetric: $(x-2)/5=-(y-2)=-(z-3)/3$
+\Question vector: $\vec x = (1,1) + t(2,3)$\\
+parametric: $x= 1+2t$, $y=1+3t$\\
+symmetric: $(x-1)/2=(y-1)/3$
+\Question vector: $\vec x = (-2,5) + t(0,1)$\\
+parametric: $x= -2$, $y=5+t$\\
+symmetric: not defined
+
+\end{Answer}
