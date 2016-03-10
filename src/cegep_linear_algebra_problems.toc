@@ -27,5 +27,5 @@
 \contentsline {section}{\numberline {5.5}Basis}{37}{section.5.5}
 \contentsline {section}{\numberline {5.6}Dimension}{38}{section.5.6}
 \contentsline {chapter}{\numberline {A}Answers to Exercises}{41}{appendix.A}
-\contentsline {chapter}{References}{78}{appendix.A}
+\contentsline {chapter}{References}{79}{appendix.A}
 \contentsline {chapter}{Index}{79}{appendix*.2}

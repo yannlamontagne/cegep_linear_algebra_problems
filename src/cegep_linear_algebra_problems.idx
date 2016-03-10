@@ -362,6 +362,8 @@
 \indexentry{dot product|hyperpage}{23}
 \indexentry{angle between vectors|hyperpage}{23}
 \indexentry{dot product|hyperpage}{23}
+\indexentry{angle between vectors|hyperpage}{23}
+\indexentry{dot product|hyperpage}{23}
 \indexentry{angle|hyperpage}{23}
 \indexentry{projection|hyperpage}{23}
 \indexentry{projection|hyperpage}{23}
@@ -376,10 +378,13 @@
 \indexentry{linear combination|hyperpage}{23}
 \indexentry{triangle inequality|hyperpage}{23}
 \indexentry{Cauchy-Schwartz Inequality|hyperpage}{23}
-\indexentry{Cauchy-Schwartz Inequality|hyperpage}{23}
-\indexentry{dot product|hyperpage}{23}
-\indexentry{norm|hyperpage}{23}
-\indexentry{parallelogram law|hyperpage}{23}
+\indexentry{Cauchy-Schwartz Inequality|hyperpage}{24}
+\indexentry{dot product|hyperpage}{24}
+\indexentry{norm|hyperpage}{24}
+\indexentry{parallelogram law|hyperpage}{24}
+\indexentry{dot product|hyperpage}{24}
+\indexentry{rhombus|hyperpage}{24}
+\indexentry{parallelogram|hyperpage}{24}
 \indexentry{square|hyperpage}{24}
 \indexentry{cube|hyperpage}{24}
 \indexentry{angle between vectors|hyperpage}{24}
@@ -412,6 +417,10 @@
 \indexentry{cross product|hyperpage}{25}
 \indexentry{volume:parallelepiped|hyperpage}{25}
 \indexentry{cross product|hyperpage}{25}
+\indexentry{scalar triple product|hyperpage}{25}
+\indexentry{coplanar|hyperpage}{25}
+\indexentry{scalar triple product|hyperpage}{25}
+\indexentry{coplanar|hyperpage}{25}
 \indexentry{cross product|hyperpage}{25}
 \indexentry{orthogonal vector|hyperpage}{25}
 \indexentry{line|hyperpage}{26}

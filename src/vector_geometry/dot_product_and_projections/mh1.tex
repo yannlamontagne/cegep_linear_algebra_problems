@@ -1,0 +1,29 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{dot product}
+\index{rhombus}
+\index{parallelogram}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{MH}}]
+Let $\vec u$ and $\vec v$ be vectors in $\Re^n$.
+\Question Simplify
+$$\left(\vec u+\vec v\right)\cdot\left(\vec u-\vec v\right)$$
+\Question Use your previous result to show that the parallelogram defined by $\vec u$ and $\vec v$ is a rhombus (i.e. has four sides of equal length) if and only if its diagonals are perpendicular.\\
+\textit{Hint:} Express the diagonals as vectors in terms of $\vec u$ and $\vec v$. A drawing may help.
+\end{Exercise}
+
+\begin{Answer}
+\Question $\left(\vec u+\vec v\right)\cdot\left(\vec u-\vec v\right)=\norm{\vec u}^2-\norm{\vec v}^2$
+\Question Hint: The vectors $\vec u+\vec v$ and $\vec u-\vec v$ are the diagonals of the parallelogram defined by $\vec u$ and $\vec v$. And use the previous part.
+\end{Answer}
