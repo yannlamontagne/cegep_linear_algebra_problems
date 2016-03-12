@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  9 MAR 2016 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.20)  12 MAR 2016 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1100,11 +1100,11 @@ l.30
 tex)
 (./systems_of_linear_equations/introduction_to_systems_of_linear_equations/kk2.
 tex))
-(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/index.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
 []\OT1/cmr/bx/n/14.4 Gaussian and Gauss-Jordan
  []
 
+(./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/index.tex
 (./systems_of_linear_equations/gaussian_and_gauss_jordan_elimination/gh1.tex
 Overfull \hbox (9.1071pt too wide) in paragraph at lines 31--32
 []$[]$
@@ -1208,11 +1208,12 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 ]
 Chapter 2.
-(./matrices/introduction_to_matrices_and_matrix_operations/index.tex
-Underfull \hbox (badness 1960) in paragraph at lines 1--1
+
+Underfull \hbox (badness 1960) in paragraph at lines 2--2
 []\OT1/cmr/bx/n/14.4 Introduction to Ma-tri-ces and
  []
 
+(./matrices/introduction_to_matrices_and_matrix_operations/index.tex
 (./matrices/introduction_to_matrices_and_matrix_operations/jh1.tex)
 (./matrices/introduction_to_matrices_and_matrix_operations/jh2.tex)
 (./matrices/introduction_to_matrices_and_matrix_operations/gh1.tex)
@@ -1398,11 +1399,11 @@ Chapter 3.
 ])
 (./determinants/the_laplace_expansion/jh3.tex)
 (./determinants/the_laplace_expansion/jh4.tex))
-(./determinants/determinants_and_elementary_operations/index.tex
-Underfull \hbox (badness 2096) in paragraph at lines 1--1
+Underfull \hbox (badness 2096) in paragraph at lines 5--5
 []\OT1/cmr/bx/n/14.4 Determinants and El-e-men-tary
  []
 
+(./determinants/determinants_and_elementary_operations/index.tex
 (./determinants/determinants_and_elementary_operations/kk1.tex
 Overfull \hbox (6.03882pt too wide) in paragraph at lines 39--48
 []$[] [] []$
@@ -1483,11 +1484,11 @@ ML/cmm/m/it/10 x[]y[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]y[]
 
 ) (./determinants/properties_of_determinants/jh13.tex)
 (./determinants/properties_of_determinants/kk4.tex))
-(./determinants/adjoint_of_a_matrix_and_cramers_rule/index.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
 []\OT1/cmr/bx/n/14.4 Adjoint of a Ma-trix and
  []
 
+(./determinants/adjoint_of_a_matrix_and_cramers_rule/index.tex
 (./determinants/adjoint_of_a_matrix_and_cramers_rule/jh7.tex)
 (./determinants/adjoint_of_a_matrix_and_cramers_rule/jh8.tex)
 (./determinants/adjoint_of_a_matrix_and_cramers_rule/jh9.tex)
@@ -3727,7 +3728,7 @@ onts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc1
 0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (85 pages, 848377 bytes).
+Output written on cegep_linear_algebra_problems.pdf (85 pages, 848174 bytes).
 PDF statistics:
  3688 PDF objects out of 4296 (max. 8388607)
  3481 compressed objects within 35 object streams
