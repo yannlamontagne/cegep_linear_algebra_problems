@@ -202,6 +202,9 @@
 \indexentry{matrix!elementary|hyperpage}{14}
 \indexentry{matrix!involutory|hyperpage}{14}
 \indexentry{matrix!elementary|hyperpage}{14}
+\indexentry{matrix!elementary|hyperpage}{14}
+\indexentry{matrix!transpose|hyperpage}{14}
+\indexentry{matrix equation|hyperpage}{14}
 \indexentry{row equivalent|hyperpage}{14}
 \indexentry{Laplace expansion|hyperpage}{15}
 \indexentry{determinant|hyperpage}{15}
@@ -266,9 +269,13 @@
 \indexentry{determinant|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{skew-symmetric matrix|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
 \indexentry{matrix!inverse|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
-\indexentry{determinant|hyperpage}{17}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{similar matrix|hyperpage}{18}
@@ -278,35 +285,37 @@
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{adjoint matrix|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{adjoint matrix|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{adjoint matrix|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{adjoint matrix|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{adjoint matrix|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!of cofators|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{matrix!inverse|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!of cofators|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{matrix!inverse|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
-\indexentry{matrix!adjoint|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{matrix!of cofators|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{matrix!inverse|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{matrix!of cofators|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{matrix!inverse|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{singular matrix|hyperpage}{19}
 \indexentry{Cramer's Rule|hyperpage}{19}
 \indexentry{Cramer's Rule|hyperpage}{19}
-\indexentry{Cramer's Rule|hyperpage}{19}
+\indexentry{Cramer's Rule|hyperpage}{20}
 \indexentry{vector|hyperpage}{21}
 \indexentry{vector arithmetic|hyperpage}{21}
 \indexentry{vector|hyperpage}{21}
@@ -364,6 +373,7 @@
 \indexentry{dot product|hyperpage}{23}
 \indexentry{angle between vectors|hyperpage}{23}
 \indexentry{dot product|hyperpage}{23}
+\indexentry{dot product|hyperpage}{23}
 \indexentry{angle|hyperpage}{23}
 \indexentry{projection|hyperpage}{23}
 \indexentry{projection|hyperpage}{23}
@@ -378,7 +388,7 @@
 \indexentry{linear combination|hyperpage}{23}
 \indexentry{triangle inequality|hyperpage}{23}
 \indexentry{Cauchy-Schwartz Inequality|hyperpage}{23}
-\indexentry{Cauchy-Schwartz Inequality|hyperpage}{23}
+\indexentry{Cauchy-Schwartz Inequality|hyperpage}{24}
 \indexentry{dot product|hyperpage}{24}
 \indexentry{norm|hyperpage}{24}
 \indexentry{parallelogram law|hyperpage}{24}
@@ -456,6 +466,9 @@
 \indexentry{nearest point:to a point in a line|hyperpage}{26}
 \indexentry{distance!point to line|hyperpage}{27}
 \indexentry{distance|hyperpage}{27}
+\indexentry{projection|hyperpage}{27}
+\indexentry{distance:from a point to a line|hyperpage}{27}
+\indexentry{nearest point:to a point in a line|hyperpage}{27}
 \indexentry{distance!line to line|hyperpage}{27}
 \indexentry{distance|hyperpage}{27}
 \indexentry{plane!point-normal equation|hyperpage}{27}
@@ -495,6 +508,9 @@
 \indexentry{intersection!two lines|hyperpage}{29}
 \indexentry{plane!point-normal equation|hyperpage}{29}
 \indexentry{distance!two lines|hyperpage}{29}
+\indexentry{plane|hyperpage}{29}
+\indexentry{closest point|hyperpage}{29}
+\indexentry{shortest distance|hyperpage}{29}
 \indexentry{plane|hyperpage}{29}
 \indexentry{orthogonal|hyperpage}{29}
 \indexentry{vector space|hyperpage}{31}
