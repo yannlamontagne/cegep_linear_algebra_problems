@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{determinant}
+\index{elementary operation}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,27 +15,22 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Solve for $A$ given that it satisfies
-\[
-(I-A^T)^{-1} = \trans{(\trace(B)B^2)}
-\]
-where
-\[
-B=
-\begin{mat}
-2 & 3\\
-1 & 2
-\end{mat}\;
-\]
-
+f
+$
+A=\begin{mat}
+a&0&b\\
+0&c&0\\
+d&0&e
+\end{mat}
+$
+and $\det(2A^T)=16$ then evaluate
+$
+\begin{detmat}2a & 4a & 6a+12b\\ 0 & 8c & 10c\\ 2d & 4d & 6d+12e\end{detmat}.
+$
 \end{Exercise}
 
 \begin{Answer}
 $
-A=
-\begin{mat}
--\frac34 & 3\\
-1 & -\frac34
-\end{mat}
+384
 $
 \end{Answer}

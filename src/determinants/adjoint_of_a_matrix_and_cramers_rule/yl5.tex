@@ -1,8 +1,11 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{adjoint matrix}
+\index{matrix!adjoint}
+\index{matrix!invertible}
+\index{invertible matrix}
+\index{determinant}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,27 +18,12 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Solve for $A$ given that it satisfies
+Let $B$ be $3\times 3$ matrix where $\det(B)=3$. Find
 \[
-(I-A^T)^{-1} = \trans{(\trace(B)B^2)}
+\det\left(2B+B^2\text{adj}(B)\right).
 \]
-where
-\[
-B=
-\begin{mat}
-2 & 3\\
-1 & 2
-\end{mat}\;
-\]
-
 \end{Exercise}
 
 \begin{Answer}
-$
-A=
-\begin{mat}
--\frac34 & 3\\
-1 & -\frac34
-\end{mat}
-$
+$375$
 \end{Answer}

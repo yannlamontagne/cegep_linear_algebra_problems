@@ -159,16 +159,18 @@
 \indexentry{matrix equation|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix!equation|hyperpage}{12}
+\indexentry{matrix inverse|hyperpage}{12}
+\indexentry{matrix equation|hyperpage}{12}
 \indexentry{matrix polynomial|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!commutativity|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
-\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix!commutativity|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!transpose|hyperpage}{13}
@@ -250,6 +252,8 @@
 \indexentry{elementary operation|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{elementary operation|hyperpage}{17}
+\indexentry{determinant|hyperpage}{17}
+\indexentry{elementary operation|hyperpage}{17}
 \indexentry{Vandermonde determinant|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{elementary operation|hyperpage}{17}
@@ -304,12 +308,21 @@
 \indexentry{matrix!of cofators|hyperpage}{19}
 \indexentry{matrix!adjoint|hyperpage}{19}
 \indexentry{matrix!inverse|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{matrix!invertible|hyperpage}{19}
+\indexentry{invertible matrix|hyperpage}{19}
 \indexentry{determinant|hyperpage}{19}
 \indexentry{matrix!of cofators|hyperpage}{19}
 \indexentry{matrix!adjoint|hyperpage}{19}
 \indexentry{matrix!inverse|hyperpage}{19}
 \indexentry{determinant|hyperpage}{19}
 \indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{adjoint matrix|hyperpage}{19}
+\indexentry{matrix!adjoint|hyperpage}{19}
+\indexentry{matrix!invertible|hyperpage}{19}
+\indexentry{invertible matrix|hyperpage}{19}
+\indexentry{determinant|hyperpage}{19}
 \indexentry{determinant|hyperpage}{19}
 \indexentry{adjoint matrix|hyperpage}{19}
 \indexentry{singular matrix|hyperpage}{19}
@@ -433,6 +446,7 @@
 \indexentry{coplanar|hyperpage}{25}
 \indexentry{cross product|hyperpage}{25}
 \indexentry{orthogonal vector|hyperpage}{25}
+\indexentry{projection|hyperpage}{25}
 \indexentry{line|hyperpage}{26}
 \indexentry{line|hyperpage}{26}
 \indexentry{vector|hyperpage}{26}
@@ -540,6 +554,8 @@
 \indexentry{vector space|hyperpage}{32}
 \indexentry{matrix space|hyperpage}{32}
 \indexentry{vector space|hyperpage}{32}
+\indexentry{vector space!matrix space|hyperpage}{32}
+\indexentry{vector space|hyperpage}{32}
 \indexentry{positive real numbers|hyperpage}{32}
 \indexentry{vector space|hyperpage}{32}
 \indexentry{vector space|hyperpage}{32}
@@ -637,8 +653,10 @@
 \indexentry{linear dependence|hyperpage}{35}
 \indexentry{linear independence|hyperpage}{35}
 \indexentry{linear dependence|hyperpage}{35}
-\indexentry{linear independence|hyperpage}{35}
-\indexentry{linear dependence|hyperpage}{35}
+\indexentry{linear independence|hyperpage}{36}
+\indexentry{linear dependence|hyperpage}{36}
+\indexentry{linear independence|hyperpage}{36}
+\indexentry{linear dependence|hyperpage}{36}
 \indexentry{linear independence|hyperpage}{36}
 \indexentry{linear dependence|hyperpage}{36}
 \indexentry{linear independence|hyperpage}{36}

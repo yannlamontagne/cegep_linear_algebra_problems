@@ -1,0 +1,48 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+\index{vector space!matrix space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Determine whether the following is a vector space: $V=\set{A \suchthat A \in\matspace_{\nbyn{2}} \text{ and } \trans{A}=A }$
+with the following operations:
+\[
+A+B=AB \text{ and } kA=kA
+\]
+\textit{That is, vector addition is matrix multiplication and scalar multiplication is the regular scalar multiplication.} Justify.
+\end{Exercise}
+
+\begin{Answer}
+Not a vector space since the set is not closed under vector space addition.  
+i.e. If 
+$A=\begin{mat}
+1 & 2\\
+2 & 3
+\end{mat},\; A=\begin{mat}
+1 & -1\\
+-1 & 1
+\end{mat}\in V$
+then
+$A+B=AB=\begin{mat}
+1 & 2\\
+2 & 3
+\end{mat}\begin{mat}
+1 & -1\\
+-1 & 1
+\end{mat}=
+\begin{mat}
+-1 & 1\\
+-1 & 1
+\end{mat}\notin V$.
+\end{Answer}

@@ -1,8 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{adjoint matrix}
+\index{matrix!adjoint}
+\index{matrix!invertible}
+\index{invertible matrix}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,27 +17,23 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Solve for $A$ given that it satisfies
+Consider the matrix:
 \[
-(I-A^T)^{-1} = \trans{(\trace(B)B^2)}
+A=\begin{mat}
+\sin\theta&0&\cos\theta\\
+0&\pi&0\\
+-\cos\theta&0&\sin\theta
+\end{mat}
 \]
-where
-\[
-B=
-\begin{mat}
-2 & 3\\
-1 & 2
-\end{mat}\;
-\]
-
+\Question Determine the value(s) of $\theta$ for which $A$ is invertible.
+\Question Determine the adjoint of $A$.
 \end{Exercise}
 
 \begin{Answer}
-$
-A=
-\begin{mat}
--\frac34 & 3\\
-1 & -\frac34
-\end{mat}
-$
+\Question Determinant of $A$ is $\pi\neq0$, therefore $A$ is invertible.
+\Question $\begin{mat}
+\pi\sin\theta & 0 & -\pi\cos\theta\\
+0 & 1 & 0\\
+\pi\cos\theta & 0 & \pi\sin\theta
+\end{mat}$
 \end{Answer}

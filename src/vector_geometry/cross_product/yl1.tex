@@ -1,8 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{projection}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,27 +14,10 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Solve for $A$ given that it satisfies
-\[
-(I-A^T)^{-1} = \trans{(\trace(B)B^2)}
-\]
-where
-\[
-B=
-\begin{mat}
-2 & 3\\
-1 & 2
-\end{mat}\;
-\]
-
+Prove or disprove: If $\vec{u},\vec{n}_1,\vec{n}_2\in\Re^3$ such that $\vec{n}_1$ is not a scalar multiple of $\vec{n}_2$ then
+\[\proj{\proj{\vec{u}}{\vec{n}_1\times\vec{n}_2}}{\vec{n}_1}=\vec{0}\]
 \end{Exercise}
 
 \begin{Answer}
-$
-A=
-\begin{mat}
--\frac34 & 3\\
-1 & -\frac34
-\end{mat}
-$
+Prove. Hint: $(\vec{n}_1\times\vec{n}_2)\dotprod\vec{n}_1$.
 \end{Answer}
