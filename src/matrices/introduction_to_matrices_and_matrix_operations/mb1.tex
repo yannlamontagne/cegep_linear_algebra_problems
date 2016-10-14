@@ -1,0 +1,27 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!entry}
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=1,
+origin={\cite{MB}}]
+Write the $3 \times 4$ matrix $B=[b_{ij}]$ whose entries satisfy 
+\[ b_{ij} = \left\lbrace
+								\begin{array}{lll}
+											i-j & \mathrm{if} & |i-j|\geq1,\\
+											2i    & \mathrm{if} & |i-j|< 1. 
+								\end{array}\right. 
+\]
+\end{Exercise}
+
+\begin{Answer}
+$B=\begin{mat} 2&-1&-2&-3\\  1&4&-1&-2\\  2&1&6&-1 \end{mat}$
+\end{Answer}
