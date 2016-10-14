@@ -1,0 +1,22 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!inverse}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{SS}}]
+Show that if $A$ is a $3\times2$ matrix and if $B$ is a $2\times3$ matrix, then $AB$ is not invertible.
+\end{Exercise}
+
+\begin{Answer}
+Since $B$ is $2\times3$, then the homogenuous system $BX=0$ has non-trivial solutions, say $X_0$. Thus the system $(AB)X=0$ also has a non-trivial solution, namely $X_0$. This in turn implies that $AB$ cannot be invertible.
+\end{Answer}
