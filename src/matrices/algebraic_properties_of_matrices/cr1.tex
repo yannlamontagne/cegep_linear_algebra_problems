@@ -1,7 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix equation}
+\index{matrix powers}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,12 +14,20 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{CR}}]
-Find matrix $A$, if
+Given the matrix
 \[
-\trans{\left(2\trans{A}-3\begin{mat}1 & -1\\ 0 & 4\end{mat}\right)}=\begin{mat}1 & 2\\ 3 & 3\end{mat}
+	A = \begin{mat} 2 & -1\\ 0 & 2 \end{mat}
 \]
+%\begin{multicols}{2}
+	\Question $A^2$
+	\Question $A^3$
+	\Question $A^5$ 
+	\EndCurrentQuestion
+%\end{multicols}
 \end{Exercise}
 
 \begin{Answer}
-$A=\begin{mat}2 & 1\\ 0 & 8\end{mat}$
+	\Question $A^2 =  \begin{mat} 4 & -4 \\ 0 & 4 \end{mat}$
+	\Question $A^3 = A^2 \, A   =  \begin{mat} 8 & -12 \\ 0 & 8 \end{mat}$
+	\Question $A^5 = A^3 \, A^2 =  \begin{mat} 32 & -80 \\ 0 & 32 \end{mat}$
 \end{Answer}
