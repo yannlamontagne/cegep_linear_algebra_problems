@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.14)  16 AUG 2016 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  1 NOV 2016 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cegep_linear_algebra_problems.tex
 (./cegep_linear_algebra_problems.tex
-LaTeX2e <2016/03/31> patch level 1
+LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
@@ -54,7 +54,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
@@ -293,7 +293,7 @@ File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/06/02 v1.0s Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -303,8 +303,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2016/06/17 v0.06h Graphics/color for pdfTeX
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -321,7 +321,7 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -464,7 +464,7 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 Writing index file cegep_linear_algebra_problems.idx
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2016/05/21 v6.83p Hypertext links for LaTeX
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -521,7 +521,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count135
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2016/05/21 v6.83p Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count136
 
@@ -563,7 +563,7 @@ LaTeX Info: Redefining \pageref on input line 6416.
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2016/05/21 v6.83p Hyperref driver for pdfTeX
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count142
 \c@bookmark@seq@number=\count143
 
@@ -3753,10 +3753,10 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 28367 strings out of 493014
- 544844 string characters out of 6139325
- 2232334 words of memory out of 5000000
- 28589 multiletter control sequences out of 15000+600000
+ 28368 strings out of 493013
+ 544866 string characters out of 6139317
+ 2232396 words of memory out of 5000000
+ 28591 multiletter control sequences out of 15000+600000
  13712 words of font info for 54 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  55i,21n,54p,10381b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3776,7 +3776,7 @@ onts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc1
 0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (85 pages, 855734 bytes).
+Output written on cegep_linear_algebra_problems.pdf (85 pages, 855935 bytes).
 PDF statistics:
  3753 PDF objects out of 4296 (max. 8388607)
  3545 compressed objects within 36 object streams
