@@ -117,6 +117,7 @@
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix addition|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
+\indexentry{matrix powers|hyperpage}{10}
 \indexentry{matrix product|hyperpage}{10}
 \indexentry{matrix power|hyperpage}{10}
 \indexentry{matrix!arithmetic|hyperpage}{10}
@@ -133,9 +134,9 @@
 \indexentry{trace of a matrix|hyperpage}{10}
 \indexentry{symmetric matrix|hyperpage}{10}
 \indexentry{nilpotent matrix|hyperpage}{10}
-\indexentry{idempotent matrix|hyperpage}{10}
-\indexentry{matrix!involutory|hyperpage}{10}
-\indexentry{matrix!transpose|hyperpage}{10}
+\indexentry{idempotent matrix|hyperpage}{11}
+\indexentry{matrix!involutory|hyperpage}{11}
+\indexentry{matrix!transpose|hyperpage}{11}
 \indexentry{matrix!power|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
