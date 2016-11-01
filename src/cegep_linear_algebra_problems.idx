@@ -85,6 +85,9 @@
 \indexentry{triangular matrix|hyperpage}{8}
 \indexentry{matrix!arithmetic|hyperpage}{8}
 \indexentry{matrix!transpose|hyperpage}{8}
+\indexentry{matrix!product|hyperpage}{8}
+\indexentry{matrix!transpose|hyperpage}{8}
+\indexentry{matrix!dimension|hyperpage}{8}
 \indexentry{matrix!multiplication|hyperpage}{8}
 \indexentry{matrix!multiplication|hyperpage}{8}
 \indexentry{matrix!multiplication|hyperpage}{8}
@@ -99,6 +102,7 @@
 \indexentry{matrix!trace of|hyperpage}{9}
 \indexentry{matrix!subtraction|hyperpage}{9}
 \indexentry{matrix!addition|hyperpage}{9}
+\indexentry{matrix!entry|hyperpage}{9}
 \indexentry{matrix!multiplication|hyperpage}{9}
 \indexentry{matrix!transpose|hyperpage}{9}
 \indexentry{matrix!trace of|hyperpage}{9}

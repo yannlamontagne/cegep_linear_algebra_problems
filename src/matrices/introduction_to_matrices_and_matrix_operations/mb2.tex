@@ -1,0 +1,26 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!product}
+\index{matrix!transpose}
+\index{matrix!dimension}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{MB}}]
+Prove that if the product $CAC^T$ is well-defined, then the matrix $A$ must be a square matrix.
+\end{Exercise}
+
+\begin{Answer}
+Let's denote by $m \times n$ the size of the matrix $C$, and by $p \times q$ the size of the matrix $A$. Since the product $CA$ is defined, $p$ must be equal to $n$. Since the product $AC^T$ is defined, and $C^T$ is $n \times m$, $q$ must be equal to $n$. As both $p$ and $q$ must be equal to $n$, $A$ is a square matrix (of size $n \times n$).
+
+\end{Answer}
