@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  1 NOV 2016 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  1 NOV 2016 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1331,11 +1331,8 @@ Underfull \hbox (badness 1708) in paragraph at lines 21--23
 (./matrices/matrix_inverses/jh9.tex) (./matrices/matrix_inverses/yl6.tex)
 (./matrices/matrix_inverses/yl7.tex) (./matrices/matrix_inverses/yl12.tex)
 (./matrices/matrix_inverses/jh4.tex) (./matrices/matrix_inverses/yl13.tex)
-(./matrices/matrix_inverses/mh2.tex) (./matrices/matrix_inverses/ss1.tex
-
-LaTeX Warning: Citation `SS' on page 13 undefined on input line 16.
-
-)) (./matrices/elementary_matrices/index.tex
+(./matrices/matrix_inverses/mh2.tex) (./matrices/matrix_inverses/ss1.tex))
+(./matrices/elementary_matrices/index.tex
 (./matrices/elementary_matrices/jh1.tex
 Overfull \hbox (0.77376pt too wide) in paragraph at lines 20--28
 []$[] []$
@@ -1573,7 +1570,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 Chapter 4.
 (./vector_geometry/introduction_to_vectors/index.tex
 (./vector_geometry/introduction_to_vectors/gh2.tex
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11.pdf, id=1073, 1
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11.pdf, id=1075, 1
 40.11346pt x 117.52908pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11.pdf Graphi
 c file (type pdf)
@@ -1583,7 +1580,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_11.pdf used on input line 23.
 (pdftex.def)             Requested size: 108.00621pt x 90.59808pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13.pdf, id=1074, 1
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13.pdf, id=1076, 1
 40.11346pt x 117.52908pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13.pdf Graphi
 c file (type pdf)
@@ -1593,7 +1590,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_13.pdf used on input line 28.
 (pdftex.def)             Requested size: 108.00621pt x 90.59808pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14.pdf, id=1075, 1
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14.pdf, id=1077, 1
 29.72466pt x 105.87555pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14.pdf Graphi
 c file (type pdf)
@@ -1603,7 +1600,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_14.pdf used on input line 33.
 (pdftex.def)             Requested size: 108.00621pt x 88.15292pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15.pdf, id=1076, 1
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15.pdf, id=1078, 1
 29.72466pt x 105.87555pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15.pdf Graphi
 c file (type pdf)
@@ -1613,7 +1610,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_15.pdf used on input line 38.
 (pdftex.def)             Requested size: 108.00621pt x 88.15292pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf, id=1077
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf, id=1079
 , 140.11346pt x 117.52908pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_11ans.pdf Gra
 phic file (type pdf)
@@ -1623,7 +1620,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_11ans.pdf used on input line 47.
 (pdftex.def)             Requested size: 123.00623pt x 103.18199pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf, id=1078
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf, id=1080
 , 140.11346pt x 117.52908pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_13ans.pdf Gra
 phic file (type pdf)
@@ -1633,7 +1630,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_13ans.pdf used on input line 52.
 (pdftex.def)             Requested size: 123.00623pt x 103.18199pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf, id=1079
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf, id=1081
 , 129.72466pt x 105.87555pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_14ans.pdf Gra
 phic file (type pdf)
@@ -1643,7 +1640,7 @@ Package pdftex.def Info: vector_geometry/introduction_to_vectors/figures/fig10_
 02_ex_14ans.pdf used on input line 57.
 (pdftex.def)             Requested size: 123.00623pt x 100.3954pt.
 
-<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf, id=1080
+<vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf, id=1082
 , 129.72466pt x 105.87555pt>
 File: vector_geometry/introduction_to_vectors/figures/fig10_02_ex_15ans.pdf Gra
 phic file (type pdf)
@@ -1704,7 +1701,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 (./vector_geometry/dot_product_and_projections/gh5.tex)
 (./vector_geometry/dot_product_and_projections/sm13.tex)
 (./vector_geometry/dot_product_and_projections/mh2.tex
-<vector_geometry/dot_product_and_projections/figures/mh2.pdf, id=1285, 159.3352
+<vector_geometry/dot_product_and_projections/figures/mh2.pdf, id=1287, 159.3352
 8pt x 93.89078pt>
 File: vector_geometry/dot_product_and_projections/figures/mh2.pdf Graphic file 
 (type pdf)
@@ -3756,19 +3753,12 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `cegep_linear_algebra_problems.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: 2F723596D716D6BA54D6A9067CEF078E;1929.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
  28385 strings out of 493013
  545272 string characters out of 6139317
- 2238341 words of memory out of 5000000
+ 2237330 words of memory out of 5000000
  28594 multiletter control sequences out of 15000+600000
  13712 words of font info for 54 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
@@ -3789,10 +3779,10 @@ onts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc1
 0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (85 pages, 860613 bytes).
+Output written on cegep_linear_algebra_problems.pdf (85 pages, 860511 bytes).
 PDF statistics:
- 3786 PDF objects out of 4296 (max. 8388607)
- 3578 compressed objects within 36 object streams
+ 3787 PDF objects out of 4296 (max. 8388607)
+ 3579 compressed objects within 36 object streams
  1981 named destinations out of 2073 (max. 500000)
  298 words of extra memory for PDF output out of 10000 (max. 10000000)
 
