@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  2 NOV 2016 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  2 NOV 2016 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1523,10 +1523,10 @@ s/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 mf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (18 pages, 442461 bytes).
+Output written on cegep_linear_algebra_problems.pdf (18 pages, 442851 bytes).
 PDF statistics:
- 844 PDF objects out of 1000 (max. 8388607)
- 735 compressed objects within 8 object streams
+ 850 PDF objects out of 1000 (max. 8388607)
+ 741 compressed objects within 8 object streams
  310 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

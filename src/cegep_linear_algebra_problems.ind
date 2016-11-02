@@ -6,31 +6,29 @@
 
   \indexspace
 
-  \item closest point, \hyperpage{4}
-  \item coplanar, \hyperpage{2}
-  \item cross product, \hyperpage{2}
+  \item coplanar, \hyperpage{3}
+  \item cross product, \hyperpage{3}
 
   \indexspace
 
   \item distance, \hyperpage{4}
     \subitem plane to plane, \hyperpage{4}
     \subitem point to plane, \hyperpage{4}
-  \item distance:from a point to a line, \hyperpage{3}
   \item distance:from a point to a plane, \hyperpage{4}
   \item dot product, \hyperpage{2}
 
   \indexspace
 
-  \item equation of line, \hyperpage{4}
+  \item equation of line, \hyperpage{3, 4}
   \item equation of plane, \hyperpage{4}
 
   \indexspace
 
   \item intersection, \hyperpage{4}
-    \subitem between line and plane, \hyperpage{3}
+    \subitem between line and plane, \hyperpage{4}
     \subitem line and plane, \hyperpage{4}
     \subitem two lines, \hyperpage{3}
-  \item intersection:line and plane, \hyperpage{4}
+  \item intersection:line and plane, \hyperpage{5}
 
   \indexspace
 
@@ -41,39 +39,47 @@
 
   \indexspace
 
-  \item maximize, \hyperpage{5}
-  \item minimize, \hyperpage{5}
+  \item maximize, \hyperpage{7}
+  \item minimize, \hyperpage{7}
 
   \indexspace
 
-  \item nearest point:to a point in a line, \hyperpage{3}
-  \item norm, \hyperpage{1}
+  \item norm, \hyperpage{1, 2}
 
   \indexspace
 
   \item orthogonal, \hyperpage{2}
-  \item orthogonal vector, \hyperpage{2}
+  \item orthogonal vector, \hyperpage{2, 3}
 
   \indexspace
 
-  \item plane, \hyperpage{3, 4}
-    \subitem general form, \hyperpage{3}
-    \subitem point-normal equation, \hyperpage{3}
-    \subitem standard form, \hyperpage{3}
+  \item parallelogram law, \hyperpage{2}
+  \item parametric equation of line, \hyperpage{3}
+  \item plane, \hyperpage{4}
+    \subitem general form, \hyperpage{4}
+    \subitem parallel to another plane, \hyperpage{4}
+    \subitem point-normal equation, \hyperpage{4}
+    \subitem standard form, \hyperpage{4}
+  \item point on plane, \hyperpage{4}
   \item projection, \hyperpage{2--4}
 
   \indexspace
 
-  \item scalar triple product, \hyperpage{2}
-  \item shortest distance, \hyperpage{4}
+  \item scalar triple product, \hyperpage{3}
   \item simplex
-    \subitem maximize, \hyperpage{5}
-    \subitem minimize, \hyperpage{5}
-  \item simplex method, \hyperpage{5}
+    \subitem maximize, \hyperpage{7}
+    \subitem minimize, \hyperpage{7}
+  \item simplex method, \hyperpage{7}
+  \item symmetric equation of line, \hyperpage{3}
+
+  \indexspace
+
+  \item unit vector, \hyperpage{1, 2}
 
   \indexspace
 
   \item vector, \hyperpage{1}, \hyperpage{3}
   \item vector arithmetic, \hyperpage{1}
+  \item vector equation of line, \hyperpage{3}
 
 \end{theindex}
