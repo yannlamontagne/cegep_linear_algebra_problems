@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  2 NOV 2016 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.17)  2 NOV 2016 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,8 +1250,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
                    \relax 
 l.26 \Question $
                 \frac{2}{\sqrt{26}}$) (./vector_geometry/planes/gh2.tex)
-(./vector_geometry/planes/sm13.tex) (./vector_geometry/planes/sm14.tex)))
-(./applications/index.tex
+(./vector_geometry/planes/sm13.tex))) (./applications/index.tex
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -1469,12 +1468,6 @@ l.1 \onecolumn
                                                   \fi \fi 
 l.1 \onecolumn
               pdfTeX warning (ext4): destination with the same identifier (name
-{Question.1.5.13.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \onecolumn
-              pdfTeX warning (ext4): destination with the same identifier (name
 {Question.2.1.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1510,10 +1503,10 @@ hanged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 25855 strings out of 493013
- 491149 string characters out of 6139317
- 672967 words of memory out of 5000000
- 28539 multiletter control sequences out of 15000+600000
+ 25841 strings out of 493013
+ 490946 string characters out of 6139317
+ 670796 words of memory out of 5000000
+ 28536 multiletter control sequences out of 15000+600000
  12807 words of font info for 51 fonts, out of 8000000 for 9000
  1148 hyphenation exceptions out of 8191
  55i,15n,54p,10381b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1530,10 +1523,10 @@ s/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 mf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on cegep_linear_algebra_problems.pdf (18 pages, 443725 bytes).
+Output written on cegep_linear_algebra_problems.pdf (18 pages, 442461 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 745 compressed objects within 8 object streams
- 318 named destinations out of 1000 (max. 500000)
+ 844 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 310 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
