@@ -2,64 +2,77 @@
 \indexentry{vector arithmetic|hyperpage}{1}
 \indexentry{norm|hyperpage}{1}
 \indexentry{norm|hyperpage}{1}
+\indexentry{norm|hyperpage}{1}
+\indexentry{unit vector|hyperpage}{1}
 \indexentry{vector|hyperpage}{1}
+\indexentry{vector|hyperpage}{1}
+\indexentry{vector arithmetic|hyperpage}{1}
+\indexentry{vector|hyperpage}{1}
+\indexentry{vector arithmetic|hyperpage}{1}
+\indexentry{vector arithmetic|hyperpage}{1}
 \indexentry{line|hyperpage}{1}
 \indexentry{vector arithmetic|hyperpage}{1}
 \indexentry{line|hyperpage}{1}
+\indexentry{dot product|hyperpage}{2}
+\indexentry{orthogonal vector|hyperpage}{2}
 \indexentry{dot product|hyperpage}{2}
 \indexentry{orthogonal|hyperpage}{2}
 \indexentry{dot product|hyperpage}{2}
 \indexentry{angle between vectors|hyperpage}{2}
 \indexentry{dot product|hyperpage}{2}
-\indexentry{dot product|hyperpage}{2}
-\indexentry{orthogonal vector|hyperpage}{2}
-\indexentry{cross product|hyperpage}{2}
-\indexentry{cross product|hyperpage}{2}
-\indexentry{scalar triple product|hyperpage}{2}
-\indexentry{coplanar|hyperpage}{2}
-\indexentry{scalar triple product|hyperpage}{2}
-\indexentry{coplanar|hyperpage}{2}
 \indexentry{projection|hyperpage}{2}
-\indexentry{line|hyperpage}{3}
+\indexentry{unit vector|hyperpage}{2}
+\indexentry{dot product|hyperpage}{2}
+\indexentry{norm|hyperpage}{2}
+\indexentry{parallelogram law|hyperpage}{2}
+\indexentry{orthogonal vector|hyperpage}{2}
+\indexentry{cross product|hyperpage}{3}
+\indexentry{cross product|hyperpage}{3}
+\indexentry{orthogonal vector|hyperpage}{3}
+\indexentry{cross product|hyperpage}{3}
+\indexentry{scalar triple product|hyperpage}{3}
+\indexentry{coplanar|hyperpage}{3}
+\indexentry{projection|hyperpage}{3}
+\indexentry{vector|hyperpage}{3}
+\indexentry{equation of line|hyperpage}{3}
+\indexentry{vector equation of line|hyperpage}{3}
+\indexentry{parametric equation of line|hyperpage}{3}
+\indexentry{symmetric equation of line|hyperpage}{3}
 \indexentry{line!vector equation|hyperpage}{3}
 \indexentry{line!parallel|hyperpage}{3}
 \indexentry{line!parametric equations|hyperpage}{3}
 \indexentry{line!parallel|hyperpage}{3}
-\indexentry{vector|hyperpage}{3}
-\indexentry{line|hyperpage}{3}
 \indexentry{line|hyperpage}{3}
 \indexentry{intersection!two lines|hyperpage}{3}
 \indexentry{line|hyperpage}{3}
 \indexentry{intersection!two lines|hyperpage}{3}
-\indexentry{projection|hyperpage}{3}
-\indexentry{distance:from a point to a line|hyperpage}{3}
-\indexentry{nearest point:to a point in a line|hyperpage}{3}
-\indexentry{projection|hyperpage}{3}
-\indexentry{distance:from a point to a line|hyperpage}{3}
-\indexentry{nearest point:to a point in a line|hyperpage}{3}
-\indexentry{plane|hyperpage}{3}
-\indexentry{plane!general form|hyperpage}{3}
-\indexentry{plane!standard form|hyperpage}{3}
-\indexentry{plane!point-normal equation|hyperpage}{3}
-\indexentry{intersection!between line and plane|hyperpage}{3}
-\indexentry{equation of line|hyperpage}{3}
-\indexentry{equation of plane|hyperpage}{3}
-\indexentry{intersection|hyperpage}{3}
-\indexentry{intersection!line and plane|hyperpage}{3}
+\indexentry{plane!parallel to another plane|hyperpage}{4}
+\indexentry{plane|hyperpage}{4}
+\indexentry{point on plane|hyperpage}{4}
+\indexentry{plane|hyperpage}{4}
+\indexentry{plane!general form|hyperpage}{4}
+\indexentry{plane!standard form|hyperpage}{4}
+\indexentry{plane!point-normal equation|hyperpage}{4}
+\indexentry{plane!point-normal equation|hyperpage}{4}
+\indexentry{intersection!between line and plane|hyperpage}{4}
+\indexentry{equation of line|hyperpage}{4}
+\indexentry{equation of plane|hyperpage}{4}
+\indexentry{intersection|hyperpage}{4}
+\indexentry{intersection!line and plane|hyperpage}{4}
 \indexentry{angle!between a line and a plane|hyperpage}{4}
 \indexentry{distance!point to plane|hyperpage}{4}
 \indexentry{distance!plane to plane|hyperpage}{4}
 \indexentry{distance|hyperpage}{4}
 \indexentry{projection|hyperpage}{4}
 \indexentry{distance:from a point to a plane|hyperpage}{4}
-\indexentry{intersection:line and plane|hyperpage}{4}
-\indexentry{intersection:line and plane|hyperpage}{4}
-\indexentry{plane|hyperpage}{4}
-\indexentry{closest point|hyperpage}{4}
-\indexentry{shortest distance|hyperpage}{4}
-\indexentry{simplex method|hyperpage}{5}
-\indexentry{maximize|hyperpage}{5}
-\indexentry{simplex!maximize|hyperpage}{5}
-\indexentry{simplex method|hyperpage}{5}
-\indexentry{minimize|hyperpage}{5}
-\indexentry{simplex!minimize|hyperpage}{5}
+\indexentry{intersection:line and plane|hyperpage}{5}
+\indexentry{intersection:line and plane|hyperpage}{5}
+\indexentry{intersection!two lines|hyperpage}{5}
+\indexentry{plane!point-normal equation|hyperpage}{5}
+\indexentry{distance!two lines|hyperpage}{5}
+\indexentry{simplex method|hyperpage}{7}
+\indexentry{maximize|hyperpage}{7}
+\indexentry{simplex!maximize|hyperpage}{7}
+\indexentry{simplex method|hyperpage}{7}
+\indexentry{minimize|hyperpage}{7}
+\indexentry{simplex!minimize|hyperpage}{7}
