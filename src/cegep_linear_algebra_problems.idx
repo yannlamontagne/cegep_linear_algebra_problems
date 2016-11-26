@@ -85,6 +85,9 @@
 \indexentry{triangular matrix|hyperpage}{8}
 \indexentry{matrix!arithmetic|hyperpage}{8}
 \indexentry{matrix!transpose|hyperpage}{8}
+\indexentry{matrix!product|hyperpage}{8}
+\indexentry{matrix!transpose|hyperpage}{8}
+\indexentry{matrix!dimension|hyperpage}{8}
 \indexentry{matrix!multiplication|hyperpage}{8}
 \indexentry{matrix!multiplication|hyperpage}{8}
 \indexentry{matrix!multiplication|hyperpage}{8}
@@ -99,6 +102,7 @@
 \indexentry{matrix!trace of|hyperpage}{9}
 \indexentry{matrix!subtraction|hyperpage}{9}
 \indexentry{matrix!addition|hyperpage}{9}
+\indexentry{matrix!entry|hyperpage}{9}
 \indexentry{matrix!multiplication|hyperpage}{9}
 \indexentry{matrix!transpose|hyperpage}{9}
 \indexentry{matrix!trace of|hyperpage}{9}
@@ -113,6 +117,7 @@
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix addition|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
+\indexentry{matrix powers|hyperpage}{10}
 \indexentry{matrix product|hyperpage}{10}
 \indexentry{matrix power|hyperpage}{10}
 \indexentry{matrix!arithmetic|hyperpage}{10}
@@ -129,9 +134,9 @@
 \indexentry{trace of a matrix|hyperpage}{10}
 \indexentry{symmetric matrix|hyperpage}{10}
 \indexentry{nilpotent matrix|hyperpage}{10}
-\indexentry{idempotent matrix|hyperpage}{10}
-\indexentry{matrix!involutory|hyperpage}{10}
-\indexentry{matrix!transpose|hyperpage}{10}
+\indexentry{idempotent matrix|hyperpage}{11}
+\indexentry{matrix!involutory|hyperpage}{11}
+\indexentry{matrix!transpose|hyperpage}{11}
 \indexentry{matrix!power|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
@@ -184,6 +189,7 @@
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!involutory|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{elementary matrix|hyperpage}{13}
 \indexentry{elementary matrix|hyperpage}{13}
 \indexentry{elementary matrix|hyperpage}{13}
@@ -726,3 +732,9 @@
 \indexentry{dimension|hyperpage}{39}
 \indexentry{dimension|hyperpage}{39}
 \indexentry{dimension|hyperpage}{39}
+\indexentry{simplex method|hyperpage}{41}
+\indexentry{maximize|hyperpage}{41}
+\indexentry{simplex!maximize|hyperpage}{41}
+\indexentry{simplex method|hyperpage}{41}
+\indexentry{maximize|hyperpage}{41}
+\indexentry{simplex!minimize|hyperpage}{41}

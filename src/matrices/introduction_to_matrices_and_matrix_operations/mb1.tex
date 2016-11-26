@@ -1,9 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
-
+\index{matrix!entry}
 %-----------------------------------------------------
 % name, leave blank
 % title, if the exercise has a name i.e. Hilbert's matrix
@@ -14,30 +12,16 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Solve for $X$ given that it satisfies
-\[
-\Big(\text{tr}(A)A+\trans{X}A\Big)^{-1}=\frac{1}{6}I_3
+origin={\cite{MB}}]
+Write the $3 \times 4$ matrix $B=[b_{ij}]$ whose entries satisfy 
+\[ b_{ij} = \left\lbrace
+								\begin{array}{lll}
+											i-j & \mathrm{if} & |i-j|\geq1,\\
+											2i    & \mathrm{if} & |i-j|< 1. 
+								\end{array}\right. 
 \]
-where
-\[
-B=
-\begin{mat}
-1&2&3\\
-0&2&3\\
-0&0&3\\
-\end{mat}\;
-\]
-
 \end{Exercise}
 
 \begin{Answer}
-$
-X=
-\begin{mat}
-0 & 0 & 0\\
--6 & -3 & 0\\
-0 & -3 & -4
-\end{mat}
-$
+$B=\begin{mat} 2&-1&-2&-3\\  1&4&-1&-2\\  2&1&6&-1 \end{mat}$
 \end{Answer}

@@ -1,8 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{matrix!inverse}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,30 +13,10 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Solve for $X$ given that it satisfies
-\[
-\Big(\text{tr}(A)A+\trans{X}A\Big)^{-1}=\frac{1}{6}I_3
-\]
-where
-\[
-B=
-\begin{mat}
-1&2&3\\
-0&2&3\\
-0&0&3\\
-\end{mat}\;
-\]
-
+origin={\cite{SS}}]
+Show that if $A$ is a $3\times2$ matrix and if $B$ is a $2\times3$ matrix, then $AB$ is not invertible.
 \end{Exercise}
 
 \begin{Answer}
-$
-X=
-\begin{mat}
-0 & 0 & 0\\
--6 & -3 & 0\\
-0 & -3 & -4
-\end{mat}
-$
+Since $B$ is $2\times3$, then the homogenuous system $BX=0$ has non-trivial solutions, say $X_0$. Thus the system $(AB)X=0$ also has a non-trivial solution, namely $X_0$. This in turn implies that $AB$ cannot be invertible.
 \end{Answer}
