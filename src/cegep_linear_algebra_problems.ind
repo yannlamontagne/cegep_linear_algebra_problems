@@ -8,6 +8,7 @@
   \item angle between vectors, \hyperpage{23, 24}
   \item area
     \subitem parallelogram, \hyperpage{25}
+    \subitem triangle, \hyperpage{25}
   \item area of triangle, \hyperpage{25}
   \item augmented matrix, \hyperpage{1}, \hyperpage{4}
 
@@ -83,7 +84,7 @@
 
   \indexspace
 
-  \item idempotent matrix, \hyperpage{10}
+  \item idempotent matrix, \hyperpage{11}
   \item ij product, \hyperpage{7}
   \item inconsistent, \hyperpage{4}
   \item infinite solutions, \hyperpage{4}
@@ -134,7 +135,7 @@
     \subitem inverse, \hyperpage{9}, \hyperpage{11--14}, \hyperpage{17}, 
 		\hyperpage{19}
     \subitem invertible, \hyperpage{19}
-    \subitem involutory, \hyperpage{10}, \hyperpage{13, 14}
+    \subitem involutory, \hyperpage{11}, \hyperpage{13, 14}
     \subitem lower triangular, \hyperpage{8}
     \subitem multiplication, \hyperpage{7--9}
     \subitem nilpotent, \hyperpage{13}, \hyperpage{18}
@@ -147,7 +148,7 @@
     \subitem subtraction, \hyperpage{9}
     \subitem symmetric, \hyperpage{10}, \hyperpage{37}
     \subitem trace of, \hyperpage{9}, \hyperpage{11}
-    \subitem transpose, \hyperpage{8--10}, \hyperpage{13, 14}
+    \subitem transpose, \hyperpage{8--11}, \hyperpage{13, 14}
     \subitem triangular, \hyperpage{8}, \hyperpage{15}, \hyperpage{17}
     \subitem upper triangular, \hyperpage{8}
     \subitem zero factor property, \hyperpage{10}
@@ -161,10 +162,12 @@
   \item matrix multiplication, \hyperpage{8}
   \item matrix polynomial, \hyperpage{11, 12}
   \item matrix power, \hyperpage{7}, \hyperpage{10}
+  \item matrix powers, \hyperpage{10}
   \item matrix product, \hyperpage{7}, \hyperpage{10}
   \item matrix size, \hyperpage{7}
   \item matrix space, \hyperpage{31--34}, \hyperpage{37, 38}
   \item matrix space, polynomial space, \hyperpage{34}
+  \item maximize, \hyperpage{41}
   \item midpoint, \hyperpage{22}
   \item minor, \hyperpage{15}
 
@@ -181,10 +184,12 @@
 
   \item odd function, \hyperpage{33}
   \item orthogonal, \hyperpage{23, 24}, \hyperpage{29}
-  \item orthogonal vector, \hyperpage{23--25}
+  \item orthogonal vector, \hyperpage{24, 25}
+  \item orthogonal vectors, \hyperpage{23}, \hyperpage{25}
 
   \indexspace
 
+  \item parallel vectors, \hyperpage{25}
   \item parallelogram, \hyperpage{24}
   \item parallelogram law, \hyperpage{24}
   \item parametric equation of line, \hyperpage{26}
@@ -221,6 +226,10 @@
   \item scalar triple product, \hyperpage{25}
   \item shortest distance, \hyperpage{29}
   \item similar matrix, \hyperpage{18}
+  \item simplex
+    \subitem maximize, \hyperpage{41}
+    \subitem minimize, \hyperpage{41}
+  \item simplex method, \hyperpage{41}
   \item singular matrix, \hyperpage{17}, \hyperpage{19}
   \item skew-symmetric matrix, \hyperpage{8}, \hyperpage{17}
   \item solution set, \hyperpage{2--4}
@@ -258,6 +267,8 @@
   \item vector space, \hyperpage{31, 32}, \hyperpage{34}
     \subitem matrix space, \hyperpage{32}
     \subitem subspace, \hyperpage{33}
+  \item volume
+    \subitem parallelepiped, \hyperpage{25}
   \item volume:parallelepiped, \hyperpage{25}
 
   \indexspace

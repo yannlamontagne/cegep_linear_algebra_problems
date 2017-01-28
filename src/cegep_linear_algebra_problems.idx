@@ -383,7 +383,7 @@
 \indexentry{dot product|hyperpage}{23}
 \indexentry{orthogonal|hyperpage}{23}
 \indexentry{dot product|hyperpage}{23}
-\indexentry{orthogonal vector|hyperpage}{23}
+\indexentry{orthogonal vectors|hyperpage}{23}
 \indexentry{dot product|hyperpage}{23}
 \indexentry{orthogonal|hyperpage}{23}
 \indexentry{dot product|hyperpage}{23}
@@ -445,6 +445,12 @@
 \indexentry{area!parallelogram|hyperpage}{25}
 \indexentry{cross product|hyperpage}{25}
 \indexentry{volume:parallelepiped|hyperpage}{25}
+\indexentry{volume!parallelepiped|hyperpage}{25}
+\indexentry{orthogonal vectors|hyperpage}{25}
+\indexentry{parallel vectors|hyperpage}{25}
+\indexentry{projection|hyperpage}{25}
+\indexentry{area!triangle|hyperpage}{25}
+\indexentry{scalar triple product|hyperpage}{25}
 \indexentry{cross product|hyperpage}{25}
 \indexentry{scalar triple product|hyperpage}{25}
 \indexentry{coplanar|hyperpage}{25}
