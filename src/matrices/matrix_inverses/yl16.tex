@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{matrix!inverse}
+\index{matrix!polynomial}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,33 +15,10 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Given
-$C = \begin{mat}
-1 & 2 \\
-5 & 0
-\end{mat}\text{ and }
-D = \begin{mat}
--1 & 1 \\
-4 & -3
-\end{mat}.
-$ Solve the given equations for $X$.
-\Question $CXD=10I_2$
-\Question $C(\trans{(DX)}-2I)^{-1}=C$
+Given an $n\times n$ identity $I$ and $p(x)=a_0+a_1x+a_2x^2+\ldots+a_mx^m$ an 
+arbitrary polynomial of degree $m$.  Find the condition for which $p(I)$ is invertible.
 \end{Exercise}
 
 \begin{Answer}
-\Question $
-X=
-\begin{mat}
--8 & -2\\
--19 & -6
-\end{mat}
-$
-\Question $
-X=
-\begin{mat}
-9 & 3\\
-12 & 3
-\end{mat}
-$
+Invertible if $a_0+a_1+a_2+\ldots+a_m\neq 0$.
 \end{Answer}

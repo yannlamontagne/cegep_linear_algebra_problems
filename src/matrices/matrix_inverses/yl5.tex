@@ -1,8 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix inverse}
-\index{matrix equation}
+\index{matrix!inverse}
+\index{matrix!expression}
+\index{matrix!transpose}
+
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,33 +17,12 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Given
-$C = \begin{mat}
-1 & 2 \\
-5 & 0
-\end{mat}\text{ and }
-D = \begin{mat}
--1 & 1 \\
-4 & -3
-\end{mat}.
-$ Solve the given equations for $X$.
-\Question $CXD=10I_2$
-\Question $C(\trans{(DX)}-2I)^{-1}=C$
+Given that $A$, $B$, $C$ and $M$  are invertible matrices simplify the following expressions.
+\Question $\trans{B}\trans{A}(\trans{(AB)})^{-1}C\trans{(\trans{C}A)}B(CB)^{-1}$
+\Question $(\trans{A}M^{-1})^{-1}\trans{(A^2)}\trans{(\trans{H}\trans{A}\trans{(A^{-1})})}$ 
 \end{Exercise}
 
 \begin{Answer}
-\Question $
-X=
-\begin{mat}
--8 & -2\\
--19 & -6
-\end{mat}
-$
-\Question $
-X=
-\begin{mat}
-9 & 3\\
-12 & 3
-\end{mat}
-$
+\Question $C\trans{A}$
+\Question $M\trans{A}H$
 \end{Answer}

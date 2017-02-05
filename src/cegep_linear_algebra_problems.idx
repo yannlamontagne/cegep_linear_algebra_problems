@@ -44,6 +44,10 @@
 \indexentry{inconsistent|hyperpage}{4}
 \indexentry{infinite solutions|hyperpage}{4}
 \indexentry{solution set|hyperpage}{4}
+\indexentry{consistent system|hyperpage}{4}
+\indexentry{augmented matrix|hyperpage}{4}
+\indexentry{inconsistent system|hyperpage}{4}
+\indexentry{infinitely many solutions|hyperpage}{4}
 \indexentry{infinitely many solution|hyperpage}{4}
 \indexentry{unique solution|hyperpage}{4}
 \indexentry{trivial solution|hyperpage}{4}
@@ -53,8 +57,8 @@
 \indexentry{consistent|hyperpage}{4}
 \indexentry{consistent system|hyperpage}{4}
 \indexentry{augmented matrix|hyperpage}{4}
-\indexentry{|hyperpage}{4}
-\indexentry{|hyperpage}{4}
+\indexentry{|hyperpage}{5}
+\indexentry{|hyperpage}{5}
 \indexentry{system of linear equations|hyperpage}{5}
 \indexentry{Kirchhoff's law|hyperpage}{5}
 \indexentry{system of linear equations|hyperpage}{5}
@@ -156,11 +160,14 @@
 \indexentry{matrix!trace of|hyperpage}{11}
 \indexentry{matrix polynomial|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
-\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{system of linear equations|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!equation|hyperpage}{12}
 \indexentry{matrix equation|hyperpage}{12}
 \indexentry{system of linear equation|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
@@ -172,8 +179,11 @@
 \indexentry{matrix!equation|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix equation|hyperpage}{12}
-\indexentry{matrix polynomial|hyperpage}{12}
-\indexentry{matrix inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix!expression|hyperpage}{13}
+\indexentry{matrix!transpose|hyperpage}{13}
+\indexentry{matrix polynomial|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{13}
 \indexentry{|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
@@ -193,22 +203,24 @@
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix equation|hyperpage}{13}
 \indexentry{matrix polynomial|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix!polynomial|hyperpage}{13}
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix!singular|hyperpage}{13}
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!involutory|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{elementary matrix|hyperpage}{13}
-\indexentry{elementary matrix|hyperpage}{13}
-\indexentry{elementary matrix|hyperpage}{13}
-\indexentry{elementary matrix|hyperpage}{13}
-\indexentry{matrix!elementary|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{elementary matrix|hyperpage}{13}
-\indexentry{elementary matrix|hyperpage}{13}
-\indexentry{matrix!elementary|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{matrix!elementary|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
+\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{matrix!elementary|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{elementary matrix|hyperpage}{14}
 \indexentry{row-equivalent|hyperpage}{14}
 \indexentry{matrix!elementary|hyperpage}{14}
