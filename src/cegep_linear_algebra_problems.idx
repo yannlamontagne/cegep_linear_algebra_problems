@@ -29,7 +29,9 @@
 \indexentry{particular solution|hyperpage}{3}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{3}
 \indexentry{particular solution|hyperpage}{3}
-\indexentry{homogeneous system|hyperpage}{3}
+\indexentry{Gauss-Jordan Elimination|hyperpage}{4}
+\indexentry{particular solution|hyperpage}{4}
+\indexentry{homogeneous system|hyperpage}{4}
 \indexentry{Gauss-Jordan Elimination|hyperpage}{4}
 \indexentry{particular solution|hyperpage}{4}
 \indexentry{homogeneous system|hyperpage}{4}
@@ -54,9 +56,9 @@
 \indexentry{homogeneous system|hyperpage}{4}
 \indexentry{augmented matrix|hyperpage}{4}
 \indexentry{no solution, unique solution, infinitely many solution|hyperpage}{4}
-\indexentry{consistent|hyperpage}{4}
-\indexentry{consistent system|hyperpage}{4}
-\indexentry{augmented matrix|hyperpage}{4}
+\indexentry{consistent|hyperpage}{5}
+\indexentry{consistent system|hyperpage}{5}
+\indexentry{augmented matrix|hyperpage}{5}
 \indexentry{|hyperpage}{5}
 \indexentry{|hyperpage}{5}
 \indexentry{system of linear equations|hyperpage}{5}
@@ -156,11 +158,13 @@
 \indexentry{matrix equation|hyperpage}{11}
 \indexentry{matrix inverse|hyperpage}{11}
 \indexentry{matrix equation|hyperpage}{11}
+\indexentry{matrix inverse|hyperpage}{11}
+\indexentry{matrix equation|hyperpage}{11}
 \indexentry{matrix!inverse|hyperpage}{11}
 \indexentry{matrix!trace of|hyperpage}{11}
-\indexentry{matrix polynomial|hyperpage}{11}
-\indexentry{matrix inverse|hyperpage}{11}
-\indexentry{matrix!inverse|hyperpage}{11}
+\indexentry{matrix polynomial|hyperpage}{12}
+\indexentry{matrix inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
@@ -177,8 +181,8 @@
 \indexentry{matrix equation|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix!equation|hyperpage}{12}
-\indexentry{matrix inverse|hyperpage}{12}
-\indexentry{matrix equation|hyperpage}{12}
+\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{matrix equation|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!expression|hyperpage}{13}
 \indexentry{matrix!transpose|hyperpage}{13}

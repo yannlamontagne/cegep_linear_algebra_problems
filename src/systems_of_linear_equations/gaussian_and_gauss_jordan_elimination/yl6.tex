@@ -1,0 +1,40 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Gauss-Jordan Elimination}
+\index{particular solution}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{YL}},
+counter=Exercise]
+Solve the following systems by Gauss-Jordan elimination and find two particular solution for each system:
+\Question $
+\begin{linsys}{5}
+&&y&-&z&+&w&-&v& =& 0\\
+2x& - &3y& +& 4z& -&4w& +&v& =& 0\\
+3x& - &3y& +& 4z& -&4w& +&v& =& 0\\
+5x& - &5y& +& 7z& -&7w& +&v& =& 0
+\end{linsys}
+$
+\Question $
+\begin{linsys}{5}
+&&y&-&z&+&w&-&v& =& 3\\
+2x& - &3y& +& 4z& -&4w& +&v& =& 2\\
+3x& - &3y& +& 4z& -&4w& +&v& =& 2\\
+\end{linsys}
+$
+\end{Exercise}
+
+\begin{Answer}
+\Question $\rowvec{x,&y,&z,&w,&v}=\rowvec{0,&3t,&2t+s,&s,&t}$ where $s,\;t\in\Re$.  $\rowvec{x,&y,&z,&w,&v}=\rowvec{0,&3,&2,&0,&1}$, $\rowvec{x,&y,&z,&w,&v}=\rowvec{0,&0,&1,&1,&0}$
+\Question $\rowvec{x,&y,&z,&w,&v}=\rowvec{0,&14+3s,&11+2t+s,&s,&t}$ where $s,\;t\in\Re$.  $\rowvec{x,&y,&z,&w,&v}=\rowvec{0,&14,&11,&0,&0}$, $\rowvec{x,&y,&z,&w,&v}=\rowvec{0,&14,&13,&0,&1}$
+\end{Answer}
+
