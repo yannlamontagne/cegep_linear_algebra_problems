@@ -1,0 +1,56 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!product}
+\index{matrix!transpose}
+\index{matrix!dimension}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{MB}}]
+Consider the matrices
+$$
+A = 
+\begin{mat}
+  3 & 0 \\
+  -1 & 2 \\
+  1  & 1
+\end{mat}, \; B=
+\begin{mat}
+  1 & 4 & 2\\
+  3 & 1 & 5
+\end{mat} \text{ and }  C=
+\begin{mat}
+  4 & -1 \\
+  0 & 2 \\
+\end{mat}
+$$
+Suppose also that the matrices $D$ and $E$ have the following sizes: 
+$D$ is $\nbym{2}{4}$  and $E$ is $\nbym{4}{3}$.
+
+Determine whether the given matrix expression is defined. For those that are defined, give the size of the resulting matrix. 
+\begin{multicols}{3}
+\Question $EB$ 
+\Question $(2AC+B^T)^T$ 
+\Question $B^2$
+\Question $CDE$
+\EndCurrentQuestion
+\end{multicols}
+
+\end{Exercise}
+
+\begin{Answer}
+\Question The product is undefined as the number of columns of $E$ is $3$ and not equal to the number of rows of $B$ which is $2$.
+\Question The expression is defined and the resulting matrix is $\nbym{2}{3}$.
+\Question The expression is undefined as $B$ is not square.
+\Question The expression is defined and the resulting matrix is $\nbym{2}{3}$.
+\end{Answer}

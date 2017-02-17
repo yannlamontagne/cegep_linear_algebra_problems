@@ -73,6 +73,13 @@
   \renewcommand{\footrulewidth}{1pt}% Line at the footer visible
 }
 
+% For the total number of exercises and authors
+\usepackage{totcount}
+\newtotcounter{exernum}
+\newtotcounter{citenum}
+\def\oldbibitem{} \let\oldbibitem=\bibitem
+\def\bibitem{\stepcounter{citenum}\oldbibitem}
+
 %----------------------------------------------------------------------------------------
 %       PACKAGE FOR DRAWING GRAPHICS
 %----------------------------------------------------------------------------------------
@@ -90,7 +97,7 @@
 
 \renewcommand{\ExerciseHeaderOrigin}{\ExerciseOrigin}
 
-\renewcommand{\ExerciseHeader}{\flushleft{
+\renewcommand{\ExerciseHeader}{\stepcounter{exernum}\flushleft{
 \textbf{\ExerciseHeaderNB\ExerciseHeaderDifficulty\ExerciseHeaderTitle\ExerciseName\ExerciseHeaderOrigin}}}
 
 \renewcommand{\ExerciseListHeader}{{\ExerciseHeaderDifficulty

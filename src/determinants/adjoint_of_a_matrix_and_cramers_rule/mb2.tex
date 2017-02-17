@@ -17,13 +17,35 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Let $B$ be a $3\times 3$ matrix where $\det(B)=3$. Find
+origin={\cite{MB}}]
+Knowing that the cofactor matrix of $A$ is
 \[
-\det\left(2B+B^2\text{adj}(B)\right).
-\]
+\cof(A)=
+\begin{mat}
+  3 & 9 & -12 \\
+  1 & -10 & -4 \\
+  -8 & 2 & -7 \\
+\end{mat}
+\] and that the first row of $A$ is $\begin{mat}2 & 1 & -1\end{mat}$
+\Question Find $\adj(A)$.
+\Question Find $\det(A)$.
+\Question Find the minors $M_{12}$ and $M_{22}$ of $A$.
+\Question Find $A^{-1}$.
 \end{Exercise}
 
 \begin{Answer}
-$375$
+\Question $\adj(A) =
+\begin{mat}
+3 & 1 & -8\\
+9 & -10 & 2\\
+-12 & -4 & -7
+\end{mat}$
+\Question $\det(A) = 27$
+\Question $M_{12}=-9$ and $M_{22}=-10$
+\Question $A^{-1}=\frac{1}{27}
+\begin{mat}
+3 & 1 & -8\\
+9 & -10 & 2\\
+-12 & -4 & -7
+\end{mat}$
 \end{Answer}

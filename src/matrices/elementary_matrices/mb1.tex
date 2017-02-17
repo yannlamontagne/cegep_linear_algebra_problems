@@ -1,0 +1,64 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!inverse}
+\index{matrix!matrix}
+\index{system of linear equations}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{MB}}]
+Consider the following system of equations:
+\[\begin{linsys}{4}
+   x_1 &  &  & - & x_3 & = & 2 \\
+  5x_1 & &  & - &2x_3  & = & 1 \\
+   &  & x_2 &  &  & = & 4 \\
+\end{linsys},\]
+which can be written as $AX=B$, where $A$ is the matrix of
+coefficients, $X$ is the column matrix of unknowns, and $B$ is the column matrix
+of constants. 
+\Question Compute the inverse of $A$ and use it to solve the system.
+\Question Using your work of a., write the inverse of the matrix $A$ as a product of elementary matrices.
+
+\end{Exercise}
+
+\begin{Answer}
+\Question $A^{-1}=\begin{mat}
+-\frac23 & \frac13 & 0\\
+0 & 0 & 1\\
+-\frac53 & \frac13 & 0
+\end{mat}$ and $X=
+\begin{mat}-1\\4\\-3\end{mat}$
+\Question $A^{-1}=E_4E_3E_2E_1$ where\\
+$E_1=\begin{mat}
+1 & 0 & 0\\
+-5 & 1 & 0\\
+0 & 0 & 1
+\end{mat},\;
+E_2=\begin{mat}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0
+\end{mat},\\
+E_3=\begin{mat}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & \frac13
+\end{mat},\;
+E_4=\begin{mat}
+1 & 0 & 1\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+$
+Note: The answer is not unique.
+\end{Answer}

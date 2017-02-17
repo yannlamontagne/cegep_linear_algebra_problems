@@ -1,11 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{adjoint matrix}
-\index{matrix!adjoint}
-\index{matrix!invertible}
-\index{invertible matrix}
 \index{determinant}
+\index{elementary operation}
+\index{cofactor expansion}
+\index{Laplace expansion}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,15 +14,23 @@
 %-----------------------------------------------------
 \begin{Exercise}[
 name={},
-title={}, 
+title={},
 difficulty=0,
-origin={\cite{YL}}]
-Let $B$ be a $3\times 3$ matrix where $\det(B)=3$. Find
-\[
-\det\left(2B+B^2\text{adj}(B)\right).
-\]
+origin={\cite{MB}}]
+Compute the determinant of the matrix
+$$ 
+A= \begin{mat}
+\phantom{-}1 & \phantom{-}2 & \phantom{-}0  & -3  \\ 
+0 & 4 & 2 & 1 \\ 
+0 & 2 & -1 & -1 \\
+2 & 3 & 1 & 0
+\end{mat}$$
+by combining row operations and cofactor expansions.
 \end{Exercise}
 
 \begin{Answer}
-$375$
+$
+\detop(A) = -41
+$
 \end{Answer}
+

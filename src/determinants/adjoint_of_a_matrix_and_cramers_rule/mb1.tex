@@ -1,10 +1,11 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{matrix!inverse}
-\index{matrix!expression}
-\index{matrix!transpose}
-
+\index{adjoint matrix}
+\index{matrix!adjoint}
+\index{matrix!invertible}
+\index{invertible matrix}
+\index{determinant}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -16,15 +17,10 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL, MB}}]
-Given that $A$, $B$, $C$ and $M$  are invertible matrices simplify the following expressions.
-\Question $\trans{A}B(AB)^{-1}(A^TA^{-1})^{-1}$
-\Question $\trans{B}\trans{A}(\trans{(AB)})^{-1}C\trans{(\trans{C}A)}B(CB)^{-1}$
-\Question $(\trans{A}M^{-1})^{-1}\trans{(A^2)}\trans{(\trans{H}\trans{A}\trans{(A^{-1})})}$ 
+origin={\cite{MB}}]
+Consider two $\nbyn{4}$ matrices $A$ and $B$, with $\det(A) = -2$ and $\det(B) = 3$. Find the determinant of $M$, knowing that $\det(2\trans{B}MA^{-1}B)=\det(\adj(A)A^2B)$.
 \end{Exercise}
 
 \begin{Answer}
-\Question $I$
-\Question $C\trans{A}$
-\Question $M\trans{A}H$
+$\det(M)=\frac{4}{3}$
 \end{Answer}
