@@ -92,20 +92,26 @@
 
 \usepackage[answerdelayed, lastexercise]{exercise}
 \usepackage{multicol}
+\newcounter{answerID}
+
+
 
 \renewcommand{\ExerciseHeaderTitle}{\ExerciseTitle}
 
 \renewcommand{\ExerciseHeaderOrigin}{\ExerciseOrigin}
 
-\renewcommand{\ExerciseHeader}{\stepcounter{exernum}\flushleft{
-\textbf{\ExerciseHeaderNB\ExerciseHeaderDifficulty\ExerciseHeaderTitle\ExerciseName\ExerciseHeaderOrigin}}}
+\renewcommand{\ExerciseHeader}{
+\stepcounter{exernum}\phantomsection\label{exercise:\theexernum}
+\flushleft{
+\textbf{\hyperref[answer:\theexernum]{\ExerciseHeaderNB}\ExerciseHeaderDifficulty\ExerciseHeaderTitle\ExerciseName\ExerciseHeaderOrigin}}}
 
 \renewcommand{\ExerciseListHeader}{{\ExerciseHeaderDifficulty
 \textbf{\ExerciseListName \ExerciseHeaderNB
 \ExerciseHeaderTitle}\ExerciseHeaderOrigin}}
 
-\renewcommand{\AnswerHeader}{\textbf{\AnswerName\ %
-\ExerciseHeaderNB}\;\;}
+\renewcommand{\AnswerHeader}{
+\stepcounter{answerID}\phantomsection\label{answer:\theanswerID}
+\textbf{\AnswerName\hyperref[exercise:\theanswerID]{\ExerciseHeaderNB}\;\;}}
 
 \renewcommand{\QuestionNB}{\textbf{\alph{Question}}.\ }
 
