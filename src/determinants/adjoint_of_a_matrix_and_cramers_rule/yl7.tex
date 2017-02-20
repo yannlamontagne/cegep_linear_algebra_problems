@@ -1,8 +1,7 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{determinant}
-\index{elementary operation}
+\index{Cramer's Rule}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,22 +14,18 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-If
-$
-A=\begin{mat}
-a&0&b\\
-0&c&0\\
-d&0&e
-\end{mat}
-$
-and $\det(2A^T)=16$ then evaluate
-$
-\begin{detmat}2a & 4a & 6a+12b\\ 0 & 8c & 10c\\ 2d & 4d & 6d+12e\end{detmat}.
-$
+Determine for which value(s) of $\lambda$, if any, the following system can be solved
+using Cramer's Rule.
+\[
+\begin{linsys}{4}
+x& -  2y& + z& -&2w =& 5\\
+3x& - 4y&    & +&3w =& 6\\
+  &   5y&    & -&\lambda w=& 7\\
+2x& - \lambda y -&2z & & =& 8\\   
+\end{linsys}
+\]
 \end{Exercise}
 
 \begin{Answer}
-$
-384
-$
+The determinant of the coefficient matrix is non-zero for all $\lambda$.  Hence the system can be solve for any value of $\lambda$.
 \end{Answer}

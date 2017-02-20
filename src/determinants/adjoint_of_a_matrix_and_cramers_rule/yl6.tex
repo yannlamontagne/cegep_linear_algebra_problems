@@ -1,8 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{determinant}
-\index{elementary operation}
+\index{adjoint matrix}
+\index{matrix!adjoint}
+\index{matrix!invertible}
+\index{invertible matrix}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,22 +17,24 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-If
-$
-A=\begin{mat}
-a&0&b\\
-0&c&0\\
-d&0&e
-\end{mat}
-$
-and $\det(2A^T)=16$ then evaluate
-$
-\begin{detmat}2a & 4a & 6a+12b\\ 0 & 8c & 10c\\ 2d & 4d & 6d+12e\end{detmat}.
-$
+Given
+\[
+A=
+\begin{bmatrix}
+0 & 1 & 2 & 0\\
+3 & 0 & 0 & 4\\
+5 & 0 & 0 & 6\\
+0 & 7 & 8 & 0 
+\end{bmatrix}
+\].
+\Question Evaluate $\det(A)$.
+\Question Evaluate $\det\left(\text{adj}\left((3A^{-1})^T\right)\right)$.
 \end{Exercise}
 
 \begin{Answer}
-$
-384
-$
+\begin{multicols}{2}
+\Question $12$
+\Question $\frac{3^9}{4^3}$
+\EndCurrentQuestion
+\end{multicols}
 \end{Answer}
