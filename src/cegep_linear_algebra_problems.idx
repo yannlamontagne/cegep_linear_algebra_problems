@@ -35,6 +35,9 @@
 \indexentry{Gauss-Jordan Elimination|hyperpage}{4}
 \indexentry{particular solution|hyperpage}{4}
 \indexentry{homogeneous system|hyperpage}{4}
+\indexentry{Gauss-Jordan Elimination|hyperpage}{4}
+\indexentry{particular solution|hyperpage}{4}
+\indexentry{homogeneous system|hyperpage}{4}
 \indexentry{row echelon form|hyperpage}{4}
 \indexentry{quadratic equation, parabola|hyperpage}{4}
 \indexentry{consistent, inconsistent|hyperpage}{4}
@@ -50,10 +53,10 @@
 \indexentry{augmented matrix|hyperpage}{4}
 \indexentry{inconsistent system|hyperpage}{4}
 \indexentry{infinitely many solutions|hyperpage}{4}
-\indexentry{consistent system|hyperpage}{4}
-\indexentry{augmented matrix|hyperpage}{4}
-\indexentry{inconsistent system|hyperpage}{4}
-\indexentry{infinitely many solutions|hyperpage}{4}
+\indexentry{consistent system|hyperpage}{5}
+\indexentry{augmented matrix|hyperpage}{5}
+\indexentry{inconsistent system|hyperpage}{5}
+\indexentry{infinitely many solutions|hyperpage}{5}
 \indexentry{infinitely many solution|hyperpage}{5}
 \indexentry{unique solution|hyperpage}{5}
 \indexentry{trivial solution|hyperpage}{5}
@@ -65,10 +68,10 @@
 \indexentry{augmented matrix|hyperpage}{5}
 \indexentry{|hyperpage}{5}
 \indexentry{|hyperpage}{5}
-\indexentry{system of linear equations|hyperpage}{5}
-\indexentry{Kirchhoff's law|hyperpage}{5}
-\indexentry{system of linear equations|hyperpage}{5}
-\indexentry{Kirchhoff's law|hyperpage}{5}
+\indexentry{system of linear equations|hyperpage}{6}
+\indexentry{Kirchhoff's law|hyperpage}{6}
+\indexentry{system of linear equations|hyperpage}{6}
+\indexentry{Kirchhoff's law|hyperpage}{6}
 \indexentry{matrix entry|hyperpage}{7}
 \indexentry{matrix element|hyperpage}{7}
 \indexentry{matrix associativity|hyperpage}{7}
@@ -128,7 +131,7 @@
 \indexentry{matrix!inverse|hyperpage}{9}
 \indexentry{matrix!idempotent|hyperpage}{9}
 \indexentry{matrix addition|hyperpage}{9}
-\indexentry{matrix!multiplication|hyperpage}{9}
+\indexentry{matrix!multiplication|hyperpage}{10}
 \indexentry{system of linear equations|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
@@ -197,11 +200,15 @@
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{cancellation law|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{matrix!commutativity|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{zero factor property|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
+\indexentry{matrix!commutativity|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
@@ -222,34 +229,42 @@
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!involutory|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
-\indexentry{elementary matrix|hyperpage}{14}
-\indexentry{elementary matrix|hyperpage}{14}
-\indexentry{elementary matrix|hyperpage}{14}
-\indexentry{elementary matrix|hyperpage}{14}
-\indexentry{matrix!elementary|hyperpage}{14}
-\indexentry{matrix!inverse|hyperpage}{14}
-\indexentry{matrix!elementary|hyperpage}{14}
-\indexentry{matrix!inverse|hyperpage}{14}
-\indexentry{matrix!matrix|hyperpage}{14}
-\indexentry{system of linear equations|hyperpage}{14}
-\indexentry{elementary matrix|hyperpage}{14}
+\indexentry{elementary matrix|hyperpage}{15}
+\indexentry{elementary matrix|hyperpage}{15}
+\indexentry{elementary matrix|hyperpage}{15}
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{matrix!elementary|hyperpage}{15}
 \indexentry{matrix!inverse|hyperpage}{15}
+\indexentry{matrix!elementary|hyperpage}{15}
+\indexentry{matrix!inverse|hyperpage}{15}
+\indexentry{matrix!matrix|hyperpage}{15}
+\indexentry{system of linear equations|hyperpage}{15}
+\indexentry{elementary matrix|hyperpage}{15}
+\indexentry{elementary matrix|hyperpage}{15}
+\indexentry{matrix!elementary|hyperpage}{15}
+\indexentry{matrix!inverse|hyperpage}{15}
+\indexentry{matrix!elementary|hyperpage}{15}
+\indexentry{matrix!magic|hyperpage}{15}
+\indexentry{magic matrix|hyperpage}{15}
+\indexentry{row equivalent|hyperpage}{15}
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{row-equivalent|hyperpage}{15}
 \indexentry{matrix!elementary|hyperpage}{15}
 \indexentry{matrix!transpose|hyperpage}{15}
 \indexentry{matrix equation|hyperpage}{15}
-\indexentry{matrix!inverse|hyperpage}{15}
-\indexentry{matrix!elementary|hyperpage}{15}
-\indexentry{matrix!elementary|hyperpage}{15}
-\indexentry{matrix!involutory|hyperpage}{15}
-\indexentry{matrix!elementary|hyperpage}{15}
-\indexentry{matrix!elementary|hyperpage}{15}
-\indexentry{matrix!transpose|hyperpage}{15}
-\indexentry{matrix equation|hyperpage}{15}
-\indexentry{row equivalent|hyperpage}{15}
+\indexentry{matrix!elementary|hyperpage}{16}
+\indexentry{matrix!inverse|hyperpage}{16}
+\indexentry{matrix!row equivalent|hyperpage}{16}
+\indexentry{matrix!Hilbert's|hyperpage}{16}
+\indexentry{matrix!inverse|hyperpage}{16}
+\indexentry{matrix!elementary|hyperpage}{16}
+\indexentry{matrix!elementary|hyperpage}{16}
+\indexentry{matrix!involutory|hyperpage}{16}
+\indexentry{matrix!elementary|hyperpage}{16}
+\indexentry{matrix!elementary|hyperpage}{16}
+\indexentry{matrix!transpose|hyperpage}{16}
+\indexentry{matrix equation|hyperpage}{16}
+\indexentry{row equivalent|hyperpage}{16}
 \indexentry{Laplace expansion|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{co-factor expansion|hyperpage}{17}

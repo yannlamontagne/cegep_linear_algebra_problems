@@ -1,0 +1,38 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix inverse}
+\index{zero factor property}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given $A$ and $B$, $n\times n$ matrices.
+\Question Prove or disprove: If $AB=0$ then $A=0$ or $B=0$.
+\Question Prove or disprove: If $A$ is invertible and $AB=0$ then $B=0$.
+\end{Exercise}
+
+\begin{Answer}
+\Question Disprove: if $A=
+\begin{mat} 
+1 & 0\\
+0 & 0
+\end{mat},\;
+B=\begin{mat}
+0 & 0\\
+1 & 0
+\end{mat}$ then $AB=\begin{mat}
+0 & 0\\
+0 & 0
+\end{mat}$
+but $A\neq 0$ and $B\neq 0$.
+\Question Prove: apply the inverse of $A$ on $AB=0$.
+\end{Answer}

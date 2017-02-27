@@ -1,0 +1,89 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!inverse}
+\index{matrix!row equivalent}
+\index{matrix!Hilbert's}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given the following $5\times 5$ matrices: $A$, \emph{Hilbert's matrix} $H$ and its inverse
+\[
+A=
+\begin{bmatrix}
+\frac{1}{5} & \frac{1}{6} & \frac{1}{7} & \frac{1}{8} & \frac{1}{9}\vspace{0.1em}\\
+1 & \frac{2}{3} & \frac{1}{2} & \frac{2}{5} & \frac{1}{3} \vspace{0.1em}\\
+\frac{1}{3} & \frac{1}{4} & \frac{1}{5} & \frac{1}{6} & \frac{1}{7} \vspace{0.1em}\\
+\frac{1}{4} & \frac{1}{5} & \frac{1}{6} & \frac{1}{7} & \frac{1}{8} \vspace{0.1em}\\
+\frac{1}{1} & \frac{1}{2} & \frac{1}{3} & \frac{1}{4} & \frac{1}{5} 
+\end{bmatrix},\;\;
+H=
+\begin{bmatrix}
+  \frac{1}{1} & \frac{1}{2} & \frac{1}{3} & \frac{1}{4} & \frac{1}{5} \vspace{0.1em}\\
+  \frac{1}{2} & \frac{1}{3} & \frac{1}{4} & \frac{1}{5} & \frac{1}{6} \vspace{0.1em}\\
+  \frac{1}{3} & \frac{1}{4} & \frac{1}{5} & \frac{1}{6} & \frac{1}{7} \vspace{0.1em}\\
+  \frac{1}{4} & \frac{1}{5} & \frac{1}{6} & \frac{1}{7} & \frac{1}{8} \vspace{0.1em}\\
+  \frac{1}{5} & \frac{1}{6} & \frac{1}{7} & \frac{1}{8} & \frac{1}{9}
+\end{bmatrix},\]
+\[
+H^{-1}=
+\begin{bmatrix}
+         25    &    -300    &    1050    &   -1400    &     630  \\
+        -300   &     4800   &   -18900   &    26880   &   -12600 \\
+        1050   &   -18900   &    79380   &  -117600   &    56700 \\
+       -1400   &    26880   &  -117600   &   179200   &   -88200 \\
+         630   &   -12600   &    56700   &   -88200   &    44100 
+\end{bmatrix}\]
+\Question Show that $H$ is row equivalent to $A$ by finding two elementary matrices $E_i$ such that $E_2E_1H=A$.
+\Question Find the inverse of $A$.
+\end{Exercise}
+
+\begin{Answer}
+\Question $A$ can be obtained from $H$ by performing $R_1\leftrightarrow R_5$ and $2R_2\to R_2$.  Hence
+\[
+E_1=
+\begin{mat}
+0 & 0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0 & 0
+\end{mat},\;
+E_2=
+\begin{mat}
+1 & 0 & 0 & 0 & 0\\
+0 & 2 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{mat}\]
+\Question $A^{-1} = H^{-1}E^{-1}_1E^{-1}_2\\
+H^{-1}
+E_1
+\begin{mat}
+1 & 0 & 0 & 0 & 0\\
+0 & \frac12 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{mat}\\
+=
+\begin{mat}
+630 & -150 & 1050 & -1400 & 25\\
+-12600 & 2400 & -1890 & 26880 & -300\\
+56700 & -9450 & 79380 & -117600 & 1050\\
+-88200 & 13440 & -117600 & 179200 & -1400\\
+44100 & -6300 & 56700 & -88200 & 630
+\end{mat}
+$
+\end{Answer}

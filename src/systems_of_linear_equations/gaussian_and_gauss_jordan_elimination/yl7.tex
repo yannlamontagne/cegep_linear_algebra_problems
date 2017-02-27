@@ -1,0 +1,51 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Gauss-Jordan Elimination}
+\index{particular solution}
+\index{homogeneous system}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{YL, MH}},
+counter=Exercise]
+Given
+\[
+ A=\begin{mat}
+ 0&2&0&8\\
+ 0&-6&0&3\\
+ 3&7&0&-2\\
+ 5&10&3&7
+\end{mat}
+\]
+
+\Question Find the reduced row echelon form of the matrix $A$.
+\Question Suppose that $A$ is the augmented matrix of a linear system. Write the corresponding system of linear equations. Use the first part to find the solution of the system.
+\Question Suppose that $A$ is the coefficient matrix of a homogeneous linear system. Write the corresponding system of linear equations. Use the first part to find the solution of the system.
+\end{Exercise}
+
+\begin{Answer}
+\Question The reduced row echolon form of $A$ is the identity.
+\Question 
+\[\begin{linsys}{3}
+ &  & 2x_2 &  &  &  = & 8\\
+ & - & 6x_2 &  &  &  = & 3\\
+3x_1 & + & 7x_2 &   &   &  = & -2\\
+5x_1 & + & 10x_2 & +  & 3x_3  &  = & 7
+\end{linsys}\] No solution since the reduced row echolon form has a leading one in the constant column.
+\Question
+\[\begin{linsys}{4}
+ &  & 2x_2 &  &  & + & 8x_4 & = & 0\\
+ & - & 6x_2 &  &  & + & 3x_4 & = & 0\\
+3x_1 & + & 7x_2 &   &  &  - & 2x_4 & = & 0\\
+5x_1 & + & 10x_2 & +  & 3x_3  & + & 7x_4 & = & 0
+\end{linsys}\] Only the trivial solution since there are 4 unknowns and 4 leading one's. 
+\end{Answer}
+

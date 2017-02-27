@@ -1,0 +1,46 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!magic}
+\index{magic matrix}
+\index{row equivalent}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given a $5\times 5$ \emph{Magic Square (matrix)}
+\[
+M=
+\begin{bmatrix}
+11&24&7&20&3\\
+4&12&25&8&16\\
+17&5&13&21&9\\
+10&18&1&14&22\\
+23&6&19&2&15
+\end{bmatrix} \text{ and }
+A=
+\begin{bmatrix}
+4&12&25&8&16\\
+11&24&7&20&3\\
+34&10&26&42&18\\
+10&18&1&14&22\\
+33&24&20&16&37
+\end{bmatrix}
+\]
+\Question True or False: There exists an elementary matrix $E$ such that $EM=A$. Justify.
+\Question If possible show that $M$ and $A$ are row-equivalent. Justify.
+\end{Exercise}
+
+\begin{Answer}
+\Question False, There is no single elementary row operation to obtain $A$ from $M$.  Hence no single elementary matrix such that when its multiplied on the left of $M$, $A$ is the result.
+\Question $A$ is obtained from $M$ by performing the following elementary row operation: $R_1\leftrightarrow R_2$, $2R_3\to R_3$ and $R_4+R_5\to R_5$. 
+\end{Answer}
