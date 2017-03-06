@@ -57,6 +57,7 @@
 \indexentry{augmented matrix|hyperpage}{5}
 \indexentry{inconsistent system|hyperpage}{5}
 \indexentry{infinitely many solutions|hyperpage}{5}
+\indexentry{no solution, unique solution, infinitely many solution|hyperpage}{5}
 \indexentry{infinitely many solution|hyperpage}{5}
 \indexentry{unique solution|hyperpage}{5}
 \indexentry{trivial solution|hyperpage}{5}
@@ -162,6 +163,9 @@
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
 \indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!inverse|hyperpage}{12}
+\indexentry{matrix!transpose|hyperpage}{12}
+\indexentry{matrix!equation|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
 \indexentry{matrix equation|hyperpage}{12}
 \indexentry{matrix inverse|hyperpage}{12}
@@ -203,8 +207,8 @@
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{cancellation law|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{matrix inverse|hyperpage}{13}
-\indexentry{zero factor property|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{14}
+\indexentry{zero factor property|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!commutativity|hyperpage}{14}
