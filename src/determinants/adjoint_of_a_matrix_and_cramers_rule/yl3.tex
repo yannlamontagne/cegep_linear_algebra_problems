@@ -48,18 +48,19 @@ C=
 \end{mat}.
 \]
 
-\Question If $G$ is a $\nbyn{4}$ matrix show that $BG$ is not invertible.
-\Question If $F$ is a $\nbyn{10}$ invertible matrix then evaluate $\det\left(F^{101}\adj(A)(F^{-1})^{101}\right)$.
+\Question Given $G$ is a $\nbyn{4}$ matrix show that $BG$ is not invertible.
+\Question Given $F$ is a $\nbyn{10}$ invertible matrix evaluate $\det\left(F^{101}\adj(A)(F^{-1})^{101}\right)$.
 \Question Evaluate $\det\left(2\adj(A)+3A^{-1}\right)$, if possible.
-\Question If $D$ is a $\nbyn{10}$ matrix such that $A^{-1}D^2=I$ then determine $\det(D)$, if possible.
+\Question Given $D$ is a $\nbyn{10}$ matrix such that $A^{-1}D^2=I$ determine $\det(D)$, if possible.
 \Question Evaluate $\det\left(B^{101}\adj(C)+BC^{2015}\right)$, if possible.
-\Question If $E$ is a square matrix and $\det\left(\frac{\det(C)}{2}\trans{E}A^3\right)=\pi$ then find $\det(E)$, if possible.
-\Question If $H$ is a $\nbyn{10}$ matrix and $\det(2HA+H\text{adj}(A)A^2)=0$ then show that $H$ singular.
+\Question Given $E$ is a square matrix and $\det\left(\frac{\det(C)}{2}\trans{E}A^3\right)=\pi$ find $\det(E)$, if possible.
+\Question Given $H$ is a $\nbyn{10}$ matrix and $\det(2HA+H\text{adj}(A)A^2)=0$ show that $H$ singular.
 \Question Evaluate $\det(\adj(A)+I)$, if possible.
 \Question Determine $\adj(\adj (A))$, if possible.
 \end{Exercise}
 
 \begin{Answer}
+\begin{multicols}{2}
 \Question Hint: take the determinant of $BG$.
 \Question $(10!)^9$
 \Question $\frac{(2(10!)+3)^{10}}{10!}$
@@ -67,6 +68,8 @@ C=
 \Question $0$
 \Question $\frac{2^{10}\pi}{(96)^{10}(10!)^3}$
 \Question Hint: Show that $\det(H)(2+\det(A))^{10}\det(A)=0$ then conclude that $\det(H)=0$.
-\Question $\frac{(10+10!)(9+10!)(8+10!)(7+10!)(6+10!)(5+10!)(4+10!)(3+10!)(2+10!)(1+10!)}{(10!)^{10}}$
+\Question $\frac{(10+10!)(9+10!)\cdots(2+10!)(1+10!)}{(10!)^{10}}$
 \Question Hint: Show that $\adj(\adj(A))=(\det(A))^{n-2}A$.
+\EndCurrentQuestion
+\end{multicols}
 \end{Answer}

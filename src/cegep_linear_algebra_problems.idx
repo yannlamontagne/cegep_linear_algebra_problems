@@ -301,9 +301,6 @@
 \indexentry{Laplace expansion|hyperpage}{18}
 \indexentry{cofactor expansion|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
-\indexentry{Laplace expansion|hyperpage}{18}
-\indexentry{cofactor expansion|hyperpage}{18}
-\indexentry{determinant|hyperpage}{18}
 \indexentry{elementary operation|hyperpage}{18}
 \indexentry{elementary operation|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
@@ -576,8 +573,8 @@
 \indexentry{projection|hyperpage}{29}
 \indexentry{distance:from a point to a line|hyperpage}{29}
 \indexentry{nearest point:to a point in a line|hyperpage}{29}
-\indexentry{distance!point to line|hyperpage}{30}
-\indexentry{distance|hyperpage}{30}
+\indexentry{distance!point to line|hyperpage}{29}
+\indexentry{distance|hyperpage}{29}
 \indexentry{projection|hyperpage}{30}
 \indexentry{distance:from a point to a line|hyperpage}{30}
 \indexentry{nearest point:to a point in a line|hyperpage}{30}
