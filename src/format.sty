@@ -20,6 +20,7 @@
 \RequirePackage{array}
 \RequirePackage{amscd}
 % \RequirePackage{accents}
+\RequirePackage{bm} %for bold vector notation
 
 
 %--------linsys
@@ -153,6 +154,7 @@
 %=============================================
 % misc math definitions
 %
+\renewcommand{\vec}[1]{\bm{#1}}
 \DeclareMathOperator{\trace}{tr}
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\nullity}{nullity}

@@ -544,30 +544,31 @@
 \indexentry{cross product|hyperpage}{28}
 \indexentry{orthogonal vector|hyperpage}{28}
 \indexentry{projection|hyperpage}{28}
-\indexentry{line|hyperpage}{28}
-\indexentry{line|hyperpage}{28}
-\indexentry{vector|hyperpage}{28}
-\indexentry{equation of line|hyperpage}{28}
-\indexentry{vector equation of line|hyperpage}{28}
-\indexentry{parametric equation of line|hyperpage}{28}
-\indexentry{symmetric equation of line|hyperpage}{28}
-\indexentry{line!vector equation|hyperpage}{28}
-\indexentry{line!parametric equations|hyperpage}{28}
-\indexentry{line!vector equation|hyperpage}{28}
-\indexentry{line!parallel|hyperpage}{28}
-\indexentry{line!parametric equations|hyperpage}{28}
-\indexentry{line!parallel|hyperpage}{28}
-\indexentry{vector|hyperpage}{29}
 \indexentry{line|hyperpage}{29}
 \indexentry{line|hyperpage}{29}
-\indexentry{intersection!two lines|hyperpage}{29}
-\indexentry{line|hyperpage}{29}
-\indexentry{intersection!two lines|hyperpage}{29}
 \indexentry{vector|hyperpage}{29}
 \indexentry{equation of line|hyperpage}{29}
 \indexentry{vector equation of line|hyperpage}{29}
 \indexentry{parametric equation of line|hyperpage}{29}
 \indexentry{symmetric equation of line|hyperpage}{29}
+\indexentry{line!vector equation|hyperpage}{29}
+\indexentry{line!parametric equations|hyperpage}{29}
+\indexentry{line!vector equation|hyperpage}{29}
+\indexentry{line!parallel|hyperpage}{29}
+\indexentry{line!parametric equations|hyperpage}{29}
+\indexentry{line!parallel|hyperpage}{29}
+\indexentry{vector|hyperpage}{29}
+\indexentry{line|hyperpage}{29}
+\indexentry{line|hyperpage}{29}
+\indexentry{intersection!two lines|hyperpage}{29}
+\indexentry{line|hyperpage}{29}
+\indexentry{intersection!two lines|hyperpage}{29}
+\indexentry{equation of line|hyperpage}{29}
+\indexentry{vector equation of line|hyperpage}{29}
+\indexentry{parametric equation of line|hyperpage}{29}
+\indexentry{skew lines, line!skew|hyperpage}{29}
+\indexentry{parallel lines, line!parallel|hyperpage}{29}
+\indexentry{intersection of lines, line!intersection|hyperpage}{29}
 \indexentry{vector|hyperpage}{29}
 \indexentry{line|hyperpage}{29}
 \indexentry{intersection|hyperpage}{29}
@@ -575,20 +576,30 @@
 \indexentry{projection|hyperpage}{29}
 \indexentry{distance:from a point to a line|hyperpage}{29}
 \indexentry{nearest point:to a point in a line|hyperpage}{29}
-\indexentry{distance!point to line|hyperpage}{29}
-\indexentry{distance|hyperpage}{29}
-\indexentry{projection|hyperpage}{29}
-\indexentry{distance:from a point to a line|hyperpage}{29}
-\indexentry{nearest point:to a point in a line|hyperpage}{29}
-\indexentry{projection|hyperpage}{29}
-\indexentry{distance:from a point to a line|hyperpage}{29}
-\indexentry{nearest point:to a point in a line|hyperpage}{29}
-\indexentry{distance!line to line|hyperpage}{29}
-\indexentry{distance|hyperpage}{29}
-\indexentry{lines|hyperpage}{29}
-\indexentry{lines!parallel|hyperpage}{29}
-\indexentry{lines!intersection|hyperpage}{29}
-\indexentry{lines!skew|hyperpage}{29}
+\indexentry{distance!point to line|hyperpage}{30}
+\indexentry{distance|hyperpage}{30}
+\indexentry{projection|hyperpage}{30}
+\indexentry{distance:from a point to a line|hyperpage}{30}
+\indexentry{nearest point:to a point in a line|hyperpage}{30}
+\indexentry{projection|hyperpage}{30}
+\indexentry{distance:from a point to a line|hyperpage}{30}
+\indexentry{nearest point:to a point in a line|hyperpage}{30}
+\indexentry{distance!line to line|hyperpage}{30}
+\indexentry{distance|hyperpage}{30}
+\indexentry{skew lines, line!skew|hyperpage}{30}
+\indexentry{parallel lines, line!parallel|hyperpage}{30}
+\indexentry{intersection of lines, line!intersection|hyperpage}{30}
+\indexentry{distance|hyperpage}{30}
+\indexentry{distance!two lines|hyperpage}{30}
+\indexentry{distance!skew lines|hyperpage}{30}
+\indexentry{distance!parallel lines|hyperpage}{30}
+\indexentry{nearest point|hyperpage}{30}
+\indexentry{nearest point!skew lines|hyperpage}{30}
+\indexentry{nearest point!parallel lines|hyperpage}{30}
+\indexentry{lines|hyperpage}{30}
+\indexentry{lines!parallel|hyperpage}{30}
+\indexentry{lines!intersection|hyperpage}{30}
+\indexentry{lines!skew|hyperpage}{30}
 \indexentry{plane!point-normal equation|hyperpage}{30}
 \indexentry{plane!parallel to another plane|hyperpage}{30}
 \indexentry{plane!parallel to another plane|hyperpage}{30}
@@ -597,13 +608,13 @@
 \indexentry{plane|hyperpage}{30}
 \indexentry{plane!general form|hyperpage}{30}
 \indexentry{plane!standard form|hyperpage}{30}
-\indexentry{plane!point-normal equation|hyperpage}{30}
-\indexentry{plane!point-normal equation|hyperpage}{30}
-\indexentry{plane|hyperpage}{30}
-\indexentry{plane|hyperpage}{30}
-\indexentry{plane!normal vector|hyperpage}{30}
-\indexentry{plane!point-normal equation|hyperpage}{30}
-\indexentry{intersection!between line and plane|hyperpage}{30}
+\indexentry{plane!point-normal equation|hyperpage}{31}
+\indexentry{plane!point-normal equation|hyperpage}{31}
+\indexentry{plane|hyperpage}{31}
+\indexentry{plane|hyperpage}{31}
+\indexentry{plane!normal vector|hyperpage}{31}
+\indexentry{plane!point-normal equation|hyperpage}{31}
+\indexentry{intersection!between line and plane|hyperpage}{31}
 \indexentry{equation of line|hyperpage}{31}
 \indexentry{equation of plane|hyperpage}{31}
 \indexentry{intersection|hyperpage}{31}
@@ -620,18 +631,18 @@
 \indexentry{distance:from a point to a plane|hyperpage}{31}
 \indexentry{projection|hyperpage}{31}
 \indexentry{nearest point:to a point in a hyperplane|hyperpage}{31}
-\indexentry{intersection:line and plane|hyperpage}{31}
-\indexentry{intersection:of two planes|hyperpage}{31}
-\indexentry{intersection:line and plane|hyperpage}{31}
-\indexentry{intersection!two lines|hyperpage}{31}
-\indexentry{plane!point-normal equation|hyperpage}{31}
-\indexentry{distance!two lines|hyperpage}{31}
-\indexentry{plane|hyperpage}{31}
-\indexentry{closest point|hyperpage}{31}
-\indexentry{shortest distance|hyperpage}{31}
-\indexentry{lines|hyperpage}{31}
-\indexentry{lines!skew|hyperpage}{31}
-\indexentry{planes|hyperpage}{31}
+\indexentry{intersection:line and plane|hyperpage}{32}
+\indexentry{intersection:of two planes|hyperpage}{32}
+\indexentry{intersection:line and plane|hyperpage}{32}
+\indexentry{intersection!two lines|hyperpage}{32}
+\indexentry{plane!point-normal equation|hyperpage}{32}
+\indexentry{distance!two lines|hyperpage}{32}
+\indexentry{plane|hyperpage}{32}
+\indexentry{closest point|hyperpage}{32}
+\indexentry{shortest distance|hyperpage}{32}
+\indexentry{lines|hyperpage}{32}
+\indexentry{lines!skew|hyperpage}{32}
+\indexentry{planes|hyperpage}{32}
 \indexentry{plane|hyperpage}{32}
 \indexentry{orthogonal|hyperpage}{32}
 \indexentry{vector space|hyperpage}{33}

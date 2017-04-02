@@ -1,0 +1,41 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{skew lines, line!skew}
+\index{parallel lines, line!parallel}
+\index{intersection of lines, line!intersection}
+\index{distance}
+\index{distance!two lines}
+\index{distance!skew lines}
+\index{distance!parallel lines}
+\index{nearest point}
+\index{nearest point!skew lines}
+\index{nearest point!parallel lines}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Determine whether the two lines intersect, are parallel or are skew lines.  Find a point on each line which is closest to the other line, are those points unique.  Find the shortest distance between the lines.
+\Question $\vec{x}=(1-2t,\;3-t,\;3+3t)$ and $\vec{x}=(4+3t,\; -1+t,\; 2+t)$
+\Question $\vec{x}=(-4,\;5,\;-2)+t(3,\;,-4,\; 1)$ and $\vec{x}=(-3,\; 3,\; 5)+t(4,\;-5,\;-2)$
+\Question $\mathcal{L}_1: \left\{\begin{aligned} x&=3t\\y&=-1+2t\\z&=1+2t\end{aligned}\right.$ and 
+$\mathcal{L}_2: \left\{\begin{aligned} x&=1-6t\\y&=-4t\\z&=2-4t\end{aligned}\right.$.
+\Question $y=2x+1$ and $2y-4x+1$
+
+\end{Exercise}
+\begin{Answer}
+\Question Skew lines. 
+Point on first line: $\left(\frac{5}{3},\; \frac{7}{3},\; 2\right)$, Point on second line: $\left(3,\; -\frac{4}{3},\; \frac{5}{3}\right)$, unique closest points, shortest distance between the two lines: $\sqrt{\frac{46}{3}}$.
+\Question The two lines intersect. $(5, -7, 1)$ is the point of intersection, hence closest to the other line.  And the shortest distance is $0$.
+\Question Parallel lines. Point on first line: $\left(\frac{21}{17},\; -\frac{3}{17},\; \frac{31}{17}\right)$, Point on second line: $\left(1,\; 0,\; 2\right)$, not unique. And the shortest distance is $\sqrt{\frac{2}{17}}$.
+\Question Parallel lines. 
+Point on first line: $\left(-\frac{3}{5},\; -\frac{1}{5}\right)$, Point on second line: $\left((0,\; -\frac{1}{2}\right))$, not unique. And the shortest distance is $\frac{3}{2}\sqrt{\frac{1}{5}}$.
+\end{Answer}
