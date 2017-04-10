@@ -1,0 +1,40 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{adjoint matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Let
+\[
+ A=\begin{bmatrix}
+1 & 2 & 3 & 4\\
+0 & -2 & -3 & -4\\
+2 & 3 & 0 & 0\\
+0 & 4 & 5 & 0
+\end{bmatrix}.
+\]
+\Question Evaluate $\det(A)$.
+\Question Given $M$ is a $4\times 4$ matrix such that $\det(M)=2$, evaluate
+$\det(\det(M)\text{adj}(5M^TA^{-1}))$.
+\Question Given $M$ is a $4\times 4$ matrix such that $\det(M)=3$, evaluate
+$\det(\det(5A^T)\text{adj}(MA^{-1}))$.
+\end{Exercise}
+
+\begin{Answer}
+\begin{multicols}{3}
+\Question $-60$
+\Question $-\frac{2^75^{12}}{60^3}$
+\Question $-3^35^{16}60$
+\EndCurrentQuestion
+\end{multicols}
+\end{Answer}

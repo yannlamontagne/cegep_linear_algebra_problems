@@ -1,0 +1,47 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{determinant}
+\index{elementary operation}
+\index{elementary matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given $r\neq 0$ and  
+$B=
+\begin{bmatrix}
+c & d\\
+ra+2c & rb + 2d
+\end{bmatrix}$
+then express $B$ as $E_3E_2E_1A$ where $E_i$ are elementary matrices and 
+$A=\begin{bmatrix}
+a & b\\
+c & d
+\end{bmatrix}
+$.  And given $\det(A)=2$ find the determinant of $B$ by using the expression $E_3E_2E_1A$.
+\end{Exercise}
+
+\begin{Answer}
+$B=\begin{bmatrix}
+0 & 1\\
+1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+1 & 2\\
+0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+r & 0\\
+0 & 1
+\end{bmatrix}
+A$, $\det(B)=-2r$
+\end{Answer}

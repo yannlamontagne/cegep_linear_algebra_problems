@@ -1,0 +1,43 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+\index{line, parametric equation of line}
+\index{shortest distance}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given the plane $4x+3y+2z=12$.
+\Question Sketch the given plane using the $x$, $y$ and $z$-intercepts.
+\Question Using projections find the shortest distance between the $y$-intercept and the line which passes through the $x$ and $z$-intercepts.
+\Question Find the equation of the line which passes through the $y$-intercept and the closest point to the $y$-intercept from the line which passes through the $x$ and $z$-intercepts.
+
+\end{Exercise}
+
+\begin{Answer}
+\Question\mbox{ }\\
+% note the axes are reversed! 
+\begin{tikzpicture}%[tdplot_main_coords]
+\draw[very thick,->] (0,0,0) -- (5,0,0) node[anchor=north east]{$y$};
+\draw[very thick,->] (0,0,0) -- (0,7,0) node[anchor=north west]{$z$};
+\draw[very thick,->] (0,0,0) -- (0,0,5) node[anchor=south east]{$x$};
+\node[text width = 3cm] at (5,0,1) {$(0,\;4,\;0)$};
+\draw[-] (0,0,3) -- (4,0,0);
+\node[text width = 3cm] at (-0.15,0,3) {$(3,\;0,\;0)$};
+\draw[-] (4,0,0) -- (0,6,0);
+\draw[-] (0,6,0) -- (0,0,3);
+\node[text width = 3cm] at (-0.15,6,0) {$(0,\;0,\;6)$};
+\end{tikzpicture}
+
+\Question $2\sqrt{\frac{29}{5}}$
+\Question $\vec{x}=(0,\;4,\;0)+t(-12,\;20,\;-6)$ where $t\in\Re$
+\end{Answer}
