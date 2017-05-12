@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+\index{intersection, intersetion of two planes, intersection!planes}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given two planes:
+\[
+\begin{array}{llrrrrrrrr}
+\mathcal{P}_1 & : & \; x +z & = 1\\
+\mathcal{P}_2 & : & \; y+z & =1
+\end{array}
+\]
+\Question Give a point of intersection of the two planes, by inspection.
+\Question Give a geometrical argument to explain why the intersection of the two planes is a line.
+\Question Find the direction vector for the intersection of the two planes without solving for the solution set.  Justify.
+\Question Find the solution set of the system of linear equations determined by $\mathcal{P}_1$ and $\mathcal{P}_2$ by only using part a) and part c).
+\end{Exercise}
+
+\begin{Answer}
+\Question $(0,0,1)$
+\Question The normal of both planes are not parallel, hence their inclination are not the same therefore their intersection is a line.
+\Question $\vec{d}=\vec{n}_1\times\vec{n}_2=(-1,-1,1)$
+\Question $(x,y,z)=(0,0,1)+t(-1,-1,1)$ where $t\in\Re$.
+\end{Answer}

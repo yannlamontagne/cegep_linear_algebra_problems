@@ -1,0 +1,36 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+\index{intersection, intersetion of two planes, intersection!planes}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given two planes:
+\[
+\begin{array}{lllrrrrrrrrrrr}
+\mathcal{P}_1 & : & \; &x&-&2y&+&z & = &1\\
+\mathcal{P}_2 & : & \; &-4x&+&8y&-&4z & =&-4
+\end{array}
+\]
+\Question Give a geometrical argument to explain why the intersection of the two planes is a plane.
+\Question Find the solution set of the associated homogeneous linear system.
+\Question Show that the solution set of the associated homegeneous linear system is orthogonal to the rows of the coefficient matrix of the system.
+\Question Give a geometrical interpretation to part c).
+\end{Exercise}
+
+\begin{Answer}
+\Question Both equations are multiples of each other, hence they have the same points in common.  Those points lie on both planes.
+\Question $\rowvec{x,&y,&z}=s\rowvec{2,&1,&0)}+t\rowvec{-1,&0,&1}$ where $s,t\in\Re$
+\Question $s\rowvec{2,&1,&0}+t\rowvec{-1,&0,&1}$ is othogonal to both $\rowvec{1,&-2,& 1}$ and $\rowvec{-4,&8,&-4}$.
+\Question The rows of the coefficient matrix are the normals of the planes, hence the vectors that lie on the plane are orthogonal to the normals.
+\end{Answer}

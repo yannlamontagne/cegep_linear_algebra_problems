@@ -1,8 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
+\index{polynomial space}
 \index{subspace}
-\index{spanning set}
+\index{vector space!subspace}
+
 
 %-----------------------------------------------------
 % name, leave blank
@@ -15,28 +17,11 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Given the following two subspace of $\Re^3$: $W_1=\set{x\suchthat A_1x=0}$ and $W_2=\set{x\suchthat A_2x=0}$
-where 
-\[
-A_1 = 
-\begin{mat}
-1 & 2 & 3\\
-4 & 5 & 6\\
--3 & -3 & -3
-\end{mat},\;
-A_2 = 
-\begin{mat}
-5 & 7 & 9\\
--5 & -7 & -9\\
-10 & 14 & 18
-\end{mat}.
-\]
-Determine whether the two subspaces are equal or whether one of the subspaces is contained in the other.  
-
-
+Determine whether\\
+$W=\left\{a_0+a_1x+a_2x^2\;\mid\; a_0a_1a_2=0\right\}$
+is a subspace of  \( \polyspace_2 \).
 \end{Exercise}
 
 \begin{Answer}
-Hint: For each subspace determine a set of vectors that spans it.\\
-$W_1\subsetneq W_2$
+Not a subspace since it is not closed under vector addition.
 \end{Answer}

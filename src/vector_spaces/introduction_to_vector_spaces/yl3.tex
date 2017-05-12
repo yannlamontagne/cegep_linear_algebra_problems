@@ -1,0 +1,57 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+\index{vector space!matrix space}
+\index{matrix space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+The number of leading 1's in a row echelon form of $A$ is called the \emph{rank} of A.
+Let $V=\{M\;\mid\;M\in\mathcal{M}_{2\times 2}\text{ and } \text{rank}(M)=2\}$ with the following vector addition and scalar multiplication:
+\[
+\begin{mat}
+a & b\\
+c & d
+\end{mat}
++
+\begin{mat}
+e & f\\
+g & h
+\end{mat}
+=
+\begin{mat}
+ae & bf\\
+cg & dh
+\end{mat} \text{ and } 
+k\begin{mat}
+a & b\\
+c & d
+\end{mat}
+=
+\begin{mat}
+a^k & b^k\\
+c^k & d^k
+\end{mat}
+\]
+\Question Is the zero vector an element of $V$? Justify.
+\Question Determine whether the following axiom holds:
+$(rs)M=r(sM)$ where $r,\;s\in\mathbb{R}$ and $M\in V$
+\end{Exercise}
+
+\begin{Answer}
+\Question The element that satisfy the zero vector axiom is $\vec{0}=\begin{mat}
+1 & 1\\
+1 & 1
+\end{mat}$ which is not an element of $V$ since it has rank $1$.
+\Question The axiom holds.
+\end{Answer}

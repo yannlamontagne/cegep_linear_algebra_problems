@@ -15,28 +15,21 @@ name={},
 title={}, 
 difficulty=0,
 origin={\cite{YL}}]
-Given the following two subspace of $\Re^3$: $W_1=\set{x\suchthat A_1x=0}$ and $W_2=\set{x\suchthat A_2x=0}$
-where 
-\[
-A_1 = 
-\begin{mat}
-1 & 2 & 3\\
-4 & 5 & 6\\
--3 & -3 & -3
-\end{mat},\;
-A_2 = 
-\begin{mat}
-5 & 7 & 9\\
--5 & -7 & -9\\
-10 & 14 & 18
-\end{mat}.
-\]
-Determine whether the two subspaces are equal or whether one of the subspaces is contained in the other.  
-
-
+Given $\vec{u}=(1,-1,1), \vec{v}=(-1,1,\lambda), \vec{w}=(1, 2, 3)\in\Re^3$ and the set
+$S=\{\vec{u},\; \vec{v},\; (\vec{u}\cdot \vec{v})\vec{w}\}$.
+\Question Find the value(s), if any, of $\lambda$ for
+which $S$ spans $\Re^3$
+\Question Find the value(s), if any, of $\lambda$ for
+which $S$ spans a plane.
+\Question Find the value(s), if any, of $\lambda$ for
+which $S$ spans a line.
 \end{Exercise}
 
 \begin{Answer}
-Hint: For each subspace determine a set of vectors that spans it.\\
-$W_1\subsetneq W_2$
+\begin{multicols}{3}
+\Question $\lambda\neq1,2$
+\Question $\lambda=1,2$
+\Question No values of $\lambda$ exist.
+\EndCurrentQuestion
+\end{multicols}
 \end{Answer}
