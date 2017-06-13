@@ -62,6 +62,10 @@
 \indexentry{unique solution|hyperpage}{5}
 \indexentry{trivial solution|hyperpage}{5}
 \indexentry{homogeneous system|hyperpage}{5}
+\indexentry{consistent system|hyperpage}{5}
+\indexentry{augmented matrix|hyperpage}{5}
+\indexentry{inconsistent system|hyperpage}{5}
+\indexentry{infinitely many solutions|hyperpage}{5}
 \indexentry{augmented matrix|hyperpage}{5}
 \indexentry{no solution, unique solution, infinitely many solution|hyperpage}{5}
 \indexentry{consistent|hyperpage}{5}
@@ -102,6 +106,8 @@
 \indexentry{triangular matrix|hyperpage}{8}
 \indexentry{matrix!arithmetic|hyperpage}{8}
 \indexentry{matrix!transpose|hyperpage}{8}
+\indexentry{matrix powers|hyperpage}{9}
+\indexentry{matrix!power|hyperpage}{9}
 \indexentry{matrix!product|hyperpage}{9}
 \indexentry{matrix!transpose|hyperpage}{9}
 \indexentry{matrix!dimension|hyperpage}{9}
@@ -197,6 +203,8 @@
 \indexentry{matrix!equation|hyperpage}{13}
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix equation|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{matrix equation|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!expression|hyperpage}{13}
 \indexentry{matrix!transpose|hyperpage}{13}
@@ -204,9 +212,9 @@
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
-\indexentry{matrix inverse|hyperpage}{13}
-\indexentry{cancellation law|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{14}
+\indexentry{cancellation law|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix inverse|hyperpage}{14}
 \indexentry{zero factor property|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
@@ -249,6 +257,8 @@
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{matrix!elementary|hyperpage}{15}
+\indexentry{matrix!reduced row echelon form|hyperpage}{15}
+\indexentry{matrix!elementary|hyperpage}{15}
 \indexentry{matrix!inverse|hyperpage}{15}
 \indexentry{matrix!elementary|hyperpage}{15}
 \indexentry{matrix!magic|hyperpage}{15}
@@ -256,9 +266,9 @@
 \indexentry{row equivalent|hyperpage}{15}
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{row-equivalent|hyperpage}{15}
-\indexentry{matrix!elementary|hyperpage}{15}
-\indexentry{matrix!transpose|hyperpage}{15}
-\indexentry{matrix equation|hyperpage}{15}
+\indexentry{matrix!elementary|hyperpage}{16}
+\indexentry{matrix!transpose|hyperpage}{16}
+\indexentry{matrix equation|hyperpage}{16}
 \indexentry{matrix!elementary|hyperpage}{16}
 \indexentry{matrix!inverse|hyperpage}{16}
 \indexentry{matrix!row equivalent|hyperpage}{16}
@@ -297,6 +307,12 @@
 \indexentry{determinant|hyperpage}{17}
 \indexentry{determinant!triangular|hyperpage}{17}
 \indexentry{matrix!triangular|hyperpage}{17}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{determinant!triangular|hyperpage}{18}
+\indexentry{matrix!triangular|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{Laplace expansion|hyperpage}{18}
+\indexentry{cofactor expansion|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{Laplace expansion|hyperpage}{18}
 \indexentry{cofactor expansion|hyperpage}{18}
@@ -417,6 +433,11 @@
 \indexentry{determinant|hyperpage}{22}
 \indexentry{adjoint matrix|hyperpage}{22}
 \indexentry{singular matrix|hyperpage}{22}
+\indexentry{adjoint matrix|hyperpage}{22}
+\indexentry{matrix!adjoint|hyperpage}{22}
+\indexentry{matrix!invertible|hyperpage}{22}
+\indexentry{invertible matrix|hyperpage}{22}
+\indexentry{determinant|hyperpage}{22}
 \indexentry{system of linear equations|hyperpage}{22}
 \indexentry{Cramer's Rule|hyperpage}{22}
 \indexentry{determinant|hyperpage}{22}
@@ -540,8 +561,12 @@
 \indexentry{cross product|hyperpage}{30}
 \indexentry{orthogonal vector|hyperpage}{30}
 \indexentry{cross product|hyperpage}{30}
+\indexentry{orthogonal vector|hyperpage}{30}
+\indexentry{cross product|hyperpage}{30}
 \indexentry{cross product|hyperpage}{30}
 \indexentry{area of triangle|hyperpage}{30}
+\indexentry{area!triangle|hyperpage}{30}
+\indexentry{cross product|hyperpage}{30}
 \indexentry{area!parallelogram|hyperpage}{30}
 \indexentry{cross product|hyperpage}{30}
 \indexentry{volume:parallelepiped|hyperpage}{30}
@@ -558,7 +583,7 @@
 \indexentry{volume!oblique cylinder|hyperpage}{30}
 \indexentry{volume|hyperpage}{30}
 \indexentry{oblique cylinder|hyperpage}{30}
-\indexentry{scalar triple product|hyperpage}{30}
+\indexentry{scalar triple product|hyperpage}{31}
 \indexentry{cross product|hyperpage}{31}
 \indexentry{scalar triple product|hyperpage}{31}
 \indexentry{coplanar|hyperpage}{31}
@@ -609,6 +634,8 @@
 \indexentry{nearest point:to a point in a line|hyperpage}{32}
 \indexentry{line, parametric equation of line|hyperpage}{32}
 \indexentry{area, area!triangle|hyperpage}{32}
+\indexentry{line, parametric equation of line|hyperpage}{32}
+\indexentry{skew line, line!skew|hyperpage}{32}
 \indexentry{distance!line to line|hyperpage}{32}
 \indexentry{distance|hyperpage}{32}
 \indexentry{skew lines, line!skew|hyperpage}{32}
@@ -625,10 +652,12 @@
 \indexentry{lines!parallel|hyperpage}{32}
 \indexentry{lines!intersection|hyperpage}{32}
 \indexentry{lines!skew|hyperpage}{32}
-\indexentry{line, parametric equation of line|hyperpage}{32}
-\indexentry{skew line, line!skew|hyperpage}{32}
-\indexentry{distance|hyperpage}{32}
-\indexentry{distance!skew lines|hyperpage}{32}
+\indexentry{line, parametric equation of line|hyperpage}{33}
+\indexentry{skew line, line!skew|hyperpage}{33}
+\indexentry{distance|hyperpage}{33}
+\indexentry{distance!skew lines|hyperpage}{33}
+\indexentry{line, parametric equation of line|hyperpage}{33}
+\indexentry{skew line, line!skew|hyperpage}{33}
 \indexentry{plane!point-normal equation|hyperpage}{33}
 \indexentry{plane!parallel to another plane|hyperpage}{33}
 \indexentry{plane!parallel to another plane|hyperpage}{33}
@@ -661,6 +690,8 @@
 \indexentry{distance!point to plane|hyperpage}{34}
 \indexentry{distance!plane to plane|hyperpage}{34}
 \indexentry{distance|hyperpage}{34}
+\indexentry{plane|hyperpage}{34}
+\indexentry{closest point|hyperpage}{34}
 \indexentry{projection|hyperpage}{34}
 \indexentry{distance:from a point to a plane|hyperpage}{34}
 \indexentry{projection|hyperpage}{35}
@@ -869,6 +900,8 @@
 \indexentry{basis|hyperpage}{44}
 \indexentry{homogeneous system|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
+\indexentry{homogeneous system|hyperpage}{44}
+\indexentry{basis|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
 \indexentry{polynomial space|hyperpage}{44}
 \indexentry{matrix space|hyperpage}{44}
@@ -887,7 +920,7 @@
 \indexentry{basis|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
 \indexentry{polynomial space|hyperpage}{44}
-\indexentry{basis|hyperpage}{44}
+\indexentry{basis|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
 \indexentry{linear combination|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}

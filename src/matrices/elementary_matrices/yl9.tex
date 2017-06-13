@@ -1,0 +1,50 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!reduced row echelon form}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Express
+\[
+A=\begin{mat}
+1 & 0 & 2\\
+2 & 0 & 4\\
+0 & 3 & 3
+\end{mat}
+\]
+as a product of elementary matrices, $E_i$, and a reduced row echelon matrix, $R$.  That is, express $A$ as $E_k\cdots E_2E_1R$.
+\end{Exercise}
+
+\begin{Answer}
+$A=E_3E_2E_1R\\=\begin{mat}
+1 & 0 & 0\\
+2 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 3
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0
+\end{mat}
+\begin{mat}
+1 & 0 & 2\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{mat}$
+\end{Answer}

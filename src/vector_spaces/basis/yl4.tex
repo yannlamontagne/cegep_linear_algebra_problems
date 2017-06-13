@@ -1,0 +1,42 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{homogeneous system}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given
+\[
+M=\begin{mat}
+1 & 2 & 2 & -1 & 3 & 1\\
+0 & 0 & 1 & 1  & 2 & 2\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{mat}
+\]
+where $M$ is in row echelon form.
+\Question Find the reduced row echelon form of $M$.
+\Question Find a basis for the solution space of the 
+homogeneous system of linear equations whose coefficient 
+matrix is $M$.
+\end{Exercise}
+
+\begin{Answer}
+\Question $\begin{mat}
+1 & 2 & 0 & -3 & 0 & -2\\
+0 & 0 & 1 & 1  & 0 & 0\\
+0 & 0 & 0 & 0  & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{mat}$
+\Question $B=\{(2,\;0,\;0,\;0,\;-1,\;1),\\(3,\;0,\;-1,\;1,\;0,\;0),\;(-2,\;1,\;0,\;0,\;0,\;0)\}$
+\end{Answer}
