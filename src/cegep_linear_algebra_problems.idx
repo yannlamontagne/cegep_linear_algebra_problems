@@ -767,13 +767,16 @@
 \indexentry{function space|hyperpage}{38}
 \indexentry{odd function|hyperpage}{38}
 \indexentry{vector space|hyperpage}{38}
+\indexentry{vector space!polynomial space|hyperpage}{38}
+\indexentry{polynomial space|hyperpage}{38}
+\indexentry{vector space|hyperpage}{38}
 \indexentry{positive real numbers|hyperpage}{38}
 \indexentry{vector space|hyperpage}{38}
 \indexentry{vector space|hyperpage}{38}
 \indexentry{vector space|hyperpage}{38}
-\indexentry{vector space|hyperpage}{38}
-\indexentry{vector space|hyperpage}{38}
-\indexentry{zero vector|hyperpage}{38}
+\indexentry{vector space|hyperpage}{39}
+\indexentry{vector space|hyperpage}{39}
+\indexentry{zero vector|hyperpage}{39}
 \indexentry{vector space|hyperpage}{39}
 \indexentry{matrix space|hyperpage}{39}
 \indexentry{vector space|hyperpage}{39}
@@ -917,9 +920,11 @@
 \indexentry{matrix space|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
+\indexentry{orthogonal|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
-\indexentry{polynomial space|hyperpage}{44}
+\indexentry{basis|hyperpage}{45}
+\indexentry{polynomial space|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
 \indexentry{linear combination|hyperpage}{45}

@@ -1,0 +1,35 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{vector space}
+\index{vector space!polynomial space}
+\index{polynomial space}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given\\ $V=\set{a_0+a_1x+a_2x^2\suchthat a_0+a_1=\pi \text{ and } a_i\in\Re}$ and the following
+vector addition and scalar multiplication:\\
+\begin{align*}
+p(x)+q(x)&=(a_0+b_0)+(a_1+b_1-\pi)x+a_2b_2x^2 \text{ and }\\
+r\cdot p(x)&=ra_0+(ra_1-\pi)x+(a_2)^rx^2
+\end{align*}
+where $p(x)=a_0+a_1x+a_2x^2$ and $q(x)=b_0+b_1x+b_2x^2$.
+\Question Determine whether the above set is closed under vector addition.
+\Question Determine whether the above set is closed under scalar multiplication.
+\Question Is $V$ a vector space under the given operations? Justify.
+\end{Exercise}
+
+\begin{Answer}
+\Question Closed under vector addition.
+\Question Not closed under scalar multiplication.
+\Question Not a vector space since at least one of the ten axioms fail.  Namely, closure under scalar multiplication.
+\end{Answer}

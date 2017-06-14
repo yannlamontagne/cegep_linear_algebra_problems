@@ -1,0 +1,38 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{basis}
+\index{orthogonal}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{BS}}]
+Let $\vec{u}$, $\vec{v}$ and $\vec{w}$ be non-zero vectors in $\Re^3$.  Show that if
+$\vec{u}\cdot\vec{v}=\vec{u}\cdot\vec{w}=\vec{v}\cdot\vec{w}=0$ then $\{\vec{u}, \vec{v}, \vec{w}\}$ is a basis for $\Re^3$.
+\end{Exercise}
+
+\begin{Answer}
+Since $\text{dim}(\Re^3)=3$ then it is sufficient to show
+that $\{\vec{u},\;\vec{v},\;\vec{w}\}$ is linearly indpendent
+to conclude that $\{\vec{u},\;\vec{v},\;\vec{w}\}$ spans $\mathbb{R}^3$,
+hence is a basis of $\Re^3$.
+
+Given $c_1\vec{u}+c_2\vec{v}+c_3\vec{w}=\vec{0}$, and taking the dot product
+of both sides of the equality with $\vec{u}$.
+\begin{eqnarray*}
+\vec{u}\cdot(c_1\vec{u}+c_2\vec{v}+c_3\vec{w})&=&\vec{u}\cdot\vec{0}\\
+\vec{u}\cdot(c_1\vec{u})+\vec{u}\cdot(c_2\vec{v})+\vec{u}\cdot(c_3\vec{w})&=&0\\
+c_1\vec{u}\cdot\vec{u}+c_2\vec{u}\cdot\vec{v}+c_3\vec{u}\cdot\vec{w}&=&0 \text{ since } \vec{u}\cdot\vec{v}=\vec{u}\cdot\vec{w}=0\\
+c_1||\vec{u}||^2&=&0 \text{ since }\vec{u}\neq\vec{0}\\
+c_1&=& 0
+\end{eqnarray*}
+is obtained.  Similarly if applied using $\vec{v}$ and $\vec{w}$ then $c_2=0$ and $c_3=0$ is obtained.  Since only the trivial solution satisfies the linear combination that gives the zero vector, $\{\vec{u},\;\vec{v},\;\vec{w}\}$ is linearly independent and is a basis of $\Re^3$.
+\end{Answer}
