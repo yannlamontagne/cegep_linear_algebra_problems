@@ -1,0 +1,82 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix space}
+\index{basis}
+\index{coordinate vector}
+\index{spanning set}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given $
+B=\set{M_1,\; M_2,\; M_3}
+$
+a basis of $W=\text{span}(B)$ where
+$M_1=
+\begin{mat}
+1 & 2\\
+0 & 1
+\end{mat}$,
+$M_2=
+\begin{mat}
+1 & 0\\
+0 & 1
+\end{mat}$, 
+$M_3=
+\begin{mat}
+1 & 2\\
+0 & -1
+\end{mat}.
+$
+
+\Question Is
+$\begin{mat}
+0 & 0\\
+0 & 0
+\end{mat}\in W$? Justify.
+\Question Is
+$\begin{mat}
+0 & 0\\
+1 & 0
+\end{mat}\in W$? Justify.
+
+\Question Show
+$M=\begin{mat}
+1 & 2\\
+0 & 3
+\end{mat}\in W$ and find the coordinates of $M$ relative to the basis $B$. That is, find $(M)_B$.
+
+\end{Exercise}
+
+\begin{Answer}
+\Question $\begin{mat}
+0 & 0\\
+0 & 0
+\end{mat}\in W$, since
+$\begin{mat}
+0 & 0\\
+0 & 0
+\end{mat}=c_1M_1+c_2M_2+c_3M_3$ is satisfied when $c_1=c_2=c_3=0$.
+\Question $\begin{mat}
+0 & 0\\
+1 & 0
+\end{mat}\notin W$ since
+$\begin{mat}
+0 & 0\\
+1 & 0
+\end{mat}=c_1M_1+c_2M_2+c_3M_3$ gives rise to the inconsistent equation
+$c_10+c_20+c_30=1$. 
+\Question $M=\begin{mat}
+1 & 2\\
+0 & 3
+\end{mat}=c_1M_1+c_2M_2+c_3M_3$ is satisfied when $c_1=2$, $c_2=0$ and $c_3=-1$, hence $(M)_B=(2,0,-1)$.
+\end{Answer}

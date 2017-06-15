@@ -149,6 +149,7 @@
 \indexentry{matrix power|hyperpage}{10}
 \indexentry{matrix!arithmetic|hyperpage}{10}
 \indexentry{matrix!algebraic properties|hyperpage}{10}
+\indexentry{matrix power|hyperpage}{11}
 \indexentry{matrix!cancellation law|hyperpage}{11}
 \indexentry{matrix!commutativity|hyperpage}{11}
 \indexentry{matrix!zero factor property|hyperpage}{11}
@@ -282,6 +283,8 @@
 \indexentry{matrix!transpose|hyperpage}{16}
 \indexentry{matrix equation|hyperpage}{16}
 \indexentry{row equivalent|hyperpage}{16}
+\indexentry{row equivalent|hyperpage}{16}
+\indexentry{matrix!row equivalent|hyperpage}{16}
 \indexentry{Laplace expansion|hyperpage}{17}
 \indexentry{determinant|hyperpage}{17}
 \indexentry{co-factor expansion|hyperpage}{17}
@@ -912,6 +915,10 @@
 \indexentry{polynomial space|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
 \indexentry{polynomial space|hyperpage}{44}
+\indexentry{matrix space|hyperpage}{44}
+\indexentry{basis|hyperpage}{44}
+\indexentry{coordinate vector|hyperpage}{44}
+\indexentry{spanning set|hyperpage}{44}
 \indexentry{polynomial space|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
 \indexentry{coordinate vector|hyperpage}{44}
@@ -919,10 +926,10 @@
 \indexentry{basis|hyperpage}{44}
 \indexentry{matrix space|hyperpage}{44}
 \indexentry{basis|hyperpage}{44}
-\indexentry{basis|hyperpage}{44}
-\indexentry{orthogonal|hyperpage}{44}
-\indexentry{basis|hyperpage}{44}
-\indexentry{basis|hyperpage}{44}
+\indexentry{basis|hyperpage}{45}
+\indexentry{orthogonal|hyperpage}{45}
+\indexentry{basis|hyperpage}{45}
+\indexentry{basis|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
 \indexentry{polynomial space|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
@@ -933,25 +940,25 @@
 \indexentry{matrix!symmetric|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
 \indexentry{basis|hyperpage}{45}
-\indexentry{polynomial space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{matrix space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{homogeneous system|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{matrix space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{polynomial space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{matrix space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{function space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{matrix space|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{dimension|hyperpage}{45}
-\indexentry{function space|hyperpage}{45}
+\indexentry{polynomial space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{matrix space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{homogeneous system|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{matrix space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{polynomial space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{matrix space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{function space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{matrix space|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{dimension|hyperpage}{46}
+\indexentry{function space|hyperpage}{46}
 \indexentry{dimension|hyperpage}{46}
 \indexentry{dimension|hyperpage}{46}
 \indexentry{dimension|hyperpage}{46}

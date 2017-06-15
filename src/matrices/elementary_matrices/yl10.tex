@@ -1,0 +1,27 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{row equivalent}
+\index{matrix!row equivalent}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Determine whether the following statement is true or false for any $n\times n$
+matrices $A$ and $B$.  If the statement is false provide a counterexample. If the
+statement is true provide a proof of the statement.\\
+
+If $A$ and $B$ are invertible then $A$ and $B$ are row equivalent.
+\end{Exercise}
+
+\begin{Answer}
+True, the reduced row echelon form of $A$ and $B$ is $I$ since both matrices are invertible.  Hence there exists a finite sequence of elementary row operations that when applied on $A$ result in $I$. And a second finite sequence of elementary row operations that when applied on $B$ result in $I$.  If the first sequence of elementary row operations is applied on $A$ followed by the inverse elementary row operations applied in reverse order of the second sequence of elemtary row operations then $B$ is obtained.  Hence $A$ and $B$ are row equivalent.
+\end{Answer}
