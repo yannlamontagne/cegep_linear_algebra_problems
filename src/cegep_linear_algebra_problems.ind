@@ -13,10 +13,11 @@
   \item area of triangle, \hyperpage{30}
   \item area, area
     \subitem triangle, \hyperpage{32}
-  \item augmented matrix, \hyperpage{1}, \hyperpage{4, 5}
+  \item augmented matrix, \hyperpage{1}, \hyperpage{5}
 
   \indexspace
 
+  \item back substitution, \hyperpage{4}
   \item basis, \hyperpage{44, 45}
   \item bisector, \hyperpage{29}
 
@@ -26,11 +27,12 @@
   \item Cauchy-Schwartz Inequality, \hyperpage{28}
   \item closest point, \hyperpage{34, 35}
   \item co-factor expansion, \hyperpage{17}
+  \item coefficient matrix, \hyperpage{13}
   \item cofactor, \hyperpage{17}, \hyperpage{23}
   \item cofactor expansion, \hyperpage{17--19}
   \item collinear, \hyperpage{26}
   \item consistent, \hyperpage{5}
-  \item consistent system, \hyperpage{4, 5}
+  \item consistent system, \hyperpage{5}, \hyperpage{13}
   \item consistent, inconsistent, \hyperpage{4}
   \item coordinate vector, \hyperpage{44}
   \item coplanar, \hyperpage{31}
@@ -42,7 +44,8 @@
 
   \item determinant, \hyperpage{17--22}
     \subitem triangular, \hyperpage{17, 18}
-  \item diagonal matrix, \hyperpage{7, 8}, \hyperpage{38}
+  \item diagonal matrix, \hyperpage{7, 8}, \hyperpage{10}, 
+		\hyperpage{38}
   \item dimension, \hyperpage{46}
   \item distance, \hyperpage{32--34}, \hyperpage{36}
     \subitem between two points, \hyperpage{25}
@@ -95,10 +98,10 @@
   \item idempotent matrix, \hyperpage{11}
   \item ij product, \hyperpage{7}
   \item inconsistent, \hyperpage{4}
-  \item inconsistent system, \hyperpage{4, 5}
+  \item inconsistent system, \hyperpage{5}
   \item infinite solutions, \hyperpage{4}
   \item infinitely many solution, \hyperpage{5}
-  \item infinitely many solutions, \hyperpage{4, 5}
+  \item infinitely many solutions, \hyperpage{5}
   \item intersection, \hyperpage{32}, \hyperpage{34}
     \subitem between line and plane, \hyperpage{34}
     \subitem line and plane, \hyperpage{34}
@@ -112,7 +115,7 @@
     \subitem planes, \hyperpage{35}
   \item intersection:line and plane, \hyperpage{35}
   \item intersection:of two planes, \hyperpage{35}
-  \item invertible matrix, \hyperpage{21, 22}
+  \item invertible matrix, \hyperpage{14}, \hyperpage{21, 22}
 
   \indexspace
 
@@ -148,6 +151,7 @@
     \subitem arithmetic, \hyperpage{8}, \hyperpage{10}
     \subitem augmented, \hyperpage{2}
     \subitem cancellation law, \hyperpage{11}
+    \subitem coefficient, \hyperpage{13}
     \subitem commutativity, \hyperpage{11}, \hyperpage{14}
     \subitem commutitavity, \hyperpage{11}
     \subitem diagonal, \hyperpage{9}
@@ -157,10 +161,10 @@
     \subitem equation, \hyperpage{12, 13}
     \subitem expression, \hyperpage{13}
     \subitem Hilbert's, \hyperpage{16}
-    \subitem idempotent, \hyperpage{9}
+    \subitem idempotent, \hyperpage{10}
     \subitem inverse, \hyperpage{9}, \hyperpage{12--16}, 
 		\hyperpage{20--22}
-    \subitem invertible, \hyperpage{21, 22}
+    \subitem invertible, \hyperpage{14}, \hyperpage{21, 22}
     \subitem involutory, \hyperpage{11}, \hyperpage{14}, \hyperpage{16}
     \subitem lower triangular, \hyperpage{9}
     \subitem magic, \hyperpage{15}
@@ -181,11 +185,11 @@
     \subitem trace of, \hyperpage{9}, \hyperpage{12}
     \subitem transpose, \hyperpage{8, 9}, \hyperpage{11--14}, 
 		\hyperpage{16}
-    \subitem triangular, \hyperpage{9}, \hyperpage{17, 18}, 
-		\hyperpage{20}
+    \subitem triangular, \hyperpage{9}, \hyperpage{14}, 
+		\hyperpage{17, 18}, \hyperpage{20}
     \subitem upper triangular, \hyperpage{9}
     \subitem zero factor property, \hyperpage{11}
-  \item matrix addition, \hyperpage{7}, \hyperpage{9, 10}
+  \item matrix addition, \hyperpage{7}, \hyperpage{10}
   \item matrix associativity, \hyperpage{7, 8}
   \item matrix dimension, \hyperpage{7}
   \item matrix element, \hyperpage{7}
@@ -194,7 +198,7 @@
 		\hyperpage{16}
   \item matrix inverse, \hyperpage{12--14}
   \item matrix multiplication, \hyperpage{8}
-  \item matrix polynomial, \hyperpage{12--14}
+  \item matrix polynomial, \hyperpage{12}, \hyperpage{14}
   \item matrix power, \hyperpage{8}, \hyperpage{10, 11}
   \item matrix powers, \hyperpage{9, 10}
   \item matrix product, \hyperpage{7, 8}, \hyperpage{10}
@@ -259,7 +263,7 @@
   \indexspace
 
   \item rational numbers, \hyperpage{37}
-  \item reduced row echelon form, \hyperpage{2, 3}
+  \item reduced row echelon form, \hyperpage{2--4}
   \item rhombus, \hyperpage{28}
   \item row echelon form, \hyperpage{2}, \hyperpage{4}
   \item row equivalent, \hyperpage{15, 16}
@@ -283,7 +287,7 @@
   \item skew-symmetric matrix, \hyperpage{8}, \hyperpage{20}
   \item skew-symmetric matrix, matrix
     \subitem skew-symmetric, \hyperpage{20}
-  \item solution set, \hyperpage{2--4}
+  \item solution set, \hyperpage{2--5}
   \item spaning set, \hyperpage{40, 41}
   \item spanning set, \hyperpage{40, 41}, \hyperpage{44}
   \item square, \hyperpage{28}
@@ -302,7 +306,8 @@
 
   \item trace of a matrix, \hyperpage{9}, \hyperpage{11}
   \item triangle inequality, \hyperpage{27, 28}
-  \item triangular matrix, \hyperpage{8}, \hyperpage{17}
+  \item triangular matrix, \hyperpage{8}, \hyperpage{14}, 
+		\hyperpage{17}
   \item trivial solution, \hyperpage{5}, \hyperpage{14}
   \item trivial subspace, \hyperpage{39}
 

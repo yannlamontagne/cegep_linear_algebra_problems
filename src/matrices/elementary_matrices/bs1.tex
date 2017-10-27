@@ -1,8 +1,10 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{row equivalent}
-\index{matrix!row equivalent}
+\index{elementary matrix}
+\index{symmetric matrix}
+\index{matrix!symmetric}
+\index{matrix!elementary}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,18 +16,14 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{BS, YL}}]
-Determine whether the following statement is true or false for any $n\times n$
+origin={\cite{BS}}]
+\end{Exercise}
+Determine whether the following statements are true or false for any $n\times n$
 matrices $A$ and $B$.  If the statement is false provide a counterexample. If the
 statement is true provide a proof of the statement.\\
-
-\Question If $A$ and $B$ are invertible then $A$ and $B$ are row equivalent.
 \Question All elementary matrices are symmetric.
 \Question If $A$ is elementary then $A^2$ is elementary.
-\end{Exercise}
-
 \begin{Answer}
-\Question True, the reduced row echelon form of $A$ and $B$ is $I$ since both matrices are invertible.  Hence there exists a finite sequence of elementary row operations that when applied on $A$ result in $I$. And a second finite sequence of elementary row operations that when applied on $B$ result in $I$.  If the first sequence of elementary row operations is applied on $A$ followed by the inverse elementary row operations applied in reverse order of the second sequence of elemtary row operations then $B$ is obtained.  Hence $A$ and $B$ are row equivalent.
 \Question False, $\begin{mat}1 & 2\\0 & 1\end{mat}$ is elementary but not symmetric.
 \Question True, show that for each type of elementary matrices they are still elementary when squared.
 \end{Answer}

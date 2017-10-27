@@ -19,29 +19,34 @@ difficulty=0,
 origin={\cite{YL}}]
 Consider the matrices:
 \[
-A =\begin{bmatrix}
+A =\begin{mat}
 1 & 2 \\
 3 & 2 \\
 1 & -1
-\end{bmatrix},\; B=
-\begin{bmatrix}
+\end{mat},\; B=
+\begin{mat}
 2 & -5 & 2 \\
 -3 & 2 & 1
-\end{bmatrix},\; 
-C = \begin{bmatrix}
+\end{mat},\; 
+C = \begin{mat}
 1 & 2 \\
 5 & 0
-\end{bmatrix},
+\end{mat},
 \]
 \[D=
-\begin{bmatrix}
+\begin{mat}
 -1 & 1 \\
 4 & -3
-\end{bmatrix},\; E=
-\begin{bmatrix}
+\end{mat},\; E=
+\begin{mat}
 1 \\
 3
-\end{bmatrix}
+\end{mat},\; F=
+\begin{mat}
+1 & 2 & 3\\
+-1 & 0 & 2\\
+0 & -5 & -1
+\end{mat}
 \]
 Evaluate the following if possible, justify.
 \begin{multicols}{2}
@@ -55,6 +60,9 @@ Evaluate the following if possible, justify.
 \Question $\trace(C)BA - \trace(D)EE^T$
 \Question $\trans{B}E$
 \Question $AB$
+\Question $\text{trace}(D)F^2$
+\Question $(F-AB)^T$
+\Question $\text{trace}(F)FB$
 \EndCurrentQuestion
 \end{multicols}
 \end{Exercise}
@@ -70,6 +78,9 @@ Evaluate the following if possible, justify.
 \Question $\begin{mat}17\\31\\2\end{mat}$
 \Question $\begin{mat}-7 & 4\\16 & 33\end{mat}$
 \Question Not defined.
+\Question Not defined.
+\Question $-4\begin{mat} -1 & -13 & 4\\ -1 & -12 & -5\\ 5 & 5 & -9\end{mat}$
+\Question $\begin{mat} 5 & -1 & -5\\ 3 & 11 & 2\\ -1 & -6 & -2\end{mat}$
 \Question Not defined.
 \EndCurrentQuestion
 \end{multicols}

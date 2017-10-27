@@ -38,6 +38,12 @@
 \indexentry{Gauss-Jordan Elimination|hyperpage}{4}
 \indexentry{particular solution|hyperpage}{4}
 \indexentry{homogeneous system|hyperpage}{4}
+\indexentry{Gauss-Jordan Elimination|hyperpage}{4}
+\indexentry{particular solution|hyperpage}{4}
+\indexentry{homogeneous system|hyperpage}{4}
+\indexentry{reduced row echelon form|hyperpage}{4}
+\indexentry{row echelon form|hyperpage}{4}
+\indexentry{back substitution|hyperpage}{4}
 \indexentry{row echelon form|hyperpage}{4}
 \indexentry{quadratic equation, parabola|hyperpage}{4}
 \indexentry{consistent, inconsistent|hyperpage}{4}
@@ -48,11 +54,11 @@
 \indexentry{Gaussian elimination|hyperpage}{4}
 \indexentry{inconsistent|hyperpage}{4}
 \indexentry{infinite solutions|hyperpage}{4}
-\indexentry{solution set|hyperpage}{4}
-\indexentry{consistent system|hyperpage}{4}
-\indexentry{augmented matrix|hyperpage}{4}
-\indexentry{inconsistent system|hyperpage}{4}
-\indexentry{infinitely many solutions|hyperpage}{4}
+\indexentry{solution set|hyperpage}{5}
+\indexentry{consistent system|hyperpage}{5}
+\indexentry{augmented matrix|hyperpage}{5}
+\indexentry{inconsistent system|hyperpage}{5}
+\indexentry{infinitely many solutions|hyperpage}{5}
 \indexentry{consistent system|hyperpage}{5}
 \indexentry{augmented matrix|hyperpage}{5}
 \indexentry{inconsistent system|hyperpage}{5}
@@ -136,13 +142,15 @@
 \indexentry{matrix!subtraction|hyperpage}{9}
 \indexentry{matrix!transpose|hyperpage}{9}
 \indexentry{matrix!inverse|hyperpage}{9}
-\indexentry{matrix!idempotent|hyperpage}{9}
-\indexentry{matrix addition|hyperpage}{9}
+\indexentry{matrix!idempotent|hyperpage}{10}
+\indexentry{matrix addition|hyperpage}{10}
 \indexentry{matrix!multiplication|hyperpage}{10}
 \indexentry{system of linear equations|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix addition|hyperpage}{10}
+\indexentry{matrix equation|hyperpage}{10}
+\indexentry{diagonal matrix|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
 \indexentry{matrix powers|hyperpage}{10}
 \indexentry{matrix product|hyperpage}{10}
@@ -198,6 +206,12 @@
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{linear system|hyperpage}{13}
 \indexentry{matrix inverse|hyperpage}{13}
+\indexentry{system of linear equations|hyperpage}{13}
+\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix!coefficient|hyperpage}{13}
+\indexentry{coefficient matrix|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{consistent system|hyperpage}{13}
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix equation|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
@@ -209,10 +223,10 @@
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!expression|hyperpage}{13}
 \indexentry{matrix!transpose|hyperpage}{13}
-\indexentry{matrix polynomial|hyperpage}{13}
-\indexentry{matrix inverse|hyperpage}{13}
-\indexentry{|hyperpage}{13}
-\indexentry{matrix!inverse|hyperpage}{13}
+\indexentry{matrix polynomial|hyperpage}{14}
+\indexentry{matrix inverse|hyperpage}{14}
+\indexentry{|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix inverse|hyperpage}{14}
 \indexentry{cancellation law|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
@@ -244,6 +258,15 @@
 \indexentry{matrix inverse|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!involutory|hyperpage}{14}
+\indexentry{matrix inverse|hyperpage}{14}
+\indexentry{invertible matrix|hyperpage}{14}
+\indexentry{matrix!invertible|hyperpage}{14}
+\indexentry{matrix!triangular|hyperpage}{14}
+\indexentry{triangular matrix|hyperpage}{14}
+\indexentry{matrix inverse|hyperpage}{14}
+\indexentry{invertible matrix|hyperpage}{14}
+\indexentry{matrix!invertible|hyperpage}{14}
+\indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{matrix!inverse|hyperpage}{14}
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{elementary matrix|hyperpage}{15}

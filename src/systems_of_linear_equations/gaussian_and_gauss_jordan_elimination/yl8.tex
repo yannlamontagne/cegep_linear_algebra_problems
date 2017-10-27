@@ -1,0 +1,65 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{Gauss-Jordan Elimination}
+\index{particular solution}
+\index{homogeneous system}
+\index{reduced row echelon form}
+\index{row echelon form}
+\index{back substitution}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "by name \cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[name={},
+title={}, 
+origin={\cite{YL}},
+counter=Exercise]
+Given
+\[
+M=\begin{bmatrix}
+1 & 2 & 2 & -1 & 3 & 1\\
+0 & 0 & 1 & 1  & 2 & 2\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+where $M$ is in row echelon form.
+\Question Find the reduced row echelon form of $M$.
+\Question Find two different row echelon form of $M$.
+\Question Find the solution set of the system of linear equations whose augmented matrix is $M$ by using back substitution.
+\Question Find two particular solution of the system of linear equations whose augmented matrix is $M$.
+\Question Find the solution set of the homogeneous system of linear equations whose coefficient matrix is $M$.
+\Question Find a particular solution the homogeneous system of linear equations whose coefficient matrix is $M$ when the solution of the first variable is equal to $1$.
+
+
+\end{Exercise}
+\begin{Answer}
+\Question $\begin{mat}
+1 & 2 & 0 & -3 & 0 & -2\\
+0 & 0 & 1 & 1  & 0 & 0\\
+0 & 0 & 0 & 0  & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{mat}$
+\Question $\begin{mat}
+1 & 2 & 0 & -3 & 0 & -2\\
+0 & 0 & 1 & 1  & 0 & 0\\
+0 & 0 & 0 & 0  & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{mat},\; \begin{mat}
+1 & 2 & 2 & -1 & 0 & -2\\
+0 & 0 & 1 & 1  & 0 & 0\\
+0 & 0 & 0 & 0  & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{mat}$
+\Question $(x_1,\;x_2,\;x_3,\;x_4,\;x_5)=(-2-2s+3t,\;s,\;-t,\;t,\;1)$ where $s,t\in\Re$
+\Question $(-2,\;0,\;0,\;0,\;1),\;(-1,\;1,\;-1,\;1,\;1)$
+\Question $(x_1,\;x_2,\;x_3,\;x_4,\;x_5,\;x_6)=(-2s-2u+3t,\;s,\;-t,\;t,\;-u,\;u)$ where $s,t,u\in\Re$
+\Question $\left(1,\;0,\;-\frac13,\;\frac13,0,0\right)$
+
+\end{Answer}
+

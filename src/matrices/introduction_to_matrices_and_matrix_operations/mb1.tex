@@ -12,8 +12,15 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{MB}}]
-Write the $3 \times 4$ matrix $B=[b_{ij}]$ whose entries satisfy 
+origin={\cite{MB, YL}}]
+\Question Write the $3 \times 2$ matrix $B=[b_{ij}]$ whose entries satisfy
+\[ b_{ij} = \left\lbrace
+                                                                \begin{array}{lll}
+                                                                                        1   & \mathrm{if} & |i-j|\geq1,\\
+                                                                                        i+j & \mathrm{if} & |i-j|< 1. 
+                                                                \end{array}\right. 
+\]
+\Question Write the $3 \times 4$ matrix $B=[b_{ij}]$ whose entries satisfy 
 \[ b_{ij} = \left\lbrace
 								\begin{array}{lll}
 											i-j & \mathrm{if} & |i-j|\geq1,\\
@@ -23,5 +30,9 @@ Write the $3 \times 4$ matrix $B=[b_{ij}]$ whose entries satisfy
 \end{Exercise}
 
 \begin{Answer}
-$B=\begin{mat} 2&-1&-2&-3\\  1&4&-1&-2\\  2&1&6&-1 \end{mat}$
+\begin{multicols}{2}
+\Question $B=\begin{mat} 2 & 1\\ 1 & 4\\ 1 & 1\end{mat}$
+\Question $B=\begin{mat} 2&-1&-2&-3\\  1&4&-1&-2\\  2&1&6&-1 \end{mat}$
+\EndCurrentQuestion
+\end{multicols}
 \end{Answer}
