@@ -74,11 +74,15 @@
 \indexentry{infinitely many solutions|hyperpage}{5}
 \indexentry{augmented matrix|hyperpage}{5}
 \indexentry{no solution, unique solution, infinitely many solution|hyperpage}{5}
+\indexentry{consistent system|hyperpage}{5}
+\indexentry{augmented matrix|hyperpage}{5}
+\indexentry{inconsistent system|hyperpage}{5}
+\indexentry{infinitely many solutions|hyperpage}{5}
 \indexentry{consistent|hyperpage}{5}
 \indexentry{consistent system|hyperpage}{5}
 \indexentry{augmented matrix|hyperpage}{5}
 \indexentry{|hyperpage}{5}
-\indexentry{|hyperpage}{5}
+\indexentry{|hyperpage}{6}
 \indexentry{system of linear equations|hyperpage}{6}
 \indexentry{Kirchhoff's law|hyperpage}{6}
 \indexentry{system of linear equations|hyperpage}{6}
@@ -144,6 +148,7 @@
 \indexentry{matrix!inverse|hyperpage}{9}
 \indexentry{matrix!idempotent|hyperpage}{10}
 \indexentry{matrix addition|hyperpage}{10}
+\indexentry{matrix!multiplication|hyperpage}{10}
 \indexentry{matrix!multiplication|hyperpage}{10}
 \indexentry{system of linear equations|hyperpage}{10}
 \indexentry{matrix equation|hyperpage}{10}
@@ -220,6 +225,8 @@
 \indexentry{matrix equation|hyperpage}{13}
 \indexentry{matrix inverse|hyperpage}{13}
 \indexentry{matrix equation|hyperpage}{13}
+\indexentry{matrix inverse|hyperpage}{13}
+\indexentry{matrix equation|hyperpage}{13}
 \indexentry{matrix!inverse|hyperpage}{13}
 \indexentry{matrix!expression|hyperpage}{13}
 \indexentry{matrix!transpose|hyperpage}{13}
@@ -288,6 +295,9 @@
 \indexentry{matrix!magic|hyperpage}{15}
 \indexentry{magic matrix|hyperpage}{15}
 \indexentry{row equivalent|hyperpage}{15}
+\indexentry{matrix!multiplication|hyperpage}{15}
+\indexentry{matrix!equation|hyperpage}{15}
+\indexentry{matrix equation|hyperpage}{15}
 \indexentry{elementary matrix|hyperpage}{15}
 \indexentry{row-equivalent|hyperpage}{15}
 \indexentry{matrix!elementary|hyperpage}{16}
@@ -336,6 +346,9 @@
 \indexentry{determinant|hyperpage}{18}
 \indexentry{determinant!triangular|hyperpage}{18}
 \indexentry{matrix!triangular|hyperpage}{18}
+\indexentry{determinant|hyperpage}{18}
+\indexentry{Laplace expansion|hyperpage}{18}
+\indexentry{cofactor expansion|hyperpage}{18}
 \indexentry{determinant|hyperpage}{18}
 \indexentry{Laplace expansion|hyperpage}{18}
 \indexentry{cofactor expansion|hyperpage}{18}
@@ -400,12 +413,13 @@
 \indexentry{symmetric matrix, matrix!symmetric|hyperpage}{20}
 \indexentry{determinant|hyperpage}{20}
 \indexentry{determinant|hyperpage}{20}
+\indexentry{determinant|hyperpage}{20}
 \indexentry{similar matrix|hyperpage}{20}
 \indexentry{matrix!similar|hyperpage}{20}
 \indexentry{determinant|hyperpage}{20}
 \indexentry{matrix!nilpotent|hyperpage}{20}
 \indexentry{determinant|hyperpage}{20}
-\indexentry{determinant|hyperpage}{20}
+\indexentry{determinant|hyperpage}{21}
 \indexentry{determinant|hyperpage}{21}
 \indexentry{determinant|hyperpage}{21}
 \indexentry{adjoint matrix|hyperpage}{21}
@@ -459,6 +473,11 @@
 \indexentry{determinant|hyperpage}{22}
 \indexentry{adjoint matrix|hyperpage}{22}
 \indexentry{singular matrix|hyperpage}{22}
+\indexentry{adjoint matrix|hyperpage}{22}
+\indexentry{matrix!adjoint|hyperpage}{22}
+\indexentry{matrix!invertible|hyperpage}{22}
+\indexentry{invertible matrix|hyperpage}{22}
+\indexentry{determinant|hyperpage}{22}
 \indexentry{adjoint matrix|hyperpage}{22}
 \indexentry{matrix!adjoint|hyperpage}{22}
 \indexentry{matrix!invertible|hyperpage}{22}
