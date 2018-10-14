@@ -1,8 +1,9 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{polynomial space}
-\index{dimension}
+\index{linear independence}
+\index{linear dependence}
+\index{matrix space}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,12 +15,14 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Given $W=\\
-\set{p(x)=a_0+a_1x+a_2x^2+a_3x^3 \suchthat p(1)=0 \text{ and } p(-1)=0}$ a subspace of $\polyspace_3$. Determine the dimension of $W$.
-
+origin={\cite{BS}}]
+Let $A=\begin{mat}
+1 & 2\\
+0 & 1
+\end{mat}$.
+Determine whether the vectors $\trans{A}$, $A^{-1}$ and $A^2$ are linearly independent in $\matspace_\nbyn{2}$.
 \end{Exercise}
 
 \begin{Answer}
-$\set{-1+x^2,\;-x+x^3}$ is a basis of $W$, therefore $W$ is of dimension 2.
+$\trans{A}$, $A^{-1}$ and $A^2$ are linearly independent.
 \end{Answer}

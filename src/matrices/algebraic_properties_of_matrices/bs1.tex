@@ -20,7 +20,7 @@ statement is true provide a proof of the statement.
 \Question If $A^2=0$ then $A=0$.
 \Question $A$ is said to be \emph{skew-symmetric} if $A^T=-A$.  If $A$ is symmetric and skew-symmetric then $A=0$.
 \Question If $AA^T=A$ then $A$ is symmetric.
-\Question If $A^2$ is an elementary matrix then $A$ is an elementary matrix.
+\Question If $A^2$ is symmetric then $A$ is symmetric.
 \end{Exercise}
 
 \begin{Answer}
@@ -33,5 +33,5 @@ A &=&-A\\
 A & = &0
 \end{eqnarray*}
 \Question True, since $A^T=(AA^T)^T=(A^T)^TA^T=AA^T=A$.
-\Question False, if $A=\begin{mat}-1 & 0\\ 0 & -1\end{mat}$ then $A^2=I$ which is an elementary matrix but $A$ is not an elementary matrix.
+\Question False, if $A=\begin{mat}0 & 1\\ 0 & 0\end{mat}$ then $A^2=0$ which is a symmetric matrix but $A$ is not a symmetric matrix.
 \end{Answer}

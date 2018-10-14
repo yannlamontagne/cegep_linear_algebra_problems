@@ -3,6 +3,7 @@
 %-----------------------------------------------------
 \index{polynomial space}
 \index{dimension}
+\index{subspace}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,12 +15,15 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Given $W=\\
-\set{p(x)=a_0+a_1x+a_2x^2+a_3x^3 \suchthat p(1)=0 \text{ and } p(-1)=0}$ a subspace of $\polyspace_3$. Determine the dimension of $W$.
-
+origin={\cite{BS}}]
+Given $S\set{p(x)\in\polyspace_2 \suchthat p(1)=p(2)}$.
+\Question Show that S is a subspace of $\polyspace_2$.
+\Question Find a basis and the dimension of $S$.
+\Question Find the coordinates of the vector $p(x)=5x^2-15x+7$ relative to the basis found in part \textbf{b}.
 \end{Exercise}
 
 \begin{Answer}
-$\set{-1+x^2,\;-x+x^3}$ is a basis of $W$, therefore $W$ is of dimension 2.
+\Question Apply the Subspace Test.
+\Question $\set{x^2-3x, 1}$ is a basis of $S$. $\text{dim}(S)=2$.
+\Question $(5 ,7)$ is the coordinate vector of $p(x)$ relative to the basis found in part \textbf{b}.
 \end{Answer}

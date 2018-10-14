@@ -1,19 +1,19 @@
-This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
+This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
 Scanning input file cegep_linear_algebra_problems.idx....
 !! Input index error (file = cegep_linear_algebra_problems.idx, line = 10):
    -- Illegal null field.
 !! Input index error (file = cegep_linear_algebra_problems.idx, line = 11):
    -- Illegal null field.
 
-!! Input index error (file = cegep_linear_algebra_problems.idx, line = 80):
+!! Input index error (file = cegep_linear_algebra_problems.idx, line = 84):
    -- Illegal null field.
-!! Input index error (file = cegep_linear_algebra_problems.idx, line = 81):
+!! Input index error (file = cegep_linear_algebra_problems.idx, line = 85):
    -- Illegal null field.
 
-!! Input index error (file = cegep_linear_algebra_problems.idx, line = 228):
+!! Input index error (file = cegep_linear_algebra_problems.idx, line = 235):
    -- Illegal null field.
-done (991 entries accepted, 5 rejected).
-Sorting entries...........done (11108 comparisons).
-Generating output file cegep_linear_algebra_problems.ind....done (342 lines written, 0 warnings).
+.done (1038 entries accepted, 5 rejected).
+Sorting entries...........done (11825 comparisons).
+Generating output file cegep_linear_algebra_problems.ind....done (347 lines written, 0 warnings).
 Output written in cegep_linear_algebra_problems.ind.
 Transcript written in cegep_linear_algebra_problems.ilg.

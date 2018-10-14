@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{polynomial space}
-\index{dimension}
+\index{subspace}
+\index{spanning set}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,12 +14,24 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Given $W=\\
-\set{p(x)=a_0+a_1x+a_2x^2+a_3x^3 \suchthat p(1)=0 \text{ and } p(-1)=0}$ a subspace of $\polyspace_3$. Determine the dimension of $W$.
-
+origin={\cite{BS}}]
+Let $W$ be the solution space of the homogeneous system whose coefficient matrix is 
+$\begin{mat}
+1 & 1 & k\\
+1 & k & 1\\
+k & 1 & 1
+\end{mat}$.
+Find the values of $k$ such that $W$ is
+\Question the zero space, 
+\Question a line through the origin,
+\Question a plane through the origin.
 \end{Exercise}
 
 \begin{Answer}
-$\set{-1+x^2,\;-x+x^3}$ is a basis of $W$, therefore $W$ is of dimension 2.
+\begin{multicols}{3}
+\Question $k\neq1, -2$
+\Question $k=-2$
+\Question $k=1$
+\EndCurrentQuestion
+\end{multicols}
 \end{Answer}

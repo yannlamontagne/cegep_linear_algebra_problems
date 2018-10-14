@@ -1,8 +1,8 @@
 %-----------------------------------------------------
 % index key words
 %-----------------------------------------------------
-\index{polynomial space}
-\index{dimension}
+\index{basis}
+\index{true or false}
 
 %-----------------------------------------------------
 % name, leave blank
@@ -14,12 +14,12 @@
 name={},
 title={}, 
 difficulty=0,
-origin={\cite{YL}}]
-Given $W=\\
-\set{p(x)=a_0+a_1x+a_2x^2+a_3x^3 \suchthat p(1)=0 \text{ and } p(-1)=0}$ a subspace of $\polyspace_3$. Determine the dimension of $W$.
+origin={\cite{BS}}]
+Determine whether the following statement is true or false.  Justify by providing 
+a proof or a counterexample.\\
 
+If $\set{\vec{u}, \vec{v}, \vec{w}}$ is a basis of a vector space $V$ then $\set{\vec{u}, \vec{u}+\vec{v}+\vec{w}, \vec{u}+2\vec{v}+2\vec{w}}$ is also a basis of $V$.
 \end{Exercise}
-
 \begin{Answer}
-$\set{-1+x^2,\;-x+x^3}$ is a basis of $W$, therefore $W$ is of dimension 2.
+False since the $3^{\text{rd}}$ vector is a linear combination of the first two vectors. 
 \end{Answer}
