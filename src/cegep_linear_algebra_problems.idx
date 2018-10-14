@@ -560,6 +560,7 @@
 \indexentry{dot product|hyperpage}{27}
 \indexentry{angle between vectors|hyperpage}{27}
 \indexentry{dot product|hyperpage}{28}
+\indexentry{angle between vectors|hyperpage}{28}
 \indexentry{dot product|hyperpage}{28}
 \indexentry{angle|hyperpage}{28}
 \indexentry{projection|hyperpage}{28}
@@ -640,6 +641,10 @@
 \indexentry{coplanar|hyperpage}{31}
 \indexentry{cross product|hyperpage}{31}
 \indexentry{orthogonal vector|hyperpage}{31}
+\indexentry{identity|hyperpage}{31}
+\indexentry{dot product|hyperpage}{31}
+\indexentry{cross product|hyperpage}{31}
+\indexentry{scalar triple product|hyperpage}{31}
 \indexentry{projection|hyperpage}{31}
 \indexentry{line|hyperpage}{31}
 \indexentry{line|hyperpage}{31}
@@ -683,6 +688,7 @@
 \indexentry{nearest point:to a point in a line|hyperpage}{32}
 \indexentry{line, parametric equation of line|hyperpage}{32}
 \indexentry{area, area!triangle|hyperpage}{32}
+\indexentry{distance:from a point to a line|hyperpage}{32}
 \indexentry{line, parametric equation of line|hyperpage}{32}
 \indexentry{skew line, line!skew|hyperpage}{32}
 \indexentry{distance!line to line|hyperpage}{32}
@@ -697,10 +703,10 @@
 \indexentry{nearest point|hyperpage}{32}
 \indexentry{nearest point!skew lines|hyperpage}{32}
 \indexentry{nearest point!parallel lines|hyperpage}{32}
-\indexentry{lines|hyperpage}{32}
-\indexentry{lines!parallel|hyperpage}{32}
-\indexentry{lines!intersection|hyperpage}{32}
-\indexentry{lines!skew|hyperpage}{32}
+\indexentry{lines|hyperpage}{33}
+\indexentry{lines!parallel|hyperpage}{33}
+\indexentry{lines!intersection|hyperpage}{33}
+\indexentry{lines!skew|hyperpage}{33}
 \indexentry{line, parametric equation of line|hyperpage}{33}
 \indexentry{skew line, line!skew|hyperpage}{33}
 \indexentry{distance|hyperpage}{33}
@@ -778,6 +784,9 @@
 \indexentry{skew lines, line!skew|hyperpage}{36}
 \indexentry{nearest point|hyperpage}{36}
 \indexentry{nearest point!skew lines|hyperpage}{36}
+\indexentry{plane|hyperpage}{36}
+\indexentry{plane!yz-plane|hyperpage}{36}
+\indexentry{collinear|hyperpage}{36}
 \indexentry{plane|hyperpage}{36}
 \indexentry{orthogonal|hyperpage}{36}
 \indexentry{vector space|hyperpage}{37}
