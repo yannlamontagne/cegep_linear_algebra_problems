@@ -1,0 +1,35 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{system of linear equations}
+\index{matrix!inverse}
+\index{matrix!coefficient}
+\index{coefficient matrix}
+\index{matrix inverse}
+\index{consistent system}
+\index{homogeneous system}
+\index{augmented matrix}
+
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{BS}}]
+Consider the following system of linear equations:
+$\systeme{9x+3y+z=0,3x+2y+z=4,6x+2y+z=1}$
+\Question Solve this system using the inverse of its coefficient matrix.
+\Question Use Gauss-Jordan elimination to solve the homogeneous system whose coefficient matrix is the augmented matrix of the given system.
+\Question Solve the system whose coefficient matrix is the augmented matrix of the given system and which has a particular solution $(1, -1, -1, 1)$.
+\end{Exercise}
+\begin{Answer}
+\Question $(-1, 2, 3)$
+\Question $(t, -2t, -3t, t)$ where $t\in\Re$.
+\Question $(1, -1, -1, 1)+(t, -2t, -3t, t)$ where $t\in\Re$.
+\end{Answer}
