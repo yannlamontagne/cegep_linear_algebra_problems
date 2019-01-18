@@ -5,15 +5,15 @@ Scanning input file cegep_linear_algebra_problems.idx....
 !! Input index error (file = cegep_linear_algebra_problems.idx, line = 11):
    -- Illegal null field.
 
-!! Input index error (file = cegep_linear_algebra_problems.idx, line = 84):
+!! Input index error (file = cegep_linear_algebra_problems.idx, line = 91):
    -- Illegal null field.
-!! Input index error (file = cegep_linear_algebra_problems.idx, line = 85):
+!! Input index error (file = cegep_linear_algebra_problems.idx, line = 92):
    -- Illegal null field.
 
-!! Input index error (file = cegep_linear_algebra_problems.idx, line = 235):
+!! Input index error (file = cegep_linear_algebra_problems.idx, line = 265):
    -- Illegal null field.
-.done (1038 entries accepted, 5 rejected).
-Sorting entries...........done (11825 comparisons).
-Generating output file cegep_linear_algebra_problems.ind....done (347 lines written, 0 warnings).
+.done (1111 entries accepted, 5 rejected).
+Sorting entries............done (13263 comparisons).
+Generating output file cegep_linear_algebra_problems.ind....done (357 lines written, 0 warnings).
 Output written in cegep_linear_algebra_problems.ind.
 Transcript written in cegep_linear_algebra_problems.ilg.

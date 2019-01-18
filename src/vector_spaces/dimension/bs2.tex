@@ -1,0 +1,43 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix space}
+\index{dimension}
+\index{subspace}
+\index{basis}
+\index{matrix!skew-symmetric}
+\index{skew-symmetric matrix}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{BS}}]
+Let $V_n=\set{A\in\matspace_{\nbyn{n}} \suchthat \trans{A}=-A}$.  Find a basis and the dimension of $V_3$.
+\end{Exercise}
+
+\begin{Answer}
+$\set{
+\begin{mat}
+0 & 1 & 0\\
+-1 & 0 & 0\\
+0 & 0 & 0
+\end{mat},\; 
+\begin{mat}
+0 & 0 & 1\\
+0 & 0 & 0\\
+-1 & 0 & 0
+\end{mat},\;
+\begin{mat}
+0 & 0 & 0\\
+0 & 0 & 1\\
+0 & -1 & 0
+\end{mat}
+}$ is a basis of $V_3$.  $\text{dim}\left(V_3\right)=3$.
+\end{Answer}
