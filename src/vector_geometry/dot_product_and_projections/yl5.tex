@@ -1,0 +1,53 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{circle, tangent, orthogonal, perpendicular, radius}
+\index{equation of circle}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given the line $y=x+2$ which is a tangent of the circle with centre $C$.  The vector $\vec{v}$ has initial point $C$ and terminal point $B$ which lies both on the circle and the tangent.\\
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+\clip(-7.694981217129971,-6.263756574004512) rectangle (9.28473328324568,5.655852742299027);
+%\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0.7746055597295267,2.774605559729527) -- (1,2.5492111194590534) -- (1.225394440270473,2.774605559729527) -- (1,3) -- cycle;
+\draw [line width=1pt,domain=-7.694981217129971:9.28473328324568] plot(\x,{(--2--1*\x)/1});
+\draw [line width=1pt] (4,0) circle (4.242640687119286);
+\draw [->,line width=1pt] (-6,-4) -- (4,0);
+\draw [->,line width=1pt] (4,0) -- (1,3);
+\draw [->,line width=1pt] (-6,-4) -- (1,3);
+%\draw[color=black] (-5.997009767092406,-4.704778362133736) node {$y = x + 2$};
+\draw [fill=xdxdff] (1,3) circle (1.5pt);
+\draw[color=black] (1.005244177310296,3.6) node {$B$};
+\draw [fill=xdxdff] (4,0) circle (1.5pt);
+\draw[color=black] (4.333,0.5) node {$C$};
+\draw [fill=xdxdff] (-6,-4) circle (1.5pt);
+\draw[color=black] (-4,-4.5) node {$A(-6, -4)$};
+\draw[color=black] (-1.1435161532682154,-3.1) node {$\vec{u} = (10, 4)$};
+\draw[color=black] (2.8,1.801607813673931) node {$\vec{v}$};
+\draw[color=black] (-3.1570398196844436,-0.4523365890308034) node {$\vec{w}$};
+\end{tikzpicture}
+
+\Question Find the centre $C$ of the circle.
+\Question Find the point $B$.
+\Question Find the equation of the circle.
+\end{Exercise}
+\begin{Answer}
+\emph{hint:} A tangent to a circle is perpendicular to the radius at the point at which the tangent and circle intersect.
+\begin{multicols}{2}
+\Question $C(4,\;0)$
+\Question $B(1,\;3)$
+\Question $(x-4)^2+y^2=18$
+\EndCurrentQuestion
+\end{multicols}
+\end{Answer}
