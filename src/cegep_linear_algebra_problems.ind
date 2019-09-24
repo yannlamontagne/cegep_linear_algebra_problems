@@ -26,6 +26,8 @@
 
   \item cancellation law, \hyperpage{14}
   \item Cauchy-Schwartz Inequality, \hyperpage{30}
+  \item circle, tangent, orthogonal, perpendicular, radius, 
+		\hyperpage{30}
   \item closest point, \hyperpage{36, 37}
   \item co-factor expansion, \hyperpage{19}
   \item coefficient matrix, \hyperpage{4}, \hyperpage{13}
@@ -35,15 +37,16 @@
   \item consistent, \hyperpage{6}
   \item consistent system, \hyperpage{5, 6}, \hyperpage{13}
   \item consistent, inconsistent, \hyperpage{4}
+  \item constants, \hyperpage{1}
   \item coordinate vector, \hyperpage{46}
   \item coplanar, \hyperpage{33}
   \item Cramer's Rule, \hyperpage{24, 25}
   \item cross product, \hyperpage{32, 33}
-  \item cube, \hyperpage{30}
+  \item cube, \hyperpage{31}
 
   \indexspace
 
-  \item determinant, \hyperpage{19--24}
+  \item determinant, \hyperpage{19--25}
     \subitem triangular, \hyperpage{19, 20}
   \item diagonal matrix, \hyperpage{7, 8}, \hyperpage{10}, 
 		\hyperpage{40}
@@ -67,6 +70,7 @@
   \item elementary matrix, \hyperpage{15, 16}, \hyperpage{21}
   \item elementary operation, \hyperpage{20, 21}
   \item elementary row operation, \hyperpage{1}
+  \item equation of circle, \hyperpage{30}
   \item equation of line, \hyperpage{33, 34}, \hyperpage{36}
   \item equation of plane, \hyperpage{36}
   \item even functions, \hyperpage{42}
@@ -86,14 +90,14 @@
   \item Gauss-Jordan elimination, \hyperpage{3}
   \item Gaussian Elimination, \hyperpage{3}
   \item Gaussian elimination, \hyperpage{3}, \hyperpage{5}
-  \item geometric interpretation, \hyperpage{1}
+  \item geometric interpretation, \hyperpage{2}
   \item geometry, \hyperpage{28}, \hyperpage{31}
   \item graphical interpretation, \hyperpage{1}
 
   \indexspace
 
-  \item homogeneous system, \hyperpage{4, 5}, \hyperpage{13, 14}, 
-		\hyperpage{46}, \hyperpage{48}
+  \item homogeneous system, \hyperpage{4, 5}, \hyperpage{13}, 
+		\hyperpage{15}, \hyperpage{46}, \hyperpage{48}
 
   \indexspace
 
@@ -101,10 +105,10 @@
   \item identity, \hyperpage{33}
   \item ij product, \hyperpage{7}
   \item inconsistent, \hyperpage{5}
-  \item inconsistent system, \hyperpage{5}
+  \item inconsistent system, \hyperpage{5, 6}
   \item infinite solutions, \hyperpage{5}
   \item infinitely many solution, \hyperpage{5}
-  \item infinitely many solutions, \hyperpage{5}
+  \item infinitely many solutions, \hyperpage{5, 6}
   \item intersection, \hyperpage{34}, \hyperpage{36}
     \subitem between line and plane, \hyperpage{36}
     \subitem line and plane, \hyperpage{36}
@@ -161,14 +165,14 @@
     \subitem dimension, \hyperpage{8, 9}
     \subitem elementary, \hyperpage{15--17}
     \subitem entry, \hyperpage{9}
-    \subitem equation, \hyperpage{12, 13}, \hyperpage{16}
+    \subitem equation, \hyperpage{12--14}, \hyperpage{16}
     \subitem expression, \hyperpage{14}
     \subitem Hilbert's, \hyperpage{16}
     \subitem idempotent, \hyperpage{10}
-    \subitem inverse, \hyperpage{9}, \hyperpage{12--16}, 
+    \subitem inverse, \hyperpage{9}, \hyperpage{12--17}, 
 		\hyperpage{22--24}
     \subitem invertible, \hyperpage{15}, \hyperpage{23, 24}
-    \subitem involutory, \hyperpage{11}, \hyperpage{14}, \hyperpage{16}
+    \subitem involutory, \hyperpage{11}, \hyperpage{15}, \hyperpage{17}
     \subitem lower triangular, \hyperpage{9}
     \subitem magic, \hyperpage{16}
     \subitem matrix, \hyperpage{15}
@@ -177,13 +181,15 @@
     \subitem nilpotent, \hyperpage{14}, \hyperpage{22}
     \subitem of cofators, \hyperpage{23, 24}
     \subitem orthogonal, \hyperpage{15}
-    \subitem polynomial, \hyperpage{14}
+    \subitem polynomial, \hyperpage{15}
     \subitem power, \hyperpage{9}, \hyperpage{11}
     \subitem product, \hyperpage{8, 9}
+    \subitem product of elementary matrices, \hyperpage{15}, 
+		\hyperpage{17}
     \subitem reduced row echelon form, \hyperpage{16}
     \subitem row equivalent, \hyperpage{16, 17}
     \subitem similar, \hyperpage{22}
-    \subitem singular, \hyperpage{14}
+    \subitem singular, \hyperpage{15}
     \subitem skew-symmetric, \hyperpage{9}, \hyperpage{11}, 
 		\hyperpage{41}, \hyperpage{48}
     \subitem subtraction, \hyperpage{9}
@@ -200,11 +206,10 @@
   \item matrix dimension, \hyperpage{7}
   \item matrix element, \hyperpage{7}
   \item matrix entry, \hyperpage{7}
-  \item matrix equation, \hyperpage{10}, \hyperpage{12--14}, 
-		\hyperpage{16, 17}
+  \item matrix equation, \hyperpage{10}, \hyperpage{12--17}
   \item matrix inverse, \hyperpage{12--15}
   \item matrix multiplication, \hyperpage{8}
-  \item matrix polynomial, \hyperpage{12}, \hyperpage{14}
+  \item matrix polynomial, \hyperpage{12}, \hyperpage{14, 15}
   \item matrix power, \hyperpage{8}, \hyperpage{10, 11}
   \item matrix powers, \hyperpage{9, 10}
   \item matrix product, \hyperpage{7, 8}, \hyperpage{10}
@@ -224,10 +229,10 @@
   \item nearest point:to a point in a hyperplane, \hyperpage{37}
   \item nearest point:to a point in a line, \hyperpage{34}
   \item nearest point:to a point in a plane, \hyperpage{37}
-  \item nilpotent matrix, \hyperpage{11}
+  \item nilpotent matrix, \hyperpage{11}, \hyperpage{14}
   \item no solution, unique solution, infinitely many solution, 
 		\hyperpage{5}
-  \item norm, \hyperpage{27--30}
+  \item norm, \hyperpage{27--31}
 
   \indexspace
 
@@ -245,14 +250,16 @@
   \item parallel planes, perpendicular planes, \hyperpage{37}
   \item parallel vectors, \hyperpage{32}
   \item parallelepiped, \hyperpage{32}
-  \item parallelogram, \hyperpage{30}, \hyperpage{32}
-  \item parallelogram law, \hyperpage{30}
+  \item parallelogram, \hyperpage{31, 32}
+  \item parallelogram law, \hyperpage{31}
   \item parametric equation of line, \hyperpage{33, 34}
-  \item particular solution, \hyperpage{3, 4}
+  \item particular solution, \hyperpage{1}, \hyperpage{3, 4}
   \item perpendicular plane, \hyperpage{37}
   \item plane, \hyperpage{35--38}
+    \subitem distance point to plane, \hyperpage{36}
     \subitem general form, \hyperpage{35}
     \subitem normal vector, \hyperpage{36}
+    \subitem parallel plane, \hyperpage{38}
     \subitem parallel to another plane, \hyperpage{35}
     \subitem point-normal equation, \hyperpage{35--37}
     \subitem standard form, \hyperpage{35}
@@ -274,7 +281,7 @@
 
   \item rational numbers, \hyperpage{39}
   \item reduced row echelon form, \hyperpage{2--4}
-  \item rhombus, \hyperpage{30}
+  \item rhombus, \hyperpage{31}
   \item row echelon form, \hyperpage{2}, \hyperpage{4}
   \item row equivalent, \hyperpage{16, 17}
   \item row-equivalent, \hyperpage{16}
@@ -303,7 +310,7 @@
   \item solution set, \hyperpage{2--5}
   \item spaning set, \hyperpage{42, 43}
   \item spanning set, \hyperpage{42, 43}, \hyperpage{46}
-  \item square, \hyperpage{30}
+  \item square, \hyperpage{31}
   \item subspace, \hyperpage{41--43}, \hyperpage{48}
   \item symmetric equation, \hyperpage{14}
   \item symmetric equation of line, \hyperpage{33}
@@ -313,7 +320,7 @@
   \item system of linear equation, \hyperpage{13}
   \item system of linear equations, \hyperpage{1}, \hyperpage{3}, 
 		\hyperpage{6}, \hyperpage{10}, \hyperpage{13}, 
-		\hyperpage{15}, \hyperpage{24}, \hyperpage{28}
+		\hyperpage{15}, \hyperpage{24, 25}, \hyperpage{28}
 
   \indexspace
 
@@ -322,15 +329,15 @@
   \item triangle inequality, \hyperpage{29, 30}
   \item triangular matrix, \hyperpage{8}, \hyperpage{15}, 
 		\hyperpage{19}
-  \item trivial solution, \hyperpage{5}, \hyperpage{14}
+  \item trivial solution, \hyperpage{5}, \hyperpage{15}
   \item trivial subspace, \hyperpage{41}
   \item true or false, \hyperpage{47}
 
   \indexspace
 
-  \item unique solution, \hyperpage{5}, \hyperpage{14}
+  \item unique solution, \hyperpage{5}, \hyperpage{15}
   \item unique solution, inconsistent, infinitely many solutions, 
-		\hyperpage{4}
+		\hyperpage{5}
   \item unit vector, \hyperpage{27, 28}, \hyperpage{30}, \hyperpage{37}
 
   \indexspace
@@ -339,6 +346,7 @@
   \item vector, \hyperpage{27, 28}, \hyperpage{33, 34}
   \item vector arithmetic, \hyperpage{27, 28}
   \item vector equation of line, \hyperpage{33, 34}
+  \item vector plane equation, \hyperpage{38}
   \item vector space, \hyperpage{39--42}
     \subitem function space, \hyperpage{40}
     \subitem matrix space, \hyperpage{40}

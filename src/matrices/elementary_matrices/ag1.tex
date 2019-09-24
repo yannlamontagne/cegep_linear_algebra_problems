@@ -1,0 +1,69 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{matrix!elementary}
+\index{matrix!inverse}
+\index{matrix!product of elementary matrices}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{AG}}]
+Given the matrix
+$$
+A= \begin{mat}
+5 & 3&0 \\
+3 & 2 & 1\\
+0& 0 &1
+\end{mat}.
+$$
+
+\Question Find $A^{-1}$
+\Question Write $A$ as a product of elementary matrices.
+\end{Exercise}
+
+\begin{Answer}
+\Question $A^{-1}=\begin{mat}
+2 & -3 & 3\\
+-3 & 5 & -5\\
+0 & 0 & 1
+\end{mat}$
+\Question $A=
+\begin{mat}
+5 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+3 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+0 & \frac{1}{5} & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & \frac{3}{5} & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & 0\\
+0 & 1 & 5\\
+0 & 0 & 1
+\end{mat}
+\begin{mat}
+1 & 0 & -5\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{mat}$, note that the answer is not unique.
+\end{Answer}
