@@ -1,0 +1,58 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{cross product}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{AG}}]
+Given
+$$
+\mathbf{u}=
+\begin{pmatrix}
+1\\
+1\\
+0\\
+2
+\end{pmatrix}
+\quad,\quad
+\mathbf{v}=
+\begin{pmatrix}
+3\\
+4\\
+1\\
+0
+\end{pmatrix}
+\quad \text{and} \quad
+\mathbf{w}=
+\begin{pmatrix}
+0\\
+1\\
+2\\
+-1
+\end{pmatrix}
+$$
+in $\R^4$ evaluate the following (if they exist):\\
+\Question $\text{proj}_{\vec{u}}(\vec{v}+\vec{w})$
+\Question $\|\vec{u}\|^2+\|\vec{v}\|^2+\vec{v}\cdot \vec{w}$
+\Question $\vec{u}\times \vec{v} -\vec{u}\cdot \vec{w}$
+\Question the angle $\theta$ between $\vec{u}$ and $\vec{v}$
+\end{Exercise}
+
+\begin{Answer}
+\begin{multicols}{2}
+\Question $(\sqrt{6},\;\sqrt{6},\;0,\;2\sqrt{6})$
+\Question $38$
+\Question the cross product is not defined in $\R^4$
+\Question $\theta=\text{arccos}\left(\frac{7}{\sqrt{6}\sqrt{26}}\right)\approx56^\circ$
+\EndCurrentQuestion
+\end{multicols}
+\end{Answer}
