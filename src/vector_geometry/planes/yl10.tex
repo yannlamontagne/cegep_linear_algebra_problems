@@ -1,0 +1,43 @@
+%-----------------------------------------------------
+% index key words
+%-----------------------------------------------------
+\index{plane}
+\index{angle}
+\index{angle!between two planes}
+\index{shortest distance}
+
+%-----------------------------------------------------
+% name, leave blank
+% title, if the exercise has a name i.e. Hilbert's matrix
+% difficulty = n, where n is the number of stars
+% origin = "\cite{ref}"
+%-----------------------------------------------------
+\begin{Exercise}[
+name={},
+title={}, 
+difficulty=0,
+origin={\cite{YL}}]
+Given the plane $\mathcal{P}:\;3x+2y+z=6$.
+\Question Sketch the given plane using the $x$, $y$ and $z$-intercepts.
+\Question Using projection(s) find the distance between the origin and $\mathcal{P}$.
+\Question Find the angle between $\mathcal{P}$ and the $xz$-plane.
+
+\end{Exercise}
+
+\begin{Answer}
+\Question\mbox{ }\\
+% note the axes are reversed! 
+\begin{tikzpicture}%[tdplot_main_coords]
+\draw[very thick,->] (0,0,0) -- (5,0,0) node[anchor=north east]{$y$};
+\draw[very thick,->] (0,0,0) -- (0,7,0) node[anchor=north west]{$z$};
+\draw[very thick,->] (0,0,0) -- (0,0,4) node[anchor=south east]{$x$};
+\node[text width = 3cm] at (5,0,1) {$(0,\;3,\;0)$};
+\draw[-] (0,0,2) -- (3,0,0);
+\node[text width = 3cm] at (0,0,2) {$(2,\;0,\;0)$};
+\draw[-] (3,0,0) -- (0,6,0);
+\draw[-] (0,6,0) -- (0,0,2);
+\node[text width = 3cm] at (-0.15,6,0) {$(0,\;0,\;6)$};
+\end{tikzpicture}
+\Question $\frac{3}{7}\sqrt{14}$
+\Question $\arccos\left(\frac{2}{\sqrt{14}}\right)$
+\end{Answer}
